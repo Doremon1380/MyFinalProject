@@ -1,0 +1,26 @@
+.logo {
+    width: 100px;
+    height: 80px;
+    border: solid; /* test border */
+}
+
+.optionIcon {
+    width: 40px;
+    height: 40px;
+} 
+
+/* For testing the border */
+#nb {
+    border: solid;
+}
+/* For testing the border */
+#ctn {
+    border: solid;
+}
+
+#dropdown-basic-button::after {
+    display: none;
+}
+
+/* For search bar */
+
