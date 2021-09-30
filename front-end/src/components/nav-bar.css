@@ -1,26 +1,84 @@
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
 .logo {
     width: 100px;
     height: 80px;
     border: solid; /* test border */
 }
 
-.optionIcon {
-    width: 40px;
-    height: 40px;
-} 
-
 /* For testing the border */
 #nb {
     border: solid;
 }
+
 /* For testing the border */
 #ctn {
     border: solid;
 }
 
+/* For the dropdown to remove the carpet */
 #dropdown-basic-button::after {
     display: none;
 }
 
+.menu-icon {
+    font-size: 25px;
+}
+
+/* For sign in button */
+.sign-in-button {
+    border: none;
+    background-color: orange;
+    border-radius: 4px;
+    font-size: 20px;
+    color: white;
+    transition: 150ms ease-in-out; /* dùng để tạo đảo ngược hiệu ứng cho nút sau khi di chuột khỏi nút */
+}
+
+.sign-in-button:hover {
+    background-color: hsl(30, 100%, 45%);
+    transition: 150ms ease-in-out; /* dùng để tạo hiệu ứng cho nút sau khi di chuột vào nút */
+}
+
 /* For search bar */
+
+.search-form {
+    border: 1px solid #ddd;
+    transition: 200ms ease-in-out;
+}
+
+.search-form:hover {
+    border: 1px solid #aaa;
+    transition: 200ms ease-in-out;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+}
+
+.search-button {    
+    border: none;
+    border-left: 1px solid #ddd;;
+    background-color: white;
+    transition: 150ms ease-in-out;
+}
+
+.search-button:hover {    
+    color: #fff;
+    border-left: 1px solid #aaa;;
+    background-color: orange;
+    transition: 150ms ease-in-out;
+}
+
+
+
 
