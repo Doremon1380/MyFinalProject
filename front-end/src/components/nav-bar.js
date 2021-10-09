@@ -15,8 +15,8 @@ import MyLogo from "./MyLogo.png";
 
 function NavBar() {
   return (
-    <Navbar id="nb">
-      <Container id="ctn">
+    <Navbar id="nav-bar">
+      <Container id="nav-bar-container">
         <a href="#"><img className="logo" src={MyLogo} alt="Logo" /></a>
         <div className="search-bar">
           <form className="search-form">
@@ -26,13 +26,13 @@ function NavBar() {
         </div>
         <button className="sign-in-button">Sign in</button>
         <DropdownButton id="dropdown-basic-button" variant="" title={<i className="menu-icon"><FaBars/></i>}>
-          <Dropdown.Item href="#/">World Cuisine</Dropdown.Item>
+          <Dropdown.Item className="drop-down-item" href="#/">World Cuisine</Dropdown.Item>
           <Dropdown.Divider />
-          <Dropdown.Item href="#/">Filter Recipes</Dropdown.Item>
+          <Dropdown.Item className="drop-down-item" href="#/">Filter Recipes</Dropdown.Item>
           <Dropdown.Divider />
-          <Dropdown.Item href="#/">Type of Recipes</Dropdown.Item>
+          <Dropdown.Item className="drop-down-item" href="#/">Type of Recipes</Dropdown.Item>
           <Dropdown.Divider />
-          <Dropdown.Item href="#/">Ask the Community</Dropdown.Item>
+          <Dropdown.Item className="drop-down-item" href="#/">Ask the Community</Dropdown.Item>
         </DropdownButton>
       </Container>
     </Navbar>   

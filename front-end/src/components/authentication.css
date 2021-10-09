@@ -1,0 +1,42 @@
+/* For the container */
+#authentication-container {
+    display: block;
+    width: 560px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+/* For the OR line */
+#or {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid orange; 
+    line-height: 0.1em;
+    margin-top: 25px; 
+ } 
+ 
+ #or span { 
+    background-color: #fff; 
+    padding: 0px 10px; 
+ }
+
+ /* For the sign up with email button */
+ #sign-up-with-email {
+    margin-top: 10px;
+    border: none;
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+    height: 50px;
+    color: black;
+}
+
+#sign-up-with-email + p {
+    margin-top: 20px;
+    margin-left: 187px;
+}
+
+/* For the sign in link */
+#sign-in {
+    text-decoration: none;
+    color: orange;
+}
