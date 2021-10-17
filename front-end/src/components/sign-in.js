@@ -7,6 +7,7 @@ import Google from "./Google.png";
 import HidePassword from "./HidePassword.png";
 import ShowPassword from "./ShowPassword.png";
 
+/* Tìm hiểu về state và các hàm ở dưới (đến hàm render) để hiểu kỹ về chúng */
 const imagesPath = {
   HidePassword: HidePassword,
   ShowPassword: ShowPassword

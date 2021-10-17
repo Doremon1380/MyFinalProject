@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from "react-bootstrap/Container";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
-import {FaBars} from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
 import "./nav-bar.css" //custom css for React component 
 import MyLogo from "./MyLogo.png";
@@ -20,12 +20,14 @@ function NavBar() {
         <a href="#"><img className="logo" src={MyLogo} alt="Logo" /></a>
         <div className="search-bar">
           <form className="search-form">
-            <input className="search-input" type="search" placeholder="Find a recipe" aria-label="Search"/>
-            <button className="search-button" type ="submit"><i className="bi bi-search"></i></button>
+            <input className="search-input" type="search" placeholder="Find a recipe" aria-label="Search" />
+            <button className="search-button" type="submit"><i className="bi bi-search"></i></button>
           </form>
         </div>
         <button className="sign-in-button">Sign in</button>
-        <DropdownButton id="dropdown-basic-button" variant="" title={<i className="menu-icon"><FaBars/></i>}>
+        <DropdownButton id="dropdown-basic-button" variant="" title={<i className="menu-icon"><FaBars /></i>}>
+          <Dropdown.Item className="drop-down-item" href="#/">FoodShare</Dropdown.Item>
+          <Dropdown.Divider />
           <Dropdown.Item className="drop-down-item" href="#/">World Cuisine</Dropdown.Item>
           <Dropdown.Divider />
           <Dropdown.Item className="drop-down-item" href="#/">Filter Recipes</Dropdown.Item>
@@ -35,7 +37,7 @@ function NavBar() {
           <Dropdown.Item className="drop-down-item" href="#/">Ask the Community</Dropdown.Item>
         </DropdownButton>
       </Container>
-    </Navbar>   
+    </Navbar>
   );
 }
 

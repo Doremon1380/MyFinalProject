@@ -1,0 +1,815 @@
+/* clears the 'X' delete in input html element from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+/* For the navbar */
+#nav-bar2 {
+    background-color: rgb(245, 245, 245);
+    position: sticky;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.search-form2 {
+    border: 1px solid #ddd;
+    transition: 200ms ease-in-out;
+    border-radius: 3px;
+}
+
+.search-form2:hover {
+    border: 1px solid #aaa;
+    transition: 200ms ease-in-out;
+}
+
+.search-button2 {    
+    border: none;
+    background-color: white;
+    transition: 150ms ease-in-out;
+    height: 36px;
+    width: 32px;
+}
+
+.search-button2:hover {    
+    color: #fff;
+    background-color: orange;
+    transition: 150ms ease-in-out;
+}
+
+.bell-icon {
+    font-size: 30px;
+    color: gray;
+}
+
+/* For the favorite button */
+.favorite-icon {
+    font-size: 30px;
+    display: block;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+/* For the group of 3 buttons */
+#for-account {
+    display: flex;
+}
+
+/* For the dropdown */
+    /* to remove the carpet */
+#dropdown-basic-button-account::after {
+    display: none; 
+}
+
+#dropdown-basic-button-account {
+    box-shadow: none;
+    background-color: gray;
+    border-radius: 0px;
+}
+
+#dropdown-basic-button-account:hover {
+    background-color: rgb(172, 172, 172);
+}   
+
+#accountName::after {
+    display: none; 
+}
+
+#accountName {
+    box-shadow: none;
+}
+
+.drop-down-item2:focus {
+    background-color: orange;  
+    color: #fff;
+    outline: none;
+}
+
+#dropdown-basic-button-menu::after {
+    display: none; 
+}
+
+#dropdown-basic-button-menu {
+    box-shadow: none;
+}
+
+/* For the down icon */
+.down-icon {
+    color: white;
+}
+
+/* For the menu icon */
+.menu-icon2:hover {
+    transform: scale(1.1) ;
+    transition: 250ms ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    /* For the container */
+    #nav-bar-container2 {
+        width: 100%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-between;
+    }
+
+    .features-set {
+        display: flex;
+        flex-direction: row;  
+        
+    }
+    
+    /* For the logo */
+    .logo2 {
+        border: solid;
+        width: 20vw;
+        height: 70px;
+        margin-left: 10px;
+    }
+
+    /* For the search bar */
+    .search-bar2{
+        display: none;
+    }
+
+    .search-icon {
+        font-size: 25px;
+        color: gray;
+        display: block;
+        margin: 17px 0px 0px 0vw;
+        cursor: pointer;
+    }
+
+    /* For the notification button */
+    .bell-icon {
+        font-size: 25px;
+        color: gray;
+        margin: 17px 0px 0px 20px;
+    }
+
+    /* For the favorite button */
+    .favorite-icon {
+        font-size: 25px;
+        display: block;
+        color: gray;
+        margin: 13px 0px 0px 20px;
+    }
+
+    /* For the avatar */
+    #avatar {
+        display: inline-block;
+        width: 45px;
+        height: fit-content;
+        background-color: rgb(245, 245, 245);
+        margin: 12px 0px 0px 20px;
+        border-radius: 50%;
+    }
+
+    /* For the account */
+    #accountName {
+        display: none;
+    }
+
+    #dropdown-basic-button-account {
+        display: none;
+    }
+
+    /* For the menu icon */
+    .menu-icon2 {
+        display: inline-block;
+        font-size: 20px;
+        padding-bottom: 5px;
+        transition: 250ms ease-in-out;
+        margin: 10px 10px 0px 10px;
+    }
+
+    /* For the dropdown */
+    .drop-down-item2 {
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    /* For the container */
+    #nav-bar-container2 {
+        width: 100%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-around;
+    }
+
+    .features-set {
+        display: flex;
+        flex-direction: row;  
+    }
+    
+    /* For the logo */
+    .logo2 {
+        border: solid;
+        width: 17vw;
+        height: 70px;
+        margin-left: 10px;
+    }
+
+    /* For the search bar */
+    .search-bar2 {
+        white-space: nowrap;
+        overflow: hidden;
+        width: fit-content;
+        margin: 16px 0vw 0vw 2vw;
+    }
+
+    .search-input2 {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 10px;
+        width: 38vw;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    /* For the notification button */
+    .bell-icon {
+        font-size: 25px;
+        color: gray;
+        margin: 17px 0px 0px 15px;
+    }
+
+    /* For the favorite button */
+    .favorite-icon {
+        font-size: 25px;
+        display: block;
+        color: gray;
+        margin: 13px 0px 0px 10px;
+    }
+
+    /* For the avatar */
+    #avatar {
+        display: inline-block;
+        width: 45px;
+        height: fit-content;
+        background-color: rgb(245, 245, 245);
+        margin: 12px 0px 0px 10px;
+        border-radius: 50%;
+    }
+
+    /* For the account */
+    #accountName {
+        display: none;
+    }
+
+    #dropdown-basic-button-account {
+        display: none;
+    }
+
+    /* For the menu icon */
+    .menu-icon2 {
+        display: inline-block;
+        font-size: 20px;
+        padding-bottom: 5px;
+        transition: 250ms ease-in-out;
+        margin: 10px 20px 0px 5px;
+    }
+
+    /* For the dropdown */
+    .drop-down-item2 {
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+     /* For the container */
+     #nav-bar-container2 {
+        width: 88%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-around;
+    }
+
+    #features-set {
+        display: flex;
+        flex-direction: row;  
+    }
+    
+    /* For the logo */
+    .logo2 {
+        border: solid;
+        width: 15vw;
+        height: 70px;
+        margin-left: 10px;
+    }
+
+    /* For the search bar */
+    .search-bar2 { 
+        white-space: nowrap;
+        overflow: hidden;
+        width: fit-content;
+        margin: 16px 0vw 0vw 2vw;
+    }
+
+    .search-input2 {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 10px;
+        width: 37vw;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    /* For the notification button */
+    .bell-icon {
+        font-size: 25px;
+        color: gray;
+        margin: 17px 0px 0px 15px;
+    }
+
+    /* For the favorite button */
+    .favorite-icon {
+        font-size: 25px;
+        display: block;
+        color: gray;
+        margin: 13px 0px 0px 10px;
+    }
+
+    /* For the avatar */
+    #avatar {
+        display: inline-block;
+        width: 45px;
+        height: fit-content;
+        background-color: rgb(245, 245, 245);
+        margin: 12px 0px 0px 10px;
+        border-radius: 50%;
+    }
+
+    /* For the account */
+    #accountName {
+        display: none;
+    }
+
+    #dropdown-basic-button-account {
+        display: none;
+    }
+
+    /* For the menu icon */
+    .menu-icon2 {
+        display: inline-block;
+        font-size: 20px;
+        padding-bottom: 5px;
+        transition: 250ms ease-in-out;
+        margin: 10px 20px 0px 5px;
+    }
+
+    /* For the dropdown */
+    .drop-down-item2 {
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (min-width: 956px) {
+         /* For the container */
+     #nav-bar-container2 {
+        width: 80%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-around;
+    }
+
+    #features-set {
+        display: flex;
+        flex-direction: row;  
+    }
+    
+    /* For the logo */
+    .logo2 {
+        border: solid;
+        width: 13vw;
+        height: 70px;
+        margin-left: 10px;
+    }
+
+    /* For the search bar */
+    .search-bar2 {
+        white-space: nowrap;
+        overflow: hidden;
+        width: fit-content;
+        margin: 16px 0vw 0vw 2vw;
+    }
+
+    .search-input2 {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 10px;
+        width: 39vw;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    /* For the notification button */
+    .bell-icon {
+        font-size: 25px;
+        color: gray;
+        margin: 17px 0px 0px 15px;
+    }
+
+    /* For the favorite button */
+    .favorite-icon {
+        font-size: 25px;
+        display: block;
+        color: gray;
+        margin: 13px 0px 0px 10px;
+    }
+
+    /* For the avatar */
+    #avatar {
+        display: inline-block;
+        width: 45px;
+        height: fit-content;
+        background-color: rgb(245, 245, 245);
+        margin: 12px 0px 0px 10px;
+        border-radius: 50%;
+    }
+
+    /* For the account */
+    #accountName {
+        display: none;
+    }
+
+    #dropdown-basic-button-account {
+        display: none;
+    }
+
+    /* For the menu icon */
+    .menu-icon2 {
+        display: inline-block;
+        font-size: 20px;
+        padding-bottom: 5px;
+        transition: 250ms ease-in-out;
+        margin: 10px 20px 0px 5px;
+    }
+
+    /* For the dropdown */
+    .drop-down-item2 {
+        font-size: 1.3vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #nav-bar-container2 {
+        width: 75%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-around;
+    }
+
+    #features-set {
+        display: flex;
+        flex-direction: row;  
+    }
+    
+    /* For the logo */
+    .logo2 {
+        border: solid;
+        width: 11vw;
+        height: 70px;
+        margin-left: 10px;
+    }
+
+    /* For the search bar */
+    .search-bar2 {
+        white-space: nowrap;
+        overflow: hidden;
+        width: fit-content;
+        margin: 16px 0vw 0vw 1vw;
+    }
+
+    .search-input2 {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 10px;
+        width: 41vw;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    /* For the notification button */
+    .bell-icon {
+        font-size: 25px;
+        color: gray;
+        margin: 17px 0px 0px 15px;
+    }
+
+    /* For the favorite button */
+    .favorite-icon {
+        font-size: 25px;
+        display: block;
+        color: gray;
+        margin: 13px 0px 0px 10px;
+    }
+
+    /* For the avatar */
+    #avatar {
+        display: inline-block;
+        width: 45px;
+        height: fit-content;
+        background-color: rgb(245, 245, 245);
+        margin: 12px 0px 0px 10px;
+        border-radius: 50%;
+    }
+
+    /* For the account */
+    #accountName {
+        display: none;
+    }
+
+    #dropdown-basic-button-account {
+        display: none;
+    }
+
+    /* For the menu icon */
+    .menu-icon2 {
+        display: inline-block;
+        font-size: 20px;
+        padding-bottom: 5px;
+        transition: 250ms ease-in-out;
+        margin: 10px 20px 0px 5px;
+    }
+
+    /* For the dropdown */
+    .drop-down-item2 {
+        font-size: 1.1vw;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #nav-bar-container2 {
+        width: 70%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-around;
+    }
+
+    #features-set {
+        display: flex;
+        flex-direction: row;  
+    }
+    
+    /* For the logo */
+    .logo2 {
+        border: solid;
+        width: 10vw;
+        height: 70px;
+        margin-left: 10px;
+    }
+
+    /* For the search bar */
+    .search-bar2 {
+        white-space: nowrap;
+        overflow: hidden;
+        width: fit-content;
+        margin: 16px 0vw 0vw 1vw;
+    }
+
+    .search-input2 {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 10px;
+        width: 40vw;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    /* For the notification button */
+    .bell-icon {
+        font-size: 25px;
+        color: gray;
+        margin: 17px 0px 0px 15px;
+    }
+
+    /* For the favorite button */
+    .favorite-icon {
+        font-size: 25px;
+        display: block;
+        color: gray;
+        margin: 13px 0px 0px 10px;
+    }
+
+    /* For the avatar */
+    #avatar {
+        display: inline-block;
+        width: 45px;
+        height: fit-content;
+        background-color: rgb(245, 245, 245);
+        margin: 12px 0px 0px 10px;
+        border-radius: 50%;
+    }
+
+    /* For the account */
+    #accountName {
+        display: none;
+    }
+
+    #dropdown-basic-button-account {
+        display: none;
+    }
+
+    /* For the menu icon */
+    .menu-icon2 {
+        display: inline-block;
+        font-size: 20px;
+        padding-bottom: 5px;
+        transition: 250ms ease-in-out;
+        margin: 10px 20px 0px 5px;
+    }
+
+    /* For the dropdown */
+    .drop-down-item2 {
+        font-size: 1vw;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    #nav-bar-container2 {
+        width: 65%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-around;
+    }
+
+    #features-set {
+        display: flex;
+        flex-direction: row;  
+    }
+    
+    /* For the logo */
+    .logo2 {
+        border: solid;
+        width: 9vw;
+        height: 70px;
+        margin-left: 10px;
+    }
+
+    /* For the search bar */
+    .search-bar2 {
+        white-space: nowrap;
+        overflow: hidden;
+        width: fit-content;
+        margin: 16px 0vw 0vw 1vw;
+    }
+
+    .search-input2 {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 10px;
+        width: 38vw;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    /* For the notification button */
+    .bell-icon {
+        font-size: 25px;
+        color: gray;
+        margin: 17px 0px 0px 15px;
+    }
+
+    /* For the favorite button */
+    .favorite-icon {
+        font-size: 25px;
+        display: block;
+        color: gray;
+        margin: 13px 0px 0px 10px;
+    }
+
+    /* For the avatar */
+    #avatar {
+        display: inline-block;
+        width: 45px;
+        height: fit-content;
+        background-color: rgb(245, 245, 245);
+        margin: 12px 0px 0px 10px;
+        border-radius: 50%;
+    }
+
+    /* For the account */
+    #accountName {
+        display: none;
+    }
+
+    #dropdown-basic-button-account {
+        display: none;
+    }
+
+    /* For the menu icon */
+    .menu-icon2 {
+        display: inline-block;
+        font-size: 20px;
+        padding-bottom: 5px;
+        transition: 250ms ease-in-out;
+        margin: 10px 20px 0px 5px;
+    }
+
+    /* For the dropdown */
+    .drop-down-item2 {
+        font-size: 0.9vw;
+    }
+}
+
+@media only screen and (min-width: 1712px) {
+    #nav-bar-container2 {
+        width: 65%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-around;
+    }
+
+    #features-set {
+        display: flex;
+        flex-direction: row;  
+    }
+    
+    /* For the logo */
+    .logo2 {
+        border: solid;
+        width: 9vw;
+        height: 70px;
+        margin-left: 10px;
+    }
+
+    /* For the search bar */
+    .search-bar2 {
+        white-space: nowrap;
+        overflow: hidden;
+        width: fit-content;
+        margin: 16px 0vw 0vw 1vw;
+    }
+
+    .search-input2 {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 10px;
+        width: 40vw;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    /* For the notification button */
+    .bell-icon {
+        font-size: 25px;
+        color: gray;
+        margin: 17px 0px 0px 15px;
+    }
+
+    /* For the favorite button */
+    .favorite-icon {
+        font-size: 25px;
+        display: block;
+        color: gray;
+        margin: 13px 0px 0px 10px;
+    }
+
+    /* For the avatar */
+    #avatar {
+        display: inline-block;
+        width: 45px;
+        height: fit-content;
+        background-color: rgb(245, 245, 245);
+        margin: 12px 0px 0px 10px;
+        border-radius: 50%;
+    }
+
+    /* For the account */
+    #accountName {
+        display: none;
+    }
+
+    #dropdown-basic-button-account {
+        display: none;
+    }
+
+    /* For the menu icon */
+    .menu-icon2 {
+        display: inline-block;
+        font-size: 20px;
+        padding-bottom: 5px;
+        transition: 250ms ease-in-out;
+        margin: 10px 20px 0px 5px;
+    }
+
+    /* For the dropdown */
+    .drop-down-item2 {
+        font-size: 0.8vw;
+    }
+}

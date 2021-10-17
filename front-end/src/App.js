@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import SignIn from "./components/sign-in";
 import Authentication from "./components/authentication";
 import SignUp from "./components/sign-up";
-
+import PrivateProfile from "./components/private-profile";
 
 function App() {
   return (
@@ -16,7 +16,8 @@ function App() {
           {/* <Route path="/" component={Home} exact /> */}
           <Route path="/SignIn" component={SignIn} />
           <Route path="/Authentication" component={Authentication} />
-          <Route path="/SignUp" component={SignUp} />
+          <Route path="/Join" component={SignUp} />
+          <Route path="/Private Profile" component={PrivateProfile}/>
         </Switch>
       </div>
     </BrowserRouter>

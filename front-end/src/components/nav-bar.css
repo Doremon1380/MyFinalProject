@@ -11,6 +11,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     border-bottom: 1px solid rgb(235, 235, 235);
 }
 
+/* For the search bar */
 .search-form {
     border: 1px solid #ddd;
     transition: 200ms ease-in-out;
@@ -116,7 +117,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .drop-down-item {
         font-size: 2vw;
     }
-
 }
 
 @media only screen and (min-width: 600px) {
