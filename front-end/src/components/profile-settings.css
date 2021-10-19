@@ -1,0 +1,8 @@
+@media only screen and (max-width: 600px) {
+    /* For the container */
+    #profile-settings-container {
+        width: 100%;
+        margin: auto; 
+        margin-left: -12px;
+    }
+}

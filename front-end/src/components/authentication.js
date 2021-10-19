@@ -23,8 +23,8 @@ function Authentication() {
                     </button>
                 </div>
                 <p id="or"><span>OR</span></p>
-                <button id="sign-up-with-email"><a herf="#">Sign up with email</a></button>
-                <p>Already a member? <a href="#" id="sign-in">Sign in</a>.</p>
+                <button id="sign-up-with-email"><a href="/Join">Sign up with email</a></button>
+                <p>Already a member? <a href="/SignIn" id="sign-in">Sign in</a>.</p>
             </div>
         </>
     );

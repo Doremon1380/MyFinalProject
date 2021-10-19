@@ -24,7 +24,7 @@ function NavBar() {
             <button className="search-button" type="submit"><i className="bi bi-search"></i></button>
           </form>
         </div>
-        <button className="sign-in-button">Sign in</button>
+        <button className="sign-in-button"><a href="/SignIn">Sign in</a></button>
         <DropdownButton id="dropdown-basic-button" variant="" title={<i className="menu-icon"><FaBars /></i>}>
           <Dropdown.Item className="drop-down-item" href="#/">FoodShare</Dropdown.Item>
           <Dropdown.Divider />

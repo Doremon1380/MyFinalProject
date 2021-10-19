@@ -38,7 +38,7 @@ class SignUp extends React.Component {
                 <div id="sign-up-container">
                     <div id="flex-box">
                         <h1>Sign up with email</h1>
-                        <p id="for-member">Already a member?<a href="#"> Sign in</a>.</p>
+                        <p id="for-member">Already a member?<a href="/SignIn"> Sign in</a>.</p>
                     </div>
                     <form>
                         <div id="flex-box-2">

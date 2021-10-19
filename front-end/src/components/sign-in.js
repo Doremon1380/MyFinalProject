@@ -66,7 +66,7 @@ class SignIn extends React.Component {
             </div>
             <button id="sign-in-button">Sign in</button>
           </form>
-          <button id="for-new-users-button"><a herf="#">You are new? <span>Join for free!</span></a></button>
+          <button id="for-new-users-button">You are new?<a href="/Join"><span> Join for free!</span></a></button>
           <p>By signing in, you are agreeing to our <a href="#" id="terms-of-service">Terms of Service</a> and our <a href="#" id="privacy-policy">Privacy Policy</a>.</p>
         </div>
       </>

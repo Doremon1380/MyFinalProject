@@ -21,7 +21,7 @@ function SecondNavBar() {
             <div id="nav-bar-container2">
                 <a href="#"><img className="logo2" src={MyLogo} alt="Logo" /></a>
                 <div className="search-bar2">
-                    <form className="search-form2">
+                    <form className="search-form2"> 
                         <input className="search-input2" type="search" placeholder="Find a recipe" aria-label="Search" />
                         <button className="search-button2" type="submit"><i className="bi bi-search search"></i></button>
                     </form>
@@ -31,16 +31,16 @@ function SecondNavBar() {
                     <i className="bi bi-bell-fill bell-icon"></i>
                     <a href="#"><i className="favorite-icon"><FaHeart /></i></a>
                     <div id="for-account">
-                        <button id="avatar"><img alt="avatar" id="avatar-image"></img></button>
+                        <button id="avatar"><a href="/Private Profile"><img alt="avatar" id="avatar-image"></img></a></button>
                         <DropdownButton id="accountName" variant="" title="Account Name">
-                            <Dropdown.Item className="drop-down-item2" href="#/">My Profile</Dropdown.Item>
+                            <Dropdown.Item className="drop-down-item2" href="/Private Profile">My Profile</Dropdown.Item>
                             <Dropdown.Item className="drop-down-item2" href="#/">My Friends</Dropdown.Item>
                             <Dropdown.Item className="drop-down-item2" href="#/">My Shopping List</Dropdown.Item>
                             <Dropdown.Divider />
                             <Dropdown.Item className="drop-down-item2" href="#/">Logout</Dropdown.Item>
                         </DropdownButton>
                         <DropdownButton id="dropdown-basic-button-account" variant="" title={<i className="down-icon"><FaChevronDown /></i>}>
-                            <Dropdown.Item className="drop-down-item2" href="#/">My Profile</Dropdown.Item>
+                            <Dropdown.Item className="drop-down-item2" href="/Private Profile">My Profile</Dropdown.Item>
                             <Dropdown.Item className="drop-down-item2" href="#/">My Friends</Dropdown.Item>
                             <Dropdown.Item className="drop-down-item2" href="#/">My Shopping List</Dropdown.Item>
                             <Dropdown.Divider />
@@ -49,6 +49,8 @@ function SecondNavBar() {
                     </div>
                     <DropdownButton id="dropdown-basic-button-menu" variant="" title={<i className="menu-icon2"><FaBars /></i>}>
                         {/* Tìm cách hiển thị những dropdown.item nhỏ hơn bên trong những dropdown.item này */}
+                        <Dropdown.Item className="drop-down-item2" href="#/">FoodShare</Dropdown.Item>
+                        <Dropdown.Divider />
                         <Dropdown.Item className="drop-down-item2" href="#/">World Cuisine</Dropdown.Item>
                         <Dropdown.Divider />
                         <Dropdown.Item className="drop-down-item2" href="#/">Filter Recipes</Dropdown.Item>

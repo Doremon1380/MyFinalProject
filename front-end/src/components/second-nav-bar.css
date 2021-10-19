@@ -6,7 +6,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 /* For the navbar */
 #nav-bar2 {
-    background-color: rgb(245, 245, 245);
+    background-color: white;
     position: sticky;
     border-bottom: 1px solid rgb(235, 235, 235);
 }
@@ -36,26 +36,47 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     transition: 150ms ease-in-out;
 }
 
-.bell-icon {
-    font-size: 30px;
-    color: gray;
+/* For the search icon */
+.search-icon:hover {
+    color: rgb(199, 199, 199);
+}
+
+/* For the notification icon */
+.bell-icon:hover {
+    color: rgb(199, 199, 199);
 }
 
 /* For the favorite button */
-.favorite-icon {
-    font-size: 30px;
-    display: block;
-    color: gray;
-    margin-bottom: 10px;
+.favorite-icon:hover {
+    color: rgb(199, 199, 199);
 }
 
 /* For the group of 3 buttons */
 #for-account {
     display: flex;
+    border: solid;
+    width: fit-content;
+    background-color: rgb(245, 245, 245);
 }
 
+
 /* For the dropdown */
-    /* to remove the carpet */
+    /* to remove the carpet */  
+#accountName::after {
+    display: none; 
+}
+
+#accountName {
+    box-shadow: none;
+    height: 50px;
+    border-radius: 0px;
+    margin-top: -10px;
+}
+
+#accountName:hover {
+    background-color: rgb(216, 216, 216);
+}
+
 #dropdown-basic-button-account::after {
     display: none; 
 }
@@ -70,14 +91,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     background-color: rgb(172, 172, 172);
 }   
 
-#accountName::after {
-    display: none; 
-}
-
-#accountName {
-    box-shadow: none;
-}
-
 .drop-down-item2:focus {
     background-color: orange;  
     color: #fff;
@@ -90,6 +103,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 #dropdown-basic-button-menu {
     box-shadow: none;
+    width: 50px;
 }
 
 /* For the down icon */
@@ -110,20 +124,19 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         margin: auto;
         display: flex; 
         justify-content: space-between;
+        border: none;
     }
 
+    /* For the set of features */
     .features-set {
         display: flex;
-        flex-direction: row;  
-        
+        flex-direction: row;    
     }
     
     /* For the logo */
     .logo2 {
-        border: solid;
         width: 20vw;
         height: 70px;
-        margin-left: 10px;
     }
 
     /* For the search bar */
@@ -154,17 +167,42 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         margin: 13px 0px 0px 20px;
     }
 
+    /* For the account part */
+    #for-account {
+        border: none;
+        background-color: white;
+    }
+
     /* For the avatar */
     #avatar {
         display: inline-block;
-        width: 45px;
+        width: fit-content;
         height: fit-content;
-        background-color: rgb(245, 245, 245);
-        margin: 12px 0px 0px 20px;
-        border-radius: 50%;
+        background-color: white;
+        margin: 10px 5px 0px 15px;
+        border: none;
     }
 
-    /* For the account */
+    #avatar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #avatar-image {
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid;
+        height: 50px;
+        width: 50px;
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar-image:hover {
+        transform: scale(1.1);
+        transition: 250ms ease-in-out;
+    }
+
+    /* For the account name */
     #accountName {
         display: none;
     }
@@ -179,7 +217,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 20px;
         padding-bottom: 5px;
         transition: 250ms ease-in-out;
-        margin: 10px 10px 0px 10px;
+        margin: 10px 10px 0px -4px;
     }
 
     /* For the dropdown */
@@ -195,8 +233,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         margin: auto;
         display: flex; 
         justify-content: space-around;
+        border: none;
     }
 
+    /* For the set of features */
     .features-set {
         display: flex;
         flex-direction: row;  
@@ -204,7 +244,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     
     /* For the logo */
     .logo2 {
-        border: solid;
         width: 17vw;
         height: 70px;
         margin-left: 10px;
@@ -244,17 +283,42 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         margin: 13px 0px 0px 10px;
     }
 
+    /* For the account part */
+    #for-account {
+        border: none;
+        background-color: white;
+    }
+
     /* For the avatar */
     #avatar {
         display: inline-block;
-        width: 45px;
+        width: fit-content;
         height: fit-content;
-        background-color: rgb(245, 245, 245);
-        margin: 12px 0px 0px 10px;
-        border-radius: 50%;
+        background-color: white;
+        margin: 10px 5px 0px 10px;
+        border: none;
     }
 
-    /* For the account */
+    #avatar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #avatar-image {
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid;
+        height: 50px;
+        width: 50px;
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar-image:hover {
+        transform: scale(1.1);
+        transition: 250ms ease-in-out;
+    }
+
+    /* For the account name */
     #accountName {
         display: none;
     }
@@ -269,7 +333,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 20px;
         padding-bottom: 5px;
         transition: 250ms ease-in-out;
-        margin: 10px 20px 0px 5px;
+        margin: 10px 20px 0px -4px;
     }
 
     /* For the dropdown */
@@ -279,17 +343,20 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 @media only screen and (min-width: 768px) {
-     /* For the container */
-     #nav-bar-container2 {
-        width: 88%;
+    /* For the container */
+    #nav-bar-container2 {
+        width: 100%;
         margin: auto;
         display: flex; 
         justify-content: space-around;
+        border: none;
     }
 
+    /* For the set of features */
     #features-set {
         display: flex;
-        flex-direction: row;  
+        flex-direction: row; 
+        border: none;
     }
     
     /* For the logo */
@@ -297,7 +364,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         border: solid;
         width: 15vw;
         height: 70px;
-        margin-left: 10px;
+        margin-top: 5px;
     }
 
     /* For the search bar */
@@ -305,14 +372,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         white-space: nowrap;
         overflow: hidden;
         width: fit-content;
-        margin: 16px 0vw 0vw 2vw;
+        margin: 20px 2vw 0vw 2vw;
     }
 
     .search-input2 {
         border: none;
         outline: none;
         padding: 6px 10px 6px 10px;
-        width: 37vw;
+        width: 28vw;
     }
 
     .search-icon {
@@ -323,7 +390,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .bell-icon {
         font-size: 25px;
         color: gray;
-        margin: 17px 0px 0px 15px;
+        margin: 20px 0px 0px 0px;
     }
 
     /* For the favorite button */
@@ -331,26 +398,55 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 25px;
         display: block;
         color: gray;
-        margin: 13px 0px 0px 10px;
+        margin: 16px 0px 0px 10px;
+    }
+
+    /* For the account part */
+    #for-account {
+        background-color: rgb(245, 245, 245);
+        margin: 9px 0px 12px 12px;
+        height: fit-content;
+        width: fit-content;
     }
 
     /* For the avatar */
     #avatar {
         display: inline-block;
-        width: 45px;
-        height: fit-content;
+        width: 60px;
+        height: 60px;
         background-color: rgb(245, 245, 245);
-        margin: 12px 0px 0px 10px;
+        margin: 0px 0px 0px 0px;
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar:hover {
+        background-color: rgb(216, 216, 216);
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #avatar-image {
+        display: inline-block;
         border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-left: -1px;
     }
 
     /* For the account */
     #accountName {
-        display: none;
+        display: inline-block;
+        margin-top: 0px;
+        height: 60px;
     }
 
     #dropdown-basic-button-account {
-        display: none;
+        display: inline-block;
+        height: 60px;
     }
 
     /* For the menu icon */
@@ -359,7 +455,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 20px;
         padding-bottom: 5px;
         transition: 250ms ease-in-out;
-        margin: 10px 20px 0px 5px;
+        margin: 15px 20px 0px 5px;
     }
 
     /* For the dropdown */
@@ -369,14 +465,15 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 @media only screen and (min-width: 956px) {
-         /* For the container */
-     #nav-bar-container2 {
-        width: 80%;
+    /* For the container */
+    #nav-bar-container2 {
+        width: 85%;
         margin: auto;
         display: flex; 
         justify-content: space-around;
     }
 
+    /* For the set of features */
     #features-set {
         display: flex;
         flex-direction: row;  
@@ -395,14 +492,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         white-space: nowrap;
         overflow: hidden;
         width: fit-content;
-        margin: 16px 0vw 0vw 2vw;
+        margin: 20px 0vw 0vw 2vw;
     }
 
     .search-input2 {
         border: none;
         outline: none;
         padding: 6px 10px 6px 10px;
-        width: 39vw;
+        width: 25vw;
     }
 
     .search-icon {
@@ -413,7 +510,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .bell-icon {
         font-size: 25px;
         color: gray;
-        margin: 17px 0px 0px 15px;
+        margin: 20px 0px 0px 15px;
     }
 
     /* For the favorite button */
@@ -421,26 +518,55 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 25px;
         display: block;
         color: gray;
-        margin: 13px 0px 0px 10px;
+        margin: 16px 0px 0px 10px;
+    }
+
+    /* For the account part */
+    #for-account {
+        background-color: rgb(245, 245, 245);
+        margin: 9px 0px 12px 12px;
+        height: fit-content;
+        width: fit-content;
     }
 
     /* For the avatar */
     #avatar {
         display: inline-block;
-        width: 45px;
-        height: fit-content;
+        width: 60px;
+        height: 60px;
         background-color: rgb(245, 245, 245);
-        margin: 12px 0px 0px 10px;
+        margin: 0px 0px 0px 0px;
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar:hover {
+        background-color: rgb(216, 216, 216);
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #avatar-image {
+        display: inline-block;
         border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-left: -1px;
     }
 
     /* For the account */
     #accountName {
-        display: none;
+        display: inline-block;
+        margin-top: 0px;
+        height: 60px;
     }
 
     #dropdown-basic-button-account {
-        display: none;
+        display: inline-block;
+        height: 60px;
     }
 
     /* For the menu icon */
@@ -449,7 +575,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 20px;
         padding-bottom: 5px;
         transition: 250ms ease-in-out;
-        margin: 10px 20px 0px 5px;
+        margin: 15px 20px 0px 5px;
     }
 
     /* For the dropdown */
@@ -466,6 +592,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         justify-content: space-around;
     }
 
+    /* For the set of features */
     #features-set {
         display: flex;
         flex-direction: row;  
@@ -484,14 +611,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         white-space: nowrap;
         overflow: hidden;
         width: fit-content;
-        margin: 16px 0vw 0vw 1vw;
+        margin: 20px 0vw 0vw 1vw;
     }
 
     .search-input2 {
         border: none;
         outline: none;
         padding: 6px 10px 6px 10px;
-        width: 41vw;
+        width: 28vw;
     }
 
     .search-icon {
@@ -502,7 +629,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .bell-icon {
         font-size: 25px;
         color: gray;
-        margin: 17px 0px 0px 15px;
+        margin: 20px 0px 0px 15px;
     }
 
     /* For the favorite button */
@@ -510,26 +637,55 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 25px;
         display: block;
         color: gray;
-        margin: 13px 0px 0px 10px;
+        margin: 16px 0px 0px 10px;
+    }
+
+    /* For the account part */
+    #for-account {
+        background-color: rgb(245, 245, 245);
+        margin: 9px 0px 12px 12px;
+        height: fit-content;
+        width: fit-content;
     }
 
     /* For the avatar */
     #avatar {
         display: inline-block;
-        width: 45px;
-        height: fit-content;
+        width: 60px;
+        height: 60px;
         background-color: rgb(245, 245, 245);
-        margin: 12px 0px 0px 10px;
+        margin: 0px 0px 0px 0px;
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar:hover {
+        background-color: rgb(216, 216, 216);
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #avatar-image {
+        display: inline-block;
         border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-left: -1px;
     }
 
     /* For the account */
     #accountName {
-        display: none;
+        display: inline-block;
+        margin-top: 0px;
+        height: 60px;
     }
 
     #dropdown-basic-button-account {
-        display: none;
+        display: inline-block;
+        height: 60px;
     }
 
     /* For the menu icon */
@@ -538,7 +694,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 20px;
         padding-bottom: 5px;
         transition: 250ms ease-in-out;
-        margin: 10px 20px 0px 5px;
+        margin: 15px 20px 0px 5px;
     }
 
     /* For the dropdown */
@@ -555,6 +711,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         justify-content: space-around;
     }
 
+    /* For the set of features */
     #features-set {
         display: flex;
         flex-direction: row;  
@@ -573,14 +730,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         white-space: nowrap;
         overflow: hidden;
         width: fit-content;
-        margin: 16px 0vw 0vw 1vw;
+        margin: 20px 0vw 0vw 1vw;
     }
 
     .search-input2 {
         border: none;
         outline: none;
         padding: 6px 10px 6px 10px;
-        width: 40vw;
+        width: 29vw;
     }
 
     .search-icon {
@@ -591,7 +748,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .bell-icon {
         font-size: 25px;
         color: gray;
-        margin: 17px 0px 0px 15px;
+        margin: 20px 0px 0px 15px;
     }
 
     /* For the favorite button */
@@ -599,26 +756,55 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 25px;
         display: block;
         color: gray;
-        margin: 13px 0px 0px 10px;
+        margin: 16px 0px 0px 10px;
+    }
+
+    /* For the account part */
+    #for-account {
+        background-color: rgb(245, 245, 245);
+        margin: 9px 0px 12px 12px;
+        height: fit-content;
+        width: fit-content;
     }
 
     /* For the avatar */
     #avatar {
         display: inline-block;
-        width: 45px;
-        height: fit-content;
+        width: 60px;
+        height: 60px;
         background-color: rgb(245, 245, 245);
-        margin: 12px 0px 0px 10px;
+        margin: 0px 0px 0px 0px;
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar:hover {
+        background-color: rgb(216, 216, 216);
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #avatar-image {
+        display: inline-block;
         border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-left: -1px;
     }
 
     /* For the account */
     #accountName {
-        display: none;
+        display: inline-block;
+        margin-top: 0px;
+        height: 60px;
     }
 
     #dropdown-basic-button-account {
-        display: none;
+        display: inline-block;
+        height: 60px;
     }
 
     /* For the menu icon */
@@ -627,7 +813,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 20px;
         padding-bottom: 5px;
         transition: 250ms ease-in-out;
-        margin: 10px 20px 0px 5px;
+        margin: 15px 20px 0px 5px;
     }
 
     /* For the dropdown */
@@ -644,6 +830,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         justify-content: space-around;
     }
 
+    /* For the set of features */
     #features-set {
         display: flex;
         flex-direction: row;  
@@ -654,7 +841,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         border: solid;
         width: 9vw;
         height: 70px;
-        margin-left: 10px;
+        margin-left: 15px;
     }
 
     /* For the search bar */
@@ -662,14 +849,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         white-space: nowrap;
         overflow: hidden;
         width: fit-content;
-        margin: 16px 0vw 0vw 1vw;
+        margin: 20px 0vw 0vw 1vw;
     }
 
     .search-input2 {
         border: none;
         outline: none;
         padding: 6px 10px 6px 10px;
-        width: 38vw;
+        width: 28vw;
     }
 
     .search-icon {
@@ -680,7 +867,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .bell-icon {
         font-size: 25px;
         color: gray;
-        margin: 17px 0px 0px 15px;
+        margin: 20px 0px 0px 15px;
     }
 
     /* For the favorite button */
@@ -688,26 +875,55 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 25px;
         display: block;
         color: gray;
-        margin: 13px 0px 0px 10px;
+        margin: 16px 0px 0px 10px;
+    }
+
+    /* For the account part */
+    #for-account {
+        background-color: rgb(245, 245, 245);
+        margin: 9px 0px 12px 12px;
+        height: fit-content;
+        width: fit-content;
     }
 
     /* For the avatar */
     #avatar {
         display: inline-block;
-        width: 45px;
-        height: fit-content;
+        width: 60px;
+        height: 60px;
         background-color: rgb(245, 245, 245);
-        margin: 12px 0px 0px 10px;
+        margin: 0px 0px 0px 0px;
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar:hover {
+        background-color: rgb(216, 216, 216);
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #avatar-image {
+        display: inline-block;
         border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-left: -1px;
     }
 
     /* For the account */
     #accountName {
-        display: none;
+        display: inline-block;
+        margin-top: 0px;
+        height: 60px;
     }
 
     #dropdown-basic-button-account {
-        display: none;
+        display: inline-block;
+        height: 60px;
     }
 
     /* For the menu icon */
@@ -716,7 +932,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 20px;
         padding-bottom: 5px;
         transition: 250ms ease-in-out;
-        margin: 10px 20px 0px 5px;
+        margin: 15px 20px 0px 5px;
     }
 
     /* For the dropdown */
@@ -733,6 +949,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         justify-content: space-around;
     }
 
+    /* For the set of features */
     #features-set {
         display: flex;
         flex-direction: row;  
@@ -743,7 +960,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         border: solid;
         width: 9vw;
         height: 70px;
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     /* For the search bar */
@@ -751,14 +968,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         white-space: nowrap;
         overflow: hidden;
         width: fit-content;
-        margin: 16px 0vw 0vw 1vw;
+        margin: 20px 0vw 0vw 1vw;
     }
 
     .search-input2 {
         border: none;
         outline: none;
         padding: 6px 10px 6px 10px;
-        width: 40vw;
+        width: 30vw;
     }
 
     .search-icon {
@@ -769,7 +986,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .bell-icon {
         font-size: 25px;
         color: gray;
-        margin: 17px 0px 0px 15px;
+        margin: 20px 0px 0px 15px;
     }
 
     /* For the favorite button */
@@ -777,26 +994,55 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 25px;
         display: block;
         color: gray;
-        margin: 13px 0px 0px 10px;
+        margin: 16px 0px 0px 10px;
+    }
+
+    /* For the account part */
+    #for-account {
+        background-color: rgb(245, 245, 245);
+        margin: 9px 0px 12px 12px;
+        height: fit-content;
+        width: fit-content;
     }
 
     /* For the avatar */
     #avatar {
         display: inline-block;
-        width: 45px;
-        height: fit-content;
+        width: 60px;
+        height: 60px;
         background-color: rgb(245, 245, 245);
-        margin: 12px 0px 0px 10px;
+        margin: 0px 0px 0px 0px;
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar:hover {
+        background-color: rgb(216, 216, 216);
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #avatar-image {
+        display: inline-block;
         border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-left: -1px;
     }
 
     /* For the account */
     #accountName {
-        display: none;
+        display: inline-block;
+        margin-top: 0px;
+        height: 60px;
     }
 
     #dropdown-basic-button-account {
-        display: none;
+        display: inline-block;
+        height: 60px;
     }
 
     /* For the menu icon */
@@ -805,7 +1051,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 20px;
         padding-bottom: 5px;
         transition: 250ms ease-in-out;
-        margin: 10px 20px 0px 5px;
+        margin: 15px 20px 0px 5px;
     }
 
     /* For the dropdown */

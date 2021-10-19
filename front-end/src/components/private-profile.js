@@ -13,31 +13,31 @@ function PrivateProfile() {
     return (
         <>
             <SecondNavBar />
-            <Container id="container">
+            <Container id="private-profile-container">
                 <div id="top">
                     <div id="user-account">
                         <img alt="Avatar" id="avatar-top"></img>
                         <div id="account-related">
                             <p id="account-name">Account Name</p>
                             <div id="icons-and-data">
-                                <i className="bi bi-people-fill followers"></i>
-                                <i className="heart"><FaHeart /></i>
-                                <i className="dishes"><FaUtensils /></i>
+                                <i className="bi bi-people-fill followers" title="My Followers"></i>
+                                <i className="heart" title="My Favorites"><FaHeart /></i>
+                                <i className="dishes" title="Recipes I've Made"><FaUtensils /></i>
                             </div>
                         </div>
                     </div>
                     <DropdownButton id="dropdown-basic-button-settings" variant="" title={<i className="bi bi-gear-fill"></i>}>
-                        <a herf="#"><Dropdown.Item className="drop-down-item2" href="#/">Edit profile</Dropdown.Item></a>
+                        <Dropdown.Item className="drop-down-item2" href="/Profile Settings">Edit profile</Dropdown.Item>
                         <Dropdown.Divider />
-                        <a herf="#"><Dropdown.Item className="drop-down-item2" href="#/">See public profile</Dropdown.Item></a>
+                        <Dropdown.Item className="drop-down-item2" href="#/">See public profile</Dropdown.Item>
                         <Dropdown.Divider />
-                        <a herf="#"><Dropdown.Item className="drop-down-item2" href="#/">Notification setting</Dropdown.Item></a>
+                        <Dropdown.Item className="drop-down-item2" href="#/">Notification setting</Dropdown.Item>
                         <Dropdown.Divider />
-                        <a herf="#"><Dropdown.Item className="drop-down-item2" href="#/">Account setting</Dropdown.Item></a>
+                        <Dropdown.Item className="drop-down-item2" href="#/">Account setting</Dropdown.Item>
                     </DropdownButton>
                 </div>
                 <nav id="group-buttons">
-                    <a href="#"><button className="group-button selected-button" >About Me</button></a>
+                    <a href="/Private Profile"><button className="group-button selected-button" >About Me</button></a>
                     <a href="#"><button className="group-button">My Favorites</button></a>
                     <a href="#"><button className="group-button">My Friends</button></a>
                     <a href="#"><button className="group-button">I Made It</button></a>
@@ -60,7 +60,7 @@ function PrivateProfile() {
                     </div>
                 </div>
             </Container>
-            <button id="edit-profile-button">Edit public profile</button>
+            <a href="/Profile Settings" id="go-to-profile-settings"><button id="edit-profile-button">Edit public profile</button></a>
         </>
     );
 }

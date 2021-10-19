@@ -43,6 +43,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     transition: 150ms ease-in-out; /* dùng để tạo hiệu ứng cho nút sau khi di chuột vào nút */
 }
 
+.sign-in-button a {
+    text-decoration: none;
+    color: white;
+}
+
 /* For the dropdown */
     /* to remove the carpet */
 #dropdown-basic-button::after {
@@ -477,7 +482,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
        background-color: orange;
        border-radius: 4px;
        font-size: 22px;
-       color: white;
        transition: 150ms ease-in-out; /* dùng để tạo đảo ngược hiệu ứng cho nút sau khi di chuột khỏi nút */
        margin: 0px 0px 0px 20px;
    }

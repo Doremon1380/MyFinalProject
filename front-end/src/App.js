@@ -7,6 +7,7 @@ import SignIn from "./components/sign-in";
 import Authentication from "./components/authentication";
 import SignUp from "./components/sign-up";
 import PrivateProfile from "./components/private-profile";
+import ProfileSettings from "./components/profile-settings";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route path="/SignIn" component={SignIn} />
           <Route path="/Authentication" component={Authentication} />
           <Route path="/Join" component={SignUp} />
-          <Route path="/Private Profile" component={PrivateProfile}/>
+          <Route path="/Private Profile" component={PrivateProfile} />
+          <Route path="/Profile Settings" component={ProfileSettings} />
         </Switch>
       </div>
     </BrowserRouter>

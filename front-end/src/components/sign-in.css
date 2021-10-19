@@ -3,7 +3,6 @@
     width: 560px;
     margin: auto;
     margin-top: 40px;
-    border: solid;
 }
 
 h1 {
@@ -168,6 +167,10 @@ h2 {
     width: 100%;
     height: 50px;
     color: black;
+}
+
+#for-new-users-button a {
+    text-decoration: none;
 }
 
 #for-new-users-button span {

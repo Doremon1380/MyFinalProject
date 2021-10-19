@@ -1,7 +1,7 @@
 
 @media only screen and (max-width: 600px) {
     /* For the container */
-    #container {
+    #private-profile-container {
         width: 100%;
         margin: auto; 
         margin-left: -12px;
@@ -142,6 +142,10 @@
     }
 
     /* For the edit profile button */
+    #go-to-profile-settings {
+        text-decoration: none;
+    }
+
     #edit-profile-button {
         display: block;
         margin: auto;
@@ -156,7 +160,7 @@
 
 @media only screen and (min-width: 600px) {
         /* For the container */
-    #container {
+    #private-profile-container {
         width: 100%;
         margin: auto; 
         margin-left: -12px;
@@ -296,6 +300,10 @@
     }
 
     /* For the edit profile button */
+    #go-to-profile-settings {
+        text-decoration: none;
+    }
+
     #edit-profile-button {
         display: block;
         margin: auto;
@@ -309,7 +317,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-    #container {
+    #private-profile-container {
         width: 100%;
         margin: auto; 
         margin-left: -12px;
@@ -448,6 +456,10 @@
     }
 
     /* For the edit profile button */
+    #go-to-profile-settings {
+        text-decoration: none;
+    }
+
     #edit-profile-button {
         display: block;
         margin: auto;
@@ -461,7 +473,7 @@
 }
 
 @media only screen and (min-width: 956px) {
-    #container {
+    #private-profile-container {
         width: 70%;
         margin: auto;
     }
@@ -599,6 +611,10 @@
     }
 
     /* For the edit profile button */
+    #go-to-profile-settings {
+        text-decoration: none;
+    }
+
     #edit-profile-button {
         display: block;
         margin: auto;
@@ -612,7 +628,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    #container {
+    #private-profile-container {
         width: 60%;
         margin: auto;
     }
@@ -750,6 +766,10 @@
     }
 
     /* For the edit profile button */
+    #go-to-profile-settings {
+        text-decoration: none;
+    }
+
     #edit-profile-button {
         display: block;
         margin: auto;
@@ -763,7 +783,7 @@
 }
 
 @media only screen and (min-width: 1400px) {
-    #container {
+    #private-profile-container {
         width: 60%;
         margin: auto;
     }
@@ -901,6 +921,10 @@
     }
 
     /* For the edit profile button */
+    #go-to-profile-settings {
+        text-decoration: none;
+    }
+
     #edit-profile-button {
         display: block;
         margin: auto;
@@ -914,7 +938,7 @@
 }
 
 @media only screen and (min-width: 1600px) {
-    #container {
+    #private-profile-container {
         width: 64%;
         margin: auto;
     }
@@ -1052,6 +1076,10 @@
     }
 
     /* For the edit profile button */
+    #go-to-profile-settings {
+        text-decoration: none;
+    }
+
     #edit-profile-button {
         display: block;
         margin: auto;
@@ -1065,7 +1093,7 @@
 }
 
 @media only screen and (min-width: 1712px) {
-    #container {
+    #private-profile-container {
         width: 65%;
         margin: auto;
     }
@@ -1203,6 +1231,10 @@
     }
 
     /* For the edit profile button */
+    #go-to-profile-settings {
+        text-decoration: none;
+    }
+    
     #edit-profile-button {
         display: block;
         margin: auto;

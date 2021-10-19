@@ -1,0 +1,100 @@
+@media only screen and (max-width: 600px) {
+    #top {
+        display: flex;
+        height: 130px;
+        width: 100vw;
+        background-image: url("top_background.jpg");
+        background-repeat: no-repeat;
+        justify-content: space-between;
+    }
+
+    /* For the user account */
+    #user-account {
+        display: flex;
+    }
+
+    /* For the avatar-top */
+    #avatar-top {
+        border: solid;
+        border-radius: 50%;
+        height: 80px;
+        width:  80px;
+        margin-top: 30px;
+        margin-left: 10px;
+        color: rgb(226, 226, 226);
+    }
+    
+    /* For the account-related part */
+    #account-related {
+        display: flex;
+        flex-direction: column;
+        margin: 35px 0px 0px 10px;
+        height: 60px;
+        width: 200px;
+        color: rgb(226, 226, 226);
+       
+    }
+
+    #account-name {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    #icons-and-data {
+        display: block;
+        width: 200px;
+        margin-top: -15px;
+    }
+
+    .followers {
+        font-size: 20px;
+    }
+    
+    .heart {
+        display: inline-block;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    .dishes {
+        display: inline-block;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    /* For the dropdown settings button */
+    #dropdown-basic-button-settings {
+        font-size: 40px;
+        color: rgb(226, 226, 226);
+        box-shadow: none;
+    }
+
+    #dropdown-basic-button-settings::after {
+        display: none;
+    }
+
+    /* For the group buttons */
+    #group-buttons {
+        overflow: auto;
+        white-space: nowrap;
+        border: none;
+        width: 100vw;
+    }
+
+    .group-button {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 130px;
+    }
+
+    .selected-button {
+        color: white;
+        background-color: rgb(255, 123, 0);
+    }
+
+    .last-button {
+        width: 170px;
+    }
+}
+
