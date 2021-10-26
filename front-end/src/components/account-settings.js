@@ -44,6 +44,25 @@ function AccountSettings() {
                     </button>
                 </div>
             </div>
+            <form id="edit-account-features">
+                <div>
+                    <h1>Account Settings</h1>
+                    <label>Email Address</label><br />
+                    <input placeholder="Email address"></input>
+                    <h2>Update your password</h2>
+                    <p>Please provide a password with at least 6 characters. Your password must include at least 1 uppercase letter or special character.</p>
+                    <label>Current Password</label><br />
+                    <input placeholder="Password"></input><br />
+                    <label>New Password</label><br />
+                    <input placeholder="New Password"></input><br />
+                    <label>Confirm  Password</label><br />
+                    <input placeholder="Confirm Password"></input>
+                </div>
+                <div id="edit-account-bottom-buttons">
+                    <button id="edit-account-save-button">Save</button>
+                    <button id="edit-account-cancel-button">Cancel</button>
+                </div>
+            </form>
         </>
     );
 };

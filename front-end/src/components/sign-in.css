@@ -12,8 +12,11 @@ h1 {
 
 h2 {
     color: rgb(235, 152, 0);
-    margin-top: 10px;
     font-size: 32px;
+}
+
+#flex-box + h2 {
+    margin-top: 10px;
 }
 
 #flex-box {

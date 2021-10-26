@@ -840,7 +840,7 @@
 @media only screen and (min-width: 1600px) {
     /* For the container */
     #notification-settings-container {
-        width: 60%;
+        width: 64%;
         margin: auto; 
     }
 
@@ -850,7 +850,7 @@
         display: flex;
         justify-content: space-between;
         border: none;
-        width: 58.5vw;
+        width: 62.5vw;
     }
 
     /* For the left side group buttons */
@@ -911,7 +911,7 @@
     /* For the notification-settings form */
     #notification-settings-options {
         margin-top: 16px;
-        margin-right: -22vw;
+        margin-right: -18vw;
     }
 
     /* For the checkbox */

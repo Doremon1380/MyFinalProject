@@ -37,7 +37,7 @@ function NotificationSettings() {
                         </a>
                     </button>
                     <button className="left-side-button1">
-                        <a href="/#" className="left-button-link1">
+                        <a href="/Account Settings" className="left-button-link1">
                             <i><FaUserCog /></i>
                             <p className="left-side-button-title1">Account settings</p>
                         </a>

@@ -37,7 +37,7 @@ function ProfileSettings() {
                         </a>
                     </button>
                     <button className="left-side-button">
-                        <a href="/#" className="left-button-link">
+                        <a href="/Account Settings" className="left-button-link">
                             <i><FaUserCog /></i>
                             <p className="left-side-button-title">Account settings</p>
                         </a>
@@ -60,7 +60,7 @@ function ProfileSettings() {
                     <input placeholder="i.e. Doremon1380" className="edit-profile-input"></input><br />
                     <p className="header">Location</p>
                     <label className="edit-profile-label">Country</label><br />
-                    <select>
+                    <select id="select-country">
                         <option value="none" selected>[None Selected]</option>
                         <optgroup label="A">
                             <option value="Afghanistan">Afghanistan</option>
@@ -367,9 +367,9 @@ function ProfileSettings() {
                     <input placeholder="Paste the link to your Twitter" className="edit-profile-input"></input><br />
                     <label className="edit-profile-label">Personal blog</label><br />
                     <input placeholder="Paste the link to your Twitter" className="edit-profile-input"></input><br />
-                    <div id="bottom-buttons">
-                        <button id="save-button">Save</button>
-                        <button id="cancel-button">Cancel</button>
+                    <div id="edit-profile-bottom-buttons">
+                        <button id="edit-profile-save-button">Save</button>
+                        <button id="edit-profile-cancel-button">Cancel</button>
                     </div>
                 </form>
             </div>

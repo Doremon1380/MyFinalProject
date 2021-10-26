@@ -138,7 +138,7 @@
     }
 
     /* For the select tag*/
-    select {
+    #select-country {
         outline: none;
         border: 1px solid rgb(235, 235, 235);
         width: 88vw;
@@ -147,19 +147,19 @@
         padding: 6px 10px 6px 10px;
     }
 
-    select:hover {
+    #select-country:hover {
         border: 1px solid #aaa;
         transition: 200ms ease-in-out;
     }
 
     /* For the bottom buttons */
-    #bottom-buttons {
+    #edit-profile-bottom-buttons {
         display: flex;
         width: 88vw;
         margin-bottom: 20px;
     }
 
-    #save-button {
+    #edit-profile-save-button {
         height: 45px;
         width: 50vw;
         margin: 25px 10px 0px 0px;
@@ -169,12 +169,12 @@
         transition: 200ms ease-in-out;
     }
 
-    #save-button:hover {
+    #edit-profile-save-button:hover {
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
 
-    #cancel-button {
+    #edit-profile-cancel-button {
         height: 45px;
         width: 50vw;
         margin: 25px 0px 0px 0px;
@@ -184,7 +184,7 @@
         transition: 200ms ease-in-out;
     }
     
-    #cancel-button:hover {
+    #edit-profile-cancel-button:hover {
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
@@ -268,7 +268,7 @@
     }
 
     /* For the select tag*/
-    select {
+    #select-country {
         outline: none;
         border: 1px solid rgb(235, 235, 235);
         width: 91vw;
@@ -277,7 +277,7 @@
         padding: 6px 10px 6px 10px;
     }
 
-    select:hover {
+    #select-country:hover {
         border: 1px solid #aaa;
         transition: 200ms ease-in-out;
     }
@@ -289,9 +289,9 @@
         margin-bottom: 20px;
     }
 
-    #save-button {
+    #edit-profile-save-button {
         height: 45px;
-        width: 50vw;
+        width: 44.7vw;
         margin: 25px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -299,14 +299,14 @@
         transition: 200ms ease-in-out;
     }
 
-    #save-button:hover {
+    #edit-profile-save-button:hover {
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
 
-    #cancel-button {
+    #edit-profile-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 44.7vw;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -314,7 +314,7 @@
         transition: 200ms ease-in-out;
     }
     
-    #cancel-button:hover {
+    #edit-profile-cancel-button:hover {
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
@@ -398,7 +398,7 @@
     }
 
     /* For the select tag*/
-    select {
+    #select-country {
         outline: none;
         border: 1px solid rgb(235, 235, 235);
         width: 92vw;
@@ -407,19 +407,19 @@
         padding: 6px 10px 6px 10px;
     }
 
-    select:hover {
+    #select-country:hover {
         border: 1px solid #aaa;
         transition: 200ms ease-in-out;
     }
 
     /* For the bottom buttons */
-    #bottom-buttons {
+    #edit-profile-bottom-buttons {
         display: flex;
         width: 92vw;
         margin-bottom: 20px;
     }
 
-    #save-button {
+    #edit-profile-save-button {
         height: 45px;
         width: 50vw;
         margin: 25px 10px 0px 0px;
@@ -429,12 +429,12 @@
         transition: 200ms ease-in-out;
     }
 
-    #save-button:hover {
+    #edit-profile-save-button:hover {
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
 
-    #cancel-button {
+    #edit-profile-cancel-button {
         height: 45px;
         width: 50vw;
         margin: 25px 0px 0px 0px;
@@ -444,25 +444,25 @@
         transition: 200ms ease-in-out;
     }
     
-    #cancel-button:hover {
+    #edit-profile-cancel-button:hover {
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
 }
 
 @media only screen and (min-width: 956px) {
+    /* For the container */
+    #profile-settings-container {
+        width: 70%;
+        margin: auto;
+    }
+
     /* For the edit-profile form */
     #edit-profile {
         margin: auto;
         margin-top: 20px;
         border: none;
         width: fit-content;
-    }
-
-    /* For the container */
-    #profile-settings-container {
-        width: 70%;
-        margin: auto;
     }
 
     /* For the left side group buttons */
@@ -544,7 +544,7 @@
     }
 
     /* For the select tag*/
-    select {
+    #select-country {
         outline: none;
         border: 1px solid rgb(235, 235, 235);
         width: 66.8vw;
@@ -553,19 +553,19 @@
         padding: 6px 10px 6px 10px;
     }
 
-    select:hover {
+    #select-country:hover {
         border: 1px solid #aaa;
         transition: 200ms ease-in-out;
     }
 
     /* For the bottom buttons */
-    #bottom-buttons {
+    #edit-profile-bottom-buttons {
         display: flex;
         width: 66.8vw;
         margin-bottom: 20px;
     }
 
-    #save-button {
+    #edit-profile-save-button {
         height: 45px;
         width: 50vw;
         margin: 25px 10px 0px 0px;
@@ -575,12 +575,12 @@
         transition: 200ms ease-in-out;
     }
 
-    #save-button:hover {
+    #edit-profile-save-button:hover {
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
 
-    #cancel-button {
+    #edit-profile-cancel-button {
         height: 45px;
         width: 50vw;
         margin: 25px 0px 0px 0px;
@@ -590,25 +590,25 @@
         transition: 200ms ease-in-out;
     }
     
-    #cancel-button:hover {
+    #edit-profile-cancel-button:hover {
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
 }
 
 @media only screen and (min-width: 1200px) {
+    /* For the container */
+    #profile-settings-container {
+        width: 60%;
+        margin: auto;
+    }
+
     /* For the edit-profile form */
     #edit-profile {
         margin: auto;
         margin-top: 20px;
         border: none;
         width: fit-content;
-    }
-
-    /* For the container */
-    #profile-settings-container {
-        width: 60%;
-        margin: auto;
     }
 
     /* For the left side group buttons */
@@ -681,7 +681,7 @@
     }
 
     /* For the select tag*/
-    select {
+    #select-country {
         outline: none;
         border: 1px solid rgb(235, 235, 235);
         width: 57.3vw;
@@ -690,20 +690,20 @@
         padding: 6px 10px 6px 10px;
     }
 
-    select:hover {
+    #select-country:hover {
         border: 1px solid #aaa;
         transition: 200ms ease-in-out;
     }
 
     /* For the bottom buttons */
-    #bottom-buttons {
+    #edit-profile-bottom-buttons {
         display: flex;
         width: 57vw;
         margin-bottom: 20px;
         margin-left: 3px;
     }
 
-    #save-button {
+    #edit-profile-save-button {
         height: 45px;
         width: 50vw;
         margin: 25px 10px 0px -3px;
@@ -713,12 +713,12 @@
         transition: 200ms ease-in-out;
     }
 
-    #save-button:hover {
+    #edit-profile-save-button:hover {
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
 
-    #cancel-button {
+    #edit-profile-cancel-button {
         height: 45px;
         width: 50vw;
         margin: 25px 0px 0px 0px;
@@ -728,13 +728,19 @@
         transition: 200ms ease-in-out;
     }
     
-    #cancel-button:hover {
+    #edit-profile-cancel-button:hover {
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
 }
 
 @media only screen and (min-width: 1400px) {
+    /* For the container */
+    #profile-settings-container {
+        width: 60%;
+        margin: auto;
+    }
+
     /* For the edit-profile form */
     #edit-profile {
         margin: auto;
@@ -743,13 +749,7 @@
         width: fit-content;
     }
 
-    /* For the container */
-    #profile-settings-container {
-        width: 60%;
-        margin: auto;
-    }
-
-        /* For the left side group buttons */
+    /* For the left side group buttons */
     #left-side-group-buttons {
         display: none;
     }
@@ -819,7 +819,7 @@
     }
 
     /* For the select tag*/
-    select {
+    #select-country {
         outline: none;
         border: 1px solid rgb(235, 235, 235);
         width: 57.7vw;
@@ -828,20 +828,20 @@
         padding: 6px 10px 6px 10px;
     }
 
-    select:hover {
+    #select-country:hover {
         border: 1px solid #aaa;
         transition: 200ms ease-in-out;
     }
 
     /* For the bottom buttons */
-    #bottom-buttons {
+    #edit-profile-bottom-buttons {
         display: flex;
         width: 57.7vw;
         margin-bottom: 20px;
         margin-left: 0px;
     }
 
-    #save-button {
+    #edit-profile-save-button {
         height: 45px;
         width: 50vw;
         margin: 25px 10px 0px 0px;
@@ -851,12 +851,12 @@
         transition: 200ms ease-in-out;
     }
 
-    #save-button:hover {
+    #edit-profile-save-button:hover {
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
 
-    #cancel-button {
+    #edit-profile-cancel-button {
         height: 45px;
         width: 50vw;
         margin: 25px 0px 0px 0px;
@@ -866,13 +866,19 @@
         transition: 200ms ease-in-out;
     }
     
-    #cancel-button:hover {
+    #edit-profile-cancel-button:hover {
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
 }
 
 @media only screen and (min-width: 1600px) {
+    /* For the container */
+    #profile-settings-container {
+        width: 64%;
+        margin: auto;
+    }
+
     /* For the edit-profile form */
     #edit-profile {
         margin: auto;
@@ -881,17 +887,11 @@
         width: fit-content;
     }
 
-    /* For the container */
-    #profile-settings-container {
-        width: 60%;
-        margin: auto;
-    }
-
     /* For the left side group buttons */
     #left-side-group-buttons {
         display: flex;
         flex-direction: column;
-        margin-right: 2.4vw;
+        margin-right: 2.7vw;
         width: 15.5vw;
         border: none;
     }
@@ -944,7 +944,7 @@
     /* For the edit photo buttons */
     #edit-photo-buttons {
         display: flex;
-        width: 40vw;
+        width: 43.7vw;
     }
 
     #edit-profile-photo {
@@ -994,7 +994,7 @@
     .edit-profile-input {
         outline: none;
         border: 1px solid rgb(235, 235, 235);
-        width: 40vw;
+        width: 43.7vw;
         height: 50px;
         transition: 200ms ease-in-out;
         padding: 6px 10px 6px 10px;
@@ -1006,28 +1006,28 @@
     }
 
     /* For the select tag*/
-    select {
+    #select-country {
         outline: none;
         border: 1px solid rgb(235, 235, 235);
-        width: 40vw;
+        width: 43.7vw;
         height: 50px;
         transition: 200ms ease-in-out;
         padding: 6px 10px 6px 10px;
     }
 
-    select:hover {
+    #select-country:hover {
         border: 1px solid #aaa;
         transition: 200ms ease-in-out;
     }
 
     /* For the bottom buttons */
-    #bottom-buttons {
+    #edit-profile-bottom-buttons {
         display: flex;
-        width: 40vw;
+        width: 43.7vw;
         margin-bottom: 20px;
     }
 
-    #save-button {
+    #edit-profile-save-button {
         height: 45px;
         width: 50vw;
         margin: 25px 10px 0px 0px;
@@ -1037,12 +1037,12 @@
         transition: 200ms ease-in-out;
     }
 
-    #save-button:hover {
+    #edit-profile-save-button:hover {
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
 
-    #cancel-button {
+    #edit-profile-cancel-button {
         height: 45px;
         width: 50vw;
         margin: 25px 0px 0px 0px;
@@ -1052,13 +1052,19 @@
         transition: 200ms ease-in-out;
     }
     
-    #cancel-button:hover {
+    #edit-profile-cancel-button:hover {
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
 }
 
 @media only screen and (min-width: 1712px) {
+    /* For the container */
+    #profile-settings-container {
+        width: 65%;
+        margin: auto;
+    }
+
     /* For the edit-profile form */
     #edit-profile {
         margin: auto;
@@ -1067,17 +1073,11 @@
         width: fit-content;
     }
 
-    /* For the container */
-    #profile-settings-container {
-        width: 65%;
-        margin: auto;
-    }
-
     /* For the left side group buttons */
     #left-side-group-buttons {
         display: flex;
         flex-direction: column;
-        margin-right: 2.5vw;
+        margin-right: 2.4vw;
         width: 15.5vw;
         border: none;
     }
@@ -1192,7 +1192,7 @@
     }
 
     /* For the select tag*/
-    select {
+    #select-country {
         outline: none;
         border: 1px solid rgb(235, 235, 235);
         width: 45.1vw;
@@ -1201,19 +1201,19 @@
         padding: 6px 10px 6px 10px;
     }
 
-    select:hover {
+    #select-country:hover {
         border: 1px solid #aaa;
         transition: 200ms ease-in-out;
     }
 
     /* For the bottom buttons */
-    #bottom-buttons {
+    #edit-profile-bottom-buttons {
         display: flex;
         width: 45.1vw;
         margin-bottom: 20px;
     }
 
-    #save-button {
+    #edit-profile-save-button {
         height: 45px;
         width: 50vw;
         margin: 25px 10px 0px 0px;
@@ -1223,12 +1223,12 @@
         transition: 200ms ease-in-out;
     }
 
-    #save-button:hover {
+    #edit-profile-save-button:hover {
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
 
-    #cancel-button {
+    #edit-profile-cancel-button {
         height: 45px;
         width: 50vw;
         margin: 25px 0px 0px 0px;
@@ -1238,7 +1238,7 @@
         transition: 200ms ease-in-out;
     }
     
-    #cancel-button:hover {
+    #edit-profile-cancel-button:hover {
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
