@@ -63,6 +63,6 @@ function SecondNavBar() {
             </div>
         </Navbar >
     );
-}
+};
 
 export default SecondNavBar;

@@ -1,3 +1,65 @@
+/* For the edit-profile form */
+#edit-profile {
+    margin-top: 20px;
+    height: fit-content;
+}
+
+/* For the edit profile features */
+#edit-profile-features {
+    display: block;
+    width: fit-content;
+    margin: auto;    
+    border: none;   
+}
+
+/* For the camera icon */
+.camera-icon {
+    font-size: 30px;
+    margin-left: -130px;
+}
+
+/* For all label tags*/
+.edit-profile-label {
+    font-size: 17px;
+    margin: 15px 0px 5px 0px;
+}
+
+/* For all messages */
+.message1, .message2 {
+    font-style: italic;
+    font-size: 15px;
+}
+
+.message2 {
+    margin-top: 15px;
+}
+
+/* For the personal-URL */
+#personal-URL {
+    display: block;
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+#personal-URL + input {
+    margin-top: -10px;
+}
+
+/* For the header */
+.header {
+    display: block;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: 17px;
+}
+
+/* For the Pinterest label */
+.message2 + label {
+    margin-top: -10px;
+}
+
 @media only screen and (max-width: 600px) {
     /* For the container */
     #profile-settings-container {
@@ -5,4 +67,1181 @@
         margin: auto; 
         margin-left: -12px;
     }
+
+    /* For the left side group buttons */
+    #left-side-group-buttons {
+        display: none;
+    }
+
+    /* For the edit photo buttons */
+    #edit-photo-buttons {
+        display: flex;
+        width: 88vw;
+    }
+
+    #edit-profile-photo {
+        height: 50px;
+        width: 50vw;
+        margin-right: 10px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #edit-profile-photo p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    #edit-profile-photo:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-cover-photo {
+        height: 50px;
+        width: 50vw;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-cover-photo p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    #edit-cover-photo:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    /* For all input tags*/
+    .edit-profile-input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 88vw;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    .edit-profile-input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the select tag*/
+    select {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 88vw;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    select:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the bottom buttons */
+    #bottom-buttons {
+        display: flex;
+        width: 88vw;
+        margin-bottom: 20px;
+    }
+
+    #save-button {
+        height: 45px;
+        width: 50vw;
+        margin: 25px 10px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #cancel-button {
+        height: 45px;
+        width: 50vw;
+        margin: 25px 0px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
 }
+
+@media only screen and (min-width: 600px) {
+    /* For the container */
+    #profile-settings-container {
+        width: 100%;
+        margin: auto; 
+        margin-left: -12px;
+    }
+
+    /* For the left side group buttons */
+    #left-side-group-buttons {
+        display: none;
+    }
+
+    /* For the edit photo buttons */
+    #edit-photo-buttons {
+        display: flex;
+        width: 91vw;
+    }
+
+    #edit-profile-photo {
+        height: 50px;
+        width: 50vw;
+        margin-right: 10px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #edit-profile-photo p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    #edit-profile-photo:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-cover-photo {
+        height: 50px;
+        width: 50vw;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-cover-photo p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    #edit-cover-photo:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    /* For all input tags*/
+    .edit-profile-input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 91vw;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    .edit-profile-input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the select tag*/
+    select {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 91vw;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    select:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the bottom buttons */
+    #bottom-buttons {
+        display: flex;
+        width: 91vw;
+        margin-bottom: 20px;
+    }
+
+    #save-button {
+        height: 45px;
+        width: 50vw;
+        margin: 25px 10px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #cancel-button {
+        height: 45px;
+        width: 50vw;
+        margin: 25px 0px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For the container */
+    #profile-settings-container {
+        width: 100%;
+        margin: auto; 
+        margin-left: -12px;
+    }
+
+    /* For the left side group buttons */
+    #left-side-group-buttons {
+        display: none;
+    }
+
+    /* For the edit photo buttons */
+    #edit-photo-buttons {
+        display: flex;
+        width: 92vw;
+    }
+
+    #edit-profile-photo {
+        height: 50px;
+        width: 50vw;
+        margin-right: 10px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #edit-profile-photo p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    #edit-profile-photo:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-cover-photo {
+        height: 50px;
+        width: 50vw;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-cover-photo p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    #edit-cover-photo:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    /* For all input tags*/
+    .edit-profile-input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 92vw;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    .edit-profile-input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the select tag*/
+    select {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 92vw;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    select:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the bottom buttons */
+    #bottom-buttons {
+        display: flex;
+        width: 92vw;
+        margin-bottom: 20px;
+    }
+
+    #save-button {
+        height: 45px;
+        width: 50vw;
+        margin: 25px 10px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #cancel-button {
+        height: 45px;
+        width: 50vw;
+        margin: 25px 0px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 956px) {
+    /* For the edit-profile form */
+    #edit-profile {
+        margin: auto;
+        margin-top: 20px;
+        border: none;
+        width: fit-content;
+    }
+
+    /* For the container */
+    #profile-settings-container {
+        width: 70%;
+        margin: auto;
+    }
+
+    /* For the left side group buttons */
+    #left-side-group-buttons {
+        display: none;
+    }
+
+    #edit-profile {
+        display: flex;
+    }
+
+    /* For the edit photo buttons */
+    #edit-photo-buttons {
+        display: flex;
+        width: 66.8vw;
+    }
+
+    #edit-profile-photo {
+        height: 50px;
+        width: 50vw;
+        margin-left: 1px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #edit-profile-photo p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    #edit-profile-photo:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-cover-photo {
+        height: 50px;
+        width: 50vw;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-cover-photo p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    #edit-cover-photo:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the message 2 */
+    .message2 {
+        margin-left: 2px;
+    }
+
+    /* For all input tags*/
+    .edit-profile-input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 66.8vw;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    .edit-profile-input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the select tag*/
+    select {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 66.8vw;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    select:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the bottom buttons */
+    #bottom-buttons {
+        display: flex;
+        width: 66.8vw;
+        margin-bottom: 20px;
+    }
+
+    #save-button {
+        height: 45px;
+        width: 50vw;
+        margin: 25px 10px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #cancel-button {
+        height: 45px;
+        width: 50vw;
+        margin: 25px 0px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* For the edit-profile form */
+    #edit-profile {
+        margin: auto;
+        margin-top: 20px;
+        border: none;
+        width: fit-content;
+    }
+
+    /* For the container */
+    #profile-settings-container {
+        width: 60%;
+        margin: auto;
+    }
+
+    /* For the left side group buttons */
+    #left-side-group-buttons {
+        display: none;
+    }
+
+    /* For the edit photo buttons */
+    #edit-photo-buttons {
+        display: flex;
+        width: 57.3vw;
+    }
+
+    #edit-profile-photo {
+        height: 50px;
+        width: 50vw;
+        margin-right: 10px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #edit-profile-photo p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    #edit-profile-photo:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-cover-photo {
+        height: 50px;
+        width: 50vw;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-cover-photo p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    #edit-cover-photo:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    /* For all input tags*/
+    .edit-profile-input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 57.3vw;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    .edit-profile-input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the select tag*/
+    select {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 57.3vw;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    select:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the bottom buttons */
+    #bottom-buttons {
+        display: flex;
+        width: 57vw;
+        margin-bottom: 20px;
+        margin-left: 3px;
+    }
+
+    #save-button {
+        height: 45px;
+        width: 50vw;
+        margin: 25px 10px 0px -3px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #cancel-button {
+        height: 45px;
+        width: 50vw;
+        margin: 25px 0px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    /* For the edit-profile form */
+    #edit-profile {
+        margin: auto;
+        margin-top: 20px;
+        border: none;
+        width: fit-content;
+    }
+
+    /* For the container */
+    #profile-settings-container {
+        width: 60%;
+        margin: auto;
+    }
+
+        /* For the left side group buttons */
+    #left-side-group-buttons {
+        display: none;
+    }
+
+    /* For the edit photo buttons */
+    #edit-photo-buttons {
+        display: flex;
+        width: 57.7vw;
+    }
+
+    #edit-profile-photo {
+        height: 50px;
+        width: 50vw;
+        margin-right: 10px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #edit-profile-photo p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    #edit-profile-photo:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-cover-photo {
+        height: 50px;
+        width: 50vw;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-cover-photo p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    #edit-cover-photo:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    /* For all input tags*/
+    .edit-profile-input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 57.7vw;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    .edit-profile-input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the select tag*/
+    select {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 57.7vw;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    select:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the bottom buttons */
+    #bottom-buttons {
+        display: flex;
+        width: 57.7vw;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+
+    #save-button {
+        height: 45px;
+        width: 50vw;
+        margin: 25px 10px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #cancel-button {
+        height: 45px;
+        width: 50vw;
+        margin: 25px 0px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    /* For the edit-profile form */
+    #edit-profile {
+        margin: auto;
+        margin-top: 20px;
+        border: none;
+        width: fit-content;
+    }
+
+    /* For the container */
+    #profile-settings-container {
+        width: 60%;
+        margin: auto;
+    }
+
+    /* For the left side group buttons */
+    #left-side-group-buttons {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2.4vw;
+        width: 15.5vw;
+        border: none;
+    }
+
+    /* For the left side button */
+    .left-side-button {
+        display: block;
+        font-size: 25px;
+        height: 60px;
+        border: 1px solid rgb(212, 212, 212);
+    }
+
+    #left-side-selected-button {
+        background-color: rgb(221, 221, 221);
+    }
+
+    /* For the left side button link */
+    .left-button-link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .left-button-link:hover {
+        color: black;
+    }
+    
+    /* For the left side button icon */
+    .left-side-button i {
+        display: inline-block;
+        margin: -13px 0px 0px -170px;
+        font-size: 40px;
+    }
+
+    #edit-profile-icon {
+        margin-top: -4px;
+    }
+
+    /* For the left side button title */
+    .left-side-button-title {
+        position: absolute;
+        display: inline-block;
+        margin: 9px 0px 0px 10px;
+        font-size: 18px;
+    }
+
+    #edit-profile-title {
+        margin-top: 13px;
+    }
+
+    /* For the edit photo buttons */
+    #edit-photo-buttons {
+        display: flex;
+        width: 40vw;
+    }
+
+    #edit-profile-photo {
+        height: 50px;
+        width: 50vw;
+        margin-right: 10px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #edit-profile-photo p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    #edit-profile-photo:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-cover-photo {
+        height: 50px;
+        width: 50vw;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-cover-photo p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    #edit-cover-photo:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    /* For all input tags*/
+    .edit-profile-input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 40vw;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    .edit-profile-input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the select tag*/
+    select {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 40vw;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    select:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the bottom buttons */
+    #bottom-buttons {
+        display: flex;
+        width: 40vw;
+        margin-bottom: 20px;
+    }
+
+    #save-button {
+        height: 45px;
+        width: 50vw;
+        margin: 25px 10px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #cancel-button {
+        height: 45px;
+        width: 50vw;
+        margin: 25px 0px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1712px) {
+    /* For the edit-profile form */
+    #edit-profile {
+        margin: auto;
+        margin-top: 20px;
+        border: none;
+        width: fit-content;
+    }
+
+    /* For the container */
+    #profile-settings-container {
+        width: 65%;
+        margin: auto;
+    }
+
+    /* For the left side group buttons */
+    #left-side-group-buttons {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2.5vw;
+        width: 15.5vw;
+        border: none;
+    }
+
+    /* For the left side button */
+    .left-side-button {
+        display: block;
+        font-size: 25px;
+        height: 60px;
+        border: 1px solid rgb(212, 212, 212);
+    }
+
+    #left-side-selected-button {
+        background-color: rgb(221, 221, 221);
+    }
+
+    /* For the left side button link */
+    .left-button-link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .left-button-link:hover {
+        color: black;
+    }
+    
+    /* For the left side button icon */
+    .left-side-button i {
+        display: inline-block;
+        margin: -13px 0px 0px -190px;
+        font-size: 40px;
+    }
+
+    #edit-profile-icon {
+        margin-top: -4px;
+    }
+
+    /* For the left side button title */
+    .left-side-button-title {
+        position: absolute;
+        display: inline-block;
+        margin: 9px 0px 0px 10px;
+        font-size: 18px;
+    }
+
+    #edit-profile-title {
+        margin-top: 13px;
+    }
+
+    /* For the edit photo buttons */
+    #edit-photo-buttons {
+        display: flex;
+        width: 45.1vw;
+    }
+
+    #edit-profile-photo {
+        height: 50px;
+        width: 50vw;
+        margin-right: 10px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #edit-profile-photo p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    #edit-profile-photo:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-cover-photo {
+        height: 50px;
+        width: 50vw;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-cover-photo p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    #edit-cover-photo:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    /* For all input tags*/
+    .edit-profile-input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 45.1vw;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    .edit-profile-input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the select tag*/
+    select {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 45.1vw;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    select:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the bottom buttons */
+    #bottom-buttons {
+        display: flex;
+        width: 45.1vw;
+        margin-bottom: 20px;
+    }
+
+    #save-button {
+        height: 45px;
+        width: 50vw;
+        margin: 25px 10px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #cancel-button {
+        height: 45px;
+        width: 50vw;
+        margin: 25px 0px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+

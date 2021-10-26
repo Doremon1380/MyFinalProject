@@ -1,13 +1,13 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./top-part.css";
+import "./half-top-part.css";
 
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import { FaHeart } from "react-icons/fa";
 import { FaUtensils } from "react-icons/fa";
 
-function TopPart() {
+function HalfTopPart() {
     return (
         <>
             <div id="top">
@@ -29,20 +29,11 @@ function TopPart() {
                     <Dropdown.Divider />
                     <Dropdown.Item className="drop-down-item2" href="/Notification Settings">Notification setting</Dropdown.Item>
                     <Dropdown.Divider />
-                    <Dropdown.Item className="drop-down-item2" href="#/">Account setting</Dropdown.Item>
+                    <Dropdown.Item className="drop-down-item2" href="/Account Settings">Account setting</Dropdown.Item>
                 </DropdownButton>
-            </div>
-            <nav id="group-buttons">
-                <a href="/Private Profile"><button className="group-button selected-button">About Me</button></a>
-                <a href="#"><button className="group-button">My Favorites</button></a>
-                <a href="#"><button className="group-button">My Friends</button></a>
-                <a href="#"><button className="group-button">I Made It</button></a>
-                <a href="#"><button className="group-button">My Photos</button></a>
-                <a href="#"><button className="group-button">My Reviews</button></a>
-                <a href="#"><button className="group-button last-button"> Personal Recipes</button></a>
-            </nav>
+            </div> 
         </>
     );
 };
 
-export default TopPart;
+export default HalfTopPart;

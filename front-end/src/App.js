@@ -8,6 +8,8 @@ import Authentication from "./components/authentication";
 import SignUp from "./components/sign-up";
 import PrivateProfile from "./components/private-profile";
 import ProfileSettings from "./components/profile-settings";
+import NotificationSettings from "./components/notification-settings";
+import AccountSettings from "./components/account-settings";
 
 function App() {
   return (
@@ -20,10 +22,12 @@ function App() {
           <Route path="/Join" component={SignUp} />
           <Route path="/Private Profile" component={PrivateProfile} />
           <Route path="/Profile Settings" component={ProfileSettings} />
+          <Route path="/Notification Settings" component={NotificationSettings} />
+          <Route path="/Account Settings" component={AccountSettings} />
         </Switch>
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

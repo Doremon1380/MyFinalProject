@@ -261,7 +261,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         border: none;
         outline: none;
         padding: 6px 10px 6px 10px;
-        width: 38vw;
+        width: 36vw;
     }
 
     .search-icon {
@@ -361,7 +361,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     
     /* For the logo */
     .logo2 {
-        border: solid;
         width: 15vw;
         height: 70px;
         margin-top: 5px;
@@ -379,7 +378,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         border: none;
         outline: none;
         padding: 6px 10px 6px 10px;
-        width: 28vw;
+        width: 26vw;
     }
 
     .search-icon {
@@ -416,7 +415,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         height: 60px;
         background-color: rgb(245, 245, 245);
         margin: 0px 0px 0px 0px;
-        transition: 250ms ease-in-out;
     }
 
     #avatar:hover {
@@ -481,7 +479,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     
     /* For the logo */
     .logo2 {
-        border: solid;
         width: 13vw;
         height: 70px;
         margin-left: 10px;
@@ -600,7 +597,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     
     /* For the logo */
     .logo2 {
-        border: solid;
         width: 11vw;
         height: 70px;
         margin-left: 10px;
@@ -618,7 +614,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         border: none;
         outline: none;
         padding: 6px 10px 6px 10px;
-        width: 28vw;
+        width: 27vw;
     }
 
     .search-icon {
@@ -719,7 +715,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     
     /* For the logo */
     .logo2 {
-        border: solid;
         width: 10vw;
         height: 70px;
         margin-left: 10px;
@@ -737,7 +732,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         border: none;
         outline: none;
         padding: 6px 10px 6px 10px;
-        width: 29vw;
+        width: 28vw;
     }
 
     .search-icon {
@@ -838,7 +833,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     
     /* For the logo */
     .logo2 {
-        border: solid;
         width: 9vw;
         height: 70px;
         margin-left: 15px;
@@ -957,7 +951,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     
     /* For the logo */
     .logo2 {
-        border: solid;
         width: 9vw;
         height: 70px;
         margin-left: 5px;

@@ -1,0 +1,1120 @@
+/* For the notification-settings form */
+#notification-settings {
+    margin-top: 20px;
+    height: fit-content;
+}
+
+/* For the email notifications title*/
+#email-notifications-title {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.notification-settings-checkbox-label {
+    font-size: 19px;
+    margin: 25px 0px 25px 0px;
+}
+
+/* For the OR span */
+#or1 {
+    width: 100px; 
+    text-align: center; 
+    border-bottom: 1px solid orange; 
+    line-height: 0.1em;
+    margin: 20px 0px 0px 60px;
+} 
+ 
+#or1 span { 
+    background-color: #fff; 
+    padding: 0px 5px; 
+}
+
+@media only screen and (max-width: 600px) {
+    /* For the container */
+    #notification-settings-container {
+        width: 100%;
+        margin: auto; 
+        margin-left: -12px;
+    }
+
+    #left-side-group-buttons1 {
+        display: none;
+    }
+
+    /* For the h1 of notification-settings form */
+    #notification-settings-options h1 {
+        margin-left: 10px;
+    }
+
+    /* For the label of notification-settings form */
+    #notification-settings-options label {
+        margin-left: 10px;
+    }
+
+    /* For the checkbox */
+    .notification-settings-checkbox {
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .notification-settings-checkbox-label {
+        cursor: pointer;
+        display: flex;
+    }
+
+    .notification-settings-checkbox-label::before {
+        content: "";
+        width: 1.5em;
+        height: 1.5em;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 1em;
+    } 
+
+    .notification-settings-checkbox:checked + .notification-settings-checkbox-label::before {
+        content: "\002714";
+        background-color: orange;
+    }
+
+    /* For the bottom buttons */
+    #notification-settings-bottom-buttons {
+        display: flex;
+        width: 60vw;
+        margin-top: 20px;
+    }
+
+    #notification-settings-save-button {
+        height: 45px;
+        width: 50vw;
+        margin: 10px 10px 0px 60px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #notification-settings-save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #notification-settings-cancel-button {
+        height: 45px;
+        width: 50vw;
+        margin: 10px 0px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #notification-settings-cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* For the container */
+    #notification-settings-container {
+        width: 100%;
+        margin: auto; 
+        margin-left: -12px;
+    }
+
+    /* For the notification-settings form */
+    #notification-settings {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* For the left side group buttons */
+    #left-side-group-buttons1 {
+        display: flex;
+        flex-direction: column;
+        width: 33vw;
+        border: none;
+        margin: 10px 0px 0px 25px;
+    }
+
+    /* For the left side button */
+    .left-side-button1 {
+        display: block;
+        font-size: 25px;
+        height: 50px;
+        border: 1px solid rgb(212, 212, 212);
+    }
+
+    #left-side-selected-button1 {
+        background-color: rgb(221, 221, 221);
+    }
+
+    /* For the left side button link */
+    .left-button-link1 {
+        text-decoration: none;
+        color: black;
+    }
+
+    .left-button-link1:hover {
+        color: black;
+    }
+    
+    /* For the left side button icon */
+    .left-side-button1 i {
+        position: absolute;
+        display: inline-block;
+        margin: -23px 0px 0px -80px;
+        font-size: 25px;
+    }
+
+    /* For the left side button title */
+    .left-side-button-title1 {
+        position: absolute;
+        display: inline-block;
+        margin: -12px 0px 0px -40px;
+        font-size: 15px;
+    }
+
+    #edit-profile-icon1 {
+        margin-top: -20px;
+    }
+
+    #edit-profile-title1 {
+        margin-top: -11px;
+    }
+
+    /* For the notification-settings form */
+    #notification-settings-options {
+        margin-top: 1px;
+    }
+
+    /* For the h1 of notification-settings form */
+    #notification-settings-options h1 {
+        margin-left: 10px;
+    }
+
+    /* For the label of notification-settings form */
+    #notification-settings-options label {
+        margin-left: 10px;
+    }
+
+    /* For the checkbox */
+    .notification-settings-checkbox {
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .notification-settings-checkbox-label {
+        cursor: pointer;
+        display: flex;
+    }
+
+    .notification-settings-checkbox-label::before {
+        content: "";
+        width: 1.5em;
+        height: 1.5em;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 1em;
+    } 
+
+    .notification-settings-checkbox:checked + .notification-settings-checkbox-label::before {
+        content: "\002714";
+        background-color: orange;
+    }
+
+    /* For the bottom buttons */
+    #notification-settings-bottom-buttons {
+        display: block;
+        width: 60vw;
+        margin-top: 20px;
+     
+    }
+
+    #notification-settings-save-button {
+        height: 45px;
+        width: 20vw;
+        margin: 10px 10px 0px 58px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #notification-settings-save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #notification-settings-cancel-button {
+        height: 45px;
+        width: 20vw;
+        margin: 10px 0px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #notification-settings-cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For the container */
+    #notification-settings-container {
+        width: 100%;
+        margin: auto; 
+        margin-left: -12px;
+    }
+
+    /* For the notification-settings form */
+    #notification-settings {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* For the left side group buttons */
+    #left-side-group-buttons1 {
+        display: flex;
+        flex-direction: column;
+        width: 33vw;
+        border: none;
+        margin-left: 25px;
+        margin-top: 10px;
+    }
+
+    /* For the left side button */
+    .left-side-button1 {
+        display: block;
+        font-size: 25px;
+        height: 50px;
+        border: 1px solid rgb(212, 212, 212);
+    }
+
+    #left-side-selected-button1 {
+        background-color: rgb(221, 221, 221);
+    }
+
+    /* For the left side button link */
+    .left-button-link1 {
+        text-decoration: none;
+        color: black;
+    }
+
+    .left-button-link1:hover {
+        color: black;
+    }
+    
+    /* For the left side button icon */
+    .left-side-button1 i {
+        position: absolute;
+        display: inline-block;
+        margin: -27px 0px 0px -110px;
+        font-size: 30px;
+        
+    }
+
+    /* For the left side button title */
+    .left-side-button-title1 {
+        position: absolute;
+        display: inline-block;
+        margin: -12px 0px 0px -65px;
+        font-size: 15px;
+    }
+
+    #edit-profile-icon1 {
+        margin-top: -23px;
+    }
+
+    #edit-profile-title1 {
+        margin-top: -11px;
+    }
+
+    /* For the notification-settings form */
+    #notification-settings-options {
+        margin-top: 1px;
+    }
+
+    /* For the h1 of notification-settings form */
+    #notification-settings-options h1 {
+        margin-left: 10px;
+    }
+
+    /* For the label of notification-settings form */
+    #notification-settings-options label {
+        margin-left: 10px;
+    }
+
+    /* For the checkbox */
+    .notification-settings-checkbox {
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .notification-settings-checkbox-label {
+        cursor: pointer;
+        display: flex;
+    }
+
+    .notification-settings-checkbox-label::before {
+        content: "";
+        width: 1.5em;
+        height: 1.5em;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 1em;
+    } 
+
+    .notification-settings-checkbox:checked + .notification-settings-checkbox-label::before {
+        content: "\002714";
+        background-color: orange;
+    }
+
+    /* For the bottom buttons */
+    #notification-settings-bottom-buttons {
+        display: block;
+        width: 60vw;
+        margin-top: 20px;
+    }
+
+    #notification-settings-save-button {
+        height: 45px;
+        width: 20vw;
+        margin: 10px 10px 0px 58px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #notification-settings-save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #notification-settings-cancel-button {
+        height: 45px;
+        width: 20vw;
+        margin: 10px 0px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #notification-settings-cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 956px) {
+    /* For the container */
+    #notification-settings-container {
+        width: 70%;
+        margin: auto; 
+    }
+
+    /* For the notification-settings form */
+    #notification-settings {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        width: 67.5vw;
+    }
+
+    /* For the left side group buttons */
+    #left-side-group-buttons1 {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        margin: 25px 0px 0px 0px;
+    }
+
+    /* For the left side button */
+    .left-side-button1 {
+        display: block;
+        font-size: 25px;
+        height: 50px;
+        border: 1px solid rgb(212, 212, 212);
+    }
+
+    #left-side-selected-button1 {
+        background-color: rgb(221, 221, 221);
+    }
+
+    /* For the left side button link */
+    .left-button-link1 {
+        text-decoration: none;
+        color: black;
+    }
+
+    .left-button-link1:hover {
+        color: black;
+    }
+    
+    /* For the left side button icon */
+    .left-side-button1 i {
+        position: absolute;
+        display: inline-block;
+        margin: -27px 0px 0px -100px;
+        font-size: 30px;
+        
+    }
+
+    /* For the left side button title */
+    .left-side-button-title1 {
+        position: absolute;
+        display: inline-block;
+        margin: -12px 0px 0px -55px;
+        font-size: 15px;
+    }
+
+    #edit-profile-icon1 {
+        margin-top: -23px;
+    }
+
+    #edit-profile-title1 {
+        margin-top: -11px;
+    }
+
+    /* For the notification-settings form */
+    #notification-settings-options {
+        margin-top: 16px;
+        margin-right: -21vw;
+    }
+
+    /* For the checkbox */
+    .notification-settings-checkbox {
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .notification-settings-checkbox-label {
+        cursor: pointer;
+        display: flex;
+    }
+
+    .notification-settings-checkbox-label::before {
+        content: "";
+        width: 1.5em;
+        height: 1.5em;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 1em;
+    } 
+
+    .notification-settings-checkbox:checked + .notification-settings-checkbox-label::before {
+        content: "\002714";
+        background-color: orange;
+    }
+
+    /* For the bottom buttons */
+    #notification-settings-bottom-buttons {
+        display: block;
+        width: 60vw;
+        margin-top: 20px;
+    }
+
+    #notification-settings-save-button {
+        height: 45px;
+        width: 13vw;
+        margin: 10px 10px 0px 58px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #notification-settings-save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #notification-settings-cancel-button {
+        height: 45px;
+        width: 13vw;
+        margin: 10px 0px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #notification-settings-cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* For the container */
+    #notification-settings-container {
+        width: 60%;
+        margin: auto; 
+    }
+
+    /* For the notification-settings form */
+    #notification-settings {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        width: 58vw;
+    }
+
+    /* For the left side group buttons */
+    #left-side-group-buttons1 {
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        margin: 25px 0px 0px 0px;
+    }
+
+    /* For the left side button */
+    .left-side-button1 {
+        display: block;
+        font-size: 25px;
+        height: 50px;
+        border: 1px solid rgb(212, 212, 212);
+    }
+
+    #left-side-selected-button1 {
+        background-color: rgb(221, 221, 221);
+    }
+
+    /* For the left side button link */
+    .left-button-link1 {
+        text-decoration: none;
+        color: black;
+    }
+
+    .left-button-link1:hover {
+        color: black;
+    }
+    
+    /* For the left side button icon */
+    .left-side-button1 i {
+        position: absolute;
+        display: inline-block;
+        margin: -27px 0px 0px -100px;
+        font-size: 30px;
+        
+    }
+
+    /* For the left side button title */
+    .left-side-button-title1 {
+        position: absolute;
+        display: inline-block;
+        margin: -12px 0px 0px -55px;
+        font-size: 15px;
+    }
+
+    #edit-profile-icon1 {
+        margin-top: -23px;
+    }
+
+    #edit-profile-title1 {
+        margin-top: -11px;
+    }
+
+    /* For the notification-settings form */
+    #notification-settings-options {
+        margin-top: 16px;
+        margin-right: -25vw;
+    }
+
+    /* For the checkbox */
+    .notification-settings-checkbox {
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .notification-settings-checkbox-label {
+        cursor: pointer;
+        display: flex;
+    }
+
+    .notification-settings-checkbox-label::before {
+        content: "";
+        width: 1.5em;
+        height: 1.5em;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 1em;
+    } 
+
+    .notification-settings-checkbox:checked + .notification-settings-checkbox-label::before {
+        content: "\002714";
+        background-color: orange;
+    }
+
+    /* For the bottom buttons */
+    #notification-settings-bottom-buttons {
+        display: block;
+        width: 60vw;
+        margin-top: 20px;
+    }
+
+    #notification-settings-save-button {
+        height: 45px;
+        width: 13vw;
+        margin: 10px 10px 0px 58px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #notification-settings-save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #notification-settings-cancel-button {
+        height: 45px;
+        width: 13vw;
+        margin: 10px 0px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #notification-settings-cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    /* For the container */
+    #notification-settings-container {
+        width: 60%;
+        margin: auto; 
+    }
+
+    /* For the notification-settings form */
+    #notification-settings {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        width: 58.3vw;
+    }
+
+    /* For the left side group buttons */
+    #left-side-group-buttons1 {
+        display: flex;
+        flex-direction: column;
+        width: 18vw;
+        margin: 25px 0px 0px 0px;
+    }
+
+    /* For the left side button */
+    .left-side-button1 {
+        display: block;
+        font-size: 25px;
+        height: 50px;
+        border: 1px solid rgb(212, 212, 212);
+    }
+
+    #left-side-selected-button1 {
+        background-color: rgb(221, 221, 221);
+    }
+
+    /* For the left side button link */
+    .left-button-link1 {
+        text-decoration: none;
+        color: black;
+    }
+
+    .left-button-link1:hover {
+        color: black;
+    }
+    
+    /* For the left side button icon */
+    .left-side-button1 i {
+        position: absolute;
+        display: inline-block;
+        margin: -27px 0px 0px -110px;
+        font-size: 30px;
+        
+    }
+
+    /* For the left side button title */
+    .left-side-button-title1 {
+        position: absolute;
+        display: inline-block;
+        margin: -12px 0px 0px -65px;
+        font-size: 15px;
+    }
+
+    #edit-profile-icon1 {
+        margin-top: -23px;
+    }
+
+    #edit-profile-title1 {
+        margin-top: -11px;
+    }
+
+    /* For the notification-settings form */
+    #notification-settings-options {
+        margin-top: 16px;
+        margin-right: -23vw;
+    }
+
+    /* For the checkbox */
+    .notification-settings-checkbox {
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .notification-settings-checkbox-label {
+        cursor: pointer;
+        display: flex;
+    }
+
+    .notification-settings-checkbox-label::before {
+        content: "";
+        width: 1.5em;
+        height: 1.5em;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 1em;
+    } 
+
+    .notification-settings-checkbox:checked + .notification-settings-checkbox-label::before {
+        content: "\002714";
+        background-color: orange;
+    }
+
+    /* For the bottom buttons */
+    #notification-settings-bottom-buttons {
+        display: block;
+        width: 60vw;
+        margin-top: 20px;
+    }
+
+    #notification-settings-save-button {
+        height: 45px;
+        width: 15vw;
+        margin: 10px 10px 0px 58px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #notification-settings-save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #notification-settings-cancel-button {
+        height: 45px;
+        width: 15vw;
+        margin: 10px 0px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #notification-settings-cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    /* For the container */
+    #notification-settings-container {
+        width: 60%;
+        margin: auto; 
+    }
+
+    /* For the notification-settings form */
+    #notification-settings {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        width: 58.5vw;
+    }
+
+    /* For the left side group buttons */
+    #left-side-group-buttons1 {
+        display: flex;
+        flex-direction: column;
+        width: 18vw;
+        margin: 25px 0px 0px 0px;
+    }
+
+    /* For the left side button */
+    .left-side-button1 {
+        display: block;
+        font-size: 25px;
+        height: 50px;
+        border: 1px solid rgb(212, 212, 212);
+    }
+
+    #left-side-selected-button1 {
+        background-color: rgb(221, 221, 221);
+    }
+
+    /* For the left side button link */
+    .left-button-link1 {
+        text-decoration: none;
+        color: black;
+    }
+
+    .left-button-link1:hover {
+        color: black;
+    }
+    
+    /* For the left side button icon */
+    .left-side-button1 i {
+        position: absolute;
+        display: inline-block;
+        margin: -27px 0px 0px -130px;
+        font-size: 30px;
+        
+    }
+
+    /* For the left side button title */
+    .left-side-button-title1 {
+        position: absolute;
+        display: inline-block;
+        margin: -12px 0px 0px -85px;
+        font-size: 15px;
+    }
+
+    #edit-profile-icon1 {
+        margin-top: -23px;
+    }
+
+    #edit-profile-title1 {
+        margin-top: -11px;
+    }
+
+    /* For the notification-settings form */
+    #notification-settings-options {
+        margin-top: 16px;
+        margin-right: -22vw;
+    }
+
+    /* For the checkbox */
+    .notification-settings-checkbox {
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .notification-settings-checkbox-label {
+        cursor: pointer;
+        display: flex;
+    }
+
+    .notification-settings-checkbox-label::before {
+        content: "";
+        width: 1.5em;
+        height: 1.5em;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 1em;
+    } 
+
+    .notification-settings-checkbox:checked + .notification-settings-checkbox-label::before {
+        content: "\002714";
+        background-color: orange;
+    }
+
+    /* For the bottom buttons */
+    #notification-settings-bottom-buttons {
+        display: block;
+        width: 60vw;
+        margin-top: 20px;
+    }
+
+    #notification-settings-save-button {
+        height: 45px;
+        width: 15vw;
+        margin: 10px 10px 0px 58px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #notification-settings-save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #notification-settings-cancel-button {
+        height: 45px;
+        width: 15vw;
+        margin: 10px 0px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #notification-settings-cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1712px) {
+        /* For the container */
+    #notification-settings-container {
+        width: 65%;
+        margin: auto; 
+    }
+
+    /* For the notification-settings form */
+    #notification-settings {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        width: 63.6vw;
+    }
+
+    /* For the left side group buttons */
+    #left-side-group-buttons1 {
+        display: flex;
+        flex-direction: column;
+        width: 18vw;
+        margin: 25px 0px 0px 0px;
+    }
+
+    /* For the left side button */
+    .left-side-button1 {
+        display: block;
+        font-size: 25px;
+        height: 50px;
+        border: 1px solid rgb(212, 212, 212);
+    }
+
+    #left-side-selected-button1 {
+        background-color: rgb(221, 221, 221);
+    }
+
+    /* For the left side button link */
+    .left-button-link1 {
+        text-decoration: none;
+        color: black;
+    }
+
+    .left-button-link1:hover {
+        color: black;
+    }
+    
+    /* For the left side button icon */
+    .left-side-button1 i {
+        position: absolute;
+        display: inline-block;
+        margin: -27px 0px 0px -135px;
+        font-size: 30px;
+        
+    }
+
+    /* For the left side button title */
+    .left-side-button-title1 {
+        position: absolute;
+        display: inline-block;
+        margin: -12px 0px 0px -90px;
+        font-size: 15px;
+    }
+
+    #edit-profile-icon1 {
+        margin-top: -23px;
+    }
+
+    #edit-profile-title1 {
+        margin-top: -11px;
+    }
+
+    /* For the notification-settings form */
+    #notification-settings-options {
+        margin-top: 16px;
+        margin-right: -17vw;
+    }
+
+    /* For the checkbox */
+    .notification-settings-checkbox {
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .notification-settings-checkbox-label {
+        cursor: pointer;
+        display: flex;
+    }
+
+    .notification-settings-checkbox-label::before {
+        content: "";
+        width: 1.5em;
+        height: 1.5em;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 1em;
+    } 
+
+    .notification-settings-checkbox:checked + .notification-settings-checkbox-label::before {
+        content: "\002714";
+        background-color: orange;
+    }
+
+    /* For the bottom buttons */
+    #notification-settings-bottom-buttons {
+        display: block;
+        width: 60vw;
+        margin-top: 20px;
+    }
+
+    #notification-settings-save-button {
+        height: 45px;
+        width: 15vw;
+        margin: 10px 10px 0px 58px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #notification-settings-save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #notification-settings-cancel-button {
+        height: 45px;
+        width: 15vw;
+        margin: 10px 0px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #notification-settings-cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
