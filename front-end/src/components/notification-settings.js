@@ -18,30 +18,30 @@ function NotificationSettings() {
             </Container>
             <div id="notification-settings">
                 <div id="left-side-group-buttons1">
-                    <button className="left-side-button1">
-                        <a href="/Profile Settings" className="left-button-link1">
+                    <a href="/Profile Settings" className="left-button-link1">
+                        <button className="left-side-button1">
                             <i className="bi bi-pencil-square" id="edit-profile-icon1"></i>
                             <p className="left-side-button-title1" id="edit-profile-title1">Edit profile</p>
-                        </a>
-                    </button>
-                    <button className="left-side-button1">
-                        <a href="/#" className="left-button-link1">
+                        </button>
+                    </a>
+                    <a href="/#" className="left-button-link1">
+                        <button className="left-side-button1">
                             <i><FaRegEye /></i>
                             <p className="left-side-button-title1">See public profile</p>
-                        </a>
-                    </button>
-                    <button className="left-side-button1" id="left-side-selected-button1">
-                        <a href="/Notification Settings" className="left-button-link1">
+                        </button>
+                    </a>
+                    <a href="/Notification Settings" className="left-button-link1">
+                        <button className="left-side-button1" id="left-side-selected-button1">
                             <i><FaRegEnvelope /></i>
                             <p className="left-side-button-title1">Notification settings</p>
-                        </a>
-                    </button>
-                    <button className="left-side-button1">
-                        <a href="/Account Settings" className="left-button-link1">
+                        </button>
+                    </a>
+                    <a href="/Account Settings" className="left-button-link1">
+                        <button className="left-side-button1">
                             <i><FaUserCog /></i>
                             <p className="left-side-button-title1">Account settings</p>
-                        </a>
-                    </button>
+                        </button>
+                    </a>
                 </div>
                 <form id="notification-settings-options">
                     <h1 id="email-notifications-title">Email Notifications</h1>
@@ -61,7 +61,7 @@ function NotificationSettings() {
                         <button id="notification-settings-cancel-button">Cancel</button>
                     </div>
                 </form>
-            </div>
+            </div >
         </>
     );
 };

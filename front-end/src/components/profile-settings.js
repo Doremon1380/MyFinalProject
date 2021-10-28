@@ -18,30 +18,30 @@ function ProfileSettings() {
             </Container>
             <div id="edit-profile">
                 <div id="left-side-group-buttons">
-                    <button className="left-side-button" id="left-side-selected-button">
-                        <a href="/Profile Settings" className="left-button-link">
+                    <a href="/Profile Settings" className="left-button-link">
+                        <button className="left-side-button" id="left-side-selected-button">
                             <i className="bi bi-pencil-square" id="edit-profile-icon"></i>
                             <p className="left-side-button-title" id="edit-profile-title">Edit profile</p>
-                        </a>
-                    </button>
-                    <button className="left-side-button">
-                        <a href="/#" className="left-button-link">
+                        </button>
+                    </a>
+                    <a href="/#" className="left-button-link">
+                        <button className="left-side-button">
                             <i><FaRegEye /></i>
                             <p className="left-side-button-title">See public profile</p>
-                        </a>
-                    </button>
-                    <button className="left-side-button">
-                        <a href="/Notification Settings" className="left-button-link">
+                        </button>
+                    </a>
+                    <a href="/Notification Settings" className="left-button-link">
+                        <button className="left-side-button">
                             <i><FaRegEnvelope /></i>
                             <p className="left-side-button-title">Notification settings</p>
-                        </a>
-                    </button>
-                    <button className="left-side-button">
-                        <a href="/Account Settings" className="left-button-link">
+                        </button>
+                    </a>
+                    <a href="/Account Settings" className="left-button-link">
+                        <button className="left-side-button">
                             <i><FaUserCog /></i>
                             <p className="left-side-button-title">Account settings</p>
-                        </a>
-                    </button>
+                        </button>
+                    </a>
                 </div>
                 <form id="edit-profile-features">
                     <div id="edit-photo-buttons">

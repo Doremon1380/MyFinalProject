@@ -76,6 +76,7 @@ h2 {
     border: 1px solid #ddd;
     outline: none;
     height: 50px;
+    padding: 6px 11px 6px 10px;
     transition: 200ms ease-in-out;
 }
 
@@ -90,6 +91,7 @@ h2 {
     border: 1px solid #ddd;
     outline: none;
     height: 50px;
+    padding: 6px 45px 6px 10px;
     transition: 200ms ease-in-out;
 }
 
@@ -103,7 +105,7 @@ h2 {
     height: 25px;
     width: 25px;
     margin-top: 75px;
-    margin-left: 530px;
+    margin-left: 525px;
     cursor: pointer;
 }
 

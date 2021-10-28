@@ -283,7 +283,7 @@
     }
 
     /* For the bottom buttons */
-    #bottom-buttons {
+    #edit-profile-bottom-buttons {
         display: flex;
         width: 91vw;
         margin-bottom: 20px;
@@ -291,7 +291,7 @@
 
     #edit-profile-save-button {
         height: 45px;
-        width: 44.7vw;
+        width: 50vw;
         margin: 25px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -306,7 +306,7 @@
 
     #edit-profile-cancel-button {
         height: 45px;
-        width: 44.7vw;
+        width: 50vw;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -892,15 +892,14 @@
         display: flex;
         flex-direction: column;
         margin-right: 2.7vw;
-        width: 15.5vw;
-        border: none;
     }
 
     /* For the left side button */
     .left-side-button {
         display: block;
         font-size: 25px;
-        height: 60px;
+        height: 50px;
+        width: 15.5vw;
         border: 1px solid rgb(212, 212, 212);
     }
 
@@ -912,6 +911,7 @@
     .left-button-link {
         text-decoration: none;
         color: black;
+        height: 50px;
     }
 
     .left-button-link:hover {
@@ -921,24 +921,24 @@
     /* For the left side button icon */
     .left-side-button i {
         display: inline-block;
-        margin: -13px 0px 0px -170px;
-        font-size: 40px;
+        margin: -13px 0px 0px -180px;
+        font-size: 30px;
     }
 
     #edit-profile-icon {
-        margin-top: -4px;
+        margin-top: 0px;
     }
 
     /* For the left side button title */
     .left-side-button-title {
         position: absolute;
         display: inline-block;
-        margin: 9px 0px 0px 10px;
-        font-size: 18px;
+        margin: 10px 0px 0px 15px;
+        font-size: 15px;
     }
 
     #edit-profile-title {
-        margin-top: 13px;
+        margin-top: 11px;
     }
 
     /* For the edit photo buttons */
@@ -1078,15 +1078,14 @@
         display: flex;
         flex-direction: column;
         margin-right: 2.4vw;
-        width: 15.5vw;
-        border: none;
     }
 
     /* For the left side button */
     .left-side-button {
         display: block;
         font-size: 25px;
-        height: 60px;
+        height: 50px;
+        width: 15.5vw;
         border: 1px solid rgb(212, 212, 212);
     }
 
@@ -1098,6 +1097,7 @@
     .left-button-link {
         text-decoration: none;
         color: black;
+        height: 50px;
     }
 
     .left-button-link:hover {
@@ -1107,24 +1107,24 @@
     /* For the left side button icon */
     .left-side-button i {
         display: inline-block;
-        margin: -13px 0px 0px -190px;
-        font-size: 40px;
+        margin: -13px 0px 0px -200px;
+        font-size: 30px;
     }
 
     #edit-profile-icon {
-        margin-top: -4px;
+        margin-top: 0px;
     }
 
     /* For the left side button title */
     .left-side-button-title {
         position: absolute;
         display: inline-block;
-        margin: 9px 0px 0px 10px;
-        font-size: 18px;
+        margin: 10px 0px 0px 15px;
+        font-size: 15px;
     }
 
     #edit-profile-title {
-        margin-top: 13px;
+        margin-top: 11px;
     }
 
     /* For the edit photo buttons */

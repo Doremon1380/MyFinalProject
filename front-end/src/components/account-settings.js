@@ -18,51 +18,51 @@ function AccountSettings() {
             </Container>
             <div id="account-settings">
                 <div id="left-side-group-buttons2">
-                    <button className="left-side-button2">
-                        <a href="/Profile Settings" className="left-button-link2">
+                    <a href="/Profile Settings" className="left-button-link2">
+                        <button className="left-side-button2">
                             <i className="bi bi-pencil-square" id="edit-profile-icon2"></i>
                             <p className="left-side-button-title2" id="edit-profile-title2">Edit profile</p>
-                        </a>
-                    </button>
-                    <button className="left-side-button2">
-                        <a href="/#" className="left-button-link2">
+                        </button>
+                    </a>
+                    <a href="/#" className="left-button-link2">
+                        <button className="left-side-button2">
                             <i><FaRegEye /></i>
                             <p className="left-side-button-title2">See public profile</p>
-                        </a>
-                    </button>
-                    <button className="left-side-button2">
-                        <a href="/Notification Settings" className="left-button-link2">
+                        </button>
+                    </a>
+                    <a href="/Notification Settings" className="left-button-link2">
+                        <button className="left-side-button2">
                             <i><FaRegEnvelope /></i>
                             <p className="left-side-button-title2">Notification settings</p>
-                        </a>
-                    </button>
-                    <button className="left-side-button2">
-                        <a href="/Account Settings" className="left-button-link2" id="left-side-selected-button2">
+                        </button>
+                    </a>
+                    <a href="/Account Settings" className="left-button-link2">
+                        <button className="left-side-button2" id="left-side-selected-button2">
                             <i><FaUserCog /></i>
                             <p className="left-side-button-title2">Account settings</p>
-                        </a>
-                    </button>
+                        </button>
+                    </a>
                 </div>
+                <form id="edit-account-features">
+                    <div>
+                        <h1>Account Settings</h1>
+                        <label>Email Address</label><br />
+                        <input placeholder="Email address" type="email"></input>
+                        <h2>Update your password</h2>
+                        <p>Please provide a password with at least 6 characters. Your password must include at least 1 uppercase letter or special character.</p>
+                        <label>Current Password</label><br />
+                        <input placeholder="Password" type="password"></input><br />
+                        <label>New Password</label><br />
+                        <input placeholder="New Password" type="password"></input><br />
+                        <label>Confirm Password</label><br />
+                        <input placeholder="Confirm Password" type="password"></input>
+                    </div>
+                    <div id="edit-account-bottom-buttons">
+                        <button id="edit-account-save-button">Save</button>
+                        <button id="edit-account-cancel-button">Cancel</button>
+                    </div>
+                </form>
             </div>
-            <form id="edit-account-features">
-                <div>
-                    <h1>Account Settings</h1>
-                    <label>Email Address</label><br />
-                    <input placeholder="Email address"></input>
-                    <h2>Update your password</h2>
-                    <p>Please provide a password with at least 6 characters. Your password must include at least 1 uppercase letter or special character.</p>
-                    <label>Current Password</label><br />
-                    <input placeholder="Password"></input><br />
-                    <label>New Password</label><br />
-                    <input placeholder="New Password"></input><br />
-                    <label>Confirm  Password</label><br />
-                    <input placeholder="Confirm Password"></input>
-                </div>
-                <div id="edit-account-bottom-buttons">
-                    <button id="edit-account-save-button">Save</button>
-                    <button id="edit-account-cancel-button">Cancel</button>
-                </div>
-            </form>
         </>
     );
 };
