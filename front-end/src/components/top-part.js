@@ -12,7 +12,7 @@ function TopPart() {
         <>
             <div id="top">
                 <div id="user-account">
-                    <a href="/Private Profile" id="avatar-top"><img alt="Avatar"></img></a>
+                    <a href="/about-me" id="avatar-top"><img alt="Avatar"></img></a>
                     <div id="account-related">
                         <p id="account-name">Account Name</p>
                         <div id="icons-and-data">
@@ -23,17 +23,17 @@ function TopPart() {
                     </div>
                 </div>
                 <DropdownButton id="dropdown-basic-button-settings" variant="" title={<i className="bi bi-gear-fill"></i>}>
-                    <Dropdown.Item className="drop-down-item2" href="/Profile Settings">Edit profile</Dropdown.Item>
+                    <Dropdown.Item className="drop-down-item2" href="/edit-profile">Edit profile</Dropdown.Item>
                     <Dropdown.Divider />
                     <Dropdown.Item className="drop-down-item2" href="#/">See public profile</Dropdown.Item>
                     <Dropdown.Divider />
-                    <Dropdown.Item className="drop-down-item2" href="/Notification Settings">Notification setting</Dropdown.Item>
+                    <Dropdown.Item className="drop-down-item2" href="/notification-settings">Notification setting</Dropdown.Item>
                     <Dropdown.Divider />
-                    <Dropdown.Item className="drop-down-item2" href="#/">Account setting</Dropdown.Item>
+                    <Dropdown.Item className="drop-down-item2" href="/account-settings">Account setting</Dropdown.Item>
                 </DropdownButton>
             </div>
             <nav id="group-buttons">
-                <a href="/Private Profile"><button className="group-button selected-button">About Me</button></a>
+                <a href="/about-me"><button className="group-button selected-button">About Me</button></a>
                 <a href="#"><button className="group-button">My Favorites</button></a>
                 <a href="#"><button className="group-button">My Friends</button></a>
                 <a href="#"><button className="group-button">I Made It</button></a>

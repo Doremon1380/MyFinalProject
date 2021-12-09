@@ -1,0 +1,135 @@
+@media only screen and (max-width: 600px) {
+    #type-of-recipe {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 0px;
+        width: 89vw;
+        height: 15.5vh;
+        transition: 200ms ease-in-out;
+        padding: 7px 0px 0px 1px;
+    }
+
+    #type-of-recipe:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #type-of-recipe {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 0px;
+        width: 90vw;
+        height: 12vh;
+        transition: 200ms ease-in-out;
+        padding: 7px 0px 0px 1px;
+    }
+
+    #type-of-recipe:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #type-of-recipe {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 0px;
+        width: 92vw;
+        height: 9vh;
+        transition: 200ms ease-in-out;
+        padding: 7px 0px 0px 1px;
+    }
+
+    #type-of-recipe:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 956px) {
+    #type-of-recipe {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 0px;
+        width: 66.85vw;
+        height: 12.2vh;
+        transition: 200ms ease-in-out;
+        padding: 7px 0px 0px 1px;
+    }
+
+    #type-of-recipe:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #type-of-recipe {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 0px;
+        width: 57.3vw;
+        height: 9vh;
+        transition: 200ms ease-in-out;
+        padding: 7px 0px 0px 1px;
+    }
+
+    #type-of-recipe:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #type-of-recipe {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 0px;
+        width: 57.45vw;
+        height: 9vh;
+        transition: 200ms ease-in-out;
+        padding: 7px 0px 0px 1px;
+    }
+
+    #type-of-recipe:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    #type-of-recipe {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 0px;
+        width: 62.1vw;
+        height: 9vh;
+        transition: 200ms ease-in-out;
+        padding: 7px 0px 0px 1px;
+    }
+
+    #type-of-recipe:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1712px) {
+    #type-of-recipe {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 0px;
+        width: 63.2vw;
+        height: 6vh;
+        transition: 200ms ease-in-out;
+        padding: 7px 0px 0px 1px;
+    }
+
+    #type-of-recipe:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+}

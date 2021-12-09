@@ -2,6 +2,7 @@ import React from "react";
 import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./profile-settings.css";
+import { Helmet } from 'react-helmet'
 
 import Container from "react-bootstrap/Container";
 import HalfTopPart from "./half-top-part";
@@ -9,16 +10,22 @@ import { FaRegEye } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 import { FaUserCog } from "react-icons/fa";
 
+const TITLE = 'Profile Settings - FoodShare.com';
+
 function ProfileSettings() {
     return (
         <>
+            <Helmet>
+                <title>{TITLE}</title>
+            </Helmet>
+            
             <SecondNavBar />
             <Container id="profile-settings-container">
                 <HalfTopPart />
             </Container>
             <div id="edit-profile">
                 <div id="left-side-group-buttons">
-                    <a href="/Profile Settings" className="left-button-link">
+                    <a href="/edit-profile" className="left-button-link">
                         <button className="left-side-button" id="left-side-selected-button">
                             <i className="bi bi-pencil-square" id="edit-profile-icon"></i>
                             <p className="left-side-button-title" id="edit-profile-title">Edit profile</p>
@@ -30,13 +37,13 @@ function ProfileSettings() {
                             <p className="left-side-button-title">See public profile</p>
                         </button>
                     </a>
-                    <a href="/Notification Settings" className="left-button-link">
+                    <a href="/notification-settings" className="left-button-link">
                         <button className="left-side-button">
                             <i><FaRegEnvelope /></i>
                             <p className="left-side-button-title">Notification settings</p>
                         </button>
                     </a>
-                    <a href="/Account Settings" className="left-button-link">
+                    <a href="/account-settings" className="left-button-link">
                         <button className="left-side-button">
                             <i><FaUserCog /></i>
                             <p className="left-side-button-title">Account settings</p>
@@ -49,18 +56,18 @@ function ProfileSettings() {
                         <button id="edit-cover-photo"><i className="bi bi-camera camera-icon"></i><p>Edit cover photo</p></button>
                     </div>
                     <label className="edit-profile-label">First name</label><br />
-                    <input placeholder="First name" className="edit-profile-input"></input><br />
+                    <input name="first name" placeholder="First name" className="edit-profile-input"></input><br />
                     <label className="edit-profile-label">Last name</label><br />
-                    <input placeholder="Last name" className="edit-profile-input"></input><br />
+                    <input name="last name" placeholder="Last name" className="edit-profile-input"></input><br />
                     <label className="edit-profile-label">Display name</label><br />
-                    <input placeholder="Display name" className="edit-profile-input"></input><br />
+                    <input name="display name" placeholder="Display name" className="edit-profile-input"></input><br />
                     <label className="edit-profile-label">Profile URL</label><br />
                     <p className="message1">Share your FoodShare profile with a personal URL!</p>
                     <p id="personal-URL">FoodShare.com/cook/</p>
-                    <input placeholder="i.e. Doremon1380" className="edit-profile-input"></input><br />
+                    <input name="for-URL" placeholder="i.e. Doremon1380" className="edit-profile-input"></input><br />
                     <p className="header">Location</p>
-                    <label className="edit-profile-label">Country</label><br />
-                    <select id="select-country">
+                    <label className="edit-profile-label" for="select-country">Country</label><br />
+                    <select name="country" id="select-country">
                         <option value="none" selected>[None Selected]</option>
                         <optgroup label="A">
                             <option value="Afghanistan">Afghanistan</option>
@@ -352,21 +359,21 @@ function ProfileSettings() {
                         </optgroup>
                     </select><br />
                     <label className="edit-profile-label">City</label><br />
-                    <input placeholder="City" className="edit-profile-input social-network"></input><br />
+                    <input name="city" placeholder="City" className="edit-profile-input social-network"></input><br />
                     <label className="edit-profile-label">About you</label><br />
-                    <input placeholder="Tell us about yourself" className="edit-profile-input"></input>
+                    <input name="introduction yourself" placeholder="Tell us about yourself" className="edit-profile-input"></input>
                     <p className="header">Promote yourself</p>
                     <p className="message2">Add links to your social networks</p>
                     <label className="edit-profile-label">Pinterest</label><br />
-                    <input placeholder="Paste the link to your Pinterest" className="edit-profile-input"></input><br />
+                    <input name="link to Pinterest" placeholder="Paste the link to your Pinterest" className="edit-profile-input"></input><br />
                     <label className="edit-profile-label">Facebook</label><br />
-                    <input placeholder="Paste the link to your Facebook" className="edit-profile-input"></input><br />
+                    <input name="link to Facebook" placeholder="Paste the link to your Facebook" className="edit-profile-input"></input><br />
                     <label className="edit-profile-label">Instagram</label><br />
-                    <input placeholder="Paste the link to your Instagram" className="edit-profile-input"></input><br />
+                    <input name="link to Instagram" placeholder="Paste the link to your Instagram" className="edit-profile-input"></input><br />
                     <label className="edit-profile-label">Twitter</label><br />
-                    <input placeholder="Paste the link to your Twitter" className="edit-profile-input"></input><br />
+                    <input name="link to Twitter" placeholder="Paste the link to your Twitter" className="edit-profile-input"></input><br />
                     <label className="edit-profile-label">Personal blog</label><br />
-                    <input placeholder="Paste the link to your Twitter" className="edit-profile-input"></input><br />
+                    <input name="link to Personal blog" placeholder="Paste the link to your Twitter" className="edit-profile-input"></input><br />
                     <div id="edit-profile-bottom-buttons">
                         <button id="edit-profile-save-button">Save</button>
                         <button id="edit-profile-cancel-button">Cancel</button>

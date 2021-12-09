@@ -59,7 +59,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     background-color: rgb(245, 245, 245);
 }
 
-
 /* For the dropdown */
     /* to remove the carpet */  
 #accountName::after {

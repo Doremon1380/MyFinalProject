@@ -1,0 +1,1004 @@
+@media only screen and (max-width: 600px) {
+    /* For the container */
+    #photos-container {
+        width: 100%;
+        margin: auto; 
+        margin-left: -12px;
+    }
+
+    /* For add photos button */
+    #add-photos-button {
+        width: 300px;
+        height: 225px;
+        border: 1px dashed rgb(185, 185, 185);
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    #add-photos-button i {
+        font-size: 45px;
+        color: rgb(170, 170, 170);   
+    }
+
+    /* For all photo */
+    .photo {
+        width: 300px;
+        height: 340px;
+        border: 1px solid rgb(218, 218, 218);
+        margin: auto;
+        margin-top: 30px;
+    }   
+    
+    /* For photo1 */
+    #photo1 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo1 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo2 */
+    #photo2 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo2 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo3 */
+    #photo3 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo3 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For description */
+    .description button {
+        width: 298px;
+        height: 46px;
+        border: none;
+    }
+
+    .description button i {
+        margin-left: -90px ;
+        font-size: 25px;
+        color: rgb(170, 170, 170);   
+    }
+
+    .description button p {
+        display: inline-block;                         
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (min-width: 600px) { 
+    /* For the container */
+    #photos-container {
+        width: 100%;
+        margin: auto; 
+        margin-left: -12px;
+    }
+
+    /* For add photos button */
+    #add-photos-button {
+        width: 300px;
+        height: 225px;
+        border: 1px dashed rgb(185, 185, 185);
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    #add-photos-button i {
+        font-size: 45px;
+        color: rgb(170, 170, 170);   
+    }
+
+    /* For all photo */
+    .photo {
+        width: 300px;
+        height: 340px;
+        border: 1px solid rgb(218, 218, 218);
+        margin: auto;
+        margin-top: 30px;
+    }   
+    
+    /* For photo1 */
+    #photo1 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo1 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo2 */
+    #photo2 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo2 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo3 */
+    #photo3 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo3 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For description */
+    .description button {
+        width: 298px;
+        height: 46px;
+        border: none;
+    }
+
+    .description button i {
+        margin-left: -90px ;
+        font-size: 25px;
+        color: rgb(170, 170, 170);   
+    }
+
+    .description button p {
+        display: inline-block;                         
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (min-width: 670px) { 
+    /* For the container */
+    #photos-container {
+        width: 100%;
+        margin: auto; 
+        margin-left: -12px;
+    }
+    
+    /* For photos page */
+    #photos-page {
+        display: block;
+        margin: auto;
+        width: fit-content;
+    }
+
+    #grid-photos-page {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 20px;
+    }
+
+    /* For add photos button */
+    #add-photos-button {
+        width: 300px;
+        height: 340px;
+        border: 1px dashed rgb(185, 185, 185);
+        display: block;
+        margin: auto;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    #add-photos-button i {
+        font-size: 45px;
+        color: rgb(170, 170, 170);   
+    }
+
+    /* For all photo */
+    .photo {
+        width: 300px;
+        height: 340px;
+        border: 1px solid rgb(218, 218, 218);
+        margin: auto;
+        margin-top: 30px;
+        margin-left: 20px;
+    }   
+    
+    /* For photo1 */
+    #photo1 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo1 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo2 */
+    #photo2 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo2 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo3 */
+    #photo3 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo3 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For description */
+    .description button {
+        width: 298px;
+        height: 46px;
+        border: none;
+    }
+
+    .description button i {
+        margin-left: -90px ;
+        font-size: 25px;
+        color: rgb(170, 170, 170);   
+    }
+
+    .description button p {
+        display: inline-block;                         
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For the container */
+    #photos-container {
+        width: 100%;
+        margin: auto; 
+        margin-left: -12px;
+    }
+    
+    /* For photos page */
+    #photos-page {
+        display: block;
+        margin: auto;
+        width: fit-content;
+    }
+
+    #grid-photos-page {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 20px;
+    }
+
+    /* For add photos button */
+    #add-photos-button {
+        width: 300px;
+        height: 340px;
+        border: 1px dashed rgb(185, 185, 185);
+        display: block;
+        margin: auto;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    #add-photos-button i {
+        font-size: 45px;
+        color: rgb(170, 170, 170);   
+    }
+
+    /* For all photo */
+    .photo {
+        width: 300px;
+        height: 340px;
+        border: 1px solid rgb(218, 218, 218);
+        margin: auto;
+        margin-top: 30px;
+        margin-left: 20px;
+    }   
+    
+    /* For photo1 */
+    #photo1 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo1 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo2 */
+    #photo2 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo2 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo3 */
+    #photo3 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo3 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For description */
+    .description button {
+        width: 298px;
+        height: 46px;
+        border: none;
+    }
+
+    .description button i {
+        margin-left: -90px ;
+        font-size: 25px;
+        color: rgb(170, 170, 170);   
+    }
+
+    .description button p {
+        display: inline-block;                         
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (min-width: 956px) {
+    /* For the container */
+    #photos-container {
+        width: 70%;
+        margin: auto; 
+    }
+    
+    /* For photos page */
+    #photos-page {
+        display: block;
+        margin: auto;
+        width: fit-content;
+    }
+
+    #grid-photos-page {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 20px;
+    }
+
+    /* For add photos button */
+    #add-photos-button {
+        width: 300px;
+        height: 340px;
+        border: 1px dashed rgb(185, 185, 185);
+        display: block;
+        margin: auto;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    #add-photos-button i {
+        font-size: 45px;
+        color: rgb(170, 170, 170);   
+    }
+
+    /* For all photo */
+    .photo {
+        width: 300px;
+        height: 340px;
+        border: 1px solid rgb(218, 218, 218);
+        margin: auto;
+        margin-top: 30px;
+        margin-left: 20px;
+    }   
+    
+    /* For photo1 */
+    #photo1 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo1 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo2 */
+    #photo2 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo2 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo3 */
+    #photo3 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo3 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For description */
+    .description button {
+        width: 298px;
+        height: 46px;
+        border: none;
+    }
+
+    .description button i {
+        margin-left: -90px ;
+        font-size: 25px;
+        color: rgb(170, 170, 170);   
+    }
+
+    .description button p {
+        display: inline-block;                         
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* For the container */
+    #photos-container {
+        width: 60%;
+        margin: auto;
+    }
+
+    /* For photos page */
+    #photos-page {
+        display: block;
+        margin: auto;
+        width: fit-content;
+    }
+
+    #grid-photos-page {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 20px;
+    }
+
+    /* For add photos button */
+    #add-photos-button {
+        width: 300px;
+        height: 340px;
+        border: 1px dashed rgb(185, 185, 185);
+        display: block;
+        margin: auto;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    #add-photos-button i {
+        font-size: 45px;
+        color: rgb(170, 170, 170);   
+    }
+
+    /* For all photo */
+    .photo {
+        width: 300px;
+        height: 340px;
+        border: 1px solid rgb(218, 218, 218);
+        margin: auto;
+        margin-top: 30px;
+        margin-left: 20px;
+    }   
+    
+    /* For photo1 */
+    #photo1 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo1 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo2 */
+    #photo2 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo2 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo3 */
+    #photo3 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo3 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For description */
+    .description button {
+        width: 298px;
+        height: 46px;
+        border: none;
+    }
+
+    .description button i {
+        margin-left: -90px ;
+        font-size: 25px;
+        color: rgb(170, 170, 170);   
+    }
+
+    .description button p {
+        display: inline-block;                         
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    /* For the container */
+    #photos-container {
+        width: 60%;
+        margin: auto;
+    }
+
+    /* For photos page */
+    #photos-page {
+        display: block;
+        margin: auto;
+        width: fit-content;
+    }
+
+    #grid-photos-page {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 20px;
+    }
+
+    /* For add photos button */
+    #add-photos-button {
+        width: 300px;
+        height: 340px;
+        border: 1px dashed rgb(185, 185, 185);
+        display: block;
+        margin: auto;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    #add-photos-button i {
+        font-size: 45px;
+        color: rgb(170, 170, 170);   
+    }
+
+    /* For all photo */
+    .photo {
+        width: 300px;
+        height: 340px;
+        border: 1px solid rgb(218, 218, 218);
+        margin: auto;
+        margin-top: 30px;
+        margin-left: 20px;
+    }   
+    
+    /* For photo1 */
+    #photo1 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo1 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo2 */
+    #photo2 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo2 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo3 */
+    #photo3 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo3 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For description */
+    .description button {
+        width: 298px;
+        height: 46px;
+        border: none;
+    }
+
+    .description button i {
+        margin-left: -90px ;
+        font-size: 25px;
+        color: rgb(170, 170, 170);   
+    }
+
+    .description button p {
+        display: inline-block;                         
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    /* For the container */
+    #photos-container {
+        width: 64%;
+        margin: auto;
+    }
+
+    /* For photos page */
+    #photos-page {
+        display: block;
+        margin: auto;
+    }
+
+    #grid-photos-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 22px;
+    }
+
+    /* For add photos button */
+    #add-photos-button {
+        width: 300px;
+        height: 340px;
+        border: 1px dashed rgb(185, 185, 185);
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    #add-photos-button i {
+        font-size: 45px;
+        color: rgb(170, 170, 170);   
+    }
+
+    /* For all photo */
+    .photo {
+        width: 300px;
+        height: 340px;
+        border: 1px solid rgb(218, 218, 218);
+        margin: auto;
+        margin-top: 30px;
+    }   
+    
+    /* For photo1 */
+    #photo1 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo1 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo2 */
+    #photo2 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo2 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo3 */
+    #photo3 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo3 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For description */
+    .description button {
+        width: 298px;
+        height: 46px;
+        border: none;
+    }
+
+    .description button i {
+        margin-left: -90px ;
+        font-size: 25px;
+        color: rgb(170, 170, 170);   
+    }
+
+    .description button p {
+        display: inline-block;                         
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (min-width: 1712px) {
+    /* For the container */
+    #photos-container {
+        width: 65%;
+        margin: auto;
+    }
+
+    /* For photos page */
+    #photos-page {
+        display: block;
+        margin: auto;
+    }
+
+    #grid-photos-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 22px;
+    }
+
+    /* For add photos button */
+    #add-photos-button {
+        width: 300px;
+        height: 340px;
+        border: 1px dashed rgb(185, 185, 185);
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    #add-photos-button i {
+        font-size: 45px;
+        color: rgb(170, 170, 170);   
+    }
+
+    /* For all photo */
+    .photo {
+        width: 300px;
+        height: 340px;
+        border: 1px solid rgb(218, 218, 218);
+        margin: auto;
+        margin-top: 30px;
+    }   
+    
+    /* For photo1 */
+    #photo1 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo1 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo2 */
+    #photo2 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo2 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For photo3 */
+    #photo3 button {
+        display: block;
+        margin: auto;
+        margin-top: 7px;
+        border: none;
+        width: 286px;
+        height: 285px;
+    }
+
+    #photo3 img {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /* For description */
+    .description button {
+        width: 298px;
+        height: 46px;
+        border: none;
+    }
+
+    .description button i {
+        margin-left: -90px ;
+        font-size: 25px;
+        color: rgb(170, 170, 170);   
+    }
+
+    .description button p {
+        display: inline-block;                         
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+}
+
+

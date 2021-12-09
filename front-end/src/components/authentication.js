@@ -1,13 +1,20 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./nav-bar";
+import { Helmet } from 'react-helmet'
 
 import "./authentication.css";
 import Google from "./Google.png";
 
+const TITLE = 'Authentication - FoodShare.com';
+
 function Authentication() {
     return (
         <>
+            <Helmet>
+                <title>{TITLE}</title>
+            </Helmet>
+
             <NavBar />
             <div id="authentication-container">
                 <h1>Join with us</h1>
@@ -23,8 +30,8 @@ function Authentication() {
                     </button>
                 </div>
                 <p id="or"><span>OR</span></p>
-                <button id="sign-up-with-email"><a href="/Join">Sign up with email</a></button>
-                <p>Already a member? <a href="/SignIn" id="sign-in">Sign in</a>.</p>
+                <button id="sign-up-with-email"><a href="/signup">Sign up with email</a></button>
+                <p>Already a member? <a href="/signin" id="sign-in">Sign in</a>.</p>
             </div>
         </>
     );

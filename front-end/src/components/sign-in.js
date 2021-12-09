@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "./nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Helmet } from 'react-helmet'
 
 import "./sign-in.css";
 import Google from "./Google.png";
@@ -11,32 +12,38 @@ import ShowPassword from "./ShowPassword.png";
 const imagesPath = {
   HidePassword: HidePassword,
   ShowPassword: ShowPassword
-}
+};
+
+const TITLE = 'Sign In - FoodShare.com';
 
 class SignIn extends React.Component {
 
   state = {
     isPaswordShown: false,
     open: true
-  }
+  };
 
   togglePasswordVisibility = () => {
-    const {isPaswordShown} = this.state;
-    this.setState({isPaswordShown : !isPaswordShown})
-  }
+    const { isPaswordShown } = this.state;
+    this.setState({ isPaswordShown: !isPaswordShown })
+  };
 
   toggleImage = () => {
     this.setState(state => ({ open: !state.open }))
-  }
+  };
 
   getImageName = () => this.state.open ? "HidePassword" : "ShowPassword"
 
   render = () => {
-    const {isPaswordShown} = this.state;
+    const { isPaswordShown } = this.state;
     const imageName = this.getImageName();
 
     return (
       <>
+        <Helmet>
+          <title>{TITLE}</title>
+        </Helmet>
+
         <NavBar />
         <div id="sign-in-container">
           <h1>Sign in with social</h1>
@@ -55,18 +62,18 @@ class SignIn extends React.Component {
           <p>For existing FoodShare users.</p>
           <form>
             <div id="flex-box-2">
-              <input type="email" placeholder="Email" id="email-input"></input>
-              <input type={(isPaswordShown) ? "text" : "password"} placeholder="Password" id="password-input"></input>
-              <img src={imagesPath[imageName]} id="sign-in-password-icon" onClick={() => {this.toggleImage(); this.togglePasswordVisibility()}}></img>
+              <input name="email" type="email" placeholder="Email" id="email-input"></input>
+              <input name="password" type={(isPaswordShown) ? "text" : "password"} placeholder="Password" id="password-input"></input>
+              <img src={imagesPath[imageName]} id="sign-in-password-icon" onClick={() => { this.toggleImage(); this.togglePasswordVisibility() }}></img>
             </div>
             <div id="flex-box-3">
-              <input id="remember-me" type="checkbox" />
+              <input name="remember me" value="Remember me" id="remember-me" type="checkbox" />
               <label for="remember-me" id="remember-me-label">Remember me</label>
               <a href="#" id="forgot-password">Forgot password?</a>
             </div>
             <button id="sign-in-button">Sign in</button>
           </form>
-          <button id="for-new-users-button">You are new?<a href="/Join"><span> Join for free!</span></a></button>
+          <button id="for-new-users-button">You are new?<a href="/signup"><span> Join for free!</span></a></button>
           <p>By signing in, you are agreeing to our <a href="#" id="terms-of-service">Terms of Service</a> and our <a href="#" id="privacy-policy">Privacy Policy</a>.</p>
         </div>
       </>

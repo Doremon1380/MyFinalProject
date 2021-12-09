@@ -17,16 +17,16 @@ function NavBar() {
   return (
     <Navbar id="nav-bar">
       <Container id="nav-bar-container">
-        <a href="#"><img className="logo" src={MyLogo} alt="Logo" /></a>
+        <a href="/foodshare.com"><img className="logo" src={MyLogo} alt="Logo" /></a>
         <div className="search-bar">
           <form className="search-form">
-            <input className="search-input" type="search" placeholder="Find a recipe" aria-label="Search" />
+            <input name="search recipe" className="search-input" type="search" placeholder="Find a recipe" aria-label="Search" />
             <button className="search-button" type="submit"><i className="bi bi-search"></i></button>
           </form>
         </div>
-        <button className="sign-in-button"><a href="/SignIn">Sign in</a></button>
+        <button className="sign-in-button"><a href="/signin">Sign in</a></button>
         <DropdownButton id="dropdown-basic-button" variant="" title={<i className="menu-icon"><FaBars /></i>}>
-          <Dropdown.Item className="drop-down-item" href="#/">FoodShare</Dropdown.Item>
+          <Dropdown.Item className="drop-down-item" href="/foodshare.com">FoodShare</Dropdown.Item>
           <Dropdown.Divider />
           <Dropdown.Item className="drop-down-item" href="#/">World Cuisine</Dropdown.Item>
           <Dropdown.Divider />

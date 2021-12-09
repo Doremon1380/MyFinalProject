@@ -1,0 +1,714 @@
+@media only screen and (max-width: 600px) {
+    /* For newest recipes title */
+    #newest-recipes-title-in-home-page {
+        width: fit-content;
+        margin: auto;
+        font-size: 25px;
+        font-weight: bold;  
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    /* For all displayed recipe in home page */
+    .recipe-in-home-page {
+        border-top: 1px solid rgb(216, 216, 216);
+        margin-bottom: 50px;
+    }
+
+        /* For the save recipe button */
+    .save-recipe-button-in-home-page {
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: rgb(0, 0, 0, 0.4);
+        margin-left: 90px;
+    }
+
+    .save-recipe-button-in-home-page i {
+        font-size: 35px;
+        color: white;
+    }
+
+    .save-recipe-button-in-home-page:hover {
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+        /* For the recipe photo */
+    .recipe-photo-in-home-page {
+        background-color: rgb(201, 201, 201);
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        color: black;
+    }
+
+    /* For the name and related information of displayed recipe */
+    .recipe-name-in-home-page {
+        display: inline-block;
+        position: absolute;
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .recipe-ratings-and-favorites-in-home-page {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        width: 200px;
+        margin-left: 170px;
+        margin-top: -115px;
+    }
+
+    .recipe-ratings-in-home-page {
+        display: flex;
+    }
+
+    .recipe-ratings-in-home-page p {
+        margin-left: 5px;
+    }
+
+    .recipe-favorites-in-home-page {
+        display: flex;
+    }
+
+    .recipe-favorites-in-home-page i {
+        color: orangered;
+    }
+
+    .recipe-favorites-in-home-page p {
+        margin-left: 5px;
+    }
+
+    /* For recipe author */
+    .recipe-author-in-home-page {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .recipe-author-in-home-page a {
+        text-decoration-color: orangered;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* For load more recipes button */
+    .load-more-recipes-button-in-home-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    .load-more-recipes-button-in-home-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+
+    /* For recipes section title */
+    .recipes-section-title-in-home-page {
+        width: fit-content;
+        margin: auto;
+        font-size: 25px;
+        font-weight: bold;  
+        margin-bottom: 10px;
+    }
+
+    /* For the break line */
+    .break-line-in-home-page {
+        color: rgb(175, 175, 175);
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* For the container */
+    #home-page-container {
+        width: 570px;
+        margin: auto;
+    }
+
+    /* For newest recipes title */
+    #newest-recipes-title-in-home-page {
+        width: fit-content;
+        margin: auto;
+        font-size: 25px;
+        font-weight: bold;  
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    /* For all displayed recipe in home page */
+    .recipe-in-home-page {
+        border-top: 1px solid rgb(216, 216, 216);
+        margin-bottom: 50px;
+    }
+
+        /* For the save recipe button */
+    .save-recipe-button-in-home-page {
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: rgb(0, 0, 0, 0.4);
+        margin-left: 90px;
+    }
+
+    .save-recipe-button-in-home-page i {
+        font-size: 35px;
+        color: white;
+    }
+
+    .save-recipe-button-in-home-page:hover {
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+    
+        /* For the recipe photo */
+    .recipe-photo-in-home-page {
+        background-color: rgb(201, 201, 201);
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        color: black;
+    }
+
+    /* For the name and related information of displayed recipe */
+    .recipe-name-in-home-page {
+        display: inline-block;
+        position: absolute;
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .recipe-ratings-and-favorites-in-home-page {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        width: 200px;
+        margin-left: 170px;
+        margin-top: -115px;
+    }
+
+    .recipe-ratings-in-home-page {
+        display: flex;
+    }
+
+    .recipe-ratings-in-home-page p {
+        margin-left: 5px;
+    }
+
+    .recipe-favorites-in-home-page {
+        display: flex;
+    }
+
+    .recipe-favorites-in-home-page i {
+        color: orangered;
+    }
+
+    .recipe-favorites-in-home-page p {
+        margin-left: 5px;
+    }
+
+    /* For recipe author */
+    .recipe-author-in-home-page {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .recipe-author-in-home-page a {
+        text-decoration-color: orangered;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* For load more recipes button */
+    .load-more-recipes-button-in-home-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    .load-more-recipes-button-in-home-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+
+    /* For recipes section title */
+    .recipes-section-title-in-home-page {
+        width: fit-content;
+        margin: auto;
+        font-size: 25px;
+        font-weight: bold;  
+        margin-bottom: 10px;
+    }
+
+    /* For the break line */
+    .break-line-in-home-page {
+        color: rgb(175, 175, 175);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For the container */
+    #home-page-container {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* For newest recipes title */
+    #newest-recipes-title-in-home-page {
+        width: fit-content;
+        margin: auto;
+        font-size: 25px;
+        font-weight: bold;  
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .recipes-section-in-home-page {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 20px;
+        width: fit-content;
+        margin: auto;
+    }
+
+    /* For all displayed recipe in home page */
+    .recipe-in-home-page {
+        border: 1px solid rgb(216, 216, 216);
+        width: 270px;
+        height: 380px;
+        margin-bottom: 30px;
+    }
+
+        /* For the save recipe button */
+    .save-recipe-button-in-home-page {
+        border: none;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        background-color: rgb(0, 0, 0, 0.4);
+        margin-left: 189px;
+    }
+
+    .save-recipe-button-in-home-page i {
+        font-size: 45px;
+        color: white;
+    }
+
+    .save-recipe-button-in-home-page:hover {
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+        /* For the recipe photo */
+    .recipe-photo-in-home-page {
+        background-color: rgb(201, 201, 201);
+        display: inline-block;
+        width: 268px;
+        height: 264px;
+        color: black;
+    }
+
+    /* For the name and related information of displayed recipe */
+    .recipe-name-in-home-page {
+        display: block;
+        position: relative;
+        width: fit-content;
+        margin: 10px 0px 0px 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .recipe-ratings-and-favorites-in-home-page {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        width: 200px;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+    .recipe-ratings-in-home-page {
+        display: flex;
+    }
+
+    .recipe-ratings-in-home-page p {
+        margin-left: 5px;
+    }
+
+    .recipe-favorites-in-home-page {
+        display: flex;
+    }
+
+    .recipe-favorites-in-home-page i {
+        color: orangered;
+    }
+
+    .recipe-favorites-in-home-page p {
+        margin-left: 5px;
+    }
+
+    /* For recipe author */
+    .recipe-author-in-home-page {
+        display: block;
+        width: fit-content;
+        margin-left: 15px;
+        margin-top: 40px;
+    }
+
+    .recipe-author-in-home-page a {
+        text-decoration-color: orangered;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* For load more recipes button */
+    .load-more-recipes-button-in-home-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    .load-more-recipes-button-in-home-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+
+    /* For recipes section title */
+    .recipes-section-title-in-home-page {
+        width: fit-content;
+        margin: auto;
+        font-size: 25px;
+        font-weight: bold;  
+        margin-bottom: 10px;
+    }
+
+    /* For the break line */
+    .break-line-in-home-page {
+        color: rgb(175, 175, 175);
+    }
+}
+
+@media only screen and (min-width: 956px) {
+    /* For the container */
+    #home-page-container {
+        width: 70%;
+        margin: auto;
+    }
+
+    /* For newest recipes title */
+    #newest-recipes-title-in-home-page {
+        width: fit-content;
+        margin: auto;
+        font-size: 25px;
+        font-weight: bold;  
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .recipes-section-in-home-page {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 20px;
+        width: fit-content;
+        margin: auto;
+    }
+
+    /* For all displayed recipe in home page */
+    .recipe-in-home-page {
+        border: 1px solid rgb(216, 216, 216);
+        width: 270px;
+        height: 380px;
+        margin-bottom: 30px;
+    }
+
+        /* For the save recipe button */
+    .save-recipe-button-in-home-page {
+        border: none;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        background-color: rgb(0, 0, 0, 0.4);
+        margin-left: 189px;
+    }
+
+    .save-recipe-button-in-home-page i {
+        font-size: 45px;
+        color: white;
+    }
+
+    .save-recipe-button-in-home-page:hover {
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+        /* For the recipe photo */
+    .recipe-photo-in-home-page {
+        background-color: rgb(201, 201, 201);
+        display: inline-block;
+        width: 268px;
+        height: 264px;
+        color: black;
+    }
+
+    /* For the name and related information of displayed recipe */
+    .recipe-name-in-home-page {
+        display: block;
+        position: relative;
+        width: fit-content;
+        margin: 10px 0px 0px 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .recipe-ratings-and-favorites-in-home-page {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        width: 200px;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+    .recipe-ratings-in-home-page {
+        display: flex;
+    }
+
+    .recipe-ratings-in-home-page p {
+        margin-left: 5px;
+    }
+
+    .recipe-favorites-in-home-page {
+        display: flex;
+    }
+
+    .recipe-favorites-in-home-page i {
+        color: orangered;
+    }
+
+    .recipe-favorites-in-home-page p {
+        margin-left: 5px;
+    }
+
+    /* For recipe author */
+    .recipe-author-in-home-page {
+        display: block;
+        width: fit-content;
+        margin-left: 15px;
+        margin-top: 40px;
+    }
+
+    .recipe-author-in-home-page a {
+        text-decoration-color: orangered;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* For load more recipes button */
+    .load-more-recipes-button-in-home-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    .load-more-recipes-button-in-home-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+
+    /* For recipes section title */
+    .recipes-section-title-in-home-page {
+        width: fit-content;
+        margin: auto;
+        font-size: 25px;
+        font-weight: bold;  
+        margin-bottom: 10px;
+    }
+
+    /* For the break line */
+    .break-line-in-home-page {
+        color: rgb(175, 175, 175);
+    }
+}   
+
+@media only screen and (min-width: 1200px) {
+    /* For the container */
+    #home-page-container {
+        width: 75%;
+        margin: auto;
+    }
+
+    /* For newest recipes title */
+    #newest-recipes-title-in-home-page {
+        width: fit-content;
+        margin: auto;
+        font-size: 25px;
+        font-weight: bold;  
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .recipes-section-in-home-page {
+        display: grid;
+        grid-template-columns: 31% 31% 31%;
+        grid-column-gap: 30px;
+        width: fit-content;
+        margin: auto;
+    }
+
+    /* For all displayed recipe in home page */
+    .recipe-in-home-page {
+        border: 1px solid rgb(216, 216, 216);
+        width: 270px;
+        height: 380px;
+        margin-bottom: 30px;
+    }
+
+        /* For the save recipe button */
+    .save-recipe-button-in-home-page {
+        border: none;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        background-color: rgb(0, 0, 0, 0.4);
+        margin-left: 189px;
+    }
+
+    .save-recipe-button-in-home-page i {
+        font-size: 45px;
+        color: white;
+    }
+
+    .save-recipe-button-in-home-page:hover {
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+
+        /* For the recipe photo */
+    .recipe-photo-in-home-page {
+        background-color: rgb(201, 201, 201);
+        display: inline-block;
+        width: 268px;
+        height: 264px;
+        color: black;
+    }
+
+    /* For the name and related information of displayed recipe */
+    .recipe-name-in-home-page {
+        display: block;
+        position: relative;
+        width: fit-content;
+        margin: 10px 0px 0px 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .recipe-ratings-and-favorites-in-home-page {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        width: 200px;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+    .recipe-ratings-in-home-page {
+        display: flex;
+    }
+
+    .recipe-ratings-in-home-page p {
+        margin-left: 5px;
+    }
+
+    .recipe-favorites-in-home-page {
+        display: flex;
+    }
+
+    .recipe-favorites-in-home-page i {
+        color: orangered;
+    }
+
+    .recipe-favorites-in-home-page p {
+        margin-left: 5px;
+    }
+
+    /* For recipe author */
+    .recipe-author-in-home-page {
+        display: block;
+        width: fit-content;
+        margin-left: 15px;
+        margin-top: 40px;
+    }
+
+    .recipe-author-in-home-page a {
+        text-decoration-color: orangered;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* For load more recipes button */
+    .load-more-recipes-button-in-home-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    .load-more-recipes-button-in-home-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+
+    /* For recipes section title */
+    .recipes-section-title-in-home-page {
+        width: fit-content;
+        margin: auto;
+        font-size: 25px;
+        font-weight: bold;  
+        margin-bottom: 10px;
+    }
+
+    /* For the break line */
+    .break-line-in-home-page {
+        color: rgb(175, 175, 175);
+    }
+}

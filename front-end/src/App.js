@@ -10,6 +10,11 @@ import PrivateProfile from "./components/private-profile";
 import ProfileSettings from "./components/profile-settings";
 import NotificationSettings from "./components/notification-settings";
 import AccountSettings from "./components/account-settings";
+import CreateRecipe from "./components/create-recipe";
+import Photos from "./components/photos";
+import PhotoId from "./components/photo-id";
+import Home from "./components/home"
+import RecipeDetails from "./components/recipe-details"
 
 function App() {
   return (
@@ -17,13 +22,18 @@ function App() {
       <div>
         <Switch>
           {/* <Route path="/" component={Home} exact /> */}
-          <Route path="/SignIn" component={SignIn} />
-          <Route path="/Authentication" component={Authentication} />
-          <Route path="/Join" component={SignUp} />
-          <Route path="/Private Profile" component={PrivateProfile} />
-          <Route path="/Profile Settings" component={ProfileSettings} />
-          <Route path="/Notification Settings" component={NotificationSettings} />
-          <Route path="/Account Settings" component={AccountSettings} />
+          <Route path="/signin" component={SignIn} />
+          <Route path="/authentication" component={Authentication} />
+          <Route path="/signup" component={SignUp} />
+          <Route path="/about-me" component={PrivateProfile} />
+          <Route path="/edit-profile" component={ProfileSettings} />
+          <Route path="/notification-settings" component={NotificationSettings} />
+          <Route path="/account-settings" component={AccountSettings} />
+          <Route path="/create-recipe" component={CreateRecipe}/>
+          <Route path="/photos" component={Photos}/>
+          <Route path="/photo-id" component={PhotoId}/>
+          <Route path="/foodshare.com" component={Home}/>
+          <Route path="/recipe-details" component={RecipeDetails}/>
         </Switch>
       </div>
     </BrowserRouter>
