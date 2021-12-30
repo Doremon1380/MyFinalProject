@@ -25,7 +25,7 @@ function PhotoId() {
             <div id="photo-id-container">
                 <a href="/photos">
                     <div id="back-to-photos-page">
-                        <i class="bi bi-arrow-left"></i>
+                        <i className="bi bi-arrow-left"></i>
                         <p>Back to my photos</p>
                     </div>
                 </a>
@@ -35,8 +35,10 @@ function PhotoId() {
                     <button className="photo-in-group-of-photo-id-page"><a href="/photo-id"><img alt="photo3"></img></a></button>
                 </nav>
                 <div id="for-user-account-photo-id-page">
-                    <button id="avatar-photo-id-page"><a href="#/"><img alt="avatar" id="avatar-image-photo-id-page"></img></a></button>
-                    <p id="username-photo-id-page">Username</p>
+                    <div id="avatar-and-username-photo-id-page">
+                        <button id="avatar-photo-id-page"><a href="#/"><img alt="avatar" id="avatar-image-photo-id-page"></img></a></button>
+                        <a href="#"><p id="username-photo-id-page">Username</p></a>
+                    </div>
                     <button id="follow-button-photo-id-page">
                         <i><IoPersonAddSharp /></i>
                         <p>Follow</p>

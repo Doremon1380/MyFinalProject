@@ -61,11 +61,17 @@
         color: black;
     }
 
-    #username-photo-id-page {
-        position: absolute;
-        font-size: 17px;
-        margin: 15px 0px 0px 60px;
+    #avatar-photo-id-page + a {
+        text-decoration: none;
+        margin-left: 10px;
     }
+
+    #username-photo-id-page {
+        display: inline-block;
+        font-size: 17px;
+        color: black;
+    }
+
         /* For the account follow button */
     #follow-button-photo-id-page {
         width: 100px;
@@ -249,10 +255,15 @@
         color: black;
     }
 
+    #avatar-photo-id-page + a {
+        text-decoration: none;
+        margin-left: 10px;
+    }
+
     #username-photo-id-page {
-        position: absolute;
+        display: inline-block;
         font-size: 17px;
-        margin: 15px 0px 0px 60px;
+        color: black;
     }
     
         /* For the account follow button */
@@ -445,11 +456,17 @@
         color: black;
     }
 
-    #username-photo-id-page {
-        position: absolute;
-        font-size: 17px;
-        margin: 15px 0px 0px 60px;
+    #avatar-photo-id-page + a {
+        text-decoration: none;
+        margin-left: 10px;
     }
+
+    #username-photo-id-page {
+        display: inline-block;
+        font-size: 17px;
+        color: black;
+    }
+
         /* For the account follow button */
     #follow-button-photo-id-page {
         width: 100px;

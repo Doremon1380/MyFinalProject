@@ -124,7 +124,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     /* For the container */
     #nav-bar-container {
         width: 80%;

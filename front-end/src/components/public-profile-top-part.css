@@ -1,0 +1,205 @@
+@media only screen and (max-width: 600px) {
+    /* For the top section */
+    #top-section-of-public-profile-top-part {
+        display: flex;
+        height: 130px;
+        width: 100%;
+        background-image: url("top_background.jpg");
+        background-repeat: no-repeat;
+        justify-content: space-between;
+    }
+
+    /* For the user account */
+    #user-account-of-public-profile-top-part {
+        display: flex;
+    }
+
+    /* For the user avatar */
+    #avatar-in-top-section-of-public-profile-top-part {
+        border: solid;
+        border-radius: 50%;
+        height: 80px;
+        width:  80px;
+        margin: 30px 0px 0px 10px;
+        color: rgb(226, 226, 226);
+        text-decoration: none;
+    }
+
+    /* For the account related part */
+    #account-related-in-top-section-of-public-profile-top-part {
+        display: flex;
+        flex-direction: column;
+        margin: 35px 0px 0px 10px;
+        height: 60px;
+        width: 200px;
+        color: rgb(226, 226, 226);
+    }
+
+    /* For the user account name */
+    #account-name-in-top-section-of-public-profile-top-part {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    /* For the icons and data in top section */
+    #icons-and-data-in-top-section-of-public-profile-top-part {
+        display: block;
+        width: 200px;
+        margin: -15px 0px 0px -30px;
+    }
+
+    #icons-and-data-in-top-section-of-public-profile-top-part i {
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    /* For the follow button */
+    #follow-button-in-top-section-of-public-profile-top-part {
+        display: flex;
+        position: relative;
+        width: 130px;
+        height: 50px;
+        margin: auto;
+        margin-right: 12px;
+        border: none;
+        opacity: 0.9;
+    }
+
+    #follow-button-in-top-section-of-public-profile-top-part i {
+        font-size: 25px;
+        margin: auto;
+        color: rgb(78, 145, 223);
+        margin-right: 15px;    
+    }
+
+    #follow-button-in-top-section-of-public-profile-top-part p {
+        margin: auto;
+        font-size: 14px;
+        margin-left: -10px;    
+    }
+
+    /* For group photos */
+    #group-photos-in-public-profile-top-part {
+        height: fit-content;
+        overflow: auto;
+        white-space: nowrap;
+        background-color: white;
+        margin-top: 5px;
+    }   
+
+    #group-photos-in-public-profile-top-part a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #group-photos-in-public-profile-top-part img {
+        display: inline-block;
+        height: 80px;
+        width: 80px;
+        margin-left: 5px;
+        background-color: rgb(228, 228, 228);
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    /* For the top section */
+    #top-section-of-public-profile-top-part {
+        display: flex;
+        height: 130px;
+        width: 100%;
+        background-image: url("top_background.jpg");
+        background-repeat: no-repeat;
+        justify-content: space-between;
+    }
+
+    /* For the user account */
+    #user-account-of-public-profile-top-part {
+        display: flex;
+    }
+
+    /* For the user avatar */
+    #avatar-in-top-section-of-public-profile-top-part {
+        border: solid;
+        border-radius: 50%;
+        height: 80px;
+        width:  80px;
+        margin: 30px 0px 0px 10px;
+        color: rgb(226, 226, 226);
+        text-decoration: none;
+    }
+
+    /* For the account related part */
+    #account-related-in-top-section-of-public-profile-top-part {
+        display: flex;
+        flex-direction: column;
+        margin: 35px 0px 0px 10px;
+        height: 60px;
+        width: 200px;
+        color: rgb(226, 226, 226);
+    }
+
+    /* For the user account name */
+    #account-name-in-top-section-of-public-profile-top-part {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    /* For the icons and data in top section */
+    #icons-and-data-in-top-section-of-public-profile-top-part {
+        display: block;
+        width: 200px;
+        margin: -15px 0px 0px -30px;
+    }
+
+    #icons-and-data-in-top-section-of-public-profile-top-part i {
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    /* For the follow button */
+    #follow-button-in-top-section-of-public-profile-top-part {
+        display: flex;
+        position: relative;
+        width: 130px;
+        height: 50px;
+        margin: auto;
+        margin-right: 12px;
+        border: none;
+        opacity: 0.9;
+    }
+
+    #follow-button-in-top-section-of-public-profile-top-part i {
+        font-size: 25px;
+        margin: auto;
+        color: rgb(78, 145, 223);
+        margin-right: 15px;    
+    }
+
+    #follow-button-in-top-section-of-public-profile-top-part p {
+        margin: auto;
+        font-size: 14px;
+        margin-left: -10px;    
+    }
+
+    /* For group photos */
+    #group-photos-in-public-profile-top-part {
+        height: fit-content;
+        overflow: auto;
+        white-space: nowrap;
+        background-color: white;
+        margin-top: 5px;
+    }   
+
+    #group-photos-in-public-profile-top-part a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #group-photos-in-public-profile-top-part img {
+        display: inline-block;
+        height: 80px;
+        width: 80px;
+        margin-left: 5px;
+        background-color: rgb(228, 228, 228);
+    }
+}

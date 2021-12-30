@@ -15,6 +15,15 @@ import Photos from "./components/photos";
 import PhotoId from "./components/photo-id";
 import Home from "./components/home"
 import RecipeDetails from "./components/recipe-details"
+import AllReviews from "./components/all-reviews";
+import FavoriteRecipes from "./components/favorite-recipes";
+import FollowingAccounts from "./components/following-accounts";
+import FollowerAccounts from "./components/follower-accounts";
+import MadeRecipes from "./components/made-recipes";
+import EvaluatedRecipes from "./components/evaluated-recipes";
+import PersonalRecipes from "./components/personal-recipes";
+import CollectionRecipes from "./components/collection-recipes";
+import PublicProfileFavoriteRecipes from "./components/public-profile-favorite-recipes";
 
 function App() {
   return (
@@ -34,6 +43,15 @@ function App() {
           <Route path="/photo-id" component={PhotoId}/>
           <Route path="/foodshare.com" component={Home}/>
           <Route path="/recipe-details" component={RecipeDetails}/>
+          <Route path="/all-reviews" component={AllReviews}/>
+          <Route path="/favorite-recipes" component={FavoriteRecipes}/>
+          <Route path="/following-accounts" component={FollowingAccounts}/>
+          <Route path="/follower-accounts" component={FollowerAccounts}/>
+          <Route path="/made-recipes" component={MadeRecipes}/>
+          <Route path="/evaluated-recipes" component={EvaluatedRecipes}/>
+          <Route path="/personal-recipes" component={PersonalRecipes}/>
+          <Route path="/collection-recipes" component={CollectionRecipes}/>
+          <Route path="/public-profile-favorite-recipes" component={PublicProfileFavoriteRecipes}/>
         </Switch>
       </div>
     </BrowserRouter>

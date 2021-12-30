@@ -1,0 +1,301 @@
+@media only screen and (max-width: 600px) {
+    /* For the container of top part */
+    #top-part-container-in-follower-accounts-page {
+        width: 100%;
+        margin: auto; 
+        margin-left: -12px;
+    }
+
+    /* For the container of follower accounts page */
+    #follower-accounts-page {
+        width: 95%;
+        margin: auto;
+    }
+
+    /* For the "Following" and "Follower" buttons */
+    #following-and-follower-in-follower-accounts-page {
+        margin-top: 10px;
+    }
+    
+    #following-and-follower-in-follower-accounts-page a button {
+        border: none;
+        background-color: white;
+        width: 160px;
+        height: 40px;
+        color: rgb(180, 180, 180);
+        border-bottom: 3px solid rgb(200, 200, 200);
+    }
+
+    #following-and-follower-in-follower-accounts-page a + a button {
+        color: black;
+        border-bottom: 3px solid rgb(255, 123, 0);
+    }
+
+    /* For follower accounts in follower accounts page */
+    #follower-accounts-in-follower-accounts-page {
+        margin: auto;
+        width: fit-content;
+    }
+
+    #follower-account-in-follower-accounts-page {
+        width: 300px;
+        height: 110px;
+        margin-top: 20px;
+        box-shadow: 0px 0px 5px rgb(201, 201, 201);
+        display: flex;
+    }
+
+    #follower-account-in-follower-accounts-page a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* For follower account images */
+    #follower-account-in-follower-accounts-page a img {
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: rgb(190, 190, 190);
+    }
+
+    #follower-account-in-follower-accounts-page a + div {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0px 0px 10px;
+    }
+
+    /* For the follower button */
+    #follower-account-in-follower-accounts-page a + div button {
+        margin-top: 10px;
+        border: none;
+        height: 40px;
+        width: 150px;
+        display: flex;
+    }
+
+    #follower-account-in-follower-accounts-page a + div button i {
+        font-size: 25px;
+        margin: auto;
+        color: rgb(78, 145, 223);
+        margin-right: 15px;   
+    }
+
+    #follower-account-in-follower-accounts-page a + div button i + p {
+        margin: auto;
+        font-size: 14px;
+        margin-left: -10px;
+    }
+
+    /* For the "Show More" button */
+    #load-more-follower-accounts-button-in-follower-accounts-page {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    #load-more-follower-accounts-button-in-follower-accounts-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    /* For the container of top part */
+    #top-part-container-in-follower-accounts-page {
+        width: 100%;
+        margin: auto; 
+        margin-left: -12px;
+    }
+
+    /* For the container of follower accounts page */
+    #follower-accounts-page {
+        width: 95%;
+        margin: auto;
+    }
+
+    /* For the "Following" and "Follower" buttons */
+    #following-and-follower-in-follower-accounts-page {
+        margin-top: 10px;
+    }
+    
+    #following-and-follower-in-follower-accounts-page a button {
+        border: none;
+        background-color: white;
+        width: 160px;
+        height: 40px;
+        color: rgb(180, 180, 180);
+        border-bottom: 3px solid rgb(200, 200, 200);
+    }
+
+    #following-and-follower-in-follower-accounts-page a + a button {
+        color: black;
+        border-bottom: 3px solid rgb(255, 123, 0);
+    }
+
+    /* For follower accounts in follower accounts page */
+    #follower-accounts-in-follower-accounts-page {
+        margin: auto;
+        width: fit-content;
+    }
+
+    #follower-account-in-follower-accounts-page {
+        width: 300px;
+        height: 110px;
+        margin-top: 20px;
+        box-shadow: 0px 0px 5px rgb(201, 201, 201);
+        display: flex;
+    }
+
+    #follower-account-in-follower-accounts-page a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* For follower account images */
+    #follower-account-in-follower-accounts-page a img {
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: rgb(190, 190, 190);
+    }
+
+    #follower-account-in-follower-accounts-page a + div {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0px 0px 10px;
+    }
+
+    /* For the follower button */
+    #follower-account-in-follower-accounts-page a + div button {
+        margin-top: 10px;
+        border: none;
+        height: 40px;
+        width: 150px;
+        display: flex;
+    }
+
+    #follower-account-in-follower-accounts-page a + div button i {
+        font-size: 25px;
+        margin: auto;
+        color: rgb(78, 145, 223);
+        margin-right: 15px;   
+    }
+
+    #follower-account-in-follower-accounts-page a + div button i + p {
+        margin: auto;
+        font-size: 14px;
+        margin-left: -10px;
+    }
+
+    /* For the "Show More" button */
+    #load-more-follower-accounts-button-in-follower-accounts-page {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    #load-more-follower-accounts-button-in-follower-accounts-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+}
+
+@media only screen and (min-width: 670px) {
+    #follower-accounts-in-follower-accounts-page {
+        margin: auto;
+        width: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 956px) {
+    /* For the container of top part */
+    #top-part-container-in-follower-accounts-page {
+        width: 70%;
+        margin: auto; 
+    }
+
+    /* For the container of follower accounts page */
+    #follower-accounts-page {
+        width: 65%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* For the container of top part */
+    #top-part-container-in-follower-accounts-page {
+        width: 60%;
+        margin: auto;
+    }
+
+    /* For the container of follower accounts page */
+    #follower-accounts-page {
+        width: 56%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    /* For the container of top part */
+    #top-part-container-in-follower-accounts-page {
+        width: 60%;
+        margin: auto;
+    }
+
+    /* For the container of follower accounts page */
+    #follower-accounts-page {
+        width: 56%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    /* For the container of top part */
+    #top-part-container-in-follower-accounts-page {
+        width: 64%;
+        margin: auto;
+    }
+
+    /* For the container of follower accounts page */
+    #follower-accounts-page {
+        width: 61%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1712px) {
+    /* For the container of top part */
+    #top-part-container-in-follower-accounts-page {
+        width: 65%;
+        margin: auto;
+    }
+
+    /* For the container of follower accounts page */
+    #follower-accounts-page {
+        width: 62%;
+        margin: auto;
+    }
+}

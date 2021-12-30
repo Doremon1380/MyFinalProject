@@ -23,8 +23,10 @@ function Home() {
                 <div className="recipes-section-in-home-page">
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 1"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -43,8 +45,10 @@ function Home() {
                     </div>
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 2"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -63,8 +67,10 @@ function Home() {
                     </div>
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 3"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -83,8 +89,10 @@ function Home() {
                     </div>
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 4"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -103,8 +111,10 @@ function Home() {
                     </div>
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 5"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -123,8 +133,10 @@ function Home() {
                     </div>
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 6"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -142,14 +154,16 @@ function Home() {
                         <p className="recipe-author-in-home-page">By <a href="#">Author</a></p>
                     </div>
                 </div>
-                <button className="load-more-recipes-button-in-home-page">LOAD MORE</button>
+                <button className="load-more-recipes-button-in-home-page">SHOW MORE</button>
                 <hr className="break-line-in-home-page"></hr>
                 <p className="recipes-section-title-in-home-page">Most Rated Recipes</p>
                 <div className="recipes-section-in-home-page">
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 1"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -168,8 +182,10 @@ function Home() {
                     </div>
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 2"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -188,8 +204,10 @@ function Home() {
                     </div>
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 3"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -208,8 +226,10 @@ function Home() {
                     </div>
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 4"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -228,8 +248,10 @@ function Home() {
                     </div>
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 5"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -248,8 +270,10 @@ function Home() {
                     </div>
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 6"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -267,14 +291,16 @@ function Home() {
                         <p className="recipe-author-in-home-page">By <a href="#">Author</a></p>
                     </div>
                 </div>
-                <button className="load-more-recipes-button-in-home-page">LOAD MORE</button>
+                <button className="load-more-recipes-button-in-home-page">SHOW MORE</button>
                 <hr className="break-line-in-home-page"></hr>
                 <p className="recipes-section-title-in-home-page">Most Favorite Recipes</p>
                 <div className="recipes-section-in-home-page">
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 1"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -293,8 +319,10 @@ function Home() {
                     </div>
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 2"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -313,8 +341,10 @@ function Home() {
                     </div>
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 3"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -333,8 +363,10 @@ function Home() {
                     </div>
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 4"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -353,8 +385,10 @@ function Home() {
                     </div>
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 5"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -373,8 +407,10 @@ function Home() {
                     </div>
                     <div className="recipe-in-home-page">
                         <button className="save-recipe-button-in-home-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-home-page" src="#" alt="image 6"></img></a>
-                        <p className="recipe-name-in-home-page">Recipe name</p>
+                        <a href="/recipe-details">
+                            <img className="recipe-photo-in-home-page" src="#" alt="(Recipe name)"></img>
+                            <p className="recipe-name-in-home-page">Recipe name</p>
+                        </a>
                         <div className="recipe-ratings-and-favorites-in-home-page">
                             <div className="recipe-ratings-in-home-page">
                                 <i class="bi bi-star"></i>
@@ -392,7 +428,7 @@ function Home() {
                         <p className="recipe-author-in-home-page">By <a href="#">Author</a></p>
                     </div>
                 </div>
-                <button className="load-more-recipes-button-in-home-page">LOAD MORE</button>
+                <button className="load-more-recipes-button-in-home-page">SHOW MORE</button>
             </div>
         </>
     );

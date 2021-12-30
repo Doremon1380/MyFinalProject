@@ -33,17 +33,17 @@ function SecondNavBar() {
                         <button id="avatar"><a href="/about-me"><img alt="avatar" id="avatar-image"></img></a></button>
                         <DropdownButton id="accountName" variant="" title="Account Name">
                             <Dropdown.Item className="drop-down-item2" href="/about-me">My Profile</Dropdown.Item>
-                            <Dropdown.Item className="drop-down-item2" href="#/">My Friends</Dropdown.Item>
+                            <Dropdown.Item className="drop-down-item2" href="/follower-accounts">My Friends</Dropdown.Item>
                             <Dropdown.Item className="drop-down-item2" href="#/">My Shopping List</Dropdown.Item>
                             <Dropdown.Divider />
-                            <Dropdown.Item className="drop-down-item2" href="#/">Logout</Dropdown.Item>
+                            <Dropdown.Item className="drop-down-item2" href="/foodshare.com">Logout</Dropdown.Item>
                         </DropdownButton>
                         <DropdownButton id="dropdown-basic-button-account" variant="" title={<i className="down-icon"><FaChevronDown /></i>}>
                             <Dropdown.Item className="drop-down-item2" href="/about-me">My Profile</Dropdown.Item>
-                            <Dropdown.Item className="drop-down-item2" href="#/">My Friends</Dropdown.Item>
+                            <Dropdown.Item className="drop-down-item2" href="/follower-accounts">My Friends</Dropdown.Item>
                             <Dropdown.Item className="drop-down-item2" href="#/">My Shopping List</Dropdown.Item>
                             <Dropdown.Divider />
-                            <Dropdown.Item className="drop-down-item2" href="#/">Logout</Dropdown.Item>
+                            <Dropdown.Item className="drop-down-item2" href="/foodshare.com">Logout</Dropdown.Item>
                         </DropdownButton>
                     </div>
                     <DropdownButton id="dropdown-basic-button-menu" variant="" title={<i className="menu-icon2"><FaBars /></i>}>

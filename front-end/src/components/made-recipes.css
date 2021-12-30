@@ -1,0 +1,389 @@
+@media only screen and (max-width: 600px) {
+    /* For the container of top part */
+    #top-part-container-in-made-recipes-page {
+        width: 100%;
+        margin: auto; 
+        margin-left: -12px;
+    }
+
+    /* For the container of made recipes page */
+    #made-recipes-page {
+        width: 95%;
+        margin: auto;
+    }
+
+    /* For the made recipes sorting options */
+    #made-recipes-sorting-options-in-made-recipes-page {
+        display: flex;
+        margin: 10px 0px 30px 0px;
+        width: 100%;
+        justify-content: end;
+    }
+
+    #made-recipes-sorting-options-in-made-recipes-page label {
+        font-size: 16px;
+        margin: 10px 5px 0px 0px;
+        color: rgb(180, 180, 180);
+        margin-top: 7px;
+    }
+
+    #select-made-recipes-sorting-options-in-made-recipes-page {
+        border: none;
+        outline: none;
+        margin-top: 7px;
+        height: fit-content;
+    }
+
+    /* For recipe in made recipes page */
+    .recipe-in-made-recipes-page {
+        border: 1px solid rgb(216, 216, 216);
+        margin: auto;
+        margin-bottom: 30px;
+        width: fit-content;
+    }
+
+    /* For the save recipe button */
+    .save-recipe-button-in-made-recipes-page {
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: rgb(0, 0, 0, 0.4);
+        margin: 10px 0px 0px 230px;
+    }
+
+    .save-recipe-button-in-made-recipes-page i {
+        font-size: 35px;
+        color: white;
+    }
+
+    .save-recipe-button-in-made-recipes-page:hover {
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+
+    /* For the recipe photo and related information of displayed recipe */
+    .save-recipe-button-in-made-recipes-page + a {
+        text-decoration: none;
+    }
+
+    /* For the recipe photo */
+    .recipe-photo-in-made-recipes-page {
+        background-color: rgb(201, 201, 201);
+        display: inline-block;
+        width: 280px;
+        height: 280px;
+        color: black;
+        margin: 10px;
+    }
+
+    /* For the name and related information of displayed recipe */
+    .recipe-name-in-made-recipes-page {
+        margin-left: 9px;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .recipe-name-in-made-recipes-page:hover {
+        color: orange;
+    }
+
+    .recipe-ratings-and-favorites-in-made-recipes-page {
+        display: flex;
+        margin: -10px 0px 0px 10px;
+    }
+
+    .recipe-ratings-in-made-recipes-page {
+        display: flex;
+        margin-left: -5px;
+    }
+
+    .recipe-ratings-in-made-recipes-page i {
+        margin-left: 5px;
+    }
+
+    .recipe-ratings-in-made-recipes-page p {
+        margin-left: 5px;
+    }
+
+    .recipe-favorites-in-made-recipes-page {
+        display: flex;
+        margin-left: 30px;
+    }
+
+    .recipe-favorites-in-made-recipes-page i {
+        color: orangered;
+    }
+
+    .recipe-favorites-in-made-recipes-page p {
+        margin-left: 5px;
+    }
+
+    /* For recipe author */
+    .recipe-author-in-made-recipes-page {
+        display: inline-block;
+        margin-left: 9px;
+        margin-top: -10px;
+    }
+
+    .recipe-author-in-made-recipes-page a {
+        text-decoration-color: orangered;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* For load more recipes button */
+    #load-more-recipes-button-in-made-recipes-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    #load-more-recipes-button-in-made-recipes-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    /* For the container of top part */
+    #top-part-container-in-made-recipes-page {
+        width: 100%;
+        margin: auto; 
+        margin-left: -12px;
+    }
+
+    /* For the container of made recipes page */
+    #made-recipes-page {
+        width: 95%;
+        margin: auto;
+    }
+
+    /* For the made recipes sorting options */
+    #made-recipes-sorting-options-in-made-recipes-page {
+        display: flex;
+        margin: 10px 0px 30px 0px;
+        width: 100%;
+        justify-content: end;
+    }
+
+    #made-recipes-sorting-options-in-made-recipes-page label {
+        font-size: 16px;
+        margin: 10px 5px 0px 0px;
+        color: rgb(180, 180, 180);
+        margin-top: 7px;
+    }
+
+    #select-made-recipes-sorting-options-in-made-recipes-page {
+        border: none;
+        outline: none;
+        margin-top: 7px;
+        height: fit-content;
+    }
+
+    /* For recipe in made recipes page */
+    .recipe-in-made-recipes-page {
+        border: 1px solid rgb(216, 216, 216);
+        margin: auto;
+        margin-bottom: 30px;
+        width: fit-content;
+    }
+
+    /* For the save recipe button */
+    .save-recipe-button-in-made-recipes-page {
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: rgb(0, 0, 0, 0.4);
+        margin: 10px 0px 0px 230px;
+    }
+
+    .save-recipe-button-in-made-recipes-page i {
+        font-size: 35px;
+        color: white;
+    }
+
+    .save-recipe-button-in-made-recipes-page:hover {
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+
+    /* For the recipe photo and related information of displayed recipe */
+    .save-recipe-button-in-made-recipes-page + a {
+        text-decoration: none;
+    }
+
+    /* For the recipe photo */
+    .recipe-photo-in-made-recipes-page {
+        background-color: rgb(201, 201, 201);
+        display: inline-block;
+        width: 280px;
+        height: 280px;
+        color: black;
+        margin: 10px;
+    }
+
+    /* For the name and related information of displayed recipe */
+    .recipe-name-in-made-recipes-page {
+        margin-left: 9px;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .recipe-name-in-made-recipes-page:hover {
+        color: orange;
+    }
+
+    .recipe-ratings-and-favorites-in-made-recipes-page {
+        display: flex;
+        margin: -10px 0px 0px 10px;
+    }
+
+    .recipe-ratings-in-made-recipes-page {
+        display: flex;
+        margin-left: -5px;
+    }
+
+    .recipe-ratings-in-made-recipes-page i {
+        margin-left: 5px;
+    }
+
+    .recipe-ratings-in-made-recipes-page p {
+        margin-left: 5px;
+    }
+
+    .recipe-favorites-in-made-recipes-page {
+        display: flex;
+        margin-left: 30px;
+    }
+
+    .recipe-favorites-in-made-recipes-page i {
+        color: orangered;
+    }
+
+    .recipe-favorites-in-made-recipes-page p {
+        margin-left: 5px;
+    }
+
+    /* For recipe author */
+    .recipe-author-in-made-recipes-page {
+        display: inline-block;
+        margin-left: 9px;
+    }
+
+    .recipe-author-in-made-recipes-page a {
+        text-decoration-color: orangered;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* For load more recipes button */
+    #load-more-recipes-button-in-made-recipes-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    #load-more-recipes-button-in-made-recipes-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+}
+
+@media only screen and (min-width: 670px) {
+    /* For the container of recipes */
+    #recipes-in-made-recipes-page {
+        width: fit-content;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 956px) {
+    /* For the container of top part */
+    #top-part-container-in-made-recipes-page {
+        width: 70%;
+        margin: auto; 
+    }
+
+    /* For the container of made recipes page */
+    #made-recipes-page {
+        width: 67.5%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* For the container of top part */
+    #top-part-container-in-made-recipes-page {
+        width: 60%;
+        margin: auto; 
+    }
+
+    /* For the container of made recipes page */
+    #made-recipes-page {
+        width: 58%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    /* For the container of top part */
+    #top-part-container-in-made-recipes-page {
+        width: 64%;
+        margin: auto;
+    }
+
+    /* For the container of made recipes page */
+    #made-recipes-page {
+        width: 62.5%;
+        margin: auto;
+    }
+
+    /* For the container of recipes */
+    #recipes-in-made-recipes-page {
+        width: fit-content;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 15px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 1712px) {
+    /* For the container of top part */
+    #top-part-container-in-made-recipes-page {
+        width: 65%;
+        margin: auto;
+    }
+
+    /* For the container of made recipes page */
+    #made-recipes-page {
+        width: 63.6%;
+        margin: auto;
+    }
+}
+

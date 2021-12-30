@@ -21,12 +21,12 @@ function Photos() {
                 <HalfTopPart />
                 <nav id="group-buttons">
                 <a href="/about-me"><button className="group-button">About Me</button></a>
-                <a href="#"><button className="group-button">My Favorites</button></a>
-                <a href="#"><button className="group-button">My Friends</button></a>
-                <a href="#"><button className="group-button">I Made It</button></a>
-                <a href="#"><button className="group-button selected-button">My Photos</button></a>
-                <a href="#"><button className="group-button">My Reviews</button></a>
-                <a href="#"><button className="group-button last-button"> Personal Recipes</button></a>
+                <a href="/favorite-recipes"><button className="group-button">My Favorites</button></a>
+                <a href="/follower-accounts"><button className="group-button">My Friends</button></a>
+                <a href="/made-recipes"><button className="group-button">I Made It</button></a>
+                <a href="/photos"><button className="group-button selected-button">My Photos</button></a>
+                <a href="/evaluated-recipes"><button className="group-button">My Reviews</button></a>
+                <a href="/personal-recipes"><button className="group-button last-button"> Personal Recipes</button></a>
                 </nav>
             </Container>
             <div id="photos-page">
