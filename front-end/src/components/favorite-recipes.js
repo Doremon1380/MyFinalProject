@@ -50,7 +50,7 @@ function FavoriteRecipes() {
                 </div>
                 <div id="search-bar-in-favorite-recipes-page">
                     <form>
-                        <input name="search saved recipe" type="search" placeholder="Find a saved recipe" aria-label="Search" />
+                        <input name="searchSavedRecipe" type="search" placeholder="Find a saved recipe" aria-label="Search" />
                         <button type="submit"><i className="bi bi-search"></i></button>
                     </form>
                 </div>

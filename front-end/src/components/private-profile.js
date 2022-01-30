@@ -2,7 +2,7 @@ import React from "react";
 import SecondNavBar from "./second-nav-bar";
 import TopPart from "./top-part";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./private-profile.css";
+import "./public-profile-about-me.css";
 import { Helmet } from 'react-helmet'
 
 import Container from "react-bootstrap/Container";
@@ -22,7 +22,7 @@ function PrivateProfile() {
                 <div id="add-informations">
                     <div id="about-me">
                         <p>About me</p>
-                        <a href="/edit-profile" id="abc">Introduce about yourself</a>
+                        <a href="/edit-profile">Introduce about yourself</a>
                     </div>
                     <div id="my-location">
                         <p>My location</p>

@@ -1,0 +1,436 @@
+@media only screen and (max-width: 600px) {
+    /* For the container of shopping lists page */
+    #shopping-lists-page {
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    /* For the top section */
+    #top-section-of-shopping-lists-page {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* For the shopping lists title */
+    #shopping-lists-title-in-shopping-lists-page {
+        display: flex;
+        margin-left: -14px;
+    }
+
+    #shopping-lists-in-shopping-lists-page {
+        box-shadow: none;
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    #shopping-lists-in-shopping-lists-page:after {
+        display: none; 
+    }
+
+    .shopping-list-in-shopping-lists-page:focus {
+        background-color: orange;  
+        color: #fff;
+        outline: none;
+    }
+
+    #dropdown-shopping-lists-in-shopping-lists-page {
+        box-shadow: none;
+        margin: -5px 0px 0px -15px;
+        font-size: 20px;
+    }
+
+    #dropdown-shopping-lists-in-shopping-lists-page::after {
+        display: none; 
+    }
+
+    #dropdown-icon-in-shopping-lists-page {
+        box-shadow: none;
+    }
+
+    /* For delete button and create button in shopping lists page */
+    #delete-button-and-create-button-in-shopping-lists-page {
+        margin-right: -10px;
+    }
+
+    #delete-button-and-create-button-in-shopping-lists-page button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid gray;
+        background-color: white;
+        margin-right: 10px;
+    }
+
+    #delete-button-in-shopping-lists-page {
+        color: gray;
+        font-size: 20px;
+    }
+
+    #create-button-in-shopping-lists-page {
+        color: gray;
+        font-size: 19px;
+    }
+
+    #top-section-of-shopping-lists-page + hr {
+        border: 1px dashed black;
+        background-color: white;
+    }
+
+    /* For add ingredients bar */
+    #ingredients-in-shopping-lists-page div form {
+        display: flex;
+        outline: none;
+        width: 100%;
+        height: fit-content;
+        border: 1px solid #ddd;
+        transition: 200ms ease-in-out;
+        padding-left: 10px;
+        margin-top: 30px;
+    }
+
+    #ingredients-in-shopping-lists-page div form:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+    
+    #ingredients-in-shopping-lists-page div form input {
+        border: none;
+        height: 50px;
+        width: 90%;
+        outline: none;
+    }
+
+    #ingredients-in-shopping-lists-page div form input + button {
+        width: 11%;
+        height: 50px;
+        background-color: gray;
+        border: none;
+    }
+
+    #ingredients-in-shopping-lists-page div form input + button i {
+        font-size: 20px;
+        color: white;
+    }
+
+    /* For undo button and edit button */
+    #ingredients-in-shopping-lists-page div + div div {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
+    #ingredients-in-shopping-lists-page div + div div p {
+        font-size: 22px;
+        margin-top: 2px;
+    }
+    
+    #ingredients-in-shopping-lists-page div + div div p + div {
+        margin: 0px -10px 0px 0px;
+    }
+
+    #ingredients-in-shopping-lists-page div + div div p + div button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid gray;
+        background-color: white;
+        margin-right: 10px;
+    }
+
+    #ingredients-in-shopping-lists-page div + div div p + div button i {
+        color: gray;
+        font-size: 20px; 
+    }
+
+    /* For ingredient in shopping lists page */
+    #ingredients-in-shopping-lists-page div + div div + div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .ingredient-in-shopping-lists-page {
+        display: flex;  
+        margin-bottom: 10px;
+    }
+
+    .ingredient-checkbox-in-shopping-lists-page {
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .ingredient-checkbox-label-in-shopping-lists-page {
+        cursor: pointer;
+        display: flex;
+        font-size: 20px;
+    }
+
+    .ingredient-checkbox-label-in-shopping-lists-page::before {
+        content: "";
+        width: 1.5em;
+        height: 1.5em;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 0.5em;
+    }
+
+    .ingredient-checkbox-in-shopping-lists-page:checked + .ingredient-checkbox-label-in-shopping-lists-page::before {
+        content: "\002714";
+        background-color: orange;
+    }   
+}
+
+@media only screen and (min-width: 601px) {
+    /* For the container of shopping lists page */
+    #shopping-lists-page {
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    /* For the top section */
+    #top-section-of-shopping-lists-page {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* For the shopping lists title */
+    #shopping-lists-title-in-shopping-lists-page {
+        display: flex;
+        margin-left: -14px;
+    }
+
+    #shopping-lists-in-shopping-lists-page {
+        box-shadow: none;
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    #shopping-lists-in-shopping-lists-page:after {
+        display: none; 
+    }
+
+    .shopping-list-in-shopping-lists-page:focus {
+        background-color: orange;  
+        color: #fff;
+        outline: none;
+    }
+
+    #dropdown-shopping-lists-in-shopping-lists-page {
+        box-shadow: none;
+        margin: -5px 0px 0px -15px;
+        font-size: 20px;
+    }
+
+    #dropdown-shopping-lists-in-shopping-lists-page::after {
+        display: none; 
+    }
+
+    #dropdown-icon-in-shopping-lists-page {
+        box-shadow: none;
+    }
+
+    /* For delete button and create button in shopping lists page */
+    #delete-button-and-create-button-in-shopping-lists-page {
+        margin-right: -10px;
+    }
+
+    #delete-button-and-create-button-in-shopping-lists-page button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid gray;
+        background-color: white;
+        margin-right: 10px;
+    }
+
+    #delete-button-in-shopping-lists-page {
+        color: gray;
+        font-size: 20px;
+    }
+
+    #create-button-in-shopping-lists-page {
+        color: gray;
+        font-size: 19px;
+    }
+
+    #top-section-of-shopping-lists-page + hr {
+        border: 1px dashed black;
+        background-color: white;
+    }
+
+    /* For add ingredients bar */
+    #ingredients-in-shopping-lists-page div form {
+        display: flex;
+        outline: none;
+        width: 100%;
+        height: fit-content;
+        border: 1px solid #ddd;
+        transition: 200ms ease-in-out;
+        padding-left: 10px;
+        margin-top: 30px;
+    }
+
+    #ingredients-in-shopping-lists-page div form:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+    
+    #ingredients-in-shopping-lists-page div form input {
+        border: none;
+        height: 50px;
+        width: 90%;
+        outline: none;
+    }
+
+    #ingredients-in-shopping-lists-page div form input + button {
+        width: 11%;
+        height: 50px;
+        background-color: gray;
+        border: none;
+    }
+
+    #ingredients-in-shopping-lists-page div form input + button i {
+        font-size: 20px;
+        color: white;
+    }
+
+    /* For undo button and edit button */
+    #ingredients-in-shopping-lists-page div + div div {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
+    #ingredients-in-shopping-lists-page div + div div p {
+        font-size: 22px;
+        margin-top: 2px;
+    }
+    
+    #ingredients-in-shopping-lists-page div + div div p + div {
+        margin: 0px -10px 0px 0px;
+    }
+
+    #ingredients-in-shopping-lists-page div + div div p + div button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid gray;
+        background-color: white;
+        margin-right: 10px;
+    }
+
+    #ingredients-in-shopping-lists-page div + div div p + div button i {
+        color: gray;
+        font-size: 20px; 
+    }
+
+    /* For ingredient in shopping lists page */
+    #ingredients-in-shopping-lists-page div + div div + div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .ingredient-in-shopping-lists-page {
+        display: flex;  
+        margin-bottom: 10px;
+    }
+
+    .ingredient-checkbox-in-shopping-lists-page {
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .ingredient-checkbox-label-in-shopping-lists-page {
+        cursor: pointer;
+        display: flex;
+        font-size: 20px;
+    }
+
+    .ingredient-checkbox-label-in-shopping-lists-page::before {
+        content: "";
+        width: 1.5em;
+        height: 1.5em;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 0.5em;
+    }
+
+    .ingredient-checkbox-in-shopping-lists-page:checked + .ingredient-checkbox-label-in-shopping-lists-page::before {
+        content: "\002714";
+        background-color: orange;
+    }   
+}
+
+@media only screen and (min-width: 768px) {
+    /* For the break line */
+    #top-section-of-shopping-lists-page + hr {
+        border: 1px solid black;
+        background-color: white;    
+    }
+
+    /* For ingredient in shopping lists page */
+    #ingredients-in-shopping-lists-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: -15.1px;
+    }
+
+    /* For add ingredient bar */
+    #add-ingredient-bar-in-shopping-lists-page {
+        border-right: 3px solid rgb(189, 189, 189);
+        padding-right: 15px;
+    }
+
+    #add-ingredient-bar-in-shopping-lists-page + div {
+        margin-left: 15px;
+    }
+
+    #ingredients-in-shopping-lists-page div form input + button {
+        width: 15%;
+        height: 50px;
+        background-color: gray;
+        border: none;
+    }
+}
+
+@media only screen and (min-width: 956px) {
+    /* For the container of shopping lists page */
+    #shopping-lists-page {
+        width: 81.5%;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* For the container of shopping lists page */
+    #shopping-lists-page {
+        width: 72%;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    /* For the container of shopping lists page */
+    #shopping-lists-page {
+        width: 67.7%;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    /* For the container of shopping lists page */
+    #shopping-lists-page {
+        width: 63%;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+

@@ -1,7 +1,7 @@
     /* For the add-informations form */
     #add-informations {
-        height: 230px;
-        margin-top: 20px
+        height: fit-content;
+        width: fit-content;
     }
 
     #about-me,
@@ -41,7 +41,7 @@
     #edit-profile-button {
         display: block;
         margin: auto;
-        margin-top: -20px;
+        margin-top: 10px;
         border: none;
         height: 50px;
         width: 250px;

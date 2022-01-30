@@ -59,10 +59,10 @@ function CollectionRecipes() {
                         <button className="save-collection-button-in-collection-recipes-page"><i><FaHeart /></i></button>
                         <a href="#">
                             <div className="set-of-containers-representing-the-collection-in-collection-recipes-page">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <a href="#"><img alt="(recipe name)"></img></a>
                             </div>
                         </a>
                         <a href="#">
@@ -91,10 +91,10 @@ function CollectionRecipes() {
                         <button className="save-collection-button-in-collection-recipes-page"><i><FaHeart /></i></button>
                         <a href="#">
                             <div className="set-of-containers-representing-the-collection-in-collection-recipes-page">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <a href="#"><img alt="(recipe name)"></img></a>
                             </div>
                         </a>
                         <a href="#">
@@ -123,10 +123,10 @@ function CollectionRecipes() {
                         <button className="save-collection-button-in-collection-recipes-page"><i><FaHeart /></i></button>
                         <a href="#">
                             <div className="set-of-containers-representing-the-collection-in-collection-recipes-page">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <a href="#"><img alt="(recipe name)"></img></a>
                             </div>
                         </a>
                         <a href="#">
@@ -155,10 +155,10 @@ function CollectionRecipes() {
                         <button className="save-collection-button-in-collection-recipes-page"><i><FaHeart /></i></button>
                         <a href="#">
                             <div className="set-of-containers-representing-the-collection-in-collection-recipes-page">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <a href="#"><img alt="(recipe name)"></img></a>
                             </div>
                         </a>
                         <a href="#">
@@ -187,10 +187,10 @@ function CollectionRecipes() {
                         <button className="save-collection-button-in-collection-recipes-page"><i><FaHeart /></i></button>
                         <a href="#">
                             <div className="set-of-containers-representing-the-collection-in-collection-recipes-page">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <a href="#"><img alt="(recipe name)"></img></a>
                             </div>
                         </a>
                         <a href="#">

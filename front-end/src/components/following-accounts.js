@@ -164,6 +164,20 @@ function FollowingAccounts() {
                             </button>
                         </div>
                     </div>
+                    <div id="following-account-in-following-accounts-page">
+                        <a href="#">
+                            <img alt="avatar"></img>
+                        </a>
+                        <div>
+                            <a href="#">
+                                Account name
+                            </a>
+                            <button>
+                                <i class="bi bi-person-check-fill"></i>
+                                <p>Following</p>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <button id="load-more-following-accounts-button-in-following-accounts-page">SHOW MORE</button>
             </div>

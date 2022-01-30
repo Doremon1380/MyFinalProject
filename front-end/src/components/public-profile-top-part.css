@@ -203,3 +203,34 @@
         background-color: rgb(228, 228, 228);
     }
 }
+
+@media only screen and (min-width: 768px) {
+    /* For the top part */
+    #top-section-of-public-profile-top-part {
+        display: flex;
+        height: 130px;
+        width: 100vw;
+        background-image: url("top_background.jpg");
+        background-repeat: no-repeat;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 956px) { 
+    /* For the top section */
+    #top-section-of-public-profile-top-part {
+        display: flex;
+        height: 130px;
+        width: 100%;
+        background-image: url("top_background.jpg");
+        background-repeat: no-repeat;
+        justify-content: space-between;
+        margin: auto; 
+    }
+
+    /* For group photos */
+    #group-photos-in-public-profile-top-part {
+        margin-left: -3px;
+    }
+}
+

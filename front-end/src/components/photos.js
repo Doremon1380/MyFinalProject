@@ -36,8 +36,8 @@ function Photos() {
                         <p id="add-photos">Add a photo</p>
                     </button>
                     <div className="photo">
-                        <div id="photo1">
-                            <button><a href="/photo-id"><img alt="photo1"></img></a></button>
+                        <div id="image-in-photos-page">
+                            <a href="/photo-id"><img alt="photo1"></img></a>
                         </div>
                         <div className="description">
                             <button>
@@ -47,8 +47,8 @@ function Photos() {
                         </div>
                     </div>
                     <div className="photo">
-                        <div id="photo2">
-                            <button><a href="/photo-id"><img alt="photo2"></img></a></button>
+                        <div id="image-in-photos-page">
+                            <a href="/photo-id"><img alt="photo2"></img></a>
                         </div>
                         <div className="description">
                             <button>
@@ -58,8 +58,8 @@ function Photos() {
                         </div>
                     </div>
                     <div className="photo">
-                        <div id="photo3">
-                            <button><a href="/photo-id"><img alt="photo3"></img></a></button>
+                        <div id="image-in-photos-page">
+                            <a href="/photo-id"><img alt="photo3"></img></a>
                         </div>
                         <div className="description">
                             <button>

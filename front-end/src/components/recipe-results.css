@@ -1,0 +1,810 @@
+@media only screen and (max-width: 545px) {
+    /* For the container of recipe results page */
+    #recipe-results-page {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* For the top section */
+    #top-section-of-recipe-results-page {
+        background-color: rgb(245, 246, 234);
+        height: 160px;
+        width: 100%;
+    }
+
+    /* For the recipes filter */
+    #recipes-filter-and-results-in-recipe-results-page {
+        width: 95%;
+        margin: auto;
+        margin-top: -100px;
+    }
+
+    #recipe-results-for-keyword-in-recipe-results-page {
+        background-color: white;
+        box-shadow: 0px 0px 3px rgb(180, 180, 180);
+        width: 100%;
+        height: 90px;
+        border-left: 4px solid rgb(63, 198, 182);
+        margin-top: 20px;
+        padding: 15px 0px 0px 20px;
+    }
+
+    #recipe-results-for-keyword-in-recipe-results-page h1 {
+        color: black;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    #recipes-filter-in-recipe-results-page {
+        background-color: rgb(245, 246, 234);
+        margin: auto;
+        margin-top: 20px;
+        height: 420px;
+        width: 460px;
+    }
+
+    #recipes-filter-in-recipe-results-page form {
+        width: 95%;
+        margin: auto;
+    }
+
+    #recipes-filter-in-recipe-results-page form div {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 2px solid black;
+    }
+
+    #recipes-filter-in-recipe-results-page form div p {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div button {
+        border: 1px solid rgb(209, 63, 63);
+        border-radius: 5px;
+        width: 100px;
+        font-weight: bold;
+        height: 40px;
+        margin-top: 15px;
+        background-color: white;
+    }
+
+    #recipes-filter-in-recipe-results-page form div button:hover {
+        background-color: rgb(239, 219, 203);
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+        border: none;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        border: none;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div p {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div input {
+        outline: none;
+        border: 1px solid black;
+        padding: 0px 15px 0px 15px;
+        height: 50px;
+    }
+
+    #recipe-or-keyword-in-recipes-filter-of-recipe-results-page input {
+        margin-bottom: 150px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div {
+        border-left: 1px solid black ;
+        padding-left: 15px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p {
+        font-size: 15px;
+        margin-top: 0px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div {
+        margin-top: -10px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div input {
+        width: 100%;
+        padding-right: 35px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div i {
+        position: absolute;
+        font-size: 20px;
+        margin: 11px 0px 0px 165px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div + p {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div + p + div {
+        margin-top: -10px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div + p + div input {
+        width: 100%;
+        padding-right: 35px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div + p + div i {
+        position: absolute;
+        font-size: 20px;
+        margin: 8px 0px 0px 165px;
+    }
+
+    /* For show results button */
+    #show-more-results-button-in-recipe-results-page {
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    #show-more-results-button-in-recipe-results-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+
+    /* For recipe in recipe results page */
+    #recipes-in-recipe-results-page {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    #number-of-recipes-in-recipe-results-page {
+        display: block;
+        margin: auto;
+        font-size: 17px;
+        font-weight: bold;
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+
+    .recipe-in-recipe-results-page {
+        border: 1px solid rgb(216, 216, 216);
+        margin: auto;
+        margin-bottom: 30px;
+        width: fit-content;
+    }
+
+    /* For the save recipe button */
+    .save-recipe-button-in-recipe-results-page {
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: rgb(0, 0, 0, 0.4);
+        margin: 10px 0px 0px 230px;
+    }
+
+    .save-recipe-button-in-recipe-results-page i {
+        font-size: 35px;
+        color: white;
+    }
+
+    .save-recipe-button-in-recipe-results-page:hover {
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+    
+    /* For the recipe photo and related information of displayed recipe */
+    .save-recipe-button-in-recipe-results-page + a {
+        text-decoration: none;
+    }
+
+    /* For the recipe photo */
+    .recipe-photo-in-recipe-results-page {
+        background-color: rgb(201, 201, 201);
+        display: inline-block;
+        width: 280px;
+        height: 280px;
+        color: black;
+        margin: 10px;
+    }
+
+    /* For the name and related information of displayed recipe */
+    .recipe-name-in-recipe-results-page {
+        margin-left: 9px;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .recipe-name-in-recipe-results-page:hover {
+        color: orange;
+    }
+
+    .recipe-ratings-and-favorites-in-recipe-results-page {
+        display: flex;
+        margin: -10px 0px 0px 10px;
+    }
+
+    .recipe-ratings-in-recipe-results-page {
+        display: flex;
+        margin-left: -5px;
+    }
+
+    .recipe-ratings-in-recipe-results-page i {
+        margin-left: 5px;
+    }
+
+    .recipe-ratings-in-recipe-results-page p {
+        margin-left: 5px;
+    }
+
+    .recipe-favorites-in-recipe-results-page {
+        display: flex;
+        margin-left: 30px;
+    }
+
+    .recipe-favorites-in-recipe-results-page i {
+        color: orangered;
+    }
+
+    .recipe-favorites-in-recipe-results-page p {
+        margin-left: 5px;
+    }
+
+    /* For recipe author */
+    .recipe-author-in-recipe-results-page {
+        display: inline-block;
+        margin-left: 9px;
+        margin-top: -10px;
+    }
+    
+    .recipe-author-in-recipe-results-page a {
+        text-decoration-color: orangered;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* For load more recipes button */
+    #load-more-recipes-button-in-recipe-results-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+    
+    #load-more-recipes-button-in-recipe-results-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+}
+
+@media only screen and (min-width: 546px) {
+    /* For the container of recipe results page */
+    #recipe-results-page {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* For the top section */
+    #top-section-of-recipe-results-page {
+        background-color: rgb(245, 246, 234);
+        height: 160px;
+        width: 100%;
+    }
+
+    /* For the recipes filter */
+    #recipes-filter-and-results-in-recipe-results-page {
+        width: 95%;
+        margin: auto;
+        margin-top: -100px;
+    }
+
+    #recipe-results-for-keyword-in-recipe-results-page {
+        background-color: white;
+        box-shadow: 0px 0px 3px rgb(180, 180, 180);
+        width: 100%;
+        height: 90px;
+        border-left: 4px solid rgb(63, 198, 182);
+        margin-top: 20px;
+        padding: 15px 0px 0px 20px;
+    }
+
+    #recipe-results-for-keyword-in-recipe-results-page h1 {
+        color: black;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    #recipes-filter-in-recipe-results-page {
+        background-color: rgb(245, 246, 234);
+        margin: auto;
+        margin-top: 20px;
+        height: 420px;
+        width: 460px;
+    }
+
+    #recipes-filter-in-recipe-results-page form {
+        width: 95%;
+        margin: auto;
+    }
+
+    #recipes-filter-in-recipe-results-page form div {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 2px solid black;
+    }
+
+    #recipes-filter-in-recipe-results-page form div p {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div button {
+        border: 1px solid rgb(209, 63, 63);
+        border-radius: 5px;
+        width: 100px;
+        font-weight: bold;
+        height: 40px;
+        margin-top: 15px;
+        background-color: white;
+    }
+
+    #recipes-filter-in-recipe-results-page form div button:hover {
+        background-color: rgb(239, 219, 203);
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+        border: none;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        border: none;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div p {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div input {
+        outline: none;
+        border: 1px solid black;
+        padding: 0px 15px 0px 15px;
+        height: 50px;
+    }
+
+    #recipe-or-keyword-in-recipes-filter-of-recipe-results-page input {
+        margin-bottom: 150px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div {
+        border-left: 1px solid black ;
+        padding-left: 15px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p {
+        font-size: 15px;
+        margin-top: 0px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div {
+        margin-top: -10px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div input {
+        width: 100%;
+        padding-right: 35px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div i {
+        position: absolute;
+        font-size: 20px;
+        margin: 11px 0px 0px 165px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div + p {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div + p + div {
+        margin-top: -10px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div + p + div input {
+        width: 100%;
+        padding-right: 35px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div + p + div i {
+        position: absolute;
+        font-size: 20px;
+        margin: 8px 0px 0px 165px;
+    }
+
+    /* For show results button */
+    #show-more-results-button-in-recipe-results-page {
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    #show-more-results-button-in-recipe-results-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+
+    /* For recipe in recipe results page */
+    #recipes-in-recipe-results-page {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    #number-of-recipes-in-recipe-results-page {
+        display: block;
+        margin: auto;
+        font-size: 17px;
+        font-weight: bold;
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+
+    .recipe-in-recipe-results-page {
+        border: 1px solid rgb(216, 216, 216);
+        margin: auto;
+        margin-bottom: 30px;
+        width: fit-content;
+    }
+
+    /* For the save recipe button */
+    .save-recipe-button-in-recipe-results-page {
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: rgb(0, 0, 0, 0.4);
+        margin: 10px 0px 0px 230px;
+    }
+
+    .save-recipe-button-in-recipe-results-page i {
+        font-size: 35px;
+        color: white;
+    }
+
+    .save-recipe-button-in-recipe-results-page:hover {
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+    
+    /* For the recipe photo and related information of displayed recipe */
+    .save-recipe-button-in-recipe-results-page + a {
+        text-decoration: none;
+    }
+
+    /* For the recipe photo */
+    .recipe-photo-in-recipe-results-page {
+        background-color: rgb(201, 201, 201);
+        display: inline-block;
+        width: 280px;
+        height: 280px;
+        color: black;
+        margin: 10px;
+    }
+
+    /* For the name and related information of displayed recipe */
+    .recipe-name-in-recipe-results-page {
+        margin-left: 9px;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .recipe-name-in-recipe-results-page:hover {
+        color: orange;
+    }
+
+    .recipe-ratings-and-favorites-in-recipe-results-page {
+        display: flex;
+        margin: -10px 0px 0px 10px;
+    }
+
+    .recipe-ratings-in-recipe-results-page {
+        display: flex;
+        margin-left: -5px;
+    }
+
+    .recipe-ratings-in-recipe-results-page i {
+        margin-left: 5px;
+    }
+
+    .recipe-ratings-in-recipe-results-page p {
+        margin-left: 5px;
+    }
+
+    .recipe-favorites-in-recipe-results-page {
+        display: flex;
+        margin-left: 30px;
+    }
+
+    .recipe-favorites-in-recipe-results-page i {
+        color: orangered;
+    }
+
+    .recipe-favorites-in-recipe-results-page p {
+        margin-left: 5px;
+    }
+
+    /* For recipe author */
+    .recipe-author-in-recipe-results-page {
+        display: inline-block;
+        margin-left: 9px;
+        margin-top: -10px;
+    }
+    
+    .recipe-author-in-recipe-results-page a {
+        text-decoration-color: orangered;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* For load more recipes button */
+    #load-more-recipes-button-in-recipe-results-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+    
+    #load-more-recipes-button-in-recipe-results-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+}   
+
+@media only screen and (min-width: 670px) {
+    /* For the container of recipes */
+    #recipes-in-recipe-results-page p + div {
+        width: fit-content;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    /* For the recipes filter */
+    #recipes-filter-and-results-in-recipe-results-page {
+        width: 940px;
+        margin: auto;
+        margin-top: -100px;
+    }
+
+    #recipes-filter-in-recipe-results-page {
+        background-color: rgb(245, 246, 234);
+        margin-top: 20px;
+        height: 520px;
+        width: 300px;
+    }
+
+    #recipe-results-for-keyword-in-recipe-results-page {
+        background-color: white;
+        box-shadow: 0px 0px 3px rgb(180, 180, 180);
+        width: 880px;
+        height: 90px;
+        border-left: 4px solid rgb(63, 198, 182);
+        margin: 20px 0px 0px 3px;
+        padding: 15px 0px 0px 20px;
+    }
+
+    #recipe-results-for-keyword-in-recipe-results-page + div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+    }
+
+    #recipes-filter-in-recipe-results-page form {
+        width: 95%;
+        margin: auto;
+    }
+
+    #recipes-filter-in-recipe-results-page form div {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 2px solid black;
+    }
+
+    #recipes-filter-in-recipe-results-page form div p {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div button {
+        border: 1px solid rgb(209, 63, 63);
+        border-radius: 5px;
+        width: 100px;
+        font-weight: bold;
+        height: 40px;
+        margin-top: 15px;
+        background-color: white;
+    }
+
+    #recipes-filter-in-recipe-results-page form div button:hover {
+        background-color: rgb(239, 219, 203);
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #recipe-or-keyword-in-recipes-filter-of-recipe-results-page {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        border-bottom: 1px solid black !important;
+        padding-bottom: 20px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div p {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div input {
+        outline: none;
+        border: 1px solid black;
+        padding: 0px 15px 0px 15px;
+        height: 50px;
+    }
+
+    #recipe-or-keyword-in-recipes-filter-of-recipe-results-page input {
+        margin-bottom: 0px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div {
+        border-left: none;
+        padding-left: 0px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p {
+        font-size: 15px;
+        margin-top: 0px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div {
+        margin-top: -10px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div input {
+        width: 100%;
+        padding-right: 42px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div i {
+        position: absolute;
+        font-size: 20px;
+        margin: 10px 0px 0px 250px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div + p {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div + p + div {
+        margin-top: -10px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div + p + div input {
+        width: 100%;
+        padding-right: 42px;
+    }
+
+    #recipes-filter-in-recipe-results-page form div + div div + div p + p + div + p + div i {
+        position: absolute;
+        font-size: 20px;
+        margin: 7px 0px 0px 250px;
+    }
+
+    /* For show results button */
+    #show-more-results-button-in-recipe-results-page {
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    #show-more-results-button-in-recipe-results-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+}
+
+@media only screen and (min-width: 1320px) {
+    /* For the recipes filter */
+    #recipes-filter-and-results-in-recipe-results-page {
+        width: 1270px;
+        margin: auto;
+        margin-top: -100px;
+    }
+
+    #recipe-results-for-keyword-in-recipe-results-page {
+        background-color: white;
+        box-shadow: 0px 0px 3px rgb(180, 180, 180);
+        width: 880px;
+        height: 90px;
+        border-left: 4px solid rgb(63, 198, 182);
+        margin: 20px 0px 0px 9px;
+        padding: 15px 0px 0px 20px;
+    }
+
+    #recipes-in-recipe-results-page p + div {
+        width: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 15px;
+        margin-top: 20px;
+    }
+}
+
+

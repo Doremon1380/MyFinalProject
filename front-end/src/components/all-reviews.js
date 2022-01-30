@@ -8,7 +8,7 @@ import { FaThumbsUp } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 
-const TITLE = '"Recipe name" - FoodShare';
+const TITLE = '"Recipe name" - FoodShare.com';
 
 function AllReviews() {
     return (

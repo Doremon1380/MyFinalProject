@@ -26,7 +26,7 @@ function TopPart() {
                     <DropdownButton id="dropdown-basic-button-settings" variant="" title={<i className="bi bi-gear-fill"></i>}>
                         <Dropdown.Item className="drop-down-item2" href="/edit-profile">Edit profile</Dropdown.Item>
                         <Dropdown.Divider />
-                        <Dropdown.Item className="drop-down-item2" href="#/">See public profile</Dropdown.Item>
+                        <Dropdown.Item className="drop-down-item2" href="/public-profile-favorite-recipes">See public profile</Dropdown.Item>
                         <Dropdown.Divider />
                         <Dropdown.Item className="drop-down-item2" href="/notification-settings">Notification setting</Dropdown.Item>
                         <Dropdown.Divider />

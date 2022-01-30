@@ -24,6 +24,20 @@ import EvaluatedRecipes from "./components/evaluated-recipes";
 import PersonalRecipes from "./components/personal-recipes";
 import CollectionRecipes from "./components/collection-recipes";
 import PublicProfileFavoriteRecipes from "./components/public-profile-favorite-recipes";
+import PublicProfileAboutMe from "./components/public-profile-about-me";
+import PublicProfileCollectionRecipes from "./components/public-profile-collection-recipes";
+import PublicProfileMadeRecipes from "./components/public-profile-made-recipes";
+import PublicProfileEvaluatedRecipes from "./components/public-profile-evaluated-recipes";
+import PublicProfilePersonalRecipes from "./components/public-profile-personal-recipes";
+import PublicProfileFollowingAccounts from "./components/public-profile-following-accounts";
+import PublicProfileFollowerAccounts from "./components/public-profile-follower-accounts";
+import OtherProfileCollectionDetails from "./components/other-profile-collection-details";
+import CollectionDetails from "./components/collection-details";
+import ShoppingLists from "./components/shopping-lists";
+import RecipeResults from "./components/recipe-results";
+import AskTheCommunity from "./components/ask-the-community";
+import WorldCuisine from "./components/world-cuisine";
+
 
 function App() {
   return (
@@ -52,6 +66,19 @@ function App() {
           <Route path="/personal-recipes" component={PersonalRecipes}/>
           <Route path="/collection-recipes" component={CollectionRecipes}/>
           <Route path="/public-profile-favorite-recipes" component={PublicProfileFavoriteRecipes}/>
+          <Route path="/public-profile-about-me" component={PublicProfileAboutMe}/>
+          <Route path="/public-profile-collection-recipes" component={PublicProfileCollectionRecipes}/>
+          <Route path="/public-profile-made-recipes" component={PublicProfileMadeRecipes}/>
+          <Route path="/public-profile-evaluated-recipes" component={PublicProfileEvaluatedRecipes}/>
+          <Route path="/public-profile-personal-recipes" component={PublicProfilePersonalRecipes}/>
+          <Route path="/public-profile-following-accounts" component={PublicProfileFollowingAccounts}/>
+          <Route path="/public-profile-follower-accounts" component={PublicProfileFollowerAccounts}/>
+          <Route path="/other-profile-collection-details" component={OtherProfileCollectionDetails}/>
+          <Route path="/collection-details" component={CollectionDetails}/>
+          <Route path="/shopping-lists" component={ShoppingLists}/>
+          <Route path="/recipe-results" component={RecipeResults}/>
+          <Route path="/ask-the-community" component={AskTheCommunity}/>
+          <Route path="/world-cuisine" component={WorldCuisine}/>
         </Switch>
       </div>
     </BrowserRouter>

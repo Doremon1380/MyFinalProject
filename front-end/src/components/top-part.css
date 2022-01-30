@@ -56,7 +56,6 @@
     font-size: 40px;
     color: rgb(226, 226, 226);
     box-shadow: none;
-    
 }
 
 #dropdown-basic-button-settings::after {
@@ -183,7 +182,7 @@
         border: none;
         font-size: 15px;
         height: 50px;
-        width: 130px;
+        width: 131px;
     }
 
     .last-button {
@@ -214,7 +213,7 @@
         border: none;
         font-size: 15px;
         height: 50px;
-        width: 140px;
+        width: 141px;
     }
 
     .last-button {
@@ -245,7 +244,7 @@
         border: none;
         font-size: 15px;
         height: 50px;
-        width: 140px;
+        width: 141px;
     }
 
     .last-button {
@@ -276,7 +275,7 @@
         border: none;
         font-size: 15px;
         height: 50px;
-        width: 150.2px;
+        width: 151px;
     }
 
     .last-button {

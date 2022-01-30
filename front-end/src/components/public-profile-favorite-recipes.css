@@ -6,15 +6,10 @@
         margin-left: -12px;
     }
 
-    /* For the container of favorite recipes page */
+    /* For the container of public profile favorite recipes page */
     #public-profile-favorite-recipes-page {
         width: 95%;
         margin: auto;
-    }
-
-    /* For the left side */
-    #left-side-in-public-profile-favorite-recipes-page {
-        display: none;
     }
 
     /* For the group buttons */
@@ -22,7 +17,7 @@
         overflow: auto;
         white-space: nowrap;
         border: none;
-        width: 97.1vw;
+        width: 100vw;
     }
 
     .group-button-in-public-profile-favorite-recipes-page {
@@ -42,7 +37,7 @@
     }
     
     /* For the "Collections" and "Recipes" buttons */
-    #top-section-of-right-side-in-public-profile-favorite-recipes-page {
+    #top-section-in-public-profile-favorite-recipes-page {
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
@@ -208,15 +203,10 @@
         margin-left: -12px;
     }
 
-    /* For the container of favorite recipes page */
+    /* For the container of public profile favorite recipes page */
     #public-profile-favorite-recipes-page {
         width: 95%;
         margin: auto;
-    }
-
-    /* For the left side */
-    #left-side-in-public-profile-favorite-recipes-page {
-        display: none;
     }
 
     /* For the group buttons */
@@ -224,7 +214,7 @@
         overflow: auto;
         white-space: nowrap;
         border: none;
-        width: 97.8vw;
+        width: 100vw;
     }
 
     .group-button-in-public-profile-favorite-recipes-page {
@@ -233,7 +223,7 @@
         height: 50px;
         width: 130px;
     }
- 
+
     .selected-button-in-public-profile-favorite-recipes-page {
         color: white;
         background-color: rgb(255, 123, 0);
@@ -244,7 +234,7 @@
     }
     
     /* For the "Collections" and "Recipes" buttons */
-    #group-buttons-in-public-profile-favorite-recipes-page + div {
+    #top-section-in-public-profile-favorite-recipes-page {
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
@@ -402,26 +392,128 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 670px) {
+    /* For recipe in public profile favorite recipes page */
+    #recipes-in-public-profile-favorite-recipes-page {
+        margin: auto;
+        margin-top: 30px;
+        display: grid;
+        width: fit-content;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+    }
 
+    /* For the group buttons */
+    .group-button-in-public-profile-favorite-recipes-page {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 150px;
+    }
 }
 
 @media only screen and (min-width: 956px) {
+    /* For the container of top part */
+    #top-part-container-in-public-profile-favorite-recipes-page {
+        width: 70%;
+        margin: auto;
+    }
 
+    /* For the container of public profile favorite recipes page */
+    #public-profile-favorite-recipes-page {
+        width: 67.5%;
+        margin: auto;
+    }
+
+    /* For the group buttons */
+    #group-buttons-in-public-profile-favorite-recipes-page {
+        overflow: auto;
+        white-space: nowrap;
+        border: none;
+        width: 100%;
+    }
+
+    .group-button-in-public-profile-favorite-recipes-page {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 130px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
+    /* For the container of top part */
+    #top-part-container-in-public-profile-favorite-recipes-page {
+        width: 60%;
+        margin: auto;
+    }
 
-}
+    /* For the container of public profile favorite recipes page */
+    #public-profile-favorite-recipes-page {
+        width: 58%;
+        margin: auto;
+    }
 
-@media only screen and (min-width: 1400px) {
-
+    /* For the group buttons */
+    .group-button-in-public-profile-favorite-recipes-page {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 140px;
+    }
 }
 
 @media only screen and (min-width: 1600px) {
+    /* For the container of top part */
+    #top-part-container-in-public-profile-favorite-recipes-page {
+        width: 64%;
+        margin: auto;
+    }
 
+    /* For the container of public profile favorite recipes page */
+    #public-profile-favorite-recipes-page {
+        width: 62.5%;
+        margin: auto;
+    }
+
+    /* For the group buttons */
+    .group-button-in-public-profile-favorite-recipes-page {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 155px;
+    }
+
+    /* For recipe in public profile favorite recipes page */
+    #recipes-in-public-profile-favorite-recipes-page {
+        margin: auto;
+        margin-top: 30px;
+        display: grid;
+        width: fit-content;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 15px;
+    }
 }
 
-@media only screen and (min-width: 1712px) {
-
+@media only screen and (min-width: 1712px) { 
+    /* For the container of top part */
+    #top-part-container-in-public-profile-favorite-recipes-page {
+        width: 65%;
+        margin: auto;
+    }
+    
+    /* For the container of public profile favorite recipes page */
+    #public-profile-favorite-recipes-page {
+        width: 63.6%;
+        margin: auto;
+    }
+    
+    /* For the group buttons */
+    .group-button-in-public-profile-favorite-recipes-page {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 175.6px;
+    }
 }
+

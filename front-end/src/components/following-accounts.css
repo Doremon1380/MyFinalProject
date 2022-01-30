@@ -221,6 +221,7 @@
 }
 
 @media only screen and (min-width: 670px) {
+    /* For following accounts in following accounts page */
     #following-accounts-in-following-accounts-page {
         margin: auto;
         width: fit-content;
@@ -258,20 +259,6 @@
     }
 }
 
-@media only screen and (min-width: 1400px) {
-    /* For the container of top part */
-    #top-part-container-in-following-accounts-page {
-        width: 60%;
-        margin: auto;
-    }
-
-    /* For the container of following accounts page */
-    #following-accounts-page {
-        width: 56%;
-        margin: auto;
-    }
-}
-
 @media only screen and (min-width: 1600px) {
     /* For the container of top part */
     #top-part-container-in-following-accounts-page {
@@ -283,6 +270,15 @@
     #following-accounts-page {
         width: 61%;
         margin: auto;
+    }
+
+    /* For following accounts in following accounts page */
+    #following-accounts-in-following-accounts-page {
+        margin: auto;
+        display: grid;
+        width: fit-content;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 15px;
     }
 }
 

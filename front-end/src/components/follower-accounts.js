@@ -164,6 +164,20 @@ function FollowerAccounts() {
                             </button>
                         </div>
                     </div>
+                    <div id="follower-account-in-follower-accounts-page">
+                        <a href="#">
+                            <img alt="avatar"></img>
+                        </a>
+                        <div>
+                            <a href="#">
+                                Account name
+                            </a>
+                            <button>
+                                <i class="bi bi-person-plus-fill"></i>
+                                <p>Follow</p>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <button id="load-more-follower-accounts-button-in-follower-accounts-page">SHOW MORE</button>
             </div>

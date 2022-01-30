@@ -1,0 +1,568 @@
+@media only screen and (max-width: 600px) {
+    /* For the container of other profile collection details page */
+    #other-profile-collection-details-page {
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    /* For the collection name and save collection button */
+    #collection-name-and-save-collection-button-in-other-profile-collection-details-page {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #collection-name-and-save-collection-button-in-other-profile-collection-details-page div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* For the collection name */
+    #collection-name-in-other-profile-collection-details-page {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #collection-name-in-other-profile-collection-details-page + a {
+        margin-top: -15px;
+        text-decoration: none;
+        color: orange;
+    }
+
+    /* For save collection button */
+    #save-collection-button-in-other-profile-collection-details-page {
+        background-color: rgb(180, 180, 180);
+        display: flex;
+        border: none;
+    }
+
+    #save-collection-button-in-other-profile-collection-details-page i {
+        margin-top: 5px;
+        font-size: 25px;
+        color: white;
+    }
+
+    #save-collection-button-in-other-profile-collection-details-page p {
+        margin: 15px 0px 0px 10px;
+    }
+
+    /* For related information of collection and share button */
+    #related-information-of-collection-and-share-button-in-other-profile-collection-details-page {
+        width: 100%;
+        background-color: rgb(240, 240, 240);
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }   
+
+    /* For related information of collection */
+    #related-information-of-collection-in-other-profile-collection-details-page {
+        display: flex;
+        margin-top: 20px;   
+        margin-left: 10px;
+    }
+
+    #related-information-of-collection-in-other-profile-collection-details-page a {
+        display: block;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(185, 185, 185);
+        text-decoration: none;
+        color: black;
+    }
+
+    #related-information-of-collection-in-other-profile-collection-details-page a + div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-top: -6px;
+    }
+
+    #related-information-of-collection-in-other-profile-collection-details-page a + div p {
+        color: gray;
+    }
+
+    #related-information-of-collection-in-other-profile-collection-details-page a + div p span {
+        color: black;
+    }
+    
+    #related-information-of-collection-in-other-profile-collection-details-page a + div p + p {
+        margin-top: -15px;
+    }
+
+    /* For the share button */
+    #share-button-in-other-profile-collection-details-page {
+        margin-top: 20px;
+        height: 30px;
+        display: flex;
+    }
+
+    #share-button-in-other-profile-collection-details-page i {
+        font-size: 25px;
+        margin-right: 10px;
+        color: rgb(150, 150, 150);
+    }
+
+    #share-button-in-other-profile-collection-details-page p {
+        margin: 6px 10px 0px 0px;
+        font-size: 17px;
+        color: gray;
+    }
+
+    /* For the recipes */
+    #recipes-in-other-profile-collection-details-page {
+        margin-top: 10px;
+    }
+
+    .recipe-in-other-profile-collection-details-page {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .related-information-of-recipe-in-other-profile-collection-details-page {
+        display: flex;
+    }
+
+    .recipe-in-other-profile-collection-details-page a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .recipe-photo-in-other-profile-collection-details-page {
+        display: block;
+        width: 130px;
+        height: 130px;
+        background-color: gray;
+    }
+
+    .recipe-name-and-recipe-ratings-in-other-profile-collection-details-page {
+        margin: -7px 0px 0px 10px;
+    }
+    
+    .recipe-name-in-other-profile-collection-details-page {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .recipe-name-in-other-profile-collection-details-page:hover {
+        color: orange;
+    }
+
+    .recipe-ratings-in-other-profile-collection-details-page {
+        display: flex;
+        margin: -10px 0px 0px -5px;
+    }
+
+    .recipe-ratings-in-other-profile-collection-details-page i {
+        margin-left: 5px;
+    }
+
+    .recipe-ratings-in-other-profile-collection-details-page p {
+        margin-left: 5px;
+    }
+
+    .recipe-favorites-in-other-profile-collection-details-page {
+        display: flex;
+        margin-top: -10px;
+    }
+
+    .recipe-favorites-in-other-profile-collection-details-page i {
+        color: orangered;
+    }
+
+    .recipe-favorites-in-other-profile-collection-details-page p {
+        margin-left: 5px;
+    }
+
+    .recipe-author-in-other-profile-collection-details-page {
+        margin-top: -10px;
+    }
+
+    .recipe-author-in-other-profile-collection-details-page a {
+        text-decoration: underline;
+        text-decoration-color: orangered;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* For the save recipe button */
+    .save-recipe-button-in-other-profile-collection-details-page {
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(0, 0, 0, 0.4);
+    }
+
+    .save-recipe-button-in-other-profile-collection-details-page i {
+        color: white;
+    }
+
+    .save-recipe-button-in-other-profile-collection-details-page:hover {
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    /* For the container of other profile collection details page */
+    #other-profile-collection-details-page {
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    /* For the collection name and save collection button */
+    #collection-name-and-save-collection-button-in-other-profile-collection-details-page {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #collection-name-and-save-collection-button-in-other-profile-collection-details-page div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* For the collection name */
+    #collection-name-in-other-profile-collection-details-page {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #collection-name-in-other-profile-collection-details-page + a {
+        margin-top: -15px;
+        text-decoration: none;
+        color: orange;
+    }
+
+    /* For save collection button */
+    #save-collection-button-in-other-profile-collection-details-page {
+        background-color: rgb(180, 180, 180);
+        display: flex;
+        border: none;
+    }
+
+    #save-collection-button-in-other-profile-collection-details-page i {
+        margin-top: 5px;
+        font-size: 25px;
+        color: white;
+    }
+
+    #save-collection-button-in-other-profile-collection-details-page p {
+        margin: 15px 0px 0px 10px;
+    }
+
+    /* For related information of collection and share button */
+    #related-information-of-collection-and-share-button-in-other-profile-collection-details-page {
+        width: 100%;
+        background-color: rgb(240, 240, 240);
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }   
+
+    /* For related information of collection */
+    #related-information-of-collection-in-other-profile-collection-details-page {
+        display: flex;
+        margin-top: 20px;   
+        margin-left: 10px;
+    }
+
+    #related-information-of-collection-in-other-profile-collection-details-page a {
+        display: block;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(185, 185, 185);
+        text-decoration: none;
+        color: black;
+    }
+
+    #related-information-of-collection-in-other-profile-collection-details-page a + div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-top: -6px;
+    }
+
+    #related-information-of-collection-in-other-profile-collection-details-page a + div p {
+        color: gray;
+    }
+
+    #related-information-of-collection-in-other-profile-collection-details-page a + div p span {
+        color: black;
+    }
+    
+    #related-information-of-collection-in-other-profile-collection-details-page a + div p + p {
+        margin-top: -15px;
+    }
+
+    /* For the share button */
+    #share-button-in-other-profile-collection-details-page {
+        margin-top: 20px;
+        height: 30px;
+        display: flex;
+    }
+
+    #share-button-in-other-profile-collection-details-page i {
+        font-size: 25px;
+        margin-right: 10px;
+        color: rgb(150, 150, 150);
+    }
+
+    #share-button-in-other-profile-collection-details-page p {
+        margin: 6px 10px 0px 0px;
+        font-size: 17px;
+        color: gray;
+    }
+
+    /* For the recipes */
+    #recipes-in-other-profile-collection-details-page {
+        margin-top: 10px;
+    }
+
+    .recipe-in-other-profile-collection-details-page {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .related-information-of-recipe-in-other-profile-collection-details-page {
+        display: flex;
+    }
+
+    .recipe-in-other-profile-collection-details-page a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .recipe-photo-in-other-profile-collection-details-page {
+        display: block;
+        width: 130px;
+        height: 130px;
+        background-color: gray;
+    }
+
+    .recipe-name-and-recipe-ratings-in-other-profile-collection-details-page {
+        margin: -7px 0px 0px 10px;
+    }
+    
+    .recipe-name-in-other-profile-collection-details-page {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .recipe-name-in-other-profile-collection-details-page:hover {
+        color: orange;
+    }
+
+    .recipe-ratings-in-other-profile-collection-details-page {
+        display: flex;
+        margin: -10px 0px 0px -5px;
+    }
+
+    .recipe-ratings-in-other-profile-collection-details-page i {
+        margin-left: 5px;
+    }
+
+    .recipe-ratings-in-other-profile-collection-details-page p {
+        margin-left: 5px;
+    }
+
+    .recipe-favorites-in-other-profile-collection-details-page {
+        display: flex;
+        margin-top: -10px;
+    }
+
+    .recipe-favorites-in-other-profile-collection-details-page i {
+        color: orangered;
+    }
+
+    .recipe-favorites-in-other-profile-collection-details-page p {
+        margin-left: 5px;
+    }
+
+    .recipe-author-in-other-profile-collection-details-page {
+        margin-top: -10px;
+    }
+
+    .recipe-author-in-other-profile-collection-details-page a {
+        text-decoration: underline;
+        text-decoration-color: orangered;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* For the save recipe button */
+    .save-recipe-button-in-other-profile-collection-details-page {
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(0, 0, 0, 0.4);
+    }
+
+    .save-recipe-button-in-other-profile-collection-details-page i {
+        color: white;
+    }
+
+    .save-recipe-button-in-other-profile-collection-details-page:hover {
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+}
+
+@media only screen and (min-width: 670px) {
+    /* For the recipes */
+    #recipes-in-other-profile-collection-details-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        margin: auto;
+        width: fit-content;
+        margin-top: 20px;
+    }
+
+    .recipe-in-other-profile-collection-details-page {
+        border: 1px solid rgb(216, 216, 216);
+        display: flex;
+    }
+
+    .recipe-in-other-profile-collection-details-page + hr {
+        display: none;
+    }
+
+    .related-information-of-recipe-in-other-profile-collection-details-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recipe-in-other-profile-collection-details-page a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .recipe-photo-in-other-profile-collection-details-page {
+        display: block;
+        width: 280px;
+        height: 280px;
+        background-color: rgb(201, 201, 201);
+        margin: 10px;
+    }
+
+    .recipe-name-in-other-profile-collection-details-page {
+        margin-left: -2px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .recipe-name-in-other-profile-collection-details-page:hover {
+        color: orange;
+    }
+
+    .recipe-ratings-and-favorites-in-other-profile-collection-details-page {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .recipe-ratings-in-other-profile-collection-details-page {
+        display: flex;
+        margin: -10px 0px 0px -6px;
+    }
+
+    .recipe-ratings-in-other-profile-collection-details-page i {
+        margin-left: 5px;
+    }
+
+    .recipe-ratings-in-other-profile-collection-details-page p {
+        margin-left: 5px;
+    }
+
+    .recipe-favorites-in-other-profile-collection-details-page {
+        display: flex;
+        margin-left: 30px;
+    }
+
+    .recipe-favorites-in-other-profile-collection-details-page i {
+        color: orangered;
+    }
+
+    .recipe-favorites-in-other-profile-collection-details-page p {
+        margin-left: 5px;
+    }
+
+    .recipe-author-in-other-profile-collection-details-page {
+        margin: -10px 0px 10px -2px;
+    }
+
+    .recipe-author-in-other-profile-collection-details-page a {
+        text-decoration: underline;
+        text-decoration-color: orangered;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* For the save recipe button */
+    .save-recipe-button-in-other-profile-collection-details-page {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        background-color: rgb(0, 0, 0, 0.4);
+        position: absolute;
+        margin: 10px 0px 0px 230px;
+    }
+
+    .save-recipe-button-in-other-profile-collection-details-page i {
+        font-size: 35px;
+        color: white;
+    }
+
+    .save-recipe-button-in-evaluated-recipes-page:hover {
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+}
+
+@media only screen and (min-width: 956px) {
+    /* For the container of other profile collection details page */
+    #other-profile-collection-details-page {
+        width: 81.5%;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* For the container of other profile collection details page */
+    #other-profile-collection-details-page {
+        width: 72%;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    /* For the container of other profile collection details page */
+    #other-profile-collection-details-page {
+        width: 67.7%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    /* For the recipes */
+    #recipes-in-other-profile-collection-details-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+        margin: auto;
+        width: fit-content;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    /* For the container of other profile collection details page */
+    #other-profile-collection-details-page {
+        width: 63%;
+        margin: auto;
+        margin-top: 10px;
+    }
+}

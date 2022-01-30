@@ -20,7 +20,7 @@ function NavBar() {
         <a href="/foodshare.com"><img className="logo" src={MyLogo} alt="Logo" /></a>
         <div className="search-bar">
           <form className="search-form">
-            <input name="search recipe" className="search-input" type="search" placeholder="Find a recipe" aria-label="Search" />
+            <input name="searchRecipe" className="search-input" type="search" placeholder="Find a recipe" aria-label="Search" />
             <button className="search-button" type="submit"><i className="bi bi-search"></i></button>
           </form>
         </div>

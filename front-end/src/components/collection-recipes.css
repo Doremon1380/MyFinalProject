@@ -114,7 +114,7 @@
     }
 
     /* For the collection photo */
-    .save-recipe-button-in-personal-recipes-page + a {
+    .save-recipe-button-in-collection-recipes-page + a {
         text-decoration: none;
     }
 
@@ -125,8 +125,14 @@
         grid-gap: 5px;
         margin: 10px;
     }
+    
+    .set-of-containers-representing-the-collection-in-collection-recipes-page a {
+        text-decoration: white;
+        color: black;
+    }
 
-    .set-of-containers-representing-the-collection-in-collection-recipes-page div {
+    .set-of-containers-representing-the-collection-in-collection-recipes-page a img {
+        display: block;
         width: 136.5px;
         height: 136.5px;
         background-color: rgb(249, 249, 249);
@@ -352,7 +358,7 @@
     }
 
     /* For the collection photo */
-    .save-recipe-button-in-personal-recipes-page + a {
+    .save-recipe-button-in-collection-recipes-page + a {
         text-decoration: none;
     }
 
@@ -364,7 +370,13 @@
         margin: 10px;
     }
 
-    .set-of-containers-representing-the-collection-in-collection-recipes-page div {
+    .set-of-containers-representing-the-collection-in-collection-recipes-page a {
+        text-decoration: white;
+        color: black;
+    }
+
+    .set-of-containers-representing-the-collection-in-collection-recipes-page a img {
+        display: block;
         width: 136.5px;
         height: 136.5px;
         background-color: rgb(249, 249, 249);

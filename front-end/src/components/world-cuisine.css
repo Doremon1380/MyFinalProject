@@ -1,0 +1,629 @@
+@media only screen and (max-width: 600px) {
+    /* For the container of world cuisine page */
+    #world-cuisine-page {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* For the top section */
+    #top-section-of-world-cuisine-page {
+        background-color: rgb(228, 171, 78);
+        height: 160px;
+        width: 100%;
+    }
+
+    /* For titles with URL and recipes */
+    #titles-with-image-and-recipes-in-world-cuisine-page {
+        width: 95%;
+        margin: auto;   
+    }
+
+    /* For page title */
+    #page-title-of-world-cuisine-page {
+        background-color: white;
+        box-shadow: 0px 0px 3px rgb(180, 180, 180);
+        width: 100%;
+        height: 110px;
+        border-left: 4px solid rgb(63, 198, 182);
+        margin-top: -110px;
+        padding: 15px 0px 0px 20px;
+    }
+
+    #page-title-of-world-cuisine-page div a {
+        color: black;
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    #page-title-of-world-cuisine-page div a:hover {
+        border-bottom: 2px solid rgb(201, 7, 0);
+    }
+
+    #page-title-of-world-cuisine-page div i {
+        margin: 0px 10px 0px 10px;
+        color: orange;
+    }
+
+    #page-title-of-world-cuisine-page h1 {
+        margin-top: 15px;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* For titles with image */
+    #titles-with-image-in-world-cuisine-page {
+        display: flex;
+        margin-top: 25px;
+        overflow: hidden;
+    }
+
+    #titles-with-image-in-world-cuisine-page a {
+        color: black;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    #titles-with-image-in-world-cuisine-page img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    #titles-with-image-in-world-cuisine-page p {
+        margin-left: 15px;
+    }
+
+    /* For button to return to previous recipe titles and button to go to next recipe titles in world cuisine page */
+    #button-to-return-to-previous-recipe-titles-and-button-to-go-to-next-recipe-titles-in-world-cuisine-page {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin-top: -105px;
+    }
+
+    /* For back to previous recipe titles button */
+    #button-to-return-to-previous-recipe-titles-in-world-cuisine-page {
+        border: none;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        background-color: rgb(230, 65, 0);
+    }
+
+    #button-to-return-to-previous-recipe-titles-in-world-cuisine-page:hover {
+        background-color: rgb(190, 54, 0);
+    }
+
+    #button-to-return-to-previous-recipe-titles-in-world-cuisine-page i {
+        font-size: 30px;
+        position: absolute;
+        margin: -23px 0px 0px -15px;
+        color: white;
+    }
+
+    /* For go to next recipe titles button */
+    #button-to-go-to-next-recipe-titles-in-world-cuisine-page {
+        border: none;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        background-color: rgb(230, 65, 0);
+    }
+
+    #button-to-go-to-next-recipe-titles-in-world-cuisine-page:hover {
+        background-color: rgb(190, 54, 0);
+    }
+
+    #button-to-go-to-next-recipe-titles-in-world-cuisine-page i {
+        font-size: 30px;
+        position: absolute;
+        margin: -23px 0px 0px -15px;
+        color: white;
+    }
+
+    /* For all displayed recipe */
+    #recipes-in-world-cuisine-page {
+        margin-top: 30px;
+    }
+    
+    .recipes-section-title-in-world-cuisine-page {
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+        margin: auto;
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+
+    .recipe-in-world-cuisine-page {
+        margin-bottom: 50px;
+        border-top: 1px solid rgb(216, 216, 216);
+    }
+
+    /* For save button */
+    .save-recipe-button-in-world-cuisine-page {
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: rgb(0, 0, 0, 0.4);
+        margin-left: 90px;
+    }
+
+    .save-recipe-button-in-world-cuisine-page i {
+        font-size: 35px;
+        color: white;
+    }
+
+    .save-recipe-button-in-world-cuisine-page:hover {
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+
+    /* For related infomation of displayed recipe */
+    .related-information-of-recipe-in-world-cuisine-page {
+        display: flex;
+    }
+
+    .related-information-of-recipe-in-world-cuisine-page a {
+        color: black;
+        text-decoration: none;
+    }
+
+    /* For the recipe photo */
+    .recipe-photo-in-world-cuisine-page {
+        display: block;
+        width: 150px;
+        height: 150px;
+        background-color: gray;
+    }
+
+    /* For the recipe name and ratings */
+    .recipe-name-and-recipe-ratings-in-world-cuisine-page {
+        margin-left: 20px;
+    }
+
+    .recipe-name-in-world-cuisine-page {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .recipe-name-in-world-cuisine-page:hover {
+        color: orange;
+    }
+
+    .recipe-ratings-and-favorites-in-world-cuisine-page {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        margin-top: -10px;
+    }
+    
+    .recipe-ratings-in-world-cuisine-page {
+        display: flex;
+        margin-left: -5px;
+    }
+
+    .recipe-ratings-in-world-cuisine-page i {
+        margin-left: 5px;
+    }
+
+    .recipe-ratings-in-world-cuisine-page p {
+        margin-left: 5px;
+    }
+
+    .recipe-favorites-in-world-cuisine-page {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .recipe-favorites-in-world-cuisine-page i {
+        color: orangered;
+    }
+
+    .recipe-favorites-in-world-cuisine-page p {
+        margin-left: 5px;
+    }
+
+    /* For recipe author */
+    .recipe-author-in-world-cuisine-page {
+        margin-top: -14px;
+    }
+
+    .recipe-author-in-world-cuisine-page a {
+        text-decoration: underline;
+        text-decoration-color: orangered;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* For load more recipes button */
+    .load-more-recipes-button-in-world-cuisine-page {   
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    .load-more-recipes-button-in-world-cuisine-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    /* For the container of world cuisine page */
+    #world-cuisine-page {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* For the top section */
+    #top-section-of-world-cuisine-page {
+        background-color: rgb(228, 171, 78);
+        height: 160px;
+        width: 100%;
+    }
+
+    /* For titles with URL and recipes */
+    #titles-with-image-and-recipes-in-world-cuisine-page {
+        width: 95%;
+        margin: auto;   
+    }
+
+    /* For page title */
+    #page-title-of-world-cuisine-page {
+        background-color: white;
+        box-shadow: 0px 0px 3px rgb(180, 180, 180);
+        width: 100%;
+        height: 110px;
+        border-left: 4px solid rgb(63, 198, 182);
+        margin-top: -110px;
+        padding: 15px 0px 0px 20px;
+    }
+
+    #page-title-of-world-cuisine-page div a {
+        color: black;
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    #page-title-of-world-cuisine-page div a:hover {
+        border-bottom: 2px solid rgb(201, 7, 0);
+    }
+
+    #page-title-of-world-cuisine-page div i {
+        margin: 0px 10px 0px 10px;
+        color: orange;
+    }
+
+    #page-title-of-world-cuisine-page h1 {
+        margin-top: 15px;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* For titles with image */
+    #titles-with-image-in-world-cuisine-page {
+        display: flex;
+        margin-top: 25px;
+        overflow: hidden;
+    }
+
+    #titles-with-image-in-world-cuisine-page a {
+        color: black;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    #titles-with-image-in-world-cuisine-page img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    #titles-with-image-in-world-cuisine-page p {
+        margin-left: 15px;
+    }
+
+    /* For button to return to previous recipe titles and button to go to next recipe titles in world cuisine page */
+    #button-to-return-to-previous-recipe-titles-and-button-to-go-to-next-recipe-titles-in-world-cuisine-page {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin-top: -105px;
+    }
+
+    /* For back to previous recipe titles button */
+    #button-to-return-to-previous-recipe-titles-in-world-cuisine-page {
+        border: none;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        background-color: rgb(230, 65, 0);
+    }
+
+    #button-to-return-to-previous-recipe-titles-in-world-cuisine-page:hover {
+        background-color: rgb(190, 54, 0);
+    }
+
+    #button-to-return-to-previous-recipe-titles-in-world-cuisine-page i {
+        font-size: 30px;
+        position: absolute;
+        margin: -23px 0px 0px -15px;
+        color: white;
+    }
+
+    /* For go to next recipe titles button */
+    #button-to-go-to-next-recipe-titles-in-world-cuisine-page {
+        border: none;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        background-color: rgb(230, 65, 0);
+    }
+
+    #button-to-go-to-next-recipe-titles-in-world-cuisine-page:hover {
+        background-color: rgb(190, 54, 0);
+    }
+
+    #button-to-go-to-next-recipe-titles-in-world-cuisine-page i {
+        font-size: 30px;
+        position: absolute;
+        margin: -23px 0px 0px -15px;
+        color: white;
+    }
+
+    /* For all displayed recipe */
+    #recipes-in-world-cuisine-page {
+        margin-top: 30px;
+    }
+    
+    .recipes-section-title-in-world-cuisine-page {
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+        margin: auto;
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+
+    .recipe-in-world-cuisine-page {
+        margin-bottom: 50px;
+        border-top: 1px solid rgb(216, 216, 216);
+    }
+
+    /* For save button */
+    .save-recipe-button-in-world-cuisine-page {
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: rgb(0, 0, 0, 0.4);
+        margin-left: 90px;
+    }
+
+    .save-recipe-button-in-world-cuisine-page i {
+        font-size: 35px;
+        color: white;
+    }
+
+    .save-recipe-button-in-world-cuisine-page:hover {
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+
+    /* For related infomation of displayed recipe */
+    .related-information-of-recipe-in-world-cuisine-page {
+        display: flex;
+    }
+
+    .related-information-of-recipe-in-world-cuisine-page a {
+        color: black;
+        text-decoration: none;
+    }
+
+    /* For the recipe photo */
+    .recipe-photo-in-world-cuisine-page {
+        display: block;
+        width: 150px;
+        height: 150px;
+        background-color: gray;
+    }
+
+    /* For the recipe name and ratings */
+    .recipe-name-and-recipe-ratings-in-world-cuisine-page {
+        margin-left: 20px;
+    }
+
+    .recipe-name-in-world-cuisine-page {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .recipe-name-in-world-cuisine-page:hover {
+        color: orange;
+    }
+
+    .recipe-ratings-and-favorites-in-world-cuisine-page {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        margin-top: -10px;
+    }
+    
+    .recipe-ratings-in-world-cuisine-page {
+        display: flex;
+        margin-left: -5px;
+    }
+
+    .recipe-ratings-in-world-cuisine-page i {
+        margin-left: 5px;
+    }
+
+    .recipe-ratings-in-world-cuisine-page p {
+        margin-left: 5px;
+    }
+
+    .recipe-favorites-in-world-cuisine-page {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .recipe-favorites-in-world-cuisine-page i {
+        color: orangered;
+    }
+
+    .recipe-favorites-in-world-cuisine-page p {
+        margin-left: 5px;
+    }
+
+    /* For recipe author */
+    .recipe-author-in-world-cuisine-page {
+        margin-top: -14px;
+    }
+
+    .recipe-author-in-world-cuisine-page a {
+        text-decoration: underline;
+        text-decoration-color: orangered;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* For load more recipes button */
+    .load-more-recipes-button-in-world-cuisine-page {   
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    .load-more-recipes-button-in-world-cuisine-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+}
+
+@media only screen and (min-width: 766px) {
+    /* For page title */
+    #page-title-of-world-cuisine-page {
+        background-color: white;
+        box-shadow: 0px 0px 3px rgb(180, 180, 180);
+        width: 710px;
+        height: 110px;
+        border-left: 4px solid rgb(63, 198, 182);
+        margin: auto;
+        margin-top: -110px;
+        padding: 15px 0px 0px 20px;
+    }
+
+    /* For titles with image */
+    #titles-with-image-in-world-cuisine-page {
+        display: flex;
+        margin: auto;
+        margin-top: 25px;
+        overflow: hidden;
+        width: 710px;
+    }
+
+    /* For button to return to previous recipe titles and button to go to next recipe titles in world cuisine page */
+    #button-to-return-to-previous-recipe-titles-and-button-to-go-to-next-recipe-titles-in-world-cuisine-page {
+        display: none;
+    }
+
+    /* For the recipes section */
+    .recipes-section-in-world-cuisine-page {
+        width: fit-content;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+        margin-top: 20px;
+    }
+
+    /* For all displayed recipe */
+    .recipe-in-world-cuisine-page {
+        border: 1px solid rgb(216, 216, 216);
+        width: 270px;
+        height: 380px;
+        margin-bottom: 30px;
+    }
+
+    /* For save button */
+    .save-recipe-button-in-world-cuisine-page {
+        border: none;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.4);
+        margin-left: 193px;
+    }
+
+    .save-recipe-button-in-world-cuisine-page i {
+        font-size: 45px;
+        color: white;
+    }
+
+    .save-recipe-button-in-world-cuisine-page:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    /* For related infomation of displayed recipe */
+    .related-information-of-recipe-in-world-cuisine-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* For the recipe photo */
+    .recipe-photo-in-world-cuisine-page {
+        display: block;
+        width: 268px;
+        height: 264px;
+        background-color: rgb(201, 201, 201);
+    }
+
+    /* For the recipe name and ratings */
+    .recipe-name-and-recipe-ratings-in-world-cuisine-page {
+        margin: 10px 0px 0px 15px;
+    }
+
+    /* For recipe author */
+    .recipe-author-in-world-cuisine-page {
+        display: block;
+        width: fit-content;
+        margin-top: -5px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* For the recipes section */
+    .recipes-section-in-world-cuisine-page {
+        width: fit-content;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+        margin-top: 20px;
+    }
+}

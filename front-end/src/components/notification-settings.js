@@ -31,7 +31,7 @@ function NotificationSettings() {
                             <p className="left-side-button-title1" id="edit-profile-title1">Edit profile</p>
                         </button>
                     </a>
-                    <a href="/#" className="left-button-link1">
+                    <a href="/public-profile-favorite-recipes" className="left-button-link1">
                         <button className="left-side-button1">
                             <i><FaRegEye /></i>
                             <p className="left-side-button-title1">See public profile</p>
@@ -52,16 +52,16 @@ function NotificationSettings() {
                 </div>
                 <form id="notification-settings-options">
                     <h1 id="email-notifications-title">Email Notifications</h1>
-                    <input value="A new photo is posted to my recipe" name="notification settings" id="new-photo-posted" className="notification-settings-checkbox" type="checkbox"></input>
+                    <input name="newPhotoIsPosted" id="new-photo-posted" className="notification-settings-checkbox" type="checkbox"></input>
                     <label for="new-photo-posted" className="notification-settings-checkbox-label">A new photo is posted to my recipe</label>
-                    <input value="A new review is posted to my recipe" name="notification settings" id="new-review-posted" className="notification-settings-checkbox" type="checkbox"></input>
+                    <input name="newReviewIsPosted" id="new-review-posted" className="notification-settings-checkbox" type="checkbox"></input>
                     <label for="new-review-posted" className="notification-settings-checkbox-label">A new review is posted to my recipe</label>
-                    <input value="A recipe is published" name="notification settings" id="recipe-published" className="notification-settings-checkbox" type="checkbox"></input>
+                    <input name="recipeIsPublished" id="recipe-published" className="notification-settings-checkbox" type="checkbox"></input>
                     <label for="recipe-published" className="notification-settings-checkbox-label">A recipe is published</label>
-                    <input value="Someone follows me" name="notification settings" id="someone-follows" className="notification-settings-checkbox" type="checkbox"></input>
+                    <input name="SomeoneFollows" id="someone-follows" className="notification-settings-checkbox" type="checkbox"></input>
                     <label for="someone-follows" className="notification-settings-checkbox-label">Someone follows me</label>
                     <p id="or1"><span>OR</span></p>
-                    <input value="Stop receiving ALL notifications" name="notification settings" id="stop-receiving-all-notifications" className="notification-settings-checkbox" type="checkbox"></input>
+                    <input name="stopReceivingAllNotifications" id="stop-receiving-all-notifications" className="notification-settings-checkbox" type="radio"></input>
                     <label for="stop-receiving-all-notifications" className="notification-settings-checkbox-label">Stop receiving ALL notifications</label>
                     <div id="notification-settings-bottom-buttons">
                         <button id="notification-settings-save-button">Save</button>

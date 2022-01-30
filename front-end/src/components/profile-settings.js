@@ -31,7 +31,7 @@ function ProfileSettings() {
                             <p className="left-side-button-title" id="edit-profile-title">Edit profile</p>
                         </button>
                     </a>
-                    <a href="/#" className="left-button-link">
+                    <a href="/public-profile-favorite-recipes" className="left-button-link">
                         <button className="left-side-button">
                             <i><FaRegEye /></i>
                             <p className="left-side-button-title">See public profile</p>

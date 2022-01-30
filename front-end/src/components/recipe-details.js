@@ -12,8 +12,7 @@ import { FaMortarPestle } from "react-icons/fa";
 import { FaThumbsUp } from "react-icons/fa";
 import { FaQuoteLeft } from "react-icons/fa";
 
-
-const TITLE = '"Recipe name" - FoodShare';
+const TITLE = '"Recipe name" - FoodShare.com';
 
 function RecipeDetails() {
     return (

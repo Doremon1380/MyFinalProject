@@ -6,13 +6,13 @@
         margin-left: -12px;
     }
 
-    /* For the container of evaluated recipes page */
+    /* For the container of personal recipes page */
     #personal-recipes-page {
         width: 95%;
         margin: auto;
     }
 
-    /* For the made recipes sorting options */
+    /* For the personal recipes sorting options */
     #personal-recipes-sorting-options-in-personal-recipes-page {
         display: flex;
         margin: 10px 0px 30px 0px;
@@ -193,13 +193,13 @@
         margin-left: -12px;
     }
 
-    /* For the container of evaluated recipes page */
+    /* For the container of personal recipes page */
     #personal-recipes-page {
         width: 95%;
         margin: auto;
     }
 
-    /* For the made recipes sorting options */
+    /* For the personal recipes sorting options */
     #personal-recipes-sorting-options-in-personal-recipes-page {
         display: flex;
         margin: 10px 0px 30px 0px;
@@ -419,7 +419,7 @@
         margin: auto;
     }
 
-    /* For the container of made recipes page */
+    /* For the container of personal recipes page */
     #personal-recipes-page {
         width: 62.5%;
         margin: auto;
@@ -443,16 +443,9 @@
         margin: auto;
     }
 
-    /* For the container of made recipes page */
+    /* For the container of personal recipes page */
     #personal-recipes-page {
         width: 63.6%;
         margin: auto;
-    }
-
-    /* For add icon of add recipe button */
-    .add-icon-in-personal-recipes-page i {
-        font-size: 35px;
-        display: inline-block;
-        margin: -6px 0px 0px 0px;
     }
 }

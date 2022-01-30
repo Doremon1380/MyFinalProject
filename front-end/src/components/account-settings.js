@@ -31,7 +31,7 @@ function AccountSettings() {
                             <p className="left-side-button-title2" id="edit-profile-title2">Edit profile</p>
                         </button>
                     </a>
-                    <a href="/#" className="left-button-link2">
+                    <a href="/public-profile-favorite-recipes" className="left-button-link2">
                         <button className="left-side-button2">
                             <i><FaRegEye /></i>
                             <p className="left-side-button-title2">See public profile</p>
@@ -60,9 +60,9 @@ function AccountSettings() {
                         <label>Current Password</label><br />
                         <input name="password" placeholder="Password" type="password"></input><br />
                         <label>New Password</label><br />
-                        <input name="new password" placeholder="New Password" type="password"></input><br />
+                        <input name="newPassword" placeholder="New Password" type="password"></input><br />
                         <label>Confirm Password</label><br />
-                        <input name="confirm password" placeholder="Confirm Password" type="password"></input>
+                        <input name="confirmPassword" placeholder="Confirm Password" type="password"></input>
                     </div>
                     <div id="edit-account-bottom-buttons">
                         <button id="edit-account-save-button">Save</button>

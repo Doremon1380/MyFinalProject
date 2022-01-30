@@ -67,7 +67,7 @@ class SignIn extends React.Component {
               <img src={imagesPath[imageName]} id="sign-in-password-icon" onClick={() => { this.toggleImage(); this.togglePasswordVisibility() }}></img>
             </div>
             <div id="flex-box-3">
-              <input name="remember me" value="Remember me" id="remember-me" type="checkbox" />
+              <input name="rememberMe" value="rememberMe" id="remember-me" type="checkbox" />
               <label for="remember-me" id="remember-me-label">Remember me</label>
               <a href="#" id="forgot-password">Forgot password?</a>
             </div>

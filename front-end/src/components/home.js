@@ -7,7 +7,6 @@ import "./home.css"
 
 import { FaHeart } from "react-icons/fa";
 
-
 const TITLE = 'FoodShare - Recipe Inspiration';
 
 function Home() {

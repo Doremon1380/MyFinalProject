@@ -1,0 +1,454 @@
+@media only screen and (max-width: 600px) {
+    /* For the container of ask the community page */
+    #ask-the-community-page {
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    /* For the title of ask the community page */
+    #ask-the-community-page h1 {
+        font-size: 35px;
+        color: black;
+        font-weight: normal;
+    }
+
+    /* For your question section in ask the question page */
+    #your-question-in-ask-the-question-page button {
+        display: block;
+        border: none;
+        background-color: rgb(250, 100, 29);
+        color: white;
+        width: 130px;
+        height: 40px;
+        margin: auto;
+    }
+
+    #your-question-in-ask-the-question-page button:hover {
+        background-color: rgb(216, 50, 0);
+    }
+
+    #your-question-in-ask-the-question-page button + p {
+        margin-top: 15px;
+    }
+
+    #your-question-in-ask-the-question-page button + p + form input {
+        width: 400px;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-left: 5px;
+    }
+
+    #your-question-in-ask-the-question-page button + p + form textarea {
+        margin-top: 5px;
+        width: 100%;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-left: 5px;
+    }
+
+    #your-question-in-ask-the-question-page button + p + form button {
+        background-color: rgb(150, 150, 150);
+        width: 80px;
+        margin-left: 0px;
+    }
+
+    #your-question-in-ask-the-question-page button + p + form button:hover {
+        background-color: rgb(102, 102, 102);
+    }
+
+    /* For all user questions */
+    #user-questions-in-ask-the-community-page {
+        margin-top: 30px;
+    }
+
+    /* For user account and datetime of user question */
+    .user-question-in-ask-the-community-page {
+        margin-top: 30px;
+    }
+
+    .user-account-and-datetime-of-user-question-in-ask-the-community-page {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .user-account-of-user-question-in-ask-the-community-page {
+        display: flex;
+    }
+
+    .user-account-of-user-question-in-ask-the-community-page a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .user-account-of-user-question-in-ask-the-community-page img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: gray;
+    }
+
+    .user-account-of-user-question-in-ask-the-community-page p {
+        margin: 6px 0px 0px 10px;
+        color: rgb(250, 100, 29);
+        font-weight: bold;
+    }
+
+    .user-account-of-user-question-in-ask-the-community-page p:hover {
+        color: rgb(216, 50, 0);
+    }
+
+    .datetime-of-user-question-in-ask-the-community-page {
+        font-size: 14px;
+        margin-top: 8px;
+        font-style: italic;
+    }
+
+    /* For user question */
+    .question-of-user-in-ask-the-community-page {
+        background-color: rgb(242, 242, 242);
+        padding: 10px 0px 5px 10px;
+        margin-top: 10px;
+        border-radius: 3px;
+    }
+
+    .question-of-user-in-ask-the-community-page p {
+        font-weight: bold;
+    }
+
+    .question-of-user-in-ask-the-community-page p + p {
+        font-weight: normal;
+        font-size: 15px;
+        margin-top: -5px;
+    }
+
+    .question-of-user-in-ask-the-community-page::before {
+        display: block;
+        background-color: gray;
+        width: 30px;
+        height: 30px;
+    }
+
+    /* For reply */
+    #your-reply-in-ask-the-question-page button {
+        border: none;
+        background-color: rgb(150, 150, 150);
+        color: white;
+        width: 60px;
+        height: 40px;
+    }
+
+    #your-reply-in-ask-the-question-page button:hover {
+        background-color: rgb(102, 102, 102);
+    }
+
+    #your-reply-in-ask-the-question-page form textarea {
+        outline: none;
+        border: 1px solid black;
+        margin-top: 20px;
+        width: 100%;
+        padding-left: 5px;
+        border-radius: 3px;
+    }
+
+    #your-reply-in-ask-the-question-page form button {
+        width: 80px;
+        height: 40px;
+    }
+    
+    /* For all user comments */
+    #number-of-comments-in-ask-the-question-page {
+        font-weight: bold;
+        margin-top: 10px;
+        text-decoration: underline;
+    }
+    
+    #number-of-comments-in-ask-the-question-page + div {
+        border: 1px solid rgb(221, 221, 221);
+        border-bottom: none;
+        border-radius: 3px;
+    }
+
+    .user-comment-in-ask-the-question-page {
+        border-bottom: 1px solid rgb(221, 221, 221);
+    }
+
+    .user-comment-in-ask-the-question-page div {
+        display: flex;
+        margin: 10px 10px 0px 10px;
+        justify-content: space-between;
+    }
+
+    .user-comment-in-ask-the-question-page div a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .user-comment-in-ask-the-question-page div a p {
+        color: rgb(250, 100, 29);
+        font-weight: bold;
+    }
+
+    .user-comment-in-ask-the-question-page div a + p {
+        font-style: italic;
+        font-size: 14px;
+        margin-top: 3px;
+    }
+
+    .user-comment-in-ask-the-question-page div + p {
+        margin:-5px 10px 25px 10px
+    }
+
+    /* For load more questions button */
+    #load-more-questions-in-ask-the-question-page {
+        display: block;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        width: 190px;
+        height: 45px;
+        font-size: normal;
+        border: none;
+        background-color: rgb(250, 100, 29);        
+        color: white;
+    }
+
+    #load-more-questions-in-ask-the-question-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    /* For the container of ask the community page */
+    #ask-the-community-page {
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    /* For the title of ask the community page */
+    #ask-the-community-page h1 {
+        font-size: 35px;
+        color: black;
+        font-weight: normal;
+    }
+
+    /* For your question section in ask the question page */
+    #your-question-in-ask-the-question-page button {
+        display: block;
+        border: none;
+        background-color: rgb(250, 100, 29);
+        color: white;
+        width: 130px;
+        height: 40px;
+        margin: auto;
+    }
+
+    #your-question-in-ask-the-question-page button:hover {
+        background-color: rgb(216, 50, 0);
+    }
+
+    #your-question-in-ask-the-question-page button + p {
+        margin-top: 15px;
+    }
+
+    #your-question-in-ask-the-question-page button + p + form input {
+        width: 400px;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-left: 5px;
+    }
+
+    #your-question-in-ask-the-question-page button + p + form textarea {
+        margin-top: 5px;
+        width: 100%;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-left: 5px;
+    }
+
+    #your-question-in-ask-the-question-page button + p + form button {
+        background-color: rgb(150, 150, 150);
+        width: 80px;
+        margin-left: 0px;
+    }
+
+    #your-question-in-ask-the-question-page button + p + form button:hover {
+        background-color: rgb(102, 102, 102);
+    }
+
+    /* For all user questions */
+    #user-questions-in-ask-the-community-page {
+        margin-top: 30px;
+    }
+
+    /* For user account and datetime of user question */
+    .user-question-in-ask-the-community-page {
+        margin-top: 30px;
+    }
+
+    .user-account-and-datetime-of-user-question-in-ask-the-community-page {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .user-account-of-user-question-in-ask-the-community-page {
+        display: flex;
+    }
+
+    .user-account-of-user-question-in-ask-the-community-page a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .user-account-of-user-question-in-ask-the-community-page img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: gray;
+    }
+
+    .user-account-of-user-question-in-ask-the-community-page p {
+        margin: 6px 0px 0px 10px;
+        color: rgb(250, 100, 29);
+        font-weight: bold;
+    }
+
+    .user-account-of-user-question-in-ask-the-community-page p:hover {
+        color: rgb(216, 50, 0);
+    }
+
+    .datetime-of-user-question-in-ask-the-community-page {
+        font-size: 14px;
+        margin-top: 8px;
+        font-style: italic;
+    }
+
+    /* For user question */
+    .question-of-user-in-ask-the-community-page {
+        background-color: rgb(242, 242, 242);
+        padding: 10px 0px 5px 10px;
+        margin-top: 10px;
+        border-radius: 3px;
+    }
+
+    .question-of-user-in-ask-the-community-page p {
+        font-weight: bold;
+    }
+
+    .question-of-user-in-ask-the-community-page p + p {
+        font-weight: normal;
+        font-size: 15px;
+        margin-top: -5px;
+    }
+
+    .question-of-user-in-ask-the-community-page::before {
+        display: block;
+        background-color: gray;
+        width: 30px;
+        height: 30px;
+    }
+
+    /* For reply */
+    #your-reply-in-ask-the-question-page button {
+        border: none;
+        background-color: rgb(150, 150, 150);
+        color: white;
+        width: 60px;
+        height: 40px;
+    }
+
+    #your-reply-in-ask-the-question-page button:hover {
+        background-color: rgb(102, 102, 102);
+    }
+
+    #your-reply-in-ask-the-question-page form textarea {
+        outline: none;
+        border: 1px solid black;
+        margin-top: 20px;
+        width: 100%;
+        padding-left: 5px;
+        border-radius: 3px;
+    }
+
+    #your-reply-in-ask-the-question-page form button {
+        width: 80px;
+        height: 40px;
+    }
+    
+    /* For all user comments */
+    #number-of-comments-in-ask-the-question-page {
+        font-weight: bold;
+        margin-top: 10px;
+        text-decoration: underline;
+    }
+    
+    #number-of-comments-in-ask-the-question-page + div {
+        border: 1px solid rgb(221, 221, 221);
+        border-bottom: none;
+        border-radius: 3px;
+    }
+
+    .user-comment-in-ask-the-question-page {
+        border-bottom: 1px solid rgb(221, 221, 221);
+    }
+
+    .user-comment-in-ask-the-question-page div {
+        display: flex;
+        margin: 10px 10px 0px 10px;
+        justify-content: space-between;
+    }
+
+    .user-comment-in-ask-the-question-page div a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .user-comment-in-ask-the-question-page div a p {
+        color: rgb(250, 100, 29);
+        font-weight: bold;
+    }
+
+    .user-comment-in-ask-the-question-page div a + p {
+        font-style: italic;
+        font-size: 14px;
+        margin-top: 3px;
+    }
+
+    .user-comment-in-ask-the-question-page div + p {
+        margin:-5px 10px 25px 10px
+    }
+
+    /* For load more questions button */
+    #load-more-questions-in-ask-the-question-page {
+        display: block;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        width: 190px;
+        height: 45px;
+        font-size: normal;
+        border: none;
+        background-color: rgb(250, 100, 29);        
+        color: white;
+    }
+
+    #load-more-questions-in-ask-the-question-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+}
+
+@media only screen and (min-width: 956px) {
+    /* For the container of ask the community page */
+    #ask-the-community-page {
+        width: 780px;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
