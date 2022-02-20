@@ -36,8 +36,8 @@ function PhotoId() {
                 </nav>
                 <div id="for-user-account-photo-id-page">
                     <div id="avatar-and-username-photo-id-page">
-                        <button id="avatar-photo-id-page"><a href="#/"><img alt="avatar" id="avatar-image-photo-id-page"></img></a></button>
-                        <a href="#"><p id="username-photo-id-page">Username</p></a>
+                        <button id="avatar-photo-id-page"><a href="/public-profile-about-me"><img alt="avatar" id="avatar-image-photo-id-page"></img></a></button>
+                        <a href="/public-profile-about-me"><p id="username-photo-id-page">Username</p></a>
                     </div>
                     <button id="follow-button-photo-id-page">
                         <i><IoPersonAddSharp /></i>

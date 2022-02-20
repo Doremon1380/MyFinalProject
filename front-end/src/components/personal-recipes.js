@@ -39,12 +39,14 @@ function PersonalRecipes() {
                     </select>
                 </div>
                 <div id="recipes-in-personal-recipes-page">
-                    <button className="add-recipe-button-in-personal-recipes-page">
-                        <div className="add-icon-in-personal-recipes-page">
-                            <i class="bi bi-plus"></i>
-                        </div>
-                        <p>Add a recipe</p>
-                    </button>
+                    <a href="/create-recipe">
+                        <button className="add-recipe-button-in-personal-recipes-page">
+                            <div className="add-icon-in-personal-recipes-page">
+                                <i class="bi bi-plus"></i>
+                            </div>
+                            <p>Add a recipe</p>
+                        </button>
+                    </a>
                     <div className="recipe-in-personal-recipes-page">
                         <button className="save-recipe-button-in-personal-recipes-page"><i><FaHeart /></i></button>
                         <a href="/recipe-details">

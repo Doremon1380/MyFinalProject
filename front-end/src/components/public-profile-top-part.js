@@ -5,6 +5,42 @@ import "./public-profile-top-part.css";
 import { FaHeart } from "react-icons/fa";
 import { FaUtensils } from "react-icons/fa";
 
+class FollowButton extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            displayFollowButton: true
+        };
+
+        this.toggleDisplayFollowButton = this.toggleDisplayFollowButton.bind(this);
+    };
+
+    toggleDisplayFollowButton() {
+        this.setState(state => ({
+            displayFollowButton: !state.displayFollowButton
+        }));
+    };
+
+    render() {
+        if (this.state.displayFollowButton == true) {
+            return (
+                <button onClick={this.toggleDisplayFollowButton}>
+                    <i class="bi bi-person-plus-fill"></i>
+                    <p>Follow</p>
+                </button>
+            );
+        }
+        else {
+            return (
+                <button onClick={this.toggleDisplayFollowButton}>
+                    <i class="bi bi-person-check-fill"></i>
+                    <p>Following</p>
+                </button>
+            );
+        };
+    };
+};
+
 function PublicProfileTopPart() {
     return (
         <>
@@ -21,16 +57,13 @@ function PublicProfileTopPart() {
                             </div>
                         </div>
                     </div>
-                    <button id="follow-button-in-top-section-of-public-profile-top-part">
-                        <i class="bi bi-person-plus-fill"></i>
-                        <p>Follow</p>
-                    </button>
+                    <FollowButton />
                 </div>
                 <div id="group-photos-in-public-profile-top-part">
-                    <a href="#"><img alt="photo1"></img></a>
-                    <a href="#"><img alt="photo2"></img></a>
-                    <a href="#"><img alt="photo3"></img></a>
-                    <a href="#"><img alt="photo4"></img></a>
+                    <a href="/photo-id"><img alt="photo1"></img></a>
+                    <a href="/photo-id"><img alt="photo2"></img></a>
+                    <a href="/photo-id"><img alt="photo3"></img></a>
+                    <a href="/photo-id"><img alt="photo4"></img></a>
                 </div>
             </div>
         </>

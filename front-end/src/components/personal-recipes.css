@@ -35,6 +35,10 @@
     }
 
     /* For add recipe button */
+    #recipes-in-personal-recipes-page a {
+        text-decoration: none;
+    }
+
     .add-recipe-button-in-personal-recipes-page {
         display: block;
         margin: auto;
@@ -222,6 +226,10 @@
     }
 
     /* For add recipe button */
+    #recipes-in-personal-recipes-page a {
+        text-decoration: none;
+    }
+    
     .add-recipe-button-in-personal-recipes-page {
         display: block;
         margin: auto;

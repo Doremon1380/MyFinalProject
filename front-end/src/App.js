@@ -37,7 +37,11 @@ import ShoppingLists from "./components/shopping-lists";
 import RecipeResults from "./components/recipe-results";
 import AskTheCommunity from "./components/ask-the-community";
 import WorldCuisine from "./components/world-cuisine";
-
+import CountryRecipes from "./components/country-recipes";
+import TypesOfRecipes from "./components/types-of-recipes";
+import SpecificTypeOfRecipes from "./components/specific-type-of-recipes";
+import SpecificTypeOfCountryRecipes from "./components/specific-type-of-country-recipes";
+import FilterRecipes from "./components/filter-recipes";
 
 function App() {
   return (
@@ -79,6 +83,11 @@ function App() {
           <Route path="/recipe-results" component={RecipeResults}/>
           <Route path="/ask-the-community" component={AskTheCommunity}/>
           <Route path="/world-cuisine" component={WorldCuisine}/>
+          <Route path="/country-recipes" component={CountryRecipes}/>
+          <Route path="/types-of-recipes" component={TypesOfRecipes}/>
+          <Route path="/specific-type-of-recipes" component={SpecificTypeOfRecipes}/>
+          <Route path="/specific-type-of-country-recipes" component={SpecificTypeOfCountryRecipes}/>
+          <Route path="/filter-recipes" component={FilterRecipes}/>
         </Switch>
       </div>
     </BrowserRouter>

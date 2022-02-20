@@ -161,6 +161,7 @@
     
     /* For all user comments */
     #number-of-comments-in-ask-the-question-page {
+        cursor: pointer;
         font-weight: bold;
         margin-top: 10px;
         text-decoration: underline;
@@ -384,6 +385,7 @@
     
     /* For all user comments */
     #number-of-comments-in-ask-the-question-page {
+        cursor: pointer;
         font-weight: bold;
         margin-top: 10px;
         text-decoration: underline;

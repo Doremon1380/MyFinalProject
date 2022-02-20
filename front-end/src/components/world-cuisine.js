@@ -18,8 +18,6 @@ import TypicalMexicanFood from "./TypicalMexicanFood.jpg";
 import TypicalSpanishFood from "./TypicalSpanishFood.png";
 import GlobalFood from "./GlobalFood.jpg";
 
-
-
 const TITLE = 'World Cuisine - Allrecipes.com';
 
 function WorldCuisine() {
@@ -33,24 +31,24 @@ function WorldCuisine() {
             <div id="world-cuisine-page">
                 <div id="top-section-of-world-cuisine-page"></div>
                 <div id="titles-with-image-and-recipes-in-world-cuisine-page">
-                    <div id="page-title-of-world-cuisine-page">
+                    <div id="page-titles-of-world-cuisine-page">
                         <div>
-                            <a href="/home">Home</a>
+                            <a href="/foodshare.com">Home</a>
                             <i><FaChevronRight /></i>
                             <a href="/world-cuisine">World Cuisine</a>
                         </div>
                         <h1>World Cuisine</h1>
                     </div>
                     <div id="titles-with-image-in-world-cuisine-page">
-                        <a href="#"><img src={TypicalChineseFood} alt="TypicalChineseFood"></img><p>Chinese Recipes</p></a>
-                        <a href="#"><img src={TypicalGermanFood} alt="TypicalGermanFood"></img><p>German Recipes</p></a>
-                        <a href="#"><img src={TypicalIndianFood} alt="TypicalIndianFood"></img><p>Indian Recipes</p></a>
-                        <a href="#"><img src={TypicalJapaneseFood} alt="TypicalJapaneseFood"></img><p>Japanese Recipes</p></a>
-                        <a href="#"><img src={TypicalRussianFood} alt="TypicalRussianFood"></img><p>Russian Recipes</p></a>
-                        <a href="#"><img src={TypicalItalianFood} alt="TypicalItalianFood"></img><p>Italian Recipes</p></a>
-                        <a href="#"><img src={TypicalMexicanFood} alt="TypicalMexicanFood"></img><p>Mexican Recipes</p></a>
-                        <a href="#"><img src={TypicalSpanishFood} alt="TypicalSpanishFood"></img><p>Spanish Recipes</p></a>
-                        <a href="#"><img src={GlobalFood} alt="GlobalFood"></img><p>Global Recipes</p></a>
+                        <a href="/country-recipes"><img src={TypicalChineseFood} alt="TypicalChineseFood"></img><p>Chinese Recipes</p></a>
+                        <a href="/country-recipes"><img src={TypicalGermanFood} alt="TypicalGermanFood"></img><p>German Recipes</p></a>
+                        <a href="/country-recipes"><img src={TypicalIndianFood} alt="TypicalIndianFood"></img><p>Indian Recipes</p></a>
+                        <a href="/country-recipes"><img src={TypicalJapaneseFood} alt="TypicalJapaneseFood"></img><p>Japanese Recipes</p></a>
+                        <a href="/country-recipes"><img src={TypicalRussianFood} alt="TypicalRussianFood"></img><p>Russian Recipes</p></a>
+                        <a href="/country-recipes"><img src={TypicalItalianFood} alt="TypicalItalianFood"></img><p>Italian Recipes</p></a>
+                        <a href="/country-recipes"><img src={TypicalMexicanFood} alt="TypicalMexicanFood"></img><p>Mexican Recipes</p></a>
+                        <a href="/country-recipes"><img src={TypicalSpanishFood} alt="TypicalSpanishFood"></img><p>Spanish Recipes</p></a>
+                        <a href="/country-recipes"><img src={GlobalFood} alt="GlobalFood"></img><p>Global Recipes</p></a>
                     </div>
                     <div id="button-to-return-to-previous-recipe-titles-and-button-to-go-to-next-recipe-titles-in-world-cuisine-page">
                         <button id="button-to-return-to-previous-recipe-titles-in-world-cuisine-page"><i className="bi bi-arrow-left-short"></i></button>
@@ -83,7 +81,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -111,7 +109,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -139,7 +137,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +165,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -195,7 +193,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -223,7 +221,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -256,7 +254,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -284,7 +282,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -312,7 +310,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -340,7 +338,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -368,7 +366,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -396,7 +394,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -429,7 +427,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -457,7 +455,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -485,7 +483,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -513,7 +511,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -541,7 +539,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -569,7 +567,7 @@ function WorldCuisine() {
                                                 <p>NoFs</p>
                                             </div>
                                         </div>
-                                        <p className="recipe-author-in-world-cuisine-page">By <a href="#">Author</a></p>
+                                        <p className="recipe-author-in-world-cuisine-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                     </div>
                                 </div>
                             </div>

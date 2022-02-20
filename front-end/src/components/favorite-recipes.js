@@ -77,7 +77,7 @@ function FavoriteRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-favorite-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-favorite-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="recipe-in-favorite-recipes-page">
                         <button className="save-recipe-button-in-favorite-recipes-page"><i><FaHeart /></i></button>
@@ -101,7 +101,7 @@ function FavoriteRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-favorite-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-favorite-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="recipe-in-favorite-recipes-page">
                         <button className="save-recipe-button-in-favorite-recipes-page"><i><FaHeart /></i></button>
@@ -124,7 +124,7 @@ function FavoriteRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-favorite-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-favorite-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="recipe-in-favorite-recipes-page">
                         <button className="save-recipe-button-in-favorite-recipes-page"><i><FaHeart /></i></button>
@@ -147,7 +147,7 @@ function FavoriteRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-favorite-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-favorite-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="recipe-in-favorite-recipes-page">
                         <button className="save-recipe-button-in-favorite-recipes-page"><i><FaHeart /></i></button>
@@ -171,7 +171,7 @@ function FavoriteRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-favorite-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-favorite-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="recipe-in-favorite-recipes-page">
                         <button className="save-recipe-button-in-favorite-recipes-page"><i><FaHeart /></i></button>
@@ -195,7 +195,7 @@ function FavoriteRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-favorite-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-favorite-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="recipe-in-favorite-recipes-page">
                         <button className="save-recipe-button-in-favorite-recipes-page"><i><FaHeart /></i></button>
@@ -219,7 +219,7 @@ function FavoriteRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-favorite-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-favorite-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="recipe-in-favorite-recipes-page">
                         <button className="save-recipe-button-in-favorite-recipes-page"><i><FaHeart /></i></button>
@@ -242,7 +242,7 @@ function FavoriteRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-favorite-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-favorite-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="recipe-in-favorite-recipes-page">
                         <button className="save-recipe-button-in-favorite-recipes-page"><i><FaHeart /></i></button>
@@ -265,7 +265,7 @@ function FavoriteRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-favorite-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-favorite-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                 </div>
                 <button id="load-more-recipes-button-in-favorite-recipes-page">SHOW MORE</button>

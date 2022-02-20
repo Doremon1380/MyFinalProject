@@ -52,34 +52,6 @@
         color: orange;
         margin-top: -15px;
     }
-    
-    /* For the link icons in public profile about me page */
-    #link-icons-in-public-profile-about-me-page {
-        margin-left: -20px;
-        margin-top: 0px !important;
-    }
-
-    #link-icons-in-public-profile-about-me-page i {
-        margin-left: 20px;
-        font-size: 35px;
-        color: red;
-    }
-
-    #link-icons-in-public-profile-about-me-page i + i {
-        color: rgb(173, 107, 91);
-        font-size: 38px;
-    }
-
-    #link-icons-in-public-profile-about-me-page i + i + i {
-        color: rgb(24, 119, 242);
-        font-size: 35px;
-
-    }
-
-    #link-icons-in-public-profile-about-me-page i + i + i + i {
-        color: rgb(29, 161, 242);
-        font-size: 38px;
-    }
 }
 
 @media only screen and (min-width: 601px) {
@@ -135,34 +107,6 @@
         display: block;
         color: orange;
         margin-top: -15px;
-    }
-    
-    /* For the link icons in public profile about me page */
-    #link-icons-in-public-profile-about-me-page {
-        margin-left: -20px;
-        margin-top: 0px !important;
-    }
-
-    #link-icons-in-public-profile-about-me-page i {
-        margin-left: 20px;
-        font-size: 35px;
-        color: red;
-    }
-
-    #link-icons-in-public-profile-about-me-page i + i {
-        color: rgb(173, 107, 91);
-        font-size: 38px;
-    }
-
-    #link-icons-in-public-profile-about-me-page i + i + i {
-        color: rgb(24, 119, 242);
-        font-size: 35px;
-
-    }
-
-    #link-icons-in-public-profile-about-me-page i + i + i + i {
-        color: rgb(29, 161, 242);
-        font-size: 38px;
     }
 }
 

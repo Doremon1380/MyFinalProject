@@ -8,6 +8,42 @@ import Container from "react-bootstrap/Container";
 
 const TITLE = 'Private Profile - FoodShare.com';
 
+class FollowingButton extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            displayFollowingButton: true
+        };
+
+        this.toggleDisplayFollowingButton = this.toggleDisplayFollowingButton.bind(this);
+    };
+
+    toggleDisplayFollowingButton() {
+        this.setState(state => ({
+            displayFollowingButton: !state.displayFollowingButton
+        }));
+    };
+
+    render() {
+        if (this.state.displayFollowingButton == true) {
+            return (
+                <button onClick={this.toggleDisplayFollowingButton}>
+                    <i class="bi bi-person-check-fill"></i>
+                    <p>Following</p>
+                </button>
+            );
+        }
+        else {
+            return (
+                <button onClick={this.toggleDisplayFollowingButton}>
+                    <i class="bi bi-person-plus-fill"></i>
+                    <p>Follow</p>
+                </button>
+            );
+        };
+    };
+};
+
 function FollowingAccounts() {
     return (
         <>
@@ -39,143 +75,113 @@ function FollowingAccounts() {
                 </div>
                 <div id="following-accounts-in-following-accounts-page">
                     <div id="following-account-in-following-accounts-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avatar"></img>
                         </a>
                         <div>
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 Account name
                             </a>
-                            <button>
-                                <i class="bi bi-person-check-fill"></i>
-                                <p>Following</p>
-                            </button>
+                            <FollowingButton />
                         </div>
                     </div>
                     <div id="following-account-in-following-accounts-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avatar"></img>
                         </a>
                         <div>
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 Account name
                             </a>
-                            <button>
-                                <i class="bi bi-person-check-fill"></i>
-                                <p>Following</p>
-                            </button>
+                            <FollowingButton />
                         </div>
                     </div>
                     <div id="following-account-in-following-accounts-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avatar"></img>
                         </a>
                         <div>
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 Account name
                             </a>
-                            <button>
-                                <i class="bi bi-person-check-fill"></i>
-                                <p>Following</p>
-                            </button>
+                            <FollowingButton />
                         </div>
                     </div>
                     <div id="following-account-in-following-accounts-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avatar"></img>
                         </a>
                         <div>
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 Account name
                             </a>
-                            <button>
-                                <i class="bi bi-person-check-fill"></i>
-                                <p>Following</p>
-                            </button>
+                            <FollowingButton />
                         </div>
                     </div>
                     <div id="following-account-in-following-accounts-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avatar"></img>
                         </a>
                         <div>
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 Account name
                             </a>
-                            <button>
-                                <i class="bi bi-person-check-fill"></i>
-                                <p>Following</p>
-                            </button>
+                            <FollowingButton />
                         </div>
                     </div>
                     <div id="following-account-in-following-accounts-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avatar"></img>
                         </a>
                         <div>
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 Account name
                             </a>
-                            <button>
-                                <i class="bi bi-person-check-fill"></i>
-                                <p>Following</p>
-                            </button>
+                            <FollowingButton />
                         </div>
                     </div>
                     <div id="following-account-in-following-accounts-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avatar"></img>
                         </a>
                         <div>
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 Account name
                             </a>
-                            <button>
-                                <i class="bi bi-person-check-fill"></i>
-                                <p>Following</p>
-                            </button>
+                            <FollowingButton />
                         </div>
                     </div>
                     <div id="following-account-in-following-accounts-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avatar"></img>
                         </a>
                         <div>
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 Account name
                             </a>
-                            <button>
-                                <i class="bi bi-person-check-fill"></i>
-                                <p>Following</p>
-                            </button>
+                            <FollowingButton />
                         </div>
                     </div>
                     <div id="following-account-in-following-accounts-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avatar"></img>
                         </a>
                         <div>
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 Account name
                             </a>
-                            <button>
-                                <i class="bi bi-person-check-fill"></i>
-                                <p>Following</p>
-                            </button>
+                            <FollowingButton />
                         </div>
                     </div>
                     <div id="following-account-in-following-accounts-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avatar"></img>
                         </a>
                         <div>
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 Account name
                             </a>
-                            <button>
-                                <i class="bi bi-person-check-fill"></i>
-                                <p>Following</p>
-                            </button>
+                            <FollowingButton />
                         </div>
                     </div>
                 </div>

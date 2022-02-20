@@ -57,25 +57,25 @@ function CollectionRecipes() {
                     </button>
                     <div className="collection-in-collection-recipes-page">
                         <button className="save-collection-button-in-collection-recipes-page"><i><FaHeart /></i></button>
-                        <a href="#">
+                        <a href="/collection-details">
                             <div className="set-of-containers-representing-the-collection-in-collection-recipes-page">
-                                <a href="#"><img alt="(recipe name)"></img></a>
-                                <a href="#"><img alt="(recipe name)"></img></a>
-                                <a href="#"><img alt="(recipe name)"></img></a>
-                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <img alt="(recipe name)"></img>
+                                <img alt="(recipe name)"></img>
+                                <img alt="(recipe name)"></img>
+                                <img alt="(recipe name)"></img>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="/collection-details">
                             <p className="collection-name-in-collection-recipes-page">Side Dishes</p>
                         </a>
                         <p className="number-recipes-of-collection-in-collection-recipes-page">(Number) recipes</p>
                         <hr></hr>
                         <div className="avatar-and-information-related-to-the-creator-of-collection-in-collection-recipes-page">
-                            <a href="#">
+                            <a href="/public-profile-collection-recipes">
                                 <img alt="avatar" className="avatar-related-to-the-creator-of-collection-in-collection-recipes-page"></img>
                             </a>
                             <div className="information-related-to-the-creator-of-collection-in-collection-recipes-page">
-                                <p>Created by <a href="#">(Account Name)</a></p>
+                                <p>Created by <a href="/public-profile-collection-recipes">(Account Name)</a></p>
                                 <div>
                                     <i className="bi bi-people-fill follower-icon-in-collection-recipes-page" title="My Followers"></i>
                                     <p>(Num)</p>
@@ -89,25 +89,25 @@ function CollectionRecipes() {
                     </div>
                     <div className="collection-in-collection-recipes-page">
                         <button className="save-collection-button-in-collection-recipes-page"><i><FaHeart /></i></button>
-                        <a href="#">
+                        <a href="/collection-details">
                             <div className="set-of-containers-representing-the-collection-in-collection-recipes-page">
-                                <a href="#"><img alt="(recipe name)"></img></a>
-                                <a href="#"><img alt="(recipe name)"></img></a>
-                                <a href="#"><img alt="(recipe name)"></img></a>
-                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <img alt="(recipe name)"></img>
+                                <img alt="(recipe name)"></img>
+                                <img alt="(recipe name)"></img>
+                                <img alt="(recipe name)"></img>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="/collection-details">
                             <p className="collection-name-in-collection-recipes-page">Main Dishes</p>
                         </a>
                         <p className="number-recipes-of-collection-in-collection-recipes-page">(Number) recipes</p>
                         <hr></hr>
                         <div className="avatar-and-information-related-to-the-creator-of-collection-in-collection-recipes-page">
-                            <a href="#">
+                            <a href="/public-profile-collection-recipes">
                                 <img alt="avatar" className="avatar-related-to-the-creator-of-collection-in-collection-recipes-page"></img>
                             </a>
                             <div className="information-related-to-the-creator-of-collection-in-collection-recipes-page">
-                                <p>Created by <a href="#">(Account Name)</a></p>
+                                <p>Created by <a href="/public-profile-collection-recipes">(Account Name)</a></p>
                                 <div>
                                     <i className="bi bi-people-fill follower-icon-in-collection-recipes-page" title="My Followers"></i>
                                     <p>(Num)</p>
@@ -121,25 +121,25 @@ function CollectionRecipes() {
                     </div>
                     <div className="collection-in-collection-recipes-page">
                         <button className="save-collection-button-in-collection-recipes-page"><i><FaHeart /></i></button>
-                        <a href="#">
+                        <a href="/collection-details">
                             <div className="set-of-containers-representing-the-collection-in-collection-recipes-page">
-                                <a href="#"><img alt="(recipe name)"></img></a>
-                                <a href="#"><img alt="(recipe name)"></img></a>
-                                <a href="#"><img alt="(recipe name)"></img></a>
-                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <img alt="(recipe name)"></img>
+                                <img alt="(recipe name)"></img>
+                                <img alt="(recipe name)"></img>
+                                <img alt="(recipe name)"></img>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="/collection-details">
                             <p className="collection-name-in-collection-recipes-page">Drinks</p>
                         </a>
                         <p className="number-recipes-of-collection-in-collection-recipes-page">(Number) recipes</p>
                         <hr></hr>
                         <div className="avatar-and-information-related-to-the-creator-of-collection-in-collection-recipes-page">
-                            <a href="#">
+                            <a href="/public-profile-collection-recipes">
                                 <img alt="avatar" className="avatar-related-to-the-creator-of-collection-in-collection-recipes-page"></img>
                             </a>
                             <div className="information-related-to-the-creator-of-collection-in-collection-recipes-page">
-                                <p>Created by <a href="#">(Account Name)</a></p>
+                                <p>Created by <a href="/public-profile-collection-recipes">(Account Name)</a></p>
                                 <div>
                                     <i className="bi bi-people-fill follower-icon-in-collection-recipes-page" title="My Followers"></i>
                                     <p>(Num)</p>
@@ -153,25 +153,25 @@ function CollectionRecipes() {
                     </div>
                     <div className="collection-in-collection-recipes-page">
                         <button className="save-collection-button-in-collection-recipes-page"><i><FaHeart /></i></button>
-                        <a href="#">
+                        <a href="/collection-details">
                             <div className="set-of-containers-representing-the-collection-in-collection-recipes-page">
-                                <a href="#"><img alt="(recipe name)"></img></a>
-                                <a href="#"><img alt="(recipe name)"></img></a>
-                                <a href="#"><img alt="(recipe name)"></img></a>
-                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <img alt="(recipe name)"></img>
+                                <img alt="(recipe name)"></img>
+                                <img alt="(recipe name)"></img>
+                                <img alt="(recipe name)"></img>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="/collection-details">
                             <p className="collection-name-in-collection-recipes-page">Desserts</p>
                         </a>
                         <p className="number-recipes-of-collection-in-collection-recipes-page">(Number) recipes</p>
                         <hr></hr>
                         <div className="avatar-and-information-related-to-the-creator-of-collection-in-collection-recipes-page">
-                            <a href="#">
+                            <a href="/public-profile-collection-recipes">
                                 <img alt="avatar" className="avatar-related-to-the-creator-of-collection-in-collection-recipes-page"></img>
                             </a>
                             <div className="information-related-to-the-creator-of-collection-in-collection-recipes-page">
-                                <p>Created by <a href="#">(Account Name)</a></p>
+                                <p>Created by <a href="/public-profile-collection-recipes">(Account Name)</a></p>
                                 <div>
                                     <i className="bi bi-people-fill follower-icon-in-collection-recipes-page" title="My Followers"></i>
                                     <p>(Num)</p>
@@ -185,25 +185,25 @@ function CollectionRecipes() {
                     </div>
                     <div className="collection-in-collection-recipes-page">
                         <button className="save-collection-button-in-collection-recipes-page"><i><FaHeart /></i></button>
-                        <a href="#">
+                        <a href="/collection-details">
                             <div className="set-of-containers-representing-the-collection-in-collection-recipes-page">
-                                <a href="#"><img alt="(recipe name)"></img></a>
-                                <a href="#"><img alt="(recipe name)"></img></a>
-                                <a href="#"><img alt="(recipe name)"></img></a>
-                                <a href="#"><img alt="(recipe name)"></img></a>
+                                <img alt="(recipe name)"></img>
+                                <img alt="(recipe name)"></img>
+                                <img alt="(recipe name)"></img>
+                                <img alt="(recipe name)"></img>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="/collection-details">
                             <p className="collection-name-in-collection-recipes-page">Appetizers</p>
                         </a>
                         <p className="number-recipes-of-collection-in-collection-recipes-page">(Number) recipes</p>
                         <hr></hr>
                         <div className="avatar-and-information-related-to-the-creator-of-collection-in-collection-recipes-page">
-                            <a href="#">
+                            <a href="/public-profile-collection-recipes">
                                 <img alt="avatar" className="avatar-related-to-the-creator-of-collection-in-collection-recipes-page"></img>
                             </a>
                             <div className="information-related-to-the-creator-of-collection-in-collection-recipes-page">
-                                <p>Created by <a href="#">(Account Name)</a></p>
+                                <p>Created by <a href="/public-profile-collection-recipes">(Account Name)</a></p>
                                 <div>
                                     <i className="bi bi-people-fill follower-icon-in-collection-recipes-page" title="My Followers"></i>
                                     <p>(Num)</p>

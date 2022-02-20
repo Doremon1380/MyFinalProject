@@ -59,7 +59,7 @@ function MadeRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-made-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-made-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="recipe-in-made-recipes-page">
                         <button className="save-recipe-button-in-made-recipes-page"><i><FaHeart /></i></button>
@@ -81,7 +81,7 @@ function MadeRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-made-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-made-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="recipe-in-made-recipes-page">
                         <button className="save-recipe-button-in-made-recipes-page"><i><FaHeart /></i></button>
@@ -103,7 +103,7 @@ function MadeRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-made-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-made-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="recipe-in-made-recipes-page">
                         <button className="save-recipe-button-in-made-recipes-page"><i><FaHeart /></i></button>
@@ -125,7 +125,7 @@ function MadeRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-made-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-made-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="recipe-in-made-recipes-page">
                         <button className="save-recipe-button-in-made-recipes-page"><i><FaHeart /></i></button>
@@ -147,7 +147,7 @@ function MadeRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-made-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-made-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="recipe-in-made-recipes-page">
                         <button className="save-recipe-button-in-made-recipes-page"><i><FaHeart /></i></button>
@@ -169,7 +169,7 @@ function MadeRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-made-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-made-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="recipe-in-made-recipes-page">
                         <button className="save-recipe-button-in-made-recipes-page"><i><FaHeart /></i></button>
@@ -191,7 +191,7 @@ function MadeRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-made-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-made-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="recipe-in-made-recipes-page">
                         <button className="save-recipe-button-in-made-recipes-page"><i><FaHeart /></i></button>
@@ -213,7 +213,7 @@ function MadeRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-made-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-made-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="recipe-in-made-recipes-page">
                         <button className="save-recipe-button-in-made-recipes-page"><i><FaHeart /></i></button>
@@ -235,7 +235,7 @@ function MadeRecipes() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="recipe-author-in-made-recipes-page">By <a href="#">Author</a></p>
+                        <p className="recipe-author-in-made-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                 </div>
                 <button id="load-more-recipes-button-in-made-recipes-page">SHOW MORE</button>

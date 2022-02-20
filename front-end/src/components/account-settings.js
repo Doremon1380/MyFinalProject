@@ -50,25 +50,27 @@ function AccountSettings() {
                         </button>
                     </a>
                 </div>
-                <form id="edit-account-features">
-                    <div>
-                        <h1>Account Settings</h1>
-                        <label>Email Address</label><br />
-                        <input name="email" placeholder="Email address" type="email"></input>
-                        <h2>Update your password</h2>
-                        <p>Please provide a password with at least 6 characters. Your password must include at least 1 uppercase letter or special character.</p>
-                        <label>Current Password</label><br />
-                        <input name="password" placeholder="Password" type="password"></input><br />
-                        <label>New Password</label><br />
-                        <input name="newPassword" placeholder="New Password" type="password"></input><br />
-                        <label>Confirm Password</label><br />
-                        <input name="confirmPassword" placeholder="Confirm Password" type="password"></input>
-                    </div>
+                <div>
+                    <form id="edit-account-features">
+                        <div>
+                            <h1>Account Settings</h1>
+                            <label>Email Address</label><br />
+                            <input name="email" placeholder="Email address" type="email"></input>
+                            <h2>Update your password</h2>
+                            <p>Please provide a password with at least 6 characters. Your password must include at least 1 uppercase letter or special character.</p>
+                            <label>Current Password</label><br />
+                            <input name="password" placeholder="Password" type="password"></input><br />
+                            <label>New Password</label><br />
+                            <input name="newPassword" placeholder="New Password" type="password"></input><br />
+                            <label>Confirm Password</label><br />
+                            <input name="confirmPassword" placeholder="Confirm Password" type="password"></input>
+                        </div>
+                    </form>
                     <div id="edit-account-bottom-buttons">
                         <button id="edit-account-save-button">Save</button>
-                        <button id="edit-account-cancel-button">Cancel</button>
+                        <a href="/about-me"><button id="edit-account-cancel-button">Cancel</button></a>
                     </div>
-                </form>
+                </div>
             </div>
         </>
     );

@@ -63,7 +63,7 @@ function CollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
@@ -92,7 +92,7 @@ function CollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
@@ -121,7 +121,7 @@ function CollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
@@ -150,7 +150,7 @@ function CollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
@@ -179,7 +179,7 @@ function CollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
@@ -208,7 +208,7 @@ function CollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
@@ -237,7 +237,7 @@ function CollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
@@ -266,7 +266,7 @@ function CollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
@@ -295,7 +295,7 @@ function CollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>

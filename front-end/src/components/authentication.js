@@ -19,7 +19,7 @@ function Authentication() {
             <div id="authentication-container">
                 <h1>Join with us</h1>
                 <p>FoodShare uses the recipes you save and cooks you follow to suggest great content for you. Join for free!</p>
-                <div id="flex-box">
+                <div id="flex-box-in-authentication-page">
                     <button id="facebook-sign-in">
                         <i className="bi bi-facebook"></i>
                         <div id="facebook-text">Facebook</div>
@@ -30,7 +30,7 @@ function Authentication() {
                     </button>
                 </div>
                 <p id="or"><span>OR</span></p>
-                <button id="sign-up-with-email"><a href="/signup">Sign up with email</a></button>
+                <a href="/signup"><button id="sign-up-with-email">Sign up with email</button></a>
                 <p>Already a member? <a href="/signin" id="sign-in">Sign in</a>.</p>
             </div>
         </>

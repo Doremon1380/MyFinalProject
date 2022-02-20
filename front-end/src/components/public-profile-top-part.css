@@ -54,7 +54,7 @@
     }
 
     /* For the follow button */
-    #follow-button-in-top-section-of-public-profile-top-part {
+    #user-account-of-public-profile-top-part + button {
         display: flex;
         position: relative;
         width: 130px;
@@ -65,14 +65,14 @@
         opacity: 0.9;
     }
 
-    #follow-button-in-top-section-of-public-profile-top-part i {
+    #user-account-of-public-profile-top-part + button i {
         font-size: 25px;
         margin: auto;
         color: rgb(78, 145, 223);
         margin-right: 15px;    
     }
 
-    #follow-button-in-top-section-of-public-profile-top-part p {
+    #user-account-of-public-profile-top-part + button p {
         margin: auto;
         font-size: 14px;
         margin-left: -10px;    
@@ -157,7 +157,7 @@
     }
 
     /* For the follow button */
-    #follow-button-in-top-section-of-public-profile-top-part {
+    #user-account-of-public-profile-top-part + button {
         display: flex;
         position: relative;
         width: 130px;
@@ -168,14 +168,14 @@
         opacity: 0.9;
     }
 
-    #follow-button-in-top-section-of-public-profile-top-part i {
+    #user-account-of-public-profile-top-part + button i {
         font-size: 25px;
         margin: auto;
         color: rgb(78, 145, 223);
         margin-right: 15px;    
     }
 
-    #follow-button-in-top-section-of-public-profile-top-part p {
+    #user-account-of-public-profile-top-part + button p {
         margin: auto;
         font-size: 14px;
         margin-left: -10px;    

@@ -305,6 +305,11 @@
         padding-right: 27px;
     }
 
+    #ingredients-section-in-recipe-details-page button:hover {
+        background-color: rgb(253, 222, 211);
+        color: orangered;
+    }
+
     #ingredients-section-in-recipe-details-page button i {
         font-size: 20px;
         color: rgb(230, 150, 1);
@@ -359,6 +364,11 @@
         height: 50px;
         border-radius: 5px;
         padding-right: 30px;
+    }
+
+    #directions-section-in-recipe-details-page button:hover {
+        background-color: rgb(253, 222, 211);
+        color: orangered;
     }
     
     #directions-section-in-recipe-details-page button i {
@@ -1260,6 +1270,11 @@
         padding-right: 27px;
     }
 
+    #ingredients-section-in-recipe-details-page button:hover {
+        background-color: rgb(253, 222, 211);
+        color: orangered;
+    }
+
     #ingredients-section-in-recipe-details-page button i {
         font-size: 20px;
         color: rgb(230, 150, 1);
@@ -1314,6 +1329,11 @@
         height: 50px;
         border-radius: 5px;
         padding-right: 30px;
+    }
+
+    #directions-section-in-recipe-details-page button:hover {
+        background-color: rgb(253, 222, 211);
+        color: orangered;
     }
     
     #directions-section-in-recipe-details-page button i {
@@ -1646,7 +1666,7 @@
         font-weight: normal;
     }
 
-    /* For the most helpful positive review's user account avatar*/
+    /* For the most helpful positive review's user account avatar */
     #most-helpful-positive-review-in-recipe-details-page a img {
         display: inline-block;
         border-radius: 50%;

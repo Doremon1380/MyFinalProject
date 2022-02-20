@@ -9,7 +9,6 @@
     display: block;
     width: fit-content;
     margin: auto;    
-    border: none;   
 }
 
 /* For the camera icon */
@@ -81,7 +80,7 @@
 
     #edit-profile-photo {
         height: 50px;
-        width: 50vw;
+        width: 44vw;
         margin-right: 10px;
         border: none;
         background-color: orange;
@@ -103,7 +102,7 @@
 
     #edit-cover-photo {
         height: 50px;
-        width: 50vw;
+        width: 44vw;
         border: none;
         background-color: orange;
         color: white;
@@ -156,12 +155,13 @@
     #edit-profile-bottom-buttons {
         display: flex;
         width: 88vw;
+        margin: auto;
         margin-bottom: 20px;
     }
 
     #edit-profile-save-button {
         height: 45px;
-        width: 50vw;
+        width: 45vw;
         margin: 25px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -176,7 +176,7 @@
 
     #edit-profile-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 43vw;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -211,7 +211,7 @@
 
     #edit-profile-photo {
         height: 50px;
-        width: 50vw;
+        width: 45.5vw;
         margin-right: 10px;
         border: none;
         background-color: orange;
@@ -233,7 +233,7 @@
 
     #edit-cover-photo {
         height: 50px;
-        width: 50vw;
+        width: 45.5vw;
         border: none;
         background-color: orange;
         color: white;
@@ -286,12 +286,13 @@
     #edit-profile-bottom-buttons {
         display: flex;
         width: 91vw;
+        margin: auto;
         margin-bottom: 20px;
     }
 
     #edit-profile-save-button {
         height: 45px;
-        width: 50vw;
+        width: 46.5vw;
         margin: 25px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -306,7 +307,7 @@
 
     #edit-profile-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 44.5vw;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -341,7 +342,7 @@
 
     #edit-profile-photo {
         height: 50px;
-        width: 50vw;
+        width: 46vw;
         margin-right: 10px;
         border: none;
         background-color: orange;
@@ -363,7 +364,7 @@
 
     #edit-cover-photo {
         height: 50px;
-        width: 50vw;
+        width: 46vw;
         border: none;
         background-color: orange;
         color: white;
@@ -421,7 +422,7 @@
 
     #edit-profile-save-button {
         height: 45px;
-        width: 50vw;
+        width: 47vw;
         margin: 25px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -436,7 +437,7 @@
 
     #edit-profile-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 45vw;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -482,7 +483,7 @@
 
     #edit-profile-photo {
         height: 50px;
-        width: 50vw;
+        width: 33.4vw;
         margin-left: 1px;
         border: none;
         background-color: orange;
@@ -504,7 +505,7 @@
 
     #edit-cover-photo {
         height: 50px;
-        width: 50vw;
+        width: 33.4vw;
         border: none;
         background-color: orange;
         color: white;
@@ -567,7 +568,7 @@
 
     #edit-profile-save-button {
         height: 45px;
-        width: 50vw;
+        width: 34.4vw;
         margin: 25px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -582,7 +583,7 @@
 
     #edit-profile-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 32.4vw;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -624,7 +625,7 @@
 
     #edit-profile-photo {
         height: 50px;
-        width: 50vw;
+        width: 28.65vw;
         margin-right: 10px;
         border: none;
         background-color: orange;
@@ -646,7 +647,7 @@
 
     #edit-cover-photo {
         height: 50px;
-        width: 50vw;
+        width: 28.65vw;
         border: none;
         background-color: orange;
         color: white;
@@ -705,7 +706,7 @@
 
     #edit-profile-save-button {
         height: 45px;
-        width: 50vw;
+        width: 29.5vw;
         margin: 25px 10px 0px -3px;
         border: none;
         background-color: orange;
@@ -720,7 +721,7 @@
 
     #edit-profile-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 27.5vw;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -762,7 +763,7 @@
 
     #edit-profile-photo {
         height: 50px;
-        width: 50vw;
+        width: 28.85vw;
         margin-right: 10px;
         border: none;
         background-color: orange;
@@ -784,7 +785,7 @@
 
     #edit-cover-photo {
         height: 50px;
-        width: 50vw;
+        width: 28.85vw;
         border: none;
         background-color: orange;
         color: white;
@@ -843,7 +844,7 @@
 
     #edit-profile-save-button {
         height: 45px;
-        width: 50vw;
+        width: 29.85vw;
         margin: 25px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -858,7 +859,7 @@
 
     #edit-profile-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 27.85vw;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -949,7 +950,7 @@
 
     #edit-profile-photo {
         height: 50px;
-        width: 50vw;
+        width: 21.85vw;
         margin-right: 10px;
         border: none;
         background-color: orange;
@@ -971,7 +972,7 @@
 
     #edit-cover-photo {
         height: 50px;
-        width: 50vw;
+        width: 21.85vw;
         border: none;
         background-color: orange;
         color: white;
@@ -1029,7 +1030,7 @@
 
     #edit-profile-save-button {
         height: 45px;
-        width: 50vw;
+        width: 22.85vw;
         margin: 25px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -1044,7 +1045,7 @@
 
     #edit-profile-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 20.85vw;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -1135,7 +1136,7 @@
 
     #edit-profile-photo {
         height: 50px;
-        width: 50vw;
+        width: 22.55vw;
         margin-right: 10px;
         border: none;
         background-color: orange;
@@ -1157,7 +1158,7 @@
 
     #edit-cover-photo {
         height: 50px;
-        width: 50vw;
+        width: 22.55vw;
         border: none;
         background-color: orange;
         color: white;
@@ -1215,7 +1216,7 @@
 
     #edit-profile-save-button {
         height: 45px;
-        width: 50vw;
+        width: 23.55vw;
         margin: 25px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -1230,7 +1231,7 @@
 
     #edit-profile-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 21.55vw;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;

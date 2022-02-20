@@ -26,11 +26,13 @@ function RecipeDetails() {
                 <div id="route-to-recipe-in-recipe-details-page">
                     <a href="/foodshare.com">Home</a>
                     <i><FaAngleRight /></i>
-                    <a href="#/">World Cuisine</a>
+                    <a href="/types-of-recipes">Recipes</a>
                     <i><FaAngleRight /></i>
-                    <a href="#/">(Country name) Recipes</a>
+                    <a href="/specific-type-of-recipes">(Type) Recipes</a>
                     <i><FaAngleRight /></i>
-                    <a href="#/">(Type of Recipes)</a>
+                    <a href="/country-recipes">(Country) Recipes</a>
+                    <i><FaAngleRight /></i>
+                    <a href="/specific-type-of-country-recipes">(Country) (Type) Recipes</a>
                 </div>
                 <h1>(Recipe name)</h1>
                 <div id="number-of-ratings-reviews-and-photos-in-recipe-details-page">
@@ -40,14 +42,14 @@ function RecipeDetails() {
                     <i className="bi bi-star"></i>
                     <i className="bi bi-star"></i>
                     <p id="number-of-ratings-in-recipe-details-page">(number) Ratings</p>
-                    <p id="number-of-reviews-in-recipe-details-page"><a href="#">(number) Reviews</a></p>
+                    <p id="number-of-reviews-in-recipe-details-page"><a href="#reviews-section-in-recipe-details-page">(number) Reviews</a></p>
                     <p id="number-of-photos-in-recipe-details-page"><a href="#">(number) Photos</a></p>
                 </div>
                 <i><FaQuoteLeft /></i>
                 <p id="introduction">Introduction</p>
                 <div id="for-author-account-in-recipe-details-page">
-                    <a href="#/"><img alt="avatar" id="author-avatar-image-in-recipe-details-page"></img></a>
-                    <p>By <a href="#" id="author-account-in-recipe-details-page">Username</a></p>
+                    <a href="/public-profile-about-me"><img alt="avatar" id="author-avatar-image-in-recipe-details-page"></img></a>
+                    <p>By <a href="/public-profile-about-me" id="author-account-in-recipe-details-page">Username</a></p>
                 </div>
                 <div id="functions-bar-in-recipe-details-page">
                     <button>
@@ -155,7 +157,7 @@ function RecipeDetails() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="suggested-recipe-author-in-recipe-details-page">By <a href="#">Author</a></p>
+                        <p className="suggested-recipe-author-in-recipe-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="suggested-recipe-in-recipe-details-page">
                         <button className="save-recipe-button-in-recipe-details-page"><i><FaHeart /></i></button>
@@ -175,7 +177,7 @@ function RecipeDetails() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="suggested-recipe-author-in-recipe-details-page">By <a href="#">Author</a></p>
+                        <p className="suggested-recipe-author-in-recipe-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="suggested-recipe-in-recipe-details-page">
                         <button className="save-recipe-button-in-recipe-details-page"><i><FaHeart /></i></button>
@@ -195,7 +197,7 @@ function RecipeDetails() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="suggested-recipe-author-in-recipe-details-page">By <a href="#">Author</a></p>
+                        <p className="suggested-recipe-author-in-recipe-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                     <div className="suggested-recipe-in-recipe-details-page">
                         <button className="save-recipe-button-in-recipe-details-page"><i><FaHeart /></i></button>
@@ -215,7 +217,7 @@ function RecipeDetails() {
                                 <p>NoFs</p>
                             </div>
                         </div>
-                        <p className="suggested-recipe-author-in-recipe-details-page">By <a href="#">Author</a></p>
+                        <p className="suggested-recipe-author-in-recipe-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
                 </div>
                 <button><i className="bi bi-arrow-right-short"></i></button>
@@ -284,7 +286,7 @@ function RecipeDetails() {
                                 <hr></hr>
                                 <div id="most-helpful-positive-review-in-recipe-details-page">
                                     <p>Most helpful positive review</p>
-                                    <a href="#">
+                                    <a href="/public-profile-about-me">
                                         <img alt="avartar"></img>
                                         (Account Name)
                                     </a>
@@ -307,7 +309,7 @@ function RecipeDetails() {
                                 </div>
                                 <div id="most-helpful-critical-review-in-recipe-details-page">
                                     <p>Most helpful critical review</p>
-                                    <a href="#">
+                                    <a href="/public-profile-about-me">
                                         <img alt="avartar"></img>
                                         (Account Name)
                                     </a>
@@ -338,7 +340,7 @@ function RecipeDetails() {
                     </div>
                     <div id="reviews-in-recipe-details-page">
                         <div className="review-in-recipe-details-page">
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
                             </a>
@@ -360,7 +362,7 @@ function RecipeDetails() {
                             </div>
                         </div>
                         <div className="review-in-recipe-details-page">
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
                             </a>
@@ -382,7 +384,7 @@ function RecipeDetails() {
                             </div>
                         </div>
                         <div className="review-in-recipe-details-page">
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
                             </a>
@@ -404,7 +406,7 @@ function RecipeDetails() {
                             </div>
                         </div>
                         <div className="review-in-recipe-details-page">
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
                             </a>
@@ -426,7 +428,7 @@ function RecipeDetails() {
                             </div>
                         </div>
                         <div className="review-in-recipe-details-page">
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
                             </a>
@@ -448,7 +450,7 @@ function RecipeDetails() {
                             </div>
                         </div>
                         <div className="review-in-recipe-details-page">
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
                             </a>
@@ -470,7 +472,7 @@ function RecipeDetails() {
                             </div>
                         </div>
                         <div className="review-in-recipe-details-page">
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
                             </a>
@@ -492,7 +494,7 @@ function RecipeDetails() {
                             </div>
                         </div>
                         <div className="review-in-recipe-details-page">
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
                             </a>
@@ -514,7 +516,7 @@ function RecipeDetails() {
                             </div>
                         </div>
                         <div className="review-in-recipe-details-page">
-                            <a href="#">
+                            <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
                             </a>

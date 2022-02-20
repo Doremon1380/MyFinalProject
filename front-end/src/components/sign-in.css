@@ -1,199 +1,402 @@
-#sign-in-container {
-    display: block;
-    width: 560px;
-    margin: auto;
-    margin-top: 40px;
-}
+@media only screen and (max-width: 600px) {
+    /* For the container of sign in page */
+    #sign-in-container {
+        display: block;
+        width: 480px;
+        margin: auto;
+        margin-top: 40px;
+    }
+    
+    /* For the header of sign in page */
+    h1 {
+        color: rgb(235, 152, 0);
+        font-size: 32px;
+    }
+    
+    h2 {
+        color: rgb(235, 152, 0);
+        font-size: 32px;
+    }
+    
+    #flex-box-in-sign-in-page + h2 {
+        margin-top: 10px;
+    }
+    
+    /* For the flex-box of sign in page */
+    #flex-box-in-sign-in-page {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    /* For Facebook button */
+    #facebook-sign-in {
+        display: flex;
+        border: none;
+        border-radius: 5px;
+        width: 235px;
+        height: 60px;
+        background-color: rgb(233, 233, 233);
+    }
+    
+    .bi-facebook {
+        color: #4267b2;
+        font-size: 30px;
+        margin: 5px 0px 0px 5px;
+    }
+    
+    #facebook-text {
+        margin: 15px 0px 0px 14px;
+        font-size: 17px;
+    }
+    
+    /* For Google button */
+    #google-sign-in {
+        display: flex;
+        border: none;
+        border-radius: 5px;
+        margin-left: 15px;
+        width: 235px;
+        height: 60px;
+        background-color: rgb(233, 233, 233);;
+    }
+    
+    .google-icon {
+        height: 38px;
+        width: 37px;
+        margin: 9px 0px 0px 5px;
+    }
+    
+    #google-text {
+        margin: 15px 0px 0px 14px;
+        font-size: 17px;
+    }
+    
+    #flex-box-2-in-sign-in-page {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* For input email */
+    #email-input {
+        border: 1px solid #ddd;
+        outline: none;
+        height: 50px;
+        padding: 6px 11px 6px 10px;
+        transition: 200ms ease-in-out;
+    }
+    
+    #email-input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+    
+    /* For input password */
+    #password-input {
+        margin-top: 10px;
+        border: 1px solid #ddd;
+        outline: none;
+        height: 50px;
+        padding: 6px 45px 6px 10px;
+        transition: 200ms ease-in-out;
+    }
+    
+    #password-input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
 
-h1 {
-    color: rgb(235, 152, 0);
-    font-size: 32px;
-}
+    #sign-in-password-icon {
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        margin-top: 75px;
+        margin-left: 445px;
+        cursor: pointer;
+    }
 
-h2 {
-    color: rgb(235, 152, 0);
-    font-size: 32px;
-}
+    #flex-box-3-in-sign-in-page {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
 
-#flex-box + h2 {
-    margin-top: 10px;
-}
+    /* For checkbox */
+    #remember-me {
+        cursor: pointer;
+        /*thiết lập checkbox có sẵn dưới dạng mờ hoàn toàn và có vị trí là absolute thay vì sử dụng display: none (loại bỏ luôn checkbox có sẵn) là để những người sử dụng screen reader
+        có thể biết được ở đó là checkbox và những người sử dụng nút tab để di chuyển đến các phần tử trên trang thay vì chuột có thể chọn được checkbox*/
+        opacity: 0;
+        position: absolute;
+    }
 
-#flex-box {
-    display: flex;
-}
-
-/* For Facebook button */
-#facebook-sign-in {
-    display: flex;
-    border: none;
-    border-radius: 5px;
-    width: 280px;
-    height: 60px;
-    background-color: rgb(233, 233, 233);
-}
-
-.bi-facebook {
-    color: #4267b2;
-    font-size: 30px;
-    margin: 5px 0px 0px 5px;
-}
-
-#facebook-text {
-    margin: 15px 0px 0px 14px;
-    font-size: 17px;
-}
-
-/* For Google button */
-#google-sign-in {
-    display: flex;
-    border: none;
-    border-radius: 5px;
-    margin-left: 15px;
-    width: 280px;
-    height: 60px;
-    background-color: rgb(233, 233, 233);;
-}
-
-.google-icon {
-    height: 38px;
-    width: 37px;
-    margin: 9px 0px 0px 5px;
-}
-
-#google-text {
-    margin: 15px 0px 0px 14px;
-    font-size: 17px;
-}
-
-#flex-box-2 {
-    display: flex;
-    flex-direction: column;
-}
-
-/* For input email */
-#email-input {
-    border: 1px solid #ddd;
-    outline: none;
-    height: 50px;
-    padding: 6px 11px 6px 10px;
-    transition: 200ms ease-in-out;
-}
-
-#email-input:hover {
-    border: 1px solid #aaa;
-    transition: 200ms ease-in-out;
-}
-
-/* For input password */
-#password-input {
-    margin-top: 10px;
-    border: 1px solid #ddd;
-    outline: none;
-    height: 50px;
-    padding: 6px 45px 6px 10px;
-    transition: 200ms ease-in-out;
-}
-
-#password-input:hover {
-    border: 1px solid #aaa;
-    transition: 200ms ease-in-out;
-}
-
-#sign-in-password-icon {
-    position: absolute;
-    height: 25px;
-    width: 25px;
-    margin-top: 75px;
-    margin-left: 525px;
-    cursor: pointer;
-}
-
-#flex-box-3 {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    border: solid;
-}
-
-/* For checkbox */
-#remember-me {
-    cursor: pointer;
-    /*thiết lập checkbox có sẵn dưới dạng mờ hoàn toàn và có vị trí là absolute thay vì sử dụng display: none (loại bỏ luôn checkbox có sẵn) là để những người sử dụng screen reader
-    có thể biết được ở đó là checkbox và những người sử dụng nút tab để di chuyển đến các phần tử trên trang thay vì chuột có thể chọn được checkbox*/
-    opacity: 0;
-    position: absolute;
-}
-
-#remember-me-label {
-    cursor: pointer;
-    display: flex; /*cần đặt display: flex cho phần tử label để nó thành phần tử khối (block) bởi lẽ nếu không, phần tử ở trước của label là (label::before) khi được tạo ra ở dưới 
+    #remember-me-label {
+        cursor: pointer;
+        display: flex; /*cần đặt display: flex cho phần tử label để nó thành phần tử khối (block) bởi lẽ nếu không, phần tử ở trước của label là (label::before) khi được tạo ra ở dưới 
                     sẽ kế thừa kiểu nội tuyến (inline) trước đó của label và kiểu nội tuyến thì không thiết lập width và height được*/
+        
+    }
+
+    #remember-me-label::before {
+        content: "";
+        width: 1.5em; /*đặt đơn vị là em để khi label của checkbox tự tạo thay đổi kích thước với font-size, checkbox tự tạo đó sẽ thay đổi theo một cách tương thích*/
+        height: 1.5em; /*như trên*/
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 0.5em; /*như trên*/
+    }
+
+    #remember-me:checked + #remember-me-label::before {
+        content: "\002714";
+        background-color: orange;
+        /*2 dòng dưới đây là cách để chỉnh màu cho checkbox icon (dấu tích) với google*/
+        /* color: transparent;
+        text-shadow: 0 0 0 white; */
+    }
+
+    /* For forgot password */
+    #forgot-password {
+        text-decoration: none;
+        color: rgb(235, 152, 0);
+    }
+
+    /* For sign in button */
+    #sign-in-button {
+        margin-top: 15px;
+        border: none;
+        background-color: rgb(235, 152, 0);
+        width: 100%;
+        height: 50px;
+        color: white;
+    }
+
+    /* For new user button */
+    #for-new-users-button {
+        margin-top: 10px;
+        border: none;
+        background-color: rgb(233, 233, 233);
+        width: 100%;
+        height: 50px;
+        color: black;
+    }
+
+    #for-new-users-button a {
+        text-decoration: none;
+    }
+
+    #for-new-users-button span {
+        color: rgb(235, 152, 0);
+    }
+
+    #for-new-users-button + p {
+        margin-top: 20px;
+    }
+
+    /* For terms of service and privacy policy */
+    #terms-of-service, #privacy-policy {
+        text-decoration: none;
+        color: rgb(235, 152, 0);
+    } 
 }
 
-#remember-me-label::before {
-    content: "";
-    width: 1.5em; /*đặt đơn vị là em để khi label của checkbox tự tạo thay đổi kích thước với font-size, checkbox tự tạo đó sẽ thay đổi theo một cách tương thích*/
-    height: 1.5em; /*như trên*/
-    border: 1px solid black;
-    border-radius: 50%;
-    margin-right: 0.5em; /*như trên*/
+@media only screen and (min-width: 601px) {
+    /* For the container of sign in page */
+    #sign-in-container {
+        display: block;
+        width: 580px;
+        margin: auto;
+        margin-top: 40px;
+    }
+    
+    /* For the header of sign in page */
+    h1 {
+        color: rgb(235, 152, 0);
+        font-size: 32px;
+    }
+    
+    h2 {
+        color: rgb(235, 152, 0);
+        font-size: 32px;
+    }
+    
+    #flex-box-in-sign-in-page + h2 {
+        margin-top: 10px;
+    }
+    
+    /* For the flex-box of sign in page */
+    #flex-box-in-sign-in-page {
+        display: flex;
+    }
+    
+    /* For Facebook button */
+    #facebook-sign-in {
+        display: flex;
+        border: none;
+        border-radius: 5px;
+        width: 285px;
+        height: 60px;
+        background-color: rgb(233, 233, 233);
+    }
+    
+    .bi-facebook {
+        color: #4267b2;
+        font-size: 30px;
+        margin: 5px 0px 0px 5px;
+    }
+    
+    #facebook-text {
+        margin: 15px 0px 0px 14px;
+        font-size: 17px;
+    }
+    
+    /* For Google button */
+    #google-sign-in {
+        display: flex;
+        border: none;
+        border-radius: 5px;
+        margin-left: 15px;
+        width: 285px;
+        height: 60px;
+        background-color: rgb(233, 233, 233);;
+    }
+    
+    .google-icon {
+        height: 38px;
+        width: 37px;
+        margin: 9px 0px 0px 5px;
+    }
+    
+    #google-text {
+        margin: 15px 0px 0px 14px;
+        font-size: 17px;
+    }
+    
+    #flex-box-2-in-sign-in-page {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* For input email */
+    #email-input {
+        border: 1px solid #ddd;
+        outline: none;
+        height: 50px;
+        padding: 6px 11px 6px 10px;
+        transition: 200ms ease-in-out;
+    }
+    
+    #email-input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+    
+    /* For input password */
+    #password-input {
+        margin-top: 10px;
+        border: 1px solid #ddd;
+        outline: none;
+        height: 50px;
+        padding: 6px 45px 6px 10px;
+        transition: 200ms ease-in-out;
+    }
+    
+    #password-input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    #sign-in-password-icon {
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        margin-top: 75px;
+        margin-left: 545px;
+        cursor: pointer;
+    }
+
+    #flex-box-3-in-sign-in-page {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    /* For checkbox */
+    #remember-me {
+        cursor: pointer;
+        /*thiết lập checkbox có sẵn dưới dạng mờ hoàn toàn và có vị trí là absolute thay vì sử dụng display: none (loại bỏ luôn checkbox có sẵn) là để những người sử dụng screen reader
+        có thể biết được ở đó là checkbox và những người sử dụng nút tab để di chuyển đến các phần tử trên trang thay vì chuột có thể chọn được checkbox*/
+        opacity: 0;
+        position: absolute;
+    }
+
+    #remember-me-label {
+        cursor: pointer;
+        display: flex; /*cần đặt display: flex cho phần tử label để nó thành phần tử khối (block) bởi lẽ nếu không, phần tử ở trước của label là (label::before) khi được tạo ra ở dưới 
+                    sẽ kế thừa kiểu nội tuyến (inline) trước đó của label và kiểu nội tuyến thì không thiết lập width và height được*/
+    }
+
+    #remember-me-label::before {
+        content: "";
+        width: 1.5em; /*đặt đơn vị là em để khi label của checkbox tự tạo thay đổi kích thước với font-size, checkbox tự tạo đó sẽ thay đổi theo một cách tương thích*/
+        height: 1.5em; /*như trên*/
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 0.5em; /*như trên*/
+    }
+
+    #remember-me:checked + #remember-me-label::before {
+        content: "\002714";
+        background-color: orange;
+        /*2 dòng dưới đây là cách để chỉnh màu cho checkbox icon (dấu tích) với google*/
+        /* color: transparent;
+        text-shadow: 0 0 0 white; */
+    }
+
+    /* For forgot password */
+    #forgot-password {
+        text-decoration: none;
+        color: rgb(235, 152, 0);
+    }
+
+    /* For sign in button */
+    #sign-in-button {
+        margin-top: 15px;
+        border: none;
+        background-color: rgb(235, 152, 0);
+        width: 100%;
+        height: 50px;
+        color: white;
+    }
+
+    /* For new user button */
+    #for-new-users-button {
+        margin-top: 10px;
+        border: none;
+        background-color: rgb(233, 233, 233);
+        width: 100%;
+        height: 50px;
+        color: black;
+    }
+
+    #for-new-users-button a {
+        text-decoration: none;
+    }
+
+    #for-new-users-button span {
+        color: rgb(235, 152, 0);
+    }
+
+    #for-new-users-button + p {
+        margin: auto;
+        margin-top: 20px;
+        width: fit-content;
+    }
+
+    /* For terms of service and privacy policy */
+    #terms-of-service, #privacy-policy {
+        text-decoration: none;
+        color: rgb(235, 152, 0);
+    } 
 }
-
-#remember-me:checked + #remember-me-label::before {
-    content: "\002714";
-    background-color: orange;
-    /*2 dòng dưới đây là cách để chỉnh màu cho checkbox icon (dấu tích) với google*/
-    /* color: transparent;
-    text-shadow: 0 0 0 white; */
-}
-
-/* For forgot password */
-#forgot-password {
-    margin-left: 290px;
-    text-decoration: none;
-    color: rgb(235, 152, 0);
-}
-
-/* For sign in button */
-#sign-in-button {
-    margin-top: 15px;
-    border: none;
-    background-color: rgb(235, 152, 0);
-    width: 100%;
-    height: 50px;
-    color: white;
-}
-
-/* For new user button */
-#for-new-users-button {
-    margin-top: 10px;
-    border: none;
-    background-color: rgb(233, 233, 233);
-    width: 100%;
-    height: 50px;
-    color: black;
-}
-
-#for-new-users-button a {
-    text-decoration: none;
-}
-
-#for-new-users-button span {
-    color: rgb(235, 152, 0);
-}
-
-#for-new-users-button + p {
-    margin-top: 20px;
-    margin-left: 5px
-}
-
-/* For terms of service and privacy policy */
-#terms-of-service, #privacy-policy {
-    text-decoration: none;
-    color: rgb(235, 152, 0);
-} 
-
 
 
 

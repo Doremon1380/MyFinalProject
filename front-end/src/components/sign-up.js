@@ -43,12 +43,12 @@ class SignUp extends React.Component {
 
                 <NavBar />
                 <div id="sign-up-container">
-                    <div id="flex-box">
+                    <div id="flex-box-in-sign-up-page">
                         <h1>Sign up with email</h1>
                         <p id="for-member">Already a member?<a href="/signin"> Sign in</a>.</p>
                     </div>
                     <form>
-                        <div id="flex-box-2">
+                        <div id="flex-box-2-in-sign-up-page">
                             <input name="accountName" placeholder="Account name" type="text" id="account-name-input"></input>
                             <input name="email" placeholder="Email" type="email" id="email-input"></input>
                             <input name="password" placeholder="Password" type={(isPaswordShown) ? "text" : "password"} id="password-input"></input>

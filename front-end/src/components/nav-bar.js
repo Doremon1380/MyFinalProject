@@ -28,13 +28,13 @@ function NavBar() {
         <DropdownButton id="dropdown-basic-button" variant="" title={<i className="menu-icon"><FaBars /></i>}>
           <Dropdown.Item className="drop-down-item" href="/foodshare.com">FoodShare</Dropdown.Item>
           <Dropdown.Divider />
-          <Dropdown.Item className="drop-down-item" href="#/">World Cuisine</Dropdown.Item>
+          <Dropdown.Item className="drop-down-item" href="/world-cuisine">World Cuisine</Dropdown.Item>
           <Dropdown.Divider />
-          <Dropdown.Item className="drop-down-item" href="#/">Filter Recipes</Dropdown.Item>
+          <Dropdown.Item className="drop-down-item" href="/filter-recipes">Filter Recipes</Dropdown.Item>
           <Dropdown.Divider />
-          <Dropdown.Item className="drop-down-item" href="#/">Type of Recipes</Dropdown.Item>
+          <Dropdown.Item className="drop-down-item" href="/types-of-recipes">Types of Recipes</Dropdown.Item>
           <Dropdown.Divider />
-          <Dropdown.Item className="drop-down-item" href="#/">Ask the Community</Dropdown.Item>
+          <Dropdown.Item className="drop-down-item" href="/ask-the-community">Ask the Community</Dropdown.Item>
         </DropdownButton>
       </Container>
     </Navbar>

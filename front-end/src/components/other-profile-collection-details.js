@@ -63,7 +63,7 @@ function OtherProfileCollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="save-recipe-button-in-other-profile-collection-details-page"><i><FaHeart /></i></button>
@@ -92,7 +92,7 @@ function OtherProfileCollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="save-recipe-button-in-other-profile-collection-details-page"><i><FaHeart /></i></button>
@@ -121,7 +121,7 @@ function OtherProfileCollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="save-recipe-button-in-other-profile-collection-details-page"><i><FaHeart /></i></button>
@@ -150,7 +150,7 @@ function OtherProfileCollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="save-recipe-button-in-other-profile-collection-details-page"><i><FaHeart /></i></button>
@@ -179,7 +179,7 @@ function OtherProfileCollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="save-recipe-button-in-other-profile-collection-details-page"><i><FaHeart /></i></button>
@@ -208,7 +208,7 @@ function OtherProfileCollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="save-recipe-button-in-other-profile-collection-details-page"><i><FaHeart /></i></button>
@@ -237,7 +237,7 @@ function OtherProfileCollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="save-recipe-button-in-other-profile-collection-details-page"><i><FaHeart /></i></button>
@@ -266,7 +266,7 @@ function OtherProfileCollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="save-recipe-button-in-other-profile-collection-details-page"><i><FaHeart /></i></button>
@@ -295,7 +295,7 @@ function OtherProfileCollectionDetails() {
                                         <p>NoFs</p>
                                     </div>
                                 </div>
-                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="#">Author</a></p>
+                                <p className="recipe-author-in-other-profile-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                             </div>
                         </div>
                         <button className="save-recipe-button-in-other-profile-collection-details-page"><i><FaHeart /></i></button>

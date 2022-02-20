@@ -6,6 +6,11 @@
         margin-left: -12px;
     }
 
+    /* For photos page */
+    #grid-photos-page {
+        margin-bottom: 30px;
+    }
+
     /* For add photos button */
     #add-photos-button {
         width: 300px;
@@ -61,6 +66,22 @@
         position: absolute;
         margin-left: 10px;
         margin-top: 8px;
+    }
+
+    /* For load more photos button */
+    #load-more-recipes-button-in-photos-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
     }
 }
 
@@ -72,6 +93,11 @@
         margin-left: -12px;
     }
 
+    /* For photos page */
+    #grid-photos-page {
+        margin-bottom: 30px;
+    }
+
     /* For add photos button */
     #add-photos-button {
         width: 300px;
@@ -127,6 +153,22 @@
         position: absolute;
         margin-left: 10px;
         margin-top: 8px;
+    }
+
+    /* For load more photos button */
+    #load-more-recipes-button-in-photos-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
     }
 }
 
@@ -149,6 +191,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 15px;
+        margin-bottom: 30px;
     }
 
     /* For add photos button */
@@ -206,6 +249,22 @@
         position: absolute;
         margin-left: 10px;
         margin-top: 8px;
+    }
+
+    /* For load more photos button */
+    #load-more-recipes-button-in-photos-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
     }
 }
 
@@ -228,6 +287,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 15px;
+        margin-bottom: 30px;
     }
 
     /* For add photos button */
@@ -285,6 +345,22 @@
         position: absolute;
         margin-left: 10px;
         margin-top: 8px;
+    }
+
+    /* For load more photos button */
+    #load-more-recipes-button-in-photos-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
     }
 }
 
@@ -306,6 +382,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 15px;
+        margin-bottom: 30px;
     }
 
     /* For add photos button */
@@ -363,6 +440,22 @@
         position: absolute;
         margin-left: 10px;
         margin-top: 8px;
+    }
+
+    /* For load more photos button */
+    #load-more-recipes-button-in-photos-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
     }
 }
 
@@ -384,6 +477,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 15px;
+        margin-bottom: 30px;
     }
 
     /* For add photos button */
@@ -441,6 +535,22 @@
         position: absolute;
         margin-left: 10px;
         margin-top: 8px;
+    }
+
+    /* For load more photos button */
+    #load-more-recipes-button-in-photos-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
     }
 }
 
@@ -462,6 +572,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 15px;
+        margin-bottom: 30px;
     }
 
     /* For add photos button */
@@ -519,6 +630,22 @@
         position: absolute;
         margin-left: 10px;
         margin-top: 8px;
+    }
+
+    /* For load more photos button */
+    #load-more-recipes-button-in-photos-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
     }
 }
 
@@ -539,6 +666,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 15px;
+        margin-bottom: 30px;
     }
 
     /* For add photos button */
@@ -596,6 +724,22 @@
         position: absolute;
         margin-left: 10px;
         margin-top: 8px;
+    }
+
+    /* For load more photos button */
+    #load-more-recipes-button-in-photos-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
     }
 }
 
@@ -616,6 +760,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 15px;
+        margin-bottom: 30px;
     }
 
     /* For add photos button */
@@ -673,6 +818,22 @@
         position: absolute;
         margin-left: 10px;
         margin-top: 8px;
+    }
+
+    /* For load more photos button */
+    #load-more-recipes-button-in-photos-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
     }
 }
 

@@ -43,13 +43,7 @@ function PublicProfileAboutMe() {
                     </div>
                     <div>
                         <p className="title-in-public-profile-about-me-page">Connect with me</p>
-                        <a href="#">(Link)</a>
-                    </div>
-                    <div id="link-icons-in-public-profile-about-me-page">
-                        <i title="Pinterest"><FaPinterest /></i>
-                        <i title="Instagram"><FaInstagramSquare /></i>
-                        <i title="Facebook"><FaFacebook /></i>
-                        <i title="Twitter"><FaTwitterSquare /></i>
+                        <a href="public-profile-about-me">(Link)</a>
                     </div>
                 </div>
             </Container>

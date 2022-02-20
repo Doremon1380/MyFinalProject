@@ -11,20 +11,25 @@
         display: none;
     }
 
+    #left-side-group-buttons2 + div {
+        width: fit-content;
+        margin: auto;
+    }
+
     /* For the h1 of edit-account-features form */
     #edit-account-features h1 {
-        margin: 10px 0px 20px 20px;
+        margin: 10px 0px 20px 0px;
     }
 
     /* For all label of edit-account-features form */
     #edit-account-features label {
-        margin: 0px 0px 5px 20px;
+        margin: 0px 0px 5px 0px;
     }
 
     /* For all input of edit-account-features form */
     #edit-account-features input {
         outline: none;
-        margin: 0px 0px 15px 20px;
+        margin: 0px 0px 15px 0px;
         border: 1px solid rgb(235, 235, 235);
         width: 92vw;
         height: 50px;
@@ -39,13 +44,13 @@
 
     /* For the h2 of edit-account-features form */
     #edit-account-features h2 {
-        margin: 15px 0px 20px 20px;
+        margin: 15px 0px 20px 0px;
     }
     
     /* For all p tag of edit-account-features form */
     #edit-account-features p {
         display: block;
-        margin: -15px 0px 20px 20px;
+        margin: -15px 0px 20px 0px;
         width: 92vw;
     }
 
@@ -53,12 +58,12 @@
     #edit-account-bottom-buttons {
         display: flex;
         width: 92vw;
-        margin: 0px 0px 20px 20px;
+        margin: 0px 0px 20px 0px;
     }
 
     #edit-account-save-button {
         height: 45px;
-        width: 50vw;
+        width: 47vw;
         margin: 10px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -73,7 +78,7 @@
 
     #edit-account-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 45vw;
         margin: 10px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -100,22 +105,27 @@
         display: none;
     }
 
+    #left-side-group-buttons2 + div {
+        width: fit-content;
+        margin: auto;
+    }
+
     /* For the h1 of edit-account-features form */
     #edit-account-features h1 {
-        margin: 10px 0px 20px 20px;
+        margin: 10px 0px 20px 0px;
     }
 
     /* For all label of edit-account-features form */
     #edit-account-features label {
-        margin: 0px 0px 5px 20px;
+        margin: 0px 0px 5px 0px;
     }
 
     /* For all input of edit-account-features form */
     #edit-account-features input {
         outline: none;
-        margin: 0px 0px 15px 20px;
+        margin: 0px 0px 15px 0px;
         border: 1px solid rgb(235, 235, 235);
-        width: 93vw;
+        width: 92vw;
         height: 50px;
         transition: 200ms ease-in-out;
         padding: 6px 10px 6px 10px;
@@ -128,26 +138,26 @@
 
     /* For the h2 of edit-account-features form */
     #edit-account-features h2 {
-        margin: 15px 0px 20px 20px;
+        margin: 15px 0px 20px 0px;
     }
     
     /* For all p tag of edit-account-features form */
     #edit-account-features p {
         display: block;
         width: 92vw;
-        margin: -15px 0px 20px 20px;
+        margin: -15px 0px 20px 0px;
     }
 
     /* For the bottom buttons */
     #edit-account-bottom-buttons {
         display: flex;
         width: 92vw;
-        margin: 0px 0px 20px 20px;
+        margin: 0px 0px 20px 0px;
     }
 
     #edit-account-save-button {
         height: 45px;
-        width: 50vw;
+        width: 47vw;
         margin: 10px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -162,7 +172,7 @@
 
     #edit-account-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 45vw;
         margin: 10px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -187,7 +197,6 @@
     /* For the account-settings form */
     #account-settings {
         display: flex;
-        flex-direction: row;
     }
 
     /* For the left side group buttons */
@@ -249,7 +258,7 @@
     /* For edit-account-features form */
     #edit-account-features {
         width: fit-content;
-        margin-left: 35px;
+        margin-left: 20px;
     }
 
     /* For the h1 of edit-account-features form */
@@ -267,7 +276,7 @@
         outline: none;
         margin: 0px 0px 15px 0px;
         border: 1px solid rgb(235, 235, 235);
-        width: 58vw;
+        width: 57vw;
         height: 50px;
         transition: 200ms ease-in-out;
         padding: 6px 10px 6px 10px;
@@ -286,20 +295,20 @@
     /* For all p tag of edit-account-features form */
     #edit-account-features p {
         display: block;
-        width: 58vw;
+        width: 57vw;
         margin: -15px 0px 20px 0px;
     }
 
     /* For the bottom buttons */
     #edit-account-bottom-buttons {
         display: flex;
-        width: 58vw;
-        margin: 0px 0px 20px 0px;
+        width: 57vw;
+        margin: 0px 0px 20px 20px;
     }
 
     #edit-account-save-button {
         height: 45px;
-        width: 50vw;
+        width: 29.5vw;
         margin: 10px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -314,7 +323,7 @@
 
     #edit-account-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 27.5vw;
         margin: 10px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -338,14 +347,20 @@
     /* For the notification-settings form */
     #account-settings {
         display: flex;
-        flex-direction: row;
+        width: fit-content;
+        margin-left: 16vw;
     }
 
     /* For the left side group buttons */
     #left-side-group-buttons2 {
         display: flex;
         flex-direction: column;
-        margin: 25px 0px 0px 16.2vw;
+        margin: 25px 0px 0px 0px;
+    }
+
+    #left-side-group-buttons2  + div {
+        width: fit-content;
+        margin-left: 14px;
     }
 
     /* For the left side button */
@@ -400,7 +415,7 @@
     /* For edit-account-features form */
     #edit-account-features {
         width: fit-content;
-        margin-left: 3.9vw;
+        margin-left: 3.5vw;
     }
 
     /* For the h1 of edit-account-features form */
@@ -418,7 +433,7 @@
         outline: none;
         margin: 0px 0px 15px 0px;
         border: 1px solid rgb(235, 235, 235);
-        width: 41.9vw;
+        width: 39.5vw;
         height: 50px;
         transition: 200ms ease-in-out;
         padding: 6px 10px 6px 10px;
@@ -437,20 +452,20 @@
     /* For all p tag of edit-account-features form */
     #edit-account-features p {
         display: block;
-        width: 41.9vw;
+        width: 39.5vw;
         margin: -15px 0px 20px 0px;
     }
 
     /* For the bottom buttons */
     #edit-account-bottom-buttons {
         display: flex;
-        width: 41.9vw;
-        margin: 0px 0px 20px 0px;
+        width: 39.5vw;
+        margin: 0px 0px 20px 3.5vw;
     }
 
     #edit-account-save-button {
         height: 45px;
-        width: 50vw;
+        width: 20.75vw;
         margin: 10px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -465,7 +480,7 @@
 
     #edit-account-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 18.75vw;
         margin: 10px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -489,14 +504,19 @@
     /* For the notification-settings form */
     #account-settings {
         display: flex;
-        flex-direction: row;
+        margin-left: 20.7vw;
     }
 
     /* For the left side group buttons */
     #left-side-group-buttons2 {
         display: flex;
         flex-direction: column;
-        margin: 25px 0px 0px 21vw;
+        margin: 25px 0px 0px 0px;
+    }
+
+    #left-side-group-buttons2  + div {
+        width: fit-content;
+        margin-left: 20px;
     }
 
     /* For the left side button */
@@ -551,7 +571,7 @@
     /* For edit-account-features form */
     #edit-account-features {
         width: fit-content;
-        margin-left: 3.5vw;
+        margin-left: 2.5vw;
     }
 
     /* For the h1 of edit-account-features form */
@@ -569,7 +589,7 @@
         outline: none;
         margin: 0px 0px 15px 0px;
         border: 1px solid rgb(235, 235, 235);
-        width: 35.6vw;
+        width: 34.1vw;
         height: 50px;
         transition: 200ms ease-in-out;
         padding: 6px 10px 6px 10px;
@@ -588,20 +608,20 @@
     /* For all p tag of edit-account-features form */
     #edit-account-features p {
         display: block;
-        width: 35.6vw;
+        width: 34.1vw;
         margin: -15px 0px 20px 0px;
     }
 
     /* For the bottom buttons */
     #edit-account-bottom-buttons {
         display: flex;
-        width: 35.6vw;
-        margin: 0px 0px 20px 0px;
+        width: 34.1vw;
+        margin: 0px 0px 20px 2.5vw;
     }
 
     #edit-account-save-button {
         height: 45px;
-        width: 50vw;
+        width: 18.05vw;
         margin: 10px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -616,7 +636,7 @@
 
     #edit-account-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 16.05vw;
         margin: 10px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -640,14 +660,14 @@
     /* For the notification-settings form */
     #account-settings {
         display: flex;
-        flex-direction: row;
+        margin-left: 20.6vw;
     }
 
     /* For the left side group buttons */
     #left-side-group-buttons2 {
         display: flex;
         flex-direction: column;
-        margin: 25px 0px 0px 20.8vw;
+        margin: 25px 0px 0px 0px;
     }
 
     /* For the left side button */
@@ -702,7 +722,7 @@
     /* For edit-account-features form */
     #edit-account-features {
         width: fit-content;
-        margin-left: 3vw;
+        margin-left: 2.5vw;
     }
 
     /* For the h1 of edit-account-features form */
@@ -720,7 +740,7 @@
         outline: none;
         margin: 0px 0px 15px 0px;
         border: 1px solid rgb(235, 235, 235);
-        width: 39.4vw;
+        width: 37.7vw;
         height: 50px;
         transition: 200ms ease-in-out;
         padding: 6px 10px 6px 10px;
@@ -739,20 +759,20 @@
     /* For all p tag of edit-account-features form */
     #edit-account-features p {
         display: block;
-        width: 39.4vw;
+        width: 37.7vw;
         margin: -15px 0px 20px 0px;
     }
 
     /* For the bottom buttons */
     #edit-account-bottom-buttons {
         display: flex;
-        width: 39.4vw;
-        margin: 0px 0px 20px 0px;
+        width: 37.7vw;
+        margin: 0px 0px 20px 2.5vw;
     }
 
     #edit-account-save-button {
         height: 45px;
-        width: 50vw;
+        width: 19.85vw;
         margin: 10px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -767,7 +787,7 @@
 
     #edit-account-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 17.85vw;
         margin: 10px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -791,14 +811,14 @@
     /* For the notification-settings form */
     #account-settings {
         display: flex;
-        flex-direction: row;
+        margin-left: 18.6vw;
     }
 
     /* For the left side group buttons */
     #left-side-group-buttons2 {
         display: flex;
         flex-direction: column;
-        margin: 25px 0px 0px 18.75vw;
+        margin: 25px 0px 0px 0px;
     }
 
     /* For the left side button */
@@ -871,7 +891,7 @@
         outline: none;
         margin: 0px 0px 15px 0px;
         border: 1px solid rgb(235, 235, 235);
-        width: 44vw;
+        width: 42.2vw;
         height: 50px;
         transition: 200ms ease-in-out;
         padding: 6px 10px 6px 10px;
@@ -890,20 +910,20 @@
     /* For all p tag of edit-account-features form */
     #edit-account-features p {
         display: block;
-        width: 44vw;
+        width: 42.2vw;
         margin: -15px 0px 20px 0px;
     }
 
     /* For the bottom buttons */
     #edit-account-bottom-buttons {
         display: flex;
-        width: 44vw;
-        margin: 0px 0px 20px 0px;
+        width: 42.2vw;
+        margin: 0px 0px 20px 2.5vw;
     }
 
     #edit-account-save-button {
         height: 45px;
-        width: 50vw;
+        width: 22.1vw;
         margin: 10px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -918,7 +938,7 @@
 
     #edit-account-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 20.1vw;
         margin: 10px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -942,14 +962,14 @@
     /* For the notification-settings form */
     #account-settings {
         display: flex;
-        flex-direction: row;
+        margin-left: 18.1vw;
     }
 
     /* For the left side group buttons */
     #left-side-group-buttons2 {
         display: flex;
         flex-direction: column;
-        margin: 25px 0px 0px 18.15vw;
+        margin: 25px 0px 0px 0px;
     }
 
     /* For the left side button */
@@ -1022,7 +1042,7 @@
         outline: none;
         margin: 0px 0px 15px 0px;
         border: 1px solid rgb(235, 235, 235);
-        width: 46.2vw;
+        width: 44.2vw;
         height: 50px;
         transition: 200ms ease-in-out;
         padding: 6px 10px 6px 10px;
@@ -1041,20 +1061,20 @@
     /* For all p tag of edit-account-features form */
     #edit-account-features p {
         display: block;
-        width: 46.2vw;
+        width: 44.2vw;
         margin: -15px 0px 20px 0px;
     }
 
     /* For the bottom buttons */
     #edit-account-bottom-buttons {
         display: flex;
-        width: 46.2vw;
-        margin: 0px 0px 20px 0px;
+        width: 44.2vw;
+        margin: 0px 0px 20px 2.5vw;
     }
 
     #edit-account-save-button {
         height: 45px;
-        width: 50vw;
+        width: 23.1vw;
         margin: 10px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -1069,7 +1089,7 @@
 
     #edit-account-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 21.1vw;
         margin: 10px 0px 0px 0px;
         border: none;
         background-color: orange;

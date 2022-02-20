@@ -75,7 +75,7 @@ function RecipeResults() {
                                             <p>NoFs</p>
                                         </div>
                                     </div>
-                                    <p className="recipe-author-in-recipe-results-page">By <a href="#">Author</a></p>
+                                    <p className="recipe-author-in-recipe-results-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                 </div>
                                 <div className="recipe-in-recipe-results-page">
                                     <button className="save-recipe-button-in-recipe-results-page"><i><FaHeart /></i></button>
@@ -97,7 +97,7 @@ function RecipeResults() {
                                             <p>NoFs</p>
                                         </div>
                                     </div>
-                                    <p className="recipe-author-in-recipe-results-page">By <a href="#">Author</a></p>
+                                    <p className="recipe-author-in-recipe-results-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                 </div>
                                 <div className="recipe-in-recipe-results-page">
                                     <button className="save-recipe-button-in-recipe-results-page"><i><FaHeart /></i></button>
@@ -119,7 +119,7 @@ function RecipeResults() {
                                             <p>NoFs</p>
                                         </div>
                                     </div>
-                                    <p className="recipe-author-in-recipe-results-page">By <a href="#">Author</a></p>
+                                    <p className="recipe-author-in-recipe-results-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                 </div>
                                 <div className="recipe-in-recipe-results-page">
                                     <button className="save-recipe-button-in-recipe-results-page"><i><FaHeart /></i></button>
@@ -141,7 +141,7 @@ function RecipeResults() {
                                             <p>NoFs</p>
                                         </div>
                                     </div>
-                                    <p className="recipe-author-in-recipe-results-page">By <a href="#">Author</a></p>
+                                    <p className="recipe-author-in-recipe-results-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                 </div>
                                 <div className="recipe-in-recipe-results-page">
                                     <button className="save-recipe-button-in-recipe-results-page"><i><FaHeart /></i></button>
@@ -163,7 +163,7 @@ function RecipeResults() {
                                             <p>NoFs</p>
                                         </div>
                                     </div>
-                                    <p className="recipe-author-in-recipe-results-page">By <a href="#">Author</a></p>
+                                    <p className="recipe-author-in-recipe-results-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                 </div>
                                 <div className="recipe-in-recipe-results-page">
                                     <button className="save-recipe-button-in-recipe-results-page"><i><FaHeart /></i></button>
@@ -185,7 +185,7 @@ function RecipeResults() {
                                             <p>NoFs</p>
                                         </div>
                                     </div>
-                                    <p className="recipe-author-in-recipe-results-page">By <a href="#">Author</a></p>
+                                    <p className="recipe-author-in-recipe-results-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                 </div>
                                 <div className="recipe-in-recipe-results-page">
                                     <button className="save-recipe-button-in-recipe-results-page"><i><FaHeart /></i></button>
@@ -207,7 +207,7 @@ function RecipeResults() {
                                             <p>NoFs</p>
                                         </div>
                                     </div>
-                                    <p className="recipe-author-in-recipe-results-page">By <a href="#">Author</a></p>
+                                    <p className="recipe-author-in-recipe-results-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                 </div>
                                 <div className="recipe-in-recipe-results-page">
                                     <button className="save-recipe-button-in-recipe-results-page"><i><FaHeart /></i></button>
@@ -229,7 +229,7 @@ function RecipeResults() {
                                             <p>NoFs</p>
                                         </div>
                                     </div>
-                                    <p className="recipe-author-in-recipe-results-page">By <a href="#">Author</a></p>
+                                    <p className="recipe-author-in-recipe-results-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                 </div>
                                 <div className="recipe-in-recipe-results-page">
                                     <button className="save-recipe-button-in-recipe-results-page"><i><FaHeart /></i></button>
@@ -251,7 +251,7 @@ function RecipeResults() {
                                             <p>NoFs</p>
                                         </div>
                                     </div>
-                                    <p className="recipe-author-in-recipe-results-page">By <a href="#">Author</a></p>
+                                    <p className="recipe-author-in-recipe-results-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                 </div>
                                 <div className="recipe-in-recipe-results-page">
                                     <button className="save-recipe-button-in-recipe-results-page"><i><FaHeart /></i></button>
@@ -273,7 +273,7 @@ function RecipeResults() {
                                             <p>NoFs</p>
                                         </div>
                                     </div>
-                                    <p className="recipe-author-in-recipe-results-page">By <a href="#">Author</a></p>
+                                    <p className="recipe-author-in-recipe-results-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                 </div>
                             </div>
                             <button id="load-more-recipes-button-in-recipe-results-page">SHOW MORE</button>

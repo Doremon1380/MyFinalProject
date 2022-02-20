@@ -48,7 +48,7 @@ class SignIn extends React.Component {
         <div id="sign-in-container">
           <h1>Sign in with social</h1>
           <p>For new and existing FoodShare users.</p>
-          <div id="flex-box">
+          <div id="flex-box-in-sign-in-page">
             <button id="facebook-sign-in">
               <i className="bi bi-facebook"></i>
               <div id="facebook-text">Facebook</div>
@@ -61,17 +61,17 @@ class SignIn extends React.Component {
           <h2>Sign in with email</h2>
           <p>For existing FoodShare users.</p>
           <form>
-            <div id="flex-box-2">
+            <div id="flex-box-2-in-sign-in-page">
               <input name="email" type="email" placeholder="Email" id="email-input"></input>
               <input name="password" type={(isPaswordShown) ? "text" : "password"} placeholder="Password" id="password-input"></input>
               <img src={imagesPath[imageName]} id="sign-in-password-icon" onClick={() => { this.toggleImage(); this.togglePasswordVisibility() }}></img>
             </div>
-            <div id="flex-box-3">
+            <div id="flex-box-3-in-sign-in-page">
               <input name="rememberMe" value="rememberMe" id="remember-me" type="checkbox" />
               <label for="remember-me" id="remember-me-label">Remember me</label>
               <a href="#" id="forgot-password">Forgot password?</a>
             </div>
-            <button id="sign-in-button">Sign in</button>
+            <button id="sign-in-button" type="submit">Sign in</button>
           </form>
           <button id="for-new-users-button">You are new?<a href="/signup"><span> Join for free!</span></a></button>
           <p>By signing in, you are agreeing to our <a href="#" id="terms-of-service">Terms of Service</a> and our <a href="#" id="privacy-policy">Privacy Policy</a>.</p>

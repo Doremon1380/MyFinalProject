@@ -87,7 +87,7 @@
 
     #notification-settings-save-button {
         height: 45px;
-        width: 50vw;
+        width: 24vw;
         margin: 10px 10px 0px 60px;
         border: none;
         background-color: orange;
@@ -102,7 +102,7 @@
 
     #notification-settings-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 23vw;
         margin: 10px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -238,7 +238,7 @@
         width: 20vw;
         margin: 10px 10px 0px 58px;
         border: none;
-        background-color: orange;
+        background-color: orange; 
         color: white;
         transition: 200ms ease-in-out;
     }
@@ -433,6 +433,10 @@
         display: flex;
         flex-direction: column;
         margin: 25px 0px 0px 0px;
+    }
+
+    #left-side-group-buttons1 + div {
+        margin-left: 40px;
     }
 
     /* For the left side button */

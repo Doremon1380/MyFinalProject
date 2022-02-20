@@ -27,21 +27,21 @@ function SecondNavBar() {
                 </div>
                 <div className="features-set">
                     <i className="bi bi-search search-icon"></i>
-                    <i className="bi bi-bell-fill bell-icon"></i>
-                    <a href="#"><i className="favorite-icon"><FaHeart /></i></a>
+                    <i className="bi bi-bell-fill bell-icon" title="Notifications"></i>
+                    <a href="/favorite-recipes"><i className="favorite-icon" title="My Favorites"><FaHeart /></i></a>
                     <div id="for-account">
                         <button id="avatar"><a href="/about-me"><img alt="avatar" id="avatar-image"></img></a></button>
                         <DropdownButton id="accountName" variant="" title="Account Name">
                             <Dropdown.Item className="drop-down-item2" href="/about-me">My Profile</Dropdown.Item>
                             <Dropdown.Item className="drop-down-item2" href="/follower-accounts">My Friends</Dropdown.Item>
-                            <Dropdown.Item className="drop-down-item2" href="#/">My Shopping List</Dropdown.Item>
+                            <Dropdown.Item className="drop-down-item2" href="/shopping-lists">My Shopping List</Dropdown.Item>
                             <Dropdown.Divider />
                             <Dropdown.Item className="drop-down-item2" href="/foodshare.com">Logout</Dropdown.Item>
                         </DropdownButton>
                         <DropdownButton id="dropdown-basic-button-account" variant="" title={<i className="down-icon"><FaChevronDown /></i>}>
                             <Dropdown.Item className="drop-down-item2" href="/about-me">My Profile</Dropdown.Item>
                             <Dropdown.Item className="drop-down-item2" href="/follower-accounts">My Friends</Dropdown.Item>
-                            <Dropdown.Item className="drop-down-item2" href="#/">My Shopping List</Dropdown.Item>
+                            <Dropdown.Item className="drop-down-item2" href="/shopping-lists">My Shopping List</Dropdown.Item>
                             <Dropdown.Divider />
                             <Dropdown.Item className="drop-down-item2" href="/foodshare.com">Logout</Dropdown.Item>
                         </DropdownButton>
@@ -50,13 +50,13 @@ function SecondNavBar() {
                         {/* Tìm cách hiển thị những dropdown.item nhỏ hơn bên trong những dropdown.item này */}
                         <Dropdown.Item className="drop-down-item2" href="/foodshare.com">FoodShare</Dropdown.Item>
                         <Dropdown.Divider />
-                        <Dropdown.Item className="drop-down-item2" href="#/">World Cuisine</Dropdown.Item>
+                        <Dropdown.Item className="drop-down-item2" href="/world-cuisine">World Cuisine</Dropdown.Item>
                         <Dropdown.Divider />
-                        <Dropdown.Item className="drop-down-item2" href="#/">Filter Recipes</Dropdown.Item>
+                        <Dropdown.Item className="drop-down-item2" href="/filter-recipes">Filter Recipes</Dropdown.Item>
                         <Dropdown.Divider />
-                        <Dropdown.Item className="drop-down-item2" href="#/">Type of Recipes</Dropdown.Item>
+                        <Dropdown.Item className="drop-down-item2" href="/types-of-recipes">Types of Recipes</Dropdown.Item>
                         <Dropdown.Divider />
-                        <Dropdown.Item className="drop-down-item2" href="#/">Ask the Community</Dropdown.Item>
+                        <Dropdown.Item className="drop-down-item2" href="/ask-the-community">Ask the Community</Dropdown.Item>
                     </DropdownButton>
                 </div>
             </div>

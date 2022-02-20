@@ -1,7 +1,6 @@
 import React from "react";
 import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./private-profile.css";
 import { Helmet } from 'react-helmet'
 import "./all-reviews.css"
 import { FaThumbsUp } from "react-icons/fa";
@@ -45,7 +44,7 @@ function AllReviews() {
                 <hr></hr>
                 <div id="reviews-in-all-reviews-page">
                     <div className="review-in-all-reviews-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avartar"></img>
                             (Reviewer Account)
                         </a>
@@ -67,7 +66,7 @@ function AllReviews() {
                         </div>
                     </div>
                     <div className="review-in-all-reviews-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avartar"></img>
                             (Reviewer Account)
                         </a>
@@ -89,7 +88,7 @@ function AllReviews() {
                         </div>
                     </div>
                     <div className="review-in-all-reviews-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avartar"></img>
                             (Reviewer Account)
                         </a>
@@ -111,7 +110,7 @@ function AllReviews() {
                         </div>
                     </div>
                     <div className="review-in-all-reviews-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avartar"></img>
                             (Reviewer Account)
                         </a>
@@ -133,7 +132,7 @@ function AllReviews() {
                         </div>
                     </div>
                     <div className="review-in-all-reviews-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avartar"></img>
                             (Reviewer Account)
                         </a>
@@ -155,7 +154,7 @@ function AllReviews() {
                         </div>
                     </div>
                     <div className="review-in-all-reviews-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avartar"></img>
                             (Reviewer Account)
                         </a>
@@ -177,7 +176,7 @@ function AllReviews() {
                         </div>
                     </div>
                     <div className="review-in-all-reviews-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avartar"></img>
                             (Reviewer Account)
                         </a>
@@ -199,7 +198,7 @@ function AllReviews() {
                         </div>
                     </div>
                     <div className="review-in-all-reviews-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avartar"></img>
                             (Reviewer Account)
                         </a>
@@ -221,7 +220,7 @@ function AllReviews() {
                         </div>
                     </div>
                     <div className="review-in-all-reviews-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avartar"></img>
                             (Reviewer Account)
                         </a>
@@ -243,7 +242,7 @@ function AllReviews() {
                         </div>
                     </div>
                     <div className="review-in-all-reviews-page">
-                        <a href="#">
+                        <a href="/public-profile-about-me">
                             <img alt="avartar"></img>
                             (Reviewer Account)
                         </a>

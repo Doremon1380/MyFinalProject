@@ -68,7 +68,30 @@ function Photos() {
                             </button>
                         </div>
                     </div>
+                    <div className="photo">
+                        <div id="image-in-photos-page">
+                            <a href="/photo-id"><img alt="photo3"></img></a>
+                        </div>
+                        <div className="description">
+                            <button>
+                                <i className="bi bi-plus-circle-fill"></i>
+                                <p>Description</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div className="photo">
+                        <div id="image-in-photos-page">
+                            <a href="/photo-id"><img alt="photo3"></img></a>
+                        </div>
+                        <div className="description">
+                            <button>
+                                <i className="bi bi-plus-circle-fill"></i>
+                                <p>Description</p>
+                            </button>
+                        </div>
+                    </div>
                 </div>
+                <button id="load-more-recipes-button-in-photos-page">SHOW MORE</button>
             </div>
         </>
     );
