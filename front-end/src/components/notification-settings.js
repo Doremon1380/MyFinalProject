@@ -51,7 +51,7 @@ function NotificationSettings() {
                     </a>
                 </div>
                 <div>
-                    <form id="notification-settings-options">
+                    <form id="notification-settings-options" name="notificationSettings">
                         <h1 id="email-notifications-title">Email Notifications</h1>
                         <input name="newPhotoIsPosted" id="new-photo-posted" className="notification-settings-checkbox" type="checkbox"></input>
                         <label for="new-photo-posted" className="notification-settings-checkbox-label">A new photo is posted to my recipe</label>
@@ -67,7 +67,7 @@ function NotificationSettings() {
                     </form>
                     <div id="notification-settings-bottom-buttons">
                         <button id="notification-settings-save-button" type="submit" form="notification-settings-options">Save</button>
-                        <a href="/about-me"><button id="notification-settings-cancel-button" >Cancel</button></a>
+                        <a href="/about-me"><button id="notification-settings-cancel-button">Cancel</button></a>
                     </div>
                 </div>
             </div >

@@ -19,9 +19,9 @@ function NavBar() {
       <Container id="nav-bar-container">
         <a href="/foodshare.com"><img className="logo" src={MyLogo} alt="Logo" /></a>
         <div className="search-bar">
-          <form className="search-form">
-            <input name="searchRecipe" className="search-input" type="search" placeholder="Find a recipe" aria-label="Search" />
-            <button className="search-button" type="submit"><i className="bi bi-search"></i></button>
+          <form className="search-form" id="search-form-of-nav-bar" name="searchRecipe">
+            <input name="inputRecipe" className="search-input" type="search" placeholder="Find a recipe" aria-label="Search" />
+            <button className="search-button" type="submit" form="search-form-of-nav-bar"><i className="bi bi-search"></i></button>
           </form>
         </div>
         <button className="sign-in-button"><a href="/signin">Sign in</a></button>

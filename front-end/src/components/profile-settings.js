@@ -12,6 +12,32 @@ import { FaUserCog } from "react-icons/fa";
 
 const TITLE = 'Profile Settings - FoodShare.com';
 
+class PersonalUrl extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            input: ''
+        };
+
+        this.createUrl = this.createUrl.bind(this);
+    };
+
+    createUrl(event) {
+        this.setState({
+            input: event.target.value
+        });
+    };
+
+    render() {
+        return (
+            <>
+                <p id="personal-URL">FoodShare.com/cook/{this.state.input}</p>
+                <input name="createURL" placeholder="i.e. Doremon1380" className="edit-profile-input" value={this.state.input} onChange={this.createUrl}></input>
+            </>
+        );
+    }
+};
+
 function ProfileSettings() {
     return (
         <>
@@ -51,21 +77,20 @@ function ProfileSettings() {
                     </a>
                 </div>
                 <div>
-                    <form id="edit-profile-features">
+                    <form id="edit-profile-features" action="" name="editProfile">
                         <div id="edit-photo-buttons">
                             <button id="edit-profile-photo"><i className="bi bi-camera camera-icon"></i><p>Edit profile photo</p></button><br />
                             <button id="edit-cover-photo"><i className="bi bi-camera camera-icon"></i><p>Edit cover photo</p></button>
                         </div>
                         <label className="edit-profile-label">First name</label><br />
-                        <input name="first name" placeholder="First name" className="edit-profile-input"></input><br />
+                        <input name="firstName" placeholder="First name" className="edit-profile-input"></input><br />
                         <label className="edit-profile-label">Last name</label><br />
-                        <input name="last name" placeholder="Last name" className="edit-profile-input"></input><br />
+                        <input name="lastName" placeholder="Last name" className="edit-profile-input"></input><br />
                         <label className="edit-profile-label">Display name</label><br />
-                        <input name="display name" placeholder="Display name" className="edit-profile-input"></input><br />
+                        <input name="displayName" placeholder="Display name" className="edit-profile-input"></input><br />
                         <label className="edit-profile-label">Profile URL</label><br />
                         <p className="message1">Share your FoodShare profile with a personal URL!</p>
-                        <p id="personal-URL">FoodShare.com/cook/</p>
-                        <input name="for-URL" placeholder="i.e. Doremon1380" className="edit-profile-input"></input><br />
+                        <PersonalUrl />
                         <p className="header">Location</p>
                         <label className="edit-profile-label" for="select-country">Country</label><br />
                         <select name="country" id="select-country">
@@ -377,7 +402,7 @@ function ProfileSettings() {
                         <input name="link to Personal blog" placeholder="Paste the link to your Twitter" className="edit-profile-input"></input><br />
                     </form>
                     <div id="edit-profile-bottom-buttons">
-                        <button id="edit-profile-save-button" type="submit">Save</button>
+                        <button id="edit-profile-save-button" type="submit" form="edit-profile-features">Save</button>
                         <a href="/about-me"><button id="edit-profile-cancel-button" type="reset">Cancel</button></a>
                     </div>
                 </div>

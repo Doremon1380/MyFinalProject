@@ -55,6 +55,10 @@
     }
 
     /* For add collection button */
+    #collections-in-collection-recipes-page a {
+        text-decoration: none;
+    }
+    
     .add-collection-button-in-collection-recipes-page {
         display: block;
         margin: auto;
@@ -84,6 +88,53 @@
     .add-icon-in-collection-recipes-page + p {
         margin-top: 10px;   
     }
+
+    #create-new-collection-form-in-collection-recipes-page {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #create-new-collection-form-in-collection-recipes-page:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #popup-in-collection-recipes-page {
+        margin: 70px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 94%;
+        position: relative;
+    }
+
+    #popup-in-collection-recipes-page p {
+        font-size: 18px;
+    }
+
+    #close-button-of-create-new-collection-form {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+
+    #close-button-of-create-new-collection-form:hover {
+        color: orange;
+    }
+
+
+
 
     /* For collection in collection recipes page */
     .collection-in-collection-recipes-page {

@@ -25,7 +25,7 @@ function RecipeResults() {
                     </div>
                     <div>
                         <div id="recipes-filter-in-recipe-results-page">
-                            <form>
+                            <form id="filters-in-recipe-results-page" name="filters" action="">
                                 <div>
                                     <p>Filters</p>
                                     <button>Clear all</button>
@@ -44,12 +44,12 @@ function RecipeResults() {
                                         </div>
                                         <p>Do not include these ingredients</p>
                                         <div>
-                                            <input placeholder="Exclude ingredients"  name="excludeIngredients"></input>
+                                            <input placeholder="Exclude ingredients" name="excludeIngredients"></input>
                                             <i><FaMinusCircle /></i>
                                         </div>
                                     </div>
                                 </div>
-                                <button id="show-more-results-button-in-recipe-results-page">SHOW RESULTS</button>
+                                <button id="show-more-results-button-in-recipe-results-page" type="submit" form="filters-in-recipe-results-page">SHOW RESULTS</button>
                             </form>
                         </div>
                         <div id="recipes-in-recipe-results-page">

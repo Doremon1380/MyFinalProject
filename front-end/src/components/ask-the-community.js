@@ -28,10 +28,10 @@ class UserQuestion extends React.Component {
                 <div id="your-question-in-ask-the-question-page">
                     <button onClick={this.toggleDisplayQuestion}>Your question</button>
                     <p>Need cooking advice, or something else? Tell us.</p>
-                    <form action="#">
+                    <form action="#" id="create-question-in-ask-the-question-page" name="yourQuestion">
                         <input placeholder="Subject" name="questionSubject"></input>
                         <textarea placeholder="Enter your question" name="question" rows="3" cols="80"></textarea>
-                        <button>Submit</button>
+                        <button type="submit" form="create-question-in-ask-the-question-page">Submit</button>
                     </form>
                 </div>
             );
@@ -67,9 +67,9 @@ class UserReply extends React.Component {
             return (
                 <div id="your-reply-in-ask-the-question-page">
                     <button onClick={this.toggleDisplayReply}>Cancel</button>
-                    <form action="#">
-                        <textarea placeholder="Enter your question" name="question" rows="3" cols="80"></textarea>
-                        <button>Submit</button>
+                    <form action="#" id="create-reply-in-ask-the-question-page" name="userReply">
+                        <textarea placeholder="Enter your answer" name="question" rows="3" cols="80"></textarea>
+                        <button type="submit" form="create-reply-in-ask-the-question-page">Submit</button>
                     </form>
                 </div>
             );

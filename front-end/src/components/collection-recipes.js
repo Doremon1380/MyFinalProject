@@ -49,12 +49,26 @@ function CollectionRecipes() {
                     </div>
                 </div>
                 <div id="collections-in-collection-recipes-page">
-                    <button className="add-collection-button-in-collection-recipes-page">
-                        <div className="add-icon-in-collection-recipes-page">
-                            <i class="bi bi-plus"></i>
+                    <a href="#create-new-collection-form-in-collection-recipes-page">
+                        <button className="add-collection-button-in-collection-recipes-page">
+                            <div className="add-icon-in-collection-recipes-page">
+                                <i class="bi bi-plus"></i>
+                            </div>
+                            <p>Create a collection</p>
+                        </button>
+                    </a>
+
+                    <form id="create-new-collection-form-in-collection-recipes-page" action="" name="createNewCollection">
+                        <div id="popup-in-collection-recipes-page">
+                            <p>New Collection</p>
+                            <a id="close-button-of-create-new-collection-form" href="#">&times;</a>
+                            <hr />
+                            <input placeholder="Collection name" name="newCollectionName"></input>
+                            <textarea placeholder="Description" rows="6" cols="50" name="newCollectionDescription"></textarea>
+                            <button type="submit" form="create-new-collection-form-in-collection-recipes-page">Create</button>
                         </div>
-                        <p>Create a collection</p>
-                    </button>
+                    </form>
+
                     <div className="collection-in-collection-recipes-page">
                         <button className="save-collection-button-in-collection-recipes-page"><i><FaHeart /></i></button>
                         <a href="/collection-details">

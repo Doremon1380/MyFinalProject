@@ -502,14 +502,15 @@
     /* For all bottom buttons */
     #create-recipe-bottom-buttons {
         display: flex;
-        width: 92vw;
+        width: fit-content;
+        margin: auto;
         margin-top: -25px;
         margin-bottom: 10px;
     }
 
     #create-recipe-save-button {
         height: 45px;
-        width: 50vw;
+        width: 349px;
         margin: 25px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -524,7 +525,7 @@
 
     #create-recipe-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 349px;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -682,14 +683,15 @@
     /* For all bottom buttons */
     #create-recipe-bottom-buttons {
         display: flex;
-        width: 66.85vw;
+        width: fit-content;
+        margin: auto;
         margin-top: -25px;
         margin-bottom: 10px;
     }
 
     #create-recipe-save-button {
         height: 45px;
-        width: 50vw;
+        width: 317px;
         margin: 25px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -704,7 +706,7 @@
 
     #create-recipe-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 317px;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -862,14 +864,15 @@
     /* For all bottom buttons */
     #create-recipe-bottom-buttons {
         display: flex;
-        width: 57.3vw;
+        width: fit-content;
+        margin: auto;
         margin-top: -25px;
         margin-bottom: 10px;
     }
 
     #create-recipe-save-button {
         height: 45px;
-        width: 50vw;
+        width: 342px;
         margin: 25px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -884,7 +887,7 @@
 
     #create-recipe-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 342px;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -1041,14 +1044,15 @@
     /* For all bottom buttons */
     #create-recipe-bottom-buttons {
         display: flex;
-        width: 57.45vw;
+        width: fit-content;
+        margin: auto;
         margin-top: -25px;
         margin-bottom: 10px;
     }
 
     #create-recipe-save-button {
         height: 45px;
-        width: 50vw;
+        width: 350px;
         margin: 25px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -1063,7 +1067,7 @@
 
     #create-recipe-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 350px;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -1220,14 +1224,15 @@
     /* For all bottom buttons */
     #create-recipe-bottom-buttons {
         display: flex;
-        width: 62.1vw;
+        width: fit-content;
+        margin: auto;
         margin-top: -25px;
         margin-bottom: 10px;
     }
 
     #create-recipe-save-button {
         height: 45px;
-        width: 50vw;
+        width: 350px;
         margin: 25px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -1242,7 +1247,7 @@
 
     #create-recipe-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 350px;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -1399,14 +1404,15 @@
     /* For all bottom buttons */
     #create-recipe-bottom-buttons {
         display: flex;
-        width: 63.2vw;
+        width: fit-content;
+        margin: auto;
         margin-top: -25px;
         margin-bottom: 10px;
     }
 
     #create-recipe-save-button {
         height: 45px;
-        width: 50vw;
+        width: 350px;
         margin: 25px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -1421,7 +1427,7 @@
 
     #create-recipe-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 350px;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;

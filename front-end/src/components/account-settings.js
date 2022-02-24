@@ -51,7 +51,7 @@ function AccountSettings() {
                     </a>
                 </div>
                 <div>
-                    <form id="edit-account-features">
+                    <form id="edit-account-features" action="" name="accountSettings">
                         <div>
                             <h1>Account Settings</h1>
                             <label>Email Address</label><br />
@@ -67,7 +67,7 @@ function AccountSettings() {
                         </div>
                     </form>
                     <div id="edit-account-bottom-buttons">
-                        <button id="edit-account-save-button">Save</button>
+                        <button id="edit-account-save-button" type="submit" form="edit-account-features">Save</button>
                         <a href="/about-me"><button id="edit-account-cancel-button">Cancel</button></a>
                     </div>
                 </div>

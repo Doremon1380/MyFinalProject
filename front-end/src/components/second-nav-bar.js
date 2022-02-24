@@ -20,9 +20,9 @@ function SecondNavBar() {
             <div id="nav-bar-container2">
                 <a href="/foodshare.com"><img className="logo2" src={MyLogo} alt="Logo" /></a>
                 <div className="search-bar2">
-                    <form className="search-form2"> 
+                    <form className="search-form2" action="" name="searchRecipe" id="search-bar-of-second-nav-bar"> 
                         <input name="search" className="search-input2" type="search" placeholder="Find a recipe" aria-label="Search" />
-                        <button className="search-button2" type="submit"><i className="bi bi-search search"></i></button>
+                        <button className="search-button2" type="submit" form="search-bar-of-second-nav-bar"><i className="bi bi-search search"></i></button>
                     </form>
                 </div>
                 <div className="features-set">

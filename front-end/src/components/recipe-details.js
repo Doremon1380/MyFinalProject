@@ -92,19 +92,19 @@ function RecipeDetails() {
                 </div>
                 <div id="ingredients-section-in-recipe-details-page">
                     <p>Ingredients</p>
-                    <div id="ingredients-in-recipe-details-page">
-                        <input className="ingredient-in-recipe-details-page" id="ingredient-1" type="checkbox" name="ingredients" value="ingredient-1"></input>
+                    <form id="ingredients-in-recipe-details-page" action="" name="ingredientsOfRecipe">
+                        <input className="ingredient-in-recipe-details-page" id="ingredient-1" type="checkbox" name="ingredients" value="ingredient-1" form="ingredientsOfRecipe"></input>
                         <label className="ingredient-label-in-recipe-details-page" for="ingredient-1">Ingredient 1</label>
-                        <input className="ingredient-in-recipe-details-page" id="ingredient-2" type="checkbox" name="ingredients" value="ingredient-2"></input>
+                        <input className="ingredient-in-recipe-details-page" id="ingredient-2" type="checkbox" name="ingredients" value="ingredient-2" form="ingredientsOfRecipe"></input>
                         <label className="ingredient-label-in-recipe-details-page" for="ingredient-2">Ingredient 2</label>
-                        <input className="ingredient-in-recipe-details-page" id="ingredient-3" type="checkbox" name="ingredients" value="ingredient-3"></input>
+                        <input className="ingredient-in-recipe-details-page" id="ingredient-3" type="checkbox" name="ingredients" value="ingredient-3" form="ingredientsOfRecipe"></input>
                         <label className="ingredient-label-in-recipe-details-page" for="ingredient-3">Ingredient 3</label>
-                        <input className="ingredient-in-recipe-details-page" id="ingredient-4" type="checkbox" name="ingredients" value="ingredient-4"></input>
+                        <input className="ingredient-in-recipe-details-page" id="ingredient-4" type="checkbox" name="ingredients" value="ingredient-4" form="ingredientsOfRecipe"></input>
                         <label className="ingredient-label-in-recipe-details-page" for="ingredient-4">Ingredient 4</label>
-                        <input className="ingredient-in-recipe-details-page" id="ingredient-5" type="checkbox" name="ingredients" value="ingredient-5"></input>
+                        <input className="ingredient-in-recipe-details-page" id="ingredient-5" type="checkbox" name="ingredients" value="ingredient-5" form="ingredientsOfRecipe"></input>
                         <label className="ingredient-label-in-recipe-details-page" for="ingredient-5">Ingredient 5</label>
-                    </div>
-                    <button>
+                    </form>
+                    <button type="submit" form="ingredientsOfRecipe">
                         ADD ALL INGREDIENTS TO SHOPPING LIST
                         <i className="bi bi-cart-check-fill"></i>
                     </button>

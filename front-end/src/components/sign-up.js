@@ -47,7 +47,7 @@ class SignUp extends React.Component {
                         <h1>Sign up with email</h1>
                         <p id="for-member">Already a member?<a href="/signin"> Sign in</a>.</p>
                     </div>
-                    <form>
+                    <form id="sign-up-form-in-sign-up-page" name="signUpForm" action="">
                         <div id="flex-box-2-in-sign-up-page">
                             <input name="accountName" placeholder="Account name" type="text" id="account-name-input"></input>
                             <input name="email" placeholder="Email" type="email" id="email-input"></input>
@@ -57,7 +57,7 @@ class SignUp extends React.Component {
                         <p id="password-rule">Please provide a password with at least 6 characters. Your password must include at least 1 uppercase letter or special character.</p>
                         <input name="agree" value="agreeToTheTermsOfServiceAndPrivacyPolicy" id="agree" type="checkbox" />
                         <label for="agree" id="agree-label"><p>I agree to the <a href="#" id="terms-of-service">Terms of Service</a> and <a href="#" id="privacy-policy">Privacy Policy</a>.</p></label>
-                        <button type="submit" id="create-account-button">Create my account</button>
+                        <button type="submit" id="create-account-button" form="sign-up-form-in-sign-up-page">Create my account</button>
                     </form>
                 </div>
             </>
