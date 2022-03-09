@@ -1,0 +1,9 @@
+{
+  "name": "express-server_c0.0.1",
+  "version": "0.0.0",
+  "description": "ExpressServer_c0.0.1",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  }
+}
