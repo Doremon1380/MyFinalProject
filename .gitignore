@@ -21,4 +21,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-/node_modules
+/.vs/Server_c0.0.1/v17/.suo
