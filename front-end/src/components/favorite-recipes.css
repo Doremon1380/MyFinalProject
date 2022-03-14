@@ -72,7 +72,6 @@ input:-webkit-autofill:active  {
         height: fit-content;
         border: 1px solid #ddd;
         transition: 200ms ease-in-out;
-        padding-left: 10px;
     }
 
     #search-bar-in-favorite-recipes-page form:hover {
@@ -85,6 +84,7 @@ input:-webkit-autofill:active  {
         height: 50px;
         width: 85%;
         outline: none;
+        padding-left: 10px;
     }
 
     #search-bar-in-favorite-recipes-page form input + button {
@@ -135,7 +135,7 @@ input:-webkit-autofill:active  {
     }
 
     /* For the add to collections button */
-    .save-recipe-button-in-favorite-recipes-page + a + button {
+    .save-recipe-button-in-favorite-recipes-page + a + a button {
         position: absolute;
         background-color: black;
         opacity: 0.8;
@@ -146,29 +146,29 @@ input:-webkit-autofill:active  {
         border: none;
     }
 
-    .save-recipe-button-in-favorite-recipes-page + a + button i {
+    .save-recipe-button-in-favorite-recipes-page + a + a button i {
         font-size: 20px;
         color: orangered;
         margin: auto;
         margin-right: -60px;
     }
 
-    .save-recipe-button-in-favorite-recipes-page + a + button p {
+    .save-recipe-button-in-favorite-recipes-page + a + a button p {
         color: white;
         font-size: 15px;
         margin: auto;
     }
 
-    .save-recipe-button-in-favorite-recipes-page + a + button p span {
+    .save-recipe-button-in-favorite-recipes-page + a + a button p span {
         color: orangered;
     }
 
-    .save-recipe-button-in-favorite-recipes-page + a + button + a {
+    .save-recipe-button-in-favorite-recipes-page + a + a + a {
         text-decoration: none;
         color: black;
     }
 
-    .save-recipe-button-in-favorite-recipes-page + a + button + a:hover {
+    .save-recipe-button-in-favorite-recipes-page + a + a + a:hover {
         color: orange;
     }
 
@@ -220,6 +220,169 @@ input:-webkit-autofill:active  {
         text-decoration-color: orangered;
         color: black;
         font-weight: bold;
+    }
+
+    /* For the popup */
+    #add-favorite-recipes-to-collection-form-in-favorite-recipes-page {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    #add-favorite-recipes-to-collection-form-in-favorite-recipes-page:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #popup-in-favorite-recipes-page {
+        margin: 200px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 450px;
+        position: relative;
+    }
+
+    /* For the pop up title and close button */
+    #title-and-close-button-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #title-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page {
+        font-size: 23px;
+    }
+
+    #close-button-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page {
+        margin-top: -5px;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+
+    #close-button-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page:hover {
+        color: orange;
+    }
+
+    /* For the break line in pop up */
+    #title-and-close-button-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page + hr {
+        margin-top: 0px;
+    }
+
+    /* For the list of created collection */
+    #list-of-created-collection-and-recipe-may-be-added-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page {
+        display: flex;
+        width: 100%;
+    }
+    
+    #list-of-created-collection-and-recipe-may-be-added-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page + div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #list-of-created-collection-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page {
+        width: 245px;
+        border: 1px solid rgb(230, 230, 230);
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        overflow: auto;
+    }
+
+    #list-of-created-collection-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page div {
+        margin: 5px 0px 5px 0px;
+    } 
+
+    /* For the checkbox */
+    .collection-checkbox-in-favorite-recipes-page {
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .collection-checkbox-label-in-favorite-recipes-page {
+        cursor: pointer;
+        display: flex;
+    }
+
+    .collection-checkbox-label-in-favorite-recipes-page::before {
+        content: "";
+        width: 1.5em; 
+        height: 1.5em; 
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 0.5em; 
+    }
+
+    .collection-checkbox-in-favorite-recipes-page:checked + .collection-checkbox-label-in-favorite-recipes-page::before {
+        content: "\002714";
+        background-color: orange;
+    }
+
+    /* For the create new collection bar */
+    #create-new-collection-bar-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page {
+        margin: 15px 0px 30px 0px;  
+        display: flex;
+        width: 245px;
+        height: fit-content;
+        border: 1px solid rgb(230, 230, 230);
+    }
+
+    #create-new-collection-bar-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page input {
+        border: none;
+        height: 60px;
+        width: 75%;
+        outline: none;
+        padding-left: 10px;
+    }
+
+    #create-new-collection-bar-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page input + button {
+        width: 25%;
+        height: 60px;
+        background-color: rgb(179, 179, 179);
+        border: none;
+    }
+
+    #create-new-collection-bar-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page input + button i {
+        font-size: 30px;
+        color: white;
+    }
+
+    /* For the recipe may be added */
+    #recipe-may-be-added-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    #recipe-may-be-added-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page img {
+        width: 150px;
+        height: 150px;
+        background-color: rgb(228, 228, 228);
+    }
+
+    #recipe-may-be-added-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page p {
+        font-size: 16px; 
+        width: 150px;
+    }
+
+    /* For the all done button */
+    #list-of-created-collection-and-recipe-may-be-added-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page + button {
+        width: 100%;
+        border: none;
+        outline: none;
+        color: white;
+        height: 50px;
+        background-color: orange;
     }
 
     /* For load more recipes button */
@@ -373,7 +536,7 @@ input:-webkit-autofill:active  {
     }
 
     /* For the add to collections button */
-    .save-recipe-button-in-favorite-recipes-page + a + button {
+    .save-recipe-button-in-favorite-recipes-page + a + a button {
         position: absolute;
         background-color: black;
         opacity: 0.8;
@@ -384,29 +547,29 @@ input:-webkit-autofill:active  {
         border: none;
     }
 
-    .save-recipe-button-in-favorite-recipes-page + a + button i {
+    .save-recipe-button-in-favorite-recipes-page + a + a button i {
         font-size: 20px;
         color: orangered;
         margin: auto;
         margin-right: -60px;
     }
 
-    .save-recipe-button-in-favorite-recipes-page + a + button p {
+    .save-recipe-button-in-favorite-recipes-page + a + a button p {
         color: white;
         font-size: 15px;
         margin: auto;
     }
 
-    .save-recipe-button-in-favorite-recipes-page + a + button p span {
+    .save-recipe-button-in-favorite-recipes-page + a + a button p span {
         color: orangered;
     }
-    
-    .save-recipe-button-in-favorite-recipes-page + a + button + a {
+
+    .save-recipe-button-in-favorite-recipes-page + a + a + a {
         text-decoration: none;
         color: black;
     }
 
-    .save-recipe-button-in-favorite-recipes-page + a + button + a:hover {
+    .save-recipe-button-in-favorite-recipes-page + a + a + a:hover {
         color: orange;
     }
     
@@ -458,6 +621,169 @@ input:-webkit-autofill:active  {
         text-decoration-color: orangered;
         color: black;
         font-weight: bold;
+    }
+
+    /* For the popup */
+    #add-favorite-recipes-to-collection-form-in-favorite-recipes-page {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    #add-favorite-recipes-to-collection-form-in-favorite-recipes-page:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #popup-in-favorite-recipes-page {
+        margin: 200px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 450px;
+        position: relative;
+    }
+
+    /* For the pop up title and close button */
+    #title-and-close-button-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #title-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page {
+        font-size: 23px;
+    }
+
+    #close-button-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page {
+        margin-top: -5px;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+
+    #close-button-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page:hover {
+        color: orange;
+    }
+
+    /* For the break line in pop up */
+    #title-and-close-button-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page + hr {
+        margin-top: 0px;
+    }
+
+    /* For the list of created collection */
+    #list-of-created-collection-and-recipe-may-be-added-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page {
+        display: flex;
+        width: 100%;
+    }
+    
+    #list-of-created-collection-and-recipe-may-be-added-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page + div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #list-of-created-collection-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page {
+        width: 245px;
+        border: 1px solid rgb(230, 230, 230);
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        overflow: auto;
+    }
+
+    #list-of-created-collection-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page div {
+        margin: 5px 0px 5px 0px;
+    } 
+
+    /* For the checkbox */
+    .collection-checkbox-in-favorite-recipes-page {
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .collection-checkbox-label-in-favorite-recipes-page {
+        cursor: pointer;
+        display: flex;
+    }
+
+    .collection-checkbox-label-in-favorite-recipes-page::before {
+        content: "";
+        width: 1.5em; 
+        height: 1.5em; 
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 0.5em; 
+    }
+
+    .collection-checkbox-in-favorite-recipes-page:checked + .collection-checkbox-label-in-favorite-recipes-page::before {
+        content: "\002714";
+        background-color: orange;
+    }
+
+    /* For the create new collection bar */
+    #create-new-collection-bar-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page {
+        margin: 15px 0px 30px 0px;  
+        display: flex;
+        width: 245px;
+        height: fit-content;
+        border: 1px solid rgb(230, 230, 230);
+    }
+
+    #create-new-collection-bar-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page input {
+        border: none;
+        height: 60px;
+        width: 75%;
+        outline: none;
+        padding-left: 10px;
+    }
+
+    #create-new-collection-bar-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page input + button {
+        width: 25%;
+        height: 60px;
+        background-color: rgb(179, 179, 179);
+        border: none;
+    }
+
+    #create-new-collection-bar-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page input + button i {
+        font-size: 30px;
+        color: white;
+    }
+
+    /* For the recipe may be added */
+    #recipe-may-be-added-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    #recipe-may-be-added-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page img {
+        width: 150px;
+        height: 150px;
+        background-color: rgb(228, 228, 228);
+    }
+
+    #recipe-may-be-added-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page p {
+        font-size: 16px; 
+        width: 150px;
+    }
+
+    /* For the all done button */
+    #list-of-created-collection-and-recipe-may-be-added-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page + button {
+        width: 100%;
+        border: none;
+        outline: none;
+        color: white;
+        height: 50px;
+        background-color: orange;
     }
 
     /* For load more recipes button */

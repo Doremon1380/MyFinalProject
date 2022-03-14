@@ -142,14 +142,16 @@
     /* For all bottom buttons */
     #create-recipe-bottom-buttons {
         display: flex;
-        width: 89vw;
+        width: fit-content;
+        margin: auto;
         margin-top: -25px;
         margin-bottom: 10px;
+
     }
 
     #create-recipe-save-button {
         height: 45px;
-        width: 50vw;
+        width: 216px;
         margin: 25px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -164,7 +166,7 @@
 
     #create-recipe-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 216px;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -322,14 +324,15 @@
     /* For all bottom buttons */
     #create-recipe-bottom-buttons {
         display: flex;
-        width: 90vw;
+        width: fit-content;
+        margin: auto;
         margin-top: -25px;
         margin-bottom: 10px;
     }
 
     #create-recipe-save-button {
         height: 45px;
-        width: 50vw;
+        width: 216px;
         margin: 25px 10px 0px 0px;
         border: none;
         background-color: orange;
@@ -344,7 +347,7 @@
 
     #create-recipe-cancel-button {
         height: 45px;
-        width: 50vw;
+        width: 216px;
         margin: 25px 0px 0px 0px;
         border: none;
         background-color: orange;
@@ -1439,6 +1442,5 @@
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
-
 }
  

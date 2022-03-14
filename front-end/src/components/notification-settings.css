@@ -981,7 +981,7 @@
 }
 
 @media only screen and (min-width: 1712px) {
-        /* For the container */
+    /* For the container */
     #notification-settings-container {
         width: 65%;
         margin: auto; 

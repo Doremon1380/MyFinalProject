@@ -7,6 +7,9 @@ import { FaHeart } from "react-icons/fa";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+
 const TITLE = 'Collection Details - FoodShare.com';
 
 function CollectionDetails() {
@@ -29,8 +32,10 @@ function CollectionDetails() {
                         </div>
                     </div>
                     <div id="share-button-and-option-button-in-top-section-of-collection-details-page">
-                        <i class="bi bi-share-fill" title="Share"></i>
-                        <p>Share</p>
+                        <a href="#share-recipe-in-collection-details-page">
+                            <i class="bi bi-share-fill" title="Share"></i>
+                            <p>Share</p>
+                        </a>
                         <DropdownButton id="option-button-in-top-section-of-collection-details-page" variant="" title={<i className="bi bi-gear-fill" title="Option"></i>}>
                             <Dropdown.Item className="drop-down-option-of-option-button-in-collection-details-page">Edit collection</Dropdown.Item>
                             <Dropdown.Divider />
@@ -303,6 +308,24 @@ function CollectionDetails() {
                     <hr></hr>
                 </div>
                 <button id="load-more-recipes-button-in-collection-details-page">SHOW MORE</button>
+                <div id="share-recipe-in-collection-details-page">
+                    <div id="share-recipe-popup-incollection-details-page">
+                        <div id="title-and-close-button-of-share-recipe-popup-in-collection-details-page">
+                            <p id="title-of-share-recipe-popup-in-collection-details-page">Share</p>
+                            <a id="close-button-of-share-recipe-popup-in-collection-details-page" href="#">&times;</a>
+                        </div>
+                        <div id="social-networks-to-share-recipe-of-share-recipe-popup-in-collection-details-page">
+                            <div>
+                                <button id="facebook-button-of-share-recipe-popup-in-collection-details-page">{<FaFacebookF />}</button>
+                                <p>FACEBOOK</p>
+                            </div>
+                            <div>
+                                <button id="twitter-button-of-share-recipe-popup-in-collection-details-page">{<FaTwitter />}</button>
+                                <p>TWITTER</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     );

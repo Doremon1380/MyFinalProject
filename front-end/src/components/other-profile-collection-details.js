@@ -3,7 +3,10 @@ import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./other-profile-collection-details.css";
 import { Helmet } from 'react-helmet'
+
 import { FaHeart } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 const TITLE = 'Collection Details - FoodShare.com';
 
@@ -34,10 +37,12 @@ function OtherProfileCollectionDetails() {
                             <p>(Num) recipes</p>
                         </div>
                     </div>
-                    <div id="share-button-in-other-profile-collection-details-page">
-                        <i class="bi bi-share-fill" title="Share"></i>
-                        <p>Share</p>
-                    </div>
+                    <a href="#share-recipe-in-other-profile-collection-details-page">
+                        <div id="share-button-in-other-profile-collection-details-page">
+                            <i class="bi bi-share-fill" title="Share"></i>
+                            <p>Share</p>
+                        </div>
+                    </a>
                 </div>
                 <div id="recipes-in-other-profile-collection-details-page">
                     <div className="recipe-in-other-profile-collection-details-page">
@@ -283,7 +288,7 @@ function OtherProfileCollectionDetails() {
                                 </a>
                                 <div className="recipe-ratings-and-favorites-in-other-profile-collection-details-page">
                                     <div className="recipe-ratings-in-other-profile-collection-details-page">
-                                        <i class="bi bi-star"></i>      
+                                        <i class="bi bi-star"></i>
                                         <i class="bi bi-star"></i>
                                         <i class="bi bi-star"></i>
                                         <i class="bi bi-star"></i>
@@ -302,7 +307,25 @@ function OtherProfileCollectionDetails() {
                     </div>
                     <hr></hr>
                 </div>
-                <button id="load-more-recipes-button-in-collection-details-page">SHOW MORE</button>
+                <button id="load-more-recipes-button-in-other-profile-collection-details-page">SHOW MORE</button>
+                <div id="share-recipe-in-other-profile-collection-details-page">
+                    <div id="share-recipe-popup-in-other-profile-collection-details-page">
+                        <div id="title-and-close-button-of-share-recipe-popup-in-other-profile-collection-details-page">
+                            <p id="title-of-share-recipe-popup-in-other-profile-collection-details-page">Share</p>
+                            <a id="close-button-of-share-recipe-popup-in-other-profile-collection-details-page" href="#">&times;</a>
+                        </div>
+                        <div id="social-networks-to-share-recipe-of-share-recipe-popup-in-other-profile-collection-details-page">
+                            <div>
+                                <button id="facebook-button-of-share-recipe-popup-in-other-profile-collection-details-page">{<FaFacebookF />}</button>
+                                <p>FACEBOOK</p>
+                            </div>
+                            <div>
+                                <button id="twitter-button-of-share-recipe-popup-in-other-profile-collection-details-page">{<FaTwitter />}</button>
+                                <p>TWITTER</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     );

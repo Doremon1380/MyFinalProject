@@ -11,6 +11,9 @@ import { FaUtensils } from "react-icons/fa";
 import { FaMortarPestle } from "react-icons/fa";
 import { FaThumbsUp } from "react-icons/fa";
 import { FaQuoteLeft } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaPinterestP } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 const TITLE = '"Recipe name" - FoodShare.com';
 
@@ -43,7 +46,7 @@ function RecipeDetails() {
                     <i className="bi bi-star"></i>
                     <p id="number-of-ratings-in-recipe-details-page">(number) Ratings</p>
                     <p id="number-of-reviews-in-recipe-details-page"><a href="#reviews-section-in-recipe-details-page">(number) Reviews</a></p>
-                    <p id="number-of-photos-in-recipe-details-page"><a href="#">(number) Photos</a></p>
+                    <p id="number-of-photos-in-recipe-details-page"><a href="#recipe-photos-in-favorite-recipes-page">(number) Photos</a></p>
                 </div>
                 <i><FaQuoteLeft /></i>
                 <p id="introduction">Introduction</p>
@@ -56,25 +59,28 @@ function RecipeDetails() {
                         <i class="bi bi-suit-heart-fill"></i>
                         Save
                     </button>
-                    <button>
-                        <i className="bi bi-three-dots"></i>
-                        Share
-                    </button>
+                    <a href="#share-recipe-in-favorite-recipes-page">
+                        <button>
+                            <i className="bi bi-three-dots"></i>
+                            Share
+                        </button>
+                    </a>
                 </div>
                 <div>
                     <div id="current-food-images-in-recipe-details-page">
-                        <img id="current-food-image-of-author-in-recipe-details-page" alt="food image"></img>
+                        <a href="#recipe-photos-in-favorite-recipes-page"><img id="current-food-image-of-author-in-recipe-details-page" alt="food image"></img></a>
                         <i class="bi bi-zoom-in"></i>
                         <div id="add-new-image-button-and-current-food-images-of-makers-in-recipe-details-page">
-                            <button id="add-new-image-button-in-recipe-details-page">
-                                <div>
-                                    <i id="camera-icon-of-add-new-image-button-in-recipe-details-page" className="bi bi-camera-fill"></i>
-                                    <i id="plus-icon-of-add-new-image-button-in-recipe-details-page" className="bi bi-plus"></i>
-                                </div>
-                            </button>
-                            <img className="current-food-image-of-maker-in-recipe-details-page" alt="image 1"></img>
-                            <img className="current-food-image-of-maker-in-recipe-details-page" alt="image 2"></img>
-                            <img className="current-food-image-of-maker-in-recipe-details-page" alt="image 3"></img>
+                            <a href="#recipe-review-in-recipe-details-page">
+                                <button id="add-new-image-button-in-recipe-details-page">
+                                    <div>
+                                        <i id="camera-icon-of-add-new-image-button-in-recipe-details-page" className="bi bi-camera-fill"></i>
+                                    </div>
+                                </button>
+                            </a>
+                            <a href="#recipe-photos-in-favorite-recipes-page"><img className="current-food-image-of-maker-in-recipe-details-page" alt="image 1"></img></a>
+                            <a href="#recipe-photos-in-favorite-recipes-page"><img className="current-food-image-of-maker-in-recipe-details-page" alt="image 2"></img></a>
+                            <a href="#recipe-photos-in-favorite-recipes-page"><img className="current-food-image-of-maker-in-recipe-details-page" alt="image 3"></img></a>
                         </div>
                     </div>
                     <div id="information-related-to-current-food-in-recipe-details-page">
@@ -234,7 +240,7 @@ function RecipeDetails() {
                         <div id="reviews-section-background-2-in-recipe-details-page">
                             <div id="add-rating-and-review-button-in-recipe-details-page">
                                 <i className="bi bi-person-circle"></i>
-                                <button>Add Rating & Review</button>
+                                <a href="#recipe-review-in-recipe-details-page"><button>Add Rating & Review</button></a>
                             </div>
                             <hr></hr>
                             <div id="recipe-ratings-and-most-helpful-reviews-in-recipe-details-page">
@@ -539,6 +545,91 @@ function RecipeDetails() {
                         </div>
                     </div>
                     <a href="/all-reviews"><button id="more-reviews-button-in-recipe-details-page">More Reviews</button></a>
+                    <div id="share-recipe-in-favorite-recipes-page">
+                        <div id="share-recipe-popup-in-favorite-recipes-page">
+                            <div id="title-and-close-button-of-share-recipe-popup-in-favorite-recipes-page">
+                                <p id="title-of-share-recipe-popup-in-favorite-recipes-page">Share</p>
+                                <a id="close-button-of-share-recipe-popup-in-recipe-details-page" href="#">&times;</a>
+                            </div>
+                            <div id="social-networks-to-share-recipe-of-share-recipe-popup-in-recipe-details-page">
+                                <div>
+                                    <button id="facebook-button-of-share-recipe-popup-in-recipe-details-page">{<FaFacebookF />}</button>
+                                    <p>FACEBOOK</p>
+                                </div>
+                                <div>
+                                    <button id="pinterest-button-of-share-recipe-popup-in-recipe-details-page">{<FaPinterestP />}</button>
+                                    <p>PINTEREST</p>
+                                </div>
+                                <div>
+                                    <button id="twitter-button-of-share-recipe-popup-in-recipe-details-page">{<FaTwitter />}</button>
+                                    <p>TWITTER</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="recipe-photos-in-favorite-recipes-page">
+                        <div id="title-and-close-button-of-recipe-photos-popup-in-favorite-recipes-page">
+                            <p id="title-of-recipe-photos-popup-in-favorite-recipes-page">Recipe Photos</p>
+                            <a id="close-button-of-recipe-photos-popup-in-favorite-recipes-page" href="#">&times;</a>
+                        </div>
+                        <div id="recipe-photos-popup-in-favorite-recipes-page">
+                            <div id="displayed-recipe-photos-section-of-recipe-photos-popup-in-favorite-recipes-page">
+                                <p id="title-of-displayed-recipe-photos-section-of-recipe-photos-popup-in-favorite-recipes-page">Photos of (Recipe name)</p>
+                                <div id="back-and-next-button-of-recipe-photos-popup-in-favorite-recipes-page">
+                                    <button id="back-button-of-recipe-photos-popup-in-favorite-recipes-page"><i class="bi bi-chevron-left"></i></button>
+                                    <button id="next-button-of-recipe-photos-popup-in-favorite-recipes-page"><i class="bi bi-chevron-right"></i></button>
+                                </div>
+                                <img id="displayed-recipe-photos-of-recipe-photos-popup-in-favorite-recipes-page"></img>
+                                <div id="number-of-recipe-photos-and-recipe-name-of-recipe-photos-popup-in-favorite-recipes-page">
+                                    <p id="number-of-recipe-photos-of-recipe-photos-popup-in-favorite-recipes-page">(number) of (sum)</p>
+                                    <p id="recipe-name-of-recipe-photos-popup-in-favorite-recipes-page">(Recipe name)</p>
+                                </div>
+                                <div id="user-account-of-the-author-who-made-the-recipe-of-recipe-photos-popup-in-favorite-recipes-page">
+                                    <img id="author-avatar-image-of-recipe-photos-popup-in-favorite-recipes-page" alt="avatar"></img>
+                                    <p id="author-account-of-recipe-photos-popup-in-favorite-recipes-page">User name</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="recipe-review-in-recipe-details-page" action="">
+                        <div id="recipe-review-popup-in-recipe-details-page">
+                            <div id="title-and-close-button-of-recipe-review-popup-in-recipe-details-page">
+                                <div>
+                                    <i class="bi bi-chat-left-text-fill"></i>
+                                    <p id="title-of-recipe-review-popup-in-recipe-details-page">Review this recipe</p>
+                                </div>
+                                <a id="close-button-of-recipe-review-popup-in-recipe-details-page" href="#">&times;</a>
+                            </div>
+                            <div id="recipe-review-section-of-recipe-review-popup-in-recipe-details-page">
+                                <p id="name-of-recipe-of-recipe-review-popup-in-recipe-details-page">(Recipe name)</p>
+                                <div id="recipe-review-and-add-photo-button-of-recipe-review-popup-in-recipe-details-page">
+                                    <div id="recipe-rating-and-review-of-recipe-review-popup-in-recipe-details-page">
+                                        <div id="recipe-rating-of-recipe-review-popup-in-recipe-details-page">
+                                            <div>
+                                                <i className="bi bi-star"></i>
+                                                <i className="bi bi-star"></i>
+                                                <i className="bi bi-star"></i>
+                                                <i className="bi bi-star"></i>
+                                                <i className="bi bi-star"></i>
+                                            </div>
+                                            <p>Your rating</p>
+                                        </div>
+                                        <textarea id="recipe-review-of-recipe-review-popup-in-recipe-details-page" placeholder="What did you think about this recipe? Did you make any changes when you made it?" name="review" rows="9" cols="40"></textarea>
+                                    </div>
+                                    <button id="add-photo-button-of-recipe-review-popup-in-recipe-details-page">
+                                        <div>
+                                            <i id="camera-icon-of-add-photo-button-of-recipe-review-popup-in-recipe-details-page" className="bi bi-camera camera-icon"></i>
+                                        </div>
+                                        <p>Add Photo</p>
+                                    </button>
+                                </div>
+                                <div>
+                                    <a href="#"><button id="cancle-recipe-review-button-of-recipe-review-popup-in-recipe-details-page">Cancel</button></a>
+                                    <button type="submit" form="recipe-review-in-favorite-recipes-page" id="submit-recipe-review-button-of-recipe-review-popup-in-recipe-details-page">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </>

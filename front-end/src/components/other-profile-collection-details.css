@@ -92,6 +92,10 @@
     }
 
     /* For the share button */
+    #related-information-of-collection-in-other-profile-collection-details-page + a {
+        text-decoration: none;
+    }
+    
     #share-button-in-other-profile-collection-details-page {
         margin-top: 20px;
         height: 30px;
@@ -201,6 +205,123 @@
 
     .save-recipe-button-in-other-profile-collection-details-page:hover {
         background-color: rgb(0, 0, 0, 0.6);
+    }
+    
+    /* For load more recipes button */
+    #load-more-recipes-button-in-other-profile-collection-details-page {
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    #load-more-recipes-button-in-other-profile-collection-details-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+
+    /* For the share recipe popup */
+    #share-recipe-in-other-profile-collection-details-page {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    #share-recipe-in-other-profile-collection-details-page:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #share-recipe-popup-in-other-profile-collection-details-page {
+        margin: 300px auto;
+        background: #fff;
+        width: 300px;
+        position: relative;
+    }
+
+    /* For the share recipe popup title and close button */
+    #title-and-close-button-of-share-recipe-popup-in-other-profile-collection-details-page {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(209, 63, 33);
+        padding: 15px 15px 0px 15px;
+    }
+
+    #title-of-share-recipe-popup-in-other-profile-collection-details-page {
+        font-size: 23px;
+        font-weight: bold;
+        color: white;
+    }
+
+    #close-button-of-share-recipe-popup-in-other-profile-collection-details-page {
+        margin-top: -5px;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+
+    #close-button-of-share-recipe-popup-in-other-profile-collection-details-page:hover {
+        color: orange;
+    }
+
+    /* For the social network to share recipe */
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-other-profile-collection-details-page {
+        padding: 15px 0px 15px 15px;
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-other-profile-collection-details-page div {
+        display: flex;
+        width: fit-content; 
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-other-profile-collection-details-page div button {
+        border: 2px solid rgb(209, 63, 33);
+        border-radius: 5px;
+        background-color: white;
+        margin: 5px 0px 5px 0px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-other-profile-collection-details-page div button:hover {
+        background-color: rgb(248, 227, 220);
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-other-profile-collection-details-page div p {
+        margin: 18px 0px 0px 10px;
+        font-size: 13px;
+        font-weight: bold;
+        cursor: pointer;
+        height: fit-content;
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-other-profile-collection-details-page div p:hover {
+        text-decoration: underline 2px rgb(209, 63, 33);
+    }
+
+    #facebook-button-of-share-recipe-popup-in-other-profile-collection-details-page {
+        color: rgb(63, 89, 150);
+    }
+
+    #twitter-button-of-share-recipe-popup-in-other-profile-collection-details-page {
+        color: rgb(53, 161, 240);
     }
 }
 
@@ -298,6 +419,10 @@
     }
 
     /* For the share button */
+    #related-information-of-collection-in-other-profile-collection-details-page + a {
+        text-decoration: none;
+    }
+
     #share-button-in-other-profile-collection-details-page {
         margin-top: 20px;
         height: 30px;
@@ -407,6 +532,123 @@
 
     .save-recipe-button-in-other-profile-collection-details-page:hover {
         background-color: rgb(0, 0, 0, 0.6);
+    }
+
+    /* For load more recipes button */
+    #load-more-recipes-button-in-other-profile-collection-details-page {
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    #load-more-recipes-button-in-other-profile-collection-details-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+
+    /* For the share recipe popup */
+    #share-recipe-in-other-profile-collection-details-page {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    #share-recipe-in-other-profile-collection-details-page:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #share-recipe-popup-in-other-profile-collection-details-page {
+        margin: 300px auto;
+        background: #fff;
+        width: 300px;
+        position: relative;
+    }
+
+    /* For the share recipe popup title and close button */
+    #title-and-close-button-of-share-recipe-popup-in-other-profile-collection-details-page {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(209, 63, 33);
+        padding: 15px 15px 0px 15px;
+    }
+
+    #title-of-share-recipe-popup-in-other-profile-collection-details-page {
+        font-size: 23px;
+        font-weight: bold;
+        color: white;
+    }
+
+    #close-button-of-share-recipe-popup-in-other-profile-collection-details-page {
+        margin-top: -5px;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+
+    #close-button-of-share-recipe-popup-in-other-profile-collection-details-page:hover {
+        color: orange;
+    }
+
+    /* For the social network to share recipe */
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-other-profile-collection-details-page {
+        padding: 15px 0px 15px 15px;
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-other-profile-collection-details-page div {
+        display: flex;
+        width: fit-content; 
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-other-profile-collection-details-page div button {
+        border: 2px solid rgb(209, 63, 33);
+        border-radius: 5px;
+        background-color: white;
+        margin: 5px 0px 5px 0px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-other-profile-collection-details-page div button:hover {
+        background-color: rgb(248, 227, 220);
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-other-profile-collection-details-page div p {
+        margin: 18px 0px 0px 10px;
+        font-size: 13px;
+        font-weight: bold;
+        cursor: pointer;
+        height: fit-content;
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-other-profile-collection-details-page div p:hover {
+        text-decoration: underline 2px rgb(209, 63, 33);
+    }
+
+    #facebook-button-of-share-recipe-popup-in-other-profile-collection-details-page {
+        color: rgb(63, 89, 150);
+    }
+
+    #twitter-button-of-share-recipe-popup-in-other-profile-collection-details-page {
+        color: rgb(53, 161, 240);
     }
 }
 

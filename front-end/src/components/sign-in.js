@@ -97,8 +97,6 @@ class SignIn extends React.Component {
               <label for="remember-me" id="remember-me-label">Remember me</label>
               <a href="#" id="forgot-password">Forgot password?</a>
             </div>
-            {/* <button id="sign-in-button" type="submit" form="sign-in-form-in-sign-in-page">Sign in</button> */}
-            {/* <div class="g-signin2" data-onsuccess={this.onSignIn()}></div> */}
           </form>
           <button id="for-new-users-button">You are new?<a href="/signup"><span> Join for free!</span></a></button>
           <p>By signing in, you are agreeing to our <a href="#" id="terms-of-service">Terms of Service</a> and our <a href="#" id="privacy-policy">Privacy Policy</a>.</p>

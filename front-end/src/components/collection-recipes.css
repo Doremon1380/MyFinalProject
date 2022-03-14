@@ -89,6 +89,7 @@
         margin-top: 10px;   
     }
 
+    /* For the popup */
     #create-new-collection-form-in-collection-recipes-page {
         position: fixed;
         top: 0;
@@ -99,6 +100,7 @@
         transition: opacity 500ms;
         visibility: hidden;
         opacity: 0;
+        z-index: 1;
     }
 
     #create-new-collection-form-in-collection-recipes-page:target {
@@ -107,34 +109,68 @@
     }
 
     #popup-in-collection-recipes-page {
-        margin: 70px auto;
+        margin: 200px auto;
         padding: 20px;
         background: #fff;
         border-radius: 5px;
-        width: 94%;
+        width: 400px;
         position: relative;
     }
 
-    #popup-in-collection-recipes-page p {
-        font-size: 18px;
+    #popup-in-collection-recipes-page div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #popup-in-collection-recipes-page div p {
+        font-size: 23px;
     }
 
     #close-button-of-create-new-collection-form {
-        position: absolute;
-        top: 20px;
-        right: 30px;
+        margin-top: -5px;
         font-size: 30px;
         font-weight: bold;
         text-decoration: none;
         color: #333;
     }
 
+    #popup-in-collection-recipes-page div + hr {
+        margin-top: 0px;
+    }
+
     #close-button-of-create-new-collection-form:hover {
         color: orange;
     }
 
+    #popup-in-collection-recipes-page div + hr + input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 45px;
+        padding: 6px 10px 6px 10px;
+        font-size: 15px;
+    }
 
+    #popup-in-collection-recipes-page div + hr + input + textarea {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        padding: 6px 10px 6px 10px;
+        font-size: 15px;
+        height: 200px;
+        margin-top: 5px;
+    }
 
+    #popup-in-collection-recipes-page div + hr + input + textarea + button {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 14px;
+        height: 45px;
+        border: none;
+        background-color: orange;
+        color: white;
+    }
 
     /* For collection in collection recipes page */
     .collection-in-collection-recipes-page {
@@ -350,6 +386,10 @@
     }
 
     /* For add collection button */
+    #collections-in-collection-recipes-page a {
+        text-decoration: none;
+    }
+
     .add-collection-button-in-collection-recipes-page {
         display: block;
         margin: auto;
@@ -378,6 +418,94 @@
     /* For add collection button name */
     .add-icon-in-collection-recipes-page + p {
         margin-top: 10px;   
+    }
+
+    /* For the popup */
+    #create-new-collection-form-in-collection-recipes-page {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    #create-new-collection-form-in-collection-recipes-page:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #popup-in-collection-recipes-page {
+        margin: 200px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 400px;
+        position: relative;
+    }
+
+    /* For the pop up title and close button */
+    #popup-in-collection-recipes-page div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #popup-in-collection-recipes-page div p {
+        font-size: 23px;
+    }
+
+    #close-button-of-create-new-collection-form {
+        margin-top: -5px;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+
+    #close-button-of-create-new-collection-form:hover {
+        color: orange;
+    }
+    
+    /* For the break line in pop up */
+    #popup-in-collection-recipes-page div + hr {
+        margin-top: 0px;
+    }
+
+    /* For the input in pop up */
+    #popup-in-collection-recipes-page div + hr + input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 45px;
+        padding: 6px 10px 6px 10px;
+        font-size: 15px;
+    }
+
+    /* For the textarea in pop up */
+    #popup-in-collection-recipes-page div + hr + input + textarea {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        padding: 6px 10px 6px 10px;
+        font-size: 15px;
+        height: 200px;
+        margin-top: 5px;
+    }
+
+    /* For the button in pop up */
+    #popup-in-collection-recipes-page div + hr + input + textarea + button {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 14px;
+        height: 45px;
+        border: none;
+        background-color: orange;
+        color: white;
     }
 
     /* For collection in collection recipes page */

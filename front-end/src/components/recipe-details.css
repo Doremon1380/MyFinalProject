@@ -160,6 +160,12 @@
         margin-top: -6px; 
     }
 
+    /* For current food images */
+    #current-food-images-in-recipe-details-page a {
+        text-decoration: none;
+        color: black;
+    }
+
     /* For current food image of author */
     #current-food-image-of-author-in-recipe-details-page {
         display: block;
@@ -168,7 +174,7 @@
         background-color: rgb(209, 209, 209);
     }
 
-    #current-food-image-of-author-in-recipe-details-page + i {
+    #current-food-images-in-recipe-details-page a + i {
         position: absolute;
         margin-top: -40px;
         font-size: 25px;
@@ -183,34 +189,31 @@
         margin-top: 5px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: -5px;
     }
 
     #add-new-image-button-in-recipe-details-page {
         height: 60px;
         border: none;
-        background-color: rgb(209, 209, 209);
+        background-color: rgb(209, 209, 209);    
+        width: 100%;  
     }
 
     #add-new-image-button-in-recipe-details-page div {
         border-radius: 50%;
         width: 35px;
         height: 35px;
-        margin: auto;
         background-color: white;
-    }
-
-    #plus-icon-of-add-new-image-button-in-recipe-details-page {
-        position: absolute;
-        margin-left: -16.5px;
-        margin-top: 1px;
+        margin: auto;
     }
 
     #camera-icon-of-add-new-image-button-in-recipe-details-page {
-        margin: 6px 0px 0px -7.5px;
+        margin: 2px 0px 0px -10px;
         position: absolute;
+        font-size: 20px;
     }
 
-    .current-food-image-of-maker-in-recipe-details-page {
+    #add-new-image-button-and-current-food-images-of-makers-in-recipe-details-page a {
         margin-left: 5px;
         background-color: rgb(209, 209, 209);
     }
@@ -961,6 +964,411 @@
         background-color: rgb(253, 222, 211);
         color: orangered;
     }
+
+    /* For the share recipe popup */
+    #share-recipe-in-favorite-recipes-page {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    #share-recipe-in-favorite-recipes-page:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #share-recipe-popup-in-favorite-recipes-page {
+        margin: 300px auto;
+        background: #fff;
+        width: 300px;
+        position: relative;
+    }
+
+    /* For the share recipe popup title and close button */
+    #title-and-close-button-of-share-recipe-popup-in-favorite-recipes-page {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(209, 63, 33);
+        padding: 15px 15px 0px 15px;
+    }
+
+    #title-of-share-recipe-popup-in-favorite-recipes-page {
+        font-size: 23px;
+        font-weight: bold;
+        color: white;
+    }
+
+    #close-button-of-share-recipe-popup-in-recipe-details-page {
+        margin-top: -5px;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+
+    #close-button-of-share-recipe-popup-in-recipe-details-page:hover {
+        color: orange;
+    }
+
+    /* For the social network to share recipe */
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-recipe-details-page {
+        padding: 15px 0px 15px 15px;
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-recipe-details-page div {
+        display: flex;
+        width: fit-content;
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-recipe-details-page div button {
+        border: 2px solid rgb(209, 63, 33);
+        border-radius: 5px;
+        background-color: white;
+        margin: 5px 0px 5px 0px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-recipe-details-page div button:hover {
+        background-color: rgb(248, 227, 220);
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-recipe-details-page div p {
+        margin: 18px 0px 0px 10px;
+        font-size: 13px;
+        font-weight: bold;
+        cursor: pointer;
+        height: fit-content;
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-recipe-details-page div p:hover {
+        text-decoration: underline 2px rgb(209, 63, 33);
+    }
+
+    #facebook-button-of-share-recipe-popup-in-recipe-details-page {
+        color: rgb(63, 89, 150);
+    }
+
+    #pinterest-button-of-share-recipe-popup-in-recipe-details-page {
+        color: rgb(192, 30, 56);
+    }
+
+    #twitter-button-of-share-recipe-popup-in-recipe-details-page {
+        color: rgb(53, 161, 240);
+    }
+
+    /* For the recipe photos popup */
+    #recipe-photos-in-favorite-recipes-page {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    #recipe-photos-in-favorite-recipes-page:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #recipe-photos-popup-in-favorite-recipes-page {
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin-top: -15px;
+    }
+
+    /* For the recipe photos popup title and close button */
+    #title-and-close-button-of-recipe-photos-popup-in-favorite-recipes-page {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(209, 63, 33);
+        padding: 15px 15px 0px 15px;
+    }
+
+    #title-of-recipe-photos-popup-in-favorite-recipes-page {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+    }
+
+    #close-button-of-recipe-photos-popup-in-favorite-recipes-page {
+        margin-top: -9px;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+
+    #close-button-of-recipe-photos-popup-in-favorite-recipes-page:hover {
+        color: orange;
+    }
+
+    /* For the title of displayed recipe photos section */
+    #title-of-displayed-recipe-photos-section-of-recipe-photos-popup-in-favorite-recipes-page {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 15px;
+        padding: 15px 0px 0px 14px;
+    }
+
+    /* For the back and next button of recipe photos popup */
+    #back-and-next-button-of-recipe-photos-popup-in-favorite-recipes-page {
+        width: 100%; 
+        border: 1px solid rgb(242, 242, 242);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #back-and-next-button-of-recipe-photos-popup-in-favorite-recipes-page button {
+        border: none;
+        background-color: white;
+        font-size: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    #back-button-of-recipe-photos-popup-in-favorite-recipes-page {
+        border-right: 1px solid rgb(242, 242, 242) !important;
+    }
+
+    #next-button-of-recipe-photos-popup-in-favorite-recipes-page {
+        border-left: 1px solid rgb(242, 242, 242) !important;
+    }
+
+    /* For the displayed recipe photos of recipe photos popup */
+    #displayed-recipe-photos-of-recipe-photos-popup-in-favorite-recipes-page {
+        width: 100%;
+        height: 450px;
+        background-color: rgb(209, 209, 209);
+    }
+
+    /* For the number of recipe photos and recipe name of recipe photos popup */
+    #number-of-recipe-photos-and-recipe-name-of-recipe-photos-popup-in-favorite-recipes-page {
+        display: flex;
+        background-color: rgb(242, 242, 242);
+    }
+
+    #number-of-recipe-photos-and-recipe-name-of-recipe-photos-popup-in-favorite-recipes-page p {
+        font-size: 14px;
+        margin: 10px 0px 10px 15px;
+    }
+
+    #number-of-recipe-photos-of-recipe-photos-popup-in-favorite-recipes-page {
+        padding-right: 16px;
+        border-right: 1px solid rgb(206, 206, 206);
+    }   
+
+    /* For the user account of the author who made the recipe of recipe photos popup */
+    #user-account-of-the-author-who-made-the-recipe-of-recipe-photos-popup-in-favorite-recipes-page {
+        display: flex;
+        margin: 20px 0px 0px 15px;
+        width: fit-content;
+    }
+
+    #author-avatar-image-of-recipe-photos-popup-in-favorite-recipes-page {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(233, 233, 233);
+        color: black;
+    }
+
+    #author-account-of-recipe-photos-popup-in-favorite-recipes-page {
+        margin: 15px 0px 0px 10px;
+        font-weight: bold;
+    }
+
+    /* For the recipe review popup */
+    #recipe-review-in-recipe-details-page {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    #recipe-review-in-recipe-details-page:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #recipe-review-popup-in-recipe-details-page {
+        margin: 200px auto;
+        background: #fff;
+        width: 450px;
+        position: relative;
+    }
+
+    /* For the recipe review popup title and close button */
+    #title-and-close-button-of-recipe-review-popup-in-recipe-details-page {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(209, 63, 33);
+        padding: 15px 15px 0px 15px;
+    }
+
+    #title-and-close-button-of-recipe-review-popup-in-recipe-details-page div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #title-and-close-button-of-recipe-review-popup-in-recipe-details-page div i {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        margin-top: -7px;
+    }
+
+    #title-of-recipe-review-popup-in-recipe-details-page {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin-left: 10px;
+    }
+
+    #close-button-of-recipe-review-popup-in-recipe-details-page {
+        margin-top: -10px;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+    
+    #close-button-of-recipe-review-popup-in-recipe-details-page:hover {
+        color: orange;
+    }
+
+    /* For the recipe review section of recipe review popup */
+    #recipe-review-section-of-recipe-review-popup-in-recipe-details-page {
+        padding: 15px 15px 0px 15px;
+    }
+
+    /* For the recipe name of recipe review popup */
+    #name-of-recipe-of-recipe-review-popup-in-recipe-details-page {
+        font-size: 30px;
+        font-weight: bold;
+    }   
+
+    /* For the recipe review of recipe review popup */
+    #recipe-review-and-add-photo-button-of-recipe-review-popup-in-recipe-details-page {
+        display: flex;
+    }
+
+    #recipe-rating-and-review-of-recipe-review-popup-in-recipe-details-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #recipe-rating-of-recipe-review-popup-in-recipe-details-page {
+        display: flex;
+    }
+
+    #recipe-rating-of-recipe-review-popup-in-recipe-details-page div {
+        margin-left: -5px;
+        border-right: 1px solid rgb(217, 217, 217);
+        padding-right: 15px;
+    }
+
+    #recipe-rating-of-recipe-review-popup-in-recipe-details-page div i {
+        font-size: 30px;
+        margin-left: 5px;
+    }
+
+    #recipe-rating-of-recipe-review-popup-in-recipe-details-page div + p {
+        margin: 15px 0px 0px 15px;
+        font-size: 13px;
+        font-style: italic;
+    }
+
+    #recipe-review-of-recipe-review-popup-in-recipe-details-page {
+        margin-top: 30px;
+        padding: 15px 15px 0px 15px;
+        width: 300px;
+    }
+
+    /* For the add photo button of recipe review popup */
+    #add-photo-button-of-recipe-review-popup-in-recipe-details-page {
+        margin: 75px 0px 0px 15px;
+        height: 233px;
+        width: 120px;
+        background-color: rgb(242, 242, 242);
+        border: none;
+    }
+
+    #add-photo-button-of-recipe-review-popup-in-recipe-details-page div {
+        border: 2px solid rgb(209, 63, 33);
+        border-radius: 50%;
+        width: 95px;
+        height: 95px;
+        margin: auto;
+        background-color: white;
+        margin-top: 20px;
+    }
+
+    #add-photo-button-of-recipe-review-popup-in-recipe-details-page div + p {
+        margin-top: 20px;
+        font-weight: bold;
+    }   
+
+    #camera-icon-of-add-photo-button-of-recipe-review-popup-in-recipe-details-page {
+        font-size: 50px;
+        position: absolute;
+        margin: 7px 0px 0px -24px;
+    }
+
+    /* For cancle and submit recipe review button of recipe review popup */
+    #recipe-review-and-add-photo-button-of-recipe-review-popup-in-recipe-details-page + div {
+        margin: auto;
+        width: fit-content;
+    }
+
+    #cancle-recipe-review-button-of-recipe-review-popup-in-recipe-details-page {
+        margin: 30px 0px 30px 0px;
+        background-color: white;
+        border: none;
+        font-size: 18px;
+        border-bottom: 2px solid rgb(87, 87, 87);
+    }
+
+    #submit-recipe-review-button-of-recipe-review-popup-in-recipe-details-page {
+        border-radius: 5px;
+        width: 130px;
+        height: 50px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+        font-size: 17px;
+        margin-left: 30px;
+    }
+
+    #submit-recipe-review-button-of-recipe-review-popup-in-recipe-details-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
 }
 
 @media only screen and (min-width: 601px) { 
@@ -1125,6 +1533,12 @@
         margin-top: -6px; 
     }
 
+    /* For current food images */
+    #current-food-images-in-recipe-details-page a {
+        text-decoration: none;
+        color: black;
+    }
+
     /* For current food image of author */
     #current-food-image-of-author-in-recipe-details-page {
         display: block;
@@ -1133,7 +1547,7 @@
         background-color: rgb(209, 209, 209);
     }
 
-    #current-food-image-of-author-in-recipe-details-page + i {
+    #current-food-images-in-recipe-details-page a + i {
         position: absolute;
         margin-top: -40px;
         font-size: 25px;
@@ -1148,34 +1562,31 @@
         margin-top: 5px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: -5px;
     }
 
     #add-new-image-button-in-recipe-details-page {
         height: 60px;
         border: none;
-        background-color: rgb(209, 209, 209);
+        background-color: rgb(209, 209, 209);    
+        width: 100%; 
     }
 
     #add-new-image-button-in-recipe-details-page div {
         border-radius: 50%;
         width: 35px;
         height: 35px;
-        margin: auto;
         background-color: white;
-    }
-
-    #plus-icon-of-add-new-image-button-in-recipe-details-page {
-        position: absolute;
-        margin-left: -16.5px;
-        margin-top: 1px;
+        margin: auto;
     }
 
     #camera-icon-of-add-new-image-button-in-recipe-details-page {
-        margin: 6px 0px 0px -7.5px;
+        margin: 2px 0px 0px -10px;
         position: absolute;
+        font-size: 20px;
     }
 
-    .current-food-image-of-maker-in-recipe-details-page {
+    #add-new-image-button-and-current-food-images-of-makers-in-recipe-details-page a {
         margin-left: 5px;
         background-color: rgb(209, 209, 209);
     }
@@ -1926,6 +2337,413 @@
         background-color: rgb(253, 222, 211);
         color: orangered;
     }
+
+    /* For the share recipe popup */
+    #share-recipe-in-favorite-recipes-page {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    #share-recipe-in-favorite-recipes-page:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #share-recipe-popup-in-favorite-recipes-page {
+        margin: 300px auto;
+        background: #fff;
+        width: 300px;
+        position: relative;
+    }
+
+    /* For the share recipe popup title and close button */
+    #title-and-close-button-of-share-recipe-popup-in-favorite-recipes-page {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(209, 63, 33);
+        padding: 15px 15px 0px 15px;
+    }
+
+    #title-of-share-recipe-popup-in-favorite-recipes-page {
+        font-size: 23px;
+        font-weight: bold;
+        color: white;
+    }
+
+    #close-button-of-share-recipe-popup-in-recipe-details-page {
+        margin-top: -5px;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+
+    #close-button-of-share-recipe-popup-in-recipe-details-page:hover {
+        color: orange;
+    }
+    
+    /* For the social network to share recipe */
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-recipe-details-page {
+        padding: 15px 0px 15px 15px;
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-recipe-details-page div {
+        display: flex;
+        width: fit-content;
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-recipe-details-page div button {
+        border: 2px solid rgb(209, 63, 33);
+        border-radius: 5px;
+        background-color: white;
+        margin: 5px 0px 5px 0px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-recipe-details-page div button:hover {
+        background-color: rgb(248, 227, 220);
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-recipe-details-page div p {
+        margin: 18px 0px 0px 10px;
+        font-size: 13px;
+        font-weight: bold;
+        cursor: pointer;
+        height: fit-content;
+    }
+
+    #social-networks-to-share-recipe-of-share-recipe-popup-in-recipe-details-page div p:hover {
+        text-decoration: underline 2px rgb(209, 63, 33);
+    }
+
+    #facebook-button-of-share-recipe-popup-in-recipe-details-page {
+        color: rgb(63, 89, 150);
+    }
+
+    #pinterest-button-of-share-recipe-popup-in-recipe-details-page {
+        color: rgb(192, 30, 56);
+    }
+
+    #twitter-button-of-share-recipe-popup-in-recipe-details-page {
+        color: rgb(53, 161, 240);
+    }
+
+    /* For the recipe photos popup */
+    #recipe-photos-in-favorite-recipes-page {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    #recipe-photos-in-favorite-recipes-page:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #recipe-photos-popup-in-favorite-recipes-page {
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin-top: -15px;
+    }
+
+    /* For the recipe photos popup title and close button */
+    #title-and-close-button-of-recipe-photos-popup-in-favorite-recipes-page {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(209, 63, 33);
+        padding: 15px 15px 0px 15px;
+    }
+
+    #title-of-recipe-photos-popup-in-favorite-recipes-page {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+    }
+
+    #close-button-of-recipe-photos-popup-in-favorite-recipes-page {
+        margin-top: -9px;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+
+    #close-button-of-recipe-photos-popup-in-favorite-recipes-page:hover {
+        color: orange;
+    }
+
+    /* For the title of displayed recipe photos section */
+    #title-of-displayed-recipe-photos-section-of-recipe-photos-popup-in-favorite-recipes-page {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 15px;
+        padding: 15px 0px 0px 14px;
+    }
+
+    /* For the back and next button of recipe photos popup */
+    #back-and-next-button-of-recipe-photos-popup-in-favorite-recipes-page {
+        width: 100%; 
+        border: 1px solid rgb(242, 242, 242);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #back-and-next-button-of-recipe-photos-popup-in-favorite-recipes-page button {
+        border: none;
+        background-color: white;
+        font-size: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    #back-button-of-recipe-photos-popup-in-favorite-recipes-page {
+        border-right: 1px solid rgb(242, 242, 242) !important;
+    }
+
+    #next-button-of-recipe-photos-popup-in-favorite-recipes-page {
+        border-left: 1px solid rgb(242, 242, 242) !important;
+    }
+
+    /* For the displayed recipe photos of recipe photos popup */
+    #displayed-recipe-photos-of-recipe-photos-popup-in-favorite-recipes-page {
+        width: 580px;
+        display: block;
+        margin: auto;
+        height: 450px;
+        background-color: rgb(209, 209, 209);
+    }
+
+    /* For the number of recipe photos and recipe name of recipe photos popup */
+    #number-of-recipe-photos-and-recipe-name-of-recipe-photos-popup-in-favorite-recipes-page {
+        display: flex;
+        background-color: rgb(242, 242, 242);
+    }
+
+    #number-of-recipe-photos-and-recipe-name-of-recipe-photos-popup-in-favorite-recipes-page p {
+        font-size: 14px;
+        margin: 10px 0px 10px 15px;
+    }
+
+    #number-of-recipe-photos-of-recipe-photos-popup-in-favorite-recipes-page {
+        padding-right: 16px;
+        border-right: 1px solid rgb(206, 206, 206);
+    }   
+
+    /* For the user account of the author who made the recipe of recipe photos popup */
+    #user-account-of-the-author-who-made-the-recipe-of-recipe-photos-popup-in-favorite-recipes-page {
+        display: flex;
+        margin: 20px 0px 0px 15px;
+        width: fit-content;
+    }
+
+    #author-avatar-image-of-recipe-photos-popup-in-favorite-recipes-page {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(233, 233, 233);
+        color: black;
+    }
+
+    #author-account-of-recipe-photos-popup-in-favorite-recipes-page {
+        margin: 15px 0px 0px 10px;
+        font-weight: bold;
+    }
+
+    /* For the recipe review popup */
+    #recipe-review-in-recipe-details-page {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    #recipe-review-in-recipe-details-page:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #recipe-review-popup-in-recipe-details-page {
+        margin: 200px auto;
+        background: #fff;
+        width: 550px;
+        position: relative;
+    }
+
+    /* For the recipe review popup title and close button */
+    #title-and-close-button-of-recipe-review-popup-in-recipe-details-page {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(209, 63, 33);
+        padding: 15px 15px 0px 15px;
+    }
+
+    #title-and-close-button-of-recipe-review-popup-in-recipe-details-page div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #title-and-close-button-of-recipe-review-popup-in-recipe-details-page div i {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        margin-top: -7px;
+    }
+
+    #title-of-recipe-review-popup-in-recipe-details-page {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin-left: 10px;
+    }
+
+    #close-button-of-recipe-review-popup-in-recipe-details-page {
+        margin-top: -10px;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+    
+    #close-button-of-recipe-review-popup-in-recipe-details-page:hover {
+        color: orange;
+    }
+
+    /* For the recipe review section of recipe review popup */
+    #recipe-review-section-of-recipe-review-popup-in-recipe-details-page {
+        padding: 15px 15px 0px 15px;
+    }
+
+    /* For the recipe name of recipe review popup */
+    #name-of-recipe-of-recipe-review-popup-in-recipe-details-page {
+        font-size: 30px;
+        font-weight: bold;
+    }   
+
+    /* For the recipe review of recipe review popup */
+    #recipe-review-and-add-photo-button-of-recipe-review-popup-in-recipe-details-page {
+        display: flex;
+    }
+
+    #recipe-rating-and-review-of-recipe-review-popup-in-recipe-details-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #recipe-rating-of-recipe-review-popup-in-recipe-details-page {
+        display: flex;
+    }
+
+    #recipe-rating-of-recipe-review-popup-in-recipe-details-page div {
+        margin-left: -5px;
+        border-right: 1px solid rgb(217, 217, 217);
+        padding-right: 15px;
+    }
+
+    #recipe-rating-of-recipe-review-popup-in-recipe-details-page div i {
+        font-size: 30px;
+        margin-left: 5px;
+    }
+
+    #recipe-rating-of-recipe-review-popup-in-recipe-details-page div + p {
+        margin: 15px 0px 0px 15px;
+        font-size: 13px;
+        font-style: italic;
+    }
+
+    #recipe-review-of-recipe-review-popup-in-recipe-details-page {
+        margin-top: 30px;
+        padding: 15px 15px 0px 15px;
+        width: 300px;
+    }
+
+    /* For the add photo button of recipe review popup */
+    #add-photo-button-of-recipe-review-popup-in-recipe-details-page {
+        margin: 75px 0px 0px 15px;
+        height: 233px;
+        width: 220px;
+        background-color: rgb(242, 242, 242);
+        border: none;
+    }
+
+    #add-photo-button-of-recipe-review-popup-in-recipe-details-page div {
+        border: 2px solid rgb(209, 63, 33);
+        border-radius: 50%;
+        width: 95px;
+        height: 95px;
+        margin: auto;
+        background-color: white;
+        margin-top: 20px;
+    }
+
+    #add-photo-button-of-recipe-review-popup-in-recipe-details-page div + p {
+        margin-top: 20px;
+        font-weight: bold;
+    }   
+
+    #camera-icon-of-add-photo-button-of-recipe-review-popup-in-recipe-details-page {
+        font-size: 50px;
+        position: absolute;
+        margin: 7px 0px 0px -24px;
+    }
+
+    /* For cancle and submit recipe review button of recipe review popup */
+    #recipe-review-and-add-photo-button-of-recipe-review-popup-in-recipe-details-page + div {
+        margin: auto;
+        width: fit-content;
+    }
+
+    #cancle-recipe-review-button-of-recipe-review-popup-in-recipe-details-page {
+        margin: 30px 0px 30px 0px;
+        background-color: white;
+        border: none;
+        font-size: 18px;
+        border-bottom: 2px solid rgb(87, 87, 87);
+    }
+
+    #submit-recipe-review-button-of-recipe-review-popup-in-recipe-details-page {
+        border-radius: 5px;
+        width: 130px;
+        height: 50px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+        font-size: 17px;
+        margin-left: 30px;
+    }
+
+    #submit-recipe-review-button-of-recipe-review-popup-in-recipe-details-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1986,6 +2804,40 @@
     /* For the next button */
     #other-popular-related-recipes-in-recipe-details-page + button {
         margin: -220px 0px 0px 85%;
+    }
+
+    /* For the recipe photos popup */
+    #recipe-photos-popup-in-favorite-recipes-page {
+        margin: 125px auto;
+        overflow: auto;
+        width: 750px;
+        height: 700px;
+        margin-top: 0px;
+    }
+
+    /* For the recipe photos popup title and close button */
+    #title-and-close-button-of-recipe-photos-popup-in-favorite-recipes-page {
+        width: 750px;
+        margin: auto;
+        margin-top: 90px;
+    }
+    
+    /* For the title of displayed recipe photos section */
+    #title-of-displayed-recipe-photos-section-of-recipe-photos-popup-in-favorite-recipes-page {
+        margin-left: -16px;
+        margin-top: 0px;
+    }
+
+    /* For the displayed recipe photos of recipe photos popup */
+    #displayed-recipe-photos-section-of-recipe-photos-popup-in-favorite-recipes-page {
+        width: 700px;
+        margin: auto;
+    }
+
+    /* For the user account of the author who made the recipe of recipe photos popup */
+    #user-account-of-the-author-who-made-the-recipe-of-recipe-photos-popup-in-favorite-recipes-page {
+        margin-left: 0px;
+        margin-bottom: 20px;
     }
 }
 
