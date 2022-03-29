@@ -57,18 +57,18 @@ function CollectionRecipes() {
                             <p>Create a collection</p>
                         </button>
                     </a>
-
                     <form id="create-new-collection-form-in-collection-recipes-page" action="" name="createNewCollection">
                         <div id="popup-in-collection-recipes-page">
-                            <p>New Collection</p>
-                            <a id="close-button-of-create-new-collection-form" href="#">&times;</a>
+                            <div>
+                                <p>New Collection</p>
+                                <a id="close-button-of-create-new-collection-form" href="#">&times;</a>
+                            </div>
                             <hr />
                             <input placeholder="Collection name" name="newCollectionName"></input>
                             <textarea placeholder="Description" rows="6" cols="50" name="newCollectionDescription"></textarea>
-                            <button type="submit" form="create-new-collection-form-in-collection-recipes-page">Create</button>
+                            <button type="submit" form="create-new-collection-form-in-collection-recipes-page">All done</button>
                         </div>
                     </form>
-
                     <div className="collection-in-collection-recipes-page">
                         <button className="save-collection-button-in-collection-recipes-page"><i><FaHeart /></i></button>
                         <a href="/collection-details">

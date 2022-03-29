@@ -57,11 +57,13 @@ function FavoriteRecipes() {
                 <div id="recipes-in-favorite-recipes-page">
                     <div className="recipe-in-favorite-recipes-page">
                         <button className="save-recipe-button-in-favorite-recipes-page"><i><FaHeart /></i></button>
-                        <a href="/recipe-details"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="(Recipe name)"></img></a>
-                        <button>
-                            <i class="bi bi-plus"></i>
-                            <p>Add to Collections</p>
-                        </button>
+                        <a href="/recipe-details"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="Recipe photo"></img></a>
+                        <a href="#add-favorite-recipes-to-collection-form-in-favorite-recipes-page">
+                            <button>
+                                <i class="bi bi-plus"></i>
+                                <p>Add to Collections</p>
+                            </button>
+                        </a>
                         <a href="/recipe-details"><p className="recipe-name-in-favorite-recipes-page">Recipe name</p></a>
                         <div className="recipe-ratings-and-favorites-in-favorite-recipes-page">
                             <div className="recipe-ratings-in-favorite-recipes-page">
@@ -81,11 +83,13 @@ function FavoriteRecipes() {
                     </div>
                     <div className="recipe-in-favorite-recipes-page">
                         <button className="save-recipe-button-in-favorite-recipes-page"><i><FaHeart /></i></button>
-                        <a href="/recipe-details"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="(Recipe name)"></img></a>
-                        <button>
-                            <i class="bi bi-plus"></i>
-                            <p>Add to Collections</p>
-                        </button>
+                        <a href="/recipe-details"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="Recipe photo"></img></a>
+                        <a href="#add-favorite-recipes-to-collection-form-in-favorite-recipes-page">
+                            <button>
+                                <i class="bi bi-plus"></i>
+                                <p>Add to Collections</p>
+                            </button>
+                        </a>
                         <a href="/recipe-details"><p className="recipe-name-in-favorite-recipes-page">Recipe name</p></a>
                         <div className="recipe-ratings-and-favorites-in-favorite-recipes-page">
                             <div className="recipe-ratings-in-favorite-recipes-page">
@@ -105,10 +109,12 @@ function FavoriteRecipes() {
                     </div>
                     <div className="recipe-in-favorite-recipes-page">
                         <button className="save-recipe-button-in-favorite-recipes-page"><i><FaHeart /></i></button>
-                        <a href="/recipe-details"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="(Recipe name)"></img></a>
-                        <button>
-                            <p>Saved in <span>(number) collections</span></p>
-                        </button>
+                        <a href="/recipe-details"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="Recipe photo"></img></a>
+                        <a href="#add-favorite-recipes-to-collection-form-in-favorite-recipes-page">
+                            <button>
+                                <p>Saved in <span>(number) collections</span></p>
+                            </button>
+                        </a>
                         <a href="/recipe-details"><p className="recipe-name-in-favorite-recipes-page">Recipe name</p></a>
                         <div className="recipe-ratings-and-favorites-in-favorite-recipes-page">
                             <div className="recipe-ratings-in-favorite-recipes-page">
@@ -128,10 +134,12 @@ function FavoriteRecipes() {
                     </div>
                     <div className="recipe-in-favorite-recipes-page">
                         <button className="save-recipe-button-in-favorite-recipes-page"><i><FaHeart /></i></button>
-                        <a href="/recipe-details"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="(Recipe name)"></img></a>
-                        <button>
-                            <p>Saved in <span>(number) collections</span></p>
-                        </button>
+                        <a href="/recipe-details"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="Recipe photo"></img></a>
+                        <a href="#add-favorite-recipes-to-collection-form-in-favorite-recipes-page">
+                            <button>
+                                <p>Saved in <span>(number) collections</span></p>
+                            </button>
+                        </a>
                         <a href="/recipe-details"><p className="recipe-name-in-favorite-recipes-page">Recipe name</p></a>
                         <div className="recipe-ratings-and-favorites-in-favorite-recipes-page">
                             <div className="recipe-ratings-in-favorite-recipes-page">
@@ -151,11 +159,13 @@ function FavoriteRecipes() {
                     </div>
                     <div className="recipe-in-favorite-recipes-page">
                         <button className="save-recipe-button-in-favorite-recipes-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="(Recipe name)"></img></a>
-                        <button>
-                            <i class="bi bi-plus"></i>
-                            <p>Add to Collections</p>
-                        </button>
+                        <a href="#"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="Recipe photo"></img></a>
+                        <a href="#add-favorite-recipes-to-collection-form-in-favorite-recipes-page">
+                            <button>
+                                <i class="bi bi-plus"></i>
+                                <p>Add to Collections</p>
+                            </button>
+                        </a>
                         <a href="#"><p className="recipe-name-in-favorite-recipes-page">Recipe name</p></a>
                         <div className="recipe-ratings-and-favorites-in-favorite-recipes-page">
                             <div className="recipe-ratings-in-favorite-recipes-page">
@@ -175,11 +185,13 @@ function FavoriteRecipes() {
                     </div>
                     <div className="recipe-in-favorite-recipes-page">
                         <button className="save-recipe-button-in-favorite-recipes-page"><i><FaHeart /></i></button>
-                        <a href="/recipe-details"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="(Recipe name)"></img></a>
-                        <button>
-                            <i class="bi bi-plus"></i>
-                            <p>Add to Collections</p>
-                        </button>
+                        <a href="/recipe-details"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="Recipe photo"></img></a>
+                        <a href="#add-favorite-recipes-to-collection-form-in-favorite-recipes-page">
+                            <button>
+                                <i class="bi bi-plus"></i>
+                                <p>Add to Collections</p>
+                            </button>
+                        </a>
                         <a href="/recipe-details"><p className="recipe-name-in-favorite-recipes-page">Recipe name</p></a>
                         <div className="recipe-ratings-and-favorites-in-favorite-recipes-page">
                             <div className="recipe-ratings-in-favorite-recipes-page">
@@ -199,11 +211,13 @@ function FavoriteRecipes() {
                     </div>
                     <div className="recipe-in-favorite-recipes-page">
                         <button className="save-recipe-button-in-favorite-recipes-page"><i><FaHeart /></i></button>
-                        <a href="#"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="(Recipe name)"></img></a>
-                        <button>
-                            <i class="bi bi-plus"></i>
-                            <p>Add to Collections</p>
-                        </button>
+                        <a href="#"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="Recipe photo"></img></a>
+                        <a href="#add-favorite-recipes-to-collection-form-in-favorite-recipes-page">
+                            <button>
+                                <i class="bi bi-plus"></i>
+                                <p>Add to Collections</p>
+                            </button>
+                        </a>
                         <a href="#"><p className="recipe-name-in-favorite-recipes-page">Recipe name</p></a>
                         <div className="recipe-ratings-and-favorites-in-favorite-recipes-page">
                             <div className="recipe-ratings-in-favorite-recipes-page">
@@ -223,10 +237,12 @@ function FavoriteRecipes() {
                     </div>
                     <div className="recipe-in-favorite-recipes-page">
                         <button className="save-recipe-button-in-favorite-recipes-page"><i><FaHeart /></i></button>
-                        <a href="/recipe-details"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="(Recipe name)"></img></a>
-                        <button>
-                            <p>Saved in <span>(number) collections</span></p>
-                        </button>
+                        <a href="/recipe-details"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="Recipe photo"></img></a>
+                        <a href="#add-favorite-recipes-to-collection-form-in-favorite-recipes-page">
+                            <button>
+                                <p>Saved in <span>(number) collections</span></p>
+                            </button>
+                        </a>
                         <a href="/recipe-details"><p className="recipe-name-in-favorite-recipes-page">Recipe name</p></a>
                         <div className="recipe-ratings-and-favorites-in-favorite-recipes-page">
                             <div className="recipe-ratings-in-favorite-recipes-page">
@@ -246,10 +262,12 @@ function FavoriteRecipes() {
                     </div>
                     <div className="recipe-in-favorite-recipes-page">
                         <button className="save-recipe-button-in-favorite-recipes-page"><i><FaHeart /></i></button>
-                        <a href="/recipe-details"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="(Recipe name)"></img></a>
-                        <button>
-                            <p>Saved in <span>(number) collections</span></p>
-                        </button>
+                        <a href="/recipe-details"><img className="recipe-photo-in-favorite-recipes-page" src="#" alt="Recipe photo"></img></a>
+                        <a href="#add-favorite-recipes-to-collection-form-in-favorite-recipes-page">
+                            <button>
+                                <p>Saved in <span>(number) collections</span></p>
+                            </button>
+                        </a>
                         <a href="/recipe-details"><p className="recipe-name-in-favorite-recipes-page">Recipe name</p></a>
                         <div className="recipe-ratings-and-favorites-in-favorite-recipes-page">
                             <div className="recipe-ratings-in-favorite-recipes-page">
@@ -267,6 +285,50 @@ function FavoriteRecipes() {
                         </div>
                         <p className="recipe-author-in-favorite-recipes-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                     </div>
+                    <form action="" name="addFavoriteRecipesToCollection" id="add-favorite-recipes-to-collection-form-in-favorite-recipes-page">
+                        <div id="popup-in-favorite-recipes-page">
+                            <div id="title-and-close-button-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page">
+                                <p id="title-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page">Pick a collection</p>
+                                <a id="close-button-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page" href="#">&times;</a>
+                            </div>
+                            <hr />
+                            <div id="list-of-created-collection-and-recipe-may-be-added-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page">
+                                <div>
+                                    <div id="list-of-created-collection-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page">
+                                        <div>
+                                            <input name="collection" value="(collection)" id="collection1" className="collection-checkbox-in-favorite-recipes-page" type="checkbox"></input>
+                                            <label for="collection1" className="collection-checkbox-label-in-favorite-recipes-page">(collection 1)</label>
+                                        </div>
+                                        <div>
+                                            <input name="collection" value="(collection)" id="collection2" className="collection-checkbox-in-favorite-recipes-page" type="checkbox"></input>
+                                            <label for="collection2" className="collection-checkbox-label-in-favorite-recipes-page">(collection 2)</label>
+                                        </div>
+                                        <div>
+                                            <input name="collection" value="(collection)" id="collection3" className="collection-checkbox-in-favorite-recipes-page" type="checkbox"></input>
+                                            <label for="collection3" className="collection-checkbox-label-in-favorite-recipes-page">(collection 3)</label>
+                                        </div>
+                                        <div>
+                                            <input name="collection" value="(collection)" id="collection4" className="collection-checkbox-in-favorite-recipes-page" type="checkbox"></input>
+                                            <label for="collection4" className="collection-checkbox-label-in-favorite-recipes-page">(collection 4)</label>
+                                        </div>
+                                        <div>
+                                            <input name="collection" value="(collection)" id="collection5" className="collection-checkbox-in-favorite-recipes-page" type="checkbox"></input>
+                                            <label for="collection5" className="collection-checkbox-label-in-favorite-recipes-page">(collection 5)</label>
+                                        </div>
+                                    </div>
+                                    <div id="create-new-collection-bar-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page">
+                                        <input name="inputNewCollection" placeholder="New Collection" />
+                                        <button type="submit" form="add-favorite-recipes-to-collection-form-in-favorite-recipes-page"><i class="bi bi-plus"></i></button>
+                                    </div>
+                                </div>
+                                <div id="recipe-may-be-added-of-add-favorite-recipes-to-collection-form-in-favorite-recipes-page">
+                                    <img alt="Recipe photo"></img>
+                                    <p>(Recipe name)</p>
+                                </div>
+                            </div>
+                            <button type="submit" form="add-favorite-recipes-to-collection-form-in-favorite-recipes-page">All done</button>
+                        </div>
+                    </form>
                 </div>
                 <button id="load-more-recipes-button-in-favorite-recipes-page">SHOW MORE</button>
             </div>

@@ -1103,3 +1103,52 @@
     }
 }
 
+@media only screen and (min-width: 1920px) {
+    /* For all input of edit-account-features form */
+    #edit-account-features input {
+        outline: none;
+        margin: 0px 0px 15px 0px;
+        border: 1px solid rgb(235, 235, 235);
+        width: 45.2vw;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    /* For the bottom buttons */
+    #edit-account-bottom-buttons {
+        display: flex;
+        width: 45.2vw;
+        margin: 0px 0px 20px 2.5vw;
+    }
+
+    #edit-account-save-button {
+        height: 45px;
+        width: 23.6vw;
+        margin: 10px 10px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-account-save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-account-cancel-button {
+        height: 45px;
+        width: 21.6vw;
+        margin: 10px 0px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #edit-account-cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}

@@ -144,15 +144,16 @@
     }
 
     /* For ingredient in shopping lists page */
-    #ingredients-in-shopping-lists-page div + div div + div {
+    #ingredients-in-shopping-lists-page div + div div + form {
         display: flex;
         flex-direction: column;
         margin-top: 5px;
+        border: none !important;
     }
 
     .ingredient-in-shopping-lists-page {
         display: flex;  
-        margin-bottom: 10px;
+        margin: 10px 0px 10px -10px;
     }
 
     .ingredient-checkbox-in-shopping-lists-page {
@@ -328,15 +329,16 @@
     }
 
     /* For ingredient in shopping lists page */
-    #ingredients-in-shopping-lists-page div + div div + div {
+    #ingredients-in-shopping-lists-page div + div div + form {
         display: flex;
         flex-direction: column;
         margin-top: 5px;
+        border: none !important;
     }
 
     .ingredient-in-shopping-lists-page {
         display: flex;  
-        margin-bottom: 10px;
+        margin: 10px 0px 10px -10px;
     }
 
     .ingredient-checkbox-in-shopping-lists-page {

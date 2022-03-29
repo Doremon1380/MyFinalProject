@@ -9,6 +9,50 @@ import { FaChevronDown } from "react-icons/fa";
 
 const TITLE = 'Shopping Lists - FoodShare.com';
 
+class EditButton extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            changeColor: false
+        };
+        this.toggleChangeColor = this.toggleChangeColor.bind(this);
+    }
+
+    toggleChangeColor() {
+        this.setState((state) => ({
+            changeColor: !state.changeColor
+        }));
+    }
+
+    render() {
+        let editButtonStyle = {
+            width: 40,
+            height: 40,
+            borderRadius: "50%",
+            border: "1px solid gray",
+            backgroundColor: "white",
+            marginRight: 10,
+            
+        };
+
+        let editButtonIconStyle = {
+            color: "normal"
+        }
+
+        if (this.state.changeColor == true) {
+            editButtonStyle.backgroundColor = "rgb(251, 121, 31)"
+            editButtonStyle.border = "none"
+            editButtonIconStyle.color = "white"
+        } else {
+            editButtonIconStyle.color = "gray"
+        }
+
+        return (
+            <button style={editButtonStyle} onClick={this.toggleChangeColor}><i style={editButtonIconStyle} class="bi bi-pencil" title="Edit"></i></button>
+        );
+    }
+}
+
 function ShoppingLists() {
     return (
         <>
@@ -46,11 +90,11 @@ function ShoppingLists() {
                         <div>
                             <p>Ingredients in list</p>
                             <div>
-                                <button><i class="bi bi-arrow-clockwise" title="Undo"></i></button>
-                                <button><i class="bi bi-pencil" title="Edit"></i></button>
+                                <button type="reset" form="all-ingredients-in-shopping-lists-page"><i class="bi bi-arrow-clockwise" title="Undo"></i></button>
+                                <EditButton />
                             </div>
                         </div>
-                        <div>
+                        <form id="all-ingredients-in-shopping-lists-page" action="" name="ingredientsList">
                             <div className="ingredient-in-shopping-lists-page">
                                 <input value="(ingredient)" name="ingredient" id="ingredient1" className="ingredient-checkbox-in-shopping-lists-page" type="checkbox"></input>
                                 <label for="ingredient1" className="ingredient-checkbox-label-in-shopping-lists-page">(ingredient 1)</label>
@@ -99,7 +143,7 @@ function ShoppingLists() {
                                 <input value="(ingredient)" name="ingredient" id="ingredient12" className="ingredient-checkbox-in-shopping-lists-page" type="checkbox"></input>
                                 <label for="ingredient12" className="ingredient-checkbox-label-in-shopping-lists-page">(ingredient 12)</label>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

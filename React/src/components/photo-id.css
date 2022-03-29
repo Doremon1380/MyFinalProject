@@ -1,198 +1,10 @@
-@media only screen and (max-width: 600px) {
-    /* For back to photos page */
-    #back-to-photos-page {
-        text-decoration: none;
-        color: black;
-    }
-
-    #back-to-photos-page:hover {
-        color: orange;
-    }
-
-    #back-to-photos-page i {
-        font-size: 30px;
-    }
-
-    #back-to-photos-page p {
-        display: inline-block;
-        position: absolute;
-        margin: 11px 0px 0px 5px;
-        font-size: 17px;
-    }
-
-    /* For group photos */
-    #group-photos-in-photo-id-page {
-        height: fit-content;
-        overflow: auto;
-        white-space: nowrap;
-        background-color: rgb(228, 228, 228);
-    }
-
-    .photo-in-group-of-photo-id-page {
-        height: 80px;
-        width: 80px;
-        margin-left: 2px;
-        border: none;
-    }
-
-    .photo-in-group-of-photo-id-page a {
-        text-decoration: none;
-        color: black;
-    }
-
-    /* For user account */
-    #for-user-account-photo-id-page {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10px;
-    }
-
-        /*For avartar and username */
-    #avatar-photo-id-page {
-        border-radius: 50%;
-        border: none;
-        width: 50px;
-        height: 50px;
-        background-color: rgb(201, 201, 201);
-    }
-
-    #avatar-photo-id-page a {
-        text-decoration: none;
-        color: black;
-    }
-
-    #avatar-photo-id-page + a {
-        text-decoration: none;
-        margin-left: 10px;
-    }
-
-    #username-photo-id-page {
-        display: inline-block;
-        font-size: 17px;
-        color: black;
-    }
-
-        /* For the account follow button */
-    #follow-button-photo-id-page {
-        width: 100px;
-        height: 40px;
-        margin-top: 5px;
-        border: none;
-    }
-
-    #follow-button-photo-id-page i {
-        margin-left: -50px;
-        color: rgb(255, 118, 6);
-    }
-
-    #follow-button-photo-id-page p {
-        margin: -22px 0px 0px 25px;
-    }
-
-    /* For photo, transfer buttons and other features */
-    #transfer-buttons-with-photo-and-other-features-in-photo-id-page {
-        display: flex;
-        justify-content: space-between;
-        width: fit-content;
-    }
-
-    #back-to-previous-photo-button-in-photo-id-page {
-        display: none;
-    }
-
-        /* For photo and other features */
-    #photo-with-description-and-other-features-in-photo-id-page {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        margin-top: 5px;
-    }
-
-            /* For the displayed photo */
-    #photo-in-photo-id-page {
-        width: 100vw;
-    }
-
-            /* For the description and other features */
-    #description-and-other-features-in-photo-id-page {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-                /* For the description*/
-    #photo-description-in-photo-id-page {
-        margin-top: 15px;
-    }
-
-                /* For other features */
-    #chevrondown-box-photo-id-page {
-        width: 35px;
-        height: 35px;
-        background-color: rgb(230, 230, 230);
-        margin-top: 15px;
-        box-shadow: none;
-        border-radius: 0px;
-    }
-
-    #chevrondown-box-photo-id-page::after {
-        display: none;
-    }
-
-    #chevrondown-icon-photo-id-page {
-        font-size: 16px;
-        color: rgb(160, 160, 160);
-        margin-left: -3px;
-        margin-bottom: 50px;
-    }
-
-    .chevrondown-box-photo-id-page-item:focus {
-        background-color: orange;  
-    }
-
-    #go-to-next-photo-button-in-photo-id-page {
-        display: none;
-    }
-    
-    /* For buttom buttons */
-    #photo-id-page-bottom-buttons {
-        width: fit-content;
-        margin: auto;
-        margin-top: 30px;
-    }
-
-        /* For back button */
-    #back-button-photo-id-page {
-        width: 120px;
-        height: 50px;
-        border: none;
-        background-color: orange;
-        color: white;
-        transition: 200ms ease-in-out;
-    }
-
-    #back-button-photo-id-page:hover {
-        background-color: rgb(255, 187, 60);
-        transition: 200ms ease-in-out;
-    }
-        /* For next button */
-    #next-button-photo-id-page {
-        width: 120px;
-        height: 50px;
-        margin-left: 20px;
-        border: none;
-        background-color: orange;
-        color: white;
-        transition: 200ms ease-in-out;
-    }
-
-    #next-button-photo-id-page:hover {
-        background-color: rgb(255, 187, 60);
-        transition: 200ms ease-in-out;
-    }
-}
-
 @media only screen and (max-width: 767px) {
+    /* For the container */
+    #photo-id-container {
+        width: 100%;
+        margin: auto;
+    }
+
     /* For back to photos page */
     #back-to-photos-page {
         text-decoration: none;
@@ -241,7 +53,7 @@
         margin-top: 10px;
     }
 
-        /*For avartar and username */
+    /*For avartar and username */
     #avatar-photo-id-page {
         border-radius: 50%;
         border: none;
@@ -265,36 +77,41 @@
         font-size: 17px;
         color: black;
     }
-    
-        /* For the account follow button */
+
+    /* For the account follow button */
     #follow-button-photo-id-page {
-        width: 100px;
+        width: 120px;
         height: 40px;
         margin-top: 5px;
         border: none;
+        display: flex;
     }
 
     #follow-button-photo-id-page i {
-        margin-left: -50px;
+        font-size: 25px;
+        margin: auto;
         color: rgb(255, 118, 6);
+        margin-right: 15px;   
     }
 
     #follow-button-photo-id-page p {
-        margin: -22px 0px 0px 25px;
+        margin: auto;
+        font-size: 14px;
+        margin-left: -10px;
     }
 
     /* For photo, transfer buttons and other features */
-    #transfer-buttons-with-photo-and-other-features-in-photo-id-page {
+    #transfer-buttons-with-photo-in-photo-id-page {
         display: flex;
         justify-content: space-between;
-        width: fit-content;
+        width: 100%;
     }
 
     #back-to-previous-photo-button-in-photo-id-page {
         display: none;
     }
 
-        /* For photo and other features */
+    /* For photo and other features */
     #photo-with-description-and-other-features-in-photo-id-page {
         display: flex;
         flex-direction: column;
@@ -302,24 +119,30 @@
         margin-top: 5px;
     }
 
-            /* For the displayed photo */
+    /* For the displayed photo */
     #photo-in-photo-id-page {
         width: 100vw;
+        max-width: 100%;
     }
 
-            /* For the description and other features */
+    /* For the features and edit discription form */
+    #features-and-edit-discription-form-in-photo-id-page {
+        display: flex;
+        flex-direction: column;
+    }
+    
     #description-and-other-features-in-photo-id-page {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-                /* For the description*/
+    /* For the description*/
     #photo-description-in-photo-id-page {
         margin-top: 15px;
     }
 
-                /* For other features */
+    /* For other features */
     #chevrondown-box-photo-id-page {
         width: 35px;
         height: 35px;
@@ -344,21 +167,59 @@
         background-color: orange;  
     }
 
+    /* For the edit discription form */
+    #edit-discription-form-in-photo-id-page {
+        margin-top: 10px;
+    }
+
+    #edit-discription-form-in-photo-id-page textarea {
+        width: 100%;
+        border: 1px solid rgb(230, 230, 230);
+        outline: none;
+    }
+
+    #edit-discription-form-in-photo-id-page div {
+        width: 100%;
+        display: flex;
+        margin: auto;
+        margin-top: 5px;
+    }
+    
+    #confirm-button-of-edit-discription-form-in-photo-id-page {
+        width: 50%;
+        background-color: orange;
+        margin-right: 10px;
+        border: none;
+        outline: none;
+        height: 50px;
+        color: white;
+    }
+
+    #cancel-button-of-edit-discription-form-in-photo-id-page {
+        width: 50%;
+        background-color: rgb(179, 179, 179);
+        border: none;
+        outline: none;
+        height: 50px;
+        color: white;
+    }
+
     #go-to-next-photo-button-in-photo-id-page {
         display: none;
     }
-    
+
     /* For buttom buttons */
     #photo-id-page-bottom-buttons {
         width: fit-content;
         margin: auto;
         margin-top: 30px;
+        margin-bottom: 20px;
     }
 
-        /* For back button */
+    /* For back button */
     #back-button-photo-id-page {
         width: 120px;
-        height: 50px;
+        height: 40px;
         border: none;
         background-color: orange;
         color: white;
@@ -370,11 +231,11 @@
         transition: 200ms ease-in-out;
     }
 
-        /* For next button */
+    /* For next button */
     #next-button-photo-id-page {
         width: 120px;
-        height: 50px;
-        margin-left: 20px;
+        height: 40px;
+        margin-left: 10px;
         border: none;
         background-color: orange;
         color: white;
@@ -442,7 +303,7 @@
         margin-top: 10px;
     }
 
-        /*For avartar and username */
+    /*For avartar and username */
     #avatar-photo-id-page {
         border-radius: 50%;
         border: none;
@@ -467,38 +328,41 @@
         color: black;
     }
 
-        /* For the account follow button */
+    /* For the account follow button */
     #follow-button-photo-id-page {
-        width: 100px;
+        width: 120px;
         height: 40px;
         margin-top: 5px;
         border: none;
+        display: flex;
     }
 
     #follow-button-photo-id-page i {
-        margin-left: -50px;
+        font-size: 25px;
+        margin: auto;
         color: rgb(255, 118, 6);
+        margin-right: 15px;   
     }
 
     #follow-button-photo-id-page p {
-        margin: -22px 0px 0px 25px;
+        margin: auto;
+        font-size: 14px;
+        margin-left: -10px;
     }
 
     /* For photo, transfer buttons and other features */
-    #transfer-buttons-with-photo-and-other-features-in-photo-id-page {
+    #transfer-buttons-with-photo-in-photo-id-page {
         display: flex;
         justify-content: space-between;
         width: fit-content;
         margin-left: -30px;
     }
 
-        /* For back to previous photo button */
+    /* For back to previous photo button */
     #back-to-previous-photo-button-in-photo-id-page {
         border: none;
         background-color: white;
         width: 30px;
-        margin-top: 5px;
-        padding-bottom: 50px;
     }
 
     #back-to-previous-photo-button-in-photo-id-page:hover {
@@ -510,7 +374,7 @@
         margin-left: -7px;
     } 
 
-        /* For photo and other features */
+    /* For photo and other features */
     #photo-with-description-and-other-features-in-photo-id-page {
         display: flex;
         flex-direction: column;
@@ -518,24 +382,24 @@
         margin-top: 5px;
     }
 
-            /* For the displayed photo */
+    /* For the displayed photo */
     #photo-in-photo-id-page {
         width: 700px;
     }
 
-            /* For the description and other features */
+    /* For the description and other features */
     #description-and-other-features-in-photo-id-page {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-                /* For the description*/
+    /* For the description*/
     #photo-description-in-photo-id-page {
         margin-top: 15px;
     }
 
-                /* For other features */
+    /* For other features */
     #chevrondown-box-photo-id-page {
         width: 35px;
         height: 35px;
@@ -560,13 +424,48 @@
         background-color: orange;  
     }
 
+    /* For the edit discription form */
+    #edit-discription-form-in-photo-id-page {
+        margin-top: 10px;
+    }
+
+    #edit-discription-form-in-photo-id-page textarea {
+        width: 100%;
+        border: 1px solid rgb(230, 230, 230);
+        outline: none;
+    }
+
+    #edit-discription-form-in-photo-id-page div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+    
+    #confirm-button-of-edit-discription-form-in-photo-id-page {
+        width: 50%;
+        background-color: orange;
+        margin-right: 10px;
+        border: none;
+        outline: none;
+        height: 50px;
+        color: white;
+    }
+
+    #cancel-button-of-edit-discription-form-in-photo-id-page {
+        width: 50%;
+        background-color: rgb(179, 179, 179);
+        border: none;
+        outline: none;
+        height: 50px;
+        color: white;
+    }
+
     /* For go to next photo button */
     #go-to-next-photo-button-in-photo-id-page {
         border: none;
         background-color: white;
-        width: fit-content;
-        margin-top: 5px;
-        padding-bottom: 50px;
+        width: 30px;
     }
 
     #go-to-next-photo-button-in-photo-id-page:hover {
@@ -583,12 +482,13 @@
         width: fit-content;
         margin: auto;
         margin-top: 30px;
+        margin-bottom: 20px;
     }
 
-        /* For back button */
+    /* For back button */
     #back-button-photo-id-page {
         width: 120px;
-        height: 50px;
+        height: 40px;
         border: none;
         background-color: orange;
         color: white;
@@ -599,11 +499,12 @@
         background-color: rgb(255, 187, 60);
         transition: 200ms ease-in-out;
     }
-        /* For next button */
+
+    /* For next button */
     #next-button-photo-id-page {
         width: 120px;
-        height: 50px;
-        margin-left: 20px;
+        height: 40px;
+        margin-left: 10px;
         border: none;
         background-color: orange;
         color: white;
