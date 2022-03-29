@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Server_c0.0.1", "Server_c0.0.1.esproj", "{9366B6EF-5F15-469B-9818-A1D8DB45DDAE}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ExpressServer_c0.0.1", "ExpressServer_c0.0.1\ExpressServer_c0.0.1.njsproj", "{2139F241-BB47-4229-8814-CD2DD6E420F5}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ExpressServer_c0.0.1", "..\ExpressServer_c0.0.1\ExpressServer_c0.0.1.njsproj", "{2139F241-BB47-4229-8814-CD2DD6E420F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
