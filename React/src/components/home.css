@@ -1,4 +1,9 @@
 @media only screen and (max-width: 600px) {
+    #home-page-container {
+        position: relative;
+        z-index: 1;
+    }
+
     /* For newest recipes title */
     #newest-recipes-title-in-home-page {
         width: fit-content;
@@ -15,7 +20,7 @@
         margin-bottom: 50px;
     }
 
-        /* For the save recipe button */
+    /* For the save recipe button */
     .save-recipe-button-in-home-page {
         border: none;
         border-radius: 50%;
@@ -145,6 +150,8 @@
     #home-page-container {
         width: 570px;
         margin: auto;
+        position: relative;
+        z-index: 1;
     }
 
     /* For newest recipes title */
@@ -293,6 +300,8 @@
     #home-page-container {
         width: 100%;
         margin: auto;
+        position: relative;
+        z-index: 1;
     }
 
     /* For newest recipes title */
@@ -445,6 +454,8 @@
     #home-page-container {
         width: 70%;
         margin: auto;
+        position: relative;
+        z-index: 1;
     }
 
     /* For newest recipes title */
@@ -600,6 +611,8 @@
     #home-page-container {
         width: 75%;
         margin: auto;
+        position: relative;
+        z-index: 1;
     }
 
     /* For newest recipes title */

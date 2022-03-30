@@ -13,20 +13,7 @@
 .notification-settings-checkbox-label {
     font-size: 19px;
     margin: 25px 0px 25px 0px;
-}
-
-/* For the OR span */
-#or1 {
-    width: 100px; 
-    text-align: center; 
-    border-bottom: 1px solid orange; 
-    line-height: 0.1em;
-    margin: 20px 0px 0px 60px;
-} 
- 
-#or1 span { 
-    background-color: #fff; 
-    padding: 0px 5px; 
+    width: fit-content;
 }
 
 @media only screen and (max-width: 600px) {
@@ -34,7 +21,6 @@
     #notification-settings-container {
         width: 100%;
         margin: auto; 
-        margin-left: -12px;
     }
 
     /* For the left side group buttons */
@@ -81,14 +67,15 @@
     /* For the bottom buttons */
     #notification-settings-bottom-buttons {
         display: flex;
-        width: 60vw;
-        margin-top: 20px;
+        width: 70%;
+        margin: 0px 0px 0px 60px;
+        justify-content: space-between;
     }
 
     #notification-settings-save-button {
         height: 45px;
-        width: 24vw;
-        margin: 10px 10px 0px 60px;
+        width: 50%;
+        margin: 10px 5px 0px 0px;
         border: none;
         background-color: orange;
         color: white;
@@ -100,10 +87,14 @@
         transition: 200ms ease-in-out;
     }
 
+    #notification-settings-save-button + a {
+        width: 50%;
+        margin: 10px 0px 0px 5px;
+    }
+
     #notification-settings-cancel-button {
         height: 45px;
-        width: 23vw;
-        margin: 10px 0px 0px 0px;
+        width: 100%;
         border: none;
         background-color: orange;
         color: white;
@@ -120,14 +111,11 @@
     /* For the container */
     #notification-settings-container {
         width: 100%;
-        margin: auto; 
-        margin-left: -12px;
     }
 
     /* For the notification-settings form */
     #notification-settings {
         display: flex;
-        justify-content: space-between;
     }
 
     /* For the left side group buttons */
@@ -148,17 +136,6 @@
 
     #left-side-selected-button1 {
         background-color: rgb(221, 221, 221);
-    }
-
-    /* For the left side button link */
-    .left-button-link1 {
-        text-decoration: none;
-        color: black;
-        height: 50px;
-    }
-
-    .left-button-link1:hover {
-        color: black;
     }
     
     /* For the left side button icon */
@@ -186,6 +163,10 @@
     }
 
     /* For the notification-settings form */
+    #left-side-group-buttons1 + div {
+        margin-left: 10px;
+    }
+
     #notification-settings-options {
         margin-top: 1px;
     }
@@ -228,15 +209,16 @@
 
     /* For the bottom buttons */
     #notification-settings-bottom-buttons {
-        display: block;
-        width: 60vw;
+        display: flex;
+        width: 100%;
         margin-top: 20px;
+        justify-content: space-between;
     }
 
     #notification-settings-save-button {
         height: 45px;
-        width: 20vw;
-        margin: 10px 10px 0px 58px;
+        width: 50%;
+        margin: 10px 5px 0px 58px;
         border: none;
         background-color: orange; 
         color: white;
@@ -248,10 +230,14 @@
         transition: 200ms ease-in-out;
     }
 
+    #notification-settings-save-button + a {
+        width: 50%;
+        margin: 10px 0px 0px 5px;
+    }
+
     #notification-settings-cancel-button {
         height: 45px;
-        width: 20vw;
-        margin: 10px 0px 0px 0px;
+        width: 100%;
         border: none;
         background-color: orange;
         color: white;
@@ -269,13 +255,11 @@
     #notification-settings-container {
         width: 100%;
         margin: auto; 
-        margin-left: -12px;
     }
 
     /* For the notification-settings form */
     #notification-settings {
         display: flex;
-        justify-content: space-between;
     }
 
     /* For the left side group buttons */
@@ -296,17 +280,6 @@
 
     #left-side-selected-button1 {
         background-color: rgb(221, 221, 221);
-    }
-
-    /* For the left side button link */
-    .left-button-link1 {
-        text-decoration: none;
-        color: black;
-        height: 50px;
-    }
-
-    .left-button-link1:hover {
-        color: black;
     }
     
     /* For the left side button icon */
@@ -334,6 +307,11 @@
     }
 
     /* For the notification-settings form */
+    #left-side-group-buttons1 + div {
+        margin-left: 30px;
+        width: 100%;
+    }
+
     #notification-settings-options {
         margin-top: 1px;
     }
@@ -374,19 +352,20 @@
         background-color: orange;
     }
 
-    /* For the bottom buttons */
+/* For the bottom buttons */
     #notification-settings-bottom-buttons {
-        display: block;
-        width: 60vw;
+        display: flex;
+        width: 80%;
         margin-top: 20px;
+        justify-content: space-between;
     }
 
     #notification-settings-save-button {
         height: 45px;
-        width: 20vw;
-        margin: 10px 10px 0px 58px;
+        width: 50%;
+        margin: 10px 5px 0px 58px;
         border: none;
-        background-color: orange;
+        background-color: orange; 
         color: white;
         transition: 200ms ease-in-out;
     }
@@ -396,10 +375,14 @@
         transition: 200ms ease-in-out;
     }
 
+    #notification-settings-save-button + a {
+        width: 50%;
+        margin: 10px 0px 0px 5px;
+    }
+
     #notification-settings-cancel-button {
         height: 45px;
-        width: 20vw;
-        margin: 10px 0px 0px 0px;
+        width: 100%;
         border: none;
         background-color: orange;
         color: white;
@@ -421,22 +404,14 @@
 
     /* For the notification-settings form */
     #notification-settings {
-        margin: auto;
         display: flex;
-        justify-content: space-between;
-        border: none;
-        width: 67.5vw;
     }
 
     /* For the left side group buttons */
     #left-side-group-buttons1 {
         display: flex;
         flex-direction: column;
-        margin: 25px 0px 0px 0px;
-    }
-
-    #left-side-group-buttons1 + div {
-        margin-left: 40px;
+        margin: 10px 0px 0px 0px;
     }
 
     /* For the left side button */
@@ -488,9 +463,13 @@
     }
 
     /* For the notification-settings form */
+    #left-side-group-buttons1 + div {
+        margin-left: 30px;
+        width: 100%;
+    }
+    
     #notification-settings-options {
-        margin-top: 16px;
-        margin-right: -21vw;
+        margin-top: 1px;
     }
 
     /* For the checkbox */
@@ -521,15 +500,16 @@
 
     /* For the bottom buttons */
     #notification-settings-bottom-buttons {
-        display: block;
-        width: 60vw;
+        display: flex;
+        width: 90%;
         margin-top: 20px;
+        justify-content: space-between;
     }
 
     #notification-settings-save-button {
         height: 45px;
-        width: 13vw;
-        margin: 10px 10px 0px 58px;
+        width: 50%;
+        margin: 10px 5px 0px 58px;
         border: none;
         background-color: orange;
         color: white;
@@ -541,10 +521,14 @@
         transition: 200ms ease-in-out;
     }
 
+    #notification-settings-save-button + a {
+        width: 50%;
+        margin: 10px 0px 0px 5px;
+    }
+
     #notification-settings-cancel-button {
         height: 45px;
-        width: 13vw;
-        margin: 10px 0px 0px 0px;
+        width: 100%;
         border: none;
         background-color: orange;
         color: white;
@@ -566,18 +550,14 @@
 
     /* For the notification-settings form */
     #notification-settings {
-        margin: auto;
         display: flex;
-        justify-content: space-between;
-        border: none;
-        width: 58vw;
     }
 
     /* For the left side group buttons */
     #left-side-group-buttons1 {
         display: flex;
         flex-direction: column;
-        margin: 25px 0px 0px 0px;
+        margin: 10px 0px 0px 0px;
     }
 
     /* For the left side button */
@@ -629,9 +609,13 @@
     }
 
     /* For the notification-settings form */
+    #left-side-group-buttons1 + div {
+        margin-left: 30px;
+        width: 100%;
+    }
+
     #notification-settings-options {
-        margin-top: 16px;
-        margin-right: -25vw;
+        margin-top: 1px;
     }
 
     /* For the checkbox */
@@ -662,15 +646,16 @@
 
     /* For the bottom buttons */
     #notification-settings-bottom-buttons {
-        display: block;
-        width: 60vw;
+        display: flex;
+        width: 90%;
         margin-top: 20px;
+        justify-content: space-between;
     }
 
     #notification-settings-save-button {
         height: 45px;
-        width: 13vw;
-        margin: 10px 10px 0px 58px;
+        width: 50%;
+        margin: 10px 5px 0px 58px;
         border: none;
         background-color: orange;
         color: white;
@@ -682,10 +667,14 @@
         transition: 200ms ease-in-out;
     }
 
+    #notification-settings-save-button + a {
+        width: 50%;
+        margin: 10px 0px 0px 5px;
+    }
+
     #notification-settings-cancel-button {
         height: 45px;
-        width: 13vw;
-        margin: 10px 0px 0px 0px;
+        width: 100%;
         border: none;
         background-color: orange;
         color: white;
@@ -707,18 +696,14 @@
 
     /* For the notification-settings form */
     #notification-settings {
-        margin: auto;
         display: flex;
-        justify-content: space-between;
-        border: none;
-        width: 58.3vw;
     }
 
     /* For the left side group buttons */
     #left-side-group-buttons1 {
         display: flex;
         flex-direction: column;
-        margin: 25px 0px 0px 0px;
+        margin: 10px 0px 0px 0px;
     }
 
     /* For the left side button */
@@ -770,9 +755,13 @@
     }
 
     /* For the notification-settings form */
+    #left-side-group-buttons1 + div {
+        margin-left: 30px;
+        width: 100%;
+    }
+
     #notification-settings-options {
-        margin-top: 16px;
-        margin-right: -23vw;
+        margin-top: 1px;
     }
 
     /* For the checkbox */
@@ -803,15 +792,16 @@
 
     /* For the bottom buttons */
     #notification-settings-bottom-buttons {
-        display: block;
-        width: 60vw;
+        display: flex;
+        width: 80%;
         margin-top: 20px;
+        justify-content: space-between;
     }
 
     #notification-settings-save-button {
         height: 45px;
-        width: 15vw;
-        margin: 10px 10px 0px 58px;
+        width: 50%;
+        margin: 10px 5px 0px 58px;
         border: none;
         background-color: orange;
         color: white;
@@ -823,10 +813,14 @@
         transition: 200ms ease-in-out;
     }
 
+    #notification-settings-save-button + a {
+        width: 50%;
+        margin: 10px 0px 0px 5px;
+    }
+
     #notification-settings-cancel-button {
         height: 45px;
-        width: 15vw;
-        margin: 10px 0px 0px 0px;
+        width: 100%;
         border: none;
         background-color: orange;
         color: white;
@@ -848,18 +842,14 @@
 
     /* For the notification-settings form */
     #notification-settings {
-        margin: auto;
         display: flex;
-        justify-content: space-between;
-        border: none;
-        width: 62.5vw;
     }
 
     /* For the left side group buttons */
     #left-side-group-buttons1 {
         display: flex;
         flex-direction: column;
-        margin: 25px 0px 0px 0px;
+        margin: 10px 0px 0px 0px;
     }
 
     /* For the left side button */
@@ -911,9 +901,13 @@
     }
 
     /* For the notification-settings form */
+    #left-side-group-buttons1 + div {
+        margin-left: 30px;
+        width: 100%;
+    }
+
     #notification-settings-options {
-        margin-top: 16px;
-        margin-right: -18vw;
+        margin-top: 1px;
     }
 
     /* For the checkbox */
@@ -944,15 +938,16 @@
 
     /* For the bottom buttons */
     #notification-settings-bottom-buttons {
-        display: block;
-        width: 60vw;
+        display: flex;
+        width: 80%;
         margin-top: 20px;
+        justify-content: space-between;
     }
 
     #notification-settings-save-button {
         height: 45px;
-        width: 15vw;
-        margin: 10px 10px 0px 58px;
+        width: 50%;
+        margin: 10px 5px 0px 58px;
         border: none;
         background-color: orange;
         color: white;
@@ -964,10 +959,14 @@
         transition: 200ms ease-in-out;
     }
 
+    #notification-settings-save-button + a {
+        width: 50%;
+        margin: 10px 0px 0px 5px;
+    }
+
     #notification-settings-cancel-button {
         height: 45px;
-        width: 15vw;
-        margin: 10px 0px 0px 0px;
+        width: 100%;
         border: none;
         background-color: orange;
         color: white;
@@ -989,18 +988,15 @@
 
     /* For the notification-settings form */
     #notification-settings {
-        margin: auto;
         display: flex;
-        justify-content: space-between;
-        border: none;
-        width: 63.6vw;
     }
+
 
     /* For the left side group buttons */
     #left-side-group-buttons1 {
         display: flex;
         flex-direction: column;
-        margin: 25px 0px 0px 0px;
+        margin: 10px 0px 0px 0px;
     }
 
     /* For the left side button */
@@ -1052,9 +1048,13 @@
     }
 
     /* For the notification-settings form */
+    #left-side-group-buttons1 + div {
+        margin-left: 30px;
+        width: 100%;
+    }
+
     #notification-settings-options {
-        margin-top: 16px;
-        margin-right: -17vw;
+        margin-top: 1px;
     }
 
     /* For the checkbox */
@@ -1085,15 +1085,16 @@
 
     /* For the bottom buttons */
     #notification-settings-bottom-buttons {
-        display: block;
-        width: 60vw;
+        display: flex;
+        width: 80%;
         margin-top: 20px;
+        justify-content: space-between;
     }
 
     #notification-settings-save-button {
         height: 45px;
-        width: 15vw;
-        margin: 10px 10px 0px 58px;
+        width: 50%;
+        margin: 10px 5px 0px 58px;
         border: none;
         background-color: orange;
         color: white;
@@ -1105,10 +1106,14 @@
         transition: 200ms ease-in-out;
     }
 
+    #notification-settings-save-button + a {
+        width: 50%;
+        margin: 10px 0px 0px 5px;
+    }
+
     #notification-settings-cancel-button {
         height: 45px;
-        width: 15vw;
-        margin: 10px 0px 0px 0px;
+        width: 100%;
         border: none;
         background-color: orange;
         color: white;

@@ -2,8 +2,6 @@
     /* For the container of top part */
     #top-part-container-in-following-accounts-page {
         width: 100%;
-        margin: auto; 
-        margin-left: -12px;
     }
 
     /* For the container of following accounts page */
@@ -113,8 +111,6 @@
     /* For the container of top part */
     #top-part-container-in-following-accounts-page {
         width: 100%;
-        margin: auto; 
-        margin-left: -12px;
     }
     
     /* For the container of following accounts page */
@@ -240,7 +236,7 @@
 
     /* For the container of following accounts page */
     #following-accounts-page {
-        width: 65%;
+        width: 70%;
         margin: auto;
     }
 }
@@ -254,7 +250,7 @@
 
     /* For the container of following accounts page */
     #following-accounts-page {
-        width: 56%;
+        width: 60%;
         margin: auto;
     }
 }
@@ -262,13 +258,13 @@
 @media only screen and (min-width: 1600px) {
     /* For the container of top part */
     #top-part-container-in-following-accounts-page {
-        width: 64%;
+        width: 62.5%;
         margin: auto;
     }
 
     /* For the container of following accounts page */
     #following-accounts-page {
-        width: 61%;
+        width: 62.5%;
         margin: auto;
     }
 
@@ -285,13 +281,13 @@
 @media only screen and (min-width: 1712px) {
     /* For the container of top part */
     #top-part-container-in-following-accounts-page {
-        width: 65%;
+        width: 64%;
         margin: auto;
     }
 
     /* For the container of following accounts page */
     #following-accounts-page {
-        width: 62%;
+        width: 64%;
         margin: auto;
     }
 }

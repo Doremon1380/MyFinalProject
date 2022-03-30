@@ -17,42 +17,42 @@ function FilterRecipes() {
             <div id="filter-recipes-page">
                 <form id="filter-recipes" action="" name="filterRecipes">
                     <p className="titles-in-filter-recipes-page">Advanced search</p>
-                    <form id="search-by-alphabet-in-filter-recipes-page" name="srcByAlphabet">
-                        <button>A</button>
-                        <button>B</button>
-                        <button>C</button>
-                        <button>D</button>
-                        <button>E</button>
-                        <button>F</button>
-                        <button>G</button>
-                        <button>H</button>
-                        <button>I</button>
-                        <button>J</button>
-                        <button>K</button>
-                        <button>L</button>
-                        <button>M</button>
-                        <button>N</button>
-                        <button>O</button>
-                        <button>P</button>
-                        <button>Q</button>
-                        <button>R</button>
-                        <button>S</button>
-                        <button>T</button>
-                        <button>U</button>
-                        <button>V</button>
-                        <button>W</button>
-                        <button>X</button>
-                        <button>Y</button>
-                        <button>Z</button>
-                    </form>
-                    <form id="search-by-keyword-in-filter-recipes-page" name="srcByKeyword">
+                    <ul id="search-by-alphabet-in-filter-recipes-page">
+                        <li><a href="#">A</a></li>
+                        <li><a href="#">B</a></li>
+                        <li><a href="#">C</a></li>
+                        <li><a href="#">D</a></li>
+                        <li><a href="#">E</a></li>
+                        <li><a href="#">F</a></li>
+                        <li><a href="#">G</a></li>
+                        <li><a href="#">H</a></li>
+                        <li><a href="#">I</a></li>
+                        <li><a href="#">J</a></li>
+                        <li><a href="#">K</a></li>
+                        <li><a href="#">L</a></li>
+                        <li><a href="#">M</a></li>
+                        <li><a href="#">N</a></li>
+                        <li><a href="#">O</a></li>
+                        <li><a href="#">P</a></li>
+                        <li><a href="#">Q</a></li>
+                        <li><a href="#">R</a></li>
+                        <li><a href="#">S</a></li>
+                        <li><a href="#">T</a></li>
+                        <li><a href="#">U</a></li>
+                        <li><a href="#">V</a></li>
+                        <li><a href="#">W</a></li>
+                        <li><a href="#">X</a></li>
+                        <li><a href="#">Y</a></li>
+                        <li><a href="#">Z</a></li>
+                    </ul>
+                    <div id="search-by-keyword-in-filter-recipes-page" name="srcByKeyword">
                         <p className="titles-in-filter-recipes-page">Search by keyword:</p>
-                        <input type="text"></input>
-                    </form>
+                        <input type="text" name="keyword"></input>
+                    </div>
                     <div id="search-by-categories-in-filter-recipes-page">
                         <p className="titles-in-filter-recipes-page">Search by categories:</p>
                         <hr></hr>
-                        <form id="categories-of-recipes-in-filter-recipes-page" name="srcByCategoriesOfRecipes">
+                        <div id="categories-of-recipes-in-filter-recipes-page" name="srcByCategoriesOfRecipes">
                             <div>
                                 <p>World Cuisine:</p>
                                 <label for="chinese-recipes-in-filter-recipes-page"><input id="chinese-recipes-in-filter-recipes-page" className="category-of-recipes-in-filter-recipes-page" type="checkbox" name="worldCuisine" value="chinese-recipes"></input>Chinese Recipes</label>
@@ -76,7 +76,7 @@ function FilterRecipes() {
                                 <label for="side-dish-recipes-in-filter-recipes-page"><input id="side-dish-recipes-in-filter-recipes-page" className="category-of-recipes-in-filter-recipes-page" type="checkbox" name="categoryOfRecipes" value="side-dish-recipes"></input>Side Dish Recipes</label>
                                 <label for="drink-recipes-in-filter-recipes-page"><input id="drink-recipes-in-filter-recipes-page" className="category-of-recipes-in-filter-recipes-page" type="checkbox" name="categoryOfRecipes" value="drink-recipes"></input>Drink Recipes</label>
                             </div>
-                        </form>
+                        </div>
                     </div >
                 </form>
                 <button type="submit" form="filter-recipes">Search</button>

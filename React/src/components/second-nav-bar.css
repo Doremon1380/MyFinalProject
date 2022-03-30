@@ -9,6 +9,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     background-color: white;
     position: sticky;
     border-bottom: 1px solid rgb(235, 235, 235);
+    z-index: 2;
 }
 
 .search-form2 {
@@ -61,34 +62,30 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 /* For the dropdown */
     /* to remove the carpet */  
-#accountName::after {
+#account-name-dropdown-button-in-second-nav-bar::after {
     display: none; 
 }
 
-#accountName {
+#account-name-dropdown-button-in-second-nav-bar {
     box-shadow: none;
-    height: 50px;
     border-radius: 0px;
-    margin-top: -10px;
-    position: relative;
-    z-index: 2;
 }
 
-#accountName:hover {
+#account-name-dropdown-button-in-second-nav-bar:hover {
     background-color: rgb(216, 216, 216);
 }
 
-#dropdown-basic-button-account::after {
+#account-dropdown-button-in-second-nav-bar::after {
     display: none; 
 }
 
-#dropdown-basic-button-account {
+#account-dropdown-button-in-second-nav-bar {
     box-shadow: none;
     background-color: gray;
     border-radius: 0px;
 }
 
-#dropdown-basic-button-account:hover {
+#account-dropdown-button-in-second-nav-bar:hover {
     background-color: rgb(172, 172, 172);
 }   
 
@@ -98,13 +95,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     outline: none;
 }
 
-#dropdown-basic-button-menu::after {
+#menu-dropdown-button-in-second-nav-bar::after {
     display: none; 
-}
-
-#dropdown-basic-button-menu {
-    box-shadow: none;
-    width: 50px;
 }
 
 /* For the down icon */
@@ -125,7 +117,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         margin: auto;
         display: flex; 
         justify-content: space-between;
-        border: none;
     }
 
     /* For the set of features */
@@ -204,26 +195,37 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     /* For the account name */
-    #accountName {
+    #account-name-dropdown-button-in-second-nav-bar {
         display: none;
     }
 
-    #dropdown-basic-button-account {
+    #account-dropdown-button-in-second-nav-bar {
         display: none;
     }
 
     /* For the menu icon */
+    #menu-dropdown-button-in-second-nav-bar {
+        box-shadow: none;
+        width: fit-content;
+        height: fit-content;
+        margin: 10px 10px 0px -4px;
+    }
+
+    #menu-dropdown-button-content-in-second-nav-bar {
+        left: -120px;
+        top: 76px;
+    }
+
     .menu-icon2 {
         display: inline-block;
         font-size: 20px;
         padding-bottom: 5px;
         transition: 250ms ease-in-out;
-        margin: 10px 10px 0px -4px;
     }
 
     /* For the dropdown */
     .drop-down-item2 {
-        font-size: 2vw;
+        font-size: 15px;
     }
 }
 
@@ -234,7 +236,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         margin: auto;
         display: flex; 
         justify-content: space-around;
-        border: none;
     }
 
     /* For the set of features */
@@ -320,26 +321,36 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     /* For the account name */
-    #accountName {
+    #account-name-dropdown-button-in-second-nav-bar {
         display: none;
     }
 
-    #dropdown-basic-button-account {
+    #account-dropdown-button-in-second-nav-bar {
         display: none;
     }
 
     /* For the menu icon */
+    #menu-dropdown-button-in-second-nav-bar {
+        box-shadow: none;
+        width: fit-content;
+        height: fit-content;
+        margin: 10px 10px 0px -4px;
+    }
+
+    #menu-dropdown-button-content-in-second-nav-bar {
+        left: -120px;
+        top: 76px;
+    }
+
     .menu-icon2 {
         display: inline-block;
         font-size: 20px;
-        padding-bottom: 5px;
         transition: 250ms ease-in-out;
-        margin: 10px 20px 0px -4px;
     }
 
     /* For the dropdown */
     .drop-down-item2 {
-        font-size: 1.5vw;
+        font-size: 15px;
     }
 }
 
@@ -350,14 +361,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         margin: auto;
         display: flex; 
         justify-content: space-around;
-        border: none;
     }
 
     /* For the set of features */
     #features-set {
         display: flex;
         flex-direction: row; 
-        border: none;
     }
     
     /* For the logo */
@@ -379,7 +388,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         border: none;
         outline: none;
         padding: 6px 10px 6px 10px;
-        width: 26vw;
+        width: 24vw;
     }
 
     .search-icon {
@@ -437,29 +446,50 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     /* For the account */
-    #accountName {
+    #account-name-dropdown-button-in-second-nav-bar {
         display: inline-block;
         margin-top: 0px;
         height: 60px;
     }
 
-    #dropdown-basic-button-account {
+    #account-name-dropdown-button-content-in-second-nav-bar {
+        left: -30px;
+        top: 78px;
+    }
+
+    #account-dropdown-button-in-second-nav-bar {
         display: inline-block;
         height: 60px;
     }
 
+    #account-dropdown-button-content-in-second-nav-bar {
+        left: -117px;
+        top: 78px;
+    }
+
     /* For the menu icon */
+    #menu-dropdown-button-in-second-nav-bar {
+        box-shadow: none;
+        width: fit-content;
+        height: fit-content;
+        margin: 15px 20px 0px 5px;
+    }
+
+    #menu-dropdown-button-content-in-second-nav-bar {
+        left: -100px;
+        top: 87px;
+    }
+
     .menu-icon2 {
         display: inline-block;
         font-size: 20px;
         padding-bottom: 5px;
         transition: 250ms ease-in-out;
-        margin: 15px 20px 0px 5px;
     }
 
     /* For the dropdown */
     .drop-down-item2 {
-        font-size: 1.5vw;
+        font-size: 15px;
     }
 }
 
@@ -491,6 +521,145 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         overflow: hidden;
         width: fit-content;
         margin: 20px 0vw 0vw 2vw;
+    }
+
+    .search-input2 {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 10px;
+        width: 23vw;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    /* For the notification button */
+    .bell-icon {
+        font-size: 25px;
+        color: gray;
+        margin: 20px 0px 0px 15px;
+    }
+
+    /* For the favorite button */
+    .favorite-icon {
+        font-size: 25px;
+        display: block;
+        color: gray;
+        margin: 16px 0px 0px 10px;
+    }
+
+    /* For the account part */
+    #for-account {
+        background-color: rgb(245, 245, 245);
+        margin: 9px 0px 12px 12px;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    /* For the avatar */
+    #avatar {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-color: rgb(245, 245, 245);
+        margin: 0px 0px 0px 0px;
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar:hover {
+        background-color: rgb(216, 216, 216);
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #avatar-image {
+        display: inline-block;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-left: -1px;
+    }
+
+    /* For the account */
+    #account-name-dropdown-button-in-second-nav-bar {
+        display: inline-block;
+        margin-top: 0px;
+        height: 60px;
+    }
+
+    #account-name-dropdown-button-content-in-second-nav-bar {
+        left: -30px;
+        top: 78px;
+    }
+
+    #account-dropdown-button-in-second-nav-bar {
+        display: inline-block;
+        height: 60px;
+    }
+
+    #account-dropdown-button-content-in-second-nav-bar {
+        left: -117px;
+        top: 78px;
+    }
+
+    /* For the menu icon */
+    #menu-dropdown-button-in-second-nav-bar {
+        box-shadow: none;
+        width: fit-content;
+        height: fit-content;
+        margin: 15px 20px 0px 5px;
+    }
+
+    #menu-dropdown-button-content-in-second-nav-bar {
+        left: -110px;
+        top: 87px;
+    }
+
+    .menu-icon2 {
+        display: inline-block;
+        font-size: 20px;
+        padding-bottom: 5px;
+        transition: 250ms ease-in-out;
+    }
+
+    /* For the dropdown */
+    .drop-down-item2 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #nav-bar-container2 {
+        width: 75%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-around;
+    }
+
+    /* For the set of features */
+    #features-set {
+        display: flex;
+        flex-direction: row;  
+    }
+    
+    /* For the logo */
+    .logo2 {
+        width: 11vw;
+        height: 70px;
+        margin-left: 10px;
+    }
+
+    /* For the search bar */
+    .search-bar2 {
+        white-space: nowrap;
+        overflow: hidden;
+        width: fit-content;
+        margin: 20px 0vw 0vw 1vw;
     }
 
     .search-input2 {
@@ -556,35 +725,56 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     /* For the account */
-    #accountName {
+    #account-name-dropdown-button-in-second-nav-bar {
         display: inline-block;
         margin-top: 0px;
         height: 60px;
     }
 
-    #dropdown-basic-button-account {
+    #account-name-dropdown-button-content-in-second-nav-bar {
+        left: -30px;
+        top: 78px;
+    }
+
+    #account-dropdown-button-in-second-nav-bar {
         display: inline-block;
         height: 60px;
     }
 
+    #account-dropdown-button-content-in-second-nav-bar {
+        left: -117px;
+        top: 78px;
+    }
+
     /* For the menu icon */
+    #menu-dropdown-button-in-second-nav-bar {
+        box-shadow: none;
+        width: fit-content;
+        height: fit-content;
+        margin: 15px 20px 0px 5px;
+    }
+
+    #menu-dropdown-button-content-in-second-nav-bar {
+        left: -110px;
+        top: 87px;
+    }
+
     .menu-icon2 {
         display: inline-block;
         font-size: 20px;
         padding-bottom: 5px;
         transition: 250ms ease-in-out;
-        margin: 15px 20px 0px 5px;
     }
 
     /* For the dropdown */
     .drop-down-item2 {
-        font-size: 1.3vw;
+        font-size: 15px;
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
     #nav-bar-container2 {
-        width: 75%;
+        width: 70%;
         margin: auto;
         display: flex; 
         justify-content: space-around;
@@ -598,7 +788,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     
     /* For the logo */
     .logo2 {
-        width: 11vw;
+        width: 10vw;
         height: 70px;
         margin-left: 10px;
     }
@@ -674,147 +864,50 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     /* For the account */
-    #accountName {
+    #account-name-dropdown-button-in-second-nav-bar {
         display: inline-block;
         margin-top: 0px;
         height: 60px;
     }
 
-    #dropdown-basic-button-account {
+    #account-name-dropdown-button-content-in-second-nav-bar {
+        left: -30px;
+        top: 78px;
+    }
+
+    #account-dropdown-button-in-second-nav-bar {
         display: inline-block;
         height: 60px;
     }
 
+    #account-dropdown-button-content-in-second-nav-bar {
+        left: -117px;
+        top: 78px;
+    }
+
     /* For the menu icon */
-    .menu-icon2 {
-        display: inline-block;
-        font-size: 20px;
-        padding-bottom: 5px;
-        transition: 250ms ease-in-out;
-        margin: 15px 20px 0px 5px;
-    }
-
-    /* For the dropdown */
-    .drop-down-item2 {
-        font-size: 1.1vw;
-    }
-}
-
-@media only screen and (min-width: 1400px) {
-    #nav-bar-container2 {
-        width: 70%;
-        margin: auto;
-        display: flex; 
-        justify-content: space-around;
-    }
-
-    /* For the set of features */
-    #features-set {
-        display: flex;
-        flex-direction: row;  
-    }
-    
-    /* For the logo */
-    .logo2 {
-        width: 10vw;
-        height: 70px;
-        margin-left: 10px;
-    }
-
-    /* For the search bar */
-    .search-bar2 {
-        white-space: nowrap;
-        overflow: hidden;
+    #menu-dropdown-button-in-second-nav-bar {
+        box-shadow: none;
         width: fit-content;
-        margin: 20px 0vw 0vw 1vw;
-    }
-
-    .search-input2 {
-        border: none;
-        outline: none;
-        padding: 6px 10px 6px 10px;
-        width: 28vw;
-    }
-
-    .search-icon {
-        display: none;
-    }
-
-    /* For the notification button */
-    .bell-icon {
-        font-size: 25px;
-        color: gray;
-        margin: 20px 0px 0px 15px;
-    }
-
-    /* For the favorite button */
-    .favorite-icon {
-        font-size: 25px;
-        display: block;
-        color: gray;
-        margin: 16px 0px 0px 10px;
-    }
-
-    /* For the account part */
-    #for-account {
-        background-color: rgb(245, 245, 245);
-        margin: 9px 0px 12px 12px;
         height: fit-content;
-        width: fit-content;
+        margin: 15px 20px 0px 5px;
     }
 
-    /* For the avatar */
-    #avatar {
-        display: inline-block;
-        width: 60px;
-        height: 60px;
-        background-color: rgb(245, 245, 245);
-        margin: 0px 0px 0px 0px;
-        transition: 250ms ease-in-out;
+    #menu-dropdown-button-content-in-second-nav-bar {
+        left: -100px;
+        top: 87px;
     }
 
-    #avatar:hover {
-        background-color: rgb(216, 216, 216);
-        transition: 250ms ease-in-out;
-    }
-
-    #avatar a {
-        text-decoration: none;
-        color: black;
-    }
-
-    #avatar-image {
-        display: inline-block;
-        border-radius: 50%;
-        height: 50px;
-        width: 50px;
-        margin-left: -1px;
-    }
-
-    /* For the account */
-    #accountName {
-        display: inline-block;
-        margin-top: 0px;
-        height: 60px;
-    }
-
-    #dropdown-basic-button-account {
-        display: inline-block;
-        height: 60px;
-    }
-
-    /* For the menu icon */
     .menu-icon2 {
         display: inline-block;
         font-size: 20px;
         padding-bottom: 5px;
         transition: 250ms ease-in-out;
-        margin: 15px 20px 0px 5px;
     }
 
     /* For the dropdown */
     .drop-down-item2 {
-        font-size: 1vw;
+        font-size: 15px;
     }
 }
 
@@ -851,7 +944,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         border: none;
         outline: none;
         padding: 6px 10px 6px 10px;
-        width: 28vw;
+        width: 26vw;
     }
 
     .search-icon {
@@ -910,29 +1003,50 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     /* For the account */
-    #accountName {
+    #account-name-dropdown-button-in-second-nav-bar {
         display: inline-block;
         margin-top: 0px;
         height: 60px;
     }
 
-    #dropdown-basic-button-account {
+    #account-name-dropdown-button-content-in-second-nav-bar {
+        left: -30px;
+        top: 78px;
+    }
+
+    #account-dropdown-button-in-second-nav-bar {
         display: inline-block;
         height: 60px;
     }
 
+    #account-dropdown-button-content-in-second-nav-bar {
+        left: -117px;
+        top: 78px;
+    }
+
     /* For the menu icon */
+    #menu-dropdown-button-in-second-nav-bar {
+        box-shadow: none;
+        width: fit-content;
+        height: fit-content;
+        margin: 15px 20px 0px 5px;
+    }
+
+    #menu-dropdown-button-content-in-second-nav-bar {
+        left: -90px;
+        top: 87px;
+    }
+
     .menu-icon2 {
         display: inline-block;
         font-size: 20px;
         padding-bottom: 5px;
         transition: 250ms ease-in-out;
-        margin: 15px 20px 0px 5px;
     }
 
     /* For the dropdown */
     .drop-down-item2 {
-        font-size: 0.9vw;
+        font-size: 15px;
     }
 }
 
@@ -969,7 +1083,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         border: none;
         outline: none;
         padding: 6px 10px 6px 10px;
-        width: 30vw;
+        width: 29vw;
     }
 
     .search-icon {
@@ -1028,28 +1142,49 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     /* For the account */
-    #accountName {
+    #account-name-in-second-nav-bar {
         display: inline-block;
         margin-top: 0px;
         height: 60px;
     }
 
-    #dropdown-basic-button-account {
+    #account-name-dropdown-button-content-in-second-nav-bar {
+        left: -30px;
+        top: 78px;
+    }
+
+    #account-dropdown-button-in-second-nav-bar {
         display: inline-block;
         height: 60px;
     }
 
+    #account-dropdown-button-content-in-second-nav-bar {
+        left: -117px;
+        top: 78px;
+    }
+
     /* For the menu icon */
+    #menu-dropdown-button-in-second-nav-bar {
+        box-shadow: none;
+        width: fit-content;
+        height: fit-content;
+        margin: 15px 20px 0px 5px;
+    }
+
+    #menu-dropdown-button-content-in-second-nav-bar {
+        left: -90px;
+        top: 87px;
+    }
+
     .menu-icon2 {
         display: inline-block;
         font-size: 20px;
         padding-bottom: 5px;
         transition: 250ms ease-in-out;
-        margin: 15px 20px 0px 5px;
     }
 
     /* For the dropdown */
     .drop-down-item2 {
-        font-size: 0.8vw;
+        font-size: 15px;
     }
 }

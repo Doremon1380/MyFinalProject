@@ -14,18 +14,23 @@
 
     /* For search by alphabet section */
     #search-by-alphabet-in-filter-recipes-page {
-        margin: -15px 0px 0px -10px;
+        margin: -20px 0px -10px -25px;    
     }
 
-    #search-by-alphabet-in-filter-recipes-page button {
-        border: none;
-        background-color: white;
-        margin: 15px 0px 0px 10px;
+    #search-by-alphabet-in-filter-recipes-page li {
+        display: inline-block;
+        margin: 10px 5px;
     }
 
-    #search-by-alphabet-in-filter-recipes-page button:hover {
+    #search-by-alphabet-in-filter-recipes-page li a {
+        text-decoration: none;
+        color: black;
+        padding: 5px 3.5px;
+    }
+
+    #search-by-alphabet-in-filter-recipes-page li a:hover {
         background-color: orange;
-        color: white;        
+        color: white;
     }
 
     /* For search by keyword section */
@@ -100,18 +105,23 @@
 
     /* For search by alphabet section */
     #search-by-alphabet-in-filter-recipes-page {
-        margin: -15px 0px 0px -10px;
+        margin: -20px 0px -10px -25px;    
     }
 
-    #search-by-alphabet-in-filter-recipes-page button {
-        border: none;
-        background-color: white;
-        margin: 15px 0px 0px 10px;
+    #search-by-alphabet-in-filter-recipes-page li {
+        display: inline-block;
+        margin: 10px 5px;
     }
 
-    #search-by-alphabet-in-filter-recipes-page button:hover {
+    #search-by-alphabet-in-filter-recipes-page li a {
+        text-decoration: none;
+        color: black;
+        padding: 5px 3.5px;
+    }
+
+    #search-by-alphabet-in-filter-recipes-page li a:hover {
         background-color: orange;
-        color: white;        
+        color: white;
     }
 
     /* For search by keyword section */

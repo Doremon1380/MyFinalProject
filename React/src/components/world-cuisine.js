@@ -1,7 +1,6 @@
 import React from "react";
 import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./recipe-results.css";
 import "./world-cuisine.css"
 import { Helmet } from 'react-helmet'
 

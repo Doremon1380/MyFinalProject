@@ -1,6 +1,6 @@
 import React from "react";
 import SecondNavBar from "./second-nav-bar";
-import HalfTopPart from "./half-top-part";
+import TopPart from "./top-part";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./photos.css";
 import { Helmet } from 'react-helmet';
@@ -17,8 +17,8 @@ function Photos() {
             </Helmet>
 
             <SecondNavBar />
-            <Container id="photos-container">
-                <HalfTopPart />
+            <div id="photos-container">
+                <TopPart />
                 <nav id="group-buttons">
                 <a href="/about-me"><button className="group-button">About Me</button></a>
                 <a href="/favorite-recipes"><button className="group-button">My Favorites</button></a>
@@ -28,7 +28,7 @@ function Photos() {
                 <a href="/evaluated-recipes"><button className="group-button">My Reviews</button></a>
                 <a href="/personal-recipes"><button className="group-button last-button"> Personal Recipes</button></a>
                 </nav>
-            </Container>
+            </div>
             <div id="photos-page">
                 <div id="grid-photos-page">
                     <button id="add-photos-button">

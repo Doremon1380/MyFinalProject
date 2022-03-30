@@ -3,12 +3,7 @@ import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./public-profile-favorite-recipes.css";
 import { Helmet } from 'react-helmet';
-import { FaPinterest } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaTwitterSquare } from "react-icons/fa";
 
-import Container from "react-bootstrap/Container";
 import PublicProfileTopPart from "./public-profile-top-part";
 
 const TITLE = 'Public Profile - FoodShare.com';
@@ -21,7 +16,7 @@ function PublicProfileAboutMe() {
             </Helmet>
 
             <SecondNavBar />
-            <Container id="top-part-container-in-public-profile-about-me-page">
+            <div id="top-part-container-in-public-profile-about-me-page">
                 <PublicProfileTopPart />
                 <nav id="group-buttons-in-public-profile-about-me-page">
                     <a href="/public-profile-about-me"><button className="group-button-in-public-profile-about-me-page selected-button-in-public-profile-about-me-page">About Me</button></a>
@@ -46,7 +41,7 @@ function PublicProfileAboutMe() {
                         <a href="public-profile-about-me">(Link)</a>
                     </div>
                 </div>
-            </Container>
+            </div>
         </>
     );
 };

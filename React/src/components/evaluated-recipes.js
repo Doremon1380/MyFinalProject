@@ -1,11 +1,10 @@
 import React from "react";
 import SecondNavBar from "./second-nav-bar";
-import HalfTopPart from "./half-top-part";
+import TopPart from "./top-part";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from 'react-helmet';
 import "./evaluated-recipes.css";
 import { FaHeart } from "react-icons/fa";
-import Container from "react-bootstrap/Container";
 
 const TITLE = 'Private Profile - FoodShare.com';
 
@@ -17,8 +16,8 @@ function EvaluatedRecipes() {
             </Helmet>
 
             <SecondNavBar />
-            <Container id="top-part-container-in-evaluated-recipes-page">
-                <HalfTopPart />
+            <div id="top-part-container-in-evaluated-recipes-page">
+                <TopPart />
                 <nav id="group-buttons">
                     <a href="/about-me"><button className="group-button">About Me</button></a>
                     <a href="/favorite-recipes"><button className="group-button">My Favorites</button></a>
@@ -28,7 +27,7 @@ function EvaluatedRecipes() {
                     <a href="/evaluated-recipes"><button className="group-button selected-button">My Reviews</button></a>
                     <a href="/personal-recipes"><button className="group-button last-button"> Personal Recipes</button></a>
                 </nav>
-            </Container>
+            </div>
             <div id="evaluated-recipes-page">
                 <div id="evaluated-recipes-sorting-options-in-evaluated-recipes-page">
                     <label for="select-evaluated-recipes-sorting-options-in-evaluated-recipes-page">Sort by:</label><br />

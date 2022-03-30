@@ -2,15 +2,13 @@
     /* For the container of top part */
     #top-part-container-in-public-profile-evaluated-recipes-page {
         width: 100%;
-        margin: auto; 
-        margin-left: -12px;
     }
 
     /* For the group buttons */
     #group-buttons-in-public-profile-evaluated-recipes-page {
         overflow: auto;
         white-space: nowrap;
-        border: none;
+        max-width: 100%;
         width: 100vw;
     }
 
@@ -173,15 +171,13 @@
     /* For the container of top part */
     #top-part-container-in-public-profile-evaluated-recipes-page {
         width: 100%;
-        margin: auto; 
-        margin-left: -12px;
     }
 
     /* For the group buttons */
     #group-buttons-in-public-profile-evaluated-recipes-page {
         overflow: auto;
         white-space: nowrap;
-        border: none;
+        max-width: 100%;
         width: 100vw;
     }
 
@@ -397,7 +393,7 @@
 
     /* For the container of public profile evaluated recipes page */
     #public-profile-evaluated-recipes-page {
-        width: 67.5%;
+        width: 70%;
         margin: auto;
     }
 }
@@ -419,7 +415,7 @@
 
     /* For the container of public profile evaluated recipes page */
     #public-profile-evaluated-recipes-page {
-        width: 58%;
+        width: 60%;
         margin: auto;
     }
 }
@@ -427,7 +423,7 @@
 @media only screen and (min-width: 1600px) {
     /* For the container of top part */
     #top-part-container-in-public-profile-evaluated-recipes-page {
-        width: 64%;
+        width: 62.5%;
         margin: auto;
     }
 
@@ -459,7 +455,7 @@
 @media only screen and (min-width: 1712px) {
     /* For the container of top part */
     #top-part-container-in-public-profile-evaluated-recipes-page {
-        width: 65%;
+        width: 64%;
         margin: auto;
     }
 
@@ -473,7 +469,7 @@
 
     /* For the container of public profile evaluated recipes page */
     #public-profile-evaluated-recipes-page {
-        width: 63.6%;
+        width: 64%;
         margin: auto;
     }
 }
