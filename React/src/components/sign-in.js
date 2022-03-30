@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from 'react-helmet'
 
 import "./sign-in.css";
+//import "./client_secret.json";
 import Google from "./Google.png";
 import HidePassword from "./HidePassword.png";
 import ShowPassword from "./ShowPassword.png";
@@ -17,6 +18,7 @@ const imagesPath = {
 };
 
 const TITLE = 'Sign In - FoodShare.com';
+//const clientSecret = require("./client_secret.json");
 
 class SignIn extends React.Component {
 
@@ -36,17 +38,77 @@ class SignIn extends React.Component {
 
     getImageName = () => this.state.open ? "HidePassword" : "ShowPassword"
 
-    responseGoogle = (handleLogin) => {
-        var profile = handleLogin.getBasicProfile();
-        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-        console.log('Name: ' + profile.getName());
-        console.log('Image URL: ' + profile.getImageUrl());
-        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-        console.log('Email: ' + "1"); // This is null if the 'email' scope is not present.
-    };
-    logout() {
+    //responseGoogle = (handleLogin) => {
+    //    var profile = handleLogin.getBasicProfile();
+    //    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    //    console.log('Name: ' + profile.getName());
+    //    console.log('Image URL: ' + profile.getImageUrl());
+    //    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+    //    console.log('Email: ' + "1"); // This is null if the 'email' scope is not present.
+    //};
+    signInCallback = (authResult) => {
+        var sr = 1;
+        if (authResult['code']) {
+            var storeAuthorCode = authResult['code'];
 
+            //// Hide the sign-in button now that the user is authorized, for example:
+            //('#signinButton').attr('style', 'display: none');
+
+            // Send the code to the server
+            var url = 'http://localhost:1102/create-user';
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", url);
+
+            //xhr.setRequestHeader("Authorization", "Bearer mt0dgHmLJMVQhvjpNXDyA83vA_PxH23Y");
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    console.log(xhr.status);
+                    console.log(xhr.responseText);
+                }
+            };
+
+            var data = authResult['code'];
+
+            xhr.send(data);
+            xhr.response = function (res) {
+                // Handle or verify the server response.
+                var sr = res;
+                //var profile = res.getBasicProfile();
+                //console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                //console.log('Name: ' + profile.getName());
+                //console.log('Image URL: ' + profile.getImageUrl());
+                //console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+                //console.log('Email: ' + "1"); // This is null if the 'email' scope is not present.
+            };
+            //$.ajax({
+            //    type: 'POST',
+            //    url: 'http://localhost:1102/create-user',
+            //    // Always include an `X-Requested-With` header in every AJAX request,
+            //    // to protect against CSRF attacks.
+            //    headers: {
+            //        'X-Requested-With': 'XMLHttpRequest'
+            //    },
+            //    contentType: 'application/octet-stream; charset=utf-8',
+            //    success: function (result) {
+            //        // Handle or verify the server response.
+            //        var profile = handleLogin.getBasicProfile();
+            //        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+            //        console.log('Name: ' + profile.getName());
+            //        console.log('Image URL: ' + profile.getImageUrl());
+            //        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+            //        console.log('Email: ' + "1"); // This is null if the 'email' scope is not present.
+            //    },
+            //    processData: false,
+            //    data: authResult['code']
+            //});
+        } else {
+            // There was an error.
+        }
     };
+
     render = () => {
         const { isPaswordShown } = this.state;
         const imageName = this.getImageName();
@@ -71,9 +133,9 @@ class SignIn extends React.Component {
                         {/*  <div id="google-text">Google</div>*/}
                         {/*</button>*/}
                         <GoogleLogin
-                            clientId="709159068773-a2lepf8vpf8nv3bq5k86fn4ujut03o6i.apps.googleusercontent.com"
+                            clientId="233921336924-5aeen5b4nrsh915vmlapdka1gnjg8ghv.apps.googleusercontent.com"
                             buttonText="Login"
-                            onSuccess={this.responseGoogle}
+                            onSuccess={this.signInCallback}
                             cookiePolicy={'single_host_origin'}
                         />
                     </div>

@@ -14,7 +14,7 @@ import CreateRecipe from "./components/create-recipe";
 import Photos from "./components/photos";
 import PhotoId from "./components/photo-id";
 import Home from "./components/home"
-// using for redirecting to another page, testing purpose
+// TODO: using for redirecting to another page, testing purpose
 import Home1 from "./components/home1"
 import RecipeDetails from "./components/recipe-details"
 import AllReviews from "./components/all-reviews";
@@ -46,55 +46,56 @@ import SpecificTypeOfCountryRecipes from "./components/specific-type-of-country-
 import FilterRecipes from "./components/filter-recipes";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <div>
-        <Switch>
-          <Route path="/" component={Home1} exact />
-          <Route path="/home" component={Home} exact />
-          <Route path="/signin" component={SignIn} />
-          <Route path="/authentication" component={Authentication} />
-          <Route path="/signup" component={SignUp} />
-          <Route path="/about-me" component={PrivateProfile} />
-          <Route path="/edit-profile" component={ProfileSettings} />
-          <Route path="/notification-settings" component={NotificationSettings} />
-          <Route path="/account-settings" component={AccountSettings} />
-          <Route path="/create-recipe" component={CreateRecipe}/>
-          <Route path="/photos" component={Photos}/>
-          <Route path="/photo-id" component={PhotoId}/>
-          <Route path="/foodshare.com" component={Home}/>
-          <Route path="/recipe-details" component={RecipeDetails}/>
-          <Route path="/all-reviews" component={AllReviews}/>
-          <Route path="/favorite-recipes" component={FavoriteRecipes}/>
-          <Route path="/following-accounts" component={FollowingAccounts}/>
-          <Route path="/follower-accounts" component={FollowerAccounts}/>
-          <Route path="/made-recipes" component={MadeRecipes}/>
-          <Route path="/evaluated-recipes" component={EvaluatedRecipes}/>
-          <Route path="/personal-recipes" component={PersonalRecipes}/>
-          <Route path="/collection-recipes" component={CollectionRecipes}/>
-          <Route path="/public-profile-favorite-recipes" component={PublicProfileFavoriteRecipes}/>
-          <Route path="/public-profile-about-me" component={PublicProfileAboutMe}/>
-          <Route path="/public-profile-collection-recipes" component={PublicProfileCollectionRecipes}/>
-          <Route path="/public-profile-made-recipes" component={PublicProfileMadeRecipes}/>
-          <Route path="/public-profile-evaluated-recipes" component={PublicProfileEvaluatedRecipes}/>
-          <Route path="/public-profile-personal-recipes" component={PublicProfilePersonalRecipes}/>
-          <Route path="/public-profile-following-accounts" component={PublicProfileFollowingAccounts}/>
-          <Route path="/public-profile-follower-accounts" component={PublicProfileFollowerAccounts}/>
-          <Route path="/other-profile-collection-details" component={OtherProfileCollectionDetails}/>
-          <Route path="/collection-details" component={CollectionDetails}/>
-          <Route path="/shopping-lists" component={ShoppingLists}/>
-          <Route path="/recipe-results" component={RecipeResults}/>
-          <Route path="/ask-the-community" component={AskTheCommunity}/>
-          <Route path="/world-cuisine" component={WorldCuisine}/>
-          <Route path="/country-recipes" component={CountryRecipes}/>
-          <Route path="/types-of-recipes" component={TypesOfRecipes}/>
-          <Route path="/specific-type-of-recipes" component={SpecificTypeOfRecipes}/>
-          <Route path="/specific-type-of-country-recipes" component={SpecificTypeOfCountryRecipes}/>
-          <Route path="/filter-recipes" component={FilterRecipes}/>
-        </Switch>
-      </div>
-    </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <div>
+                <Switch>
+                    {/* TODO: will remove Home1 */}
+                    <Route path="/" component={Home1} exact />
+                    <Route path="/home" component={Home} exact />
+                    <Route path="/signin" component={SignIn} />
+                    <Route path="/authentication" component={Authentication} />
+                    <Route path="/signup" component={SignUp} />
+                    <Route path="/about-me" component={PrivateProfile} />
+                    <Route path="/edit-profile" component={ProfileSettings} />
+                    <Route path="/notification-settings" component={NotificationSettings} />
+                    <Route path="/account-settings" component={AccountSettings} />
+                    <Route path="/create-recipe" component={CreateRecipe} />
+                    <Route path="/photos" component={Photos} />
+                    <Route path="/photo-id" component={PhotoId} />
+                    <Route path="/foodshare.com" component={Home} />
+                    <Route path="/recipe-details" component={RecipeDetails} />
+                    <Route path="/all-reviews" component={AllReviews} />
+                    <Route path="/favorite-recipes" component={FavoriteRecipes} />
+                    <Route path="/following-accounts" component={FollowingAccounts} />
+                    <Route path="/follower-accounts" component={FollowerAccounts} />
+                    <Route path="/made-recipes" component={MadeRecipes} />
+                    <Route path="/evaluated-recipes" component={EvaluatedRecipes} />
+                    <Route path="/personal-recipes" component={PersonalRecipes} />
+                    <Route path="/collection-recipes" component={CollectionRecipes} />
+                    <Route path="/public-profile-favorite-recipes" component={PublicProfileFavoriteRecipes} />
+                    <Route path="/public-profile-about-me" component={PublicProfileAboutMe} />
+                    <Route path="/public-profile-collection-recipes" component={PublicProfileCollectionRecipes} />
+                    <Route path="/public-profile-made-recipes" component={PublicProfileMadeRecipes} />
+                    <Route path="/public-profile-evaluated-recipes" component={PublicProfileEvaluatedRecipes} />
+                    <Route path="/public-profile-personal-recipes" component={PublicProfilePersonalRecipes} />
+                    <Route path="/public-profile-following-accounts" component={PublicProfileFollowingAccounts} />
+                    <Route path="/public-profile-follower-accounts" component={PublicProfileFollowerAccounts} />
+                    <Route path="/other-profile-collection-details" component={OtherProfileCollectionDetails} />
+                    <Route path="/collection-details" component={CollectionDetails} />
+                    <Route path="/shopping-lists" component={ShoppingLists} />
+                    <Route path="/recipe-results" component={RecipeResults} />
+                    <Route path="/ask-the-community" component={AskTheCommunity} />
+                    <Route path="/world-cuisine" component={WorldCuisine} />
+                    <Route path="/country-recipes" component={CountryRecipes} />
+                    <Route path="/types-of-recipes" component={TypesOfRecipes} />
+                    <Route path="/specific-type-of-recipes" component={SpecificTypeOfRecipes} />
+                    <Route path="/specific-type-of-country-recipes" component={SpecificTypeOfCountryRecipes} />
+                    <Route path="/filter-recipes" component={FilterRecipes} />
+                </Switch>
+            </div>
+        </BrowserRouter>
+    );
 };
 
 export default App;

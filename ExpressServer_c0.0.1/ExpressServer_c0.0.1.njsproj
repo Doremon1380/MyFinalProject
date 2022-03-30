@@ -11,8 +11,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>2139f241-bb47-4229-8814-cd2dd6e420f5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>server.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,6 +28,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="client_secret.json" />
     <Content Include="login.api.js">
       <SubType>Code</SubType>
     </Content>

@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.4.0-alpha">
+﻿<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.4.0-alpha">
   <PropertyGroup Label="Globals">
     <ProjectGuid>9366b6ef-5f15-469b-9818-a1d8db45ddae</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <StartupCommand>set BROWSER=none&amp;&amp;npm start</StartupCommand>
+    <StartupCommand>set BROWSER=Chrome&amp;&amp;npm start</StartupCommand>
     <JavaScriptTestRoot>src\</JavaScriptTestRoot>
     <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
   </PropertyGroup>
@@ -17,6 +17,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\apiRequest\" />
+    <Folder Include="src\store\reducer\" />
     <Folder Include="src\viewActions\" />
   </ItemGroup>
   <!-- This target is copied from the ASP.NET SPA template in order to ensure node_modules are in place. -->
