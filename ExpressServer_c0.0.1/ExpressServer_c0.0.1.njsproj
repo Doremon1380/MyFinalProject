@@ -28,7 +28,6 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="client_secret.json" />
     <Content Include="login.api.js">
       <SubType>Code</SubType>
     </Content>
