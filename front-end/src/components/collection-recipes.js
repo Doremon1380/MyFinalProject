@@ -1,12 +1,11 @@
 import React from "react";
 import SecondNavBar from "./second-nav-bar";
-import HalfTopPart from "./half-top-part";
+import TopPart from "./top-part";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from 'react-helmet';
 import "./collection-recipes.css";
 import { FaHeart } from "react-icons/fa";
 import { FaUtensils } from "react-icons/fa";
-import Container from "react-bootstrap/Container";
 
 const TITLE = 'Private Profile - FoodShare.com';
 
@@ -18,18 +17,18 @@ function CollectionRecipes() {
             </Helmet>
 
             <SecondNavBar />
-            <Container id="top-part-container-in-collection-recipes-page">
-                <HalfTopPart />
+            <div id="top-part-container-in-collection-recipes-page">
+                <TopPart />
                 <nav id="group-buttons">
                     <a href="/about-me"><button className="group-button">About Me</button></a>
                     <a href="/favorite-recipes"><button className="group-button selected-button">My Favorites</button></a>
                     <a href="/follower-accounts"><button className="group-button">My Friends</button></a>
                     <a href="/made-recipes"><button className="group-button">I Made It</button></a>
-                    <a href="/photos"><button className="group-button ">My Photos</button></a>
+                    <a href="/photos"><button className="group-button">My Photos</button></a>
                     <a href="/evaluated-recipes"><button className="group-button">My Reviews</button></a>
                     <a href="/personal-recipes"><button className="group-button last-button"> Personal Recipes</button></a>
                 </nav>
-            </Container>
+            </div>
             <div id="collection-recipes-page">
                 <div id="top-section-of-collection-recipes-page">
                     <div id="favorites-recipes-and-collections-in-collection-recipes-page">
@@ -50,9 +49,9 @@ function CollectionRecipes() {
                 </div>
                 <div id="collections-in-collection-recipes-page">
                     <a href="#create-new-collection-form-in-collection-recipes-page">
-                        <button className="add-collection-button-in-collection-recipes-page">
-                            <div className="add-icon-in-collection-recipes-page">
-                                <i class="bi bi-plus"></i>
+                        <button id="add-collection-button-in-collection-recipes-page">
+                            <div id="add-icon-in-collection-recipes-page">
+                                <i className="bi bi-plus"></i>
                             </div>
                             <p>Create a collection</p>
                         </button>

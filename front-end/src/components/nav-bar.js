@@ -5,18 +5,30 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css"; //mất 2 tiếng đồng hồ để nhận ra cần import bootstrap-icons để các icon được nhập vào có thể hiển thị thành công.
 import Navbar from 'react-bootstrap/Navbar';
-import Container from "react-bootstrap/Container";
-import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
 import { FaBars } from "react-icons/fa";
 
 import "./nav-bar.css" //custom css for React component 
+import { useState, useRef, useEffect } from "react";
 import MyLogo from "./MyLogo.png";
 
 function NavBar() {
+  const [isDropDownButtonOpen, setIsDropDownButtonOpen] = useState(false);
+  const ref = useRef();
+  useEffect(() => {
+    const checkIfClickedOutside = (e) => {
+      if (isDropDownButtonOpen && ref.current && !ref.current.contains(e.target)) {
+        setIsDropDownButtonOpen(false)
+      }
+    };
+    document.addEventListener("click", checkIfClickedOutside);
+    return () => {
+      document.removeEventListener("click", checkIfClickedOutside)
+    }
+  }, [isDropDownButtonOpen])
+
   return (
     <Navbar id="nav-bar">
-      <Container id="nav-bar-container">
+      <div id="nav-bar-container">
         <a href="/foodshare.com"><img className="logo" src={MyLogo} alt="Logo" /></a>
         <div className="search-bar">
           <form className="search-form" id="search-form-of-nav-bar" name="searchRecipe">
@@ -25,18 +37,19 @@ function NavBar() {
           </form>
         </div>
         <button className="sign-in-button"><a href="/signin">Sign in</a></button>
-        <DropdownButton id="dropdown-basic-button" variant="" title={<i className="menu-icon"><FaBars /></i>}>
-          <Dropdown.Item className="drop-down-item" href="/foodshare.com">FoodShare</Dropdown.Item>
-          <Dropdown.Divider />
-          <Dropdown.Item className="drop-down-item" href="/world-cuisine">World Cuisine</Dropdown.Item>
-          <Dropdown.Divider />
-          <Dropdown.Item className="drop-down-item" href="/filter-recipes">Filter Recipes</Dropdown.Item>
-          <Dropdown.Divider />
-          <Dropdown.Item className="drop-down-item" href="/types-of-recipes">Types of Recipes</Dropdown.Item>
-          <Dropdown.Divider />
-          <Dropdown.Item className="drop-down-item" href="/ask-the-community">Ask the Community</Dropdown.Item>
-        </DropdownButton>
-      </Container>
+        <div id="dropdown-button-in-nav-bar" ref={ref}>
+          <FaBars id="menu-icon-of-dropdown-button-in-nav-bar" onClick={() => setIsDropDownButtonOpen(!isDropDownButtonOpen)} />
+          {isDropDownButtonOpen && (
+            <div id="dropdown-button-content-in-nav-bar">
+              <a className="dropdown-item-of-dropdown-button-in-nav-bar" href="/foodshare.com">FoodShare</a>
+              <a className="dropdown-item-of-dropdown-button-in-nav-bar" href="/world-cuisine">World Cuisine</a>
+              <a className="dropdown-item-of-dropdown-button-in-nav-bar" href="/filter-recipes">Filter Recipes</a>
+              <a className="dropdown-item-of-dropdown-button-in-nav-bar" href="/types-of-recipes">Types of Recipes</a>
+              <a className="dropdown-item-of-dropdown-button-in-nav-bar" id="last-item-of-dropdown-button-in-nav-bar" href="/ask-the-community">Ask the Community</a>
+            </div>
+          )}
+        </div>
+      </div>
     </Navbar>
   );
 };

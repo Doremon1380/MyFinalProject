@@ -2,8 +2,6 @@
     /* For the container of top part */
     #top-part-container-in-public-profile-about-me-page{
         width: 100%;
-        margin: auto; 
-        margin-left: -12px;
     }
 
     /* For the container of public profile about me page */
@@ -17,7 +15,7 @@
     #group-buttons-in-public-profile-about-me-page {
         overflow: auto;
         white-space: nowrap;
-        border: none;
+        max-width: 100%;
         width: 100vw;
     }
 
@@ -58,8 +56,6 @@
     /* For the container of top part */
     #top-part-container-in-public-profile-about-me-page{
         width: 100%;
-        margin: auto; 
-        margin-left: -12px;
     }
 
     /* For the container of public profile about me page */
@@ -73,7 +69,7 @@
     #group-buttons-in-public-profile-about-me-page {
         overflow: auto;
         white-space: nowrap;
-        border: none;
+        max-width: 100%;
         width: 100vw;
     }
 
@@ -151,7 +147,7 @@
     }
 
     /* For the group buttons */
-    .group-button-in-public-profile-evaluated-recipes-page {
+    .group-button-in-public-profile-about-me-page {
         border: none;
         font-size: 15px;
         height: 50px;
@@ -162,7 +158,7 @@
 @media only screen and (min-width: 1600px) {
     /* For the container of top part */
     #top-part-container-in-public-profile-about-me-page{
-        width: 64%;
+        width: 62%;
         margin: auto; 
     }
 
@@ -171,14 +167,14 @@
         border: none;
         font-size: 15px;
         height: 50px;
-        width: 155px;
+        width: 160px;
     }
 }
 
 @media only screen and (min-width: 1712px) { 
     /* For the container of top part */
     #top-part-container-in-public-profile-about-me-page{
-        width: 65%;
+        width: 63.7%;
         margin: auto; 
     }
 
@@ -187,6 +183,6 @@
         border: none;
         font-size: 15px;
         height: 50px;
-        width: 175.6px;
+        width: 180px;
     }
 }

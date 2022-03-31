@@ -55,34 +55,70 @@
         transition: 200ms ease-in-out;
     }
     
-
 @media only screen and (max-width: 600px) {
     /* For the container */
     #private-profile-container {
         width: 100%;
-        margin: auto; 
-        margin-left: -12px;
+    }
+
+    /* For group buttons of nav bar */
+    #group-buttons {
+        overflow: auto;
+        white-space: nowrap;
+        width: 100vw;
+        max-width: 100%;
+    }
+
+    .group-button {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 130px;
+    }
+
+    .selected-button {
+        color: white;
+        background-color: rgb(255, 123, 0);
+    }
+
+    .last-button {
+        width: 170px;
     }
 }
 
 @media only screen and (min-width: 601px) {
-        /* For the container */
+    /* For the container */
     #private-profile-container {
         width: 100%;
-        margin: auto; 
-        margin-left: -12px;
     }
-}
 
-@media only screen and (min-width: 768px) {
-    #private-profile-container {
-        width: 100%;
-        margin: auto; 
-        margin-left: -12px;
+    /* For group buttons of nav bar */
+    #group-buttons {
+        overflow: auto;
+        white-space: nowrap;
+        width: 100vw;
+        max-width: 100%;
+    }
+
+    .group-button {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 130px;
+    }
+
+    .selected-button {
+        color: white;
+        background-color: rgb(255, 123, 0);
+    }
+
+    .last-button {
+        width: 170px;
     }
 }
 
 @media only screen and (min-width: 956px) {
+    /* For the container */
     #private-profile-container {
         width: 70%;
         margin: auto;
@@ -90,13 +126,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    #private-profile-container {
-        width: 60%;
-        margin: auto;
-    }
-}
-
-@media only screen and (min-width: 1400px) {
+    /* For the container */
     #private-profile-container {
         width: 60%;
         margin: auto;
@@ -104,16 +134,34 @@
 }
 
 @media only screen and (min-width: 1600px) {
+    /* For the container */
     #private-profile-container {
-        width: 64%;
+        width: 62%;
         margin: auto;
+    }
+
+    /* For group buttons of nav bar */
+    .group-button {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 161px;
     }
 }
 
 @media only screen and (min-width: 1712px) {
+    /* For the container */
     #private-profile-container {
-        width: 65%;
+        width: 63.7%;
         margin: auto;
+    }
+
+    /* For group buttons of nav bar */
+    .group-button {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 178px;    
     }
 }
 

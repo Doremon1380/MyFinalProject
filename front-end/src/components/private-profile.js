@@ -1,11 +1,9 @@
 import React from "react";
 import SecondNavBar from "./second-nav-bar";
-import TopPart from "./top-part";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./public-profile-about-me.css";
 import { Helmet } from 'react-helmet'
-
-import Container from "react-bootstrap/Container";
+import TopPart from "./top-part";
 
 const TITLE = 'Private Profile - FoodShare.com';
 
@@ -17,8 +15,17 @@ function PrivateProfile() {
             </Helmet>
 
             <SecondNavBar />
-            <Container id="private-profile-container">
+            <div id="private-profile-container">
                 <TopPart />
+                <nav id="group-buttons">
+                    <a href="/about-me"><button className="group-button selected-button">About Me</button></a>
+                    <a href="/favorite-recipes"><button className="group-button">My Favorites</button></a>
+                    <a href="/follower-accounts"><button className="group-button">My Friends</button></a>
+                    <a href="/made-recipes"><button className="group-button">I Made It</button></a>
+                    <a href="/photos"><button className="group-button">My Photos</button></a>
+                    <a href="/evaluated-recipes"><button className="group-button">My Reviews</button></a>
+                    <a href="/personal-recipes"><button className="group-button last-button"> Personal Recipes</button></a>
+                </nav>
                 <div id="add-informations">
                     <div id="about-me">
                         <p>About me</p>
@@ -33,7 +40,7 @@ function PrivateProfile() {
                         <a href="/edit-profile">Share your public profile, create a personal URL!</a>
                     </div>
                 </div>
-            </Container>
+            </div>
             <a href="/edit-profile" id="go-to-profile-settings"><button id="edit-profile-button">Edit public profile</button></a>
         </>
     );

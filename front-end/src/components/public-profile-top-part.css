@@ -3,7 +3,7 @@
     #top-section-of-public-profile-top-part {
         display: flex;
         height: 130px;
-        width: 100vw;
+        width: 100%;
         background-image: url("top_background.jpg");
         background-repeat: no-repeat;
         justify-content: space-between;
@@ -106,7 +106,7 @@
     #top-section-of-public-profile-top-part {
         display: flex;
         height: 130px;
-        width: 100vw;
+        width: 100%;
         background-image: url("top_background.jpg");
         background-repeat: no-repeat;
         justify-content: space-between;
@@ -209,7 +209,7 @@
     #top-section-of-public-profile-top-part {
         display: flex;
         height: 130px;
-        width: 100vw;
+        width: 100%;
         background-image: url("top_background.jpg");
         background-repeat: no-repeat;
         justify-content: space-between;

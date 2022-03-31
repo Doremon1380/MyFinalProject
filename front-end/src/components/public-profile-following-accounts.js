@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./public-profile-following-accounts.css";
 import { Helmet } from 'react-helmet'
 
-import Container from "react-bootstrap/Container";
 import PublicProfileTopPart from "./public-profile-top-part";
 
 const TITLE = 'Public Profile - FoodShare.com';
@@ -53,7 +52,7 @@ function PublicProfileFollowingAccounts() {
             </Helmet>
 
             <SecondNavBar />
-            <Container id="top-part-container-in-public-profile-following-accounts-page">
+            <div id="top-part-container-in-public-profile-following-accounts-page">
                 <PublicProfileTopPart />
                 <nav id="group-buttons-in-public-profile-following-accounts-page">
                     <a href="/public-profile-about-me"><button className="group-button-in-public-profile-following-accounts-page">About Me</button></a>
@@ -64,7 +63,7 @@ function PublicProfileFollowingAccounts() {
                     <a href="/public-profile-follower-accounts"><button className="group-button-in-public-profile-following-accounts-page">Followers</button></a>
                     <a href="/public-profile-following-accounts"><button className="group-button-in-public-profile-following-accounts-page last-button-of-group-buttons-in-public-profile-following-accounts-page selected-button-in-public-profile-following-accounts-page">Following</button></a>
                 </nav>
-            </Container>
+            </div>
             <div id="public-profile-following-accounts-page">
                 <div id="following-and-follower-in-public-profile-following-accounts-page">
                     <a href="/public-profile-following-accounts">

@@ -9,8 +9,6 @@ input:-webkit-autofill:active  {
     /* For the container of top part */
     #top-part-container-in-favorite-recipes-page {
         width: 100%;
-        margin: auto; 
-        margin-left: -12px;
     }
 
     /* For the container of favorite recipes page */
@@ -410,8 +408,6 @@ input:-webkit-autofill:active  {
     /* For the container of top part */
     #top-part-container-in-favorite-recipes-page {
         width: 100%;
-        margin: auto; 
-        margin-left: -12px;
     }
 
     /* For the container of favorite recipes page */
@@ -908,7 +904,7 @@ input:-webkit-autofill:active  {
 
     /* For the container of favorite recipes page */
     #favorite-recipes-page {
-        width: 67.5%;
+        width: 70%;
         margin: auto;
     }
 
@@ -946,7 +942,7 @@ input:-webkit-autofill:active  {
 
     /* For the container of favorite recipes page */
     #favorite-recipes-page {
-        width: 58%;
+        width: 60%;
         margin: auto;
     }
 
@@ -991,7 +987,7 @@ input:-webkit-autofill:active  {
 @media only screen and (min-width: 1600px) {
     /* For the container of top part */
     #top-part-container-in-favorite-recipes-page {
-        width: 64%;
+        width: 62.5%;
         margin: auto;
     }
     
@@ -1026,13 +1022,13 @@ input:-webkit-autofill:active  {
 @media only screen and (min-width: 1712px) {
     /* For the container of top part */
     #top-part-container-in-favorite-recipes-page {
-        width: 65%;
+        width: 64%;
         margin: auto;
     }
 
     /* For the container of favorite recipes page */
     #favorite-recipes-page {
-        width: 63.6%;
+        width: 64%;
         margin: auto;
     }
 

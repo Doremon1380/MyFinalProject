@@ -4,11 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./collection-details.css";
 import { Helmet } from 'react-helmet'
 import { FaHeart } from "react-icons/fa";
-import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
-
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
 
 const TITLE = 'Collection Details - FoodShare.com';
 

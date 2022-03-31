@@ -1,10 +1,9 @@
 import React from "react";
 import SecondNavBar from "./second-nav-bar";
-import HalfTopPart from "./half-top-part";
+import TopPart from "./top-part";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from 'react-helmet';
 import "./following-accounts.css";
-import Container from "react-bootstrap/Container";
 
 const TITLE = 'Private Profile - FoodShare.com';
 
@@ -52,8 +51,8 @@ function FollowingAccounts() {
             </Helmet>
 
             <SecondNavBar />
-            <Container id="top-part-container-in-following-accounts-page">
-                <HalfTopPart />
+            <div id="top-part-container-in-following-accounts-page">
+                <TopPart />
                 <nav id="group-buttons">
                     <a href="/about-me"><button className="group-button">About Me</button></a>
                     <a href="/favorite-recipes"><button className="group-button">My Favorites</button></a>
@@ -63,7 +62,7 @@ function FollowingAccounts() {
                     <a href="/evaluated-recipes"><button className="group-button">My Reviews</button></a>
                     <a href="/personal-recipes"><button className="group-button last-button"> Personal Recipes</button></a>
                 </nav>
-            </Container>
+            </div>
             <div id="following-accounts-page">
                 <div id="following-and-follower-in-following-accounts-page">
                     <a href="/following-accounts">

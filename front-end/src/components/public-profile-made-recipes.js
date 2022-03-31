@@ -5,7 +5,6 @@ import "./public-profile-made-recipes.css";
 import { Helmet } from 'react-helmet'
 import { FaHeart } from "react-icons/fa";
 
-import Container from "react-bootstrap/Container";
 import PublicProfileTopPart from "./public-profile-top-part";
 
 const TITLE = 'Public Profile - FoodShare.com';
@@ -18,7 +17,7 @@ function PublicProfileMadeRecipes() {
             </Helmet>
 
             <SecondNavBar />
-            <Container id="top-part-container-in-public-profile-made-recipes-page">
+            <div id="top-part-container-in-public-profile-made-recipes-page">
                 <PublicProfileTopPart />
                 <nav id="group-buttons-in-public-profile-made-recipes-page">
                     <a href="/public-profile-about-me"><button className="group-button-in-public-profile-made-recipes-page">About Me</button></a>
@@ -29,7 +28,7 @@ function PublicProfileMadeRecipes() {
                     <a href="/public-profile-follower-accounts"><button className="group-button-in-public-profile-made-recipes-page">Followers</button></a>
                     <a href="/public-profile-following-accounts"><button className="group-button-in-public-profile-made-recipes-page last-button-of-group-buttons-in-public-profile-made-recipes-page">Following</button></a>
                 </nav>
-            </Container>
+            </div>
             <div id="public-profile-made-recipes-page">
                 <div id="made-recipes-sorting-options-in-public-profile-made-recipes-page">
                     <label for="select-made-recipes-sorting-options-in-public-profile-made-recipes-page">Sort by:</label><br />

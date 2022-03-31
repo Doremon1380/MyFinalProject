@@ -12,17 +12,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 /* For the search bar */
-.search-form {
-    border: 1px solid #ddd;
-    transition: 200ms ease-in-out;
-    border-radius: 3px;
-}
-
-.search-form:hover {
-    border: 1px solid #aaa;
-    transition: 200ms ease-in-out;
-}
-
 .search-button {    
     border: none;
     background-color: white;
@@ -48,54 +37,38 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     color: white;
 }
 
-/* For the dropdown */
-    /* to remove the carpet */
-#dropdown-basic-button::after {
-    display: none; 
-}
-
-#dropdown-basic-button {
-    box-shadow: none;
-}
-
-.drop-down-item:focus {
-    background-color: orange;  
-    color: #fff;
-    outline: none;
-}
-
-/* For the menu icon */
-.menu-icon:hover {
-    transform: scale(1.1) ;
-    transition: 250ms ease-in-out;
-}
-
 @media only screen and (max-width: 600px) {
     /* For the container */
     #nav-bar-container {
-        width: 88%;
+        width: 100%;
         display: flex;
+        justify-content: space-around;
     }
     
     /* For the logo */
     .logo {
         width: 15vw;
-        height: 50px;
+        height: 70px;
     }
 
     /* For search bar */
-    .search-bar {
-        white-space: nowrap;
-        overflow: hidden;
-        width: fit-content;
-        margin: 0vw 0vw 0vw 3vw;
+    .search-form {
+        border: 1px solid #ddd;
+        transition: 200ms ease-in-out;
+        border-radius: 3px;
+        margin-top: 16px;
+    }
+    
+    .search-form:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
     }
 
     .search-input {
         border: none;
         outline: none;
         padding: 6px 10px 6px 10px;
-        width: 30vw;
+        width: 45vw;
     }
 
     /* For sign in button */
@@ -103,28 +76,192 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         border: none;
         background-color: orange;
         border-radius: 4px;
-        font-size: 3vw;
+        font-size: 16px;
+        margin-top: 20px;
+        height: 30px;
         color: white;
         transition: 150ms ease-in-out; /* dùng để tạo đảo ngược hiệu ứng cho nút sau khi di chuột khỏi nút */
-        margin: 0vw 0vw 0vw 3vw;
     }
 
     /* For the menu icon */
-    .menu-icon {
-        display: inline-block;
+    #menu-icon-of-dropdown-button-in-nav-bar {
         font-size: 20px;
-        padding-bottom: 5px;
+        cursor: pointer;
         transition: 250ms ease-in-out;
-        margin-left: 10px;
+    }
+
+    #menu-icon-of-dropdown-button-in-nav-bar:hover {
+        transform: scale(1.1) ;
+        transition: 250ms ease-in-out;
     }
 
     /* For the dropdown */
-    .drop-down-item {
-        font-size: 2vw;
+    #dropdown-button-in-nav-bar {
+        height: fit-content;
+        margin: 25px 15px 0px 0px;
+    }
+
+    #menu-icon-of-dropdown-button-in-nav-bar {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+
+    #dropdown-button-content-in-nav-bar {
+        position: absolute;
+        background-color: rgb(255, 255, 255);   
+        border: 1px solid rgb(217, 217, 217);
+        width: 100%;
+        left: 0px;
+        top: 80px; 
+    }
+
+    .dropdown-item-of-dropdown-button-in-nav-bar {
+        color: black;
+        text-decoration: none;
+        position: relative;
+        display: block;
+        min-width: 170px;
+        padding: 12px;
+        border-bottom: 1px solid rgb(217, 217, 217);
+        font-size: 15px;
+    }
+
+    #last-item-of-dropdown-button-in-nav-bar {
+        border: none;
+    }
+
+    .dropdown-item-of-dropdown-button-in-nav-bar:hover {
+        color: black;
+        background-color: rgb(233, 236, 239);
+    }
+
+    .dropdown-item-of-dropdown-button-in-nav-bar:focus {
+        background-color: orange;  
+        color: white;
     }
 }
 
 @media only screen and (min-width: 601px) {
+    /* For the container */
+    #nav-bar-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* For the logo */
+    .logo {
+        width: 15vw;
+        height: 70px;
+    }
+
+    /* For search bar */
+    .search-form {
+        border: 1px solid #ddd;
+        transition: 200ms ease-in-out;
+        border-radius: 3px;
+        margin-top: 16px;
+    }
+    
+    .search-form:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    .search-input {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 10px;
+        width: 45vw;
+    }
+
+    /* For sign in button */
+    .sign-in-button {
+        border: none;
+        background-color: orange;
+        border-radius: 4px;
+        font-size: 16px;
+        margin-top: 20px;
+        height: 30px;
+        color: white;
+        transition: 150ms ease-in-out; /* dùng để tạo đảo ngược hiệu ứng cho nút sau khi di chuột khỏi nút */
+    }
+
+    /* For the menu icon */
+    #menu-icon-of-dropdown-button-in-nav-bar {
+        font-size: 20px;
+        cursor: pointer;
+        transition: 250ms ease-in-out;
+    }
+
+    #menu-icon-of-dropdown-button-in-nav-bar:hover {
+        transform: scale(1.1) ;
+        transition: 250ms ease-in-out;
+    }
+
+    /* For the dropdown */
+    #dropdown-button-in-nav-bar {
+        height: fit-content;
+        margin: 25px 15px 0px 0px;
+    }
+
+    #menu-icon-of-dropdown-button-in-nav-bar {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+
+    #dropdown-button-content-in-nav-bar {
+        position: absolute;
+        background-color: rgb(255, 255, 255);   
+        border: 1px solid rgb(217, 217, 217);
+        width: 100%;
+        left: 0px;
+        top: 80px; 
+    }
+
+    .dropdown-item-of-dropdown-button-in-nav-bar {
+        color: black;
+        text-decoration: none;
+        position: relative;
+        display: block;
+        min-width: 170px;
+        padding: 12px;
+        border-bottom: 1px solid rgb(217, 217, 217);
+        font-size: 15px;
+    }
+
+    #last-item-of-dropdown-button-in-nav-bar {
+        border: none;
+    }
+
+    .dropdown-item-of-dropdown-button-in-nav-bar:hover {
+        color: black;
+        background-color: rgb(233, 236, 239);
+    }
+
+    .dropdown-item-of-dropdown-button-in-nav-bar:focus {
+        background-color: orange;  
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For the container */
+    #nav-bar-container {
+        width: 90%;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+    }
+
+    /* For the logo */
+    .logo {
+        width: 15vw;
+        height: 70px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
     /* For the container */
     #nav-bar-container {
         width: 80%;
@@ -133,52 +270,23 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     /* For the logo */
     .logo {
-        width: 15vw;
-        height: 65px;
+        width: 11vw;
+        height: 70px;
     }
-
-    /* For search bar */
-    .search-bar {
-        white-space: nowrap;
-        overflow: hidden;
-        width: fit-content;
-        margin: 0vw 0vw 0vw 1.5vw;
-    }
-
-    .search-input {
-        border: none;
-        outline: none;
-        padding: 6px 10px 6px 10px;
-        width: 26vw;
-    }
-
-    /* For sign in button */
-    .sign-in-button {
-        border: none;
-        background-color: orange;
+    
+    /* For the dropdown content */
+    #dropdown-button-content-in-nav-bar {
+        position: absolute;
+        background-color: rgb(255, 255, 255);   
+        border: 1px solid rgb(217, 217, 217);
         border-radius: 4px;
-        font-size: 2.7vw;
-        color: white;
-        transition: 150ms ease-in-out; /* dùng để tạo đảo ngược hiệu ứng cho nút sau khi di chuột khỏi nút */
-        margin: 0vw 0vw 0vw 1.5vw;
-    }
-
-    /* For the menu icon */
-    .menu-icon {
-        display: inline-block;
-        font-size: 20px;
-        padding-bottom: 5px;
-        transition: 250ms ease-in-out;
-        margin-left: 10px;
-    }
-
-    /* For the dropdown */
-    .drop-down-item {
-        font-size: 2vw;
+        width: fit-content;
+        left: 80%;
+        top: 70px;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1280px) {
     /* For the container */
     #nav-bar-container {
         width: 70%;
@@ -187,52 +295,31 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     /* For the logo */
     .logo {
-        width: 15vw;
+        width: 10vw;
         height: 70px;
     }
 
     /* For search bar */
-    .search-bar {
-        white-space: nowrap;
-        overflow: hidden;
-        width: fit-content;
-        margin: 0vw 0vw 0vw 2vw;
-    }
-
     .search-input {
         border: none;
         outline: none;
         padding: 6px 10px 6px 10px;
-        width: 25vw;
+        width: 40vw;
     }
 
-    /* For sign in button */
-    .sign-in-button {
-        border: none;
-        background-color: orange;
+    /* For the dropdown content */
+    #dropdown-button-content-in-nav-bar {
+        position: absolute;
+        background-color: rgb(255, 255, 255);   
+        border: 1px solid rgb(217, 217, 217);
         border-radius: 4px;
-        font-size: 2.2vw;
-        color: white;
-        transition: 150ms ease-in-out; /* dùng để tạo đảo ngược hiệu ứng cho nút sau khi di chuột khỏi nút */
-        margin: 0vw 0vw 0vw 3vw;
-    }
-
-    /* For the menu icon */
-    .menu-icon {
-        display: inline-block;
-        font-size: 20px;
-        padding-bottom: 5px;
-        transition: 250ms ease-in-out;
-        margin-left: 10px;
-    }
-
-    /* For the dropdown */
-    .drop-down-item {
-        font-size: 15px;
+        width: fit-content;
+        left: 80%;
+        top: 70px;
     }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
     /* For the container */
     #nav-bar-container {
         width: 60%;
@@ -241,163 +328,34 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     /* For the logo */
     .logo {
-        width: 11vw;
-        height: 70px;
-    }
-
-    /* For search bar */
-    .search-bar {
-        white-space: nowrap;
-        overflow: hidden;
-        width: fit-content;
-        margin: 0vw 0vw 0vw 0vw;
-    }
-
-    .search-input {
-        border: none;
-        outline: none;
-        padding: 6px 10px 6px 10px;
-        width: 25vw;
-    }
-
-    /* For sign in button */
-    .sign-in-button {
-        border: none;
-        background-color: orange;
-        border-radius: 4px;
-        font-size: 1.8vw;
-        color: white;
-        transition: 150ms ease-in-out; /* dùng để tạo đảo ngược hiệu ứng cho nút sau khi di chuột khỏi nút */
-        margin: 0vw 0vw 0vw 1.5vw;
-    }
-
-    /* For the menu icon */
-    .menu-icon {
-        display: inline-block;
-        font-size: 20px;
-        padding-bottom: 5px;
-        transition: 250ms ease-in-out;
-        margin-left: 10px;
-    }
-
-    /* For the dropdown */
-    .drop-down-item {
-        font-size: 15px;
-    }
-}
-
-@media only screen and (min-width: 1280px) {
-    /* For the container */
-    #nav-bar-container {
-        width: 50%;
-        display: flex;
-    }
-
-    /* For the logo */
-    .logo {
         width: 10vw;
         height: 70px;
     }
 
     /* For search bar */
-    .search-bar {
-        white-space: nowrap;
-        overflow: hidden;
-        width: fit-content;
-        margin: 0vw 0vw 0vw 1vw;
-    }
-
     .search-input {
         border: none;
         outline: none;
         padding: 6px 10px 6px 10px;
-        width: 21vw;
+        width: 32vw;
     }
 
-    /* For sign in button */
-    .sign-in-button {
-        border: none;
-        background-color: orange;
+    /* For the dropdown content */
+    #dropdown-button-content-in-nav-bar {
+        position: absolute;
+        background-color: rgb(255, 255, 255);   
+        border: 1px solid rgb(217, 217, 217);
         border-radius: 4px;
-        font-size: 1.5vw;
-        color: white;
-        transition: 150ms ease-in-out; /* dùng để tạo đảo ngược hiệu ứng cho nút sau khi di chuột khỏi nút */
-        margin: 0vw 0vw 0vw 2vw;
-    }
-    
-    /* For the menu icon */
-    .menu-icon {
-        display: inline-block;
-        font-size: 20px;
-        padding-bottom: 5px;
-        transition: 250ms ease-in-out;
-        margin-left: 10px;
-    }
-
-    /* For the dropdown */
-    .drop-down-item {
-        font-size: 15px;
-    }
-}
-
-@media only screen and (min-width: 1440px) {
-     /* For the container */
-     #nav-bar-container {
-        width: 50%;
-        display: flex;
-    }
-
-    /* For the logo */
-    .logo {
-        width: 10vw;
-        height: 70px;
-    }
-
-    /* For search bar */
-    .search-bar {
-        white-space: nowrap;
-        overflow: hidden;
         width: fit-content;
-        margin: 0vw 0vw 0vw 1vw;
-    }
-
-    .search-input {
-        border: none;
-        outline: none;
-        padding: 6px 10px 6px 10px;
-        width: 23vw;
-    }
-
-    /* For sign in button */
-    .sign-in-button {
-        border: none;
-        background-color: orange;
-        border-radius: 4px;
-        font-size: 1.3vw;
-        color: white;
-        transition: 150ms ease-in-out; /* dùng để tạo đảo ngược hiệu ứng cho nút sau khi di chuột khỏi nút */
-        margin: 0vw 0vw 0vw 1vw;
-    }
-    
-    /* For the menu icon */
-    .menu-icon {
-        display: inline-block;
-        font-size: 20px;
-        padding-bottom: 5px;
-        transition: 250ms ease-in-out;
-        margin-left: 10px;
-    }
-
-    /* For the dropdown */
-    .drop-down-item {
-        font-size: 15px;
+        left: 75%;
+        top: 70px;
     }
 }
 
 @media only screen and (min-width: 1680px) {
      /* For the container */
      #nav-bar-container {
-        width: 50%;
+        width: 60%;
         display: flex;
     }
 
@@ -406,99 +364,4 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         width: 170px;
         height: 70px;
     }
-
-    /* For search bar */
-    .search-bar {
-        white-space: nowrap;
-        overflow: hidden;
-        width: fit-content;
-        margin: 0px 0px 0px 20px;
-    }
-
-    .search-input {
-        border: none;
-        outline: none;
-        padding: 6px 10px 6px 10px;
-        width: 400px;
-    }
-
-    /* For sign in button */
-    .sign-in-button {
-        border: none;
-        background-color: orange;
-        border-radius: 4px;
-        font-size: 22px;
-        color: white;
-        transition: 150ms ease-in-out; /* dùng để tạo đảo ngược hiệu ứng cho nút sau khi di chuột khỏi nút */
-        margin: 0px 0px 0px 20px;
-    }
-    
-    /* For the menu icon */
-    .menu-icon {
-        display: inline-block;
-        font-size: 20px;
-        padding-bottom: 5px;
-        transition: 250ms ease-in-out;
-        margin-left: 20px;
-    }
-
-    /* For the dropdown */
-    .drop-down-item {
-        font-size: 15px;
-    }
 }
-
-@media only screen and (min-width: 1800px) {
-    /* For the container */
-    #nav-bar-container {
-       width: 50%;
-       display: flex;
-   }
-
-   /* For the logo */
-   .logo {
-       width: 170px;
-       height: 70px;
-   }
-
-   /* For search bar */
-   .search-bar {
-       white-space: nowrap;
-       overflow: hidden;
-       width: fit-content;
-       margin: 0px 0px 0px 15px;
-   }
-
-   .search-input {
-       border: none;
-       outline: none;
-       padding: 6px 10px 6px 20px;
-       width: 470px;
-   }
-
-   /* For sign in button */
-   .sign-in-button {
-       border: none;
-       background-color: orange;
-       border-radius: 4px;
-       font-size: 22px;
-       transition: 150ms ease-in-out; /* dùng để tạo đảo ngược hiệu ứng cho nút sau khi di chuột khỏi nút */
-       margin: 0px 0px 0px 20px;
-   }
-   
-   /* For the menu icon */
-   .menu-icon {
-       display: inline-block;
-       font-size: 20px;
-       padding-bottom: 5px;
-       transition: 250ms ease-in-out;
-       margin-left: 10px;
-   }
-
-   /* For the dropdown */
-   .drop-down-item {
-       font-size: 15px;
-   }
-}
-
-

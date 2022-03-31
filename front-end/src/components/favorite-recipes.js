@@ -1,6 +1,6 @@
 import React from "react";
 import SecondNavBar from "./second-nav-bar";
-import HalfTopPart from "./half-top-part";
+import TopPart from "./top-part";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from 'react-helmet';
 import "./favorite-recipes.css";
@@ -17,8 +17,8 @@ function FavoriteRecipes() {
             </Helmet>
 
             <SecondNavBar />
-            <Container id="top-part-container-in-favorite-recipes-page">
-                <HalfTopPart />
+            <div id="top-part-container-in-favorite-recipes-page">
+                <TopPart />
                 <nav id="group-buttons">
                     <a href="/about-me"><button className="group-button">About Me</button></a>
                     <a href="/favorite-recipes"><button className="group-button selected-button">My Favorites</button></a>
@@ -28,7 +28,7 @@ function FavoriteRecipes() {
                     <a href="/evaluated-recipes"><button className="group-button">My Reviews</button></a>
                     <a href="/personal-recipes"><button className="group-button last-button"> Personal Recipes</button></a>
                 </nav>
-            </Container>
+            </div>
             <div id="favorite-recipes-page">
                 <div id="top-section-of-favorite-recipes-page">
                     <div id="favorites-recipes-and-collections-in-favorite-recipes-page">

@@ -2,8 +2,6 @@
     /* For the container */
     #photos-container {
         width: 100%;
-        margin: auto; 
-        margin-left: -12px;
     }
 
     /* For photos page */
@@ -89,8 +87,6 @@
     /* For the container */
     #photos-container {
         width: 100%;
-        margin: auto; 
-        margin-left: -12px;
     }
 
     /* For photos page */
@@ -176,8 +172,6 @@
     /* For the container */
     #photos-container {
         width: 100%;
-        margin: auto; 
-        margin-left: -12px;
     }
     
     /* For photos page */
@@ -272,8 +266,6 @@
     /* For the container */
     #photos-container {
         width: 100%;
-        margin: auto; 
-        margin-left: -12px;
     }
     
     /* For photos page */
@@ -652,7 +644,7 @@
 @media only screen and (min-width: 1600px) {
     /* For the container */
     #photos-container {
-        width: 64%;
+        width: 62.5%;
         margin: auto;
     }
 
@@ -746,7 +738,7 @@
 @media only screen and (min-width: 1712px) {
     /* For the container */
     #photos-container {
-        width: 65%;
+        width: 64%;
         margin: auto;
     }
 

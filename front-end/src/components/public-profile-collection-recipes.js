@@ -6,7 +6,6 @@ import { Helmet } from 'react-helmet'
 import { FaHeart } from "react-icons/fa";
 import { FaUtensils } from "react-icons/fa";
 
-import Container from "react-bootstrap/Container";
 import PublicProfileTopPart from "./public-profile-top-part";
 
 const TITLE = 'Public Profile - FoodShare.com';
@@ -19,7 +18,7 @@ function PublicProfileCollectionRecipes() {
             </Helmet>
 
             <SecondNavBar />
-            <Container id="top-part-container-in-public-profile-collection-recipes-page">
+            <div id="top-part-container-in-public-profile-collection-recipes-page">
                 <PublicProfileTopPart />
                 <nav id="group-buttons-in-public-profile-collection-recipes-page">
                     <a href="/public-profile-about-me"><button className="group-button-in-public-profile-collection-recipes-page">About Me</button></a>
@@ -30,7 +29,7 @@ function PublicProfileCollectionRecipes() {
                     <a href="/public-profile-follower-accounts"><button className="group-button-in-public-profile-collection-recipes-page">Followers</button></a>
                     <a href="/public-profile-following-accounts"><button className="group-button-in-public-profile-collection-recipes-page last-button-of-group-buttons-in-public-profile-collection-recipes-page">Following</button></a>
                 </nav>
-            </Container>
+            </div>
             <div id="public-profile-collection-recipes-page">
                 <div id="top-section-in-public-profile-collection-recipes-page">
                     <div id="favorites-recipes-and-collections-in-public-profile-collection-recipes-page">
