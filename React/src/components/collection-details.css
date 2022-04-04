@@ -219,7 +219,7 @@
         transition: opacity 500ms;
         visibility: hidden;
         opacity: 0;
-        z-index: 1;
+        z-index: 3;
     }
 
     #share-recipe-in-collection-details-page:target {
@@ -228,7 +228,7 @@
     }
 
     #share-recipe-popup-incollection-details-page {
-        margin: 300px auto;
+        margin: 200px auto;
         background: #fff;
         width: 300px;
         position: relative;
@@ -528,7 +528,7 @@
         transition: opacity 500ms;
         visibility: hidden;
         opacity: 0;
-        z-index: 1;
+        z-index: 3;
     }
 
     #share-recipe-in-collection-details-page:target {
@@ -537,7 +537,7 @@
     }
 
     #share-recipe-popup-incollection-details-page {
-        margin: 300px auto;
+        margin: 200px auto;
         background: #fff;
         width: 300px;
         position: relative;

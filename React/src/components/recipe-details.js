@@ -568,25 +568,27 @@ function RecipeDetails() {
                         </div>
                     </div>
                     <div id="recipe-photos-in-favorite-recipes-page">
-                        <div id="title-and-close-button-of-recipe-photos-popup-in-favorite-recipes-page">
-                            <p id="title-of-recipe-photos-popup-in-favorite-recipes-page">Recipe Photos</p>
-                            <a id="close-button-of-recipe-photos-popup-in-favorite-recipes-page" href="#">&times;</a>
-                        </div>
                         <div id="recipe-photos-popup-in-favorite-recipes-page">
-                            <div id="displayed-recipe-photos-section-of-recipe-photos-popup-in-favorite-recipes-page">
-                                <p id="title-of-displayed-recipe-photos-section-of-recipe-photos-popup-in-favorite-recipes-page">Photos of (Recipe name)</p>
-                                <div id="back-and-next-button-of-recipe-photos-popup-in-favorite-recipes-page">
-                                    <button id="back-button-of-recipe-photos-popup-in-favorite-recipes-page"><i class="bi bi-chevron-left"></i></button>
-                                    <button id="next-button-of-recipe-photos-popup-in-favorite-recipes-page"><i class="bi bi-chevron-right"></i></button>
-                                </div>
-                                <img id="displayed-recipe-photos-of-recipe-photos-popup-in-favorite-recipes-page"></img>
-                                <div id="number-of-recipe-photos-and-recipe-name-of-recipe-photos-popup-in-favorite-recipes-page">
-                                    <p id="number-of-recipe-photos-of-recipe-photos-popup-in-favorite-recipes-page">(number) of (sum)</p>
-                                    <p id="recipe-name-of-recipe-photos-popup-in-favorite-recipes-page">(Recipe name)</p>
-                                </div>
-                                <div id="user-account-of-the-author-who-made-the-recipe-of-recipe-photos-popup-in-favorite-recipes-page">
-                                    <img id="author-avatar-image-of-recipe-photos-popup-in-favorite-recipes-page" alt="avatar"></img>
-                                    <p id="author-account-of-recipe-photos-popup-in-favorite-recipes-page">User name</p>
+                            <div id="title-and-close-button-of-recipe-photos-popup-in-favorite-recipes-page">
+                                <p id="title-of-recipe-photos-popup-in-favorite-recipes-page">Recipe Photos</p>
+                                <a id="close-button-of-recipe-photos-popup-in-favorite-recipes-page" href="#">&times;</a>
+                            </div>
+                            <div id="recipe-photos-of-popup-in-favorite-recipes-page">
+                                <div id="displayed-recipe-photos-section-of-recipe-photos-of-popup-in-favorite-recipes-page">
+                                    <p id="title-of-displayed-recipe-photos-section-of-recipe-photos-of-popup-in-favorite-recipes-page">Photos of (Recipe name)</p>
+                                    <div id="back-and-next-button-of-recipe-photos-popup-in-favorite-recipes-page">
+                                        <button id="back-button-of-recipe-photos-popup-in-favorite-recipes-page"><i class="bi bi-chevron-left"></i></button>
+                                        <button id="next-button-of-recipe-photos-popup-in-favorite-recipes-page"><i class="bi bi-chevron-right"></i></button>
+                                    </div>
+                                    <img id="displayed-recipe-photo-of-recipe-photos-popup-in-favorite-recipes-page"></img>
+                                    <div id="number-of-recipe-photos-and-recipe-name-of-recipe-photos-of-popup-in-favorite-recipes-page">
+                                        <p id="number-of-recipe-photos-of-recipe-photos-popup-in-favorite-recipes-page">(number) of (sum)</p>
+                                        <p id="recipe-name-of-recipe-photos-of-popup-in-favorite-recipes-page">(Recipe name)</p>
+                                    </div>
+                                    <div id="user-account-of-the-author-who-made-the-recipe-of-recipe-photos-popup-in-favorite-recipes-page">
+                                        <img id="author-avatar-image-of-recipe-photos-popup-in-favorite-recipes-page" alt="avatar"></img>
+                                        <p id="author-account-of-recipe-photos-popup-in-favorite-recipes-page">User name</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

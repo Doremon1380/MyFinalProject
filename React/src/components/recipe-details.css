@@ -1077,7 +1077,8 @@
         transition: opacity 500ms;
         visibility: hidden;
         opacity: 0;
-        z-index: 1;
+        z-index: 3;
+        overflow: auto;
     }
 
     #recipe-photos-in-favorite-recipes-page:target {
@@ -1085,7 +1086,7 @@
         opacity: 1;
     }
 
-    #recipe-photos-popup-in-favorite-recipes-page {
+    #recipe-photos-of-popup-in-favorite-recipes-page {
         background: #fff;
         width: 100%;
         height: 100%;
@@ -1121,7 +1122,7 @@
     }
 
     /* For the title of displayed recipe photos section */
-    #title-of-displayed-recipe-photos-section-of-recipe-photos-popup-in-favorite-recipes-page {
+    #title-of-displayed-recipe-photos-section-of-recipe-photos-of-popup-in-favorite-recipes-page {
         font-size: 25px;
         font-weight: bold;
         margin-top: 15px;
@@ -1153,19 +1154,19 @@
     }
 
     /* For the displayed recipe photos of recipe photos popup */
-    #displayed-recipe-photos-of-recipe-photos-popup-in-favorite-recipes-page {
+    #displayed-recipe-photo-of-recipe-photos-popup-in-favorite-recipes-page {
         width: 100%;
         height: 450px;
         background-color: rgb(209, 209, 209);
     }
 
     /* For the number of recipe photos and recipe name of recipe photos popup */
-    #number-of-recipe-photos-and-recipe-name-of-recipe-photos-popup-in-favorite-recipes-page {
+    #number-of-recipe-photos-and-recipe-name-of-recipe-photos-of-popup-in-favorite-recipes-page {
         display: flex;
         background-color: rgb(242, 242, 242);
     }
 
-    #number-of-recipe-photos-and-recipe-name-of-recipe-photos-popup-in-favorite-recipes-page p {
+    #number-of-recipe-photos-and-recipe-name-of-recipe-photos-of-popup-in-favorite-recipes-page p {
         font-size: 14px;
         margin: 10px 0px 10px 15px;
     }
@@ -1191,7 +1192,7 @@
     }
 
     #author-account-of-recipe-photos-popup-in-favorite-recipes-page {
-        margin: 15px 0px 0px 10px;
+        margin: 15px 0px 20px 10px;
         font-weight: bold;
     }
 
@@ -1206,7 +1207,8 @@
         transition: opacity 500ms;
         visibility: hidden;
         opacity: 0;
-        z-index: 1;
+        z-index: 3;
+        overflow: auto;
     }
 
     #recipe-review-in-recipe-details-page:target {
@@ -1215,7 +1217,7 @@
     }
 
     #recipe-review-popup-in-recipe-details-page {
-        margin: 200px auto;
+        margin: 13vh auto;
         background: #fff;
         width: 450px;
         position: relative;
@@ -1376,6 +1378,7 @@
     #recipe-details-page-container {
         width: 560px;
         margin: auto;
+        overflow-y: none;
     }
 
     /*For the route to current recipe */
@@ -2450,7 +2453,8 @@
         transition: opacity 500ms;
         visibility: hidden;
         opacity: 0;
-        z-index: 1;
+        z-index: 3;
+        overflow: auto;
     }
 
     #recipe-photos-in-favorite-recipes-page:target {
@@ -2458,7 +2462,7 @@
         opacity: 1;
     }
 
-    #recipe-photos-popup-in-favorite-recipes-page {
+    #recipe-photos-of-popup-in-favorite-recipes-page {
         background: #fff;
         width: 100%;
         height: 100%;
@@ -2494,7 +2498,7 @@
     }
 
     /* For the title of displayed recipe photos section */
-    #title-of-displayed-recipe-photos-section-of-recipe-photos-popup-in-favorite-recipes-page {
+    #title-of-displayed-recipe-photos-section-of-recipe-photos-of-popup-in-favorite-recipes-page {
         font-size: 25px;
         font-weight: bold;
         margin-top: 15px;
@@ -2526,21 +2530,19 @@
     }
 
     /* For the displayed recipe photos of recipe photos popup */
-    #displayed-recipe-photos-of-recipe-photos-popup-in-favorite-recipes-page {
-        width: 580px;
-        display: block;
-        margin: auto;
+    #displayed-recipe-photo-of-recipe-photos-popup-in-favorite-recipes-page {
+        width: 100%;
         height: 450px;
         background-color: rgb(209, 209, 209);
     }
 
     /* For the number of recipe photos and recipe name of recipe photos popup */
-    #number-of-recipe-photos-and-recipe-name-of-recipe-photos-popup-in-favorite-recipes-page {
+    #number-of-recipe-photos-and-recipe-name-of-recipe-photos-of-popup-in-favorite-recipes-page {
         display: flex;
         background-color: rgb(242, 242, 242);
     }
 
-    #number-of-recipe-photos-and-recipe-name-of-recipe-photos-popup-in-favorite-recipes-page p {
+    #number-of-recipe-photos-and-recipe-name-of-recipe-photos-of-popup-in-favorite-recipes-page p {
         font-size: 14px;
         margin: 10px 0px 10px 15px;
     }
@@ -2566,7 +2568,7 @@
     }
 
     #author-account-of-recipe-photos-popup-in-favorite-recipes-page {
-        margin: 15px 0px 0px 10px;
+        margin: 15px 0px 20px 10px;
         font-weight: bold;
     }
 
@@ -2581,7 +2583,8 @@
         transition: opacity 500ms;
         visibility: hidden;
         opacity: 0;
-        z-index: 1;
+        z-index: 3;
+        overflow: auto;
     }
 
     #recipe-review-in-recipe-details-page:target {
@@ -2590,7 +2593,7 @@
     }
 
     #recipe-review-popup-in-recipe-details-page {
-        margin: 200px auto;
+        margin: 15vh auto;
         background: #fff;
         width: 550px;
         position: relative;
@@ -2807,9 +2810,12 @@
     }
 
     /* For the recipe photos popup */
-    #recipe-photos-popup-in-favorite-recipes-page {
+    #title-of-recipe-photos-popup-in-favorite-recipes-page {
+        margin-left: 8px;
+    }
+
+    #recipe-photos-of-popup-in-favorite-recipes-page {
         margin: 125px auto;
-        overflow: auto;
         width: 750px;
         height: 700px;
         margin-top: 0px;
@@ -2823,13 +2829,13 @@
     }
     
     /* For the title of displayed recipe photos section */
-    #title-of-displayed-recipe-photos-section-of-recipe-photos-popup-in-favorite-recipes-page {
+    #title-of-displayed-recipe-photos-section-of-recipe-photos-of-popup-in-favorite-recipes-page {
         margin-left: -16px;
         margin-top: 0px;
     }
 
     /* For the displayed recipe photos of recipe photos popup */
-    #displayed-recipe-photos-section-of-recipe-photos-popup-in-favorite-recipes-page {
+    #displayed-recipe-photos-section-of-recipe-photos-of-popup-in-favorite-recipes-page {
         width: 700px;
         margin: auto;
     }
@@ -2837,7 +2843,6 @@
     /* For the user account of the author who made the recipe of recipe photos popup */
     #user-account-of-the-author-who-made-the-recipe-of-recipe-photos-popup-in-favorite-recipes-page {
         margin-left: 0px;
-        margin-bottom: 20px;
     }
 }
 
