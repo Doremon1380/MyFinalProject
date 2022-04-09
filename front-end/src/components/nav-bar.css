@@ -9,6 +9,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     background-color: rgb(245, 245, 245);
     position: sticky;
     border-bottom: 1px solid rgb(235, 235, 235);
+    z-index: 1;
 }
 
 /* For the search bar */

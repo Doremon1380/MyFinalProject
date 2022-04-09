@@ -231,7 +231,8 @@ input:-webkit-autofill:active  {
         transition: opacity 500ms;
         visibility: hidden;
         opacity: 0;
-        z-index: 1;
+        z-index: 3;
+        overflow: auto;
     }
 
     #add-favorite-recipes-to-collection-form-in-favorite-recipes-page:target {
@@ -240,7 +241,7 @@ input:-webkit-autofill:active  {
     }
 
     #popup-in-favorite-recipes-page {
-        margin: 200px auto;
+        margin: 150px auto;
         padding: 20px;
         background: #fff;
         border-radius: 5px;
@@ -630,7 +631,8 @@ input:-webkit-autofill:active  {
         transition: opacity 500ms;
         visibility: hidden;
         opacity: 0;
-        z-index: 1;
+        z-index: 3;
+        overflow: auto;
     }
 
     #add-favorite-recipes-to-collection-form-in-favorite-recipes-page:target {
@@ -639,7 +641,7 @@ input:-webkit-autofill:active  {
     }
 
     #popup-in-favorite-recipes-page {
-        margin: 200px auto;
+        margin: 150px auto;
         padding: 20px;
         background: #fff;
         border-radius: 5px;
