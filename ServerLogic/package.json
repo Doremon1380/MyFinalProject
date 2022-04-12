@@ -1,0 +1,12 @@
+{
+  "name": "server-logic",
+  "version": "0.0.0",
+  "description": "ServerLogic",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "mongo": "^0.1.0"
+  }
+}

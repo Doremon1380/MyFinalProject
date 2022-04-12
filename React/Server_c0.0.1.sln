@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Server_c0.0.1", "Server_c0.0.1.esproj", "{9366B6EF-5F15-469B-9818-A1D8DB45DDAE}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ExpressServer_c0.0.1", "..\ExpressServer_c0.0.1\ExpressServer_c0.0.1.njsproj", "{2139F241-BB47-4229-8814-CD2DD6E420F5}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ServerLogic", "..\ServerLogic\ServerLogic.njsproj", "{31B21570-A010-479F-9831-668469467B49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +19,10 @@ Global
 		{9366B6EF-5F15-469B-9818-A1D8DB45DDAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9366B6EF-5F15-469B-9818-A1D8DB45DDAE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9366B6EF-5F15-469B-9818-A1D8DB45DDAE}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{2139F241-BB47-4229-8814-CD2DD6E420F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2139F241-BB47-4229-8814-CD2DD6E420F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2139F241-BB47-4229-8814-CD2DD6E420F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2139F241-BB47-4229-8814-CD2DD6E420F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31B21570-A010-479F-9831-668469467B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31B21570-A010-479F-9831-668469467B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31B21570-A010-479F-9831-668469467B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31B21570-A010-479F-9831-668469467B49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

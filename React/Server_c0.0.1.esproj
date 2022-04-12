@@ -3,7 +3,7 @@
     <ProjectGuid>9366b6ef-5f15-469b-9818-a1d8db45ddae</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <StartupCommand>set BROWSER=Chrome&amp;&amp;npm start</StartupCommand>
+    <StartupCommand>npm start</StartupCommand>
     <JavaScriptTestRoot>src\</JavaScriptTestRoot>
     <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
   </PropertyGroup>
@@ -16,9 +16,7 @@
     <Script Remove="ExpressServer_c0.0.1\**" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\apiRequest\" />
-    <Folder Include="src\store\reducer\" />
-    <Folder Include="src\viewActions\" />
+    <Folder Include="src\components\api\" />
   </ItemGroup>
   <!-- This target is copied from the ASP.NET SPA template in order to ensure node_modules are in place. -->
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

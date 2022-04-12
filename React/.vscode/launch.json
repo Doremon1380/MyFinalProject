@@ -5,21 +5,23 @@
       "type": "chrome",
       "request": "launch",
       "name": "localhost (Chrome)",
-      "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}"
+      "url": "http://localhost:3020",
+      "webRoot": "${workspaceFolder}",
+      "userDataDir": false
     },
     {
       "type": "edge",
       "request": "launch",
       "name": "localhost (Edge)",
-      "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}"
+      "url": "http://localhost:3020",
+      "webRoot": "${workspaceFolder}",
+      "userDataDir": false
     },
     {
       "type": "firefox",
       "request": "launch",
       "name": "Firefox",
-      "url": "http://localhost:3000"
+      "url": "http://localhost:3020"
     }
   ]
 }

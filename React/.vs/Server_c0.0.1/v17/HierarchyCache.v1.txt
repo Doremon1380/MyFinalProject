@@ -1,0 +1,877 @@
+﻿++Solution 'Server_c0.0.1' ‎(3 of 3 projects)
+++Database
+++npm
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:>99940
+i:{31b21570-a010-479f-9831-668469467b49}:
+++base64-js@1.5.1 (not listed in package.json)
+i:{31b21570-a010-479f-9831-668469467b49}:
+++bson@4.6.2 (not listed in package.json)
+i:{31b21570-a010-479f-9831-668469467b49}:
+++buffer@5.7.1 (not listed in package.json)
+i:{31b21570-a010-479f-9831-668469467b49}:
+++denque@2.0.1 (not listed in package.json)
+i:{31b21570-a010-479f-9831-668469467b49}:
+++ieee754@1.2.1 (not listed in package.json)
+i:{31b21570-a010-479f-9831-668469467b49}:
+++ip@1.1.5 (not listed in package.json)
+i:{31b21570-a010-479f-9831-668469467b49}:
+++memory-pager@1.5.0 (not listed in package.json)
+i:{31b21570-a010-479f-9831-668469467b49}:
+++mongo@0.1.0
+i:{31b21570-a010-479f-9831-668469467b49}:
+++mongodb@4.5.0 (not listed in package.json)
+i:{31b21570-a010-479f-9831-668469467b49}:
+++mongodb-connection-string-url@2.5.2 (not listed in package.json)
+i:{31b21570-a010-479f-9831-668469467b49}:
+++punycode@2.1.1 (not listed in package.json)
+i:{31b21570-a010-479f-9831-668469467b49}:
+++saslprep@1.0.3 (not listed in package.json)
+i:{31b21570-a010-479f-9831-668469467b49}:
+++smart-buffer@4.2.0 (not listed in package.json)
+i:{31b21570-a010-479f-9831-668469467b49}:
+++socks@2.6.2 (not listed in package.json)
+i:{31b21570-a010-479f-9831-668469467b49}:
+++sparse-bitfield@3.0.3 (not listed in package.json)
+i:{31b21570-a010-479f-9831-668469467b49}:
+++tr46@3.0.0 (not listed in package.json)
+i:{31b21570-a010-479f-9831-668469467b49}:
+++webidl-conversions@7.0.0 (not listed in package.json)
+i:{31b21570-a010-479f-9831-668469467b49}:
+++whatwg-url@11.0.0 (not listed in package.json)
+i:{31b21570-a010-479f-9831-668469467b49}:
+++app.js
+i:{31b21570-a010-479f-9831-668469467b49}:D:\Entertainment\Visual studio project\MyFinalProject\ServerLogic\app.js
+++package.json
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\package.json
+i:{31b21570-a010-479f-9831-668469467b49}:D:\Entertainment\Visual studio project\MyFinalProject\ServerLogic\package.json
+++README.md
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\readme.md
+i:{31b21570-a010-479f-9831-668469467b49}:D:\Entertainment\Visual studio project\MyFinalProject\ServerLogic\README.md
+++Server_c0.0.1
+i:{00000000-0000-0000-0000-000000000000}:Server_c0.0.1
+++.vscode
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\.vscode\
+++launch.json
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\.vscode\launch.json
+++public
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\public\
+++src
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\
+++components
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\
+++api
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\api\
+++features
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\features\
+++singin
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\features\singin\
+++singinActions.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\features\singin\singinactions.js
+++singinSlice.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\features\singin\singinslice.js
+++account-settings.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\account-settings.css
+++account-settings.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\account-settings.js
+++all-reviews.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\all-reviews.css
+++all-reviews.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\all-reviews.js
+++ask-the-community.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\ask-the-community.css
+++ask-the-community.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\ask-the-community.js
+++authentication.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\authentication.css
+++authentication.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\authentication.js
+++collection-details.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\collection-details.css
+++collection-details.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\collection-details.js
+++collection-recipes.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\collection-recipes.css
+++collection-recipes.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\collection-recipes.js
+++country-recipes.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\country-recipes.css
+++country-recipes.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\country-recipes.js
+++create-recipe.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\create-recipe.css
+++create-recipe.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\create-recipe.js
+++evaluated-recipes.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\evaluated-recipes.css
+++evaluated-recipes.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\evaluated-recipes.js
+++favorite-recipes.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\favorite-recipes.css
+++favorite-recipes.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\favorite-recipes.js
+++filter-recipes.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\filter-recipes.css
+++filter-recipes.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\filter-recipes.js
+++follower-accounts.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\follower-accounts.css
+++follower-accounts.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\follower-accounts.js
+++following-accounts.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\following-accounts.css
+++following-accounts.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\following-accounts.js
+++GlobalFood.jpg
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\globalfood.jpg
+++Google.png
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\google.png
+++half-top-part.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\half-top-part.css
+++half-top-part.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\half-top-part.js
+++HidePassword.png
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\hidepassword.png
+++home.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\home.css
+++home.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\home.js
+++home1.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\home1.js
+++made-recipes.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\made-recipes.css
+++made-recipes.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\made-recipes.js
+++multiselect-dropdown.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\multiselect-dropdown.css
+++multiselect-dropdown.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\multiselect-dropdown.js
+++MyLogo.png
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\mylogo.png
+++nav-bar.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\nav-bar.css
+++nav-bar.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\nav-bar.js
+++notification-settings.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\notification-settings.css
+++notification-settings.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\notification-settings.js
+++other-profile-collection-details.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\other-profile-collection-details.css
+++other-profile-collection-details.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\other-profile-collection-details.js
+++personal-recipes.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\personal-recipes.css
+++personal-recipes.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\personal-recipes.js
+++photo-id.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\photo-id.css
+++photo-id.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\photo-id.js
+++photos.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\photos.css
+++photos.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\photos.js
+++pizza.jpg
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\pizza.jpg
+++private-profile.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\private-profile.css
+++private-profile.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\private-profile.js
+++profile-settings.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\profile-settings.css
+++profile-settings.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\profile-settings.js
+++public-profile-about-me.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-about-me.css
+++public-profile-about-me.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-about-me.js
+++public-profile-collection-recipes.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-collection-recipes.css
+++public-profile-collection-recipes.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-collection-recipes.js
+++public-profile-evaluated-recipes.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-evaluated-recipes.css
+++public-profile-evaluated-recipes.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-evaluated-recipes.js
+++public-profile-favorite-recipes.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-favorite-recipes.css
+++public-profile-favorite-recipes.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-favorite-recipes.js
+++public-profile-follower-accounts.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-follower-accounts.css
+++public-profile-follower-accounts.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-follower-accounts.js
+++public-profile-following-accounts.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-following-accounts.css
+++public-profile-following-accounts.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-following-accounts.js
+++public-profile-made-recipes.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-made-recipes.css
+++public-profile-made-recipes.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-made-recipes.js
+++public-profile-personal-recipes.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-personal-recipes.css
+++public-profile-personal-recipes.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-personal-recipes.js
+++public-profile-top-part.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-top-part.css
+++public-profile-top-part.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\public-profile-top-part.js
+++recipe-details.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\recipe-details.css
+++recipe-details.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\recipe-details.js
+++recipe-results.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\recipe-results.css
+++recipe-results.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\recipe-results.js
+++second-nav-bar.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\second-nav-bar.css
+++second-nav-bar.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\second-nav-bar.js
+++shopping-lists.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\shopping-lists.css
+++shopping-lists.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\shopping-lists.js
+++ShowPassword.png
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\showpassword.png
+++sign-in.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\sign-in.css
+++sign-in.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\sign-in.js
+++sign-up.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\sign-up.css
+++sign-up.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\sign-up.js
+++specific-type-of-country-recipes.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\specific-type-of-country-recipes.css
+++specific-type-of-country-recipes.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\specific-type-of-country-recipes.js
+++specific-type-of-recipes.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\specific-type-of-recipes.css
+++specific-type-of-recipes.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\specific-type-of-recipes.js
+++top_background.jpg
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\top_background.jpg
+++top-part.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\top-part.css
+++top-part.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\top-part.js
+++types-of-recipes.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\types-of-recipes.css
+++types-of-recipes.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\types-of-recipes.js
+++TypicalChineseFood.jpg
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\typicalchinesefood.jpg
+++TypicalGermanFood.png
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\typicalgermanfood.png
+++TypicalIndianFood.jpg
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\typicalindianfood.jpg
+++TypicalItalianFood.jpg
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\typicalitalianfood.jpg
+++TypicalJapaneseFood.png
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\typicaljapanesefood.png
+++TypicalMexicanFood.jpg
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\typicalmexicanfood.jpg
+++TypicalRussianFood.png
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\typicalrussianfood.png
+++TypicalSpanishFood.png
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\typicalspanishfood.png
+++world-cuisine.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\world-cuisine.css
+++world-cuisine.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\components\world-cuisine.js
+++App.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\app.css
+++App.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\app.js
+++App.test.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\app.test.js
+++hook.ts
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\hook.ts
+++index.css
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\index.css
+++index.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\index.js
+++logo.svg
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\logo.svg
+++react-app-env.d.ts
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\react-app-env.d.ts
+++reportWebVitals.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\reportwebvitals.js
+++setupTests.js
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\setuptests.js
+++store.ts
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\src\store.ts
+++.gitignore
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\.gitignore
+++client_secret.json
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\client_secret.json
+++nuget.config
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\nuget.config
+++package-lock.json
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\package-lock.json
+++Server_c0.0.1.esproj.user
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\server_c0.0.1.esproj.user
+++Server_c0.0.1.sln
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\server_c0.0.1.sln
+++tsconfig.json
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\tsconfig.json
+++index.html
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\public\index.html
+++manifest.json
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\public\manifest.json
+++robots.txt
+i:{9366b6ef-5f15-469b-9818-a1d8db45ddae}:d:\entertainment\visual studio project\myfinalproject\react\public\robots.txt
+++ServerLogic
+i:{00000000-0000-0000-0000-000000000000}:ServerLogic.njsproj
+++Script Documents
+++<eval>/VM46947589
+++cfhdojbkjhnklbpkdaibdccddilifddb/polyfill.js
+++cfhdojbkjhnklbpkdaibdccddilifddb/include.preload.js
+++cfhdojbkjhnklbpkdaibdccddilifddb/ext/common.js
+++cfhdojbkjhnklbpkdaibdccddilifddb/ext/content.js
+++localhost꞉3020/static/js/bundle.js
+++webpack/bootstrap
+++localhost꞉3020/static/js/vendors~main.chunk.js
+++node_modules/@babel/runtime/helpers/arrayLikeToArray.js
+++node_modules/@babel/runtime/helpers/arrayWithHoles.js
+++node_modules/@babel/runtime/helpers/arrayWithoutHoles.js
+++node_modules/@babel/runtime/helpers/defineProperty.js
+++node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js
+++node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
+++node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js
+++node_modules/@babel/runtime/helpers/esm/classCallCheck.js
+++node_modules/@babel/runtime/helpers/esm/createClass.js
+++node_modules/@babel/runtime/helpers/esm/defineProperty.js
+++node_modules/@babel/runtime/helpers/esm/extends.js
+++node_modules/@babel/runtime/helpers/esm/inherits.js
+++node_modules/@babel/runtime/helpers/esm/inheritsLoose.js
+++node_modules/@babel/runtime/helpers/esm/iterableToArray.js
+++node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js
+++node_modules/@babel/runtime/helpers/esm/nonIterableRest.js
+++node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js
+++node_modules/@babel/runtime/helpers/esm/objectSpread2.js
+++node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
+++node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
+++node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
+++node_modules/@babel/runtime/helpers/esm/slicedToArray.js
+++node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js
+++node_modules/@babel/runtime/helpers/esm/toConsumableArray.js
+++node_modules/@babel/runtime/helpers/esm/typeof.js
+++node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js
+++node_modules/@babel/runtime/helpers/extends.js
+++node_modules/@babel/runtime/helpers/iterableToArray.js
+++node_modules/@babel/runtime/helpers/iterableToArrayLimit.js
+++node_modules/@babel/runtime/helpers/nonIterableRest.js
+++node_modules/@babel/runtime/helpers/nonIterableSpread.js
+++node_modules/@babel/runtime/helpers/objectWithoutProperties.js
+++node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js
+++node_modules/@babel/runtime/helpers/slicedToArray.js
+++node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js
+++node_modules/@babel/runtime/helpers/toConsumableArray.js
+++node_modules/@babel/runtime/helpers/typeof.js
+++node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js
+++node_modules/@emotion/cache/dist/emotion-cache.browser.esm.js
+++node_modules/@emotion/hash/dist/hash.browser.esm.js
+++node_modules/@emotion/memoize/dist/emotion-memoize.browser.esm.js
+++node_modules/@emotion/react/dist/emotion-element-99289b21.browser.esm.js
+++node_modules/@emotion/react/dist/emotion-react.browser.esm.js
+++node_modules/@emotion/react/isolated-hoist-non-react-statics-do-not-use-this-in-your-code/dist/emotion-react-isolated-hoist-non-react-statics-do-not-use-this-in-your-code.browser.esm.js
+++node_modules/@emotion/serialize/dist/emotion-serialize.browser.esm.js
+++node_modules/@emotion/sheet/dist/emotion-sheet.browser.esm.js
+++node_modules/@emotion/unitless/dist/unitless.browser.esm.js
+++node_modules/@emotion/utils/dist/emotion-utils.browser.esm.js
+++node_modules/@emotion/weak-memoize/dist/weak-memoize.browser.esm.js
+++node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js
+++node_modules/@pmmmwh/react-refresh-webpack-plugin/client/utils/safeThis.js
+++node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js
+++node_modules/@popperjs/core/lib/createPopper.js
+++node_modules/@popperjs/core/lib/dom-utils/contains.js
+++node_modules/@popperjs/core/lib/dom-utils/getBoundingClientRect.js
+++node_modules/@popperjs/core/lib/dom-utils/getClippingRect.js
+++node_modules/@popperjs/core/lib/dom-utils/getCompositeRect.js
+++node_modules/@popperjs/core/lib/dom-utils/getComputedStyle.js
+++node_modules/@popperjs/core/lib/dom-utils/getDocumentElement.js
+++node_modules/@popperjs/core/lib/dom-utils/getDocumentRect.js
+++node_modules/@popperjs/core/lib/dom-utils/getHTMLElementScroll.js
+++node_modules/@popperjs/core/lib/dom-utils/getLayoutRect.js
+++node_modules/@popperjs/core/lib/dom-utils/getNodeName.js
+++node_modules/@popperjs/core/lib/dom-utils/getNodeScroll.js
+++node_modules/@popperjs/core/lib/dom-utils/getOffsetParent.js
+++node_modules/@popperjs/core/lib/dom-utils/getParentNode.js
+++node_modules/@popperjs/core/lib/dom-utils/getScrollParent.js
+++node_modules/@popperjs/core/lib/dom-utils/getViewportRect.js
+++node_modules/@popperjs/core/lib/dom-utils/getWindow.js
+++node_modules/@popperjs/core/lib/dom-utils/getWindowScroll.js
+++node_modules/@popperjs/core/lib/dom-utils/getWindowScrollBarX.js
+++node_modules/@popperjs/core/lib/dom-utils/instanceOf.js
+++node_modules/@popperjs/core/lib/dom-utils/isScrollParent.js
+++node_modules/@popperjs/core/lib/dom-utils/isTableElement.js
+++node_modules/@popperjs/core/lib/dom-utils/listScrollParents.js
+++node_modules/@popperjs/core/lib/enums.js
+++node_modules/@popperjs/core/lib/modifiers/arrow.js
+++node_modules/@popperjs/core/lib/modifiers/computeStyles.js
+++node_modules/@popperjs/core/lib/modifiers/eventListeners.js
+++node_modules/@popperjs/core/lib/modifiers/flip.js
+++node_modules/@popperjs/core/lib/modifiers/hide.js
+++node_modules/@popperjs/core/lib/modifiers/offset.js
+++node_modules/@popperjs/core/lib/modifiers/popperOffsets.js
+++node_modules/@popperjs/core/lib/modifiers/preventOverflow.js
+++node_modules/@popperjs/core/lib/popper-base.js
+++node_modules/@popperjs/core/lib/utils/computeAutoPlacement.js
+++node_modules/@popperjs/core/lib/utils/computeOffsets.js
+++node_modules/@popperjs/core/lib/utils/debounce.js
+++node_modules/@popperjs/core/lib/utils/detectOverflow.js
+++node_modules/@popperjs/core/lib/utils/expandToHashMap.js
+++node_modules/@popperjs/core/lib/utils/format.js
+++node_modules/@popperjs/core/lib/utils/getAltAxis.js
+++node_modules/@popperjs/core/lib/utils/getBasePlacement.js
+++node_modules/@popperjs/core/lib/utils/getFreshSideObject.js
+++node_modules/@popperjs/core/lib/utils/getMainAxisFromPlacement.js
+++node_modules/@popperjs/core/lib/utils/getOppositePlacement.js
+++node_modules/@popperjs/core/lib/utils/getOppositeVariationPlacement.js
+++node_modules/@popperjs/core/lib/utils/getVariation.js
+++node_modules/@popperjs/core/lib/utils/math.js
+++node_modules/@popperjs/core/lib/utils/mergeByName.js
+++node_modules/@popperjs/core/lib/utils/mergePaddingObject.js
+++node_modules/@popperjs/core/lib/utils/orderModifiers.js
+++node_modules/@popperjs/core/lib/utils/rectToClientRect.js
+++node_modules/@popperjs/core/lib/utils/uniqueBy.js
+++node_modules/@popperjs/core/lib/utils/validateModifiers.js
+++node_modules/@popperjs/core/lib/utils/within.js
+++packages/@react-aria/ssr/src/SSRProvider.tsx
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\index.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\createDraftSafeSelector.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\configureStore.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\devtoolsExtension.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\isPlainObject.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\getDefaultMiddleware.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\utils.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\immutableStateInvariantMiddleware.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\serializableStateInvariantMiddleware.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\createAction.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\createReducer.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\mapBuilders.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\createSlice.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\entities\entity_state.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\entities\state_selectors.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\entities\state_adapter.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\entities\utils.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\entities\unsorted_state_adapter.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\entities\sorted_state_adapter.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\entities\create_adapter.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\nanoid.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\createAsyncThunk.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\tsHelpers.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\matchers.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\listenerMiddleware\utils.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\listenerMiddleware\exceptions.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\listenerMiddleware\task.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\listenerMiddleware\index.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\utils\errors.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\utils\common.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\utils\plugins.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\core\scope.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\core\finalize.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\core\proxy.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\core\immerClass.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\core\current.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\plugins\es5.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\plugins\patches.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\plugins\mapset.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\plugins\all.ts
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\immer.ts
+++node_modules/@restart/hooks/esm/useCommittedRef.js
+++node_modules/@restart/hooks/esm/useEventCallback.js
+++node_modules/@restart/hooks/esm/useIsomorphicEffect.js
+++node_modules/@restart/hooks/esm/useMergedRefs.js
+++node_modules/@restart/ui/esm/Anchor.js
+++node_modules/@restart/ui/esm/Button.js
+++node_modules/@restart/ui/esm/DataKey.js
+++node_modules/@restart/ui/esm/Dropdown.js
+++node_modules/@restart/ui/esm/DropdownContext.js
+++node_modules/@restart/ui/esm/DropdownItem.js
+++node_modules/@restart/ui/esm/DropdownMenu.js
+++node_modules/@restart/ui/esm/DropdownToggle.js
+++node_modules/@restart/ui/esm/NavContext.js
+++node_modules/@restart/ui/esm/SelectableContext.js
+++node_modules/@restart/ui/esm/mergeOptionsWithPopperConfig.js
+++node_modules/@restart/ui/esm/popper.js
+++node_modules/@restart/ui/esm/ssr.js
+++node_modules/@restart/ui/esm/usePopper.js
+++node_modules/@restart/ui/esm/useRootClose.js
+++node_modules/@restart/ui/node_modules/@restart/hooks/esm/index.js
+++node_modules/@restart/ui/node_modules/@restart/hooks/esm/useCallbackRef.js
+++node_modules/@restart/ui/node_modules/@restart/hooks/esm/useCommittedRef.js
+++node_modules/@restart/ui/node_modules/@restart/hooks/esm/useEventCallback.js
+++node_modules/@restart/ui/node_modules/@restart/hooks/esm/useEventListener.js
+++node_modules/@restart/ui/node_modules/@restart/hooks/esm/useForceUpdate.js
+++node_modules/@restart/ui/node_modules/@restart/hooks/esm/useGlobalListener.js
+++node_modules/@restart/ui/node_modules/@restart/hooks/esm/useImage.js
+++node_modules/@restart/ui/node_modules/@restart/hooks/esm/useInterval.js
+++node_modules/@restart/ui/node_modules/@restart/hooks/esm/useIsomorphicEffect.js
+++node_modules/@restart/ui/node_modules/@restart/hooks/esm/useMergeState.js
+++node_modules/@restart/ui/node_modules/@restart/hooks/esm/useMergeStateFromProps.js
+++node_modules/@restart/ui/node_modules/@restart/hooks/esm/useMounted.js
+++node_modules/@restart/ui/node_modules/@restart/hooks/esm/usePrevious.js
+++node_modules/@restart/ui/node_modules/@restart/hooks/esm/useRafInterval.js
+++node_modules/@restart/ui/node_modules/@restart/hooks/esm/useResizeObserver.js
+++node_modules/@restart/ui/node_modules/@restart/hooks/esm/useSafeState.js
+++node_modules/ansi-regex/index.js
+++node_modules/bootstrap-icons/font/bootstrap-icons.css
+++node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2
+++node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff
+++node_modules/bootstrap/dist/css/bootstrap.min.css
+++node_modules/classnames/index.js
+++node_modules/css-loader/dist/runtime/api.js
+++node_modules/css-loader/dist/runtime/getUrl.js
+++node_modules/dequal/dist/index.mjs
+++node_modules/dom-helpers/esm/addEventListener.js
+++node_modules/dom-helpers/esm/camelize.js
+++node_modules/dom-helpers/esm/canUseDOM.js
+++node_modules/dom-helpers/esm/contains.js
+++node_modules/dom-helpers/esm/css.js
+++node_modules/dom-helpers/esm/getComputedStyle.js
+++node_modules/dom-helpers/esm/hyphenate.js
+++node_modules/dom-helpers/esm/hyphenateStyle.js
+++node_modules/dom-helpers/esm/isTransform.js
+++node_modules/dom-helpers/esm/listen.js
+++node_modules/dom-helpers/esm/ownerDocument.js
+++node_modules/dom-helpers/esm/ownerWindow.js
+++node_modules/dom-helpers/esm/querySelectorAll.js
+++node_modules/dom-helpers/esm/removeEventListener.js
+++node_modules/dom-helpers/esm/transitionEnd.js
+++node_modules/dom-helpers/esm/triggerEvent.js
+++node_modules/events/events.js
+++node_modules/history/esm/history.js
+++node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js
+++node_modules/invariant/browser.js
+++node_modules/memoize-one/dist/memoize-one.esm.js
+++node_modules/mini-create-react-context/dist/esm/index.js
+++node_modules/node-libs-browser/node_modules/punycode/punycode.js
+++node_modules/object-assign/index.js
+++node_modules/process/browser.js
+++node_modules/prop-types/checkPropTypes.js
+++node_modules/prop-types/factoryWithTypeCheckers.js
+++node_modules/prop-types/index.js
+++node_modules/prop-types/lib/ReactPropTypesSecret.js
+++node_modules/querystring-es3/decode.js
+++node_modules/querystring-es3/encode.js
+++node_modules/querystring-es3/index.js
+++node_modules/react-bootstrap/esm/Button.js
+++node_modules/react-bootstrap/esm/Collapse.js
+++node_modules/react-bootstrap/esm/Container.js
+++node_modules/react-bootstrap/esm/Dropdown.js
+++node_modules/react-bootstrap/esm/DropdownButton.js
+++node_modules/react-bootstrap/esm/DropdownContext.js
+++node_modules/react-bootstrap/esm/DropdownItem.js
+++node_modules/react-bootstrap/esm/DropdownMenu.js
+++node_modules/react-bootstrap/esm/DropdownToggle.js
+++node_modules/react-bootstrap/esm/InputGroupContext.js
+++node_modules/react-bootstrap/esm/Navbar.js
+++node_modules/react-bootstrap/esm/NavbarBrand.js
+++node_modules/react-bootstrap/esm/NavbarCollapse.js
+++node_modules/react-bootstrap/esm/NavbarContext.js
+++node_modules/react-bootstrap/esm/NavbarToggle.js
+++node_modules/react-bootstrap/esm/ThemeProvider.js
+++node_modules/react-bootstrap/esm/TransitionWrapper.js
+++node_modules/react-bootstrap/esm/createChainedFunction.js
+++node_modules/react-bootstrap/esm/createWithBsPrefix.js
+++node_modules/react-bootstrap/esm/safeFindDOMNode.js
+++node_modules/react-bootstrap/esm/transitionEndListener.js
+++node_modules/react-bootstrap/esm/triggerBrowserReflow.js
+++node_modules/react-bootstrap/esm/types.js
+++node_modules/react-bootstrap/esm/useWrappedRefWithWarning.js
+++node_modules/react-dev-utils/formatWebpackMessages.js
+++node_modules/react-dev-utils/launchEditorEndpoint.js
+++node_modules/react-dev-utils/node_modules/strip-ansi/index.js
+++node_modules/react-dev-utils/refreshOverlayInterop.js
+++node_modules/react-dev-utils/webpackHotDevClient.js
+++node_modules/react-dom/cjs/react-dom.development.js
+++node_modules/react-dom/index.js
+++node_modules/react-error-overlay/lib/index.js
+++node_modules/react-fast-compare/index.js
+++node_modules/react-google-login/dist/google-login.js
+++node_modules/react-helmet/es/Helmet.js
+++node_modules/react-icons/fa/index.esm.js
+++node_modules/react-icons/lib/esm/iconBase.js
+++node_modules/react-icons/lib/esm/iconContext.js
+++node_modules/react-icons/lib/esm/iconsManifest.js
+++node_modules/react-icons/lib/esm/index.js
+++node_modules/react-is/cjs/react-is.development.js
+++node_modules/react-is/index.js
+++node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js
+++node_modules/react-redux/es/components/Context.js
+++node_modules/react-redux/es/components/Provider.js
+++node_modules/react-redux/es/components/connectAdvanced.js
+++node_modules/react-redux/es/connect/connect.js
+++node_modules/react-redux/es/connect/mapDispatchToProps.js
+++node_modules/react-redux/es/connect/mapStateToProps.js
+++node_modules/react-redux/es/connect/mergeProps.js
+++node_modules/react-redux/es/connect/selectorFactory.js
+++node_modules/react-redux/es/connect/verifySubselectors.js
+++node_modules/react-redux/es/connect/wrapMapToProps.js
+++node_modules/react-redux/es/exports.js
+++node_modules/react-redux/es/hooks/useDispatch.js
+++node_modules/react-redux/es/hooks/useReduxContext.js
+++node_modules/react-redux/es/hooks/useSelector.js
+++node_modules/react-redux/es/hooks/useStore.js
+++node_modules/react-redux/es/index.js
+++node_modules/react-redux/es/utils/Subscription.js
+++node_modules/react-redux/es/utils/batch.js
+++node_modules/react-redux/es/utils/bindActionCreators.js
+++node_modules/react-redux/es/utils/isPlainObject.js
+++node_modules/react-redux/es/utils/reactBatchedUpdates.js
+++node_modules/react-redux/es/utils/shallowEqual.js
+++node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js
+++node_modules/react-redux/es/utils/verifyPlainObject.js
+++node_modules/react-redux/es/utils/warning.js
+++node_modules/react-redux/node_modules/react-is/cjs/react-is.development.js
+++node_modules/react-redux/node_modules/react-is/index.js
+++node_modules/react-refresh/cjs/react-refresh-runtime.development.js
+++node_modules/react-refresh/runtime.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\BrowserRouter.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\HashRouter.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\utils\locationUtils.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\Link.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\NavLink.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\createNameContext.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\HistoryContext.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\RouterContext.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\Router.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\MemoryRouter.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\Lifecycle.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\Prompt.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\generatePath.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\Redirect.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\matchPath.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\Route.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\StaticRouter.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\Switch.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\withRouter.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\hooks.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\modules\index.js
+++node_modules/react-router/node_modules/isarray/index.js
+++node_modules/react-router/node_modules/path-to-regexp/index.js
+++node_modules/react-select/dist/Select-37be15dd.esm.js
+++node_modules/react-select/dist/index-d36cd2a2.esm.js
+++node_modules/react-select/dist/react-select.esm.js
+++node_modules/react-select/dist/useStateManager-0dbf12fc.esm.js
+++node_modules/react-side-effect/lib/index.js
+++node_modules/react-transition-group/esm/Transition.js
+++node_modules/react-transition-group/esm/TransitionGroupContext.js
+++node_modules/react-transition-group/esm/config.js
+++node_modules/react-transition-group/esm/utils/PropTypes.js
+++node_modules/react/cjs/react-jsx-dev-runtime.development.js
+++node_modules/react/cjs/react-jsx-runtime.development.js
+++node_modules/react/cjs/react.development.js
+++node_modules/react/index.js
+++node_modules/react/jsx-dev-runtime.js
+++node_modules/react/jsx-runtime.js
+++node_modules/redux-thunk/es/index.js
+++node_modules/redux/es/redux.js
+++node_modules/reselect/es/defaultMemoize.js
+++node_modules/reselect/es/index.js
+++node_modules/resolve-pathname/esm/resolve-pathname.js
+++node_modules/scheduler/cjs/scheduler-tracing.development.js
+++node_modules/scheduler/cjs/scheduler.development.js
+++node_modules/scheduler/index.js
+++node_modules/scheduler/tracing.js
+++node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\Enum.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\Utility.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\Tokenizer.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\Parser.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\Prefixer.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\Serializer.js
+++file://d:\Entertainment\Visual studio project\MyFinalProject\src\Middleware.js
+++node_modules/tiny-invariant/dist/tiny-invariant.esm.js
+++node_modules/tiny-warning/dist/tiny-warning.esm.js
+++node_modules/uncontrollable/lib/esm/hook.js
+++node_modules/uncontrollable/lib/esm/index.js
+++node_modules/uncontrollable/lib/esm/uncontrollable.js
+++node_modules/uncontrollable/lib/esm/utils.js
+++node_modules/url/url.js
+++node_modules/url/util.js
+++node_modules/value-equal/esm/value-equal.js
+++node_modules/warning/warning.js
+++node_modules/webpack/buildin/global.js
+++node_modules/webpack/buildin/module.js
+++node_modules/webpack/hot/dev-server.js
+++node_modules/webpack/hot/emitter.js
+++node_modules/webpack/hot/log-apply-result.js
+++node_modules/webpack/hot/log.js
+++localhost꞉3020/static/js/main.chunk.js
+++src/components/account-settings.css
+++src/components/all-reviews.css
+++src/components/ask-the-community.css
+++src/components/authentication.css
+++src/components/collection-details.css
+++src/components/collection-recipes.css
+++src/components/country-recipes.css
+++src/components/create-recipe.css
+++src/components/evaluated-recipes.css
+++src/components/favorite-recipes.css
+++src/components/filter-recipes.css
+++src/components/follower-accounts.css
+++src/components/following-accounts.css
+++src/components/home.css
+++src/components/made-recipes.css
+++src/components/multiselect-dropdown.css
+++src/components/nav-bar.css
+++src/components/notification-settings.css
+++src/components/other-profile-collection-details.css
+++src/components/personal-recipes.css
+++src/components/photo-id.css
+++src/components/photos.css
+++src/components/private-profile.css
+++src/components/profile-settings.css
+++src/components/public-profile-about-me.css
+++src/components/public-profile-collection-recipes.css
+++src/components/public-profile-evaluated-recipes.css
+++src/components/public-profile-favorite-recipes.css
+++src/components/public-profile-follower-accounts.css
+++src/components/public-profile-following-accounts.css
+++src/components/public-profile-made-recipes.css
+++src/components/public-profile-personal-recipes.css
+++src/components/public-profile-top-part.css
+++src/components/recipe-details.css
+++src/components/recipe-results.css
+++src/components/second-nav-bar.css
+++src/components/shopping-lists.css
+++src/components/sign-in.css
+++src/components/sign-up.css
+++src/components/specific-type-of-country-recipes.css
+++src/components/specific-type-of-recipes.css
+++src/components/top-part.css
+++src/components/types-of-recipes.css
+++src/components/world-cuisine.css
+++src/index.css
+++src/App.js
+++src/components/GlobalFood.jpg
+++src/components/Google.png
+++src/components/HidePassword.png
+++src/components/MyLogo.png
+++src/components/ShowPassword.png
+++src/components/TypicalChineseFood.jpg
+++src/components/TypicalGermanFood.png
+++src/components/TypicalIndianFood.jpg
+++src/components/TypicalItalianFood.jpg
+++src/components/TypicalJapaneseFood.png
+++src/components/TypicalMexicanFood.jpg
+++src/components/TypicalRussianFood.png
+++src/components/TypicalSpanishFood.png
+++src/components/account-settings.js
+++src/components/all-reviews.js
+++src/components/ask-the-community.js
+++src/components/authentication.js
+++src/components/collection-details.js
+++src/components/collection-recipes.js
+++src/components/country-recipes.js
+++src/components/create-recipe.js
+++src/components/evaluated-recipes.js
+++src/components/favorite-recipes.js
+++src/components/features/singin/singinSlice.js
+++src/components/filter-recipes.js
+++src/components/follower-accounts.js
+++src/components/following-accounts.js
+++src/components/home.js
+++src/components/home1.js
+++src/components/made-recipes.js
+++src/components/multiselect-dropdown.js
+++src/components/nav-bar.js
+++src/components/notification-settings.js
+++src/components/other-profile-collection-details.js
+++src/components/personal-recipes.js
+++src/components/photo-id.js
+++src/components/photos.js
+++src/components/pizza.jpg
+++src/components/private-profile.js
+++src/components/profile-settings.js
+++src/components/public-profile-about-me.js
+++src/components/public-profile-collection-recipes.js
+++src/components/public-profile-evaluated-recipes.js
+++src/components/public-profile-favorite-recipes.js
+++src/components/public-profile-follower-accounts.js
+++src/components/public-profile-following-accounts.js
+++src/components/public-profile-made-recipes.js
+++src/components/public-profile-personal-recipes.js
+++src/components/public-profile-top-part.js
+++src/components/recipe-details.js
+++src/components/recipe-results.js
+++src/components/second-nav-bar.js
+++src/components/shopping-lists.js
+++src/components/sign-in.js
+++src/components/sign-up.js
+++src/components/specific-type-of-country-recipes.js
+++src/components/specific-type-of-recipes.js
+++src/components/top-part.js
+++src/components/top_background.jpg
+++src/components/types-of-recipes.js
+++src/components/world-cuisine.js
+++src/index.js
+++src/reportWebVitals.js
+++src/store.ts
+++hmlcjjclebjnfohgmgikjfnbmfkigocc/scripts/anti-clickjacking.js
+++hmlcjjclebjnfohgmgikjfnbmfkigocc/scripts/anti-fb-phishing.js
+++<eval>/VM46947590
+++<eval>/VM46947591
+++<eval>/VM46947592
+++Solution 'Server_c0.0.1' ‎(2 of 2 projects)
+i:{00000000-0000-0000-0000-000000000000}:Server_c0.0.1.sln
+++apis.google.com/js/api.js
+++apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.NnK9YPjtg-w.O/m=auth2/rt=j/sv=1/d=1/ed=1/rs=AHpOoo9KePDGVlGjp-rlXwDM1kUO2Eh4gg/cb=gapi.loaded_0?le=scs
+++www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.IdpIFrameHttp.en_US.i4owTgjhwPg.es5.O/d=1/rs=AOaEmlFm7JA0VALT92BBUvF8sPizIstBUg/m=base
+++<eval>/VM46947593
+++accounts.google.com/o/oauth2/iframe꞉1:244
+++<eval>/VM46947594
+++localhost꞉3020/main.e6a536af017286445757.hot-update.js
+++<eval>/VM46947595
+++<eval>/VM46947596
+++<eval>/VM46947597
+++<eval>/VM46947598
+++<eval>/VM46947599
+++<eval>/VM46947600
+++<eval>/VM46947601
+++<eval>/VM46947602
+++<eval>/VM46947603
+++<eval>/VM46947604
+++<eval>/VM46947605
+++localhost꞉3020/main.724dd459ba928a1f847a.hot-update.js
+++localhost꞉3020/main.bbd3e00c60077d5be6bc.hot-update.js
+++<eval>/VM46947606
+++<eval>/VM46947607
+++<eval>/VM46947608
+++localhost꞉3020/main.9093f6a094f00d694891.hot-update.js
+++<eval>/VM46947609
+++<eval>/VM46947610
+++<eval>/VM46947611
+++<eval>/VM46947612
+++<eval>/VM46947613
+++<eval>/VM46947614
+++localhost꞉3020/main.6bf3312ead3b89a12ec2.hot-update.js
+++<eval>/VM46947615
+++accounts.google.com/o/oauth2/auth?redirect_uri=storagerelay://http/localhost:3020?id=auth238849&response_type=permission+id_token&scope=email+profile+openid&openid.realm=&include_granted_scopes=true&client_id=233921336924-5aeen5b4nrsh915vmlapdka1gnjg8ghv.apps.googleusercontent.com&ss_domain=http://localhost:3020&prompt=&fetch_basic_profile=true&gsiwebsdk=2꞉1:143
+++accounts.google.com/o/oauth2/auth?redirect_uri=storagerelay://http/localhost:3020?id=auth238849&response_type=permission+id_token&scope=email+profile+openid&openid.realm=&include_granted_scopes=true&client_id=233921336924-5aeen5b4nrsh915vmlapdka1gnjg8ghv.apps.googleusercontent.com&ss_domain=http://localhost:3020&prompt=&fetch_basic_profile=true&gsiwebsdk=2꞉1:1052
+++ssl.gstatic.com/accounts/static/_/js/k=gaia.gaiafe_glif.vi.A1BATbT2qxQ.O/am=XST-ACT8AAAAAAAAAAAAAAAAPDFRA42ySQ/d=1/rs=ABkqax1RV-wR-B3eTa3-RKlhNt4IL7eQeA/m=approvaldata_view
+++ssl.gstatic.com/accounts/static/_/js/k=gaia.gaiafe_glif.vi.A1BATbT2qxQ.O/am=XST-ACT8AAAAAAAAAAAAAAAAPDFRA42ySQ/d=0/rs=ABkqax1RV-wR-B3eTa3-RKlhNt4IL7eQeA/m=n73qwf,MpJwZc,otPmVb,rlNAl
+++accounts.google.com/o/oauth2/auth?redirect_uri=storagerelay://http/localhost:3020?id=auth640857&response_type=permission+id_token&scope=email+profile+openid&openid.realm=&include_granted_scopes=true&client_id=233921336924-5aeen5b4nrsh915vmlapdka1gnjg8ghv.apps.googleusercontent.com&ss_domain=http://localhost:3020&prompt=&fetch_basic_profile=true&gsiwebsdk=2꞉1:143
+++accounts.google.com/o/oauth2/auth?redirect_uri=storagerelay://http/localhost:3020?id=auth640857&response_type=permission+id_token&scope=email+profile+openid&openid.realm=&include_granted_scopes=true&client_id=233921336924-5aeen5b4nrsh915vmlapdka1gnjg8ghv.apps.googleusercontent.com&ss_domain=http://localhost:3020&prompt=&fetch_basic_profile=true&gsiwebsdk=2꞉1:1052
+++localhost꞉3020/main.43ec8421e3348bcca166.hot-update.js
+++localhost꞉3020/main.97cf9651c2748037a0a5.hot-update.js
+++localhost꞉3020/main.f46a01c0d2fae4ac14e9.hot-update.js
+++<eval>/VM46947616
+++<eval>/VM46947617
+++localhost꞉3020/main.84863c3980199ac3f889.hot-update.js
+++<eval>/VM46947618
+++<eval>/VM46947619
+++<eval>/VM46947620
+++<eval>/VM46947621
+++<eval>/VM46947622
+++<eval>/VM46947623
+++localhost꞉3020/main.c8a3332428721eb17a1c.hot-update.js
+++<eval>/VM46947624
+++<eval>/VM46947625
+++<eval>/VM46947626
+++<eval>/VM46947627

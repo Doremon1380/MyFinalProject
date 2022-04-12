@@ -2,15 +2,13 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>LaunchJsonDebugger</DebuggerFlavor>
-    <LaunchJsonTarget>
-      {
-      "type": "chrome",
-      "request": "launch",
-      "name": "localhost (Chrome)",
-      "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}",
-      "userDataDir": false
-      }
-    </LaunchJsonTarget>
+    <LaunchJsonTarget>{
+  "type": "edge",
+  "request": "launch",
+  "name": "localhost (Edge)",
+  "url": "http://localhost:3020",
+  "webRoot": "D:\\Entertainment\\Visual studio project\\MyFinalProject\\React",
+  "userDataDir": false
+}</LaunchJsonTarget>
   </PropertyGroup>
 </Project>
