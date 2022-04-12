@@ -1,3 +1,7 @@
-'use strict';
+var express = require('express');
 
-console.log('Hello world');
+var http = require('http');
+var port = process.env.PORT || 3021;
+
+const app = express();
+app.use(express.json());

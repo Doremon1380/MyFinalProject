@@ -8,7 +8,7 @@ import {
 const singinAdapter = createEntityAdapter()
 
 const initialState = singinAdapter.getInitialState({
-    id: 0,
+    //id: 0,
     isPaswordVisible: false,
     open: true
 })
@@ -44,10 +44,5 @@ export const {
     toggleImage,
     changePasswordVisibility,
 } = singinSlice.actions
-
-const selector = singinAdapter.getSelectors(state => state.singin);
-
-export const getPasswordStatus = () => { return initialState.isPaswordVisible; }
-export const getImageName = () => { return initialState.open; }
 
 export default singinSlice.reducer

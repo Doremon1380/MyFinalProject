@@ -17,6 +17,27 @@ import { FaTwitter } from "react-icons/fa";
 
 const TITLE = '"Recipe name" - FoodShare.com';
 
+function Review({ children }) {
+
+    const review = children;
+
+    if (review.length > 200) {
+        return (
+            <div id="review-in-recipe-details-page">
+                <p>{review.slice(0, 200)}...</p>
+                <a href="#recipe-review-in-recipe-details-page">Read More</a>
+            </div>
+        )
+    }
+    else {
+        return (
+            <div id="review-in-recipe-details-page">
+                <p>{review}</p>
+            </div>
+        )
+    }
+}
+
 function RecipeDetails() {
     return (
         <>
@@ -46,7 +67,7 @@ function RecipeDetails() {
                     <i className="bi bi-star"></i>
                     <p id="number-of-ratings-in-recipe-details-page">(number) Ratings</p>
                     <p id="number-of-reviews-in-recipe-details-page"><a href="#reviews-section-in-recipe-details-page">(number) Reviews</a></p>
-                    <p id="number-of-photos-in-recipe-details-page"><a href="#recipe-photos-in-favorite-recipes-page">(number) Photos</a></p>
+                    <p id="number-of-photos-in-recipe-details-page"><a href="#recipe-photos-in-recipe-details-page">(number) Photos</a></p>
                 </div>
                 <i><FaQuoteLeft /></i>
                 <p id="introduction">Introduction</p>
@@ -59,7 +80,7 @@ function RecipeDetails() {
                         <i class="bi bi-suit-heart-fill"></i>
                         Save
                     </button>
-                    <a href="#share-recipe-in-favorite-recipes-page">
+                    <a href="#share-recipe-in-recipe-details-page">
                         <button>
                             <i className="bi bi-three-dots"></i>
                             Share
@@ -68,19 +89,19 @@ function RecipeDetails() {
                 </div>
                 <div>
                     <div id="current-food-images-in-recipe-details-page">
-                        <a href="#recipe-photos-in-favorite-recipes-page"><img id="current-food-image-of-author-in-recipe-details-page" alt="food image"></img></a>
+                        <a href="#recipe-photos-in-recipe-details-page"><img id="current-food-image-of-author-in-recipe-details-page" alt="food image"></img></a>
                         <i class="bi bi-zoom-in"></i>
                         <div id="add-new-image-button-and-current-food-images-of-makers-in-recipe-details-page">
-                            <a href="#recipe-review-in-recipe-details-page">
+                            <a href="#add-recipe-review-in-recipe-details-page">
                                 <button id="add-new-image-button-in-recipe-details-page">
                                     <div>
                                         <i id="camera-icon-of-add-new-image-button-in-recipe-details-page" className="bi bi-camera-fill"></i>
                                     </div>
                                 </button>
                             </a>
-                            <a href="#recipe-photos-in-favorite-recipes-page"><img className="current-food-image-of-maker-in-recipe-details-page" alt="image 1"></img></a>
-                            <a href="#recipe-photos-in-favorite-recipes-page"><img className="current-food-image-of-maker-in-recipe-details-page" alt="image 2"></img></a>
-                            <a href="#recipe-photos-in-favorite-recipes-page"><img className="current-food-image-of-maker-in-recipe-details-page" alt="image 3"></img></a>
+                            <a href="#recipe-photos-in-recipe-details-page"><img className="current-food-image-of-maker-in-recipe-details-page" alt="image 1"></img></a>
+                            <a href="#recipe-photos-in-recipe-details-page"><img className="current-food-image-of-maker-in-recipe-details-page" alt="image 2"></img></a>
+                            <a href="#recipe-photos-in-recipe-details-page"><img className="current-food-image-of-maker-in-recipe-details-page" alt="image 3"></img></a>
                         </div>
                     </div>
                     <div id="information-related-to-current-food-in-recipe-details-page">
@@ -240,7 +261,7 @@ function RecipeDetails() {
                         <div id="reviews-section-background-2-in-recipe-details-page">
                             <div id="add-rating-and-review-button-in-recipe-details-page">
                                 <i className="bi bi-person-circle"></i>
-                                <a href="#recipe-review-in-recipe-details-page"><button>Add Rating & Review</button></a>
+                                <a href="#add-recipe-review-in-recipe-details-page"><button>Add Rating & Review</button></a>
                             </div>
                             <hr></hr>
                             <div id="recipe-ratings-and-most-helpful-reviews-in-recipe-details-page">
@@ -249,42 +270,42 @@ function RecipeDetails() {
                                     <div id="first-number-of-stars-in-recipe-ratings-of-recipe-details-page">
                                         <p>(Number)</p>
                                         <div id="first-line-of-stars-in-recipe-ratings-of-recipe-details-page">
-                                            <i className="bi bi-star"></i>
-                                            <i className="bi bi-star"></i>
-                                            <i className="bi bi-star"></i>
-                                            <i className="bi bi-star"></i>
-                                            <i className="bi bi-star"></i>
+                                            <i className="bi bi-star-fill"></i>
+                                            <i className="bi bi-star-fill"></i>
+                                            <i className="bi bi-star-fill"></i>
+                                            <i className="bi bi-star-fill"></i>
+                                            <i className="bi bi-star-fill"></i>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="number-of-stars-in-recipe-ratings-of-recipe-details-page">
                                             <p>(Number)</p>
                                             <div className="line-of-stars-in-recipe-ratings-of-recipe-details-page">
-                                                <i className="bi bi-star"></i>
-                                                <i className="bi bi-star"></i>
-                                                <i className="bi bi-star"></i>
-                                                <i className="bi bi-star"></i>
+                                                <i className="bi bi-star-fill"></i>
+                                                <i className="bi bi-star-fill"></i>
+                                                <i className="bi bi-star-fill"></i>
+                                                <i className="bi bi-star-fill"></i>
                                             </div>
                                         </div>
                                         <div className="number-of-stars-in-recipe-ratings-of-recipe-details-page">
                                             <p>(Number) </p>
                                             <div className="line-of-stars-in-recipe-ratings-of-recipe-details-page">
-                                                <i className="bi bi-star"></i>
-                                                <i className="bi bi-star"></i>
-                                                <i className="bi bi-star"></i>
+                                                <i className="bi bi-star-fill"></i>
+                                                <i className="bi bi-star-fill"></i>
+                                                <i className="bi bi-star-fill"></i>
                                             </div>
                                         </div>
                                         <div className="number-of-stars-in-recipe-ratings-of-recipe-details-page">
                                             <p>(Number) </p>
                                             <div className="line-of-stars-in-recipe-ratings-of-recipe-details-page">
-                                                <i className="bi bi-star"></i>
-                                                <i className="bi bi-star"></i>
+                                                <i className="bi bi-star-fill"></i>
+                                                <i className="bi bi-star-fill"></i>
                                             </div>
                                         </div>
                                         <div className="number-of-stars-in-recipe-ratings-of-recipe-details-page">
                                             <p>(Number) </p>
                                             <div className="line-of-stars-in-recipe-ratings-of-recipe-details-page">
-                                                <i className="bi bi-star"></i>
+                                                <i className="bi bi-star-fill"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -296,8 +317,8 @@ function RecipeDetails() {
                                         <img alt="avartar"></img>
                                         (Account Name)
                                     </a>
-                                    <div className="stars-and-review-time-of-review-in-recipe-details-page">
-                                        <div className="stars-of-review-in-recipe-details-page">
+                                    <div className="rating-and-review-time-of-review-in-recipe-details-page">
+                                        <div className="rating-of-review-in-recipe-details-page">
                                             <i className="bi bi-star"></i>
                                             <i className="bi bi-star"></i>
                                             <i className="bi bi-star"></i>
@@ -306,8 +327,7 @@ function RecipeDetails() {
                                         </div>
                                         <p>(month/date/year)</p>
                                     </div>
-                                    <p>Review</p>
-                                    <p>Read More</p>
+                                    <Review>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Review>
                                     <div className="number-of-helpful-of-review-in-recipe-details-page">
                                         <i><FaThumbsUp /></i>
                                         <p>Helpful (number)</p>
@@ -319,8 +339,8 @@ function RecipeDetails() {
                                         <img alt="avartar"></img>
                                         (Account Name)
                                     </a>
-                                    <div className="stars-and-review-time-of-review-in-recipe-details-page">
-                                        <div className="stars-of-review-in-recipe-details-page">
+                                    <div className="rating-and-review-time-of-review-in-recipe-details-page">
+                                        <div className="rating-of-review-in-recipe-details-page">
                                             <i className="bi bi-star"></i>
                                             <i className="bi bi-star"></i>
                                             <i className="bi bi-star"></i>
@@ -329,8 +349,7 @@ function RecipeDetails() {
                                         </div>
                                         <p>(month/date/year)</p>
                                     </div>
-                                    <p>Review</p>
-                                    <p>Read More</p>
+                                    <Review>Review</Review>
                                     <div className="number-of-helpful-of-review-in-recipe-details-page">
                                         <i><FaThumbsUp /></i>
                                         <p>Helpful (number)</p>
@@ -344,8 +363,8 @@ function RecipeDetails() {
                         <p>Least Positive</p>
                         <p>Newest</p>
                     </div>
-                    <div id="reviews-in-recipe-details-page">
-                        <div className="review-in-recipe-details-page">
+                    <div id="user-reviews-in-recipe-details-page">
+                        <div className="user-review-in-recipe-details-page">
                             <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
@@ -360,14 +379,13 @@ function RecipeDetails() {
                                 </div>
                                 <p>(month/date/year)</p>
                             </div>
-                            <p>Review</p>
-                            <p>Read More</p>
+                            <Review>Review</Review>
                             <div>
                                 <i><FaThumbsUp /></i>
                                 <p>Helpful (number)</p>
                             </div>
                         </div>
-                        <div className="review-in-recipe-details-page">
+                        <div className="user-review-in-recipe-details-page">
                             <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
@@ -382,14 +400,13 @@ function RecipeDetails() {
                                 </div>
                                 <p>(month/date/year)</p>
                             </div>
-                            <p>Review</p>
-                            <p>Read More</p>
+                            <Review>Review</Review>
                             <div>
                                 <i><FaThumbsUp /></i>
                                 <p>Helpful (number)</p>
                             </div>
                         </div>
-                        <div className="review-in-recipe-details-page">
+                        <div className="user-review-in-recipe-details-page">
                             <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
@@ -404,14 +421,13 @@ function RecipeDetails() {
                                 </div>
                                 <p>(month/date/year)</p>
                             </div>
-                            <p>Review</p>
-                            <p>Read More</p>
+                            <Review>Review</Review>
                             <div>
                                 <i><FaThumbsUp /></i>
                                 <p>Helpful (number)</p>
                             </div>
                         </div>
-                        <div className="review-in-recipe-details-page">
+                        <div className="user-review-in-recipe-details-page">
                             <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
@@ -426,14 +442,13 @@ function RecipeDetails() {
                                 </div>
                                 <p>(month/date/year)</p>
                             </div>
-                            <p>Review</p>
-                            <p>Read More</p>
+                            <Review>Review</Review>
                             <div>
                                 <i><FaThumbsUp /></i>
                                 <p>Helpful (number)</p>
                             </div>
                         </div>
-                        <div className="review-in-recipe-details-page">
+                        <div className="user-review-in-recipe-details-page">
                             <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
@@ -448,14 +463,13 @@ function RecipeDetails() {
                                 </div>
                                 <p>(month/date/year)</p>
                             </div>
-                            <p>Review</p>
-                            <p>Read More</p>
+                            <Review>Lorem ipsum</Review>
                             <div>
                                 <i><FaThumbsUp /></i>
                                 <p>Helpful (number)</p>
                             </div>
                         </div>
-                        <div className="review-in-recipe-details-page">
+                        <div className="user-review-in-recipe-details-page">
                             <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
@@ -470,14 +484,13 @@ function RecipeDetails() {
                                 </div>
                                 <p>(month/date/year)</p>
                             </div>
-                            <p>Review</p>
-                            <p>Read More</p>
+                            <Review>Review</Review>
                             <div>
                                 <i><FaThumbsUp /></i>
                                 <p>Helpful (number)</p>
                             </div>
                         </div>
-                        <div className="review-in-recipe-details-page">
+                        <div className="user-review-in-recipe-details-page">
                             <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
@@ -492,14 +505,13 @@ function RecipeDetails() {
                                 </div>
                                 <p>(month/date/year)</p>
                             </div>
-                            <p>Review</p>
-                            <p>Read More</p>
+                            <Review>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Review>
                             <div>
                                 <i><FaThumbsUp /></i>
                                 <p>Helpful (number)</p>
                             </div>
                         </div>
-                        <div className="review-in-recipe-details-page">
+                        <div className="user-review-in-recipe-details-page">
                             <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
@@ -514,14 +526,13 @@ function RecipeDetails() {
                                 </div>
                                 <p>(month/date/year)</p>
                             </div>
-                            <p>Review</p>
-                            <p>Read More</p>
+                            <Review>Review</Review>
                             <div>
                                 <i><FaThumbsUp /></i>
                                 <p>Helpful (number)</p>
                             </div>
                         </div>
-                        <div className="review-in-recipe-details-page">
+                        <div className="user-review-in-recipe-details-page">
                             <a href="/public-profile-about-me">
                                 <img alt="avartar"></img>
                                 (Account Name)
@@ -536,8 +547,7 @@ function RecipeDetails() {
                                 </div>
                                 <p>(month/date/year)</p>
                             </div>
-                            <p>Review</p>
-                            <p>Read More</p>
+                            <Review>Review</Review>
                             <div>
                                 <i><FaThumbsUp /></i>
                                 <p>Helpful (number)</p>
@@ -545,10 +555,10 @@ function RecipeDetails() {
                         </div>
                     </div>
                     <a href="/all-reviews"><button id="more-reviews-button-in-recipe-details-page">More Reviews</button></a>
-                    <div id="share-recipe-in-favorite-recipes-page">
-                        <div id="share-recipe-popup-in-favorite-recipes-page">
-                            <div id="title-and-close-button-of-share-recipe-popup-in-favorite-recipes-page">
-                                <p id="title-of-share-recipe-popup-in-favorite-recipes-page">Share</p>
+                    <div id="share-recipe-in-recipe-details-page">
+                        <div id="share-recipe-popup-in-recipe-details-page">
+                            <div id="title-and-close-button-of-share-recipe-popup-in-recipe-details-page">
+                                <p id="title-of-share-recipe-popup-in-recipe-details-page">Share</p>
                                 <a id="close-button-of-share-recipe-popup-in-recipe-details-page" href="#">&times;</a>
                             </div>
                             <div id="social-networks-to-share-recipe-of-share-recipe-popup-in-recipe-details-page">
@@ -567,46 +577,46 @@ function RecipeDetails() {
                             </div>
                         </div>
                     </div>
-                    <div id="recipe-photos-in-favorite-recipes-page">
-                        <div id="recipe-photos-popup-in-favorite-recipes-page">
-                            <div id="title-and-close-button-of-recipe-photos-popup-in-favorite-recipes-page">
-                                <p id="title-of-recipe-photos-popup-in-favorite-recipes-page">Recipe Photos</p>
-                                <a id="close-button-of-recipe-photos-popup-in-favorite-recipes-page" href="#">&times;</a>
+                    <div id="recipe-photos-in-recipe-details-page">
+                        <div id="recipe-photos-popup-in-recipe-details-page">
+                            <div id="title-and-close-button-of-recipe-photos-popup-in-recipe-details-page">
+                                <p id="title-of-recipe-photos-popup-in-recipe-details-page">Recipe Photos</p>
+                                <a id="close-button-of-recipe-photos-popup-in-recipe-details-page" href="#">&times;</a>
                             </div>
-                            <div id="recipe-photos-of-popup-in-favorite-recipes-page">
-                                <div id="displayed-recipe-photos-section-of-recipe-photos-of-popup-in-favorite-recipes-page">
-                                    <p id="title-of-displayed-recipe-photos-section-of-recipe-photos-of-popup-in-favorite-recipes-page">Photos of (Recipe name)</p>
-                                    <div id="back-and-next-button-of-recipe-photos-popup-in-favorite-recipes-page">
-                                        <button id="back-button-of-recipe-photos-popup-in-favorite-recipes-page"><i class="bi bi-chevron-left"></i></button>
-                                        <button id="next-button-of-recipe-photos-popup-in-favorite-recipes-page"><i class="bi bi-chevron-right"></i></button>
+                            <div id="recipe-photos-of-popup-in-recipe-details-page">
+                                <div id="displayed-recipe-photos-section-of-recipe-photos-of-popup-in-recipe-details-page">
+                                    <p id="title-of-displayed-recipe-photos-section-of-recipe-photos-of-popup-in-recipe-details-page">Photos of (Recipe name)</p>
+                                    <div id="back-and-next-button-of-recipe-photos-popup-in-recipe-details-page">
+                                        <button id="back-button-of-recipe-photos-popup-in-recipe-details-page"><i class="bi bi-chevron-left"></i></button>
+                                        <button id="next-button-of-recipe-photos-popup-in-recipe-details-page"><i class="bi bi-chevron-right"></i></button>
                                     </div>
-                                    <img id="displayed-recipe-photo-of-recipe-photos-popup-in-favorite-recipes-page"></img>
-                                    <div id="number-of-recipe-photos-and-recipe-name-of-recipe-photos-of-popup-in-favorite-recipes-page">
-                                        <p id="number-of-recipe-photos-of-recipe-photos-popup-in-favorite-recipes-page">(number) of (sum)</p>
-                                        <p id="recipe-name-of-recipe-photos-of-popup-in-favorite-recipes-page">(Recipe name)</p>
+                                    <img id="displayed-recipe-photo-of-recipe-photos-popup-in-recipe-details-page"></img>
+                                    <div id="number-of-recipe-photos-and-recipe-name-of-recipe-photos-of-popup-in-recipe-details-page">
+                                        <p id="number-of-recipe-photos-of-recipe-photos-popup-in-recipe-details-page">(number) of (sum)</p>
+                                        <p id="recipe-name-of-recipe-photos-of-popup-in-recipe-details-page">(Recipe name)</p>
                                     </div>
-                                    <div id="user-account-of-the-author-who-made-the-recipe-of-recipe-photos-popup-in-favorite-recipes-page">
-                                        <img id="author-avatar-image-of-recipe-photos-popup-in-favorite-recipes-page" alt="avatar"></img>
-                                        <p id="author-account-of-recipe-photos-popup-in-favorite-recipes-page">User name</p>
+                                    <div id="user-account-of-the-author-who-made-the-recipe-of-recipe-photos-popup-in-recipe-details-page">
+                                        <img id="author-avatar-image-of-recipe-photos-popup-in-recipe-details-page" alt="avatar"></img>
+                                        <p id="author-account-of-recipe-photos-popup-in-recipe-details-page">User name</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <form id="recipe-review-in-recipe-details-page" action="">
-                        <div id="recipe-review-popup-in-recipe-details-page">
-                            <div id="title-and-close-button-of-recipe-review-popup-in-recipe-details-page">
+                    <form id="add-recipe-review-in-recipe-details-page" action="">
+                        <div id="add-recipe-review-popup-in-recipe-details-page">
+                            <div id="title-and-close-button-of-add-recipe-review-popup-in-recipe-details-page">
                                 <div>
                                     <i class="bi bi-chat-left-text-fill"></i>
-                                    <p id="title-of-recipe-review-popup-in-recipe-details-page">Review this recipe</p>
+                                    <p id="title-of-add-recipe-review-popup-in-recipe-details-page">Review this recipe</p>
                                 </div>
-                                <a id="close-button-of-recipe-review-popup-in-recipe-details-page" href="#">&times;</a>
+                                <a id="close-button-of-add-recipe-review-popup-in-recipe-details-page" href="#">&times;</a>
                             </div>
-                            <div id="recipe-review-section-of-recipe-review-popup-in-recipe-details-page">
-                                <p id="name-of-recipe-of-recipe-review-popup-in-recipe-details-page">(Recipe name)</p>
-                                <div id="recipe-review-and-add-photo-button-of-recipe-review-popup-in-recipe-details-page">
-                                    <div id="recipe-rating-and-review-of-recipe-review-popup-in-recipe-details-page">
-                                        <div id="recipe-rating-of-recipe-review-popup-in-recipe-details-page">
+                            <div id="add-recipe-review-section-of-add-recipe-review-popup-in-recipe-details-page">
+                                <p id="name-of-recipe-of-add-recipe-review-popup-in-recipe-details-page">(Recipe name)</p>
+                                <div id="add-recipe-review-and-add-photo-button-of-add-recipe-review-popup-in-recipe-details-page">
+                                    <div id="add-recipe-rating-and-add-recipe-review-of-add-recipe-review-popup-in-recipe-details-page">
+                                        <div id="add-recipe-rating-of-add-recipe-review-popup-in-recipe-details-page">
                                             <div>
                                                 <i className="bi bi-star"></i>
                                                 <i className="bi bi-star"></i>
@@ -616,22 +626,52 @@ function RecipeDetails() {
                                             </div>
                                             <p>Your rating</p>
                                         </div>
-                                        <textarea id="recipe-review-of-recipe-review-popup-in-recipe-details-page" placeholder="What did you think about this recipe? Did you make any changes when you made it?" name="review" rows="9" cols="40"></textarea>
+                                        <textarea id="add-recipe-review-of-add-recipe-review-popup-in-recipe-details-page" placeholder="What did you think about this recipe? Did you make any changes when you made it?" name="review" rows="9" cols="40"></textarea>
                                     </div>
-                                    <button id="add-photo-button-of-recipe-review-popup-in-recipe-details-page">
+                                    <button id="add-photo-button-of-add-recipe-review-popup-in-recipe-details-page">
                                         <div>
-                                            <i id="camera-icon-of-add-photo-button-of-recipe-review-popup-in-recipe-details-page" className="bi bi-camera camera-icon"></i>
+                                            <i id="camera-icon-of-add-photo-button-of-add-recipe-review-popup-in-recipe-details-page" className="bi bi-camera camera-icon"></i>
                                         </div>
                                         <p>Add Photo</p>
                                     </button>
                                 </div>
                                 <div>
-                                    <a href="#"><button id="cancle-recipe-review-button-of-recipe-review-popup-in-recipe-details-page">Cancel</button></a>
-                                    <button type="submit" form="recipe-review-in-favorite-recipes-page" id="submit-recipe-review-button-of-recipe-review-popup-in-recipe-details-page">Submit</button>
+                                    <a href="#"><button id="cancle-button-of-add-recipe-review-popup-in-recipe-details-page">Cancel</button></a>
+                                    <button type="submit" form="add-recipe-review-in-recipe-details-page" id="submit-button-of-add-recipe-review-popup-in-recipe-details-page">Submit</button>
                                 </div>
                             </div>
                         </div>
                     </form>
+                    <div id="recipe-review-in-recipe-details-page">
+                        <div id="recipe-review-popup-in-recipe-details-page">
+                            <div id="title-and-close-button-of-recipe-review-popup-in-recipe-details-page">
+                                <p id="title-of-recipe-review-popup-in-recipe-details-page">Recipe Reviews</p>
+                                <a id="close-button-of-recipe-review-popup-in-recipe-details-page" href="#">&times;</a>
+                            </div>
+                            <div id="recipe-review-section-of-recipe-review-popup-in-recipe-details-page">
+                                <p id="title-of-recipe-review-section-of-recipe-review-popup-in-recipe-details-page">Review for (Recipe Name)</p>
+                                <a href="/public-profile-about-me">
+                                    <img alt="avartar"></img>
+                                    (Account Name)
+                                </a>
+                                <div id="rating-and-review-time-in-recipe-review-popup">
+                                    <div id="rating-of-review-in-recipe-review-popup">
+                                        <i className="bi bi-star"></i>
+                                        <i className="bi bi-star"></i>
+                                        <i className="bi bi-star"></i>
+                                        <i className="bi bi-star"></i>
+                                        <i className="bi bi-star"></i>
+                                    </div>
+                                    <p>(month/date/year)</p>
+                                </div>
+                                <p>Review</p>
+                                <div id="number-of-helpful-of-review-in-recipe-review-popup">
+                                    <i><FaThumbsUp /></i>
+                                    <p>Helpful (number)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
