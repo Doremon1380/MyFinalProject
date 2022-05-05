@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SecondNavBar from "./second-nav-bar";
 import TopPart from "./top-part";
+import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from 'react-helmet';
 import "./evaluated-recipes.css";
@@ -9,6 +10,24 @@ import { FaHeart } from "react-icons/fa";
 const TITLE = 'Private Profile - FoodShare.com';
 
 function EvaluatedRecipes() {
+    const [recipes, setRecipes] = useState([]);
+    const [visibleOfRecipes, setVisibleOfRecipes] = useState(9);
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        const fetchRecipes = async () => {
+            setLoading(true);
+            const res = await axios.get('https://jsonplaceholder.typicode.com/photos');
+            setRecipes(res.data);
+            setLoading(false);
+        }
+        fetchRecipes();
+    }, []);
+
+    const showMoreRecipes = () => {
+        setVisibleOfRecipes((prevValue) => prevValue + 3);
+    };
+
     return (
         <>
             <Helmet>
@@ -37,192 +56,32 @@ function EvaluatedRecipes() {
                         <option value="Title">Title</option>
                     </select>
                 </div>
-                <div id="recipes-in-evaluated-recipes-page">
-                    <div className="recipe-in-evaluated-recipes-page">
-                        <button className="save-recipe-button-in-evaluated-recipes-page"><i><FaHeart /></i></button>
-                        <a href="/recipe-details">
-                            <img alt="(Recipe name)" className="recipe-photo-in-evaluated-recipes-page"></img>
-                            <p className="recipe-name-in-evaluated-recipes-page">(Recipe name)</p>
-                        </a>
-                        <p>My rating:</p>
-                        <div className="own-ratings-in-evaluated-recipes-page">
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                        </div>
-                        <hr></hr>
-                        <p className="own-review-in-evaluated-recipes-page">(Own Review)</p>
-                    </div>
-                    <div className="recipe-in-evaluated-recipes-page">
-                        <button className="save-recipe-button-in-evaluated-recipes-page"><i><FaHeart /></i></button>
-                        <a href="/recipe-details">
-                            <img alt="(Recipe name)" className="recipe-photo-in-evaluated-recipes-page"></img>
-                            <p className="recipe-name-in-evaluated-recipes-page">(Recipe name)</p>
-                        </a>
-                        <p>My rating:</p>
-                        <div className="own-ratings-in-evaluated-recipes-page">
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                        </div>
-                        <hr></hr>
-                        <p className="own-review-in-evaluated-recipes-page">(Own Review)</p>
-                    </div>
-                    <div className="recipe-in-evaluated-recipes-page">
-                        <button className="save-recipe-button-in-evaluated-recipes-page"><i><FaHeart /></i></button>
-                        <a href="/recipe-details">
-                            <img alt="(Recipe name)" className="recipe-photo-in-evaluated-recipes-page"></img>
-                            <p className="recipe-name-in-evaluated-recipes-page">(Recipe name)</p>
-                        </a>
-                        <p>My rating:</p>
-                        <div className="own-ratings-in-evaluated-recipes-page">
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                        </div>
-                        <a href="/recipe-details">
-                            <button className="add-review-button-in-evaluated-recipes-page">
-                                <div className="add-icon-in-evaluated-recipes-page">
-                                    <i class="bi bi-plus"></i>
+                {loading === true ? <h1 style={{ textAlign: "center", marginTop: "30vh" }}>Loading...</h1> :
+                    <>
+                        <div id="recipes-in-evaluated-recipes-page">
+                            {recipes.slice(0, visibleOfRecipes).map(recipe => (
+                                <div key={recipe.id} className="recipe-in-evaluated-recipes-page">
+                                    <button className="save-recipe-button-in-evaluated-recipes-page"><i><FaHeart /></i></button>
+                                    <a href="/recipe-details">
+                                        <img alt="(Recipe name)" className="recipe-photo-in-evaluated-recipes-page" src={recipe.url}></img>
+                                        <p className="recipe-name-in-evaluated-recipes-page">{recipe.title}</p>
+                                    </a>
+                                    <p>My rating:</p>
+                                    <div className="own-ratings-in-evaluated-recipes-page">
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <hr></hr>
+                                    <p className="own-review-in-evaluated-recipes-page">(Own Review)</p>
                                 </div>
-                                <p>Add a review</p>
-                            </button>
-                        </a>
-                    </div>
-                    <div className="recipe-in-evaluated-recipes-page">
-                        <button className="save-recipe-button-in-evaluated-recipes-page"><i><FaHeart /></i></button>
-                        <a href="/recipe-details">
-                            <img alt="(Recipe name)" className="recipe-photo-in-evaluated-recipes-page"></img>
-                            <p className="recipe-name-in-evaluated-recipes-page">(Recipe name)</p>
-                        </a>
-                        <p>My rating:</p>
-                        <div className="own-ratings-in-evaluated-recipes-page">
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
+                            ))}
                         </div>
-                        <a href="/recipe-details">
-                            <button className="add-review-button-in-evaluated-recipes-page">
-                                <div className="add-icon-in-evaluated-recipes-page">
-                                    <i class="bi bi-plus"></i>
-                                </div>
-                                <p>Add a review</p>
-                            </button>
-                        </a>
-                    </div>
-                    <div className="recipe-in-evaluated-recipes-page">
-                        <button className="save-recipe-button-in-evaluated-recipes-page"><i><FaHeart /></i></button>
-                        <a href="/recipe-details">
-                            <img alt="(Recipe name)" className="recipe-photo-in-evaluated-recipes-page"></img>
-                            <p className="recipe-name-in-evaluated-recipes-page">(Recipe name)</p>
-                        </a>
-                        <p>My rating:</p>
-                        <div className="own-ratings-in-evaluated-recipes-page">
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                        </div>
-                        <a href="/recipe-details">
-                            <button className="add-review-button-in-evaluated-recipes-page">
-                                <div className="add-icon-in-evaluated-recipes-page">
-                                    <i class="bi bi-plus"></i>
-                                </div>
-                                <p>Add a review</p>
-                            </button>
-                        </a>
-                    </div>
-                    <div className="recipe-in-evaluated-recipes-page">
-                        <button className="save-recipe-button-in-evaluated-recipes-page"><i><FaHeart /></i></button>
-                        <a href="/recipe-details">
-                            <img alt="(Recipe name)" className="recipe-photo-in-evaluated-recipes-page"></img>
-                            <p className="recipe-name-in-evaluated-recipes-page">(Recipe name)</p>
-                        </a>
-                        <p>My rating:</p>
-                        <div className="own-ratings-in-evaluated-recipes-page">
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                        </div>
-                        <hr></hr>
-                        <p className="own-review-in-evaluated-recipes-page">(Own Review)</p>
-                    </div>
-                    <div className="recipe-in-evaluated-recipes-page">
-                        <button className="save-recipe-button-in-evaluated-recipes-page"><i><FaHeart /></i></button>
-                        <a href="/recipe-details">
-                            <img alt="(Recipe name)" className="recipe-photo-in-evaluated-recipes-page"></img>
-                            <p className="recipe-name-in-evaluated-recipes-page">(Recipe name)</p>
-                        </a>
-                        <p>My rating:</p>
-                        <div className="own-ratings-in-evaluated-recipes-page">
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                        </div>
-                        <a href="/recipe-details">
-                            <button className="add-review-button-in-evaluated-recipes-page">
-                                <div className="add-icon-in-evaluated-recipes-page">
-                                    <i class="bi bi-plus"></i>
-                                </div>
-                                <p>Add a review</p>
-                            </button>
-                        </a>
-                    </div>
-                    <div className="recipe-in-evaluated-recipes-page">
-                        <button className="save-recipe-button-in-evaluated-recipes-page"><i><FaHeart /></i></button>
-                        <a href="/recipe-details">
-                            <img alt="(Recipe name)" className="recipe-photo-in-evaluated-recipes-page"></img>
-                            <p className="recipe-name-in-evaluated-recipes-page">(Recipe name)</p>
-                        </a>
-                        <p>My rating:</p>
-                        <div className="own-ratings-in-evaluated-recipes-page">
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                        </div>
-                        <hr></hr>
-                        <p className="own-review-in-evaluated-recipes-page">(Own Review)</p>
-                    </div>
-                    <div className="recipe-in-evaluated-recipes-page">
-                        <button className="save-recipe-button-in-evaluated-recipes-page"><i><FaHeart /></i></button>
-                        <a href="/recipe-details">
-                            <img alt="(Recipe name)" className="recipe-photo-in-evaluated-recipes-page"></img>
-                            <p className="recipe-name-in-evaluated-recipes-page">(Recipe name)</p>
-                        </a>
-                        <p>My rating:</p>
-                        <div className="own-ratings-in-evaluated-recipes-page">
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                        </div>
-                        <a href="/recipe-details">
-                            <button className="add-review-button-in-evaluated-recipes-page">
-                                <div className="add-icon-in-evaluated-recipes-page">
-                                    <i class="bi bi-plus"></i>
-                                </div>
-                                <p>Add a review</p>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <button id="load-more-recipes-button-in-evaluated-recipes-page">SHOW MORE</button>
+                        <button id="load-more-recipes-button-in-evaluated-recipes-page" onClick={showMoreRecipes}>SHOW MORE</button>
+                    </>
+                }
             </div>
         </>
     );

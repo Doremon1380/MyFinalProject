@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./collection-details.css";
+import axios from 'axios';
 import { Helmet } from 'react-helmet'
 import { FaHeart } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
@@ -12,6 +13,24 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 const TITLE = 'Collection Details - FoodShare.com';
 
 function CollectionDetails() {
+    const [recipes, setRecipes] = useState([]);
+    const [visibleOfRecipes, setVisibleOfRecipes] = useState(9);
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        const fetchRecipes = async () => {
+            setLoading(true);
+            const res = await axios.get('https://jsonplaceholder.typicode.com/photos');
+            setRecipes(res.data);
+            setLoading(false);
+        }
+        fetchRecipes();
+    }, []);
+
+    const showMoreRecipes = () => {
+        setVisibleOfRecipes((prevValue) => prevValue + 3);
+    };
+
     return (
         <>
             <Helmet>
@@ -43,270 +62,46 @@ function CollectionDetails() {
                         <p>Options</p>
                     </div>
                 </div>
-                <div id="recipes-in-collection-details-page">
-                    <div className="recipe-in-collection-details-page">
-                        <div className="related-information-of-recipe-in-collection-details-page">
-                            <a href="/recipe-details">
-                                <img className="recipe-photo-in-collection-details-page" src="#" alt="(Recipe name)"></img>
-                            </a>
-                            <div className="recipe-name-and-recipe-ratings-in-collection-details-page">
-                                <a href="/recipe-details">
-                                    <p className="recipe-name-in-collection-details-page">(Recipe name)</p>
-                                </a>
-                                <div className="recipe-ratings-and-favorites-in-collection-details-page">
-                                    <div className="recipe-ratings-in-collection-details-page">
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <p>NoRs</p>
+                {loading === true ? <h1 style={{ textAlign: "center", marginTop: "30vh" }}>Loading...</h1> :
+                    <>
+                        <div id="recipes-in-collection-details-page">
+                            {recipes.slice(0, visibleOfRecipes).map(recipe => (
+                                <>
+                                    <div key={recipe.id} className="recipe-in-collection-details-page">
+                                        <div className="related-information-of-recipe-in-collection-details-page">
+                                            <a href="/recipe-details">
+                                                <img className="recipe-photo-in-collection-details-page" src={recipe.url} alt="(Recipe name)"></img>
+                                            </a>
+                                            <div className="recipe-name-and-recipe-ratings-in-collection-details-page">
+                                                <a href="/recipe-details">
+                                                    <p className="recipe-name-in-collection-details-page">{recipe.title}</p>
+                                                </a>
+                                                <div className="recipe-ratings-and-favorites-in-collection-details-page">
+                                                    <div className="recipe-ratings-in-collection-details-page">
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <p>NoRs</p>
+                                                    </div>
+                                                    <div className="recipe-favorites-in-collection-details-page">
+                                                        <i><FaHeart /></i>
+                                                        <p>NoFs</p>
+                                                    </div>
+                                                </div>
+                                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
+                                            </div>
+                                        </div>
+                                        <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
                                     </div>
-                                    <div className="recipe-favorites-in-collection-details-page">
-                                        <i><FaHeart /></i>
-                                        <p>NoFs</p>
-                                    </div>
-                                </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
-                            </div>
+                                    <hr></hr>
+                                </>
+                            ))}
                         </div>
-                        <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
-                    </div>
-                    <hr></hr>
-                    <div className="recipe-in-collection-details-page">
-                        <div className="related-information-of-recipe-in-collection-details-page">
-                            <a href="/recipe-details">
-                                <img className="recipe-photo-in-collection-details-page" src="#" alt="(Recipe name)"></img>
-                            </a>
-                            <div className="recipe-name-and-recipe-ratings-in-collection-details-page">
-                                <a href="/recipe-details">
-                                    <p className="recipe-name-in-collection-details-page">(Recipe name)</p>
-                                </a>
-                                <div className="recipe-ratings-and-favorites-in-collection-details-page">
-                                    <div className="recipe-ratings-in-collection-details-page">
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <p>NoRs</p>
-                                    </div>
-                                    <div className="recipe-favorites-in-collection-details-page">
-                                        <i><FaHeart /></i>
-                                        <p>NoFs</p>
-                                    </div>
-                                </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
-                            </div>
-                        </div>
-                        <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
-                    </div>
-                    <hr></hr>
-                    <div className="recipe-in-collection-details-page">
-                        <div className="related-information-of-recipe-in-collection-details-page">
-                            <a href="/recipe-details">
-                                <img className="recipe-photo-in-collection-details-page" src="#" alt="(Recipe name)"></img>
-                            </a>
-                            <div className="recipe-name-and-recipe-ratings-in-collection-details-page">
-                                <a href="/recipe-details">
-                                    <p className="recipe-name-in-collection-details-page">(Recipe name)</p>
-                                </a>
-                                <div className="recipe-ratings-and-favorites-in-collection-details-page">
-                                    <div className="recipe-ratings-in-collection-details-page">
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <p>NoRs</p>
-                                    </div>
-                                    <div className="recipe-favorites-in-collection-details-page">
-                                        <i><FaHeart /></i>
-                                        <p>NoFs</p>
-                                    </div>
-                                </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
-                            </div>
-                        </div>
-                        <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
-                    </div>
-                    <hr></hr>
-                    <div className="recipe-in-collection-details-page">
-                        <div className="related-information-of-recipe-in-collection-details-page">
-                            <a href="/recipe-details">
-                                <img className="recipe-photo-in-collection-details-page" src="#" alt="(Recipe name)"></img>
-                            </a>
-                            <div className="recipe-name-and-recipe-ratings-in-collection-details-page">
-                                <a href="/recipe-details">
-                                    <p className="recipe-name-in-collection-details-page">(Recipe name)</p>
-                                </a>
-                                <div className="recipe-ratings-and-favorites-in-collection-details-page">
-                                    <div className="recipe-ratings-in-collection-details-page">
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <p>NoRs</p>
-                                    </div>
-                                    <div className="recipe-favorites-in-collection-details-page">
-                                        <i><FaHeart /></i>
-                                        <p>NoFs</p>
-                                    </div>
-                                </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
-                            </div>
-                        </div>
-                        <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
-                    </div>
-                    <hr></hr>
-                    <div className="recipe-in-collection-details-page">
-                        <div className="related-information-of-recipe-in-collection-details-page">
-                            <a href="/recipe-details">
-                                <img className="recipe-photo-in-collection-details-page" src="#" alt="(Recipe name)"></img>
-                            </a>
-                            <div className="recipe-name-and-recipe-ratings-in-collection-details-page">
-                                <a href="/recipe-details">
-                                    <p className="recipe-name-in-collection-details-page">(Recipe name)</p>
-                                </a>
-                                <div className="recipe-ratings-and-favorites-in-collection-details-page">
-                                    <div className="recipe-ratings-in-collection-details-page">
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <p>NoRs</p>
-                                    </div>
-                                    <div className="recipe-favorites-in-collection-details-page">
-                                        <i><FaHeart /></i>
-                                        <p>NoFs</p>
-                                    </div>
-                                </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
-                            </div>
-                        </div>
-                        <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
-                    </div>
-                    <hr></hr>
-                    <div className="recipe-in-collection-details-page">
-                        <div className="related-information-of-recipe-in-collection-details-page">
-                            <a href="/recipe-details">
-                                <img className="recipe-photo-in-collection-details-page" src="#" alt="(Recipe name)"></img>
-                            </a>
-                            <div className="recipe-name-and-recipe-ratings-in-collection-details-page">
-                                <a href="/recipe-details">
-                                    <p className="recipe-name-in-collection-details-page">(Recipe name)</p>
-                                </a>
-                                <div className="recipe-ratings-and-favorites-in-collection-details-page">
-                                    <div className="recipe-ratings-in-collection-details-page">
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <p>NoRs</p>
-                                    </div>
-                                    <div className="recipe-favorites-in-collection-details-page">
-                                        <i><FaHeart /></i>
-                                        <p>NoFs</p>
-                                    </div>
-                                </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
-                            </div>
-                        </div>
-                        <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
-                    </div>
-                    <hr></hr>
-                    <div className="recipe-in-collection-details-page">
-                        <div className="related-information-of-recipe-in-collection-details-page">
-                            <a href="/recipe-details">
-                                <img className="recipe-photo-in-collection-details-page" src="#" alt="(Recipe name)"></img>
-                            </a>
-                            <div className="recipe-name-and-recipe-ratings-in-collection-details-page">
-                                <a href="/recipe-details">
-                                    <p className="recipe-name-in-collection-details-page">(Recipe name)</p>
-                                </a>
-                                <div className="recipe-ratings-and-favorites-in-collection-details-page">
-                                    <div className="recipe-ratings-in-collection-details-page">
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <p>NoRs</p>
-                                    </div>
-                                    <div className="recipe-favorites-in-collection-details-page">
-                                        <i><FaHeart /></i>
-                                        <p>NoFs</p>
-                                    </div>
-                                </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
-                            </div>
-                        </div>
-                        <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
-                    </div>
-                    <hr></hr>
-                    <div className="recipe-in-collection-details-page">
-                        <div className="related-information-of-recipe-in-collection-details-page">
-                            <a href="/recipe-details">
-                                <img className="recipe-photo-in-collection-details-page" src="#" alt="(Recipe name)"></img>
-                            </a>
-                            <div className="recipe-name-and-recipe-ratings-in-collection-details-page">
-                                <a href="/recipe-details">
-                                    <p className="recipe-name-in-collection-details-page">(Recipe name)</p>
-                                </a>
-                                <div className="recipe-ratings-and-favorites-in-collection-details-page">
-                                    <div className="recipe-ratings-in-collection-details-page">
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <p>NoRs</p>
-                                    </div>
-                                    <div className="recipe-favorites-in-collection-details-page">
-                                        <i><FaHeart /></i>
-                                        <p>NoFs</p>
-                                    </div>
-                                </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
-                            </div>
-                        </div>
-                        <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
-                    </div>
-                    <hr></hr>
-                    <div className="recipe-in-collection-details-page">
-                        <div className="related-information-of-recipe-in-collection-details-page">
-                            <a href="/recipe-details">
-                                <img className="recipe-photo-in-collection-details-page" src="#" alt="(Recipe name)"></img>
-                            </a>
-                            <div className="recipe-name-and-recipe-ratings-in-collection-details-page">
-                                <a href="/recipe-details">
-                                    <p className="recipe-name-in-collection-details-page">(Recipe name)</p>
-                                </a>
-                                <div className="recipe-ratings-and-favorites-in-collection-details-page">
-                                    <div className="recipe-ratings-in-collection-details-page">
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <p>NoRs</p>
-                                    </div>
-                                    <div className="recipe-favorites-in-collection-details-page">
-                                        <i><FaHeart /></i>
-                                        <p>NoFs</p>
-                                    </div>
-                                </div>
-                                <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
-                            </div>
-                        </div>
-                        <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
-                    </div>
-                    <hr></hr>
-                </div>
-                <button id="load-more-recipes-button-in-collection-details-page">SHOW MORE</button>
+                        <button id="load-more-recipes-button-in-collection-details-page" onClick={showMoreRecipes}>SHOW MORE</button>
+                    </>
+                }
                 <div id="share-recipe-in-collection-details-page">
                     <div id="share-recipe-popup-incollection-details-page">
                         <div id="title-and-close-button-of-share-recipe-popup-in-collection-details-page">

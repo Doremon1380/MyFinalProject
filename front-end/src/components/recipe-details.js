@@ -18,9 +18,7 @@ import { FaTwitter } from "react-icons/fa";
 const TITLE = '"Recipe name" - FoodShare.com';
 
 function Review({ children }) {
-
     const review = children;
-
     if (review.length > 200) {
         return (
             <div id="review-in-recipe-details-page">
@@ -421,7 +419,7 @@ function RecipeDetails() {
                                 </div>
                                 <p>(month/date/year)</p>
                             </div>
-                            <Review>Review</Review>
+                            <Review>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</Review>
                             <div>
                                 <i><FaThumbsUp /></i>
                                 <p>Helpful (number)</p>
@@ -484,7 +482,7 @@ function RecipeDetails() {
                                 </div>
                                 <p>(month/date/year)</p>
                             </div>
-                            <Review>Review</Review>
+                            <Review>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</Review>
                             <div>
                                 <i><FaThumbsUp /></i>
                                 <p>Helpful (number)</p>
@@ -636,7 +634,7 @@ function RecipeDetails() {
                                     </button>
                                 </div>
                                 <div>
-                                    <a href="#"><button id="cancle-button-of-add-recipe-review-popup-in-recipe-details-page">Cancel</button></a>
+                                    <button id="cancle-button-of-add-recipe-review-popup-in-recipe-details-page"><a href="#">Cancel</a></button>
                                     <button type="submit" form="add-recipe-review-in-recipe-details-page" id="submit-button-of-add-recipe-review-popup-in-recipe-details-page">Submit</button>
                                 </div>
                             </div>

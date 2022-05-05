@@ -408,7 +408,8 @@
         height: 50px;
         background-color: rgb(230, 65, 0);
         margin-top: 180px;
-        margin-left: 16px ;
+        margin-left: 16px;
+        z-index: 1;
     }
 
     #directions-section-in-recipe-details-page + hr + p + button:hover {
@@ -425,6 +426,7 @@
     /* For the popular recipes container */
     #other-popular-related-recipes-in-recipe-details-page {
         display: flex;
+        overflow: hidden;
     }
 
     /* For the suggested recipe */
@@ -433,6 +435,7 @@
         height: 395px;
         border: 1px solid rgb(180, 180, 180);
         margin: 5px 15px 0px 0px;
+        position: relative;
     }
 
     /* For the save button */
@@ -1364,6 +1367,11 @@
         border-bottom: 2px solid rgb(87, 87, 87);
     }
 
+    #cancle-button-of-add-recipe-review-popup-in-recipe-details-page a {
+        text-decoration: none;
+        color: black;
+    }
+
     #submit-button-of-add-recipe-review-popup-in-recipe-details-page {
         border-radius: 5px;
         width: 130px;
@@ -1927,7 +1935,8 @@
         height: 50px;
         background-color: rgb(230, 65, 0);
         margin-top: 180px;
-        margin-left: 16px ;
+        margin-left: 16px;
+        z-index: 1;
     }
 
     #directions-section-in-recipe-details-page + hr + p + button:hover {
@@ -1944,6 +1953,7 @@
     /* For the popular recipes container */
     #other-popular-related-recipes-in-recipe-details-page {
         display: flex;
+        overflow: hidden;
     }
 
     /* For the suggested recipe */
@@ -1952,6 +1962,7 @@
         height: 395px;
         border: 1px solid rgb(180, 180, 180);
         margin: 5px 15px 0px 0px;
+        position: relative;
     }
 
     /* For the save button */
@@ -2052,7 +2063,7 @@
         width: 50px;
         height: 50px;
         background-color: rgb(230, 65, 0);
-        margin: -220px 0px 0px 83%;
+        margin: -220px 0px 0px 494px;
     }
 
     #other-popular-related-recipes-in-recipe-details-page + button:hover {
@@ -2877,6 +2888,11 @@
         font-size: 18px;
         border-bottom: 2px solid rgb(87, 87, 87);
     }
+    
+    #cancle-button-of-add-recipe-review-popup-in-recipe-details-page a {
+        text-decoration: none;
+        color: black;
+    }
 
     #submit-button-of-add-recipe-review-popup-in-recipe-details-page {
         border-radius: 5px;
@@ -3098,7 +3114,7 @@
 
     /* For the next button */
     #other-popular-related-recipes-in-recipe-details-page + button {
-        margin: -220px 0px 0px 85%;
+        margin: -220px 0px 0px 654px;
     }
 
     /* For the review of the most helpful reviews */
@@ -3175,7 +3191,7 @@
 
     /* For the next button */
     #other-popular-related-recipes-in-recipe-details-page + button {
-        margin: -220px 0px 0px 78%;
+        margin: -220px 0px 0px 709px;
     }
 }
 
@@ -3414,7 +3430,7 @@
     
     /* For the next button */
     #other-popular-related-recipes-in-recipe-details-page + button {
-        margin: -220px 0px 0px 900px;
+        margin: -220px 0px 0px 796px;
     }
 }
 
@@ -3652,6 +3668,6 @@
 
     /* For the next button */
     #other-popular-related-recipes-in-recipe-details-page + button {
-        margin: -220px 0px 0px 900px;
+        margin: -220px 0px 0px 876px;
     }
 }
