@@ -83,18 +83,18 @@ class ShoppingLists extends React.Component {
             color: "normal"
         }
 
-        if (this.state.counter > 0) {
-            resetButtonStyle.backgroundColor = "rgb(251, 121, 31)"
-            resetButtonStyle.border = "none"
-            resetButtonIconStyle.color = "white"
-        }
-
         if (this.state.checked == true) {
             this.state.counter++;
         }
         else {
             this.state.counter--;
         };
+
+        if (this.state.counter > 0) {
+            resetButtonStyle.backgroundColor = "rgb(251, 121, 31)"
+            resetButtonStyle.border = "none"
+            resetButtonIconStyle.color = "white"
+        }
 
         return (
             <>

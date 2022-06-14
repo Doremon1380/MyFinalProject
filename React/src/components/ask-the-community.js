@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from 'react-helmet';
 import "./ask-the-community.css";
+import axios from 'axios';
 
 const TITLE = 'Ask the Community - FoodShare.com';
 
@@ -135,6 +136,24 @@ class Comments extends React.Component {
 };
 
 function AskTheCommunity() {
+    const [questions, setQuestions] = useState([]);
+    const [visibleOfQuestions, setVisibleOfQuestions] = useState(10);
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        const fetchQuestions = async () => {
+            setLoading(true);
+            const res = await axios.get('https://jsonplaceholder.typicode.com/posts');
+            setQuestions(res.data);
+            setLoading(false);
+        }
+        fetchQuestions();
+    }, []);
+
+    const showMoreQuestions = () => {
+        setVisibleOfQuestions((prevValue) => prevValue + 3);
+    };
+
     return (
         <>
             <Helmet>
@@ -146,179 +165,32 @@ function AskTheCommunity() {
                 <h1>Ask the Community</h1>
                 <p>Ask Allrecipes members questions about cooking and recipes to get responses from real home cooks!</p>
                 <UserQuestion />
-                <div id="user-questions-in-ask-the-community-page">
-                    <div className="user-question-in-ask-the-community-page">
-                        <div className="user-account-and-datetime-of-user-question-in-ask-the-community-page">
-                            <div className="user-account-of-user-question-in-ask-the-community-page">
-                                <a href="/public-profile-about-me"><img alt="avatar"></img></a>
-                                <a href="/public-profile-about-me"><p>(Account name)</p></a>
-                            </div>
-                            <p className="datetime-of-user-question-in-ask-the-community-page">(DateTime)</p>
+                {loading === true ? <h1 style={{ textAlign: "center", marginTop: "30vh", color: "orange" }}>Loading...</h1> :
+                    <>
+                        <div id="user-questions-in-ask-the-community-page">
+                            {questions.slice(0, visibleOfQuestions).map(question => (
+                                <div key={question.id} className="user-question-in-ask-the-community-page">
+                                    <div className="user-account-and-datetime-of-user-question-in-ask-the-community-page">
+                                        <div className="user-account-of-user-question-in-ask-the-community-page">
+                                            <a href="/public-profile-about-me"><img alt="avatar"></img></a>
+                                            <a href="/public-profile-about-me"><p>(Account name)</p></a>
+                                        </div>
+                                        <p className="datetime-of-user-question-in-ask-the-community-page">(DateTime)</p>
+                                    </div>
+                                    <div className="question-of-user-in-ask-the-community-page">
+                                        <p>{question.title}</p>
+                                        <p>{question.body}</p>
+                                    </div>
+                                    <div className="your-reply-and-user-comments-in-ask-the-community-page">
+                                        <UserReply />
+                                        <Comments />
+                                    </div>
+                                </div>
+                            ))}
                         </div>
-                        <div className="question-of-user-in-ask-the-community-page">
-                            <p>(Subject)</p>
-                            <p>(Question)</p>
-                        </div>
-                        <div className="your-reply-and-user-comments-in-ask-the-community-page">
-                            <UserReply />
-                            <Comments />
-                        </div>
-                    </div>
-                    <div className="user-question-in-ask-the-community-page">
-                        <div className="user-account-and-datetime-of-user-question-in-ask-the-community-page">
-                            <div className="user-account-of-user-question-in-ask-the-community-page">
-                                <a href="/public-profile-about-me"><img alt="avatar"></img></a>
-                                <a href="/public-profile-about-me"><p>(Account name)</p></a>
-                            </div>
-                            <p className="datetime-of-user-question-in-ask-the-community-page">(DateTime)</p>
-                        </div>
-                        <div className="question-of-user-in-ask-the-community-page">
-                            <p>(Subject)</p>
-                            <p>(Question)</p>
-                        </div>
-                        <div className="your-reply-and-user-comments-in-ask-the-community-page">
-                            <UserReply />
-                            <Comments />
-                        </div>
-                    </div>
-                    <div className="user-question-in-ask-the-community-page">
-                        <div className="user-account-and-datetime-of-user-question-in-ask-the-community-page">
-                            <div className="user-account-of-user-question-in-ask-the-community-page">
-                                <a href="/public-profile-about-me"><img alt="avatar"></img></a>
-                                <a href="/public-profile-about-me"><p>(Account name)</p></a>
-                            </div>
-                            <p className="datetime-of-user-question-in-ask-the-community-page">(DateTime)</p>
-                        </div>
-                        <div className="question-of-user-in-ask-the-community-page">
-                            <p>(Subject)</p>
-                            <p>(Question)</p>
-                        </div>
-                        <div className="your-reply-and-user-comments-in-ask-the-community-page">
-                            <UserReply />
-                            <Comments />
-                        </div>
-                    </div>
-                    <div className="user-question-in-ask-the-community-page">
-                        <div className="user-account-and-datetime-of-user-question-in-ask-the-community-page">
-                            <div className="user-account-of-user-question-in-ask-the-community-page">
-                                <a href="/public-profile-about-me"><img alt="avatar"></img></a>
-                                <a href="/public-profile-about-me"><p>(Account name)</p></a>
-                            </div>
-                            <p className="datetime-of-user-question-in-ask-the-community-page">(DateTime)</p>
-                        </div>
-                        <div className="question-of-user-in-ask-the-community-page">
-                            <p>(Subject)</p>
-                            <p>(Question)</p>
-                        </div>
-                        <div className="your-reply-and-user-comments-in-ask-the-community-page">
-                            <UserReply />
-                            <Comments />
-                        </div>
-                    </div>
-                    <div className="user-question-in-ask-the-community-page">
-                        <div className="user-account-and-datetime-of-user-question-in-ask-the-community-page">
-                            <div className="user-account-of-user-question-in-ask-the-community-page">
-                                <a href="/public-profile-about-me"><img alt="avatar"></img></a>
-                                <a href="/public-profile-about-me"><p>(Account name)</p></a>
-                            </div>
-                            <p className="datetime-of-user-question-in-ask-the-community-page">(DateTime)</p>
-                        </div>
-                        <div className="question-of-user-in-ask-the-community-page">
-                            <p>(Subject)</p>
-                            <p>(Question)</p>
-                        </div>
-                        <div className="your-reply-and-user-comments-in-ask-the-community-page">
-                            <UserReply />
-                            <Comments />
-                        </div>
-                    </div>
-                    <div className="user-question-in-ask-the-community-page">
-                        <div className="user-account-and-datetime-of-user-question-in-ask-the-community-page">
-                            <div className="user-account-of-user-question-in-ask-the-community-page">
-                                <a href="/public-profile-about-me"><img alt="avatar"></img></a>
-                                <a href="/public-profile-about-me"><p>(Account name)</p></a>
-                            </div>
-                            <p className="datetime-of-user-question-in-ask-the-community-page">(DateTime)</p>
-                        </div>
-                        <div className="question-of-user-in-ask-the-community-page">
-                            <p>(Subject)</p>
-                            <p>(Question)</p>
-                        </div>
-                        <div className="your-reply-and-user-comments-in-ask-the-community-page">
-                            <UserReply />
-                            <Comments />
-                        </div>
-                    </div>
-                    <div className="user-question-in-ask-the-community-page">
-                        <div className="user-account-and-datetime-of-user-question-in-ask-the-community-page">
-                            <div className="user-account-of-user-question-in-ask-the-community-page">
-                                <a href="/public-profile-about-me"><img alt="avatar"></img></a>
-                                <a href="/public-profile-about-me"><p>(Account name)</p></a>
-                            </div>
-                            <p className="datetime-of-user-question-in-ask-the-community-page">(DateTime)</p>
-                        </div>
-                        <div className="question-of-user-in-ask-the-community-page">
-                            <p>(Subject)</p>
-                            <p>(Question)</p>
-                        </div>
-                        <div className="your-reply-and-user-comments-in-ask-the-community-page">
-                            <UserReply />
-                            <Comments />
-                        </div>
-                    </div>
-                    <div className="user-question-in-ask-the-community-page">
-                        <div className="user-account-and-datetime-of-user-question-in-ask-the-community-page">
-                            <div className="user-account-of-user-question-in-ask-the-community-page">
-                                <a href="/public-profile-about-me"><img alt="avatar"></img></a>
-                                <a href="/public-profile-about-me"><p>(Account name)</p></a>
-                            </div>
-                            <p className="datetime-of-user-question-in-ask-the-community-page">(DateTime)</p>
-                        </div>
-                        <div className="question-of-user-in-ask-the-community-page">
-                            <p>(Subject)</p>
-                            <p>(Question)</p>
-                        </div>
-                        <div className="your-reply-and-user-comments-in-ask-the-community-page">
-                            <UserReply />
-                            <Comments />
-                        </div>
-                    </div>
-                    <div className="user-question-in-ask-the-community-page">
-                        <div className="user-account-and-datetime-of-user-question-in-ask-the-community-page">
-                            <div className="user-account-of-user-question-in-ask-the-community-page">
-                                <a href="/public-profile-about-me"><img alt="avatar"></img></a>
-                                <a href="/public-profile-about-me"><p>(Account name)</p></a>
-                            </div>
-                            <p className="datetime-of-user-question-in-ask-the-community-page">(DateTime)</p>
-                        </div>
-                        <div className="question-of-user-in-ask-the-community-page">
-                            <p>(Subject)</p>
-                            <p>(Question)</p>
-                        </div>
-                        <div className="your-reply-and-user-comments-in-ask-the-community-page">
-                            <UserReply />
-                            <Comments />
-                        </div>
-                    </div>
-                    <div className="user-question-in-ask-the-community-page">
-                        <div className="user-account-and-datetime-of-user-question-in-ask-the-community-page">
-                            <div className="user-account-of-user-question-in-ask-the-community-page">
-                                <a href="/public-profile-about-me"><img alt="avatar"></img></a>
-                                <a href="/public-profile-about-me"><p>(Account name)</p></a>
-                            </div>
-                            <p className="datetime-of-user-question-in-ask-the-community-page">(DateTime)</p>
-                        </div>
-                        <div className="question-of-user-in-ask-the-community-page">
-                            <p>(Subject)</p>
-                            <p>(Question)</p>
-                        </div>
-                        <div className="your-reply-and-user-comments-in-ask-the-community-page">
-                            <UserReply />
-                            <Comments />
-                        </div>
-                    </div>
-                </div>
-                <button id="load-more-questions-in-ask-the-question-page">Show more questions</button>
+                        <button id="load-more-questions-in-ask-the-question-page" onClick={showMoreQuestions}>Show more questions</button>
+                    </>
+                }
             </div>
         </>
     );

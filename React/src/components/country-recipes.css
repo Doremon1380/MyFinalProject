@@ -189,6 +189,10 @@
     .recipe-name-in-country-recipes-page {
         font-size: 20px;
         font-weight: bold;
+        width: 290px;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
     }
 
     .recipe-name-in-country-recipes-page:hover {
@@ -230,7 +234,7 @@
 
     /* For recipe author */
     .recipe-author-in-country-recipes-page {
-        margin-top: -14px;
+        margin-top: -10px;
     }
 
     .recipe-author-in-country-recipes-page a {
@@ -452,6 +456,10 @@
     .recipe-name-in-country-recipes-page {
         font-size: 20px;
         font-weight: bold;
+        width: 380px;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
     }
 
     .recipe-name-in-country-recipes-page:hover {
@@ -493,7 +501,7 @@
 
     /* For recipe author */
     .recipe-author-in-country-recipes-page {
-        margin-top: -14px;
+        margin-top: -10px;
     }
 
     .recipe-author-in-country-recipes-page a {
@@ -645,6 +653,10 @@
     /* For the recipe name and ratings */
     .recipe-name-and-recipe-ratings-in-country-recipes-page {
         margin: 10px 0px 0px 15px;
+    }
+    
+    .recipe-name-in-country-recipes-page {
+        width: 250px;
     }
 
     /* For recipe author */

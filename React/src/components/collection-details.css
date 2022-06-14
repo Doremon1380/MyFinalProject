@@ -127,6 +127,10 @@
     .recipe-name-in-collection-details-page {
         font-size: 17px;
         font-weight: bold;
+        width: 270px;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
     }
 
     .recipe-name-in-collection-details-page:hover {
@@ -436,6 +440,10 @@
     .recipe-name-in-collection-details-page {
         font-size: 17px;
         font-weight: bold;
+        width: 370px;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
     }
 
     .recipe-name-in-collection-details-page:hover {
@@ -654,9 +662,12 @@
     }
 
     .recipe-name-in-collection-details-page {
-        margin-left: -2px;
         font-size: 20px;
         font-weight: bold;
+        width: 285px;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
     }
 
     .recipe-name-in-collection-details-page:hover {
@@ -670,7 +681,7 @@
 
     .recipe-ratings-in-collection-details-page {
         display: flex;
-        margin: -10px 0px 0px -6px;
+        margin: -10px 0px 0px -4px;
     }
 
     .recipe-ratings-in-collection-details-page i {
@@ -695,7 +706,7 @@
     }
 
     .recipe-author-in-collection-details-page {
-        margin: -10px 0px 10px -2px;
+        margin: -10px 0px 10px 0px;
     }
 
     .recipe-author-in-collection-details-page a {
