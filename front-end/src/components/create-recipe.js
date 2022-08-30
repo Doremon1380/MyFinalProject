@@ -35,15 +35,15 @@ function CreateRecipe() {
                             <input name="cookTime" id="cook-time"></input><br />
                         </div>
                         <div className="create-recipe-left-side-features-flex">
-                            <label for="total-time">Ready in <span>(Optional)</span></label><br />
+                            <label for="total-time">Ready in</label><br />
                             <input name="totalTime" id="total-time"></input><br />
                             <label for="number-of-servings">Number of servings</label><br />
                             <input name="numberOfServings" id="number-of-servings"></input><br />
                         </div>
                         <div className="create-recipe-left-side-features-flex">
-                            <label for="recipe-yield">Recipe yield <span>(Optional)</span></label><br />
+                            <label for="recipe-yield">Recipe yield</label><br />
                             <input placeholder="i.e. 2 rolls / 1 pie / 10 meatballs / etc." name="recipeYield" id="recipe-yield"></input><br />
-                            <label for="world-cuisine">World Cuisine <span>(Optional)</span></label><br />
+                            <label for="world-cuisine">World Cuisine</label><br />
                             <select name="world cuisine" id="world-cuisine">
                                 <option value="Chinese Recipe">Chinese Recipe</option>
                                 <option value="German Recipe">German Recipe</option>
@@ -60,13 +60,13 @@ function CreateRecipe() {
                     </div>
                     <div id="create-recipe-right-side-features">
                         <label for="recipe-name">Recipe name</label><br />
-                        <input name="recipeName" id="recipe-name"></input><br />
+                        <input name="recipeName" id="recipe-name" required></input><br />
                         <label for="description">Description</label><br />
-                        <textarea name="description" rows="3" cols="80" id="description"></textarea><br />
+                        <textarea name="description" rows="3" cols="80" id="description" required></textarea><br />
                         <label for="ingredients">Ingredients</label><br />
-                        <textarea name="ingredients" rows="5" cols="80" placeholder="Put each ingredient on its own line" id="ingredients"></textarea><br />
+                        <textarea name="ingredients" rows="5" cols="80" placeholder="Put each ingredient on its own line" id="ingredients" required></textarea><br />
                         <label for="directions">Directions</label><br />
-                        <textarea name="directions" rows="5" cols="80" placeholder="Put each step on its own line" id="directions"></textarea><br />
+                        <textarea name="directions" rows="5" cols="80" placeholder="Put each step on its own line" id="directions" required></textarea><br />
                         <input name="submitRecipe" value="Private recipe" id="private-recipe" type="radio" />
                         <label for="private-recipe" id="private-recipe-label">Private recipe</label>
                         <p>Only I can see this</p>
