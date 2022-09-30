@@ -32,7 +32,7 @@ function WorldCuisine() {
                 <div id="titles-with-image-and-recipes-in-world-cuisine-page">
                     <div id="page-titles-of-world-cuisine-page">
                         <div>
-                            <a href="/foodshare.com">Home</a>
+                            <a href="/">Home</a>
                             <i><FaChevronRight /></i>
                             <a href="/world-cuisine">World Cuisine</a>
                         </div>

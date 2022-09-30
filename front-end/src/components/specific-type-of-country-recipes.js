@@ -22,7 +22,7 @@ function SpecificTypeOfCountryRecipes() {
                 <div id="titles-and-recipes-in-specific-type-of-country-recipes-page">
                     <div id="page-titles-of-specific-type-of-country-recipes-page">
                         <div>
-                            <a href="/foodshare.com">Home</a>
+                            <a href="/">Home</a>
                             <i><FaChevronRight /></i>
                             <a href="/types-of-recipes">Recipes</a>
                             <i><FaChevronRight /></i>

@@ -17,7 +17,7 @@ function SecondNavBar() {
     return (
         <Navbar id="nav-bar2">
             <div id="nav-bar-container2">
-                <a href="/foodshare.com"><img className="logo2" src={MyLogo} alt="Logo" /></a>
+                <a href="/"><img className="logo2" src={MyLogo} alt="Logo" /></a>
                 <div className="search-bar2">
                     <form className="search-form2" action="" name="searchRecipe" id="search-bar-of-second-nav-bar">
                         <input name="search" className="search-input2" type="search" placeholder="Find a recipe" aria-label="Search" />
@@ -37,7 +37,7 @@ function SecondNavBar() {
                                 <Dropdown.Item className="drop-down-item2" href="/follower-accounts">My Friends</Dropdown.Item>
                                 <Dropdown.Item className="drop-down-item2" href="/shopping-lists">My Shopping List</Dropdown.Item>
                                 <Dropdown.Divider />
-                                <Dropdown.Item className="drop-down-item2" href="/foodshare.com">Logout</Dropdown.Item>
+                                <Dropdown.Item className="drop-down-item2" href="/">Logout</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         <Dropdown>
@@ -47,14 +47,14 @@ function SecondNavBar() {
                                 <Dropdown.Item className="drop-down-item2" href="/follower-accounts">My Friends</Dropdown.Item>
                                 <Dropdown.Item className="drop-down-item2" href="/shopping-lists">My Shopping List</Dropdown.Item>
                                 <Dropdown.Divider />
-                                <Dropdown.Item className="drop-down-item2" href="/foodshare.com">Logout</Dropdown.Item>
+                                <Dropdown.Item className="drop-down-item2" href="/">Logout</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                     </div>
                     <Dropdown>
                         <Dropdown.Toggle variant="" id="menu-dropdown-button-in-second-nav-bar"><i className="menu-icon2"><FaBars /></i></Dropdown.Toggle>
                         <Dropdown.Menu id="menu-dropdown-button-content-in-second-nav-bar">
-                            <Dropdown.Item className="drop-down-item2" href="/foodshare.com">FoodShare</Dropdown.Item>
+                            <Dropdown.Item className="drop-down-item2" href="/">FoodShare</Dropdown.Item>
                             <Dropdown.Divider />
                             <Dropdown.Item className="drop-down-item2" href="/world-cuisine">World Cuisine</Dropdown.Item>
                             <Dropdown.Divider />

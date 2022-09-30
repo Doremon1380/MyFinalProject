@@ -5,8 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./photos.css";
 import { Helmet } from 'react-helmet';
 
-import Container from "react-bootstrap/Container";
-
 const TITLE = 'Private Profile - FoodShare.com';
 
 function Photos() {

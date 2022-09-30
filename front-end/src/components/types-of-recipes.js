@@ -22,7 +22,7 @@ function TypesOfRecipes() {
                 <div id="titles-with-image-and-recipes-in-types-of-recipes-page">
                     <div id="page-titles-of-types-of-recipes-page">
                         <div>
-                            <a href="/foodshare.com">Home</a>
+                            <a href="/">Home</a>
                             <i><FaChevronRight /></i>
                             <a href="/types-of-recipes">Recipes</a>
                         </div>

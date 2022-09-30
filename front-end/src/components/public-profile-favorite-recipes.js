@@ -5,7 +5,7 @@ import "./public-profile-favorite-recipes.css";
 import { Helmet } from 'react-helmet'
 import { FaHeart } from "react-icons/fa";
 
- import PublicProfileTopPart from "./public-profile-top-part";
+import PublicProfileTopPart from "./public-profile-top-part";
 
 const TITLE = 'Public Profile - FoodShare.com';
 

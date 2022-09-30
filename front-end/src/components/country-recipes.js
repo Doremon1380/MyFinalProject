@@ -55,7 +55,7 @@ function CountryRecipes() {
                 <div id="titles-with-image-and-recipes-in-country-recipes-page">
                     <div id="page-titles-of-country-recipes-page">
                         <div>
-                            <a href="/foodshare.com">Home</a>
+                            <a href="/">Home</a>
                             <i><FaChevronRight /></i>
                             <a href="/world-cuisine">World Cuisine</a>
                             <i><FaChevronRight /></i>

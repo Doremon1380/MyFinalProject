@@ -29,7 +29,7 @@ function NavBar() {
   return (
     <Navbar id="nav-bar">
       <div id="nav-bar-container">
-        <a href="/foodshare.com"><img className="logo" src={MyLogo} alt="Logo" /></a>
+        <a href="/"><img className="logo" src={MyLogo} alt="Logo" /></a>
         <div className="search-bar">
           <form className="search-form" id="search-form-of-nav-bar" name="searchRecipe">
             <input name="inputRecipe" className="search-input" type="search" placeholder="Find a recipe" aria-label="Search" />
@@ -41,7 +41,7 @@ function NavBar() {
           <FaBars id="menu-icon-of-dropdown-button-in-nav-bar" onClick={() => setIsDropDownButtonOpen(!isDropDownButtonOpen)} />
           {isDropDownButtonOpen && (
             <div id="dropdown-button-content-in-nav-bar">
-              <a className="dropdown-item-of-dropdown-button-in-nav-bar" href="/foodshare.com">FoodShare</a>
+              <a className="dropdown-item-of-dropdown-button-in-nav-bar" href="/">FoodShare</a>
               <a className="dropdown-item-of-dropdown-button-in-nav-bar" href="/world-cuisine">World Cuisine</a>
               <a className="dropdown-item-of-dropdown-button-in-nav-bar" href="/filter-recipes">Filter Recipes</a>
               <a className="dropdown-item-of-dropdown-button-in-nav-bar" href="/types-of-recipes">Types of Recipes</a>

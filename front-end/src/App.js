@@ -48,7 +48,6 @@ function App() {
     <BrowserRouter>
       <div>
         <Switch>
-          {/* <Route path="/" component={Home} exact /> */}
           <Route path="/signin" component={SignIn} />
           <Route path="/authentication" component={Authentication} />
           <Route path="/signup" component={SignUp} />
@@ -59,7 +58,7 @@ function App() {
           <Route path="/create-recipe" component={CreateRecipe}/>
           <Route path="/photos" component={Photos}/>
           <Route path="/photo-id" component={PhotoId}/>
-          <Route path="/foodshare.com" component={Home}/>
+          <Route path="/" component={Home} exact />
           <Route path="/recipe-details" component={RecipeDetails}/>
           <Route path="/all-reviews" component={AllReviews}/>
           <Route path="/favorite-recipes" component={FavoriteRecipes}/>
@@ -83,7 +82,7 @@ function App() {
           <Route path="/recipe-results" component={RecipeResults}/>
           <Route path="/ask-the-community" component={AskTheCommunity}/>
           <Route path="/world-cuisine" component={WorldCuisine}/>
-          <Route path="/country-recipes" component={CountryRecipes}/>
+          <Route path="/country-recipes" component={CountryRecipes}/> 
           <Route path="/types-of-recipes" component={TypesOfRecipes}/>
           <Route path="/specific-type-of-recipes" component={SpecificTypeOfRecipes}/>
           <Route path="/specific-type-of-country-recipes" component={SpecificTypeOfCountryRecipes}/>

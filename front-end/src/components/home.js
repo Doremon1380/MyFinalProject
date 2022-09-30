@@ -41,6 +41,34 @@ function Home() {
     const [visibleOfMostRatedRecipes, setVisibleOfMostRatedRecipes] = useState(9);
     const [visibleOfMostFavoriteRecipes, setVisibleOfMostFavoriteRecipes] = useState(9);
     const [loading, setLoading] = useState(false);
+/*     const [recipes, setRecipes] = useState([{
+        _id: 0,
+        recipe_name: "",
+        rating: 0,
+        number_of_ratings: 0,
+        number_of_reviews: 0,
+        number_of_photos: 0,
+        description: "",
+        author: {
+            profile_name: "",
+            profile_icon: ""
+        },
+        image: "", 
+        ingredients: [],
+        directions: [],
+        reviews: [],
+        related_information: {
+            prep: "",
+            cook: "",
+            additional: "",
+            total: "",
+            servings: "",
+            yield: ""
+        },
+        is_private: false,
+        number_of_people_who_love_this_recipe: 0,
+        images_of_recipe: [] //
+    }]) */
 
     useEffect(() => {
         const fetchReviews = async () => {
@@ -53,6 +81,14 @@ function Home() {
         }
         fetchReviews();
     }, []);
+
+/*     useEffect(() => {
+        fetch("/").then(res => {
+            if(res.ok) {
+                return res.json();
+            }
+        }).then(jsonRes => setRecipes(jsonRes));
+    }) */
 
     const showMoreNewestRecipes = () => {
         setVisibleOfNewestRecipes((prevValue) => prevValue + 3);
