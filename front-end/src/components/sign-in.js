@@ -22,7 +22,9 @@ class SignIn extends React.Component {
 
   state = {
     isPaswordShown: false,
-    open: true
+    open: true,
+/*     email: "",
+    password: "" */
   };
 
   togglePasswordVisibility = () => {
@@ -44,12 +46,18 @@ class SignIn extends React.Component {
     // console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
     console.log('Email: ' + "1"); // This is null if the 'email' scope is not present.
   };
-  logout() {
-
-  };
+ 
   render = () => {
     const { isPaswordShown } = this.state;
     const imageName = this.getImageName();
+
+/*   setEmail = (e) => {
+    this.setState({email: e.target.value})
+  }
+
+  const handleSubmit = async () => {
+
+  } */
 
     return (
       <>
@@ -86,10 +94,10 @@ class SignIn extends React.Component {
           </div>
           <h2>Sign in with email</h2>
           <p>For existing FoodShare users.</p>
-          <form id="sign-in-form-in-sign-in-page" name="signInForm" action="">
+          <form id="sign-in-form-in-sign-in-page" name="signInForm" /* onSubmit={handleSubmit} */ action="" method="post">
             <div id="flex-box-2-in-sign-in-page">
-              <input name="email" type="email" placeholder="Email" id="email-input"></input>
-              <input name="password" type={(isPaswordShown) ? "text" : "password"} placeholder="Password" id="password-input"></input>
+              <input name="email" type="email" placeholder="Email" id="email-input" required></input>
+              <input name="password" type={(isPaswordShown) ? "text" : "password"} placeholder="Password" id="password-input" required></input>
               <img src={imagesPath[imageName]} id="sign-in-password-icon" onClick={() => { this.toggleImage(); this.togglePasswordVisibility() }}></img>
             </div>
             <div id="flex-box-3-in-sign-in-page">
@@ -98,7 +106,7 @@ class SignIn extends React.Component {
               <a href="#" id="forgot-password">Forgot password?</a>
             </div>
           </form>
-          <button id="for-new-users-button">You are new?<a href="/signup"><span> Join for free!</span></a></button>
+          <button id="for-new-users-button" type="submit">You are new?<a href="/signup"><span> Join for free!</span></a></button>
           <p>By signing in, you are agreeing to our <a href="#" id="terms-of-service">Terms of Service</a> and our <a href="#" id="privacy-policy">Privacy Policy</a>.</p>
         </div>
       </>
