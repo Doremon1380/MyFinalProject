@@ -47,7 +47,7 @@ class SignUp extends React.Component {
                         <h1>Sign up with email</h1>
                         <p id="for-member">Already a member?<a href="/signin"> Sign in</a>.</p>
                     </div>
-                    <form id="sign-up-form-in-sign-up-page" name="signUpForm" action="">
+                    <form id="sign-up-form-in-sign-up-page" name="signUpForm" action="/signup" method="post">
                         <div id="flex-box-2-in-sign-up-page">
                             <input name="accountName" placeholder="Account name" type="text" id="account-name-input" required></input>
                             <input name="email" placeholder="Email" type="email" id="email-input" required></input>

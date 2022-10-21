@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-// mongodb user model
-const User = require("./../models/UserAccountModel");
+// mongodb user account model
+const UserAccount = require("../models/userAccountModel");
 
 // Password handler
 const bcrypt = require('bcrypt');
@@ -18,7 +18,7 @@ router.post('/signup', (req, res) => {
         res.json({
             status: "FAILED",
             message: "Empty input fields!"
-        });
+        })
     } else if (/^\w{1,}|^\S{1,}|^\d{1,}/.test(profile_name) == false) {
         res.json({
             status: "FAILED",
@@ -29,14 +29,19 @@ router.post('/signup', (req, res) => {
             status: "FAILED",
             message: "Invalid email entered!"
         })
-    } else if (password.length < 10) {
+    } else if (password.length < 6) {
         res.json({
             status: "FAILED",
             message: "Password is too short!"
         })
+    } else if (/((?=.*[A-Z].*)|(?=.*[\W].*))([\w\W]{6,})/.test(password) == false) {
+        res.json({
+            status: "FAILED",
+            message: "Invalid password entered!"
+        })
     } else {
         // Checking if user already exists
-        User.find({email}).then(result => {
+        UserAccount.find({email}).then(result => {
             if(result.length) {
                 // A user already exists
                 res.json({
@@ -52,7 +57,7 @@ router.post('/signup', (req, res) => {
                         profile_name,
                         email,
                         password: hashPassword
-                    });
+                    })
                     newUser.save().then(result => {
                         res.json({
                             status: "SUCCESS",
@@ -97,7 +102,7 @@ router.post('/signin', (req, res) => {
         })
     } else {
         // Check if user exist
-        User.find({email}).then(data => {
+        UserAccount.find({email}).then(data => {
             if(data.length) {
                 // User exists
                 const hashedPassword = data[0].password;
