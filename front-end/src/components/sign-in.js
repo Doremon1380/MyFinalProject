@@ -4,6 +4,7 @@ import NavBar from "./nav-bar";
 import { GoogleLogout } from 'react-google-login';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from 'react-helmet'
+import axios from "axios";
 
 import "./sign-in.css";
 import Google from "./Google.png";
@@ -19,12 +20,16 @@ const imagesPath = {
 const TITLE = 'Sign In - FoodShare.com';
 
 class SignIn extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isPaswordShown: false,
+      open: true,
+      email: "",
+      password: "", 
+      login: false
+    };
 
-  state = {
-    isPaswordShown: false,
-    open: true,
-/*     email: "",
-    password: "" */
   };
 
   togglePasswordVisibility = () => {
@@ -35,6 +40,14 @@ class SignIn extends React.Component {
   toggleImage = () => {
     this.setState(state => ({ open: !state.open }))
   };
+
+  getEmail = (e) => {
+    this.setState({email: e.target.value});
+  }
+
+  getPassword = (e) => {
+    this.setState({password: e.target.value});
+  }
 
   getImageName = () => this.state.open ? "HidePassword" : "ShowPassword"
 
@@ -48,16 +61,28 @@ class SignIn extends React.Component {
   };
  
   render = () => {
-    const { isPaswordShown } = this.state;
+    const { isPaswordShown, email, password } = this.state;
     const imageName = this.getImageName();
 
-/*   setEmail = (e) => {
-    this.setState({email: e.target.value})
-  }
-
-  const handleSubmit = async () => {
-
-  } */
+    const handleSubmit = (e) => {
+      // prevent the form from refreshing the whole page
+      e.preventDefault();
+      // make a popup alert showing the "submitted" text
+      const configuration = {
+        method: "post",
+        url: "http://localhost:5000/user/signin",
+        data: {
+          email,
+          password
+        },
+      };
+      // make the API call
+      axios(configuration).then((result) => {
+        this.setState({login: true});
+      }).catch((err) => {
+        err = new Error();
+      });
+    };
 
     return (
       <>
@@ -94,10 +119,10 @@ class SignIn extends React.Component {
           </div>
           <h2>Sign in with email</h2>
           <p>For existing FoodShare users.</p>
-          <form id="sign-in-form-in-sign-in-page" name="signInForm" /* onSubmit={handleSubmit} */ action="" method="post">
+          <form id="sign-in-form-in-sign-in-page" name="signInForm" onSubmit={(e) => handleSubmit(e)}>
             <div id="flex-box-2-in-sign-in-page">
-              <input name="email" type="email" placeholder="Email" id="email-input" required></input>
-              <input name="password" type={(isPaswordShown) ? "text" : "password"} placeholder="Password" id="password-input" required></input>
+              <input name="email" type="email" value={this.state.email} placeholder="Email" id="email-input" onChange={this.getEmail} required></input>
+              <input name="password" type={(isPaswordShown) ? "text" : "password"} value={this.state.password} placeholder="Password" id="password-input" onChange={this.getPassword} required></input>
               <img src={imagesPath[imageName]} id="sign-in-password-icon" onClick={() => { this.toggleImage(); this.togglePasswordVisibility() }}></img>
             </div>
             <div id="flex-box-3-in-sign-in-page">
@@ -105,6 +130,11 @@ class SignIn extends React.Component {
               <label for="remember-me" id="remember-me-label">Remember me</label>
               <a href="#" id="forgot-password">Forgot password?</a>
             </div>
+            {this.state.login ? (
+              <p>You Are Logged in Successfully</p>
+            ) : (
+              <p>You Are Not Logged in</p>
+            )}
           </form>
           <button id="for-new-users-button" type="submit">You are new?<a href="/signup"><span> Join for free!</span></a></button>
           <p>By signing in, you are agreeing to our <a href="#" id="terms-of-service">Terms of Service</a> and our <a href="#" id="privacy-policy">Privacy Policy</a>.</p>

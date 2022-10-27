@@ -1,4 +1,5 @@
 const express = require('express');
+const app = express();
 const router = express.Router();
 
 // mongodb user account model
@@ -6,6 +7,8 @@ const UserAccount = require("../models/userAccountModel");
 
 // Password handler
 const bcrypt = require('bcrypt');
+const jwt = require("jsonwebtoken");
+const auth = require("../auth");
 
 // Signup
 router.post('/signup', (req, res) => {
@@ -40,20 +43,20 @@ router.post('/signup', (req, res) => {
             message: "Invalid password entered!"
         })
     } else {
-        // Checking if user already exists
+        // Checking if user account already exists
         UserAccount.find({email}).then(result => {
             if(result.length) {
                 // A user already exists
                 res.json({
                     status: "FAILED",
-                    message: "User with the provied email already exists"
+                    message: "User with the provied email already exists!"
                 })
             } else {
-                // Try to create new user:
+                // Try to create new user account:
                 //password handling
                 const saltRounds = 10;
                 bcrypt.hash(password, saltRounds).then(hashPassword => {
-                    const newUser = new User({
+                    const newUser = new UserAccount({
                         profile_name,
                         email,
                         password: hashPassword
@@ -98,21 +101,32 @@ router.post('/signin', (req, res) => {
     if(email == "" || password == "") {
         res.json({
             status: "FAILED",
-            message: "Empty credentials supplied"
+            message: "Empty credentials supplied!"
         })
     } else {
-        // Check if user exist
+        // Check if user account exist
         UserAccount.find({email}).then(data => {
             if(data.length) {
                 // User exists
                 const hashedPassword = data[0].password;
                 bcrypt.compare(password, hashedPassword).then(result => {
+                    // create JWT token
+                    const token = jwt.sign(
+                        {
+                            userAcountId: data._id,
+                            UserAccountEmail: data.email,
+                        },
+                        "RANDOM-TOKEN",
+                        { expiresIn: "24h"}
+                    );
+                    
                     if(result) {
                         //Password match
                         res.json({
                             status: "SUCCESS",
                             message: "Signin successful",
-                            data: data
+                            data: data,
+                            token
                         })
                     } else {
                         res.json({
@@ -141,6 +155,16 @@ router.post('/signin', (req, res) => {
             })
         })
     }
+});
+
+// free endpoint
+app.get("/free-endpoint", (req, res) => {
+    res.json({ message: "You are free to access me anytime" });
+});
+      
+// authentication endpoint
+app.get("/auth-endpoint", auth, (req, res) => {
+    res.json({ message: "You are authorized to access me" });
 });
 
 module.exports = router;
