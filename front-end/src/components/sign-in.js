@@ -11,6 +11,9 @@ import Google from "./Google.png";
 import HidePassword from "./HidePassword.png";
 import ShowPassword from "./ShowPassword.png";
 
+import Cookies from "universal-cookie";
+const cookies = new Cookies();
+
 /* Tìm hiểu về state và các hàm ở dưới (đến hàm render) để hiểu kỹ về chúng */
 const imagesPath = {
   HidePassword: HidePassword,
@@ -29,7 +32,11 @@ class SignIn extends React.Component {
       password: "", 
       login: false
     };
-
+    this.togglePasswordVisibility = this.togglePasswordVisibility.bind(this);
+    this.toggleImage = this.toggleImage.bind(this);
+    this.getEmail = this.getEmail.bind(this);
+    this.getPassword = this.getPassword.bind(this);
+    this.getImageName = this.getImageName.bind(this);
   };
 
   togglePasswordVisibility = () => {
@@ -78,7 +85,12 @@ class SignIn extends React.Component {
       };
       // make the API call
       axios(configuration).then((result) => {
-        this.setState({login: true});
+        // set the cookie
+        cookies.set("TOKEN", result.data.token, {
+          path: "/",
+        });
+        //redirect user to the auth page
+        window.location.href = "/auth"
       }).catch((err) => {
         err = new Error();
       });
@@ -136,7 +148,8 @@ class SignIn extends React.Component {
               <p>You Are Not Logged in</p>
             )}
           </form>
-          <button id="for-new-users-button" type="submit">You are new?<a href="/signup"><span> Join for free!</span></a></button>
+          <button id="login-button" type="submit" form="sign-in-form-in-sign-in-page" onClick={(e) => handleSubmit(e)}>LOG IN</button>
+          <div id="for-new-users"><p>You are new?<a href="/signup"> Join for free!</a></p></div>
           <p>By signing in, you are agreeing to our <a href="#" id="terms-of-service">Terms of Service</a> and our <a href="#" id="privacy-policy">Privacy Policy</a>.</p>
         </div>
       </>

@@ -169,8 +169,18 @@
         color: white;
     }
 
-    /* For new user button */
-    #for-new-users-button {
+    /* For login button */
+    #login-button {
+        margin-top: 10px;
+        border: none;
+        background-color: rgb(230, 80, 45);
+        width: 100%;
+        height: 50px;
+        color: white;
+    }
+
+    /* For new user */
+    #for-new-users {
         margin-top: 10px;
         border: none;
         background-color: rgb(233, 233, 233);
@@ -179,15 +189,18 @@
         color: black;
     }
 
-    #for-new-users-button a {
+    #for-new-users p {
+        width: fit-content;
+        margin: auto;
+        padding-top: 13px;
+    }
+
+    #for-new-users a {
+        color: rgb(235, 152, 0);
         text-decoration: none;
     }
 
-    #for-new-users-button span {
-        color: rgb(235, 152, 0);
-    }
-
-    #for-new-users-button + p {
+    #for-new-users + p {
         margin-top: 20px;
     }
 
@@ -367,8 +380,18 @@
         color: white;
     }
 
-    /* For new user button */
-    #for-new-users-button {
+    /* For login button */
+    #login-button {
+        margin-top: 10px;
+        border: none;
+        background-color: rgb(230, 80, 45);
+        width: 100%;
+        height: 50px;
+        color: white;
+    }
+
+    /* For new user */
+    #for-new-users {
         margin-top: 10px;
         border: none;
         background-color: rgb(233, 233, 233);
@@ -377,15 +400,18 @@
         color: black;
     }
 
-    #for-new-users-button a {
+    #for-new-users p {
+        width: fit-content;
+        margin: auto;
+        padding-top: 13px;
+    }
+
+    #for-new-users a {
+        color: rgb(235, 152, 0);
         text-decoration: none;
     }
 
-    #for-new-users-button span {
-        color: rgb(235, 152, 0);
-    }
-
-    #for-new-users-button + p {
+    #for-new-users + p {
         margin: auto;
         margin-top: 20px;
         width: fit-content;
