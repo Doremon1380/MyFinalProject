@@ -13,7 +13,21 @@ import { FaChevronDown } from "react-icons/fa";
 import "./second-nav-bar.css" //custom css for React component 
 import MyLogo from "./MyLogo.png";
 
+import axios from "axios";
+import Cookies from "universal-cookie";
+
+const cookies = new Cookies();
+const token = cookies.get("TOKEN"); 
+
 function SecondNavBar() {
+    // logout
+    const logout = () => {
+        // destroy the cookie
+        cookies.remove("TOKEN", {path: "/"});
+        // redirect user to the landing page
+        window.location.href = "/";
+    }
+
     return (
         <Navbar id="nav-bar2">
             <div id="nav-bar-container2">
@@ -37,7 +51,7 @@ function SecondNavBar() {
                                 <Dropdown.Item className="drop-down-item2" href="/follower-accounts">My Friends</Dropdown.Item>
                                 <Dropdown.Item className="drop-down-item2" href="/shopping-lists">My Shopping List</Dropdown.Item>
                                 <Dropdown.Divider />
-                                <Dropdown.Item className="drop-down-item2" href="/">Logout</Dropdown.Item>
+                                <Dropdown.Item className="drop-down-item2" href="/" type="submit" onClick={() => logout()}>Logout</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         <Dropdown>

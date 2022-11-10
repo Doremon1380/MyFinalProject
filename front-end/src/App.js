@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ProtectedRoutes from "./ProtectedRoutes";
 
 //import components
 import SignIn from "./components/sign-in";
@@ -51,7 +52,7 @@ function App() {
           <Route path="/signin" component={SignIn} />
           <Route path="/authentication" component={Authentication} />
           <Route path="/signup" component={SignUp} />
-          <Route path="/about-me" component={PrivateProfile} />
+          <ProtectedRoutes path="/about-me" component={PrivateProfile} />
           <Route path="/edit-profile" component={ProfileSettings} />
           <Route path="/notification-settings" component={NotificationSettings} />
           <Route path="/account-settings" component={AccountSettings} />

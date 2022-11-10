@@ -90,7 +90,7 @@ class SignIn extends React.Component {
           path: "/",
         });
         //redirect user to the auth page
-        window.location.href = "/auth"
+        window.location.href = "/"
       }).catch((err) => {
         err = new Error();
       });

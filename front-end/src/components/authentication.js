@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./nav-bar";
 import { Helmet } from 'react-helmet'
+import axios from "axios";
 
 import "./authentication.css";
 import Google from "./Google.png";
