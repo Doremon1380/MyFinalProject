@@ -1,7 +1,7 @@
-import React from "react";
+import {React, useState} from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ProtectedRoutes from "./ProtectedRoutes";
+// import ProtectedRoutes from "./ProtectedRoutes";
 
 //import components
 import SignIn from "./components/sign-in";
@@ -45,6 +45,8 @@ import SpecificTypeOfCountryRecipes from "./components/specific-type-of-country-
 import FilterRecipes from "./components/filter-recipes";
 
 function App() {
+  const {isAuth, setIsAuth} = useState(false);
+
   return (
     <BrowserRouter>
       <div>
@@ -52,7 +54,7 @@ function App() {
           <Route path="/signin" component={SignIn} />
           <Route path="/authentication" component={Authentication} />
           <Route path="/signup" component={SignUp} />
-          <ProtectedRoutes path="/about-me" component={PrivateProfile} />
+          <Route path="/about-me" component={PrivateProfile} />
           <Route path="/edit-profile" component={ProfileSettings} />
           <Route path="/notification-settings" component={NotificationSettings} />
           <Route path="/account-settings" component={AccountSettings} />
