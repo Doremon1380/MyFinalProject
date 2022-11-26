@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import SecondNavBar from "./second-nav-bar";
 import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./country-recipes.css"
@@ -49,7 +48,6 @@ function CountryRecipes() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="country-recipes-page">
                 <div id="top-section-of-country-recipes-page"></div>
                 <div id="titles-with-image-and-recipes-in-country-recipes-page">

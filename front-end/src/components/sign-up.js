@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "./nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from 'react-helmet'
 import axios from "axios";
@@ -89,7 +88,6 @@ class SignUp extends React.Component {
                     <title>{TITLE}</title>
                 </Helmet>
 
-                <NavBar />
                 <div id="sign-up-container">
                     <div id="flex-box-in-sign-up-page">
                         <h1>Sign up with email</h1>

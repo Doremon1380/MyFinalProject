@@ -1,5 +1,4 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./photo-id.css";
 
@@ -117,7 +116,6 @@ function PhotoId() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="photo-id-container">
                 <a href="/photos">
                     <div id="back-to-photos-page">

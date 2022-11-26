@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavBar from "./nav-bar";
 import { Helmet } from 'react-helmet'
-import axios from "axios";
 
 import "./authentication.css";
 import Google from "./Google.png";
@@ -16,7 +14,6 @@ function Authentication() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <NavBar />
             <div id="authentication-container">
                 <h1>Join with us</h1>
                 <p>FoodShare uses the recipes you save and cooks you follow to suggest great content for you. Join for free!</p>

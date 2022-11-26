@@ -1,5 +1,4 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./world-cuisine.css"
 import { Helmet } from 'react-helmet'
@@ -26,7 +25,6 @@ function WorldCuisine() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="world-cuisine-page">
                 <div id="top-section-of-world-cuisine-page"></div>
                 <div id="titles-with-image-and-recipes-in-world-cuisine-page">

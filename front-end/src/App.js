@@ -1,7 +1,8 @@
 import {React, useState} from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import ProtectedRoutes from "./ProtectedRoutes";
+import {auth} from "./firebase-config";
+import { signOut } from "firebase/auth";
 
 //import components
 import SignIn from "./components/sign-in";
@@ -43,15 +44,30 @@ import TypesOfRecipes from "./components/types-of-recipes";
 import SpecificTypeOfRecipes from "./components/specific-type-of-recipes";
 import SpecificTypeOfCountryRecipes from "./components/specific-type-of-country-recipes";
 import FilterRecipes from "./components/filter-recipes";
+import SecondNavBar from "./components/second-nav-bar";
+import NavBar from "./components/nav-bar";
 
 function App() {
-  const {isAuth, setIsAuth} = useState(false);
+  const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
+
+  const signUserOut = () => {
+    signOut(auth).then(() => {
+      localStorage.clear(); 
+      setIsAuth(false);
+      window.location.pathname = "/signin";
+    });
+  };
 
   return (
     <BrowserRouter>
       <div>
+        {isAuth ? (
+          <SecondNavBar signUserOut={signUserOut}></SecondNavBar>
+        ) : (
+          <NavBar></NavBar>
+        )}
         <Switch>
-          <Route path="/signin" component={SignIn} />
+          <Route path="/signin" render={(props) => <SignIn {...props} setIsAuth={setIsAuth} />} />
           <Route path="/authentication" component={Authentication} />
           <Route path="/signup" component={SignUp} />
           <Route path="/about-me" component={PrivateProfile} />

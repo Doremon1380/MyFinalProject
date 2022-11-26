@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from 'react-helmet';
 import "./ask-the-community.css";
@@ -160,7 +159,6 @@ function AskTheCommunity() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="ask-the-community-page">
                 <h1>Ask the Community</h1>
                 <p>Ask Allrecipes members questions about cooking and recipes to get responses from real home cooks!</p>

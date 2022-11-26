@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import NavBar from "./nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from 'react-helmet'
 
@@ -7,37 +6,33 @@ import "./sign-in.css";
 import Google from "./Google.png";
 import HidePassword from "./HidePassword.png";
 import ShowPassword from "./ShowPassword.png";
+import {auth, provider} from "../firebase-config";
+import {signInWithPopup} from "firebase/auth";
 
 /* Tìm hiểu về state và các hàm ở dưới (đến hàm render) để hiểu kỹ về chúng */
 const TITLE = 'Sign In - FoodShare.com';
 
-function SignIn() {
+function SignIn({setIsAuth}) {
     const [isPaswordShown, setIsPasswordShown] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
+    const signInWithGoogle = () => {
+      signInWithPopup(auth, provider).then((result) => {
+        localStorage.setItem("isAuth", true);
+        setIsAuth(true);
+        window.location.pathname = "/";
+      });
+    };
+
     function togglePasswordVisibility() {
-      setIsPasswordShown({ isPaswordShown: !isPaswordShown })
+      setIsPasswordShown(!isPaswordShown)
     };
   
     function toggleImage() {
-      setIsOpen({ isOpen: !isOpen })
+      setIsOpen(!isOpen);
     };
-  
-    function getEmail(event) {
-      setEmail({
-        ...email,
-        [event.target.email]: event.target.value
-      });
-    }
-  
-    function getPassword(event) {
-      setPassword({
-        ...password,
-        [event.target.password]: event.target.value
-      });
-    }
   
     function getImageName() {
       if(isOpen) {
@@ -61,7 +56,6 @@ function SignIn() {
           <title>{TITLE}</title>
         </Helmet>
 
-        <NavBar />
         <div id="sign-in-container">
           <h1>Sign in with social</h1>
           <p>For new and existing FoodShare users.</p>
@@ -70,7 +64,7 @@ function SignIn() {
               <i className="bi bi-facebook"></i>
               <div id="facebook-text">Facebook</div>
             </button>
-            <button id="google-sign-in">
+            <button id="google-sign-in" onClick={signInWithGoogle}>
               <img className="google-icon" src={Google}></img>
               <div id="google-text">Google</div>
             </button>
@@ -79,8 +73,8 @@ function SignIn() {
           <p>For existing FoodShare users.</p>
           <form id="sign-in-form-in-sign-in-page" name="signInForm">
             <div id="flex-box-2-in-sign-in-page">
-              <input name="email" type="email" value={email} placeholder="Email" id="email-input" onChange={getEmail} required></input>
-              <input name="password" type={(isPaswordShown) ? "text" : "password"} value={password} placeholder="Password" id="password-input" onChange={getPassword} required></input>
+              <input name="email" type="email" value={email} placeholder="Email" id="email-input" onChange={event=> setEmail(event.target.value)} required></input>
+              <input name="password" type={(isPaswordShown) ? "text" : "password"} value={password} placeholder="Password" id="password-input" onChange={event=> setPassword(event.target.value)} required></input>
               <img src={imagesPath[imageName]} id="sign-in-password-icon" onClick={() => {toggleImage(); togglePasswordVisibility() }}></img>
             </div>
             <div id="flex-box-3-in-sign-in-page">

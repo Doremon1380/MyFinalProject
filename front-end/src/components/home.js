@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import SecondNavBar from "./second-nav-bar";
 import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./private-profile.css";
@@ -108,7 +107,6 @@ function Home() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             {loading === true ? <h1 style={{textAlign: "center", marginTop: "35vh"}}>Loading...</h1> :
                 <div id="home-page-container">
                     <p id="newest-recipes-title-in-home-page">Newest Recipes</p>

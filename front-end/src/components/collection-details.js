@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./collection-details.css";
 import axios from 'axios';
@@ -37,7 +36,6 @@ function CollectionDetails() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="collection-details-page">
                 <p id="collection-name-in-collection-details-page">(Collection name)</p>
                 <p id="collection-discription-in-collection-details-page">(Collection Discription)</p>

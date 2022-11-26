@@ -1,5 +1,4 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./other-profile-collection-details.css";
 import { Helmet } from 'react-helmet'
@@ -17,7 +16,6 @@ function OtherProfileCollectionDetails() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="other-profile-collection-details-page">
                 <div id="collection-name-and-save-collection-button-in-other-profile-collection-details-page">
                     <div>

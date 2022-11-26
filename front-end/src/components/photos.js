@@ -1,5 +1,4 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import TopPart from "./top-part";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./photos.css";
@@ -14,7 +13,6 @@ function Photos() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="photos-container">
                 <TopPart />
                 <nav id="group-buttons">

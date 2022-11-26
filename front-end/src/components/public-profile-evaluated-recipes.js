@@ -1,5 +1,4 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./public-profile-evaluated-recipes.css";
 import { Helmet } from 'react-helmet'
@@ -16,7 +15,6 @@ function PublicProfileEvaluatedRecipes() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="top-part-container-in-public-profile-evaluated-recipes-page">
                 <PublicProfileTopPart />
                 <nav id="group-buttons-in-public-profile-evaluated-recipes-page">

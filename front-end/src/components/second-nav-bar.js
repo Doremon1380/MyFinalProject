@@ -12,21 +12,9 @@ import { FaChevronDown } from "react-icons/fa";
 
 import "./second-nav-bar.css" //custom css for React component 
 import MyLogo from "./MyLogo.png";
+import AnonymousChef from "./AnonymousChef.png";
 
-import axios from "axios";
-import Cookies from "universal-cookie";
-
-const cookies = new Cookies();
-const token = cookies.get("TOKEN"); 
-
-function SecondNavBar() {
-    // logout
-    const logout = () => {
-        // destroy the cookie
-        cookies.remove("TOKEN", {path: "/"});
-        // redirect user to the landing page
-        window.location.href = "/";
-    }
+function SecondNavBar({signUserOut}) {
 
     return (
         <Navbar id="nav-bar2">
@@ -43,7 +31,7 @@ function SecondNavBar() {
                     <i className="bi bi-bell-fill bell-icon" title="Notifications"></i>
                     <a href="/favorite-recipes"><i className="favorite-icon" title="My Favorites"><FaHeart /></i></a>
                     <div id="for-account">
-                        <button id="avatar"><a href="/about-me"><img alt="avatar" id="avatar-image"></img></a></button>
+                        <button id="avatar"><a href="/about-me"><img alt="avatar" src={AnonymousChef} id="avatar-image"></img></a></button>
                         <Dropdown>
                             <Dropdown.Toggle variant="" id="account-name-dropdown-button-in-second-nav-bar">Account Name</Dropdown.Toggle>
                             <Dropdown.Menu id="account-name-dropdown-button-content-in-second-nav-bar">
@@ -51,7 +39,7 @@ function SecondNavBar() {
                                 <Dropdown.Item className="drop-down-item2" href="/follower-accounts">My Friends</Dropdown.Item>
                                 <Dropdown.Item className="drop-down-item2" href="/shopping-lists">My Shopping List</Dropdown.Item>
                                 <Dropdown.Divider />
-                                <Dropdown.Item className="drop-down-item2" href="/" type="submit" onClick={() => logout()}>Logout</Dropdown.Item>
+                                <Dropdown.Item className="drop-down-item2" href="/" type="submit" onClick={() => {signUserOut()}}>Logout</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         <Dropdown>
@@ -61,7 +49,7 @@ function SecondNavBar() {
                                 <Dropdown.Item className="drop-down-item2" href="/follower-accounts">My Friends</Dropdown.Item>
                                 <Dropdown.Item className="drop-down-item2" href="/shopping-lists">My Shopping List</Dropdown.Item>
                                 <Dropdown.Divider />
-                                <Dropdown.Item className="drop-down-item2" href="/">Logout</Dropdown.Item>
+                                <Dropdown.Item className="drop-down-item2" href="/" type="submit" onClick={() => {signUserOut()}}>Logout</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                     </div>

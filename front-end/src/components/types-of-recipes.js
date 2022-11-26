@@ -1,5 +1,4 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./types-of-recipes.css"
 import { Helmet } from 'react-helmet'
@@ -16,7 +15,6 @@ function TypesOfRecipes() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="types-of-recipes-page">
                 <div id="top-section-of-types-of-recipes-page"></div>
                 <div id="titles-with-image-and-recipes-in-types-of-recipes-page">

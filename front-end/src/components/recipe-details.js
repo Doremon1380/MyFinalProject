@@ -1,5 +1,4 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./recipe-details.css";
 import { Helmet } from 'react-helmet'
@@ -42,7 +41,6 @@ function RecipeDetails() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="recipe-details-page-container">
                 <div id="route-to-recipe-in-recipe-details-page">
                     <a href="/">Home</a>

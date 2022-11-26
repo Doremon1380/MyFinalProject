@@ -1,5 +1,4 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./create-recipe.css";
 import { Helmet } from 'react-helmet';
@@ -18,7 +17,6 @@ function CreateRecipe() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="create-recipe-container">
                 <TopPart />
                 <form id="create-recipe" action="" name="createRecipe">

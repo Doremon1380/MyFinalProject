@@ -1,5 +1,4 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./profile-settings.css";
 import { Helmet } from 'react-helmet'
@@ -44,7 +43,6 @@ function ProfileSettings() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="profile-settings-container">
                 <TopPart />
                 <div id="edit-profile">

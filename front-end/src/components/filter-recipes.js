@@ -1,5 +1,4 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from 'react-helmet'
 import "./filter-recipes.css"
@@ -13,7 +12,6 @@ function FilterRecipes() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="filter-recipes-page">
                 <form id="filter-recipes" action="" name="filterRecipes">
                     <p className="titles-in-filter-recipes-page">Advanced search</p>
