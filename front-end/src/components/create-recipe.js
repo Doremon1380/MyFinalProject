@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./create-recipe.css";
 import { Helmet } from 'react-helmet';
@@ -10,6 +10,18 @@ import { FaCamera } from "react-icons/fa";
 const TITLE = 'Submit a recipe - FoodShare.com';
 
 function CreateRecipe() {
+    const [prepTime, setPrepTime] = useState("");
+    const [cookTime, setCookTime] = useState("");
+    const [totalTime, setTotalTime] = useState("");
+    const [numberOfServings, setNumberOfServings] = useState("");
+    const [recipeYield, setRecipeYield] = useState("");
+    const [worldCuisine, setWorldCuisine] = useState("Global Recipe");
+    const [typesOfRecipe, setTypesOfRecipe] = useState("");
+    const [recipeName, setRecipeName] = useState("");
+    const [description, setDescription] = useState("");
+    const [ingredients, setIngredients] = useState("");
+    const [directions, setDirections] = useState("");
+    const [submitRecipe, setSubmitRecipe] = useState("");
 
     return (
         <>
@@ -65,10 +77,10 @@ function CreateRecipe() {
                         <textarea name="ingredients" rows="5" cols="80" placeholder="Put each ingredient on its own line" id="ingredients" required></textarea><br />
                         <label for="directions">Directions</label><br />
                         <textarea name="directions" rows="5" cols="80" placeholder="Put each step on its own line" id="directions" required></textarea><br />
-                        <input name="submitRecipe" value="Private recipe" id="private-recipe" type="radio" />
+                        <input name="submitRecipe" value="Private recipe" checked={submitRecipe === "Private recipe"} id="private-recipe" type="radio" onChange={(event) => {setSubmitRecipe(event.target.value)}} />
                         <label for="private-recipe" id="private-recipe-label">Private recipe</label>
                         <p>Only I can see this</p>
-                        <input name="submitRecipe" value="Public recipe" id="public-recipe" type="radio" />
+                        <input name="submitRecipe" value="Public recipe" checked={submitRecipe === "Public recipe"} id="public-recipe" type="radio" onChange={(event) => {setSubmitRecipe(event.target.value)}} />
                         <label for="public-recipe" id="public-recipe-label">Public recipe</label>
                         <p>Anyone can see this</p>
                     </div>
