@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./create-recipe.css";
+import {addDoc, collection} from "firebase/firestore";
+import { db, auth } from "../firebase-config";
 import { Helmet } from 'react-helmet';
 
 import TopPart from "./top-part";
@@ -19,9 +21,31 @@ function CreateRecipe() {
     const [typesOfRecipe, setTypesOfRecipe] = useState("");
     const [recipeName, setRecipeName] = useState("");
     const [description, setDescription] = useState("");
-    const [ingredients, setIngredients] = useState("");
-    const [directions, setDirections] = useState("");
+    const [ingredients, setIngredients] = useState([]);
+    const [directions, setDirections] = useState([]);
     const [submitRecipe, setSubmitRecipe] = useState("");
+
+    const recipesCollectionRef = collection(db, "recipes")
+
+    const createRecipe = async () => {
+        await addDoc(recipesCollectionRef, {
+            related_information: {
+                prep: prepTime,
+                cook: cookTime,
+                total: totalTime,
+                servings: numberOfServings,
+                yield: recipeYield
+            },
+            description,
+            ingredients,
+            directions,
+            submitRecipe,
+            author: {
+                profile_name: auth.currentUser.displayName,
+                profile_id: auth.currentUser.uid
+            },
+        });
+    };
 
     return (
         <>
