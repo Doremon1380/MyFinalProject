@@ -75,23 +75,23 @@
         width: fit-content;
     }
 
-    /* For the save recipe button */
-    .save-recipe-button-in-personal-recipes-page {
-        border: none;
+    /* For delete button */
+    .delete-recipe-button-in-personal-recipes-page {
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        position: absolute;
+        border: none;
         background-color: rgb(0, 0, 0, 0.4);
-        margin: 10px 0px 0px 230px;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 250px;
     }
 
-    .save-recipe-button-in-personal-recipes-page i {
-        font-size: 35px;
+    .delete-recipe-button-in-personal-recipes-page i {
         color: white;
     }
 
-    .save-recipe-button-in-personal-recipes-page:hover {
+    .delete-recipe-button-in-personal-recipes-page:hover {
         background-color: rgb(0, 0, 0, 0.6);
     }
 
@@ -264,23 +264,23 @@
         width: fit-content;
     }
 
-    /* For the save recipe button */
-    .save-recipe-button-in-personal-recipes-page {
-        border: none;
+    /* For delete button */
+    .delete-recipe-button-in-personal-recipes-page {
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        position: absolute;
+        border: none;
         background-color: rgb(0, 0, 0, 0.4);
-        margin: 10px 0px 0px 230px;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 250px;
     }
 
-    .save-recipe-button-in-personal-recipes-page i {
-        font-size: 35px;
+    .delete-recipe-button-in-personal-recipes-page i {
         color: white;
     }
 
-    .save-recipe-button-in-personal-recipes-page:hover {
+    .delete-recipe-button-in-personal-recipes-page:hover {
         background-color: rgb(0, 0, 0, 0.6);
     }
 

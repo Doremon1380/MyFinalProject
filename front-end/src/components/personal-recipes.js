@@ -45,7 +45,7 @@ function PersonalRecipes() {
                         </button>
                     </a>
                     <div className="recipe-in-personal-recipes-page">
-                        <button className="save-recipe-button-in-personal-recipes-page"><i><FaHeart /></i></button>
+                        <button className="delete-recipe-button-in-personal-recipes-page"><i class="bi bi-x-lg"></i></button>
                         <a href="/recipe-details">
                             <img className="recipe-photo-in-personal-recipes-page" src="#" alt="(Recipe name)"></img>
                             <p className="recipe-name-in-personal-recipes-page">Recipe name</p>
@@ -66,7 +66,7 @@ function PersonalRecipes() {
                         </div>
                     </div>
                     <div className="recipe-in-personal-recipes-page">
-                        <button className="save-recipe-button-in-personal-recipes-page"><i><FaHeart /></i></button>
+                        <button className="delete-recipe-button-in-personal-recipes-page"><i class="bi bi-x-lg"></i></button>
                         <a href="/recipe-details">
                             <img className="recipe-photo-in-personal-recipes-page" src="#" alt="(Recipe name)"></img>
                             <p className="recipe-name-in-personal-recipes-page">Recipe name</p>
@@ -87,7 +87,7 @@ function PersonalRecipes() {
                         </div>
                     </div>
                     <div className="recipe-in-personal-recipes-page">
-                        <button className="save-recipe-button-in-personal-recipes-page"><i><FaHeart /></i></button>
+                        <button className="delete-recipe-button-in-personal-recipes-page"><i class="bi bi-x-lg"></i></button>
                         <a href="/recipe-details">
                             <img className="recipe-photo-in-personal-recipes-page" src="#" alt="(Recipe name)"></img>
                             <p className="recipe-name-in-personal-recipes-page">Recipe name</p>

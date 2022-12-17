@@ -23,7 +23,7 @@ function SignIn({setIsAuth}) {
         localStorage.setItem("isAuth", true);
         setIsAuth(true);
         window.location.pathname = "/";
-      });
+      }); 
     };
 
     function togglePasswordVisibility() {

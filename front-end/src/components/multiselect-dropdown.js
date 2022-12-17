@@ -26,7 +26,7 @@ function MultiSelectDropdown() {
 
     return (
         <>
-            <Select styles={style} id="type-of-recipe" name="type of recipe" isMulti placeholder="Choose one or more suitable types for your recipe." options={TypeOfRecipe} components={{ IndicatorSeparator:() => null }} required></Select>
+            <Select styles={style} id="type-of-recipe" name="type of recipe" isMulti placeholder="Choose one or more suitable types for your recipe." options={TypeOfRecipe} components={{ IndicatorSeparator:() => null }}></Select>
         </>
     );
 };
