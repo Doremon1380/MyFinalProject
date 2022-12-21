@@ -1,11 +1,8 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import TopPart from "./top-part";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./photos.css";
 import { Helmet } from 'react-helmet';
-
-import Container from "react-bootstrap/Container";
 
 const TITLE = 'Private Profile - FoodShare.com';
 
@@ -16,7 +13,6 @@ function Photos() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="photos-container">
                 <TopPart />
                 <nav id="group-buttons">

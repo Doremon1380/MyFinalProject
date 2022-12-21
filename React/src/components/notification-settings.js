@@ -1,5 +1,4 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./notification-settings.css";
 import { Helmet } from 'react-helmet'
@@ -18,7 +17,6 @@ function NotificationSettings() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="notification-settings-container">
                 <TopPart />
                 <div id="notification-settings">

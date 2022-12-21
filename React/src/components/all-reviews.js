@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import SecondNavBar from "./second-nav-bar";
 import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from 'react-helmet'
@@ -67,7 +66,6 @@ function AllReviews() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="all-reviews-page-container">
                 <div id="top-section-of-all-reviews-page">
                     <a href="/recipe-details">

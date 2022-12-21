@@ -1,5 +1,4 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./public-profile-follower-accounts.css";
 import { Helmet } from 'react-helmet'
@@ -51,7 +50,6 @@ function PublicProfileFollowerAccounts() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="top-part-container-in-public-profile-follower-accounts-page">
                 <PublicProfileTopPart />
                 <nav id="group-buttons-in-public-profile-follower-accounts-page">

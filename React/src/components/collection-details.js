@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./collection-details.css";
 import axios from 'axios';
@@ -37,7 +36,6 @@ function CollectionDetails() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="collection-details-page">
                 <p id="collection-name-in-collection-details-page">(Collection name)</p>
                 <p id="collection-discription-in-collection-details-page">(Collection Discription)</p>
@@ -68,6 +66,7 @@ function CollectionDetails() {
                             {recipes.slice(0, visibleOfRecipes).map(recipe => (
                                 <>
                                     <div key={recipe.id} className="recipe-in-collection-details-page">
+                                        <button className="delete-recipe-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
                                         <div className="related-information-of-recipe-in-collection-details-page">
                                             <a href="/recipe-details">
                                                 <img className="recipe-photo-in-collection-details-page" src={recipe.url} alt="(Recipe name)"></img>
@@ -93,7 +92,6 @@ function CollectionDetails() {
                                                 <p className="recipe-author-in-collection-details-page">By <a href="/public-profile-personal-recipes">Author</a></p>
                                             </div>
                                         </div>
-                                        <button className="delete-collection-button-in-collection-details-page"><i class="bi bi-x-lg"></i></button>
                                     </div>
                                     <hr></hr>
                                 </>

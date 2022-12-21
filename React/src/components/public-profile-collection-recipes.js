@@ -1,5 +1,4 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./public-profile-collection-recipes.css";
 import { Helmet } from 'react-helmet'
@@ -17,7 +16,6 @@ function PublicProfileCollectionRecipes() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="top-part-container-in-public-profile-collection-recipes-page">
                 <PublicProfileTopPart />
                 <nav id="group-buttons-in-public-profile-collection-recipes-page">

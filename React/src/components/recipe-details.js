@@ -1,9 +1,7 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./recipe-details.css";
 import { Helmet } from 'react-helmet'
-import "./home.css"
 
 import { FaAngleRight } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
@@ -43,10 +41,9 @@ function RecipeDetails() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="recipe-details-page-container">
                 <div id="route-to-recipe-in-recipe-details-page">
-                    <a href="/foodshare.com">Home</a>
+                    <a href="/">Home</a>
                     <i><FaAngleRight /></i>
                     <a href="/types-of-recipes">Recipes</a>
                     <i><FaAngleRight /></i>

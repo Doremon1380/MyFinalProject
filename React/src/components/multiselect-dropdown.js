@@ -20,6 +20,7 @@ function MultiSelectDropdown() {
           border: 0,
           // This line disable the blue border
           boxShadow: "none"
+          
         })
     };
 

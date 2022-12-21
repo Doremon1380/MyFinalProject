@@ -1,11 +1,9 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import TopPart from "./top-part";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from 'react-helmet';
 import "./favorite-recipes.css";
 import { FaHeart } from "react-icons/fa";
-import Container from "react-bootstrap/Container";
 
 const TITLE = 'Private Profile - FoodShare.com';
 
@@ -16,7 +14,6 @@ function FavoriteRecipes() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="top-part-container-in-favorite-recipes-page">
                 <TopPart />
                 <nav id="group-buttons">

@@ -1,5 +1,4 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./specific-type-of-recipes.css"
 import { Helmet } from 'react-helmet'
@@ -16,13 +15,12 @@ function SpecificTypeOfRecipes() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="specific-type-of-recipes-page">
                 <div id="top-section-of-specific-type-of-recipes-page"></div>
                 <div id="titles-with-image-and-recipes-in-specific-type-of-recipes-page">
                     <div id="page-titles-of-specific-type-of-recipes-page">
                         <div>
-                            <a href="/foodshare.com">Home</a>
+                            <a href="/">Home</a>
                             <i><FaChevronRight /></i>
                             <a href="/types-of-recipes">Recipes</a>
                             <i><FaChevronRight /></i>

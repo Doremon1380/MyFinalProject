@@ -18,27 +18,40 @@
     }
 
     /* For the button of left-side-features */
-    #create-recipe-left-side-features button {
-        display: block;
+    #image-upload-button {
         margin: auto;
-        background-color: white;
-        border: 2px dotted rgb(221, 221, 221);
-        height: fit-content;
-        margin-top: 20px;
+        width: fit-content;
+        margin-top: 5px;
     }
 
-    #create-recipe-left-side-features button i {
+    #custom-file-upload {
+        cursor: pointer;
+        border: 2px dotted rgb(221, 221, 221);
+        width: 170px;
+        height: 140px;
+    }
+
+    #custom-file-upload i {
         font-size: 45px;
         color: rgb(170, 170, 170);
+        display: block;
+        margin: auto;
+        width: fit-content;
     }
 
     #add-photo {
         font-size: 20px;
+        text-align: center;
     }
 
     #add-photo + p {
         margin-top: -15px;
         font-size: 12px;
+        text-align: center;
+    }
+
+    input[type="file"] {
+        display: none;
     }
 
     /* For all label of create-recipe form */
@@ -201,27 +214,40 @@
     }
 
     /* For the button of left-side-features */
-    #create-recipe-left-side-features button {
-        display: block;
+    #image-upload-button {
         margin: auto;
-        background-color: white;
-        border: 2px dotted rgb(221, 221, 221);
-        height: fit-content;
-        margin-top: 20px;
+        width: fit-content;
+        margin-top: 5px;
     }
 
-    #create-recipe-left-side-features button i {
+    #custom-file-upload {
+        cursor: pointer;
+        border: 2px dotted rgb(221, 221, 221);
+        width: 170px;
+        height: 140px;
+    }
+
+    #custom-file-upload i {
         font-size: 45px;
         color: rgb(170, 170, 170);
+        display: block;
+        margin: auto;
+        width: fit-content;
     }
 
     #add-photo {
         font-size: 20px;
+        text-align: center;
     }
 
     #add-photo + p {
         margin-top: -15px;
         font-size: 12px;
+        text-align: center;
+    }
+
+    input[type="file"] {
+        display: none;
     }
 
     /* For all label of create-recipe form */
@@ -385,27 +411,40 @@
     }
 
     /* For the button of left-side-features */
-    #create-recipe-left-side-features button {
-        display: block;
+    #image-upload-button {
         margin: auto;
-        background-color: white;
-        border: 2px dotted rgb(221, 221, 221);
-        height: fit-content;
-        margin-top: 20px;
+        width: fit-content;
+        margin-top: 5px;
     }
 
-    #create-recipe-left-side-features button i {
+    #custom-file-upload {
+        cursor: pointer;
+        border: 2px dotted rgb(221, 221, 221);
+        width: 170px;
+        height: 140px;
+    }
+
+    #custom-file-upload i {
         font-size: 45px;
         color: rgb(170, 170, 170);
+        display: block;
+        margin: auto;
+        width: fit-content;
     }
 
     #add-photo {
         font-size: 20px;
+        text-align: center;
     }
 
     #add-photo + p {
         margin-top: -15px;
         font-size: 12px;
+        text-align: center;
+    }
+
+    input[type="file"] {
+        display: none;
     }
 
     /* For all label of create-recipe form */
@@ -569,27 +608,40 @@
     }
 
     /* For the button of left-side-features */
-    #create-recipe-left-side-features button {
-        display: block;
+    #image-upload-button {
         margin: auto;
-        background-color: white;
-        border: 2px dotted rgb(221, 221, 221);
-        height: fit-content;
-        margin-top: 20px;
+        width: fit-content;
+        margin-top: 5px;
     }
 
-    #create-recipe-left-side-features button i {
+    #custom-file-upload {
+        cursor: pointer;
+        border: 2px dotted rgb(221, 221, 221);
+        width: 170px;
+        height: 140px;
+    }
+
+    #custom-file-upload i {
         font-size: 45px;
         color: rgb(170, 170, 170);
+        display: block;
+        margin: auto;
+        width: fit-content;
     }
 
     #add-photo {
         font-size: 20px;
+        text-align: center;
     }
 
     #add-photo + p {
         margin-top: -15px;
         font-size: 12px;
+        text-align: center;
+    }
+
+    input[type="file"] {
+        display: none;
     }
 
     /* For all label of create-recipe form */
@@ -753,27 +805,40 @@
     }
 
     /* For the button of left-side-features */
-    #create-recipe-left-side-features button {
-        display: block;
+    #image-upload-button {
         margin: auto;
-        background-color: white;
-        border: 2px dotted rgb(221, 221, 221);
-        height: fit-content;
-        margin-top: 20px;
+        width: fit-content;
+        margin-top: 5px;
     }
 
-    #create-recipe-left-side-features button i {
+    #custom-file-upload {
+        cursor: pointer;
+        border: 2px dotted rgb(221, 221, 221);
+        width: 170px;
+        height: 140px;
+    }
+
+    #custom-file-upload i {
         font-size: 45px;
         color: rgb(170, 170, 170);
+        display: block;
+        margin: auto;
+        width: fit-content;
     }
 
     #add-photo {
         font-size: 20px;
+        text-align: center;
     }
 
     #add-photo + p {
         margin-top: -15px;
         font-size: 12px;
+        text-align: center;
+    }
+
+    input[type="file"] {
+        display: none;
     }
 
     /* For all label of create-recipe form */
@@ -937,27 +1002,40 @@
     }
 
     /* For the button of left-side-features */
-    #create-recipe-left-side-features button {
-        display: block;
+    #image-upload-button {
         margin: auto;
-        background-color: white;
-        border: 2px dotted rgb(221, 221, 221);
-        height: fit-content;
-        margin-top: 20px;
+        width: fit-content;
+        margin-top: 5px;
     }
 
-    #create-recipe-left-side-features button i {
+    #custom-file-upload {
+        cursor: pointer;
+        border: 2px dotted rgb(221, 221, 221);
+        width: 170px;
+        height: 140px;
+    }
+
+    #custom-file-upload i {
         font-size: 45px;
         color: rgb(170, 170, 170);
+        display: block;
+        margin: auto;
+        width: fit-content;
     }
 
     #add-photo {
         font-size: 20px;
+        text-align: center;
     }
 
     #add-photo + p {
         margin-top: -15px;
         font-size: 12px;
+        text-align: center;
+    }
+
+    input[type="file"] {
+        display: none;
     }
 
     /* For all label of create-recipe form */

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import SecondNavBar from "./second-nav-bar";
 import TopPart from "./top-part";
 import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -34,7 +33,6 @@ function EvaluatedRecipes() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="top-part-container-in-evaluated-recipes-page">
                 <TopPart />
                 <nav id="group-buttons">

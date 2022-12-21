@@ -1,5 +1,4 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from 'react-helmet';
 import "./shopping-lists.css";
@@ -102,7 +101,6 @@ class ShoppingLists extends React.Component {
                     <title>{TITLE}</title>
                 </Helmet>
 
-                <SecondNavBar />
                 <div id="shopping-lists-page">
                     <div id="top-section-of-shopping-lists-page">
                         <div id="shopping-lists-title-in-shopping-lists-page">

@@ -1,5 +1,4 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./recipe-results.css";
 import { Helmet } from 'react-helmet'
@@ -74,7 +73,6 @@ class RecipeResults extends React.Component {
                     <title>{TITLE}</title>
                 </Helmet>
 
-                <SecondNavBar />
                 <div id="recipe-results-page">
                     <div id="top-section-of-recipe-results-page"></div>
                     <div id="recipes-filter-and-results-in-recipe-results-page">

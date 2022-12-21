@@ -1,5 +1,4 @@
 import React from "react";
-import SecondNavBar from "./second-nav-bar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./public-profile-about-me.css";
 import { Helmet } from 'react-helmet'
@@ -14,7 +13,6 @@ function PrivateProfile() {
                 <title>{TITLE}</title>
             </Helmet>
 
-            <SecondNavBar />
             <div id="private-profile-container">
                 <TopPart />
                 <nav id="group-buttons">

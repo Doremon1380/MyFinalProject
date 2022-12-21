@@ -69,6 +69,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 #account-name-dropdown-button-in-second-nav-bar {
     box-shadow: none;
     border-radius: 0px;
+    border: none;
 }
 
 #account-name-dropdown-button-in-second-nav-bar:hover {
@@ -83,6 +84,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     box-shadow: none;
     background-color: gray;
     border-radius: 0px;
+    border: none;
 }
 
 #account-dropdown-button-in-second-nav-bar:hover {
@@ -209,6 +211,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         width: fit-content;
         height: fit-content;
         margin: 10px 10px 0px -4px;
+        border: none;
     }
 
     #menu-dropdown-button-content-in-second-nav-bar {
@@ -335,6 +338,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         width: fit-content;
         height: fit-content;
         margin: 10px 10px 0px -4px;
+        border: none;
     }
 
     #menu-dropdown-button-content-in-second-nav-bar {
@@ -450,6 +454,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         display: inline-block;
         margin-top: 0px;
         height: 60px;
+        border: none;
     }
 
     #account-name-dropdown-button-content-in-second-nav-bar {
@@ -460,6 +465,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     #account-dropdown-button-in-second-nav-bar {
         display: inline-block;
         height: 60px;
+        border: none;
     }
 
     #account-dropdown-button-content-in-second-nav-bar {
@@ -473,6 +479,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         width: fit-content;
         height: fit-content;
         margin: 15px 20px 0px 5px;
+        border: none;
     }
 
     #menu-dropdown-button-content-in-second-nav-bar {
@@ -590,6 +597,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         display: inline-block;
         margin-top: 0px;
         height: 60px;
+        border: none;
     }
 
     #account-name-dropdown-button-content-in-second-nav-bar {
@@ -600,6 +608,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     #account-dropdown-button-in-second-nav-bar {
         display: inline-block;
         height: 60px;
+        border: none;
     }
 
     #account-dropdown-button-content-in-second-nav-bar {
@@ -613,6 +622,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         width: fit-content;
         height: fit-content;
         margin: 15px 20px 0px 5px;
+        border: none;
     }
 
     #menu-dropdown-button-content-in-second-nav-bar {
@@ -729,6 +739,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         display: inline-block;
         margin-top: 0px;
         height: 60px;
+        border: none;
     }
 
     #account-name-dropdown-button-content-in-second-nav-bar {
@@ -739,6 +750,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     #account-dropdown-button-in-second-nav-bar {
         display: inline-block;
         height: 60px;
+        border: none;
     }
 
     #account-dropdown-button-content-in-second-nav-bar {
@@ -752,6 +764,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         width: fit-content;
         height: fit-content;
         margin: 15px 20px 0px 5px;
+        border: none;
     }
 
     #menu-dropdown-button-content-in-second-nav-bar {
@@ -868,6 +881,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         display: inline-block;
         margin-top: 0px;
         height: 60px;
+        border: none;
     }
 
     #account-name-dropdown-button-content-in-second-nav-bar {
@@ -878,6 +892,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     #account-dropdown-button-in-second-nav-bar {
         display: inline-block;
         height: 60px;
+        border: none;
     }
 
     #account-dropdown-button-content-in-second-nav-bar {
@@ -891,6 +906,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         width: fit-content;
         height: fit-content;
         margin: 15px 20px 0px 5px;
+        border: none;
     }
 
     #menu-dropdown-button-content-in-second-nav-bar {
@@ -1007,6 +1023,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         display: inline-block;
         margin-top: 0px;
         height: 60px;
+        border: none;
     }
 
     #account-name-dropdown-button-content-in-second-nav-bar {
@@ -1017,6 +1034,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     #account-dropdown-button-in-second-nav-bar {
         display: inline-block;
         height: 60px;
+        border: none;
     }
 
     #account-dropdown-button-content-in-second-nav-bar {
@@ -1030,6 +1048,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         width: fit-content;
         height: fit-content;
         margin: 15px 20px 0px 5px;
+        border: none;
     }
 
     #menu-dropdown-button-content-in-second-nav-bar {
@@ -1156,6 +1175,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     #account-dropdown-button-in-second-nav-bar {
         display: inline-block;
         height: 60px;
+        border: none;
     }
 
     #account-dropdown-button-content-in-second-nav-bar {
@@ -1169,6 +1189,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         width: fit-content;
         height: fit-content;
         margin: 15px 20px 0px 5px;
+        border: none;
     }
 
     #menu-dropdown-button-content-in-second-nav-bar {
