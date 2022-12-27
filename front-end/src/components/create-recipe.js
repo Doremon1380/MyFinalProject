@@ -83,15 +83,29 @@ function CreateRecipe() {
                 <TopPart />
                 <form id="create-recipe" action="" name="createRecipe">
                     <div id="create-recipe-left-side-features">
-                        <div id="image-upload-button">
-                            <label for="file-upload" id="custom-file-upload">
-                                <i><FaCamera /></i>
-                                <p id="add-photo">Add a photo</p>
-                                <p>(no smaller than 960 X 960)</p>
-                                <input type="file" id="file-upload" onChange={handleImageChange}></input>
-                            </label>
-                        </div>
-                        <img id="selected-image" src={url} alt="image" />
+                        {(() => {
+                            if(recipeImageUpload == null) {
+                                return (
+                                    <div id="image-upload-button">
+                                        <label for="file-upload" id="custom-file-upload">
+                                            <i><FaCamera /></i>
+                                            <p id="add-photo">Add a photo</p>
+                                            <p>(no smaller than 960 X 960)</p>
+                                            <input type="file" id="file-upload" onChange={handleImageChange}></input>
+                                        </label>
+                                    </div>
+                                )
+                            } else {
+                                return  (                                
+                                    <div id="image-upload-button">
+                                        <label for="file-upload" id="custom-file-upload">
+                                            <input type="file" id="file-upload" onChange={handleImageChange}></input>
+                                            <img id="selected-image" src={url} alt="image"/>
+                                        </label>
+                                    </div>
+                                )
+                            }
+                        }) ()}
                         <div className="create-recipe-left-side-features-flex">
                             <label for="prep-time">Prep time</label><br />
                             <input name="preparationTime" id="prep-time" onChange={(event) => {setPrepTime(event.target.value)}}></input><br />
