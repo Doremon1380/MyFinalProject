@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./create-recipe.css";
-import {addDoc, collection} from "firebase/firestore";
-import { db, auth } from "../firebase-config";
 import { Helmet } from 'react-helmet';
-import { storage } from "../firebase-config";
+
+import { addDoc, collection } from "firebase/firestore";
+import { db, auth, storage } from "../firebase-config";
 import { v4 } from "uuid";
-import {ref, getDownloadURL} from "firebase/storage";
+import { ref, getDownloadURL, uploadBytes } from "firebase/storage";
 import TopPart from "./top-part";
 import MultiSelectDropdown from "./multiselect-dropdown";
 import { FaCamera } from "react-icons/fa";
@@ -50,27 +50,28 @@ function CreateRecipe() {
     const [recipeImageUpload, setRecipeImageUpload] = useState(null);
     const [url, setURL] = useState("");
 
-    const uploadRecipeImage = () => {
-        if(recipeImageUpload == null) {
-            return;
+    const handleImageChange = (event) => {
+        if(event.target.files[0]) {
+            setRecipeImageUpload(event.target.files[0]);
         };
-        const uploadFile = storage.ref(`images/recipes/${recipeImageUpload.name + v4()}`).put(recipeImageUpload);
-        uploadFile.on(
-            "state_changed",
-            error => {
-                console.log(error);
-            },
-            () => {
-                storage
-                .ref("images/recipes/")
-                .child(recipeImageUpload.name)
-                .getDownloadURL()
-                .then(url => {
-                    setURL(url)
-                });
-            }
-        );
-    };
+        const url = URL.createObjectURL(event.target.files[0]);
+        setURL(url);
+    }
+
+    const uploadRecipeImage = () => {
+        if (recipeImageUpload == null) {
+            return ;
+        };
+        const recipeImageRef = ref(storage, `images/recipes/${recipeImageUpload.name + v4()}`);
+        uploadBytes(recipeImageRef, recipeImageUpload).then(() => {
+            alert("Image uploaded!");
+        });
+        // uploadBytes(recipeImageRef, recipeImageUpload).then((snapshot) => {
+        //     getDownloadURL(snapshot.ref).then((url) => {
+        //         setURL(url);
+        //     })
+        // });
+    };                                    
 
     return (
         <>
@@ -87,11 +88,10 @@ function CreateRecipe() {
                                 <i><FaCamera /></i>
                                 <p id="add-photo">Add a photo</p>
                                 <p>(no smaller than 960 X 960)</p>
-                                <input type="file" id="file-upload" onChange={(event) => {setRecipeImageUpload(event.target.files[0])}}></input>
+                                <input type="file" id="file-upload" onChange={handleImageChange}></input>
                             </label>
-                            {url}
-                            <img src={url || "http://via.placeholder.com/300"} alt="image" />
                         </div>
+                        <img id="selected-image" src={url} alt="image" />
                         <div className="create-recipe-left-side-features-flex">
                             <label for="prep-time">Prep time</label><br />
                             <input name="preparationTime" id="prep-time" onChange={(event) => {setPrepTime(event.target.value)}}></input><br />
