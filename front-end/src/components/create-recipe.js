@@ -10,6 +10,7 @@ import { ref, getDownloadURL, uploadBytes } from "firebase/storage";
 import TopPart from "./top-part";
 import MultiSelectDropdown from "./multiselect-dropdown";
 import { FaCamera } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const TITLE = 'Submit a recipe - FoodShare.com';
 
@@ -20,7 +21,7 @@ function CreateRecipe() {
     const [numberOfServings, setNumberOfServings] = useState("");
     const [recipeYield, setRecipeYield] = useState("");
     const [worldCuisine, setWorldCuisine] = useState("Global Recipe");
-    const [typesOfRecipe, setTypesOfRecipe] = useState("");
+    const [typesOfRecipe, setTypesOfRecipe] = useState([]);
     const [recipeName, setRecipeName] = useState("");
     const [description, setDescription] = useState("");
     const [ingredients, setIngredients] = useState([]);
@@ -28,6 +29,7 @@ function CreateRecipe() {
     const [submitRecipe, setSubmitRecipe] = useState("");
     
     const recipesCollectionRef = collection(db, "recipes")
+    let navigate = useNavigate();
 
     const createRecipe = async () => {
         await addDoc(recipesCollectionRef, {
@@ -45,6 +47,7 @@ function CreateRecipe() {
             submitRecipe,
             // author: {}
         });
+        navigate("/personal-recipes");
     };
 
     const [recipeImageUpload, setRecipeImageUpload] = useState(null);
@@ -154,7 +157,7 @@ function CreateRecipe() {
                     </div>
                 </form>
                 <div id="create-recipe-bottom-buttons">
-                    <button id="create-recipe-save-button" type="submit" form="create-recipe" onClick={uploadRecipeImage}>Save</button>
+                    <button id="create-recipe-save-button" type="submit" form="create-recipe" onClick={() => {uploadRecipeImage(); createRecipe()}}>Save</button>
                     <a href="/about-me"><button id="create-recipe-cancel-button">Cancel</button></a>
                 </div>
             </div>
