@@ -10,6 +10,7 @@ import { ref, getDownloadURL, uploadBytes } from "firebase/storage";
 import TopPart from "./top-part";
 import MultiSelectDropdown from "./multiselect-dropdown";
 import { FaCamera } from "react-icons/fa";
+
 import { useNavigate } from "react-router-dom";
 
 const TITLE = 'Submit a recipe - FoodShare.com';
@@ -24,8 +25,8 @@ function CreateRecipe() {
     const [typesOfRecipe, setTypesOfRecipe] = useState([]);
     const [recipeName, setRecipeName] = useState("");
     const [description, setDescription] = useState("");
-    const [ingredients, setIngredients] = useState([]);
-    const [directions, setDirections] = useState([]);
+    const [ingredients, setIngredients] = useState("");
+    const [directions, setDirections] = useState("");
     const [submitRecipe, setSubmitRecipe] = useState("");
     
     const recipesCollectionRef = collection(db, "recipes")
@@ -144,10 +145,15 @@ function CreateRecipe() {
                         <input name="recipeName" id="recipe-name" required onChange={(event) => {setRecipeName(event.target.value)}}></input><br />
                         <label for="description">Description</label><br />
                         <textarea name="description" rows="3" cols="80" id="description" required onChange={(event) => {setDescription(event.target.value)}}></textarea><br />
+
                         <label for="ingredients">Ingredients</label><br />
-                        <textarea name="ingredients" rows="5" cols="80" placeholder="Put each ingredient on its own line" id="ingredients" required onChange={(event) => {setIngredients(event.target.value)}}></textarea><br />
+                        <input name="ingredients" id="ingredients" required onChange={(event) => {setIngredients(event.target.value)}}></input><br />
+                        <button>+ ADD INGREDIENTS</button><br />
                         <label for="directions">Directions</label><br />
-                        <textarea name="directions" rows="5" cols="80" placeholder="Put each step on its own line" id="directions" required onChange={(event) => {setDirections(event.target.value)}}></textarea><br />
+                        <textarea name="directions" rows="3" cols="80" id="directions" required onChange={(event) => {setDirections(event.target.value)}}></textarea><br />
+                        <button>+ ADD STEP</button><br />
+
+                        
                         <input name="submitRecipe" value="Private recipe" checked={submitRecipe === "Private recipe"} id="private-recipe" type="radio" onChange={(event) => {setSubmitRecipe(event.target.value)}} />
                         <label for="private-recipe" id="private-recipe-label">Private recipe</label>
                         <p>Only I can see this</p>
