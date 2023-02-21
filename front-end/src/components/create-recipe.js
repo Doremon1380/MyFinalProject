@@ -25,8 +25,8 @@ function CreateRecipe() {
     const [typesOfRecipe, setTypesOfRecipe] = useState([]);
     const [recipeName, setRecipeName] = useState("");
     const [description, setDescription] = useState("");
-    const [ingredients, setIngredients] = useState("");
-    const [directions, setDirections] = useState("");
+    const [ingredients, setIngredients] = useState([]);
+    const [directions, setDirections] = useState([]);
     const [submitRecipe, setSubmitRecipe] = useState("");
     
     const recipesCollectionRef = collection(db, "recipes")
@@ -75,7 +75,23 @@ function CreateRecipe() {
         //         setURL(url);
         //     })
         // });
-    };                                    
+    };         
+
+    let handleIngredientsChange = (i, e) => {
+        let newIngredients = [...ingredients];
+        newIngredients[i][e.target.name] = e.target.value;
+        setIngredients(newIngredients);
+    };
+
+    let addIngredientFields = () => {
+        setIngredients([...ingredients], {});
+    };
+
+    let removeIngredientFields = (i) => {
+        let newIngredients = [...ingredients];
+        newIngredients.splice(i, 1);
+        setIngredients(newIngredients);
+    };
 
     return (
         <>
@@ -145,10 +161,18 @@ function CreateRecipe() {
                         <input name="recipeName" id="recipe-name" required onChange={(event) => {setRecipeName(event.target.value)}}></input><br />
                         <label for="description">Description</label><br />
                         <textarea name="description" rows="3" cols="80" id="description" required onChange={(event) => {setDescription(event.target.value)}}></textarea><br />
-
-                        <label for="ingredients">Ingredients</label><br />
-                        <input name="ingredients" id="ingredients" required onChange={(event) => {setIngredients(event.target.value)}}></input><br />
-                        <button>+ ADD INGREDIENTS</button><br />
+                        {ingredients.map((element, index) => (
+                            <div className="add-ingredients" key={index}>
+                                <label for="ingredients">Ingredients</label><br />
+                                <input name="ingredients" id="ingredients" required onChange={(event) => handleIngredientsChange(index, event)}></input><br />
+                                <button>+ ADD INGREDIENTS</button><br />
+                                {
+                                    index ? 
+                                        <button className="remove-button" onClick={() => removeIngredientFields(index)}>X</button>
+                                    : null
+                                }
+                            </div>
+                        ))}
                         <label for="directions">Directions</label><br />
                         <textarea name="directions" rows="3" cols="80" id="directions" required onChange={(event) => {setDirections(event.target.value)}}></textarea><br />
                         <button>+ ADD STEP</button><br />
