@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./create-recipe.css";
 import { Helmet } from 'react-helmet';
+import { IoAddSharp } from "react-icons/io5";
 
 import { addDoc, collection } from "firebase/firestore";
 import { db, auth, storage } from "../firebase-config";
@@ -25,8 +26,8 @@ function CreateRecipe() {
     const [typesOfRecipe, setTypesOfRecipe] = useState([]);
     const [recipeName, setRecipeName] = useState("");
     const [description, setDescription] = useState("");
-    const [ingredients, setIngredients] = useState([]);
-    const [directions, setDirections] = useState([]);
+    const [ingredients, setIngredients] = useState([""]);
+    const [directions, setDirections] = useState([""]);
     const [submitRecipe, setSubmitRecipe] = useState("");
     
     const recipesCollectionRef = collection(db, "recipes")
@@ -77,20 +78,36 @@ function CreateRecipe() {
         // });
     };         
 
-    let handleIngredientsChange = (i, e) => {
+    const handleIngredientsChange = (i, e) => {
         let newIngredients = [...ingredients];
-        newIngredients[i][e.target.name] = e.target.value;
+        newIngredients[i] = e.target.value;
         setIngredients(newIngredients);
     };
 
-    let addIngredientFields = () => {
-        setIngredients([...ingredients], {});
+    const addIngredientFields = () => {
+        setIngredients([...ingredients, []]);
     };
 
-    let removeIngredientFields = (i) => {
+    const removeIngredientFields = (i) => {
         let newIngredients = [...ingredients];
         newIngredients.splice(i, 1);
         setIngredients(newIngredients);
+    };
+
+    const handleDirectionsChange = (i, e) => {
+        let newDirections = [...directions];
+        newDirections[i] = e.target.value;
+        setDirections(newDirections);
+    };
+
+    const addDirectionFields = () => {
+        setDirections([...directions, []]);
+    };
+
+    const removeDirectionFields = (i) => {
+        let newDirections = [...directions];
+        newDirections.splice(i, 1);
+        setDirections(newDirections);
     };
 
     return (
@@ -161,29 +178,53 @@ function CreateRecipe() {
                         <input name="recipeName" id="recipe-name" required onChange={(event) => {setRecipeName(event.target.value)}}></input><br />
                         <label for="description">Description</label><br />
                         <textarea name="description" rows="3" cols="80" id="description" required onChange={(event) => {setDescription(event.target.value)}}></textarea><br />
-                        {ingredients.map((element, index) => (
-                            <div className="add-ingredients" key={index}>
-                                <label for="ingredients">Ingredients</label><br />
-                                <input name="ingredients" id="ingredients" required onChange={(event) => handleIngredientsChange(index, event)}></input><br />
-                                <button>+ ADD INGREDIENTS</button><br />
-                                {
-                                    index ? 
-                                        <button className="remove-button" onClick={() => removeIngredientFields(index)}>X</button>
-                                    : null
-                                }
+                        <div className="ingredients">
+                            <label for="ingredients-field">Ingredients</label><br />
+                            <div className="all-ingredients">
+                                {ingredients.map((data, index) => {
+                                    return (
+                                        <div className="add-ingredient" key={index}>
+                                            <input name="ingredients" id="ingredient-field" required value={data} onChange={(event) => handleIngredientsChange(index, event)}></input><br />
+                                            {
+                                                index ? 
+                                                    <button id="remove-button-of-ingredient-field" onClick={() => removeIngredientFields(index)}>X</button>
+                                                : null
+                                            }
+                                        </div>
+                                    )
+                                })}
                             </div>
-                        ))}
-                        <label for="directions">Directions</label><br />
-                        <textarea name="directions" rows="3" cols="80" id="directions" required onChange={(event) => {setDirections(event.target.value)}}></textarea><br />
-                        <button>+ ADD STEP</button><br />
-
-                        
-                        <input name="submitRecipe" value="Private recipe" checked={submitRecipe === "Private recipe"} id="private-recipe" type="radio" onChange={(event) => {setSubmitRecipe(event.target.value)}} />
-                        <label for="private-recipe" id="private-recipe-label">Private recipe</label>
-                        <p>Only I can see this</p>
-                        <input name="submitRecipe" value="Public recipe" checked={submitRecipe === "Public recipe"} id="public-recipe" type="radio" onChange={(event) => {setSubmitRecipe(event.target.value)}} />
-                        <label for="public-recipe" id="public-recipe-label">Public recipe</label>
-                        <p>Anyone can see this</p>
+                            <button id="add-ingredient-button" onClick={() => addIngredientFields()}><i><IoAddSharp/></i>ADD INGREDIENT</button><br />
+                        </div>
+                        <div className="directions">
+                            <label for="directions-field">Directions</label><br />
+                            <div className="all-directions">
+                                {directions.map((data, index) => {
+                                    return (
+                                        <div className="add-direction" key={index}>
+                                            <p>Step {index + 1}</p>
+                                            <div>
+                                                <textarea name="directions" rows="3" cols="80" id="direction-field" required onChange={(event) => {setDirections(event.target.value)}}></textarea><br />
+                                                {
+                                                    index ? 
+                                                        <button id="remove-button-of-direction-field" onClick={() => removeDirectionFields(index)}>X</button>
+                                                    : null
+                                                }
+                                            </div>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                            <button id="add-direction-button" onClick={() => addDirectionFields()}><i><IoAddSharp/></i>ADD STEP</button><br />
+                        </div>
+                        <div className="public-and-private-recipe">
+                            <input name="submitRecipe" value="Private recipe" checked={submitRecipe === "Private recipe"} id="private-recipe" type="radio" onChange={(event) => {setSubmitRecipe(event.target.value)}} />
+                            <label for="private-recipe" id="private-recipe-label">Private recipe</label>
+                            <p>Only I can see this</p>
+                            <input name="submitRecipe" value="Public recipe" checked={submitRecipe === "Public recipe"} id="public-recipe" type="radio" onChange={(event) => {setSubmitRecipe(event.target.value)}} />
+                            <label for="public-recipe" id="public-recipe-label">Public recipe</label>
+                            <p>Anyone can see this</p>
+                        </div>
                     </div>
                 </form>
                 <div id="create-recipe-bottom-buttons">

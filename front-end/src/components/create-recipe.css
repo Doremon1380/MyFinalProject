@@ -63,6 +63,7 @@
     #create-recipe label {
         font-size: 17px;
         margin: 15px 0px 5px 0px;
+        font-weight: bolder;
     }
 
     /* For all input of left-side-features */
@@ -110,6 +111,76 @@
         transition: 200ms ease-in-out;
     }
 
+    /* For all ingredients */
+    .ingredients {
+        margin-top: -5px;
+    }
+
+    .all-ingredients {
+        margin-top: -10px;
+    }
+
+    /* For all ingredient fields */
+    .add-ingredient {
+        display: flex;
+        margin-top: 10px;
+    }   
+
+    /* For all remove buttons of all ingredient fields */
+    #remove-button-of-ingredient-field {
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+        margin-top: 10px;
+        border-color: gray;
+        background-color: white;
+        color: gray;
+    }
+
+    /* For add ingredient button */
+    #add-ingredient-button {
+        display: flex;
+        font-weight: bolder;
+        font-size: 15px;
+        background-color: white;
+        height: 50px;
+        padding: 11px 15px 0px 10px;
+        margin-top: 20px;
+        border-radius: 5px ;
+        border-color: rgb(209, 63, 33);
+    } 
+
+    #add-ingredient-button:hover {
+        background-color: rgb(209, 63, 33);
+        color: white;
+    }
+    
+    #add-ingredient-button i {
+        margin-top: -14px;
+        font-size: 25px;
+    }
+
+    /* For all directions */
+    .directions {
+        margin-top: -22px;
+    }
+
+    .all-directions {
+        margin-top: -20px;
+    }
+
+    /* For all labels of directions */
+    .add-direction p {
+        margin-top: 20px;
+    }
+
+    /* For all direction fields */
+    .add-direction div {
+        display: flex;
+        margin-top: -10px;
+    }
+
     /* For all textarea of right-side-features */
     #create-recipe-right-side-features textarea {
         outline: none;
@@ -123,8 +194,47 @@
         border: 1px solid #aaa;
         transition: 200ms ease-in-out;
     }
+
+    /* For all remove buttons of all direction fields */
+    #remove-button-of-direction-field {
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+        margin-top: 28px;
+        border-color: gray;
+        background-color: white;
+        color: gray;
+    }
+
+    /* For add direction button */
+    #add-direction-button {
+        display: flex;
+        font-weight: bolder;
+        font-size: 15px;
+        background-color: white;
+        height: 50px;
+        padding: 11px 15px 0px 10px;
+        margin-top: 20px;
+        border-radius: 5px ;
+        border-color: rgb(209, 63, 33);
+    } 
+
+    #add-direction-button:hover {
+        background-color: rgb(209, 63, 33);
+        color: white;
+    }
+
+    #add-direction-button i {
+        margin-top: -14px;
+        font-size: 25px;
+    }
     
     /* For all radio tag*/
+    .public-and-private-recipe {
+        margin-top: -15px;
+    }
+
     #private-recipe, #public-recipe {
         cursor: pointer;        
         opacity: 0;
@@ -264,6 +374,7 @@
     #create-recipe label {
         font-size: 17px;
         margin: 15px 0px 5px 0px;
+        font-weight: bolder;
     }
 
     /* For all input of left-side-features */
@@ -311,6 +422,76 @@
         transition: 200ms ease-in-out;
     }
 
+    /* For all ingredients */
+    .ingredients {
+        margin-top: -5px;
+    }
+
+    .all-ingredients {
+        margin-top: -10px;
+    }
+
+    /* For all ingredient fields */
+    .add-ingredient {
+        display: flex;
+        margin-top: 10px;
+    }   
+
+    /* For all remove buttons of all ingredient fields */
+    #remove-button-of-ingredient-field {
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+        margin-top: 10px;
+        border-color: gray;
+        background-color: white;
+        color: gray;
+    }
+
+    /* For add ingredient button */
+    #add-ingredient-button {
+        display: flex;
+        font-weight: bolder;
+        font-size: 15px;
+        background-color: white;
+        height: 50px;
+        padding: 11px 15px 0px 10px;
+        margin-top: 20px;
+        border-radius: 5px ;
+        border-color: rgb(209, 63, 33);
+    } 
+
+    #add-ingredient-button:hover {
+        background-color: rgb(209, 63, 33);
+        color: white;
+    }
+    
+    #add-ingredient-button i {
+        margin-top: -14px;
+        font-size: 25px;
+    }
+
+    /* For all directions */
+    .directions {
+        margin-top: -22px;
+    }
+
+    .all-directions {
+        margin-top: -20px;
+    }
+
+    /* For all labels of directions */
+    .add-direction p {
+        margin-top: 20px;
+    }
+
+    /* For all direction fields */
+    .add-direction div {
+        display: flex;
+        margin-top: -10px;
+    }
+
     /* For all textarea of right-side-features */
     #create-recipe-right-side-features textarea {
         outline: none;
@@ -324,8 +505,47 @@
         border: 1px solid #aaa;
         transition: 200ms ease-in-out;
     }
+
+    /* For all remove buttons of all direction fields */
+    #remove-button-of-direction-field {
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+        margin-top: 28px;
+        border-color: gray;
+        background-color: white;
+        color: gray;
+    }
+
+    /* For add direction button */
+    #add-direction-button {
+        display: flex;
+        font-weight: bolder;
+        font-size: 15px;
+        background-color: white;
+        height: 50px;
+        padding: 11px 15px 0px 10px;
+        margin-top: 20px;
+        border-radius: 5px ;
+        border-color: rgb(209, 63, 33);
+    } 
+
+    #add-direction-button:hover {
+        background-color: rgb(209, 63, 33);
+        color: white;
+    }
+
+    #add-direction-button i {
+        margin-top: -14px;
+        font-size: 25px;
+    }
     
     /* For all radio tag*/
+    .public-and-private-recipe {
+        margin-top: -15px;
+    }
+    
     #private-recipe, #public-recipe {
         cursor: pointer;        
         opacity: 0;
@@ -466,6 +686,7 @@
     #create-recipe label {
         font-size: 17px;
         margin: 15px 0px 5px 0px;
+        font-weight: bolder;
     }
 
     /* For all input of left-side-features */
@@ -513,6 +734,76 @@
         transition: 200ms ease-in-out;
     }
 
+    /* For all ingredients */
+    .ingredients {
+        margin-top: -5px;
+    }
+
+    .all-ingredients {
+        margin-top: -10px;
+    }
+
+    /* For all ingredient fields */
+    .add-ingredient {
+        display: flex;
+        margin-top: 10px;
+    }   
+
+    /* For all remove buttons of all ingredient fields */
+    #remove-button-of-ingredient-field {
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+        margin-top: 10px;
+        border-color: gray;
+        background-color: white;
+        color: gray;
+    }
+
+    /* For add ingredient button */
+    #add-ingredient-button {
+        display: flex;
+        font-weight: bolder;
+        font-size: 15px;
+        background-color: white;
+        height: 50px;
+        padding: 11px 15px 0px 10px;
+        margin-top: 20px;
+        border-radius: 5px ;
+        border-color: rgb(209, 63, 33);
+    } 
+
+    #add-ingredient-button:hover {
+        background-color: rgb(209, 63, 33);
+        color: white;
+    }
+    
+    #add-ingredient-button i {
+        margin-top: -14px;
+        font-size: 25px;
+    }
+
+    /* For all directions */
+    .directions {
+        margin-top: -22px;
+    }
+
+    .all-directions {
+        margin-top: -20px;
+    }
+
+    /* For all labels of directions */
+    .add-direction p {
+        margin-top: 20px;
+    }
+
+    /* For all direction fields */
+    .add-direction div {
+        display: flex;
+        margin-top: -10px;
+    }
+
     /* For all textarea of right-side-features */
     #create-recipe-right-side-features textarea {
         outline: none;
@@ -526,8 +817,47 @@
         border: 1px solid #aaa;
         transition: 200ms ease-in-out;
     }
+
+    /* For all remove buttons of all direction fields */
+    #remove-button-of-direction-field {
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+        margin-top: 28px;
+        border-color: gray;
+        background-color: white;
+        color: gray;
+    }
+
+    /* For add direction button */
+    #add-direction-button {
+        display: flex;
+        font-weight: bolder;
+        font-size: 15px;
+        background-color: white;
+        height: 50px;
+        padding: 11px 15px 0px 10px;
+        margin-top: 20px;
+        border-radius: 5px ;
+        border-color: rgb(209, 63, 33);
+    } 
+
+    #add-direction-button:hover {
+        background-color: rgb(209, 63, 33);
+        color: white;
+    }
+
+    #add-direction-button i {
+        margin-top: -14px;
+        font-size: 25px;
+    }
     
     /* For all radio tag*/
+    .public-and-private-recipe {
+        margin-top: -15px;
+    }
+
     #private-recipe, #public-recipe {
         cursor: pointer;        
         opacity: 0;
@@ -668,6 +998,7 @@
     #create-recipe label {
         font-size: 17px;
         margin: 15px 0px 5px 0px;
+        font-weight: bolder;
     }
 
     /* For all input of left-side-features */
@@ -715,6 +1046,76 @@
         transition: 200ms ease-in-out;
     }
 
+    /* For all ingredients */
+    .ingredients {
+        margin-top: -5px;
+    }
+
+    .all-ingredients {
+        margin-top: -10px;
+    }
+
+    /* For all ingredient fields */
+    .add-ingredient {
+        display: flex;
+        margin-top: 10px;
+    }   
+
+    /* For all remove buttons of all ingredient fields */
+    #remove-button-of-ingredient-field {
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+        margin-top: 10px;
+        border-color: gray;
+        background-color: white;
+        color: gray;
+    }
+
+    /* For add ingredient button */
+    #add-ingredient-button {
+        display: flex;
+        font-weight: bolder;
+        font-size: 15px;
+        background-color: white;
+        height: 50px;
+        padding: 11px 15px 0px 10px;
+        margin-top: 20px;
+        border-radius: 5px ;
+        border-color: rgb(209, 63, 33);
+    } 
+
+    #add-ingredient-button:hover {
+        background-color: rgb(209, 63, 33);
+        color: white;
+    }
+    
+    #add-ingredient-button i {
+        margin-top: -14px;
+        font-size: 25px;
+    }
+
+    /* For all directions */
+    .directions {
+        margin-top: -22px;
+    }
+
+    .all-directions {
+        margin-top: -20px;
+    }
+
+    /* For all labels of directions */
+    .add-direction p {
+        margin-top: 20px;
+    }
+
+    /* For all direction fields */
+    .add-direction div {
+        display: flex;
+        margin-top: -10px;
+    }
+
     /* For all textarea of right-side-features */
     #create-recipe-right-side-features textarea {
         outline: none;
@@ -728,8 +1129,47 @@
         border: 1px solid #aaa;
         transition: 200ms ease-in-out;
     }
+
+    /* For all remove buttons of all direction fields */
+    #remove-button-of-direction-field {
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+        margin-top: 28px;
+        border-color: gray;
+        background-color: white;
+        color: gray;
+    }
+
+    /* For add direction button */
+    #add-direction-button {
+        display: flex;
+        font-weight: bolder;
+        font-size: 15px;
+        background-color: white;
+        height: 50px;
+        padding: 11px 15px 0px 10px;
+        margin-top: 20px;
+        border-radius: 5px ;
+        border-color: rgb(209, 63, 33);
+    } 
+
+    #add-direction-button:hover {
+        background-color: rgb(209, 63, 33);
+        color: white;
+    }
+
+    #add-direction-button i {
+        margin-top: -14px;
+        font-size: 25px;
+    }
     
     /* For all radio tag*/
+    .public-and-private-recipe {
+        margin-top: -15px;
+    }
+    
     #private-recipe, #public-recipe {
         cursor: pointer;        
         opacity: 0;
@@ -870,6 +1310,7 @@
     #create-recipe label {
         font-size: 17px;
         margin: 15px 0px 5px 0px;
+        font-weight: bolder;
     }
 
     /* For all input of left-side-features */
@@ -917,6 +1358,76 @@
         transition: 200ms ease-in-out;
     }
 
+    /* For all ingredients */
+    .ingredients {
+        margin-top: -5px;
+    }
+
+    .all-ingredients {
+        margin-top: -10px;
+    }
+
+    /* For all ingredient fields */
+    .add-ingredient {
+        display: flex;
+        margin-top: 10px;
+    }   
+
+    /* For all remove buttons of all ingredient fields */
+    #remove-button-of-ingredient-field {
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+        margin-top: 10px;
+        border-color: gray;
+        background-color: white;
+        color: gray;
+    }
+
+    /* For add ingredient button */
+    #add-ingredient-button {
+        display: flex;
+        font-weight: bolder;
+        font-size: 15px;
+        background-color: white;
+        height: 50px;
+        padding: 11px 15px 0px 10px;
+        margin-top: 20px;
+        border-radius: 5px ;
+        border-color: rgb(209, 63, 33);
+    } 
+
+    #add-ingredient-button:hover {
+        background-color: rgb(209, 63, 33);
+        color: white;
+    }
+    
+    #add-ingredient-button i {
+        margin-top: -14px;
+        font-size: 25px;
+    }
+
+    /* For all directions */
+    .directions {
+        margin-top: -22px;
+    }
+
+    .all-directions {
+        margin-top: -20px;
+    }
+
+    /* For all labels of directions */
+    .add-direction p {
+        margin-top: 20px;
+    }
+
+    /* For all direction fields */
+    .add-direction div {
+        display: flex;
+        margin-top: -10px;
+    }
+
     /* For all textarea of right-side-features */
     #create-recipe-right-side-features textarea {
         outline: none;
@@ -930,8 +1441,47 @@
         border: 1px solid #aaa;
         transition: 200ms ease-in-out;
     }
+
+    /* For all remove buttons of all direction fields */
+    #remove-button-of-direction-field {
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+        margin-top: 28px;
+        border-color: gray;
+        background-color: white;
+        color: gray;
+    }
+
+    /* For add direction button */
+    #add-direction-button {
+        display: flex;
+        font-weight: bolder;
+        font-size: 15px;
+        background-color: white;
+        height: 50px;
+        padding: 11px 15px 0px 10px;
+        margin-top: 20px;
+        border-radius: 5px ;
+        border-color: rgb(209, 63, 33);
+    } 
+
+    #add-direction-button:hover {
+        background-color: rgb(209, 63, 33);
+        color: white;
+    }
+
+    #add-direction-button i {
+        margin-top: -14px;
+        font-size: 25px;
+    }
     
     /* For all radio tag*/
+    .public-and-private-recipe {
+        margin-top: -15px;
+    }
+
     #private-recipe, #public-recipe {
         cursor: pointer;        
         opacity: 0;
@@ -1072,6 +1622,7 @@
     #create-recipe label {
         font-size: 17px;
         margin: 15px 0px 5px 0px;
+        font-weight: bolder;
     }
 
     /* For all input of left-side-features */
@@ -1119,6 +1670,76 @@
         transition: 200ms ease-in-out;
     }
 
+    /* For all ingredients */
+    .ingredients {
+        margin-top: -5px;
+    }
+
+    .all-ingredients {
+        margin-top: -10px;
+    }
+
+    /* For all ingredient fields */
+    .add-ingredient {
+        display: flex;
+        margin-top: 10px;
+    }   
+
+    /* For all remove buttons of all ingredient fields */
+    #remove-button-of-ingredient-field {
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+        margin-top: 10px;
+        border-color: gray;
+        background-color: white;
+        color: gray;
+    }
+
+    /* For add ingredient button */
+    #add-ingredient-button {
+        display: flex;
+        font-weight: bolder;
+        font-size: 15px;
+        background-color: white;
+        height: 50px;
+        padding: 11px 15px 0px 10px;
+        margin-top: 20px;
+        border-radius: 5px ;
+        border-color: rgb(209, 63, 33);
+    } 
+
+    #add-ingredient-button:hover {
+        background-color: rgb(209, 63, 33);
+        color: white;
+    }
+    
+    #add-ingredient-button i {
+        margin-top: -14px;
+        font-size: 25px;
+    }
+
+    /* For all directions */
+    .directions {
+        margin-top: -22px;
+    }
+
+    .all-directions {
+        margin-top: -20px;
+    }
+
+    /* For all labels of directions */
+    .add-direction p {
+        margin-top: 20px;
+    }
+
+    /* For all direction fields */
+    .add-direction div {
+        display: flex;
+        margin-top: -10px;
+    }
+
     /* For all textarea of right-side-features */
     #create-recipe-right-side-features textarea {
         outline: none;
@@ -1132,8 +1753,47 @@
         border: 1px solid #aaa;
         transition: 200ms ease-in-out;
     }
+
+    /* For all remove buttons of all direction fields */
+    #remove-button-of-direction-field {
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+        margin-top: 28px;
+        border-color: gray;
+        background-color: white;
+        color: gray;
+    }
+
+    /* For add direction button */
+    #add-direction-button {
+        display: flex;
+        font-weight: bolder;
+        font-size: 15px;
+        background-color: white;
+        height: 50px;
+        padding: 11px 15px 0px 10px;
+        margin-top: 20px;
+        border-radius: 5px ;
+        border-color: rgb(209, 63, 33);
+    } 
+
+    #add-direction-button:hover {
+        background-color: rgb(209, 63, 33);
+        color: white;
+    }
+
+    #add-direction-button i {
+        margin-top: -14px;
+        font-size: 25px;
+    }
     
     /* For all radio tag*/
+    .public-and-private-recipe {
+        margin-top: -15px;
+    }
+
     #private-recipe, #public-recipe {
         cursor: pointer;        
         opacity: 0;
