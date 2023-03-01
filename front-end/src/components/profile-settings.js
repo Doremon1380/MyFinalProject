@@ -1,42 +1,36 @@
-import React from "react";
+import React, {useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./profile-settings.css";
 import { Helmet } from 'react-helmet'
-
 import TopPart from "./top-part";
 import { FaRegEye } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 import { FaUserCog } from "react-icons/fa";
+import { addDoc, collection } from "firebase/firestore";
+import { db, auth, storage } from "../firebase-config";
 
 const TITLE = 'Profile Settings - FoodShare.com';
 
-class PersonalUrl extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            input: ''
-        };
+function PersonalUrl() {
+    const [personalURL, setPersonalURL] = useState("");
 
-        this.createUrl = this.createUrl.bind(this);
-    };
+    // const updateUserAccounts = () => {
+    //     updateDoc()
+    // }
 
-    createUrl(event) {
-        this.setState({
-            input: event.target.value
-        });
-    };
-
-    render() {
-        return (
-            <>
-                <p id="personal-URL">FoodShare.com/cook/{this.state.input}</p>
-                <input name="createURL" placeholder="i.e. Doremon1380" className="edit-profile-input" value={this.state.input} onChange={this.createUrl}></input>
-            </>
-        );
-    }
+    return (
+        <>
+            <p id="personal-URL">FoodShare.com/cook/{personalURL}</p>
+            <input name="createURL" placeholder="i.e. Doremon1380" className="edit-profile-input" value={personalURL} onChange={(event) => {setPersonalURL(event.target.value)}}></input>
+        </>
+    );
 };
 
 function ProfileSettings() {
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [displayName, ]
+
     return (
         <>
             <Helmet>
@@ -83,7 +77,7 @@ function ProfileSettings() {
                             <label className="edit-profile-label">Last name</label><br />
                             <input name="lastName" placeholder="Last name" className="edit-profile-input"></input><br />
                             <label className="edit-profile-label">Display name</label><br />
-                            <input name="displayName" placeholder="Display name" className="edit-profile-input"></input><br />
+                            <input name="displayName" placeholder="Display name" className="edit-profile-input" required></input><br />
                             <label className="edit-profile-label">Profile URL</label><br />
                             <p className="message1">Share your FoodShare profile with a personal URL!</p>
                             <PersonalUrl />
