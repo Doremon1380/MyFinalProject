@@ -3,16 +3,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./create-recipe.css";
 import { Helmet } from 'react-helmet';
 import { IoAddSharp } from "react-icons/io5";
-
+import Select from 'react-select';
+import { FaCamera } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import TopPart from "./top-part";
 import { addDoc, collection } from "firebase/firestore";
 import { db, auth, storage } from "../firebase-config";
 import { v4 } from "uuid";
 import { ref, getDownloadURL, uploadBytes } from "firebase/storage";
-import TopPart from "./top-part";
-import MultiSelectDropdown from "./multiselect-dropdown";
-import { FaCamera } from "react-icons/fa";
-
-import { useNavigate } from "react-router-dom";
 
 const TITLE = 'Submit a recipe - FoodShare.com';
 
@@ -33,24 +31,24 @@ function CreateRecipe() {
     const recipesCollectionRef = collection(db, "recipes")
     let navigate = useNavigate();
 
-    const createRecipe = async () => {
-        await addDoc(recipesCollectionRef, {
-            prep: prepTime,
-            cook: cookTime,
-            total: totalTime,
-            servings: numberOfServings,
-            yield: recipeYield,
-            worldCuisine,
-            typesOfRecipe,
-            recipeName,
-            description,
-            ingredients,
-            directions,
-            submitRecipe,
-            // author: {}
-        });
-        navigate("/personal-recipes");
-    };
+    // const myRecipe = async () => {
+    //     await addDoc(recipesCollectionRef, {
+    //         prep: prepTime,
+    //         cook: cookTime,
+    //         total: totalTime,
+    //         servings: numberOfServings,
+    //         yield: recipeYield,
+    //         worldCuisine,
+    //         typesOfRecipe,
+    //         recipeName,
+    //         description,
+    //         ingredients,
+    //         directions,
+    //         submitRecipe,
+    //         // author: {}
+    //     });
+    //     navigate("/personal-recipes");
+    // };
 
     const [recipeImageUpload, setRecipeImageUpload] = useState(null);
     const [url, setURL] = useState("");
@@ -63,20 +61,56 @@ function CreateRecipe() {
         setURL(url);
     }
 
-    const uploadRecipeImage = () => {
+    const uploadRecipe = () => {
+        /* For upload recipe image */
         if (recipeImageUpload == null) {
             return ;
         };
         const recipeImageRef = ref(storage, `images/recipes/${recipeImageUpload.name + v4()}`);
-        uploadBytes(recipeImageRef, recipeImageUpload).then(() => {
-            alert("Image uploaded!");
+        uploadBytes(recipeImageRef, recipeImageUpload);
+        /* For upload recipe infomations */
+        addDoc(recipesCollectionRef, {
+            recipeImage: url,
+            prep: prepTime,
+            cook: cookTime,
+            total: totalTime,
+            servings: numberOfServings,
+            yield: recipeYield,
+            worldCuisine,
+            typesOfRecipe,
+            recipeName,
+            description,
+            ingredients,
+            directions,
+            submitRecipe,
         });
+        navigate("/personal-recipes");
         // uploadBytes(recipeImageRef, recipeImageUpload).then((snapshot) => {
         //     getDownloadURL(snapshot.ref).then((url) => {
         //         setURL(url);
         //     })
         // });
     };         
+
+    var TypesOfRecipe = [ 
+        { value: "Breakfast Recipe", label: "Breakfast Recipe" },
+        { value: "Lunch Recipe", label: "Lunch Recipe" },
+        { value: "Dinner Recipe", label: "Dinner Recipe" },
+        { value: "Appetizer & Snack Recipe", label: "Appetizer & Snack Recipe" },
+        { value: "Dessert Recipe", label: "Dessert Recipe" },
+        { value: "Main Dish Recipe", label: "Main Dish Recipe" },
+        { value: "Side Dish Recipe", label: "Side Dish Recipe" },
+        { value: "Drink Recipe", label: "Drink Recipe" },
+    ];
+
+    const style = {
+        control: base => ({
+          ...base,
+          border: 0,
+          // This line disable the blue border
+          boxShadow: "none"
+        })
+    };
 
     const handleIngredientsChange = (i, e) => {
         let newIngredients = [...ingredients];
@@ -85,7 +119,7 @@ function CreateRecipe() {
     };
 
     const addIngredientFields = () => {
-        setIngredients([...ingredients, []]);
+        setIngredients([...ingredients, ""]);
     };
 
     const removeIngredientFields = (i) => {
@@ -101,7 +135,7 @@ function CreateRecipe() {
     };
 
     const addDirectionFields = () => {
-        setDirections([...directions, []]);
+        setDirections([...directions, ""]);
     };
 
     const removeDirectionFields = (i) => {
@@ -170,8 +204,8 @@ function CreateRecipe() {
                                 <option value="Global Recipe" selected>Global Recipe</option>
                             </select><br />
                         </div>
-                        <label for="type-of-recipe">Types of recipe</label><br />
-                        <MultiSelectDropdown onChange={(event) => {setTypesOfRecipe(event.target.value)}}/>
+                        <label for="types-of-recipe">Types of recipe</label><br />
+                        <Select styles={style} defaultValue={typesOfRecipe} id="types-of-recipe" name="typesOfRecipe" isMulti placeholder="Choose one or more suitable types for your recipe." options={TypesOfRecipe} components={{ IndicatorSeparator:() => null }} onChange={(item) => setTypesOfRecipe(item)}></Select>
                     </div>
                     <div id="create-recipe-right-side-features">
                         <label for="recipe-name">Recipe name</label><br />
@@ -184,7 +218,7 @@ function CreateRecipe() {
                                 {ingredients.map((data, index) => {
                                     return (
                                         <div className="add-ingredient" key={index}>
-                                            <input name="ingredients" id="ingredient-field" required value={data} onChange={(event) => handleIngredientsChange(index, event)}></input><br />
+                                            <input name="ingredients" id="ingredient-field" required value={data} onChange={(event) => {handleIngredientsChange(index, event)}}></input><br />
                                             {
                                                 index ? 
                                                     <button id="remove-button-of-ingredient-field" onClick={() => removeIngredientFields(index)}>X</button>
@@ -204,7 +238,7 @@ function CreateRecipe() {
                                         <div className="add-direction" key={index}>
                                             <p>Step {index + 1}</p>
                                             <div>
-                                                <textarea name="directions" rows="3" cols="80" id="direction-field" required onChange={(event) => {setDirections(event.target.value)}}></textarea><br />
+                                                <textarea name="directions" rows="3" cols="80" id="direction-field" required value={data} onChange={(event) => {handleDirectionsChange(index, event)}}></textarea><br />
                                                 {
                                                     index ? 
                                                         <button id="remove-button-of-direction-field" onClick={() => removeDirectionFields(index)}>X</button>
@@ -228,7 +262,7 @@ function CreateRecipe() {
                     </div>
                 </form>
                 <div id="create-recipe-bottom-buttons">
-                    <button id="create-recipe-save-button" type="submit" form="create-recipe" onClick={() => {uploadRecipeImage(); createRecipe()}}>Save</button>
+                    <button id="create-recipe-save-button" type="submit" form="create-recipe" onClick={() => {uploadRecipe()}}>Save</button>
                     <a href="/about-me"><button id="create-recipe-cancel-button">Cancel</button></a>
                 </div>
             </div>
