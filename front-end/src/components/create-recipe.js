@@ -167,7 +167,7 @@ function CreateRecipe() {
                                     </div>
                                 )
                             } else {
-                                return  (                                
+                                return (                                
                                     <div id="image-upload-button">
                                         <label for="file-upload" id="custom-file-upload">
                                             <input type="file" id="file-upload" onChange={handleImageChange}></input>

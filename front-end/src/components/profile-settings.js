@@ -6,30 +6,26 @@ import TopPart from "./top-part";
 import { FaRegEye } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 import { FaUserCog } from "react-icons/fa";
-import { addDoc, collection } from "firebase/firestore";
+import { addDoc, collection, updateDoc } from "firebase/firestore";
 import { db, auth, storage } from "../firebase-config";
 
 const TITLE = 'Profile Settings - FoodShare.com';
 
-function PersonalUrl() {
-    const [personalURL, setPersonalURL] = useState("");
-
-    // const updateUserAccounts = () => {
-    //     updateDoc()
-    // }
-
-    return (
-        <>
-            <p id="personal-URL">FoodShare.com/cook/{personalURL}</p>
-            <input name="createURL" placeholder="i.e. Doremon1380" className="edit-profile-input" value={personalURL} onChange={(event) => {setPersonalURL(event.target.value)}}></input>
-        </>
-    );
-};
-
 function ProfileSettings() {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
-    const [displayName, ]
+    const [displayName, setDisplayName] = useState("");
+    const [personalURL, setPersonalURL] = useState("");
+    const [location, setLocation] = useState({country: "[None Selected]", city: ""});
+    const [aboutMe, setAboutMe] = useState("");
+    const [socialNetworks, setSocialNetworks] = useState({Pinterest: "", Facebook: "", Instagram: "", Twitter: "", "Personal blog": ""});
+
+    const recipesCollectionRef = collection(db, "userAccounts");
+
+
+    const updateProfile = () => {
+        updateDoc()
+    }
 
     return (
         <>
@@ -80,7 +76,8 @@ function ProfileSettings() {
                             <input name="displayName" placeholder="Display name" className="edit-profile-input" required></input><br />
                             <label className="edit-profile-label">Profile URL</label><br />
                             <p className="message1">Share your FoodShare profile with a personal URL!</p>
-                            <PersonalUrl />
+                            <p id="personal-URL">FoodShare.com/cook/{personalURL}</p>
+                            <input name="createURL" placeholder="i.e. Doremon1380" className="edit-profile-input" value={personalURL} onChange={(event) => {setPersonalURL(event.target.value)}}></input>
                             <p className="header">Location</p>
                             <label className="edit-profile-label" for="select-country">Country</label><br />
                             <select name="country" id="select-country">
@@ -389,7 +386,7 @@ function ProfileSettings() {
                             <label className="edit-profile-label">Twitter</label><br />
                             <input name="link to Twitter" placeholder="Paste the link to your Twitter" className="edit-profile-input"></input><br />
                             <label className="edit-profile-label">Personal blog</label><br />
-                            <input name="link to Personal blog" placeholder="Paste the link to your Twitter" className="edit-profile-input"></input><br />
+                            <input name="link to Personal blog" placeholder="Paste the link to your personal blog" className="edit-profile-input"></input><br />
                         </form>
                         <div id="edit-profile-bottom-buttons">
                             <button id="edit-profile-save-button" type="submit" form="edit-profile-features">Save</button>
