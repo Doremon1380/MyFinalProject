@@ -7,6 +7,7 @@ import ShowPassword from "./ShowPassword.png";
 import { useNavigate } from "react-router-dom";
 import { addDoc, collection } from "firebase/firestore";
 import { db, auth, storage } from "../firebase-config";
+import {createUserWithEmailAndPassword} from "firebase/auth";
 
 const TITLE = 'Sign Up - FoodShare.com';
 
@@ -38,8 +39,13 @@ function SignUp() {
     
     const imageName = getImageName();
 
-    const uploadUserAccount = () => {
+    const signUpWithEmailAndPassword = (e) => {
+        e.preventDefault();
         /* For upload user account infomations */
+        createUserWithEmailAndPassword(auth, email, password)
+        .then().catch((error) => {
+          return error;
+        });
         addDoc(userAccountsCollectionRef, {
             profileName,
             email,
@@ -69,7 +75,7 @@ function SignUp() {
                     <p id="password-rule">Please provide a password with at least 6 characters. Your password must include at least 1 uppercase letter or special character.</p>
                     <input name="agree" value="agreeToTheTermsOfServiceAndPrivacyPolicy" id="agree" type="checkbox" required/>
                     <label for="agree" id="agree-label"><p>I agree to the <a href="#" id="terms-of-service">Terms of Service</a> and <a href="#" id="privacy-policy">Privacy Policy</a>.</p></label>
-                    <button type="submit" id="create-account-button" form="sign-up-form-in-sign-up-page" onClick={() => uploadUserAccount()}>Create my account</button>
+                    <button type="submit" id="create-account-button" form="sign-up-form-in-sign-up-page" onClick={() => signUpWithEmailAndPassword()}>Create my account</button>
                 </form>
             </div>
         </>

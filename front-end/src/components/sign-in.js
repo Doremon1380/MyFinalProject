@@ -7,7 +7,7 @@ import Google from "./Google.png";
 import HidePassword from "./HidePassword.png";
 import ShowPassword from "./ShowPassword.png";
 import {auth, provider} from "../firebase-config";
-import {signInWithPopup} from "firebase/auth";
+import {signInWithPopup, signInWithEmailAndPassword} from "firebase/auth";
 
 /* Tìm hiểu về state và các hàm ở dưới (đến hàm render) để hiểu kỹ về chúng */
 const TITLE = 'Sign In - FoodShare.com';
@@ -24,6 +24,14 @@ function SignIn({setIsAuth}) {
         setIsAuth(true);
         window.location.pathname = "/";
       }); 
+    };
+
+    const logInWithEmailAndPassword = (e) => {
+      e.preventDefault();
+      signInWithEmailAndPassword(auth, email, password)
+      .then().catch((error) => {
+        return error;
+      });
     };
 
     function togglePasswordVisibility() {
@@ -83,7 +91,7 @@ function SignIn({setIsAuth}) {
               <a href="#" id="forgot-password">Forgot password?</a>
             </div>
           </form>
-          <button id="login-button" type="submit" form="sign-in-form-in-sign-in-page">LOG IN</button>
+          <button id="login-button" type="submit" form="sign-in-form-in-sign-in-page" onClick={() => logInWithEmailAndPassword()}>LOG IN</button>
           <div id="for-new-users"><p>You are new?<a href="/signup"> Join for free!</a></p></div>
           <p>By signing in, you are agreeing to our <a href="#" id="terms-of-service">Terms of Service</a> and our <a href="#" id="privacy-policy">Privacy Policy</a>.</p>
         </div>
