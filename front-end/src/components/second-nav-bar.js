@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
 /* dùng các thành phần có trong các thư viện hay package nào 
    thì nhớ kiểm ra xem có cần import các thư viện hay package đó không */
@@ -9,13 +9,29 @@ import Dropdown from "react-bootstrap/Dropdown";
 import { FaBars } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
+import { onAuthStateChanged, signOut } from "firebase/auth";    
+import { auth } from "../firebase-config";
 
 import "./second-nav-bar.css" //custom css for React component 
 import MyLogo from "./MyLogo.png";
 import AnonymousChef from "./AnonymousChef.png";
 
 function SecondNavBar({signUserOut}) {
+    const [authUser, setAuthUser] = useState(null);
 
+    useEffect(() => {
+        const listen = onAuthStateChanged(auth, (user) => {
+            if(user) {
+                setAuthUser(user);
+            } else {
+                setAuthUser(null);
+            }
+        })
+        return () => {
+            listen();
+        }
+    }, []);
+ 
     return (
         <Navbar id="nav-bar2">
             <div id="nav-bar-container2">
@@ -33,13 +49,13 @@ function SecondNavBar({signUserOut}) {
                     <div id="for-account">
                         <button id="avatar"><a href="/about-me"><img alt="avatar" src={AnonymousChef} id="avatar-image"></img></a></button>
                         <Dropdown>
-                            <Dropdown.Toggle variant="" id="account-name-dropdown-button-in-second-nav-bar">Account Name</Dropdown.Toggle>
+                            <Dropdown.Toggle variant="" id="account-name-dropdown-button-in-second-nav-bar">{authUser.displayName}</Dropdown.Toggle>
                             <Dropdown.Menu id="account-name-dropdown-button-content-in-second-nav-bar">
                                 <Dropdown.Item className="drop-down-item2" href="/about-me">My Profile</Dropdown.Item>
                                 <Dropdown.Item className="drop-down-item2" href="/follower-accounts">My Friends</Dropdown.Item>
                                 <Dropdown.Item className="drop-down-item2" href="/shopping-lists">My Shopping List</Dropdown.Item>
                                 <Dropdown.Divider />
-                                <Dropdown.Item className="drop-down-item2" href="/" type="submit" onClick={() => {signUserOut()}}>Logout</Dropdown.Item>
+                                <Dropdown.Item className="drop-down-item2" href="/" type="submit" onClick={signUserOut}>Logout</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         <Dropdown>
@@ -49,7 +65,7 @@ function SecondNavBar({signUserOut}) {
                                 <Dropdown.Item className="drop-down-item2" href="/follower-accounts">My Friends</Dropdown.Item>
                                 <Dropdown.Item className="drop-down-item2" href="/shopping-lists">My Shopping List</Dropdown.Item>
                                 <Dropdown.Divider />
-                                <Dropdown.Item className="drop-down-item2" href="/" type="submit" onClick={() => {signUserOut()}}>Logout</Dropdown.Item>
+                                <Dropdown.Item className="drop-down-item2" href="/" type="submit" onClick={signUserOut}>Logout</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                     </div>

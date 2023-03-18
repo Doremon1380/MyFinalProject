@@ -19,7 +19,7 @@ function SignIn({setIsAuth}) {
     const [password, setPassword] = useState("");
 
     const signInWithGoogle = () => {
-      signInWithPopup(auth, provider).then((result) => {
+      signInWithPopup(auth, provider).then(() => {
         localStorage.setItem("isAuth", true);
         setIsAuth(true);
         window.location.pathname = "/";
@@ -29,8 +29,12 @@ function SignIn({setIsAuth}) {
     const logInWithEmailAndPassword = (e) => {
       e.preventDefault();
       signInWithEmailAndPassword(auth, email, password)
-      .then().catch((error) => {
-        return error;
+      .then(() => {
+        localStorage.setItem("isAuth", true);
+        setIsAuth(true);
+        window.location.pathname = "/";
+      }).catch((error) => {
+        console.log(error);
       });
     };
 
@@ -91,7 +95,7 @@ function SignIn({setIsAuth}) {
               <a href="#" id="forgot-password">Forgot password?</a>
             </div>
           </form>
-          <button id="login-button" type="submit" form="sign-in-form-in-sign-in-page" onClick={() => logInWithEmailAndPassword()}>LOG IN</button>
+          <button id="login-button" type="submit" form="sign-in-form-in-sign-in-page" onClick={logInWithEmailAndPassword}>LOG IN</button>
           <div id="for-new-users"><p>You are new?<a href="/signup"> Join for free!</a></p></div>
           <p>By signing in, you are agreeing to our <a href="#" id="terms-of-service">Terms of Service</a> and our <a href="#" id="privacy-policy">Privacy Policy</a>.</p>
         </div>
