@@ -12,7 +12,7 @@ import {signInWithPopup, signInWithEmailAndPassword} from "firebase/auth";
 /* Tìm hiểu về state và các hàm ở dưới (đến hàm render) để hiểu kỹ về chúng */
 const TITLE = 'Sign In - FoodShare.com';
 
-function SignIn({setIsAuth}) {
+function SignIn() {
     const [isPaswordShown, setIsPasswordShown] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [email, setEmail] = useState("");
@@ -21,8 +21,9 @@ function SignIn({setIsAuth}) {
     const signInWithGoogle = () => {
       signInWithPopup(auth, provider).then(() => {
         localStorage.setItem("isAuth", true);
-        setIsAuth(true);
         window.location.pathname = "/";
+      }).catch((error) => {
+        console.log(error);
       }); 
     };
 
@@ -31,7 +32,6 @@ function SignIn({setIsAuth}) {
       signInWithEmailAndPassword(auth, email, password)
       .then(() => {
         localStorage.setItem("isAuth", true);
-        setIsAuth(true);
         window.location.pathname = "/";
       }).catch((error) => {
         console.log(error);

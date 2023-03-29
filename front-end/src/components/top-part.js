@@ -13,7 +13,7 @@ function TopPart() {
     useEffect(() => {
         const checkIfClickedOutside = (e) => {
              if(isDropDownButtonOpen && ref.current && !ref.current.contains(e.target)) {
-                 setIsDropDownButtonOpen(false)
+                setIsDropDownButtonOpen(false)
              }
         };
         document.addEventListener("click", checkIfClickedOutside);
@@ -21,6 +21,21 @@ function TopPart() {
             document.removeEventListener("click", checkIfClickedOutside)
         }
     }, [isDropDownButtonOpen])
+
+    // const [authUser, setAuthUser] = useState({});
+
+    // useEffect(() => {
+    //     const listen = onAuthStateChanged(auth, (user) => {
+    //         if(user) {
+    //             setAuthUser(user);
+    //         } else {
+    //             setAuthUser(null);
+    //         }
+    //     })
+    //     return () => {
+    //         listen();
+    //     }
+    // }, []);
 
     return (
         <>

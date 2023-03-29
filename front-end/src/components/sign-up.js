@@ -7,14 +7,14 @@ import ShowPassword from "./ShowPassword.png";
 import { useNavigate } from "react-router-dom";
 import { addDoc, collection } from "firebase/firestore";
 import { db, auth, storage } from "../firebase-config";
-import {createUserWithEmailAndPassword} from "firebase/auth";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 
 const TITLE = 'Sign Up - FoodShare.com';
 
 function SignUp() {
     const [isPasswordShown, setIsPasswordShown] = useState(false);
     const [isOpen, setIsOpen] = useState(true);
-    const [displayName, setDisplayName] = useState("");
+    const [profileName, setProfileName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -43,13 +43,17 @@ function SignUp() {
         e.preventDefault();
         /* For upload user account infomations */
         createUserWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-            console.log(userCredential);
+        .then(() => {
+            updateProfile(auth.currentUser, {
+                displayName: profileName
+            }).then().catch((error) => {
+                console.log(error);
+            })
         }).catch((error) => {
             console.log(error);
         });
         addDoc(userAccountsCollectionRef, {
-            displayName,
+            profileName,
             email,
             password,
         });
@@ -69,7 +73,7 @@ function SignUp() {
                 </div>
                 <form id="sign-up-form-in-sign-up-page" name="signUpForm">
                     <div id="flex-box-2-in-sign-up-page">
-                        <input name="accountName" value={displayName} placeholder="Account name" type="text" id="account-name-input" onChange={(event) => setDisplayName(event.target.value)} required></input>
+                        <input name="accountName" value={profileName} placeholder="Account name" type="text" id="account-name-input" onChange={(event) => setProfileName(event.target.value)} required></input>
                         <input name="email" value={email} placeholder="Email" type="email" id="email-input" onChange={(event) => setEmail(event.target.value)} required></input>
                         <input name="password" value={password} placeholder="Password" type={(isPasswordShown) ? "text" : "password"} id="password-input" onChange={(event) => setPassword(event.target.value)} required></input>
                         <img src={imagesPath[imageName]} id="sign-up-password-icon" onClick={() => { toggleImage(); togglePasswordVisibility() }}></img>

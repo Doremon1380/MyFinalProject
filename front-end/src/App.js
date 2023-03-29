@@ -53,8 +53,9 @@ function App() {
   const signUserOut = () => {
     signOut(auth).then(() => {
       localStorage.clear(); 
-      setIsAuth(false);
       window.location.pathname = "/signin";
+    }).catch((error) => {
+      console.log(error);
     });
   };
 

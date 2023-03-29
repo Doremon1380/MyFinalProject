@@ -9,15 +9,15 @@ import Dropdown from "react-bootstrap/Dropdown";
 import { FaBars } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
-import { onAuthStateChanged, signOut } from "firebase/auth";    
-import { auth } from "../firebase-config";
+import { onAuthStateChanged } from "firebase/auth";    
+import { auth } from "../firebase-config";  
 
 import "./second-nav-bar.css" //custom css for React component 
 import MyLogo from "./MyLogo.png";
 import AnonymousChef from "./AnonymousChef.png";
 
 function SecondNavBar({signUserOut}) {
-    const [authUser, setAuthUser] = useState(null);
+    const [authUser, setAuthUser] = useState({});
 
     useEffect(() => {
         const listen = onAuthStateChanged(auth, (user) => {
