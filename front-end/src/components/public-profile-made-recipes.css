@@ -39,7 +39,7 @@
         display: flex;
         margin: 10px 0px 30px 0px;
         width: 100%;
-        justify-content: end;
+        justify-content: flex-end;
     }
 
     #made-recipes-sorting-options-in-public-profile-made-recipes-page label {
@@ -217,7 +217,7 @@
         display: flex;
         margin: 10px 0px 30px 0px;
         width: 100%;
-        justify-content: end;
+        justify-content: flex-end;
     }
 
     #made-recipes-sorting-options-in-public-profile-made-recipes-page label {

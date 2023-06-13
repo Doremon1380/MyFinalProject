@@ -6,7 +6,7 @@ import "./sign-in.css";
 import Google from "./Google.png";
 import HidePassword from "./HidePassword.png";
 import ShowPassword from "./ShowPassword.png";
-import {auth, provider} from "../firebase-config";
+import {auth, googleAuthProvider, facebookAuthProvider} from "../firebase-config";
 import {signInWithPopup, signInWithEmailAndPassword} from "firebase/auth";
 
 /* Tìm hiểu về state và các hàm ở dưới (đến hàm render) để hiểu kỹ về chúng */
@@ -19,7 +19,7 @@ function SignIn() {
     const [password, setPassword] = useState("");
 
     const signInWithGoogle = () => {
-      signInWithPopup(auth, provider).then(() => {
+      signInWithPopup(auth, googleAuthProvider).then(() => {
         localStorage.setItem("isAuth", true);
         window.location.pathname = "/";
       }).catch((error) => {
@@ -38,6 +38,15 @@ function SignIn() {
       });
     };
 
+    const signInWithFacebook = () => {
+      signInWithPopup(auth, facebookAuthProvider).then(() => {
+        localStorage.setItem("isAuth", true);
+        window.location.pathname = "/";
+      }).catch((error) => {
+        console.log(error);
+      });
+    };
+    
     function togglePasswordVisibility() {
       setIsPasswordShown(!isPaswordShown)
     };
@@ -72,7 +81,7 @@ function SignIn() {
           <h1>Sign in with social</h1>
           <p>For new and existing FoodShare users.</p>
           <div id="flex-box-in-sign-in-page">
-            <button id="facebook-sign-in">
+            <button id="facebook-sign-in" onClick={signInWithFacebook}>
               <i className="bi bi-facebook"></i>
               <div id="facebook-text">Facebook</div>
             </button>
@@ -85,9 +94,9 @@ function SignIn() {
           <p>For existing FoodShare users.</p>
           <form id="sign-in-form-in-sign-in-page" name="signInForm">
             <div id="flex-box-2-in-sign-in-page">
-              <input name="email" type="email" value={email} placeholder="Email" id="email-input" onChange={event=> setEmail(event.target.value)} required></input>
-              <input name="password" type={(isPaswordShown) ? "text" : "password"} value={password} placeholder="Password" id="password-input" onChange={event=> setPassword(event.target.value)} required></input>
-              <img src={imagesPath[imageName]} id="sign-in-password-icon" onClick={() => {toggleImage(); togglePasswordVisibility() }}></img>
+              <input name="email" type="email" value={email} placeholder="Email" id="email-input" onChange={event => setEmail(event.target.value)} required></input>
+              <input name="password" type={(isPaswordShown) ? "text" : "password"} value={password} placeholder="Password" id="password-input" onChange={event => setPassword(event.target.value)} required></input>
+              <img src={imagesPath[imageName]} id="sign-in-password-icon" onClick={() => {toggleImage(); togglePasswordVisibility()}}></img>
             </div>
             <div id="flex-box-3-in-sign-in-page">
               <input name="rememberMe" value="rememberMe" id="remember-me" type="checkbox" />

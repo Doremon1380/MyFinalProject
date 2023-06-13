@@ -15,7 +15,7 @@
         display: flex;
         margin: 10px 0px 30px 0px;
         width: 100%;
-        justify-content: end;
+        justify-content: flex-end;
     }
 
     #personal-recipes-sorting-options-in-personal-recipes-page label {
@@ -204,7 +204,7 @@
         display: flex;
         margin: 10px 0px 30px 0px;
         width: 100%;
-        justify-content: end;
+        justify-content: flex-end;
     }
 
     #personal-recipes-sorting-options-in-personal-recipes-page label {

@@ -2,7 +2,7 @@ import {React, useState} from "react";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {auth} from "./firebase-config";
-import { signOut } from "firebase/auth";
+import {signOut} from "firebase/auth";
 
 //import components
 import SignIn from "./components/sign-in";
