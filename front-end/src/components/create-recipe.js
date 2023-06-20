@@ -179,19 +179,19 @@ function CreateRecipe() {
                         }) ()}
                         <div className="create-recipe-left-side-features-flex">
                             <label for="prep-time">Prep time</label><br />
-                            <input name="preparationTime" id="prep-time" onChange={(event) => {setPrepTime(event.target.value)}}></input><br />
+                            <input placeholder="e.g. 5 mins / 3 hours / 1 day / etc." name="preparationTime" id="prep-time" onChange={(event) => {setPrepTime(event.target.value)}}></input><br />
                             <label for="cook-time">Cook time</label><br />
-                            <input name="cookTime" id="cook-time" onChange={(event) => {setCookTime(event.target.value)}}></input><br />
+                            <input placeholder="e.g. 5 mins / 3 hours / 1 day / etc." name="cookTime" id="cook-time" onChange={(event) => {setCookTime(event.target.value)}}></input><br />
                         </div>
                         <div className="create-recipe-left-side-features-flex">
                             <label for="total-time">Ready in</label><br />
-                            <input name="totalTime" id="total-time" onChange={(event) => {setTotalTime(event.target.value)}}></input><br />
+                            <input placeholder="Total time required to make this dish" name="totalTime" id="total-time" onChange={(event) => {setTotalTime(event.target.value)}}></input><br />
                             <label for="number-of-servings">Number of servings</label><br />
-                            <input name="numberOfServings" id="number-of-servings" onChange={(event) => {setNumberOfServings(event.target.value)}}></input><br />
+                            <input placeholder="e.g. 6" name="numberOfServings" id="number-of-servings" onChange={(event) => {setNumberOfServings(event.target.value)}}></input><br />
                         </div>
                         <div className="create-recipe-left-side-features-flex">
                             <label for="recipe-yield">Recipe yield</label><br />
-                            <input placeholder="i.e. 2 rolls / 1 pie / 10 meatballs / etc." name="recipeYield" id="recipe-yield" onChange={(event) => {setRecipeYield(event.target.value)}}></input><br />
+                            <input placeholder="e.g. 2 rolls / 1 pie / 10 meatballs / etc." name="recipeYield" id="recipe-yield" onChange={(event) => {setRecipeYield(event.target.value)}}></input><br />
                             <label for="world-cuisine">World Cuisine</label><br />
                             <select name="world cuisine" id="world-cuisine" onChange={(event) => {setWorldCuisine(event.target.value)}}>
                                 <option value="Chinese Recipe">Chinese Recipe</option>
@@ -209,16 +209,16 @@ function CreateRecipe() {
                     </div>
                     <div id="create-recipe-right-side-features">
                         <label for="recipe-name">Recipe name</label><br />
-                        <input name="recipeName" id="recipe-name" required onChange={(event) => {setRecipeName(event.target.value)}}></input><br />
+                        <input placeholder="Give your recipe a title" name="recipeName" id="recipe-name" required onChange={(event) => {setRecipeName(event.target.value)}}></input><br />
                         <label for="description">Description</label><br />
-                        <textarea name="description" rows="3" cols="80" id="description" required onChange={(event) => {setDescription(event.target.value)}}></textarea><br />
+                        <textarea placeholder="Share the story behind your recipe and what make it special" name="description" rows="3" cols="80" id="description" required onChange={(event) => {setDescription(event.target.value)}}></textarea><br />
                         <div className="ingredients">
                             <label for="ingredients-field">Ingredients</label><br />
                             <div className="all-ingredients">
                                 {ingredients.map((data, index) => {
                                     return (
                                         <div className="add-ingredient" key={index}>
-                                            <input name="ingredients" id="ingredient-field" required value={data} onChange={(event) => {handleIngredientsChange(index, event)}}></input><br />
+                                            <input placeholder="e.g. 2 cups flour, sifted" name="ingredients" id="ingredient-field" required value={data} onChange={(event) => {handleIngredientsChange(index, event)}}></input><br />
                                             {
                                                 index ? 
                                                     <button id="remove-button-of-ingredient-field" onClick={() => removeIngredientFields(index)}>X</button>
@@ -238,7 +238,7 @@ function CreateRecipe() {
                                         <div className="add-direction" key={index}>
                                             <p>Step {index + 1}</p>
                                             <div>
-                                                <textarea name="directions" rows="3" cols="80" id="direction-field" required value={data} onChange={(event) => {handleDirectionsChange(index, event)}}></textarea><br />
+                                                <textarea placeholder="e.g. Pour into greased trays and bake for 15-20 minutes..." name="directions" rows="3" cols="80" id="direction-field" required value={data} onChange={(event) => {handleDirectionsChange(index, event)}}></textarea><br />
                                                 {
                                                     index ? 
                                                         <button id="remove-button-of-direction-field" onClick={() => removeDirectionFields(index)}>X</button>

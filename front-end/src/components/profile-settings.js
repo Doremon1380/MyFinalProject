@@ -1,12 +1,13 @@
 import React, {useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./profile-settings.css";
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 import TopPart from "./top-part";
 import { FaRegEye } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
 import { FaUserCog } from "react-icons/fa";
 import { addDoc, collection, updateDoc } from "firebase/firestore";
+import { updateProfile, onAuthStateChanged } from "firebase/auth";
 import { db, auth, storage } from "../firebase-config";
 
 const TITLE = 'Profile Settings - FoodShare.com';
@@ -14,7 +15,7 @@ const TITLE = 'Profile Settings - FoodShare.com';
 function ProfileSettings() {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
-    const [displayName, setDisplayName] = useState("");
+    const [userName, setUserName] = useState("");
     const [personalURL, setPersonalURL] = useState("");
     const [location, setLocation] = useState({country: "[None Selected]", city: ""});
     const [aboutMe, setAboutMe] = useState("");
@@ -23,9 +24,21 @@ function ProfileSettings() {
     const recipesCollectionRef = collection(db, "userAccounts");
 
 
-    const updateProfile = () => {
-        updateDoc()
-    }
+    // const updateProfile = () => {
+    //     updateDoc()
+    // }
+
+    const updateUserName = () => {
+        onAuthStateChanged(auth, (user) => {
+            if(user) {
+                updateProfile(auth.currentUser, {
+                    displayName: userName
+                }).then().catch((error) => {
+                    console.log(error);
+                });
+            };
+        });
+    };
 
     return (
         <>
@@ -73,11 +86,11 @@ function ProfileSettings() {
                             <label className="edit-profile-label">Last name</label><br />
                             <input name="lastName" placeholder="Last name" className="edit-profile-input"></input><br />
                             <label className="edit-profile-label">Display name</label><br />
-                            <input name="displayName" placeholder="Display name" className="edit-profile-input" required></input><br />
+                            <input name="displayName" placeholder="Display name" className="edit-profile-input" value={userName} onChange={(event) => {setUserName(event.target.value)}} required></input><br />
                             <label className="edit-profile-label">Profile URL</label><br />
                             <p className="message1">Share your FoodShare profile with a personal URL!</p>
                             <p id="personal-URL">FoodShare.com/cook/{personalURL}</p>
-                            <input name="createURL" placeholder="i.e. Doremon1380" className="edit-profile-input" value={personalURL} onChange={(event) => {setPersonalURL(event.target.value)}}></input>
+                            <input name="createURL" placeholder="e.g. Doremon1380" className="edit-profile-input" value={personalURL} onChange={(event) => {setPersonalURL(event.target.value)}}></input>
                             <p className="header">Location</p>
                             <label className="edit-profile-label" for="select-country">Country</label><br />
                             <select name="country" id="select-country">
@@ -389,7 +402,7 @@ function ProfileSettings() {
                             <input name="link to Personal blog" placeholder="Paste the link to your personal blog" className="edit-profile-input"></input><br />
                         </form>
                         <div id="edit-profile-bottom-buttons">
-                            <button id="edit-profile-save-button" type="submit" form="edit-profile-features">Save</button>
+                            <button id="edit-profile-save-button" type="submit" form="edit-profile-features" onClick={() => {updateUserName()}}>Save</button>
                             <a href="/about-me"><button id="edit-profile-cancel-button" type="reset">Cancel</button></a>
                         </div>
                     </div>
